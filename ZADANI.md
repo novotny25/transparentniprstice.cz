@@ -1,8 +1,10 @@
 # ZADÁNÍ: Web Transparentní Prštice
 
-**Verze:** 1.1 (21. 8. 2026) — přidána sekce Soudní spory (P-25 až P-27),
+**Verze:** 1.2 (21. 8. 2026) — v1.1 přidána sekce Soudní spory (P-25 až P-27),
 tracker žádostí 106 (P-28), boxy „Ověř si to sám" (P-29), stránka pro další
-obce s popisem role AI (P-30) a zásobník nápadů pro v2 (P-31).
+obce s popisem role AI (P-30) a zásobník nápadů pro v2 (P-31). V1.2 přidán
+návod „Udělejte si sami" s prompty krok za krokem (P-32, koncept
+v `NAVOD-UDELEJTE-SI-SAMI.md`).
 **Autor zadání:** Petr Novotný + AI (na základě rozhovoru a průzkumu workspace)
 **Schváleno:** čeká na schválení Petrem
 
@@ -168,6 +170,15 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   a co kontroloval člověk, odkaz na veřejný GitHub repozitář; kód a struktura
   dat pod otevřenou licencí, aby si web mohla přizpůsobit jakákoli obec
   výměnou datových souborů.
+- **P-32:** Součástí stránky „Pro další obce a občany" je návod „Udělejte si
+  sami": chronologický postup auditu v 8 krocích přesně podle prštické
+  zkušenosti (najdi výkazy → nech AI najít anomálie → žádost 106 → analýza
+  deníku → doklady k položkám → lhůty a stížnost → kontext a srovnání →
+  srozumitelné zveřejnění). U každého kroku: co dělá člověk, co AI,
+  **hotový prompt ke zkopírování** a doporučený typ nástroje; dále odhad
+  času a nákladů a rubrika „čeho se vyvarovat". Prompty jsou obecné
+  (dosaditelné pro jakoukoli obec) a u právních kroků výslovně vedou
+  k ověření z druhého zdroje. Koncept: `NAVOD-UDELEJTE-SI-SAMI.md`.
 
 ### Až potom (v2+)
 - **P-20:** Automatická čtvrtletní aktualizace rozpočtových dat z MONITORu
