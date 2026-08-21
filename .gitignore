@@ -1,6 +1,66 @@
-.DS_Store
+# ══════════════════════════════════════════════════════════════════════
+#  Co se smí dostat do veřejného repozitáře
+#
+#  Princip je opačný než obvykle: ignoruje se všechno a povolují se
+#  jen vyjmenované typy souborů ve vyjmenovaných složkách. Nový typ
+#  souboru se povolí přidáním řádku — vědomě, ne omylem.
+#
+#  Důvod: tenhle repozitář se nasazuje na veřejný web. Soubor, který
+#  se sem dostane omylem, zůstane v historii gitu i po smazání.
+# ══════════════════════════════════════════════════════════════════════
+
+# 1) Ignoruj všechno...
+*
+
+# 2) ...ale vstupuj do složek, ať jde hledat uvnitř
+!*/
+
+# 3) Povolené typy souborů
+!*.md
+!*.txt
+!*.html
+!*.css
+!*.js
+!*.json
+!*.csv
+!*.yml
+!*.yaml
+!*.py
+!*.svg
+!*.toml
+!.gitignore
+!.gitkeep
+
+# 4) Obrázky webu — jen ve web/, nikde jinde
+!web/**/*.png
+!web/**/*.jpg
+!web/**/*.webp
+!web/**/*.ico
+
+# 5) PDF jen v dokumenty/ — a jen anonymizované deriváty.
+#    Originál sem nesmí ani dočasně, ani pod jiným názvem.
+!dokumenty/**/*.pdf
+
+# 6) Nikdy — soubory soukromé zóny, i kdyby měly povolenou příponu
+**/qa-report-private*
+**/mapovani-popisu*
+**/*soukrom*
+**/*-private.*
+**/*_private.*
+**/*originál*
+**/*original*
+**/manifest-originalu*
+Detail_uctu_518*
+audit-prstice-rozvaha-vzz*
+
+# 7) Klíče a prostředí
 .env
+.env.*
 *.key
-__pycache__/
-.venv/
-node_modules/
+*.pem
+
+# 8) Balast
+.DS_Store
+**/__pycache__/
+**/.venv/
+**/node_modules/

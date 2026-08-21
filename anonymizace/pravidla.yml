@@ -1,0 +1,259 @@
+# ══════════════════════════════════════════════════════════════════════
+#  PUBLIKAČNÍ PRAVIDLA — transparentniprstice.cz
+#
+#  Tenhle soubor je jediný zdroj pravdy o tom, co smí opustit soukromou
+#  zónu a objevit se ve veřejném repozitáři. Žádný skript ani člověk
+#  nesmí publikovat pole, které tu není vyjmenované.
+#
+#  Princip: co není výslovně povolené, je zakázané.
+#
+#  Vzniklo v úkolu 1.0 plánu. Odpovídá požadavkům P-8, P-8a, P-8b, P-8c
+#  a hranicím ze ZADANI.md §9.
+# ══════════════════════════════════════════════════════════════════════
+
+verze: 1
+schvaleno: null          # datum + "Petr Novotný", doplní se při schválení
+plati_od_commitu: null
+
+# ──────────────────────────────────────────────────────────────────────
+# 1) Zóny — kde co smí ležet
+# ──────────────────────────────────────────────────────────────────────
+zony:
+  soukroma:
+    popis: >
+      Originály a všechny meziprodukty, které ještě obsahují původní volný
+      text, jména, adresy nebo čísla dokladů. Nikdy nevstupuje do webového
+      repozitáře ani do deploy preview.
+    umisteni: "PACT (soukromý repozitář novotny25/0_PACT), složka 0_Projects/4_PRŠTICE/"
+    obsahuje:
+      - originální účetní a účetně-výkazové exporty
+      - privátní extrakt účtu 518 se všemi poli
+      - mapování původního popisu na kód číselníku (mapovani-popisu.yml)
+      - kontrolní report qa-report-private.html
+      - PDF dokumenty před anonymizací
+
+  verejna:
+    popis: >
+      Webový repozitář novotny25/transparentniprstice.cz. Obsahuje pouze
+      nově vytvořené sanitizované deriváty. Žádný soubor tady nevzniká
+      kopií z originálu — vždy jen výstupem skriptu podle těchto pravidel.
+    umisteni: "novotny25/transparentniprstice.cz"
+
+# ──────────────────────────────────────────────────────────────────────
+# 2) Veřejné schéma účetního zápisu účtu 518
+#    Rozhodnuto Petrem 21. 8. 2026: bez přesného data a bez čísla dokladu.
+# ──────────────────────────────────────────────────────────────────────
+schema_ucetni_zapis:
+  soubory:
+    - data/ucet-518-polozky-public.json
+    - data/ucet-518-polozky-public.csv
+
+  # Jediná povolená pole. Cokoli jiného skript odmítne zapsat.
+  povolena_pole:
+    - nazev: id
+      typ: string
+      popis: >
+        Stabilní identifikátor zápisu ve tvaru 518-<rok>-<poradi>. Pořadí
+        se určuje deterministicky podle (rok, měsíc, kategorie, částka) —
+        záměrně NE podle přesného data, aby z pořadí nešlo zpětně odvodit
+        den zaúčtování.
+      priklad: "518-2022-0001"
+
+    - nazev: ucetni_rok
+      typ: integer
+      popis: "Účetní rok zápisu (2022–2025, dále rostoucí)."
+
+    - nazev: mesic
+      typ: integer
+      popis: >
+        Měsíc data dokladu, 1–12. Přesný den se nepublikuje — den v kombinaci
+        s kategorií, částkou a adresou v obci o 1 000 obyvatelích identifikuje
+        konkrétní domácnost.
+
+    - nazev: castka_hal
+      typ: integer
+      popis: >
+        Částka v celých haléřích. Záporná hodnota znamená storno nebo opravu.
+        Haléře, ne desetinné číslo — aby kontrolní součty seděly na halíř
+        a nezaváděla se chyba plovoucí čárky.
+
+    - nazev: kategorie
+      typ: string
+      popis: "Opravená kategorie z uzavřeného seznamu (viz kategorie_povolene)."
+
+    - nazev: popis_verejny
+      typ: string
+      popis: >
+        Označení z řízeného číselníku cislenik-popisu.yml. NIKDY se sem
+        nekopíruje původní volný text z pole `p` zdrojového souboru.
+
+    - nazev: zdroj_id
+      typ: string
+      popis: >
+        Identifikátor zdrojového datasetu, ne číslo dokladu. Odkazuje do
+        data/zdroje.json, kde je název výkazu, původ a datum pořízení.
+      priklad: "detail-518-2022-2025"
+
+    - nazev: obdobi_stav
+      typ: string
+      hodnoty: [uzavrene, neuplne]
+      popis: >
+        `neuplne` označuje období, které není celý uzavřený rok (leden–červen
+        2026). Web takové období nikdy nekreslí jako plnohodnotný rok
+        a nesrovnává ho s celým rokem.
+
+  # Pole, která se z originálu čtou, ale NIKDY se nepublikují bez zápisu
+  # do verejna-allowlist.yml s odůvodněním.
+  zakazana_pole:
+    - nazev: dt
+      duvod: "Přesné datum dokladu. Zužuje okruh na konkrétní událost a domácnost."
+    - nazev: doc
+      duvod: "Interní číslo dokladu. Není veřejný identifikátor a umožňuje párování napříč exporty."
+    - nazev: p
+      duvod: >
+        Původní volný popis. Prokazatelně obsahuje jména fyzických osob
+        spárovaná s adresami (ověřeno při úkolu 1.0 na 509 unikátních popisech).
+
+  kategorie_povolene:
+    # Výchozí sada převzatá ze zdroje. Opravy zjevně chybných zařazení
+    # řeší úkol 1.7; každá změna se zapisuje do verzovaných pravidel.
+    - "Bankovní poplatky"
+    - "ČOV / odpadní vody"
+    - "GDPR / pověřenec"
+    - "Geometr./znalecké/KN"
+    - "Kopírování / tisk"
+    - "Odpady (svoz)"
+    - "Opravy/storna dokladů"
+    - "Ostatní"
+    - "Poštovné"
+    - "Právní služby"
+    - "Správa / odborné služby"
+    - "Telekomunikace / IT"
+    - "Veřejná zeleň"
+    - "Voda/kanalizace (provoz)"
+    - "Zámek (budova)"
+
+# ──────────────────────────────────────────────────────────────────────
+# 3) Řízený číselník veřejných popisů
+#    Rozhodnuto Petrem 21. 8. 2026: řízený číselník, ne čištění pravidly.
+# ──────────────────────────────────────────────────────────────────────
+cislenik_popisu:
+  princip: >
+    Původní popis se nečistí — nahrazuje se. Každý z původních popisů se
+    přiřadí ke kódu z uzavřeného číselníku. Do veřejného souboru se zapíše
+    pouze označení navázané na kód. Text, který se nepodařilo přiřadit,
+    se NEPUBLIKUJE ve své původní podobě: dostane obecné označení podle
+    kategorie a objeví se v kontrolním reportu k rozhodnutí.
+
+  soubory:
+    verejny: "anonymizace/cislenik-popisu.yml — kód → veřejné označení (bez osobních údajů)"
+    soukromy: >
+      mapovani-popisu.yml v soukromé zóně — původní popis → kód.
+      Tenhle soubor obsahuje původní texty se jmény, proto NIKDY
+      nevstupuje do webového repozitáře.
+
+  pravidla_oznaceni:
+    - "Označení popisuje druh plnění, ne konkrétní osobu ani nemovitost."
+    - "Nesmí obsahovat jméno, příjmení, adresu, čp./če., ani parcelní číslo."
+    - "Nesmí obsahovat číslo dokladu — ani u oprav a storen."
+    - "Je věcné a neutrální; hodnotící slova („předražené“, „podezřelé“) jsou zakázaná."
+    - "Stejné plnění má vždy stejný kód, aby šly položky sčítat."
+
+  zaloha_pri_neprirazeni:
+    pravidlo: "obecné označení podle kategorie, např. „Provoz vodovodu a kanalizace“"
+    povinnost: "každý takový případ je řádkem v kontrolním reportu"
+
+# ──────────────────────────────────────────────────────────────────────
+# 4) Co skript hledá jako osobní údaj
+#    Nálezy jsou KANDIDÁTI. O ponechání rozhoduje výhradně allowlist,
+#    nikdy ne skript sám a nikdy ne AI sama (P-8c).
+# ──────────────────────────────────────────────────────────────────────
+detekce:
+  vzory:
+    - kod: cp_ce
+      popis: "Číslo popisné / evidenční"
+      regex: '(?i)\b(č\.\s?p\.|čp\.?|č\.\s?e\.|če\.?)\s?\d+'
+    - kod: parcela
+      popis: "Parcelní číslo"
+      regex: '(?i)\bp\.\s?č\.\s?\d+(/\d+)?'
+    - kod: doklad
+      popis: "Interní číslo dokladu"
+      regex: '\b\d{2}-\d{3}-\d{5}\b'
+    - kod: rodne_cislo
+      popis: "Rodné číslo"
+      regex: '\b\d{6}\s?/\s?\d{3,4}\b'
+    - kod: iban_ucet
+      popis: "Číslo účtu nebo IBAN"
+      regex: '(\b\d{1,6}-?\d{2,10}/\d{4}\b)|(\bCZ\d{2}[ ]?\d{4}\b)'
+    - kod: email
+      popis: "E-mailová adresa"
+      regex: '[\w.+-]+@[\w-]+\.[\w.]+'
+    - kod: telefon
+      popis: "Telefonní číslo"
+      regex: '(?<!\d)(\+420[ ]?)?\d{3}[ ]?\d{3}[ ]?\d{3}(?!\d)'
+    - kod: datum_narozeni
+      popis: "Datum narození"
+      regex: '(?i)\bnar\.\s?\d{1,2}\.\s?\d{1,2}\.\s?\d{4}'
+    - kod: jmeno_kandidat
+      popis: >
+        Kandidát na jméno osoby — slovo s velkým počátečním písmenem uvnitř
+        věty, nebo dvojice Příjmení + křestní jméno. Záměrně přestřeluje;
+        falešné poplachy řeší kontrolní report, ne uvolnění vzoru.
+      regex: '(?<=[a-zá-žě ,.-])\b\p{Lu}\p{Ll}{2,}'
+      poznamka: >
+        Jde o kandidáta, ne o rozhodnutí. Ověřeno proti reálným popisům v soukromé
+        zóně: zachytí i jméno uvedené za adresou, dvojici příjmení + křestní jméno
+        i tvar se zkratkou křestního jména. Konkrétní příklady zůstávají v soukromé
+        zóně — ukázka osobního údaje je pořád osobní údaj.
+
+  vyjimky_bez_allowlistu:
+    popis: >
+      Jediné velké písmeno uvnitř věty, které NENÍ kandidátem na jméno —
+      protože jde o veřejnou instituci nebo obecně známý pojem, ne o osobu.
+    seznam:
+      - "Prštice"
+      - "Silůvky"
+      - "ČOV"
+      - "SDH"
+      - "ZŠ"
+      - "MŠ"
+      - "ÚOHS"
+      - "GDPR"
+      - "Česká pošta"
+      - "Pošta Partner"
+
+# ──────────────────────────────────────────────────────────────────────
+# 5) PDF dokumenty (P-8b) — platí až pro úkol 2.5 na Petrově Macu
+# ──────────────────────────────────────────────────────────────────────
+pdf:
+  postup_povinny:
+    - "1. Vyrenderovat každou stránku originálu do obrázku."
+    - "2. Lokálním OCR najít kandidáty na osobní údaje."
+    - "3. Vypálit začernění do obrazu — ne překrytí obdélníkem nad textem."
+    - "4. Odstranit původní textové vrstvy, metadata, přílohy a formuláře."
+    - "5. Nové OCR spustit až nad začerněnou verzí."
+    - "6. Kontrolní sken: pdftotext, OCR a názvy souborů."
+  zakazano:
+    - "Překrytí textu grafikou bez vypálení — text zůstává v souboru a jde vykopírovat."
+    - "Ponechání původní textové vrstvy vedle nové."
+    - "Osobní údaj v názvu souboru nebo v metadatech."
+  kontaktni_list:
+    povinny: true
+    popis: >
+      Report obsahuje náhled každé strany každého PDF, aby Petr v jediné
+      souhrnné kontrole viděl i podpisy, rukopis a obrazové údaje,
+      které textová detekce z principu nenajde.
+
+# ──────────────────────────────────────────────────────────────────────
+# 6) Publikační brána (P-8c) — kdy se smí commitnout a nasadit
+# ──────────────────────────────────────────────────────────────────────
+brana:
+  podminky_vsechny_musi_platit:
+    - "Automatické kontroly skriptu skripty/validace.py skončily PASS."
+    - "Počet nevyřešených nálezů je 0."
+    - "Existuje ANONYMIZACE-SIGNOFF.md a odpovídá aktuálnímu commitu."
+    - "Žádný soubor ze soukromé zóny není tracked ani v historii gitu."
+  pri_nesplneni: "Skript skončí chybou. Necommituje se a nenasazuje se."
+  poznamka: >
+    AI ani regulární výraz nejsou samy o sobě zárukou úplné anonymizace.
+    Brána je poslední mechanická pojistka, ne náhrada Petrovy kontroly.

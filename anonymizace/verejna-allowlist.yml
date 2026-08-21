@@ -1,0 +1,66 @@
+# ══════════════════════════════════════════════════════════════════════
+#  PUBLIKAČNÍ ALLOWLIST — transparentniprstice.cz
+#
+#  Seznam výjimek. Detekční skript označí kandidáta na osobní údaj;
+#  ponechat ho ve veřejném výstupu jde JEN tehdy, je-li tady vypsaný
+#  i s důvodem. Prázdný seznam znamená: nic se neponechává.
+#
+#  Tohle je jediné místo, kde se rozhoduje o výjimce. Skript se nesmí
+#  rozhodnout sám a AI návrh není rozhodnutí — schvaluje Petr Novotný.
+# ══════════════════════════════════════════════════════════════════════
+
+verze: 1
+schvalil: null           # "Petr Novotný, DD. MM. RRRR"
+
+# ──────────────────────────────────────────────────────────────────────
+# Jména fyzických osob ponechaná ve veřejném výstupu
+#
+# Výchozí stav je PRÁZDNO a je to záměr. Web hodnotí hospodaření obce,
+# ne osoby (ZADANI.md §7 bod 4). Dodavatelé — fyzické osoby ani občané,
+# jejichž přípojka je v účetním zápisu, nemají důvod být jmenováni.
+#
+# Tvar záznamu, kdyby přece jen byl důvod:
+#   - jmeno: "Příjmení Jméno"
+#     role: "např. starosta obce ve funkčním období 2018–2022"
+#     duvod: "veřejný funkcionář, jméno je součástí doloženého tvrzení"
+#     zdroj: "odkaz na veřejný dokument, kde je jméno v této roli uvedeno"
+#     schvaleno: "Petr Novotný, DD. MM. RRRR"
+# ──────────────────────────────────────────────────────────────────────
+jmena_fyzickych_osob: []
+
+# ──────────────────────────────────────────────────────────────────────
+# Názvy právnických osob a institucí
+#
+# Nejsou osobní údaj. Přesto se vedou zvlášť: jmenovat dodavatele
+# v souvislosti s cenou je zásah do jeho pověsti a smí se opřít jen
+# o doložený zdroj (ZADANI.md §9 — u soukromých dodavatelů opatrněji
+# než u veřejných funkcionářů).
+#
+# Účetní detail poskytnutý obcí dodavatele NEOBSAHUJE. Cokoli sem
+# přibude, musí mít vlastní veřejný zdroj — smlouvu, registr smluv
+# nebo rozhodnutí správního orgánu.
+# ──────────────────────────────────────────────────────────────────────
+pravnicke_osoby: []
+
+# ──────────────────────────────────────────────────────────────────────
+# Ponechaná zakázaná pole
+#
+# Zápis sem znamená: publikovat pole, které pravidla.yml zakazují
+# (přesné datum dokladu, číslo dokladu, původní volný popis).
+# Ke každému je nutné napsat, proč přínos pro ověřitelnost převáží
+# riziko rozpoznání konkrétní osoby.
+# ──────────────────────────────────────────────────────────────────────
+pole: []
+
+# ──────────────────────────────────────────────────────────────────────
+# Adresy a nemovitosti
+#
+# Adresa obecní budovy (zámek, škola, úřad) není osobní údaj a lze ji
+# uvést. Adresa soukromé nemovitosti — čp./če., parcelní číslo, ulice
+# s číslem — ne, a to ani bez jména: v obci o tisíci obyvatelích je
+# adresa sama o sobě identifikátor.
+# ──────────────────────────────────────────────────────────────────────
+adresy:
+  obecni_budovy_povoleny: true
+  soukrome_nemovitosti_povoleny: false
+  vyjimky: []
