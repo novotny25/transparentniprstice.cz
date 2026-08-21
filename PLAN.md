@@ -113,7 +113,13 @@ Spouštěcí prompt:
   a jméno fyzické osoby se zveřejní jen po výslovném schválení v allowlistu.
   Deliverable: schválené schéma, pravidla a privátní manifest s SHA-256 originálů.
   **Blokuje všechny veřejné exporty.**
-- [ ] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — vytáhnout
+- [x] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — ✅ hotovo 21. 8. 2026
+  (webové repo, commit `2a78ea7`): `skripty/extrakce_518.py`,
+  `anonymizace/cislenik-popisu.yml` (61 kódů), `data/ucet-518-polozky-public.json`
+  + `.csv`, `data/zdroje.json`. Roční součty sedí na VZZ do haléře; GDPR
+  272 250 Kč, jeřáb 846 491,80 Kč a právní služby 2 094 182 Kč souhlasí se
+  zadáním; PII sken veřejných dat čistý. Privátní extrakt + mapování + report
+  v soukromé zóně mimo git. Původní znění úkolu: — vytáhnout
   1 335 účetních zápisů z `Detail_uctu_518_Prstice.html` (ř. 160) nejprve jen
   do soukromé zóny. Skript pak deterministicky vytvoří
   `data/ucet-518-polozky-public.json` a `.csv` podle úkolu 1.0; veřejné HTML se
