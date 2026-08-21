@@ -1,6 +1,8 @@
 # ZADÁNÍ: Web Transparentní Prštice
 
-**Verze:** 1.0 (21. 8. 2026)
+**Verze:** 1.1 (21. 8. 2026) — přidána sekce Soudní spory (P-25 až P-27),
+tracker žádostí 106 (P-28), boxy „Ověř si to sám" (P-29), stránka pro další
+obce s popisem role AI (P-30) a zásobník nápadů pro v2 (P-31).
 **Autor zadání:** Petr Novotný + AI (na základě rozhovoru a průzkumu workspace)
 **Schváleno:** čeká na schválení Petrem
 
@@ -56,6 +58,10 @@ co z toho vedení přímo ovlivňuje a proč se autor ptá na konkrétní výdaj
   s cenovým srovnáním trhu, analýza jeřábu, kontrola lhůt s čísly jednacími.
 - **Chronologie kauzy** s daty, sp. zn. SP/088/2026, č. j. OUPR-867-2026 atd.
 - **PDF dokumenty** (žádosti, odpovědi, dodejky) — jen na Petrově Macu, ne v gitu.
+- **K soudním sporům:** žádost dle 106/1999 o přehled všech soudních řízení
+  obce podána 15. 8. 2026 (odpověď se čeká); mezitím jsou veřejně dohledatelná
+  tři rozhodnutí ÚOHS (S0589/2023, S1089/2024, S0071/2025 — cache ve workspace)
+  a lze prohledat soudní databáze (infoSoud, justice.cz, Hlídač státu).
 - **Oficiální otevřená data MONITOR** (IČO 00282405): výkaz FIN 2-12 M
   (rozpočet dle paragrafů a položek), výkaz zisku a ztráty (účet 518) — CSV extrakty
   i webová služba pro budoucí automatickou aktualizaci.
@@ -76,10 +82,17 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
    (27 225 Kč/měs.), stavební jeřáb (846 tis. Kč / ~23 měsíců). Každá kauza má
    pevnou strukturu: **Fakta** (jen doložené, se zdrojem) → **Kontext a srovnání** →
    **Naše otázky obci** → **Odpověď obce** (v plném znění, jakmile existuje).
-5. **Jak jsme postupovali** — chronologická osa auditu od nalezení výkazů ve
-   veřejných zdrojích po řízení u KrÚ, s odkazy na anonymizovaná PDF.
-6. **Dokumenty** — knihovna všech podkladů ke stažení.
-7. **O webu** — kdo, proč, zdroje dat, metodika, kontakt, prostor pro vyjádření obce.
+5. **Soudní spory** — v hlavní nabídce: všechny známé spory obce od roku 2020,
+   běžící i ukončené; u každého soud, spisová značka, strany, předmět, stav,
+   výsledek a odkaz na rozsudek; kde to jde, propojení na náklady právních
+   služeb z účtu 518. U běžících sporů jen věcný popis, žádné hodnocení.
+6. **Jak jsme postupovali** — chronologická osa auditu od nalezení výkazů ve
+   veřejných zdrojích po řízení u KrÚ, s odkazy na anonymizovaná PDF;
+   součástí je tabulkový přehled všech žádostí o informace a jejich stavu.
+7. **Dokumenty** — knihovna všech podkladů ke stažení.
+8. **Pro další obce a občany** — jak web vznikl, co dělala AI a co kontroloval
+   člověk, odkaz na otevřený repozitář a návod, jak si totéž udělat jinde.
+9. **O webu** — kdo, proč, zdroje dat, metodika, kontakt, prostor pro vyjádření obce.
 
 ## 6. Požadavky
 
@@ -131,6 +144,31 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   proti zdroji, právní jazyková kontrola (fakta vs. hodnotící soudy),
   test na mobilu, test čitelnosti, funkční odkazy.
 
+**Soudní spory a otevřenost procesu (doplněno ve verzi 1.1)**
+- **P-25:** Sekce „Soudní spory" v hlavní nabídce: všechny známé spory obce
+  od roku 2020, běžící i ukončené. U každého: soud, spisová značka, strany,
+  předmět, stav, výsledek, odkaz na anonymizovaný rozsudek (kde existuje)
+  a datum poslední aktualizace záznamu. U běžících sporů pouze věcný popis —
+  žádné hodnocení stran ani predikce výsledku.
+- **P-26:** Sekce se generuje z `data/soudni-spory.json`. Dokud obec neodpoví
+  na žádost z 15. 8. 2026, sekce viditelně uvádí stav („přehled vyžádán dle
+  zákona 106/1999, čekáme na odpověď") a obsahuje spory dohledané z veřejných
+  zdrojů (ÚOHS, soudní databáze, registr smluv) s označením zdroje u každého.
+- **P-27:** Kde to data umožní, je spor propojený s náklady: u sporu odkaz na
+  související platby právních služeb z účtu 518 a u kauzy právních služeb
+  zpětný odkaz na spor. Kde vazba doložená není, nic se nedomýšlí (⚠️ pravidlo
+  z P-4 platí i tady).
+- **P-28:** Tabulkový přehled všech žádostí o informace („tracker 106"):
+  datum podání, předmět, stav (odpovězeno / částečně / neposkytnuto /
+  stížnost / u kraje), počet dní od podání. Generuje se
+  z `data/zadosti-106.json` a je součástí sekce „Jak jsme postupovali".
+- **P-29:** U klíčových čísel boxy „Ověř si to sám" — tři až pět kroků, jak si
+  občan stejný údaj najde v oficiálním zdroji (MONITOR, úřední deska, ÚOHS).
+- **P-30:** Stránka „Pro další obce a občany": jak web vznikl, co dělala AI
+  a co kontroloval člověk, odkaz na veřejný GitHub repozitář; kód a struktura
+  dat pod otevřenou licencí, aby si web mohla přizpůsobit jakákoli obec
+  výměnou datových souborů.
+
 ### Až potom (v2+)
 - **P-20:** Automatická čtvrtletní aktualizace rozpočtových dat z MONITORu
   (webová služba pro IČO 00282405 nebo CSV extrakty).
@@ -139,6 +177,12 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   — v1 jen připravená struktura dat, bez obsahu.
 - **P-23:** Napojení na registr smluv / Hlídač státu API (výpis posledních smluv).
 - **P-24:** Převod „co by se za to dalo pořídit" (oprava X m chodníku apod.).
+- **P-31:** Zásobník pro v2+ (každý nápad se před realizací zváží proti §7):
+  mapa investic v obci (co se kde opravilo a za kolik); roční jednostránkový
+  report „Rozpočet za 60 sekund" ke stažení a tisku do schránek; interaktivní
+  „kam šla moje tisícovka" (rozpočítání daní občana na agendy); AI shrnutí
+  zápisů ze zastupitelstva se seznamem přijatých usnesení; upozornění na
+  novinky (RSS); veřejný errata log (nalezené a opravené chyby webu).
 
 ## 7. Co v první verzi NEBUDE (závazné)
 
@@ -152,6 +196,8 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
    ne osoby; sekce pro další období zůstává prázdná struktura.
 5. **Žádná anglická verze, žádný newsletter, žádné sociální sítě jako součást
    webu** — sdílení řeší OG metadata.
+6. **Žádné hodnocení ani predikce výsledků běžících soudních sporů** a žádné
+   spekulace o motivech — sekce sporů je rejstřík faktů se zdroji, ne komentář.
 
 Když bude chuť něco přidat: buď to jde do „až potom", nebo se za to musí
 něco z v1 vyškrtnout.
@@ -167,6 +213,8 @@ něco z v1 vyškrtnout.
 | Rozbory kauz | GDPR, jeřáb, právní služby, slabá místa A1–A10 | složky `2026_08_15*`, `2026_04_30*` |
 | PDF dokumenty kauzy | žádosti, sdělení OUPR-867-2026, stížnost, podání na KrÚ, dodejky | **jen na Petrově Macu** — do web repa až po anonymizaci |
 | Deník 518 za 1–6/2026 | poskytnut 3. 8. 2026 (OUPR-1007/2026) | na Macu, do datasetu zatím nezanesen |
+| Soudní spory | rozhodnutí ÚOHS (cache ve workspace), infoSoud/justice.cz, Hlídač státu; přehled od obce vyžádán 15. 8. 2026 | `data/soudni-spory.json` — sestaví se ve fázi 1 |
+| Žádosti 106 | chronologie a stavy všech podaných žádostí | `data/zadosti-106.json` — sestaví se z kontroly lhůt |
 
 **Známé mezery v datech** (na webu se přiznávají, nezakrývají): chybí dodavatelé
 transakcí (obec je odmítla vydat — to je jádro sporu), chybí smlouvy ke třem
