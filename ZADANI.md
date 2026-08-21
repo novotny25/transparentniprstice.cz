@@ -1,12 +1,13 @@
 # ZADÁNÍ: Web Transparentní Prštice
 
-**Verze:** 1.2 (21. 8. 2026) — v1.1 přidána sekce Soudní spory (P-25 až P-27),
+**Verze:** 1.3 (21. 8. 2026) — v1.1 přidána sekce Soudní spory (P-25 až P-27),
 tracker žádostí 106 (P-28), boxy „Ověř si to sám" (P-29), stránka pro další
 obce s popisem role AI (P-30) a zásobník nápadů pro v2 (P-31). V1.2 přidán
-návod „Udělejte si sami" s prompty krok za krokem (P-32, koncept
-v `NAVOD-UDELEJTE-SI-SAMI.md`).
+návod „Udělejte si sami" s prompty (P-32). V1.3 zapracovány nálezy dvou
+nezávislých oponentur (upřesněné zdroje, jednotky, DPH, otevřené otázky).
 **Autor zadání:** Petr Novotný + AI (na základě rozhovoru a průzkumu workspace)
-**Schváleno:** čeká na schválení Petrem
+**Schváleno:** Petr schvaluje zadání spuštěním realizace (zadáním spouštěcího
+promptu z PLAN.md); do té doby jde o návrh.
 
 ---
 
@@ -57,12 +58,14 @@ co z toho vedení přímo ovlivňuje a proč se autor ptá na konkrétní výdaj
   `2026_04_30 Audit hospodaření obce/audit-prstice-rozvaha-vzz-dashboard.html`),
   nasazená pracovní verze: prsticehospodareni.netlify.app.
 - **Hotové rozbory:** slabá místa hospodaření (A1–A10), rozbor GDPR pověřence
-  s cenovým srovnáním trhu, analýza jeřábu, kontrola lhůt s čísly jednacími.
+  s cenovým srovnáním trhu, kontrola lhůt s čísly jednacími. (Kauza jeřábu
+  hotový rozbor nemá — píše se přímo z transakčních dat, viz PLAN 2.2.)
 - **Chronologie kauzy** s daty, sp. zn. SP/088/2026, č. j. OUPR-867-2026 atd.
 - **PDF dokumenty** (žádosti, odpovědi, dodejky) — jen na Petrově Macu, ne v gitu.
 - **K soudním sporům:** žádost dle 106/1999 o přehled všech soudních řízení
   obce podána 15. 8. 2026 (odpověď se čeká); mezitím jsou veřejně dohledatelná
-  tři rozhodnutí ÚOHS (S0589/2023, S1089/2024, S0071/2025 — cache ve workspace)
+  tři rozhodnutí ÚOHS — S0071/2025 má textovou cache ve workspace, S0589/2023
+  a S1089/2024 jsou jen jako PDF na Macu či ke stažení z uohs.gov.cz —
   a lze prohledat soudní databáze (infoSoud, justice.cz, Hlídač státu).
 - **Oficiální otevřená data MONITOR** (IČO 00282405): výkaz FIN 2-12 M
   (rozpočet dle paragrafů a položek), výkaz zisku a ztráty (účet 518) — CSV extrakty
@@ -81,7 +84,8 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
 3. **Účet 518** — co to je (vysvětlení pro laika), vývoj 2015–2025, proč je to
    účet, který vedení obce přímo ovlivňuje, rozklad nárůstu podle kategorií.
 4. **Ptáme se** — tři kauzy: právní služby (2,04 mil. Kč / 4 roky), GDPR pověřenec
-   (27 225 Kč/měs.), stavební jeřáb (846 tis. Kč / ~23 měsíců). Každá kauza má
+   (27 225 Kč/měs. vč. DPH, tj. 22 500 bez DPH), stavební jeřáb (846 tis. Kč,
+   pronájem 31. 12. 2021 – 13. 10. 2023). Každá kauza má
    pevnou strukturu: **Fakta** (jen doložené, se zdrojem) → **Kontext a srovnání** →
    **Naše otázky obci** → **Odpověď obce** (v plném znění, jakmile existuje).
 5. **Soudní spory** — v hlavní nabídce: všechny známé spory obce od roku 2020,
@@ -146,7 +150,7 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   proti zdroji, právní jazyková kontrola (fakta vs. hodnotící soudy),
   test na mobilu, test čitelnosti, funkční odkazy.
 
-**Soudní spory a otevřenost procesu (doplněno ve verzi 1.1)**
+**Soudní spory a otevřenost procesu (doplněno ve verzích 1.1–1.2)**
 - **P-25:** Sekce „Soudní spory" v hlavní nabídce: všechny známé spory obce
   od roku 2020, běžící i ukončené. U každého: soud, spisová značka, strany,
   předmět, stav, výsledek, odkaz na anonymizovaný rozsudek (kde existuje)
@@ -175,7 +179,8 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   zkušenosti (najdi výkazy → nech AI najít anomálie → žádost 106 → analýza
   deníku → doklady k položkám → lhůty a stížnost → kontext a srovnání →
   srozumitelné zveřejnění). U každého kroku: co dělá člověk, co AI,
-  **hotový prompt ke zkopírování** a doporučený typ nástroje; dále odhad
+  **hotový prompt ke zkopírování**; doporučený typ nástroje je uveden
+  souhrnně v úvodu návodu a zvlášť u kroků, kde se liší; dále odhad
   času a nákladů a rubrika „čeho se vyvarovat". Prompty jsou obecné
   (dosaditelné pro jakoukoli obec) a u právních kroků výslovně vedou
   k ověření z druhého zdroje. Koncept: `NAVOD-UDELEJTE-SI-SAMI.md`.
@@ -225,7 +230,8 @@ něco z v1 vyškrtnout.
 | PDF dokumenty kauzy | žádosti, sdělení OUPR-867-2026, stížnost, podání na KrÚ, dodejky | **jen na Petrově Macu** — do web repa až po anonymizaci |
 | Deník 518 za 1–6/2026 | poskytnut 3. 8. 2026 (OUPR-1007/2026) | na Macu, do datasetu zatím nezanesen |
 | Soudní spory | rozhodnutí ÚOHS (cache ve workspace), infoSoud/justice.cz, Hlídač státu; přehled od obce vyžádán 15. 8. 2026 | `data/soudni-spory.json` — sestaví se ve fázi 1 |
-| Žádosti 106 | chronologie a stavy všech podaných žádostí | `data/zadosti-106.json` — sestaví se z kontroly lhůt |
+| Žádosti 106 | chronologie a stavy všech podaných žádostí | `data/zadosti-106.json` — sestaví se ze složek žádostí (viz PLAN 1.6) |
+| Počty obyvatel | roční stavy 2015–2026 pro přepočet na obyvatele (P-2) | ČSÚ otevřená data → `data/obyvatele.json` (PLAN 1.5) |
 
 **Známé mezery v datech** (na webu se přiznávají, nezakrývají): chybí dodavatelé
 transakcí (obec je odmítla vydat — to je jádro sporu), chybí smlouvy ke třem
@@ -263,9 +269,9 @@ vlastními silami s AI. Celkové provozní náklady < 500 Kč/rok.
 
 - ~~Přesný název domény~~ → **VYŘEŠENO 21. 8. 2026:** zaregistrována
   transparentniprstice.cz, repozitář novotny25/transparentniprstice.cz.
-- **[OTEVŘENÉ]** Zanese se deník 518 za 1–6/2026 už do v1, nebo až v aktualizaci
-  po rozhodnutí kraje? (doporučení: do v1, ať je řada úplná)
-- **[OTEVŘENÉ]** Bude na webu jednoduchá návštěvnostní statistika (např.
-  GoatCounter/Plausible bez cookies), nebo v1 zcela bez měření?
+- **[ROZHODNUTO v plánu]** Deník 518 za 1–6/2026 jde do v1 (úkol 1.3, dle
+  doporučení); Petr to může při úkolu 1.3 změnit.
+- **[OTEVŘENÉ — rozhodne se v úkolu 5.1]** Návštěvnostní statistika: buď
+  GoatCounter/Plausible bez cookies, nebo v1 zcela bez měření.
 - **[PŘEDPOKLAD]** Komunální volby proběhnou na podzim 2026; přesné datum
   doplnit do plánu, jakmile bude vyhlášeno.
