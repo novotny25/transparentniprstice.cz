@@ -1,9 +1,10 @@
 # PLÁN REALIZACE: Web Transparentní Prštice
 
-**Verze:** 1.4 (21. 8. 2026) · Vychází ze `ZADANI.md` v1.4 — při rozporu platí
-ZADANI.md. V1.4 doplňuje soukromou/veřejnou datovou pipeline a strojovou
-anonymizaci, odděluje soudní a správní řízení, zpřesňuje příběh účtu 518
-a vypouští klasifikaci mandatorních výdajů.
+**Verze:** 1.5 (21. 8. 2026) · Vychází ze `ZADANI.md` v1.5 — při rozporu platí
+ZADANI.md. V1.4 doplnila soukromou/veřejnou datovou pipeline a strojovou
+anonymizaci, oddělila soudní a správní řízení a zpřesnila příběh účtu 518.
+V1.5 vrací rozlišení výdajů v doložitelné formě „opakované vs. jednorázové"
+(P-33) místo právního pojmu mandatorní.
 **Cíl:** web živý na transparentniprstice.cz nejpozději **15. 9. 2026**.
 
 Plán je psaný metodikou kurzu FAIL (AI-WBS): každý úkol má **deliverable**,
@@ -131,7 +132,13 @@ Spouštěcí prompt:
   00282405, roky 2019–2025; napojit číselníky paragrafů na česká jména agend
   → `data/rozpocet.json`. Uložit skutečné příjmy, skutečné výdaje, saldo a
   rozlišení běžné/kapitálové; případné údaje schváleného či upraveného rozpočtu
-  musí být jasně pojmenované. **Nevytvářet klasifikaci mandatorní/ovlivnitelné.**
+  musí být jasně pojmenované. **Nevytvářet klasifikaci mandatorní/ovlivnitelné**
+  ani netvrdit, co je ze zákona povinné. Místo toho podle P-33 dopočítat
+  doložitelné rozlišení „opakovaný běžný chod vs. jednorázové položky roku":
+  opakovaná = agenda s nenulovým výdajem ve všech sledovaných letech,
+  jednorázová = nepravidelná agenda plus kapitálové výdaje. Kritéria, hraniční
+  případy a jejich dopad na součty sepsat do `data/rozpocet-metodika.md`
+  a nechat **schválit Petrem**; příznak uložit ke každé agendě v datech.
   Dataset i text nesou `basis: cash_budget`, zatímco účet 518 nese
   `basis: accrual_cost`; jejich součty se navzájem nekontrolují jako stejný údaj.
   Deliverable: příjmy a výdaje po agendách a letech. Záložní cesta je ruční
@@ -278,7 +285,8 @@ Spouštěcí prompt:
   **Nestaví se dál bez Petrova „tenhle směr ano".** *(~15 min)*
 - [ ] **3.3 🤖 Stavba celku** — hlavní navigace: Přehled → Kam šly peníze →
   Účet 518 → Soudy a řízení → Jak to víme. Pořadí stavby: layout → sanitizovaná
-  data → rozpočet (seřazené sloupce + tabulky + přepínač na obyvatele) → 518 →
+  data → rozpočet (seřazené sloupce + rozlišení opakované/jednorázové dle P-33
+  + tabulky + přepínač na obyvatele) → 518 →
   tři vybraná témata → soudní a správní řízení → chronologie a dokumenty →
   O webu; stránka pro další obce jen pokud zůstává ve v1. Informační stav se
   uvádí hlavně na úrovni grafu nebo karty; čtyřřádkový souhrn se použije jednou

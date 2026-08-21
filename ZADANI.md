@@ -1,10 +1,12 @@
 # ZADÁNÍ: Web Transparentní Prštice
 
-**Verze:** 1.4 (21. 8. 2026) — v1.4 zapracovává rozhodnutí Petra po oponentuře:
+**Verze:** 1.5 (21. 8. 2026) — v1.4 zapracovala rozhodnutí Petra po oponentuře:
 strojovou anonymizaci všech veřejných výstupů, vývoj účtu 518 za roky
 2015–2025 s účetním detailem od roku 2022, oddělení soudních a správních
-řízení, vypuštění klasifikace mandatorních výdajů a zjednodušené informační
-stavy „víme / vypočítali jsme / nevíme / vyjádření obce".
+řízení a zjednodušené informační stavy „víme / vypočítali jsme / nevíme /
+vyjádření obce". V1.5 vrací Petrův původní požadavek na rozlišení výdajů,
+ovšem doložitelnou formou „opakované vs. jednorázové" místo právního pojmu
+mandatorní (P-33).
 **Autor zadání:** Petr Novotný + AI (na základě rozhovoru a průzkumu workspace)
 **Schváleno:** Petr schvaluje zadání spuštěním realizace (zadáním spouštěcího
 promptu z PLAN.md); do té doby jde o návrh.
@@ -92,6 +94,9 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
 2. **Rozpočet v kostce** — příjmy a výdaje jako jednoduché seřazené sloupce
    se srozumitelnými názvy agend: odpady, škola a školka, údržba, chod úřadu…;
    časová řada přes obě volební období a vždy i tabulková alternativa.
+   Součástí je jednoduché rozlišení, kolik z výdajů se **opakuje každý rok**
+   (běžný chod obce) a kolik tvoří **jednorázové položky** daného roku
+   (investice a nepravidelné služby) — viz P-33.
 3. **Účet 518** — vysvětlení pro laika, roční hodnoty 2015–2025 a tříletý
    klouzavý průměr. Účetní detail začíná rokem 2022. Web ukazuje „co vytvořilo
    meziroční rozdíl" podle autorských kategorií, nikoli bez důkazů „proč obec
@@ -231,6 +236,15 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
 - **P-32:** Návod „Udělejte si sami" s osmi kroky občanské datové analýzy,
   prompty, odhadem času a rubrikou „čeho se vyvarovat". Koncept je v
   `NAVOD-UDELEJTE-SI-SAMI.md`; stejně jako P-30 je volitelný pro v1.
+- **P-33:** Web rozliší, kolik z ročních výdajů tvoří **opakovaný běžný chod**
+  obce a kolik **jednorázové položky** daného roku. Pravidlo je doložitelné
+  z dat, ne z právního výkladu: opakovaná je agenda (paragraf) s nenulovým
+  výdajem ve všech sledovaných letech; jednorázová je ta, která se objevuje
+  nepravidelně, plus kapitálové výdaje. Zobrazuje se jako dvě části sloupce
+  s vysvětlením v jedné větě a je označeno jako **zařazeno autorem** (P-4);
+  metodika a hraniční případy jsou v `data/rozpocet-metodika.md`, který
+  schvaluje Petr. Web **nepoužívá pojem „mandatorní výdaje"** ani netvrdí,
+  že opakovaný výdaj je ze zákona povinný nebo že jednorázový je zbytný.
 - **P-31:** Zásobník pro v2+ (každý nápad se před realizací zváží proti §7):
   mapa investic v obci (co se kde opravilo a za kolik); roční jednostránkový
   report „Rozpočet za 60 sekund" ke stažení a tisku do schránek; interaktivní
