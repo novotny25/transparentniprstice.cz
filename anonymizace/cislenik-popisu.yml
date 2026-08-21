@@ -1,0 +1,255 @@
+# ══════════════════════════════════════════════════════════════════════
+#  ŘÍZENÝ ČÍSELNÍK VEŘEJNÝCH POPISŮ — účet 518
+#
+#  Každý účetní zápis dostane veřejné označení z tohoto seznamu. Původní
+#  volný popis se do veřejných dat NIKDY nepřenáší — nahrazuje se textem
+#  z pole `oznaceni`.
+#
+#  Jak se kód přiřadí: skript projde kódy shora dolů a přiřadí první,
+#  jehož klíčové slovo je obsaženo v původním popisu (po odstranění
+#  diakritiky a velikosti písmen). Když nezabere žádný, použije se
+#  fallback podle účetní kategorie. Fallback je bezpečná síť — i bez
+#  shody je označení věcné a bez osobních údajů.
+#
+#  Pořadí proto ROZHODUJE: specifická témata jsou nahoře, obecná dole.
+#
+#  Vzniklo v úkolu 1.1. Schvaluje Petr (úkol 1.7 čísla i kategorie
+#  ještě zpřesní).
+# ══════════════════════════════════════════════════════════════════════
+
+verze: 1
+schvaleno: null
+
+kody:
+  # ── Revize hasicích přístrojů (dřív než „hasiči" i „zámek") ──────────
+  - kod: revize-hasici-pristroje
+    oznaceni: "Revize a nákup hasicích přístrojů"
+    klicova_slova: ["hasicich pristroj", "hasici pristroj", "nove hp"]
+
+  # ── Hřbitov a kaple (dřív než „fasáda/plošina" u zámku) ──────────────
+  - kod: hrbitov-pohrebnictvi
+    oznaceni: "Hřbitov, kaple a pohřebnictví – údržba"
+    klicova_slova: ["hrbitov", "kaple", "vertikutator"]
+
+  # ── ČOV (klíčový driver 2022→2023) ──────────────────────────────────
+  - kod: cov-prevzata
+    oznaceni: "ČOV – převzatá odpadní voda a čištění"
+    klicova_slova: ["cov-voda", "cov - voda", "do cov", "odpadni voda prevzat", "voda prevzata", "cisteni odpadnich vod", "odvedena voda"]
+
+  # ── Zámek — rozdělený na driver-témata (úkol 1.7 je řeší jmenovitě) ──
+  - kod: zamek-jerab
+    oznaceni: "Zámek – pronájem stavebního jeřábu"
+    klicova_slova: ["jerab"]
+  - kod: zamek-strecha-fasada
+    oznaceni: "Zámek – oprava střechy, atiky a fasády"
+    klicova_slova: ["strech", "atiky", "atika", "fasad", "pokryvac", "zahlavi tramu"]
+  - kod: zamek-leseni-plosina
+    oznaceni: "Zámek – lešení a pracovní plošina"
+    klicova_slova: ["leseni", "plosin"]
+  - kod: zamek-statika
+    oznaceni: "Zámek – statické posudky a dřevěné prvky"
+    klicova_slova: ["staticky posudek", "statick", "posouzeni drevenych", "autorsky dozor", "pasport"]
+  - kod: zamek-plyn-kotle
+    oznaceni: "Zámek – plynové kotle a revize komínů"
+    klicova_slova: ["revize kominu", "plynovych kotlu", "plynovych kotu", "plynove kotle", "prohlidka plynovych", "vymena plynovych"]
+  - kod: pojisteni-budovy
+    oznaceni: "Pojištění obecních budov a majetku"
+    klicova_slova: ["pojisteni-zamek", "pojisteni-"]
+  - kod: zamek-ostatni
+    oznaceni: "Zámek – ostatní práce a materiál"
+    klicova_slova: ["zamek"]
+
+  # ── Voda a kanalizace ───────────────────────────────────────────────
+  - kod: plyn-pripojky
+    oznaceni: "Revize a údržba plynových přípojek"
+    klicova_slova: ["plynove pripojky", "plynovych pripojek", "revize plynove", "kontrola plynovych pripojek", "udrzba plynovych pripojek", "plynnovych pripojek", "plynove pripojk"]
+  - kod: voda-dozor
+    oznaceni: "Vodovod a kanalizace – odborný a technický dozor"
+    klicova_slova: ["odborny dozor", "technicky dozor", "technologicky dozor", "tech.dozor", "tech dozor", "tech. dozor", "techn. dozor", "techn.dozor", "odborny zastup", "tech.dozer", "technicky dozer"]
+  - kod: voda-kalkulace
+    oznaceni: "Vodovod – kalkulační výměr a výkazy"
+    klicova_slova: ["kalkulacni"]
+  - kod: voda-rozbor
+    oznaceni: "Vodovod – laboratorní rozbory"
+    klicova_slova: ["laboratorni", "rozbor"]
+  - kod: voda-deratizace
+    oznaceni: "Kanalizace – deratizace a kontrola"
+    klicova_slova: ["deratizace", "kontrola splaskove"]
+  - kod: voda-geodet
+    oznaceni: "Vodovod – geodetické práce a vytyčení"
+    klicova_slova: ["vytyceni vodovodu", "vodovod-geodet"]
+  - kod: voda-pripojky
+    oznaceni: "Vodovod – přípojky, navrtací pasy a opravy"
+    klicova_slova: ["navrtaci", "navrtavka", "pripojk", "vodomer", "hydrant", "vyhledani poruchy", "horske vpusti", "odposlech pripojky"]
+  - kod: voda-poradenstvi
+    oznaceni: "Vodovod a kanalizace – poradenství"
+    klicova_slova: ["poradensk", "poradenstvi"]
+  - kod: zpravodaj
+    oznaceni: "Obecní zpravodaj – tisk"
+    klicova_slova: ["zpravodaj"]
+
+  # ── Odpady ──────────────────────────────────────────────────────────
+  - kod: odpady-bio
+    oznaceni: "Bioodpad a kompostování"
+    klicova_slova: ["bioodpad", "biodpad", "kompostov", "komposter", "komposter"]
+  - kod: odpady-nebezpecny
+    oznaceni: "Nebezpečný odpad"
+    klicova_slova: ["nebezpecn"]
+  - kod: odpady-ulozeni
+    oznaceni: "Uložení odpadu na skládku"
+    klicova_slova: ["ulozeni odpadu", "skladku", "skladka"]
+  - kod: odpady-svoz
+    oznaceni: "Svoz a odvoz komunálního odpadu"
+    klicova_slova: ["svoz odpad", "odvoz odpad", "odovz odpad", "svoz a odvoz", "kom.odpad", "komunaln", "vyuzivani odpadu", "kontejner na textil", "doprava kontejneru", "doprva kontejneru"]
+
+  # ── Právní a GDPR (klíčové driver-téma) ─────────────────────────────
+  - kod: gdpr-poverenec
+    oznaceni: "GDPR – pověřenec pro ochranu osobních údajů"
+    klicova_slova: ["gdpr"]
+  - kod: notarske
+    oznaceni: "Notářské služby"
+    klicova_slova: ["notar"]
+  - kod: pravni-sluzby
+    oznaceni: "Právní služby"
+    klicova_slova: ["pravni sluzby", "pravni sluzba", "verejnopravni", "pravni-", "pravne sluzby", "pravni.", "pravní"]
+
+  # ── Průřezová témata (napříč kategoriemi) ───────────────────────────
+  - kod: postovne
+    oznaceni: "Poštovné"
+    klicova_slova: ["postovne", "postvne", "postovné"]
+  - kod: telekom-tel-net
+    oznaceni: "Telefony a internet – vyúčtování"
+    klicova_slova: ["telefony a internet", "telefon a internet", "internet a telefon", "telefony, internet", "telefony,internet", "telefony-internet", "internet, telefon", "internet,telefon", "telefonu a internetu", "telefony internet", "internet a telefony", "telefonu a internet", "telefony a internetu"]
+  - kod: telekom-telefony
+    oznaceni: "Telefony – vyúčtování"
+    klicova_slova: ["telefon"]
+  - kod: telekom-internet
+    oznaceni: "Internet a dálkový přístup"
+    klicova_slova: ["internet", "dalkovy pristup", "dalkove pristupy", "cuzk"]
+  - kod: zelen
+    oznaceni: "Veřejná zeleň – údržba a výsadba"
+    klicova_slova: ["ver.zelen", "ver. zelen", "verejna zelen", "verejné zelen", "verejnou zelen"]
+  - kod: certifikaty-podpisy
+    oznaceni: "Certifikáty, elektronické podpisy a časová razítka"
+    klicova_slova: ["certifik", "elektronicky podpis", "kvalifikovany podpis", "kvalifikovany certifikat", "casova razitka", "token", "prukaz zmocnence", "prukaz prijem", "zavesny odznak"]
+  - kod: it-software
+    oznaceni: "Software, licence a online služby"
+    klicova_slova: ["microsoft", "ms 365", "m365", "ms apps", "ms business", "ms m365", "licence", "hosting", "domen", "mapovy portal", "mapovy system", "mapový", "mapovy", "keo", "upgrade", "aktualizace programu", "webhosting", "webove stranky", "webovy system", "prostor na webu", "munipolis", "zoner", "editor dat", "obec uctuje", "datovy trezor", "datovy terzor", "datovem centru", "datovy hosting", "komunikacni system", "komunikacni sluzby", "informacni system", "servis pc", "razitka"]
+  - kod: spravni-agenda
+    oznaceni: "Správní agenda a evidence"
+    klicova_slova: ["registr nemovitosti", "registr.nemovitosti", "registr.nemovitosti", "evidence pozemku", "profil zadavatele", "profil verejnych zakazek", "uredni deska", "zadavaci rizeni", "vyveseni vz", "inzerat", "rozesilani zprav", "formatovani", "profil verejnych"]
+  - kod: skoleni
+    oznaceni: "Školení zaměstnanců obce"
+    klicova_slova: ["skoleni", "vstupni prohlidka", "vstupni prohlídka"]
+  - kod: bozp
+    oznaceni: "Služby BOZP"
+    klicova_slova: ["bozp"]
+  - kod: danovy-poradce
+    oznaceni: "Daňový poradce"
+    klicova_slova: ["danovy poradce", "danovy poradc"]
+  - kod: rozhlas-osa
+    oznaceni: "Místní rozhlas a poplatky OSA"
+    klicova_slova: ["rozhlas", "osa"]
+  - kod: cestovne
+    oznaceni: "Cestovné a parkovné"
+    klicova_slova: ["cestovne", "parkovne"]
+  - kod: kultura-akce
+    oznaceni: "Kulturní akce, propagace a přání"
+    klicova_slova: ["promitani", "kalendar", "pf 2025", "vanocni prani", "klub senioru", "seniori", "obcerstveni", "vstupenky", "vanocni prani"]
+
+  # ── Majetek, pozemky, budovy, technika ──────────────────────────────
+  - kod: geometr-kn
+    oznaceni: "Geometrické plány, znalecké posudky a vklady do katastru"
+    klicova_slova: ["vklad do kn", "vklady do kn", "vkladu do kn", "katastr", "geometr", "znalecky posudek", "znaleckeho posudku", "znal.pos", "navrh na vklad", "legalizace", "geodetick", "zamereni", "znaleck"]
+  - kod: pozemky-najem
+    oznaceni: "Pozemky – nájem a předpisy závazků"
+    klicova_slova: ["predpis najmu pozemku", "predpis zavazku pozemku", "najemne pozemky", "najem pozemky", "najem pozemku", "predpis zavazku", "zavazky pozemku", "zavazku pozemku", "predpis zavazku pozemku", "zavazku pozemky"]
+  - kod: zs-udrzba
+    oznaceni: "Základní škola – opravy a údržba"
+    klicova_slova: ["zs-", "provedeni sond", "sond na opravu", "sond na podlah"]
+  - kod: skolka-uver
+    oznaceni: "Mateřská škola – splátka úvěru"
+    klicova_slova: ["skolka-splatka", "splatka uveru"]
+  - kod: knihovna
+    oznaceni: "Obecní knihovna – provoz a knihovní systém"
+    klicova_slova: ["knihovna", "tritius", "trinitus"]
+  - kod: les-drevo
+    oznaceni: "Obecní les – těžba a manipulace se dřevem"
+    klicova_slova: ["obecni les", "lesni hosp", "lesni les", "tezba", "teleba", "drivi", "kulatin", "palivov", "pribl", "porez", "doprava dreva", "preprava dreva", "prevoz palivoveho", "les-", "lesa"]
+  - kod: detske-hriste
+    oznaceni: "Dětské hřiště – revize herních prvků"
+    klicova_slova: ["detske hriste", "herni", "hriste-revize"]
+  - kod: vozidla-obce
+    oznaceni: "Obecní vozidla – provoz, pojištění a servis"
+    klicova_slova: ["ford", "yeti", "yati", "povinne ruceni", "dalnicni znamka", "prezuti", "vymena pneu", "stk", "phm", "myti auta", "myti vozu", "myti automobilu", "myti obecniho vozu", "kontrola fordu", "gazelle", "tranzit", "vymena pneumatik", "pneu"]
+  - kod: udrzba-obce
+    oznaceni: "Údržba obce – komunikace, materiál a doprava"
+    klicova_slova: ["chodniky", "silnice", "dovoz pisku", "dovoz sterku", "dovoz kameniva", "odvoz hliny", "odvoz suti"]
+
+  # ── Hasiči (SDH) — po revizi HP a po vozidlech ──────────────────────
+  - kod: sdh-vozidla
+    oznaceni: "Hasiči (SDH) – vozidla a technika"
+    klicova_slova: ["tatra", "kulove ventily", "oplakovana tp", "drazba hasicskeho", "hasici-tatra", "hasici-gazelle"]
+  - kod: sdh-vystroj
+    oznaceni: "Hasiči (SDH) – výstroj, školení a pojištění"
+    klicova_slova: ["sdh", "hasici-", "hasici ", "hasicu"]
+
+  # ── Kancelář a administrativa ───────────────────────────────────────
+  - kod: kancelar-material
+    oznaceni: "Kancelářský materiál a vybavení"
+    klicova_slova: ["material", "vyroba klicu", "zaluzie", "lednicka", "zulovy znak", "navrh loga", "polepy", "kopirka", "monitor", "dokovaci stanice", "razitko", "klicu od", "notebook", "antivir"]
+  - kod: kopirovani-tisk
+    oznaceni: "Kopírování a tisk"
+    klicova_slova: ["kopirovani"]
+  - kod: tech-pomoc
+    oznaceni: "Technická pomoc a IT podpora"
+    klicova_slova: ["tech.pomoc", "tech pomoc", "technicka pomoc", "tech.pomo", "servisni sluzby", "servis"]
+
+  # ── Fallback kódy podle účetní kategorie (bez klíčových slov) ────────
+  - kod: bankovni-poplatky
+    oznaceni: "Bankovní poplatky"
+  - kod: oprava-storno
+    oznaceni: "Oprava / storno účetního dokladu"
+  - kod: ostatni
+    oznaceni: "Ostatní"
+  - kod: sprava-odborne
+    oznaceni: "Správa a odborné služby"
+  - kod: telekom-ostatni
+    oznaceni: "Telekomunikace a IT – ostatní"
+  - kod: voda-ostatni
+    oznaceni: "Vodovod a kanalizace – ostatní"
+  - kod: odpady-ostatni
+    oznaceni: "Odpady – ostatní"
+
+# ──────────────────────────────────────────────────────────────────────
+# Fallback podle účetní kategorie — použije se, když nezabere klíčové slovo
+# ──────────────────────────────────────────────────────────────────────
+fallback_dle_kategorie:
+  "Bankovní poplatky": bankovni-poplatky
+  "ČOV / odpadní vody": cov-prevzata
+  "GDPR / pověřenec": gdpr-poverenec
+  "Geometr./znalecké/KN": geometr-kn
+  "Kopírování / tisk": kopirovani-tisk
+  "Odpady (svoz)": odpady-ostatni
+  "Opravy/storna dokladů": oprava-storno
+  "Ostatní": ostatni
+  "Poštovné": postovne
+  "Právní služby": pravni-sluzby
+  "Správa / odborné služby": sprava-odborne
+  "Telekomunikace / IT": telekom-ostatni
+  "Veřejná zeleň": zelen
+  "Voda/kanalizace (provoz)": voda-ostatni
+  "Zámek (budova)": zamek-ostatni
+
+# ──────────────────────────────────────────────────────────────────────
+# Zámek kategorie — kde je účetní kategorie spolehlivější než volný popis.
+# Zápis v těchto kategoriích dostane kód přímo podle kategorie a klíčová
+# slova se ignorují. Důvod: obec je takto zaúčtovala jako agendu
+# (např. všech 10 zápisů GDPR), i když popis zní obecně „právní služby".
+# ──────────────────────────────────────────────────────────────────────
+kategorie_lock:
+  - "Bankovní poplatky"
+  - "GDPR / pověřenec"
+  - "Právní služby"
+  - "Opravy/storna dokladů"
+
