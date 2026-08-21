@@ -6,7 +6,7 @@ občanský projekt, neutrální datový tón.
 
 **Závazné zadání je v `ZADANI.md`** (požadavky P-1 až P-24 a sekce 7 „Co v první
 verzi NEBUDE"). Prováděcí plán leží v PACT workspace:
-`0_Projects/4_PRŠTICE/2026_08_21 Web Transparentní Prštice/PLAN.md`.
+`0_Projects/4_PRŠTICE/2026_08_21 TransparentniPrstice.cz/PLAN.md`.
 
 ## Struktura repozitáře
 
