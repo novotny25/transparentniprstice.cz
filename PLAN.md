@@ -98,7 +98,14 @@ Spouštěcí prompt:
 > Zásada: nejdřív bezpečná a ověřená data, pak design. Soukromé originály
 > nikdy nevstupují do veřejného repozitáře.
 
-- [ ] **1.0 🤝 Veřejné datové schéma a soukromá zóna** — Petr určí soukromou
+- [x] **1.0 🤝 Veřejné datové schéma a soukromá zóna** — ✅ hotovo 21. 8. 2026
+  (webové repo, větev `claude/transparentni-prstice-project-8a2ry6`, commit `f4c499e`):
+  `anonymizace/pravidla.yml`, `anonymizace/verejna-allowlist.yml`,
+  `anonymizace/README.md`, zpřísněný `.gitignore`; soukromá zóna
+  a `manifest-originalu.json` v PACTu. Rozhodnutí Petra: veřejný zápis
+  **bez přesného data a bez čísla dokladu**, popis se **nahrazuje
+  označením z řízeného číselníku**. Čeká na Petrovo schválení schématu.
+  Původní znění úkolu: — Petr určí soukromou
   složku mimo webový repozitář. AI připraví `anonymizace/pravidla.yml` a
   `anonymizace/verejna-allowlist.yml`. Výchozí veřejná pole účetního zápisu:
   účetní rok, měsíc, částka v haléřích, opravená kategorie, kontrolovaný veřejný
