@@ -129,7 +129,7 @@ Spouštěcí prompt:
   Kontrolní součty po letech sedí (Δ2022→23 +2 909 623, Δ2024→25 +1 221 138 Kč);
   celkem 2022–2025 = 16 981 430,32 Kč. Veřejné JSON/CSV zatím **necommitnuté** —
   čekají na privacy gate (2.5/1.8) a Petrův sign-off.
-- [ ] **1.2 🤖 Roční řady a ukazatele vývoje** — z
+- [x] **1.2 🤖 Roční řady a ukazatele vývoje** — z
   `audit-prstice-rozvaha-vzz-dashboard.html` (`<script id="audit-data">`,
   ř. ~168) vytáhnout řady 2015–2025: účet 518, účet 511 a náklady/výnosy celkem
   → `data/vykazy-rady.json`. Zdroj je v tis. Kč; výstup je v celých Kč a nese
@@ -138,7 +138,13 @@ Spouštěcí prompt:
   nominálně +138,6 %, CAGR 9,1 %; tříletý průměr 2015–2017 činí 1,80 mil. Kč
   a 2023–2025 4,69 mil. Kč (+160,8 %). AI vše znovu přepočítá ze zdroje;
   nepoužije předem zvolené „asi 50 %". Veřejný titulek zní přesně
-  „Vývoj účtu 518 v letech 2015–2025" (11 ročních hodnot).
+  „Vývoj účtu 518 v letech 2015–2025“ (11 ročních hodnot).
+  ✅ hotovo 22. 8. 2026: skript `skripty/rady_vykazy.py` (ověřuje SHA-256)
+  vytvořil `data/vykazy-rady.json` — řady 2015–2025 účtů 518, 511 a
+  náklady/výnosy celkem (v celých Kč z tis. Kč). Účet 518: +138,6 % (2015→2025),
+  CAGR 9,1 %, tříletý průměr 1,80→4,69 mil. (+160,8 %) — vše PASS proti
+  kontrolním hodnotám. Křížová kontrola: součty deníku 518 (2022–2025) = VZZ
+  na 0,00 Kč. Data zatím necommitnuta (privacy gate).
 - [ ] **1.3 🤝 Doplnění deníku 518 za 1–6/2026** — Petr ukáže soubor
   OUPR-1007/2026; AI jej zpracuje stejnou soukromou/veřejnou pipeline.
   Výstup nese `period_status: incomplete` a popisek „leden–červen 2026".
