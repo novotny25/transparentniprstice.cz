@@ -207,20 +207,30 @@ Spouštěcí prompt:
   dalších dokladů na „proč obec službu objednala".
   ✅ hotovo 22. 8. 2026: skript `skripty/rozklad_518.py` + privátní verzovaná
   pravidla `kategorie-opravy.yml` (schválil Petr). Opravy: 1 přeřazení
-  (52 272 Kč právní zápis Správa→Právní, doklad 23-001-00303) + párování storen
+  (52 272 Kč právní zápis Správa→Právní; číslo dokladu jen v privátní mapě) +
+  párování storen
   k původnímu dokladu. Výstup `data/ucet-518-rozklad.json`. Všech 11 tvrdých
   kontrol PASS (celkové změny, zámek, odpady, právní 2 094 182, GDPR 272 250,
   jeřáb −56 773,20, střecha+atika 788 099,85, sondy ZŠ 117 333,70). Dvě drobné
   doložené odchylky od předběžných hodnot: ČOV 2022→2023 −276 Kč, zámek
   2024→2025 +3 460 Kč (párování storna). Kandidát „veř.zeleň 3 000 Kč" ponechán
   v ČOV dle rozhodnutí Petra. Data necommitnuta (privacy gate).
-- [ ] **1.8 🤖 Validace dat a privacy gate** — `skripty/validace.py` ověří:
+- [x] **1.8 🤖 Validace dat a privacy gate** — `skripty/validace.py` ověří:
   privátní i veřejné součty 518 proti VZZ s tolerancí do 1 Kč; přesné roční
   součty 2022–2025; párování storen; povolené datové báze a jednotky; obyvatele;
   povinné `typ` u řízení; žádná čísla v HTML mimo datové zdroje; PII sken všech
   tracked souborů, buildu, názvů a metadat. FIN a VZZ se nekontrolují proti sobě
   jako stejný ukazatel. Skript musí skončit chybou při nevyřešeném privacy
   nálezu. **Bez projité validace se nestaví fáze 3.**
+  ✅ hotovo 22. 8. 2026 (první verze pro účet 518): `skripty/validace.py`
+  spojuje číselné kontroly (roční součty 2022–2025 přesně, 518 vs výkaz do 1 Kč,
+  public=private, návaznost rozkladu, neúplný 2026) a privacy gate (PII sken
+  všech tracked + data/ souborů, denylist odvozený z privátních extraktů, zákaz
+  originálů v repu). Výsledek: **19 PASS, 0 FAIL**. Gate rovnou odhalil a nechal
+  opravit únik čísla dokladu v poznámce PLAN.md. Kontroly obyvatel, řízení,
+  rozpočtu a HTML jsou připravené jako N/A (doplní se s úkoly 1.4–1.6 a fází 3).
+  Pozn.: číslo dokladu zůstalo v lokálním (nepushnutém) commitu b38b43f —
+  vyčistí se před prvním pushem (řeší finální gate 4.1).
 
 ## Fáze 2 — Obsah (2–3 dny, hybrid — Petr schvaluje význam i zjednodušení)
 
