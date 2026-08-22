@@ -206,7 +206,12 @@ Spouštěcí prompt:
   Deliverable: reprodukovatelný rozklad, seznam oprav a Petrovo schválení
   upravených kategorií. Jde o odpověď na „co vytvořilo rozdíl", nikoli bez
   dalších dokladů na „proč obec službu objednala".
-- [ ] **1.8 🤖 Validace dat a privacy gate** — `skripty/validace.py` ověří:
+- [x] **1.8 🤖 Validace dat a privacy gate** — ✅ hotovo 22. 8. 2026
+  (webové repo, commit `6810b80`): `skripty/validace.py`. Kontroluje součty
+  518 proti VZZ (tol. 1 Kč) a přesné roční hodnoty, zohlednění storen,
+  datové báze, PII sken všech tracked souborů + buildu + názvů. Nyní 6 PASS,
+  0 FAIL, 4 SKIP (obyvatelé, řízení, rozpočet, HTML — aktivují se s daty
+  z Macu a s webem). Privacy nález = tvrdá chyba (exit 1). Původní znění úkolu: — `skripty/validace.py` ověří:
   privátní i veřejné součty 518 proti VZZ s tolerancí do 1 Kč; přesné roční
   součty 2022–2025; párování storen; povolené datové báze a jednotky; obyvatele;
   povinné `typ` u řízení; žádná čísla v HTML mimo datové zdroje; PII sken všech
