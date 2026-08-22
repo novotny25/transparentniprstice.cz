@@ -1,0 +1,309 @@
+{
+  "zdroj": {
+    "vykaz": "Výkaz zisku a ztráty (účetní, akruální)",
+    "puvod": "MONITOR MF ČR, otevřená data",
+    "ico": "00282405",
+    "jednotka_zdroje": "tis. Kč"
+  },
+  "vygenerovano_ze_zdroje": "2026-04-30 23:34",
+  "jednotka": "haléře (celé Kč × 100)",
+  "poznamka_ceny": "Běžné ceny daného roku, bez odečtení inflace.",
+  "rady": {
+    "ucet_518": {
+      "nazev": "Účet 518 – Ostatní služby",
+      "kod_vzz": "A.I.12.",
+      "basis": "accrual_cost",
+      "titulek_web": "Vývoj účtu 518 v letech 2015–2025",
+      "hodnoty": [
+        {
+          "rok": 2015,
+          "castka_hal": 198372427
+        },
+        {
+          "rok": 2016,
+          "castka_hal": 168234920
+        },
+        {
+          "rok": 2017,
+          "castka_hal": 172740174
+        },
+        {
+          "rok": 2018,
+          "castka_hal": 187539660
+        },
+        {
+          "rok": 2019,
+          "castka_hal": 229018048
+        },
+        {
+          "rok": 2020,
+          "castka_hal": 226311383
+        },
+        {
+          "rok": 2021,
+          "castka_hal": 227522808
+        },
+        {
+          "rok": 2022,
+          "castka_hal": 291339650
+        },
+        {
+          "rok": 2023,
+          "castka_hal": 582301934
+        },
+        {
+          "rok": 2024,
+          "castka_hal": 351193808
+        },
+        {
+          "rok": 2025,
+          "castka_hal": 473307640
+        }
+      ]
+    },
+    "ucet_511": {
+      "nazev": "Účet 511 – Opravy a udržování",
+      "kod_vzz": "A.I.8.",
+      "basis": "accrual_cost",
+      "hodnoty": [
+        {
+          "rok": 2015,
+          "castka_hal": 162369500
+        },
+        {
+          "rok": 2016,
+          "castka_hal": 112644670
+        },
+        {
+          "rok": 2017,
+          "castka_hal": 137249870
+        },
+        {
+          "rok": 2018,
+          "castka_hal": 121464371
+        },
+        {
+          "rok": 2019,
+          "castka_hal": 267736022
+        },
+        {
+          "rok": 2020,
+          "castka_hal": 185309694
+        },
+        {
+          "rok": 2021,
+          "castka_hal": 401977829
+        },
+        {
+          "rok": 2022,
+          "castka_hal": 781399675
+        },
+        {
+          "rok": 2023,
+          "castka_hal": 557421731
+        },
+        {
+          "rok": 2024,
+          "castka_hal": 203468135
+        },
+        {
+          "rok": 2025,
+          "castka_hal": 309164922
+        }
+      ]
+    },
+    "naklady_celkem": {
+      "nazev": "Náklady celkem",
+      "basis": "accrual_cost",
+      "hodnoty": [
+        {
+          "rok": 2015,
+          "castka_hal": 1356767280
+        },
+        {
+          "rok": 2016,
+          "castka_hal": 1226666351
+        },
+        {
+          "rok": 2017,
+          "castka_hal": 1114160868
+        },
+        {
+          "rok": 2018,
+          "castka_hal": 1346764556
+        },
+        {
+          "rok": 2019,
+          "castka_hal": 1729038410
+        },
+        {
+          "rok": 2020,
+          "castka_hal": 1629585387
+        },
+        {
+          "rok": 2021,
+          "castka_hal": 1925282769
+        },
+        {
+          "rok": 2022,
+          "castka_hal": 2583873916
+        },
+        {
+          "rok": 2023,
+          "castka_hal": 2341881829
+        },
+        {
+          "rok": 2024,
+          "castka_hal": 1964112709
+        },
+        {
+          "rok": 2025,
+          "castka_hal": 2130060763
+        }
+      ]
+    },
+    "vynosy_celkem": {
+      "nazev": "Výnosy celkem",
+      "basis": "accrual_cost",
+      "hodnoty": [
+        {
+          "rok": 2015,
+          "castka_hal": 1262278411
+        },
+        {
+          "rok": 2016,
+          "castka_hal": 1375716097
+        },
+        {
+          "rok": 2017,
+          "castka_hal": 1613595099
+        },
+        {
+          "rok": 2018,
+          "castka_hal": 1649934685
+        },
+        {
+          "rok": 2019,
+          "castka_hal": 1787897677
+        },
+        {
+          "rok": 2020,
+          "castka_hal": 1798218355
+        },
+        {
+          "rok": 2021,
+          "castka_hal": 1911772090
+        },
+        {
+          "rok": 2022,
+          "castka_hal": 2489079686
+        },
+        {
+          "rok": 2023,
+          "castka_hal": 2517772923
+        },
+        {
+          "rok": 2024,
+          "castka_hal": 2605382330
+        },
+        {
+          "rok": 2025,
+          "castka_hal": 2562324678
+        }
+      ]
+    }
+  },
+  "klouzavy_prumer_518": {
+    "typ": "tříletý centrovaný (rok = prostřední rok okna)",
+    "hodnoty": [
+      {
+        "rok_stred": 2016,
+        "okno": [
+          2015,
+          2016,
+          2017
+        ],
+        "prumer_hal": 179782507
+      },
+      {
+        "rok_stred": 2017,
+        "okno": [
+          2016,
+          2017,
+          2018
+        ],
+        "prumer_hal": 176171585
+      },
+      {
+        "rok_stred": 2018,
+        "okno": [
+          2017,
+          2018,
+          2019
+        ],
+        "prumer_hal": 196432627
+      },
+      {
+        "rok_stred": 2019,
+        "okno": [
+          2018,
+          2019,
+          2020
+        ],
+        "prumer_hal": 214289697
+      },
+      {
+        "rok_stred": 2020,
+        "okno": [
+          2019,
+          2020,
+          2021
+        ],
+        "prumer_hal": 227617413
+      },
+      {
+        "rok_stred": 2021,
+        "okno": [
+          2020,
+          2021,
+          2022
+        ],
+        "prumer_hal": 248391280
+      },
+      {
+        "rok_stred": 2022,
+        "okno": [
+          2021,
+          2022,
+          2023
+        ],
+        "prumer_hal": 367054797
+      },
+      {
+        "rok_stred": 2023,
+        "okno": [
+          2022,
+          2023,
+          2024
+        ],
+        "prumer_hal": 408278464
+      },
+      {
+        "rok_stred": 2024,
+        "okno": [
+          2023,
+          2024,
+          2025
+        ],
+        "prumer_hal": 468934461
+      }
+    ]
+  },
+  "ukazatele_518": {
+    "zmena_2015_2025_pct": 138.6,
+    "cagr_2015_2025_pct": 9.1,
+    "prumer_2015_2017_hal": 179782507,
+    "prumer_2023_2025_hal": 468934461,
+    "zmena_prumeru_pct": 160.8
+  }
+}
