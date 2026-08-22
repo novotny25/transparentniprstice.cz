@@ -1,0 +1,1526 @@
+{
+ "meta": {
+  "obdobi": "leden–červen 2026",
+  "period_status": "incomplete",
+  "poznamka": "Neúplné období. Neprodlužuje řadu uzavřených let 2015–2025 a nesrovnává se s celým rokem. Kategorie přiřazeny pravidly podle popisu.",
+  "zdroj": "Opis deníku 518, období 1–6/2026 (OUPR-1007/2026)",
+  "baze": "accrual_cost",
+  "jednotka_castky": "haléře",
+  "celkem_kc": 2707114.51,
+  "vygenerovano": "2026-08-22 22:00"
+ },
+ "polozky": [
+  {
+   "id_zdroje": "3e6b01505aec",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 18700,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "8dac431840e5",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "8dac431840e5",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "bf9c9aeb3077",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "9b82591ae4c2",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 120600,
+   "kategorie": "Poštovné",
+   "popis_verejny": "čin.míst.spr.-poštovné",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "029340ddea4b",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "aa8ee2911a1b",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 86000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "11a97a01e115",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 726000,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "čin.míst.spr.-mapový portál",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5655f15d8e66",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1500000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "ostat.zál.kultury-promítání filmu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "3ceefea8556a",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 190000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "obecní dům-elektrorevize",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a2e378cb38a1",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 554750,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-ford Tranzit technická",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "7a02308624dd",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 3025000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "škola-výběrové řízení na opravu podlah",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "474816e6db00",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1072200,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-ford-povinné ručení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c7425619e8fd",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 759154,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "859bd4624498",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1973473,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda-kalkulační výkaz",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4c2448cd904b",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 3630000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "Poldr-manipulační řád",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "3b93d1e683c2",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 22000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-dýchací přístroj příslušenství",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5612ce946e51",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1210000,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "kontejner na oděvy",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "49ba6b4ac12c",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 200000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "kanalizace-deratizace",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fcfc1ddfdbc2",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 605000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-daňové přiznání",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "89399b8bec61",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 13500,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-ověřovací knihy",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "1c8e72c7e1cd",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1587000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "lesní hospodářství-těžba dřeva",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "08f5d1f2c85f",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 1531500,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "čin.míst.spr.-licence  M365",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fca378f6330d",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 899600,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-tech.pomoc",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "68059c3e6ba3",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 12700,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pohřebnictví-vyúčtování telefonu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "31c236385f7f",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 4150000,
+   "kategorie": "Veřejná zeleň",
+   "popis_verejny": "veř.zeleň-studie altánu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5b241f2e9439",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 544500,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-komunikátor gov",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "08af0c73503b",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 12284594,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4d260b4b3b41",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 414660,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "voda,správa,starosta,zeleň-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "05aac6985e8e",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 193290,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "správa,pošta-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4928f141b098",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 720000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace-odborný dozor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c6d35588968d",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 526000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-tech.pomoc",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "91070df351b2",
+   "ucetni_rok": 2026,
+   "mesic": 6,
+   "castka_haleru": 136300,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "čin.míst.spr.-kopírování",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a925adb8cd1b",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a925adb8cd1b",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "58407a88afc9",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 22900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "07ba06ae8a6f",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "98c3ff51c370",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 116000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c42ee9400df1",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5993a173f7f7",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 735000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "kanalizace-deratizace",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "80e79127f781",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 361790,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-školeníí Czech point",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "23992f5e86ca",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 132000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-datový trezor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "ffde96c76391",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 75680,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-elektronický podpis Kolařííková",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "beac798c608e",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 160000,
+   "kategorie": "Geometr./znalecké/KN",
+   "popis_verejny": "čin.míst.spr.-popl.Katastrálnímu úřadu za výmaz zastavených pozemků",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f00a7689f114",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 34000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-přilba SICORE a pěnidlo",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4c7713b99047",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 337348,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-technická pomoc",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "aa2781f99571",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 2070000,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek,správa,kaple,zvonička-elektrorevize",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "79dbc5709f08",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 450000,
+   "kategorie": "Geometr./znalecké/KN",
+   "popis_verejny": "poldr-znalecký posudek",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "af225f770baa",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 415804,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "voda,zeleň,správa,starosta-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "337b074d6aca",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 193290,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pošta-správa-vyúčtování telefony, internet",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b7e4c4955c23",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 4915746,
+   "kategorie": "Ostatní",
+   "popis_verejny": "práce v obecním lese",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "288b6631dcc5",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 300000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace-poradenské služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "099d6d7a33a3",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 5445000,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-právní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f930d3192fc8",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 2722500,
+   "kategorie": "GDPR / pověřenec",
+   "popis_verejny": "čin.míst.spr.-GDPR",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "bd63821c0660",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 518800,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-uložení suti",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b1c22d32c02b",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 44000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "zastupitelstv-certifikovaný podpis",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c56b4bbd5d93",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 2000000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace, odborný dozor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b272a73ba1f0",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 2722500,
+   "kategorie": "GDPR / pověřenec",
+   "popis_verejny": "čin.míst.spr.-právní služby-GDPR",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5d5189323228",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 12284594,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "37a8f0eaac59",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 125700,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "čin.míst.spr-kopírování",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "5a1ff0a76718",
+   "ucetni_rok": 2026,
+   "mesic": 5,
+   "castka_haleru": 1528714,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "cd412605578b",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fdefde77b308",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fdefde77b308",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "1bd968bcc7c9",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 59300,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b1fd8594e5df",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "69e480d432f1",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 1120000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace-odborný dozor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "1c61fcabb5dd",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 3152950,
+   "kategorie": "Ostatní",
+   "popis_verejny": "obecní knihovna-koberec",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f1af3f39742d",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 98600,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4b1b8938f33d",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": -24,
+   "kategorie": "Ostatní",
+   "popis_verejny": "předpis DPH I.Q",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "7d57a1f0e6b2",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 907500,
+   "kategorie": "Ostatní",
+   "popis_verejny": "obecní knihovna-vybavení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fba63c02d92a",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 39900,
+   "kategorie": "Ostatní",
+   "popis_verejny": "knihovna-vybavení pro děti",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "972741bb773d",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 362758,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0eb5e9fbc7c7",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 822475,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-daňový poradce",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "94238862fdbb",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 601100,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-tech.pomoc",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a1c657e240f7",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 5662800,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-právní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "362e6d51933d",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 210994,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda-kalkulační výměr",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "6349d0dc1a15",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 47000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "doplatek faktury SIAD",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "6349d0dc1a15",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 31752,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr-yeti-odtah",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f7c40a6e55eb",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 145000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-výroba klíčů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "6a8bae80e860",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 180000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-školení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "2fb121299592",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 312200,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-KEO ev.obyvatel a volby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "8f47da767114",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 3025000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-výběrové řízení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "eb71c436f95d",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 13013014,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "930124a4aff9",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 12700,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pohřebnictví-vyúčtování telefon",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "34675fa188aa",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 880000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace-tech.dozor-únor 2026",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "99b3717a8d0f",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 720000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda,kanalizace-tech.dozor březen 2026",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0a616ad6dc77",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 119900,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "čin.míst.spr.-kopírování",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "2e2c1b0f7011",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "67bfd05049a3",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "67bfd05049a3",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "df14908d3a78",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 27800,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "831f6321f54a",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "8c85114111be",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 878279,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz nebezpečného odpadu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f3cb79113289",
+   "ucetni_rok": 2026,
+   "mesic": 4,
+   "castka_haleru": 392765,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "voda,zeleň,správa,starosta-vyúčtování telefonu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "44a0dfe6bc05",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 4928000,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "tisk zpravodaje",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "cfdf875b3f44",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 75200,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "14e074b27601",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 50800,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-zádový vak, trhací hák, univerzální hasící nástroj",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "59c6fe17b01c",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 3615480,
+   "kategorie": "Ostatní",
+   "popis_verejny": "munipolis-udržovací poplatek",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a7d967624c09",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 1083918,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0cbf58b3cb66",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 3730000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "technická dokumentace k obecní nemovitosti (zámek)",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fd04a5ffd55c",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 24110460,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-úprava okolí, štukatérské práce",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b9dd9de02748",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 8900,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-záchranářský batoh",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a896c7554971",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 37900,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-vybavení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a79811a4303a",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 26600,
+   "kategorie": "Poštovné",
+   "popis_verejny": "čin.míst.spr.-poštovné",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "9dfc357237ff",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 27047372,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-opravy místnosti po potravinách",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "dffa80a796a8",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 197586,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pošta,správa-vyúčtování telefon a internet",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c641a97cbac6",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 391225,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "voda,správa,zeleň,starosta-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4fd698c97277",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 197800,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-tech.pomoc",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0fdff486e62e",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 6316200,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-právní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f620b322e53e",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 3345700,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-udržovací poplatek KEO",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "eaf271b30fdf",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 12284594,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "e604a15d5c6a",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 1667000,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-revize hasících přístrojů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "7471a785714b",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 153100,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "čin.míst.spr.-kopírování",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "ae103868853f",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 405183,
+   "kategorie": "Ostatní",
+   "popis_verejny": "rozhlas-poplatek OSA",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "72d4ead046d0",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 193600,
+   "kategorie": "Ostatní",
+   "popis_verejny": "silnice-dovoz štěrku",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "626c7eb83218",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 399300,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-šikmé letecké fotografie",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "4a0542766c61",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 98000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f3814c7bc34a",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d62c1d6abe6e",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d62c1d6abe6e",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f5c1d9a58a93",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 64900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "336997d8120b",
+   "ucetni_rok": 2026,
+   "mesic": 3,
+   "castka_haleru": 10376960,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-úklidové a pomocné práce",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "feb68b032e9c",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "997a0ddc4361",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 520300,
+   "kategorie": "Ostatní",
+   "popis_verejny": "silnice-dovoz písku na posyp",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "3a1ee10db0c1",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 8400,
+   "kategorie": "Poštovné",
+   "popis_verejny": "čin.míst.spr.-poštovné",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "e7f5c83d1c90",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 157000,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-kontrola plynového kotle",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "19e7a5074e52",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 12758067,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz odpadů",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "3dc9ac414603",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 210992,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda-laboratorní rozbor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "ca1f8e9c455e",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 150000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-školení",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0c2408f5bb9c",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 2722500,
+   "kategorie": "GDPR / pověřenec",
+   "popis_verejny": "čin.míst.spr.-GDPR",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "00e92ef7aa8b",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 130000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "SDH-přepis hasičského vozu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "fcc56beded17",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 197586,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pošta,správa-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "ddadf20ad953",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 6098400,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-právní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c48d484e652d",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 12600,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "pohřebnictví-vyúčtování telefony",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b78bd8f27096",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 21983,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda-ověření vodoměru",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "586b52281b04",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": -5000,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "poplatek za komunální odpad (dobropis)",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "9d71400e8cf0",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 139500,
+   "kategorie": "Kopírování / tisk",
+   "popis_verejny": "čin.míst.spr.-kopírování",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "8d3a88bc5ee7",
+   "ucetni_rok": 2026,
+   "mesic": 2,
+   "castka_haleru": 7695600,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-terénní úpravy v zahrádce",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "79278d8a51de",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 154500,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "1130092b31a6",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 9900,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "190fc0032d66",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 80,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "190fc0032d66",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 1000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "3b59321038f6",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 106400,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b494fe667ea8",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 391225,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "voda,správa,zeleň,starosta-vyúčtování telefony a internet",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "97670ac21210",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 25000,
+   "kategorie": "Bankovní poplatky",
+   "popis_verejny": "bankovní poplatky",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0c9dd236a170",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 435600,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-úřední deska",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a4c58831946e",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 2722500,
+   "kategorie": "GDPR / pověřenec",
+   "popis_verejny": "čin.míst.spr.-služby GDPR",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "b898a851d453",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 224000,
+   "kategorie": "Veřejná zeleň",
+   "popis_verejny": "veř.zeleň-Láhev BL",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "e6afbc716ef7",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 795050,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-daňový poradce",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "f466ff22010d",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 4233185,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "svoz biodpadu",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0b06717a23f3",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 517275,
+   "kategorie": "Ostatní",
+   "popis_verejny": "knihovna-udržovací poplatek",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "638eb7b03cec",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 6534000,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-právní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "2b30d265d371",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 4840000,
+   "kategorie": "Odpady (svoz)",
+   "popis_verejny": "kontejner na textil",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "0a667307f221",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 1173700,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-pracovní kalendáře a PF 2026",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d790212dd5f2",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 19800,
+   "kategorie": "Poštovné",
+   "popis_verejny": "voda,čin.míst.spr.-poštovné",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "c8bb7dc49cf3",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 210000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-školení-mzdy",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d07e984a6b28",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 2500000,
+   "kategorie": "Zámek (budova)",
+   "popis_verejny": "zámek-skenování budovy",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "ed19d95b05f1",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 100000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "škoda yeti-přezutí a vyvážení pneumatik",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d47549c8752c",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 24580,
+   "kategorie": "Ostatní",
+   "popis_verejny": "ost. zál.kultury-poplatek OSA",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "eb37341cc890",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 529980,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-evidence pozemků",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "45a7d8d7efd4",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 210000,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.-školení účetnictví, majetek",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "588bcf719c97",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 1280000,
+   "kategorie": "Právní služby",
+   "popis_verejny": "čin.míst.spr.-veřejnoprávní služby",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "67a6c550cca5",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 129900,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "čin.míst.spr.-zoner studio-licence",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "38d7aace099a",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 14520,
+   "kategorie": "Správa / odborné služby",
+   "popis_verejny": "čin.míst.spr.--údržba plynových přípojek",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "423a7f61bf52",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 10000,
+   "kategorie": "Telekomunikace / IT",
+   "popis_verejny": "čin.míst.spr.-dálkový přístup",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "d62f7f7bc06b",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 1760000,
+   "kategorie": "Voda/kanalizace (provoz)",
+   "popis_verejny": "voda, kanalizace-odborný dozor",
+   "baze": "accrual_cost"
+  },
+  {
+   "id_zdroje": "a4e40f21dc95",
+   "ucetni_rok": 2026,
+   "mesic": 1,
+   "castka_haleru": 714000,
+   "kategorie": "Ostatní",
+   "popis_verejny": "předpis nájmů pozemků-závazky",
+   "baze": "accrual_cost"
+  }
+ ]
+}
