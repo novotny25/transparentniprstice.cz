@@ -178,7 +178,14 @@ Spouštěcí prompt:
   dataset i web říkají „seznam nemusí být úplný". Samostatně sestavit
   `data/zadosti-106.json` ze všech složek žádostí; stav řízení a původ informace
   jsou dvě různá pole. Petr schválí finální seznam.
-- [ ] **1.7 🤖 Oprava kategorií, storen a rozklad změn 518** — vytvořit
+- [x] **1.7 🤖 Oprava kategorií, storen a rozklad změn 518** — ✅ hotovo 22. 8. 2026
+  (webové repo, commit `15f6d12`): `skripty/rozklad_518.py`,
+  `data/ucet-518-rozklad.json`, `data/rozklad-518-metodika.md`. Rozklad
+  2022→2023, 2023→2024, 2024→2025 po tématech. Opravy schválené Petrem:
+  pojištění budov samostatně, doprava kontejnerů v odpadech, právní 52 272
+  ze Správy k právním, storna k opravovaným tématům, storno 309 366 → ČOV.
+  Kontrolní hodnoty sedí na haléř (celky, ČOV, právní, GDPR, jeřáb, sondy ZŠ).
+  Původní znění úkolu: — vytvořit
   verzovaná pravidla kategorizace, přiřadit storna k původním zápisům a opravit
   zjevná chybná zařazení. Zvlášť zkontrolovat všechny řádky, které tvoří alespoň
   5 % meziročního rozdílu. Vygenerovat `data/ucet-518-rozklad.json` pro změny
