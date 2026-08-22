@@ -113,13 +113,22 @@ Spouštěcí prompt:
   Soukromá zóna `~/Developer/transparentniprstice-private/` s `README.md`,
   `manifest-originalu.yml` (7 originálů, SHA-256) a složkami `extrakty/`,
   `qa-reporty/`. Originály zůstávají v PACTu, mimo web repo.
-- [ ] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — vytáhnout
+- [x] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — vytáhnout
   1 335 účetních zápisů z `Detail_uctu_518_Prstice.html` (ř. 160) nejprve jen
   do soukromé zóny. Skript pak deterministicky vytvoří
   `data/ucet-518-polozky-public.json` a `.csv` podle úkolu 1.0; veřejné HTML se
   nikdy nestaví z originálního pole `p`. Částky ukládat jako celé haléře, datum
   dokladu oddělit od účetního roku. Deliverable: privátní extrakt, veřejné
   deriváty a soukromý report všech odstranění a nerozhodnutých kandidátů.
+  ✅ hotovo 22. 8. 2026: skript `skripty/extrakce_518.py` (ověřuje SHA-256 zdroje)
+  vytvořil privátní extrakt 1335 zápisů v soukromé zóně a veřejné deriváty
+  `data/ucet-518-polozky-public.json`/`.csv` (6 polí, částky v haléřích, měsíc
+  oddělen od účetního roku). Čísla dokladů v popisech odstraněna automaticky;
+  16 popisů s adresou/jménem podrženo a nahrazeno čistým popisem z privátní mapy
+  `popisy-schvalene.yml`. Soukromý report v `qa-reporty/report-518-1.1.md`.
+  Kontrolní součty po letech sedí (Δ2022→23 +2 909 623, Δ2024→25 +1 221 138 Kč);
+  celkem 2022–2025 = 16 981 430,32 Kč. Veřejné JSON/CSV zatím **necommitnuté** —
+  čekají na privacy gate (2.5/1.8) a Petrův sign-off.
 - [ ] **1.2 🤖 Roční řady a ukazatele vývoje** — z
   `audit-prstice-rozvaha-vzz-dashboard.html` (`<script id="audit-data">`,
   ř. ~168) vytáhnout řady 2015–2025: účet 518, účet 511 a náklady/výnosy celkem
