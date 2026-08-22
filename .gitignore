@@ -64,3 +64,4 @@ audit-prstice-rozvaha-vzz*
 **/__pycache__/
 **/.venv/
 **/node_modules/
+**/popisy-zasahy*

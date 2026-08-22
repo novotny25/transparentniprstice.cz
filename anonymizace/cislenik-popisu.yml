@@ -1,9 +1,11 @@
 # ══════════════════════════════════════════════════════════════════════
-#  ŘÍZENÝ ČÍSELNÍK VEŘEJNÝCH POPISŮ — účet 518
+#  ANALYTICKÁ TÉMATA PRO ROZKLAD ZMĚN — účet 518
 #
-#  Každý účetní zápis dostane veřejné označení z tohoto seznamu. Původní
-#  volný popis se do veřejných dat NIKDY nepřenáší — nahrazuje se textem
-#  z pole `oznaceni`.
+#  POZOR: tenhle číselník NENÍ náhradou veřejného popisu. Veřejný popis
+#  zápisu je původní text obce (viz popisy-zasahy.yml pro výjimky). Kódy
+#  níže slouží jen k SESKUPENÍ zápisů do témat, aby šlo spočítat, co
+#  tvořilo meziroční rozdíl (úkol 1.7). Ve veřejných datech položek se
+#  kód nezobrazuje.
 #
 #  Jak se kód přiřadí: skript projde kódy shora dolů a přiřadí první,
 #  jehož klíčové slovo je obsaženo v původním popisu (po odstranění

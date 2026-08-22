@@ -84,8 +84,16 @@ schema_ucetni_zapis:
     - nazev: popis_verejny
       typ: string
       popis: >
-        Označení z řízeného číselníku cislenik-popisu.yml. NIKDY se sem
-        nekopíruje původní volný text z pole `p` zdrojového souboru.
+        Původní popis obce, zachovaný beze změny. Výjimkou jsou popisy
+        vypsané v popisy-zasahy.yml (osobní údaj nebo číslo dokladu),
+        kde se zobrazí kontrolovaná náhrada.
+
+    - nazev: anonymizovano
+      typ: boolean
+      popis: >
+        true u zápisů, kde byl z popisu odstraněn osobní údaj (popis nese
+        viditelnou značku „osobní údaj odstraněn"). false u zachovaných
+        i u zápisů, kde se odstranilo jen číslo dokladu.
 
     - nazev: zdroj_id
       typ: string
@@ -139,11 +147,16 @@ schema_ucetni_zapis:
 # ──────────────────────────────────────────────────────────────────────
 cislenik_popisu:
   princip: >
-    Původní popis se nečistí — nahrazuje se. Každý z původních popisů se
-    přiřadí ke kódu z uzavřeného číselníku. Do veřejného souboru se zapíše
-    pouze označení navázané na kód. Text, který se nepodařilo přiřadit,
-    se NEPUBLIKUJE ve své původní podobě: dostane obecné označení podle
-    kategorie a objeví se v kontrolním reportu k rozhodnutí.
+    Původní popis obce se ZACHOVÁVÁ (rozhodnutí Petra, 22. 8. 2026). Mění se
+    jen tam, kde obsahuje osobní údaj (jméno fyzické osoby, adresu domácnosti,
+    čp./če., parcelu) nebo číslo dokladu. Seznam všech zásahů je v
+    anonymizace/popisy-zasahy.yml a je úplný — co tam není, jde na web
+    v původním znění. Přejmenovávat čistý popis by bylo zbytečným zásahem
+    do surových dat obce a snižovalo by důvěryhodnost.
+  analyticka_temata: >
+    Číselník kódů v anonymizace/cislenik-popisu.yml NENÍ náhradou popisu.
+    Slouží jen k seskupení zápisů do témat pro rozklad meziročních změn
+    (úkol 1.7); ve veřejných datech položek se kód nezobrazuje.
 
   soubory:
     verejny: "anonymizace/cislenik-popisu.yml — kód → veřejné označení (bez osobních údajů)"
@@ -211,6 +224,7 @@ detekce:
       Jediné velké písmeno uvnitř věty, které NENÍ kandidátem na jméno —
       protože jde o veřejnou instituci nebo obecně známý pojem, ne o osobu.
     seznam:
+      # obce, instituce, úřady
       - "Prštice"
       - "Silůvky"
       - "ČOV"
@@ -220,7 +234,83 @@ detekce:
       - "ÚOHS"
       - "GDPR"
       - "Česká pošta"
-      - "Pošta Partner"
+      - "Pošta"
+      - "Partner"
+      - "Parlamentu"
+      - "Evropského"
+      - "Krajských"
+      - "Volby"
+      - "PČR"
+      - "EO"
+      - "KN"
+      - "ČÚZK"
+      - "ČHMÚ"
+      - "OSA"
+      - "BOZP"
+      - "DTI"
+      - "VZ"
+      - "EP"
+      - "Biocentrum"
+      # software, značky, produkty (ne jména osob)
+      - "Microsoft"
+      - "Apps"
+      - "Business"
+      - "KEO"
+      - "KEO4"
+      - "Munipolis"
+      - "Zoner"
+      - "Tritius"
+      - "Trinitus"
+      - "Karcher"
+      - "Heater"
+      - "Spisová"
+      - "MZDY"
+      - "Znal"
+      # vozidla obce (značky/modely)
+      - "Ford"
+      - "Tranzit"
+      - "Tatra"
+      - "Tatru"
+      - "Gazelle"
+      - "Škoda"
+      - "Škodu"
+      - "Yeti"
+      - "Yati"
+      - "Stiga"
+      - "Vari"
+      - "Tera"
+      - "Vares"
+      - "Zetor"
+      # obecní zařízení / začátky vět
+      - "Voda"
+      - "VaK"
+      - "VO"
+      - "Klub"
+      # místní názvy (ulice/lokality) — samotný název domácnost neidentifikuje;
+      # popisy s číslem domu jsou ošetřené v popisy-zasahy.yml
+      - "Jánská"
+      - "Kelendrov"
+      - "Mezírka"
+      - "Za"
+      # běžné zkratky (nikoli jména osob)
+      - "OÚ"
+      - "PC"
+      - "PHM"
+      - "STK"
+      - "TP"
+      - "HP"
+      - "PB"
+      - "BS"
+      - "KS"
+      - "LED"
+      - "M365"
+      - "PD"
+      - "PF"
+      - "PS"
+      - "RDS"
+      - "ČR"
+      - "Obec"
+      - "Oprava"
 
 # ──────────────────────────────────────────────────────────────────────
 # 5) PDF dokumenty (P-8b) — platí až pro úkol 2.5 na Petrově Macu

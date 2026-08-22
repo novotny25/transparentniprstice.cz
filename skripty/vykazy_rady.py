@@ -10,7 +10,9 @@ vytáhne řady výkazu zisku a ztráty 2015–2025:
   - náklady celkem, výnosy celkem  — kontext
 
 Zdroj je v tis. Kč; výstup je v celých haléřích a nese jednotku i bázi.
-Pro účet 518 dopočítá tříletý klouzavý průměr, změnu 2015→2025 a CAGR.
+Pro účet 518 dopočítá změnu 2015→2025 a CAGR (odvozené z ročních hodnot,
+každá ověřitelná výpočtem). Klouzavý průměr se NEuvádí — na grafu vývoje
+518 musí být jen přesné roční hodnoty odpovídající veřejnému výkazu.
 Vše se počítá znovu ze zdroje — žádné předem zvolené hodnoty.
 
 Výstup: data/vykazy-rady.json (veřejný — agregát z veřejného výkazu, bez PII).
@@ -72,14 +74,6 @@ def main():
     if roky != list(range(2015, 2026)):
         sys.exit(f"Neočekávaný rozsah let účtu 518: {roky}")
 
-    # tříletý klouzavý průměr — centrovaný (rok = prostřední rok okna)
-    klouzavy = []
-    for y in roky:
-        if y - 1 in r518 and y + 1 in r518:
-            okno = [y - 1, y, y + 1]
-            prumer = round(sum(r518[k] for k in okno) / 3)
-            klouzavy.append({"rok_stred": y, "okno": okno, "prumer_hal": prumer})
-
     zmena_pct = (r518[2025] - r518[2015]) / r518[2015] * 100
     cagr_pct = ((r518[2025] / r518[2015]) ** (1 / (2025 - 2015)) - 1) * 100
     avg_prvni = sum(r518[y] for y in (2015, 2016, 2017)) / 3
@@ -117,10 +111,6 @@ def main():
                 "basis": "accrual_cost",
                 "hodnoty": serie(rvyn),
             },
-        },
-        "klouzavy_prumer_518": {
-            "typ": "tříletý centrovaný (rok = prostřední rok okna)",
-            "hodnoty": klouzavy,
         },
         "ukazatele_518": {
             "zmena_2015_2025_pct": round(zmena_pct, 1),
