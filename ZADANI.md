@@ -97,8 +97,10 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
    Součástí je jednoduché rozlišení, kolik z výdajů se **opakuje každý rok**
    (běžný chod obce) a kolik tvoří **jednorázové položky** daného roku
    (investice a nepravidelné služby) — viz P-33.
-3. **Účet 518** — vysvětlení pro laika, roční hodnoty 2015–2025 a tříletý
-   klouzavý průměr. Účetní detail začíná rokem 2022. Web ukazuje „co vytvořilo
+3. **Účet 518** — vysvětlení pro laika a roční hodnoty 2015–2025. Graf
+   vývoje ukazuje **přesné roční hodnoty na haléř** odpovídající veřejnému
+   výkazu; klouzavý průměr se neuvádí, aby nešlo zapochybovat o přesnosti
+   čísel (revize 22. 8. 2026 na pokyn Petra). Účetní detail začíná rokem 2022. Web ukazuje „co vytvořilo
    meziroční rozdíl" podle autorských kategorií, nikoli bez důkazů „proč obec
    službu objednala". Částky jsou označeny jako běžné ceny bez odečtení inflace.
    Neúplný rok 2026 je zobrazen samostatně.
@@ -155,10 +157,14 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   účetní exporty nebo neanonymizované dokumenty. Originály zůstávají mimo
   repozitář; veřejné JSON, CSV, HTML a PDF jsou nově vytvořené sanitizované
   deriváty. Toto pravidlo platí i pro metadata, názvy souborů a historii gitu.
-- **P-8a:** Veřejný účetní dataset používá předem schválený seznam polí. Volný
-  původní popis se standardně nezveřejňuje; vznikne z něj kontrolované veřejné
-  označení bez jmen, adres a čp./če. Ponechané jméno fyzické osoby musí být
-  výslovně uvedeno v publikačním allowlistu s důvodem.
+- **P-8a:** Veřejný účetní dataset používá předem schválený seznam polí.
+  **Revize 22. 8. 2026 (pokyn Petra):** původní účetní popis obce se
+  ZACHOVÁVÁ; anonymizuje se jen tam, kde obsahuje osobní údaj (jméno fyzické
+  osoby, adresu domácnosti, čp./če., parcelu) nebo číslo dokladu. Přejmenovávat
+  čistý obecní popis by bylo zbytečným zásahem do surových dat a snižovalo by
+  důvěryhodnost. Úplný seznam zásahů je v soukromé zóně a schvaluje ho Petr;
+  veřejný souhrn zásahů (bez původních textů) je v repozitáři. Ponechané jméno
+  fyzické osoby musí být výslovně uvedeno v publikačním allowlistu s důvodem.
 - **P-8b:** Sanitizované soubory a PDF vyrábí lokální skript. U PDF se redakce
   neřeší pouhým překrytím textu: veřejná verze vznikne vypálením začernění,
   odstraněním původních vrstev, metadat, příloh a formulářů a novým OCR až nad

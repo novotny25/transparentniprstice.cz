@@ -113,13 +113,15 @@ Spouštěcí prompt:
   a jméno fyzické osoby se zveřejní jen po výslovném schválení v allowlistu.
   Deliverable: schválené schéma, pravidla a privátní manifest s SHA-256 originálů.
   **Blokuje všechny veřejné exporty.**
-- [x] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — ✅ hotovo 21. 8. 2026
-  (webové repo, commit `2a78ea7`): `skripty/extrakce_518.py`,
-  `anonymizace/cislenik-popisu.yml` (61 kódů), `data/ucet-518-polozky-public.json`
-  + `.csv`, `data/zdroje.json`. Roční součty sedí na VZZ do haléře; GDPR
-  272 250 Kč, jeřáb 846 491,80 Kč a právní služby 2 094 182 Kč souhlasí se
-  zadáním; PII sken veřejných dat čistý. Privátní extrakt + mapování + report
-  v soukromé zóně mimo git. Původní znění úkolu: — vytáhnout
+- [x] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — ✅ hotovo 21. 8. 2026,
+  revize 22. 8. (webové repo, commit `79155cd`): `skripty/extrakce_518.py`,
+  `data/ucet-518-polozky-public.json` + `.csv`, `data/zdroje.json`.
+  **Revize na pokyn Petra:** původní popisy obce se ZACHOVÁVAJÍ; anonymizuje
+  se jen 27 z 1335 zápisů (osobní údaj / číslo dokladu) podle schváleného
+  `popisy-zasahy.yml` (soukromá zóna). Číselník `cislenik-popisu.yml` je nyní
+  jen analytická vrstva pro rozklad (1.7), ne náhrada popisu; veřejný souhrn
+  zásahů v `anonymizace/anonymizace-souhrn.md`. Roční součty sedí na VZZ do
+  haléře; ve veřejných datech žádné jméno ani adresa domácnosti. Původní znění úkolu: — vytáhnout
   1 335 účetních zápisů z `Detail_uctu_518_Prstice.html` (ř. 160) nejprve jen
   do soukromé zóny. Skript pak deterministicky vytvoří
   `data/ucet-518-polozky-public.json` a `.csv` podle úkolu 1.0; veřejné HTML se
@@ -128,15 +130,16 @@ Spouštěcí prompt:
   deriváty a soukromý report všech odstranění a nerozhodnutých kandidátů.
 - [x] **1.2 🤖 Roční řady a ukazatele vývoje** — ✅ hotovo 21. 8. 2026
   (webové repo, commit `33f153d`): `skripty/vykazy_rady.py`,
-  `data/vykazy-rady.json` (řady 518, 511, náklady a výnosy celkem 2015–2025;
-  tříletý centrovaný klouzavý průměr 2016–2024). Vše přepočítáno ze zdroje;
+  `data/vykazy-rady.json` (řady 518, 511, náklady a výnosy celkem 2015–2025).
+  Klouzavý průměr na pokyn Petra vypuštěn — graf 518 ukazuje jen přesné roční
+  hodnoty na haléř. Vše přepočítáno ze zdroje;
   řada 518 sedí na součty detailu z 1.1 na haléř; změna +138,6 %, CAGR 9,1 %,
   tříleté průměry 1,80 → 4,69 mil (+160,8 %) — souhlasí se zadáním.
   Původní znění úkolu: — z
   `audit-prstice-rozvaha-vzz-dashboard.html` (`<script id="audit-data">`,
   ř. ~168) vytáhnout řady 2015–2025: účet 518, účet 511 a náklady/výnosy celkem
   → `data/vykazy-rady.json`. Zdroj je v tis. Kč; výstup je v celých Kč a nese
-  jednotku. Pro účet 518 vypočítat tříletý klouzavý průměr, změnu 2015→2025
+  jednotku. Pro účet 518 vypočítat změnu 2015→2025
   a průměrné roční tempo (CAGR). Současná kontrolní hodnota: 2015→2025
   nominálně +138,6 %, CAGR 9,1 %; tříletý průměr 2015–2017 činí 1,80 mil. Kč
   a 2023–2025 4,69 mil. Kč (+160,8 %). AI vše znovu přepočítá ze zdroje;
@@ -215,9 +218,10 @@ Spouštěcí prompt:
   > Proto se oba součty nemusí rovnat a na webu je nesčítáme.
   Deliverable: `web/obsah/*.md` k Petrově revizi.
 - [ ] **2.2 🤝 Příběh účtu 518 a úplný rozklad změn** — z úkolu 1.7 připravit
-  jednu čáru 2015–2025, nenápadný tříletý klouzavý průměr a jednoduchý graf
-  „Co vytvořilo meziroční rozdíl". Roční hodnoty zůstávají viditelné; klouzavý
-  průměr je pouze pomůcka, nesmí je nahrazovat. Text výslovně řekne, že vývoj
+  jednu čáru 2015–2025 s **přesnými ročními hodnotami na haléř** (revize
+  22. 8. 2026: klouzavý průměr se neuvádí, aby čísla přesně odpovídala
+  veřejnému výkazu) a jednoduchý graf
+  „Co vytvořilo meziroční rozdíl". Text výslovně řekne, že vývoj
   není nepřetržitý: vrchol 2023, pokles 2024, opětovný růst 2025. Pro 2023
   zobrazit všechny hlavní příspěvky, nejen tři Petrem vybraná témata; pro 2025
   totéž po přiřazení storen. Vedle grafu krátce uvést „Co z deníku nevíme".
