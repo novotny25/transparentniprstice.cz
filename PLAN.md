@@ -221,7 +221,10 @@ Spouštěcí prompt:
 
 ## Fáze 2 — Obsah (2–3 dny, hybrid — Petr schvaluje význam i zjednodušení)
 
-- [ ] **2.1 🤖 Texty přehledu a slovníček** — AI napíše úvod, „rozpočet
+- [ ] **2.1 🤖 Texty přehledu a slovníček** — 🟡 rozpracováno 22. 8. 2026:
+  hotov mini-slovníček (`web/obsah/slovnicek.md`) a vysvětlení účtu 518
+  (`web/obsah/ucet-518-vysvetleni.md`). Úvod a „rozpočet v kostce" čekají
+  na rozpočtová data (1.4, Mac). Návrhy k Petrově revizi. — AI napíše úvod, „rozpočet
   v kostce", vysvětlení účtu 518 pro laika a mini-slovníček. Jazyk: běžná
   čeština, krátké věty, žádný účetní žargon bez vysvětlení. Povinné jednoduché
   vysvětlení rozdílu:
@@ -229,7 +232,10 @@ Spouštěcí prompt:
   > kdy byl zaúčtován náklad na službu; platba může proběhnout v jiném období.
   > Proto se oba součty nemusí rovnat a na webu je nesčítáme.
   Deliverable: `web/obsah/*.md` k Petrově revizi.
-- [ ] **2.2 🤝 Příběh účtu 518 a úplný rozklad změn** — z úkolu 1.7 připravit
+- [ ] **2.2 🤝 Příběh účtu 518 a úplný rozklad změn** — 🟡 návrh hotový
+  22. 8. 2026 (`web/obsah/pribeh-518.md`): tři pohyby, hlavní příspěvky obou
+  růstových období, jeřáb není příčinou skoku, „co z deníku nevíme". Čeká na
+  Petrovu revizi. — z úkolu 1.7 připravit
   jednu čáru 2015–2025 s **přesnými ročními hodnotami na haléř** (revize
   22. 8. 2026: klouzavý průměr se neuvádí, aby čísla přesně odpovídala
   veřejnému výkazu) a jednoduchý graf
@@ -258,7 +264,10 @@ Spouštěcí prompt:
     Mezi účetními roky 2022 a 2023 tato skupina klesla o 56 773,20 Kč, proto
     se nepoužije jako vysvětlení skoku účtu 518.
   Deliverable: schválené texty tří témat.
-- [ ] **2.4 🤖 Chronologie občanské datové analýzy jako data** —
+- [ ] **2.4 🤖 Chronologie občanské datové analýzy jako data** — 🟡 návrh
+  hotový 22. 8. 2026 (`data/chronologie.json`, 11 kroků). Bez osobních údajů;
+  odkazy na sanitizovaná PDF se doplní z Macu (2.5). Petr doplní/potvrdí
+  přesnou posloupnost žádostí (souvisí s 1.6). —
   `data/chronologie.json`: datum, titulek, věcný popis, č. j., původ informace
   a odkaz na veřejný sanitizovaný dokument. Vychází z kontrolního dokumentu
   lhůt a všech složek od prvního sběru zdrojů 30. 4. 2026 po aktuální stav.
