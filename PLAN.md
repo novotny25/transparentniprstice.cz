@@ -126,7 +126,13 @@ Spouštěcí prompt:
   nikdy nestaví z originálního pole `p`. Částky ukládat jako celé haléře, datum
   dokladu oddělit od účetního roku. Deliverable: privátní extrakt, veřejné
   deriváty a soukromý report všech odstranění a nerozhodnutých kandidátů.
-- [ ] **1.2 🤖 Roční řady a ukazatele vývoje** — z
+- [x] **1.2 🤖 Roční řady a ukazatele vývoje** — ✅ hotovo 21. 8. 2026
+  (webové repo, commit `33f153d`): `skripty/vykazy_rady.py`,
+  `data/vykazy-rady.json` (řady 518, 511, náklady a výnosy celkem 2015–2025;
+  tříletý centrovaný klouzavý průměr 2016–2024). Vše přepočítáno ze zdroje;
+  řada 518 sedí na součty detailu z 1.1 na haléř; změna +138,6 %, CAGR 9,1 %,
+  tříleté průměry 1,80 → 4,69 mil (+160,8 %) — souhlasí se zadáním.
+  Původní znění úkolu: — z
   `audit-prstice-rozvaha-vzz-dashboard.html` (`<script id="audit-data">`,
   ř. ~168) vytáhnout řady 2015–2025: účet 518, účet 511 a náklady/výnosy celkem
   → `data/vykazy-rady.json`. Zdroj je v tis. Kč; výstup je v celých Kč a nese
