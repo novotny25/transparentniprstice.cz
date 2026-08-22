@@ -171,9 +171,16 @@ Spouštěcí prompt:
   `basis: accrual_cost`; jejich součty se navzájem nekontrolují jako stejný údaj.
   Deliverable: příjmy a výdaje po agendách a letech. Záložní cesta je ruční
   export z profilu obce v MONITORu.
-- [ ] **1.5 🤖 Počty obyvatel z ČSÚ** — stáhnout počet obyvatel Prštic
+- [x] **1.5 🤖 Počty obyvatel z ČSÚ** — stáhnout počet obyvatel Prštic
   k 1. 1. každého roku 2015–2026 → `data/obyvatele.json` se zdrojem a datem.
   Deliverable: soubor pro přepínač „Kč na obyvatele" a kontrolní tabulka.
+  ✅ hotovo 22. 8. 2026: skript `skripty/extrakce_obyvatele.py` z ověřené ČSÚ
+  open-data (Databáze demografických údajů za obce ČR, cz0643.xlsx, sloupec
+  „Stav 1.1.") vytvořil `data/obyvatele.json` — Prštice 2015–2025 (931 → 997).
+  Pozor na integritu: oficiální 2021 = **969** (bilance po revizi sčítáním),
+  ne 985 z agregátorů ani 959 ze sčítání. Rok **2026 zatím není** v konzistentní
+  databázi (poslední stav k 1.1.2025) — doplní se, až ČSÚ vydá. `validace.py`
+  obyvatele kontroluje (22 PASS). Zdrojový XLSX v soukromé zóně/zdroje.
 - [ ] **1.6 🤝 Soudní a správní řízení a tracker žádostí jako data** — sestavit
   `data/rizeni.json`. Každý záznam má `typ: soudni | spravni`, instituci,
   spisovou značku, období, předmět, procesní roli obce, iniciátora, stav,

@@ -100,6 +100,19 @@ if p26:
 else:
     NA("2026", "data/ucet-518-2026H1-public.json zatím neexistuje")
 
+# obyvatelé (úkol 1.5)
+oby = load(os.path.join(DATA, "obyvatele.json"))
+if oby:
+    vals = oby.get("obyvatele", {})
+    have = all(str(r) in vals for r in range(2015, 2026))
+    (OK if have else FAIL)("obyvatele/roky", "2015–2025 přítomny" if have else "chybí roky 2015–2025")
+    pos = vals and all(isinstance(v, int) and v > 0 for v in vals.values())
+    (OK if pos else FAIL)("obyvatele/hodnoty", "kladné celé počty" if pos else "neplatné hodnoty")
+    src = bool(oby.get("meta", {}).get("zdroj"))
+    (OK if src else FAIL)("obyvatele/zdroj", "uveden zdroj + referenční datum" if src else "chybí zdroj")
+else:
+    NA("obyvatele", "data/obyvatele.json zatím neexistuje (úkol 1.5)")
+
 # FIN a VZZ se nekontrolují proti sobě jako stejný ukazatel (strukturální připomínka)
 OK("báze/oddělení", "účet 518 = accrual_cost; rozpočet FIN = cash_budget; nesčítají se")
 
@@ -169,8 +182,7 @@ else:
 # ==========================================================================
 # C. PŘIPRAVENÉ KONTROLY (zatím N/A)
 # ==========================================================================
-for soubor, popis in [("obyvatele.json", "počty obyvatel (úkol 1.5)"),
-                      ("rizeni.json", "soudní/správní řízení + povinné pole typ (úkol 1.6)"),
+for soubor, popis in [("rizeni.json", "soudní/správní řízení + povinné pole typ (úkol 1.6)"),
                       ("rozpocet.json", "rozpočet FIN 2-12 M, báze cash_budget (úkol 1.4)")]:
     if load(os.path.join(DATA, soubor)) is None:
         NA("data", f"{soubor} — {popis}")

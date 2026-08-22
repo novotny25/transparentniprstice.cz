@@ -1,0 +1,27 @@
+{
+ "meta": {
+  "obec": "Prštice",
+  "kod_obce": "583707",
+  "okres": "Brno-venkov",
+  "ukazatel": "počet obyvatel, stav k 1.1.",
+  "zdroj": "Český statistický úřad — Databáze demografických údajů za obce ČR",
+  "zdroj_url": "https://csu.gov.cz/databaze-demografickych-udaju-za-obce-cr",
+  "referencni_datum": "k 1.1.",
+  "poznamka": "Oficiální bilance ČSÚ (po revizi sčítáním 2021, proto 2021 = 969, nikoli 985 z některých agregátorů ani 959 ze sčítání). Rok 2026 zatím není v konzistentní databázi (poslední stav k 1.1.2025).",
+  "staženo": "2026-08-22",
+  "vygenerovano": "2026-08-22 22:27"
+ },
+ "obyvatele": {
+  "2015": 931,
+  "2016": 938,
+  "2017": 951,
+  "2018": 955,
+  "2019": 974,
+  "2020": 971,
+  "2021": 969,
+  "2022": 978,
+  "2023": 982,
+  "2024": 981,
+  "2025": 997
+ }
+}
