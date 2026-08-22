@@ -145,11 +145,17 @@ Spouštěcí prompt:
   CAGR 9,1 %, tříletý průměr 1,80→4,69 mil. (+160,8 %) — vše PASS proti
   kontrolním hodnotám. Křížová kontrola: součty deníku 518 (2022–2025) = VZZ
   na 0,00 Kč. Data zatím necommitnuta (privacy gate).
-- [ ] **1.3 🤝 Doplnění deníku 518 za 1–6/2026** — Petr ukáže soubor
+- [x] **1.3 🤝 Doplnění deníku 518 za 1–6/2026** — Petr ukáže soubor
   OUPR-1007/2026; AI jej zpracuje stejnou soukromou/veřejnou pipeline.
   Výstup nese `period_status: incomplete` a popisek „leden–červen 2026".
   Neprodlužuje hlavní řadu uzavřených let a nesrovnává se s celým rokem 2025.
   **Detail roku 2021 se nezískává.**
+  ✅ hotovo 22. 8. 2026: skript `skripty/extrakce_518_2026.py` vytáhl z PDF
+  (OUPR-1007/2026) 168 zápisů, součet 2 707 114,51 Kč = kontrolní CELKEM.
+  Veřejný `data/ucet-518-2026H1-public.json` (period_status: incomplete,
+  „leden–červen 2026"). Kategorie přiřazeny pravidly podle popisu (zdroj je
+  neobsahuje; schválil Petr). 2 popisy s adresou/jménem podrženy a nahrazeny
+  čistým popisem z privátní mapy. Data necommitnuta (privacy gate).
 - [ ] **1.4 🤖 Rozpočtová data z MONITORu** — stáhnout FIN 2-12 M pro IČO
   00282405, roky 2019–2025; napojit číselníky paragrafů na česká jména agend
   → `data/rozpocet.json`. Uložit skutečné příjmy, skutečné výdaje, saldo a
