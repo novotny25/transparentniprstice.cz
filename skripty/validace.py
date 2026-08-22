@@ -113,6 +113,22 @@ if oby:
 else:
     NA("obyvatele", "data/obyvatele.json zatím neexistuje (úkol 1.5)")
 
+# rozpočet FIN (úkol 1.4, zatím PŘEDBĚŽNÉ)
+rozp = load(os.path.join(DATA, "rozpocet.json"))
+if rozp:
+    basis = rozp.get("meta", {}).get("basis")
+    (OK if basis == "cash_budget" else FAIL)("rozpočet/báze",
+        "basis=cash_budget (nesčítá se s 518)" if basis == "cash_budget" else f"nečekaná báze: {basis}")
+    # součet paragrafů = výdaje celkem (za každý dostupný rok)
+    for rok, d in rozp.get("roky", {}).items():
+        s = round(sum(p["skutecnost_kc"] for p in d.get("vydaje_po_paragrafech", {}).values()), 2)
+        good = abs(s - d.get("vydaje_celkem_kc", 0)) <= 0.05
+        (OK if good else FAIL)("rozpočet/paragrafy", f"{rok}: součet paragrafů = výdaje celkem" if good else f"{rok}: nesedí")
+    if rozp.get("meta", {}).get("stav") == "incomplete":
+        WARN("rozpočet/stav", f"PŘEDBĚŽNÉ — chybí roky {rozp['meta'].get('chybi_roky')}, P-33 odložena (MONITOR)")
+else:
+    NA("rozpočet", "data/rozpocet.json zatím neexistuje (úkol 1.4)")
+
 # FIN a VZZ se nekontrolují proti sobě jako stejný ukazatel (strukturální připomínka)
 OK("báze/oddělení", "účet 518 = accrual_cost; rozpočet FIN = cash_budget; nesčítají se")
 
@@ -182,8 +198,7 @@ else:
 # ==========================================================================
 # C. PŘIPRAVENÉ KONTROLY (zatím N/A)
 # ==========================================================================
-for soubor, popis in [("rizeni.json", "soudní/správní řízení + povinné pole typ (úkol 1.6)"),
-                      ("rozpocet.json", "rozpočet FIN 2-12 M, báze cash_budget (úkol 1.4)")]:
+for soubor, popis in [("rizeni.json", "soudní/správní řízení + povinné pole typ (úkol 1.6)")]:
     if load(os.path.join(DATA, soubor)) is None:
         NA("data", f"{soubor} — {popis}")
 if not os.path.isdir(os.path.join(WEB_ROOT, "web")) or not any(
