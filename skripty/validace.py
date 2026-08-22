@@ -137,7 +137,7 @@ if riz:
     (OK if typ_ok else FAIL)("řízení/typ", "každý záznam má povinné typ soudni|spravni" if typ_ok else "chybí/špatný typ")
     uohs_soud = [r for r in recs if "ÚOHS" in r.get("instituce", "") and r.get("typ") == "soudni"]
     (FAIL if uohs_soud else OK)("řízení/ÚOHS", "ÚOHS není označen jako soud" if not uohs_soud else "ÚOHS chybně jako soudni!")
-    WARN("řízení/stav", "DRAFT — správní část ÚOHS k ověření, soudní část čeká na odpověď obce")
+    WARN("řízení/stav", "správní část ÚOHS ověřená; soudní část čeká na odpověď obce (fáze 6)")
 else:
     NA("řízení", "data/rizeni.json zatím neexistuje (úkol 1.6)")
 

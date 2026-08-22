@@ -4,57 +4,69 @@
   "obec": "Prštice",
   "ico": "00282405",
   "stav_ke_dni": "2026-08-22",
-  "upozorneni": "Seznam nemusí být úplný. SOUDNÍ část se doplní až podle odpovědi obce na žádost z 15. 8. 2026 (řízení od 1. 1. 2018). SPRÁVNÍ část (ÚOHS) je zatím DRAFT — předmět, výsledek a právní moc u jednotlivých spisových značek je nutné ověřit přímo z rozhodnutí ÚOHS.",
+  "upozorneni": "Seznam nemusí být úplný. SOUDNÍ část se doplní až podle odpovědi obce na žádost z 15. 8. 2026 (řízení od 1. 1. 2018). SPRÁVNÍ část (ÚOHS) je ověřená z veřejné Sbírky rozhodnutí ÚOHS ke dni 22. 8. 2026.",
   "schvaluje": "Petr Novotný (finální seznam)",
   "pravidlo": "typ = soudni | spravni je povinné. ÚOHS je správní orgán a NIKDY se neoznačuje jako soud. Souhrnné počty se pro obě části nemíchají.",
-  "lead_k_overeni": "Veřejná rešerše naznačuje, že jeden z případů ÚOHS se týká neuveřejnění smlouvy o úvěru s Komerční bankou (uzavřena 20. 12. 2023) a byla uložena pokuta 4 000 Kč dle § 269 odst. 3 písm. a) zák. 134/2016 Sb. Přiřazení ke konkrétní spisové značce je nutné ověřit z rozhodnutí."
+  "spravni_souhrn": "Tři pravomocná rozhodnutí ÚOHS z let 2023–2025, všechna formou příkazu za neuveřejnění smlouvy nebo dodatku na profilu zadavatele podle § 269 odst. 2 zák. 134/2016 Sb. Pokuty celkem 11 000 Kč. Dvě se týkají oprav střechy zámku, jedno smlouvy o úvěru. Řízení zahájil ÚOHS z moci úřední na základě podnětu."
  },
  "rizeni": [
   {
    "typ": "spravni",
    "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
    "spisova_znacka": "S0589/2023/VZ",
+   "cislo_jednaci": "36464/2023/500",
+   "datum_vydani": "2023-09-25",
    "obdobi": "2023",
-   "predmet": "k ověření z rozhodnutí ÚOHS",
-   "role_obce": "zadavatel veřejné zakázky",
-   "iniciator": "k ověření",
-   "stav": "k ověření",
-   "vysledek": "k ověření",
-   "pravni_moc": "k ověření",
-   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
-   "datum_overeni": null
+   "predmet": "Stavební úpravy střechy – oprava havarijního stavu věže, krovu a střešního pláště jihovýchodního křídla budovy zámku v Pršticích",
+   "role_obce": "zadavatel veřejné zakázky (obviněný z přestupku)",
+   "iniciator": "ÚOHS z moci úřední, na základě podnětu obdrženého 17. 8. 2023",
+   "prestupek": "Neuveřejnění dodatku č. 3 ke smlouvě na profilu zadavatele (§ 219 odst. 1), přestupek podle § 269 odst. 2 zák. 134/2016 Sb.",
+   "stav": "pravomocně rozhodnuto",
+   "vysledek": "pokuta 3 000 Kč (forma příkazu)",
+   "pokuta_kc": 3000,
+   "pravni_moc": "2023-10-04",
+   "zdroj": "Sbírka rozhodnutí ÚOHS, detail-19255 (uohs.gov.cz)",
+   "datum_overeni": "2026-08-22"
   },
   {
    "typ": "spravni",
    "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
    "spisova_znacka": "S1089/2024/VZ",
+   "cislo_jednaci": "48878/2024/500",
+   "datum_vydani": "2024-12-17",
    "obdobi": "2024",
-   "predmet": "k ověření z rozhodnutí ÚOHS",
-   "role_obce": "zadavatel veřejné zakázky",
-   "iniciator": "k ověření",
-   "stav": "k ověření",
-   "vysledek": "k ověření",
-   "pravni_moc": "k ověření",
-   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
-   "datum_overeni": null
+   "predmet": "Oprava havarijního stavu krovu a střešního pláště, JZ a SZ křídlo budovy zámku v Pršticích – Půda č. 2",
+   "role_obce": "zadavatel veřejné zakázky (obviněný z přestupku)",
+   "iniciator": "ÚOHS z moci úřední, na základě podnětu obdrženého 23. 8. 2024",
+   "prestupek": "Neuveřejnění uzavřené smlouvy o dílo na profilu zadavatele v zákonné lhůtě 30 dnů (smlouva měla být uveřejněna do 5. 4. 2023, uveřejněna až 26. 9. 2023); přestupek podle § 269 odst. 2 zák. 134/2016 Sb.",
+   "stav": "pravomocně rozhodnuto",
+   "vysledek": "pokuta 4 000 Kč (forma příkazu)",
+   "pokuta_kc": 4000,
+   "pravni_moc": "2024-12-28",
+   "zdroj": "Sbírka rozhodnutí ÚOHS, detail-22511 (uohs.gov.cz)",
+   "datum_overeni": "2026-08-22"
   },
   {
    "typ": "spravni",
    "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
    "spisova_znacka": "S0071/2025/VZ",
+   "cislo_jednaci": "04451/2025/500",
+   "datum_vydani": "2025-02-05",
    "obdobi": "2025",
-   "predmet": "k ověření z rozhodnutí ÚOHS (možná neuveřejnění smlouvy o úvěru — viz lead_k_overeni)",
-   "role_obce": "zadavatel veřejné zakázky",
-   "iniciator": "k ověření",
-   "stav": "k ověření",
-   "vysledek": "k ověření",
-   "pravni_moc": "k ověření",
-   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
-   "datum_overeni": null
+   "predmet": "Smlouva o úvěru reg. č. 99044048284 uzavřená s Komerční bankou, a.s.",
+   "role_obce": "zadavatel veřejné zakázky (obviněný z přestupku)",
+   "iniciator": "ÚOHS z moci úřední, na základě podnětu obdrženého 19. 8. 2024",
+   "prestupek": "Neuveřejnění smlouvy na profilu zadavatele v zákonné lhůtě 30 dnů (smlouva uzavřena 20. 12. 2023, měla být uveřejněna do 19. 1. 2024, uveřejněna až 14. 11. 2024); přestupek podle § 269 odst. 2 zák. 134/2016 Sb.",
+   "stav": "pravomocně rozhodnuto",
+   "vysledek": "pokuta 4 000 Kč (forma příkazu)",
+   "pokuta_kc": 4000,
+   "pravni_moc": "2025-02-14",
+   "zdroj": "Sbírka rozhodnutí ÚOHS, detail-22625 (uohs.gov.cz)",
+   "datum_overeni": "2026-08-22"
   }
  ],
  "soudni_rizeni": {
   "stav": "čeká se na odpověď obce",
-  "poznamka": "Žádost o přehled soudních řízení od 1. 1. 2018 podána 15. 8. 2026. Do obdržení odpovědi zůstává tato část prázdná a web uvádí, že seznam nemusí být úplný."
+  "poznamka": "Žádost o přehled soudních řízení od 1. 1. 2018 podána 15. 8. 2026. Do obdržení odpovědi zůstává tato část prázdná a web uvádí, že seznam nemusí být úplný. Doplnění řeší fáze 6 plánu."
  }
 }
