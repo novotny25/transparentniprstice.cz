@@ -178,7 +178,7 @@ Spouštěcí prompt:
   dataset i web říkají „seznam nemusí být úplný". Samostatně sestavit
   `data/zadosti-106.json` ze všech složek žádostí; stav řízení a původ informace
   jsou dvě různá pole. Petr schválí finální seznam.
-- [ ] **1.7 🤖 Oprava kategorií, storen a rozklad změn 518** — vytvořit
+- [x] **1.7 🤖 Oprava kategorií, storen a rozklad změn 518** — vytvořit
   verzovaná pravidla kategorizace, přiřadit storna k původním zápisům a opravit
   zjevná chybná zařazení. Zvlášť zkontrolovat všechny řádky, které tvoří alespoň
   5 % meziročního rozdílu. Vygenerovat `data/ucet-518-rozklad.json` pro změny
@@ -199,6 +199,15 @@ Spouštěcí prompt:
   Deliverable: reprodukovatelný rozklad, seznam oprav a Petrovo schválení
   upravených kategorií. Jde o odpověď na „co vytvořilo rozdíl", nikoli bez
   dalších dokladů na „proč obec službu objednala".
+  ✅ hotovo 22. 8. 2026: skript `skripty/rozklad_518.py` + privátní verzovaná
+  pravidla `kategorie-opravy.yml` (schválil Petr). Opravy: 1 přeřazení
+  (52 272 Kč právní zápis Správa→Právní, doklad 23-001-00303) + párování storen
+  k původnímu dokladu. Výstup `data/ucet-518-rozklad.json`. Všech 11 tvrdých
+  kontrol PASS (celkové změny, zámek, odpady, právní 2 094 182, GDPR 272 250,
+  jeřáb −56 773,20, střecha+atika 788 099,85, sondy ZŠ 117 333,70). Dvě drobné
+  doložené odchylky od předběžných hodnot: ČOV 2022→2023 −276 Kč, zámek
+  2024→2025 +3 460 Kč (párování storna). Kandidát „veř.zeleň 3 000 Kč" ponechán
+  v ČOV dle rozhodnutí Petra. Data necommitnuta (privacy gate).
 - [ ] **1.8 🤖 Validace dat a privacy gate** — `skripty/validace.py` ověří:
   privátní i veřejné součty 518 proti VZZ s tolerancí do 1 Kč; přesné roční
   součty 2022–2025; párování storen; povolené datové báze a jednotky; obyvatele;
