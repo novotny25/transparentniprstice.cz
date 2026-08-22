@@ -1,0 +1,106 @@
+# Pravidla anonymizace a veřejné datové schéma — Transparentní Prštice
+# Verze: 1.0 (2026-08-22) · k PLAN.md úkol 1.0 · ZADANI P-8, P-8a, P-8b, P-8c
+#
+# ÚČEL: definuje, která pole účetních dat jsou veřejná, jak se z originálu
+#       odvozují a jak se ve volných textech detekují a odstraňují osobní údaje.
+#
+# TENTO SOUBOR NESMÍ obsahovat žádnou soukromou hodnotu (jméno, adresu,
+# číslo dokladu, původní popis). Obsahuje jen pravidla, ne data.
+
+meta:
+  projekt: transparentniprstice.cz
+  verze_pravidel: "1.0"
+  datum: "2026-08-22"
+  vztah_k_zadani: [P-8, P-8a, P-8b, P-8c]
+  vychozi_politika: "vše citlivé je soukromé, dokud to allowlist výslovně nepovolí"
+
+# ---------------------------------------------------------------------------
+# 1. Zdrojová (soukromá) pole účetního deníku 518
+#    Pole tak, jak přicházejí z originálu Detail_uctu_518_Prstice.html
+#    (JavaScriptové pole `const DATA = [...]`).
+# ---------------------------------------------------------------------------
+zdrojova_pole_518:
+  y:   { popis: "účetní rok",                       typ: int }
+  dt:  { popis: "datum dokladu DD.MM.RRRR",         typ: date,  citlivost: soukrome }
+  doc: { popis: "interní číslo dokladu",            typ: str,   citlivost: soukrome }
+  net: { popis: "čistá částka Kč (Má dáti − Dal)",  typ: float }
+  c:   { popis: "kategorie přiřazená autorem",      typ: str }
+  p:   { popis: "původní volný popis (často jméno/adresa)", typ: str, citlivost: soukrome }
+
+# ---------------------------------------------------------------------------
+# 2. Veřejné schéma účetního zápisu (výstup do data/ucet-518-polozky-public.json)
+#    JEN tato pole smějí být ve veřejném exportu. Nic jiného z originálu.
+# ---------------------------------------------------------------------------
+verejne_schema_zapisu:
+  ucetni_rok:    { zdroj: y,   popis: "účetní rok" }
+  mesic:         { zdroj: dt,  popis: "měsíc dokladu 1–12", odvozeni: "měsíc z dt; přesný den jen přes allowlist" }
+  castka_haleru: { zdroj: net, popis: "částka v celých haléřích", odvozeni: "round(net * 100)" }
+  kategorie:     { zdroj: c,   popis: "opravená kategorie (verzované pravidlo kategorizace, úkol 1.7)" }
+  popis_verejny: { zdroj: p,   popis: "kontrolovaný veřejný popis bez osobních údajů", odvozeni: "viz sekce 5" }
+  id_zdroje:     { zdroj: doc, popis: "stabilní pseudonymní ID zápisu", odvozeni: "sha256(doc)[:12]; nezveřejňuje číslo dokladu, umožní párovat storna" }
+  baze:          { hodnota: "accrual_cost", popis: "akruální náklad — nesčítá se s rozpočtem" }
+
+# ---------------------------------------------------------------------------
+# 3. Pole zveřejnitelná JEN přes allowlist (P-8a)
+#    Výchozí stav: NEZVEŘEJŇOVAT. Výjimku povoluje verejna-allowlist.yml.
+# ---------------------------------------------------------------------------
+pouze_pres_allowlist:
+  - presny_den          # celé datum dt
+  - cislo_dokladu       # doc v původním znění
+  - puvodni_popis       # p v původním znění
+  - jmeno_fyzicke_osoby # jméno a příjmení fyzické osoby
+
+# ---------------------------------------------------------------------------
+# 4. Detekce osobních údajů ve volném textu (p)
+#    Nálezy jsou KANDIDÁTI na odstranění; o ponechání rozhoduje allowlist.
+#    Regexy jsou orientační — implementuje je skript v úkolu 2.5, tady je
+#    fixujeme jako závazný seznam kategorií, které se musí hledat.
+# ---------------------------------------------------------------------------
+detekce_pii:
+  adresa_cp_ce:
+    popis:  "číslo popisné/evidenční = adresa nemovitosti (např. čp. + číslo)"
+    regex:  'č\.?\s?p\.?\s?\d+|č\.?\s?e\.?\s?\d+'
+    akce:   odstranit
+  ulice_s_cislem:
+    popis:  "název ulice s číslem (např. «ulice» čp. «číslo»)"
+    metoda: "seznam ulic obce + číslo; kandidát k odstranění"
+    akce:   odstranit
+  jmeno_osoby:
+    popis:  "jméno a příjmení fyzické osoby (Novák Jan / Jan Novák)"
+    metoda: "NER + ruční kontrola v kontaktním listu; ponechání jen přes allowlist"
+    akce:   odstranit
+  rodne_cislo:    { regex: '\b\d{6}\/?\d{3,4}\b',                 akce: odstranit }
+  cislo_uctu_iban:{ regex: '\b\d{1,6}-?\d{2,10}\/\d{4}\b|\bCZ\d{2}[\s\d]{10,}', akce: odstranit }
+  telefon:        { regex: '(\+?420)?\s?\d{3}\s?\d{3}\s?\d{3}\b', akce: odstranit }
+  email:          { regex: '[\w.+-]+@[\w.-]+\.\w{2,}',           akce: odstranit }
+  datum_narozeni: { popis: "datum narození ve formátu data",     akce: odstranit }
+
+# ---------------------------------------------------------------------------
+# 5. Odvození veřejného popisu z p
+# ---------------------------------------------------------------------------
+popis_verejny:
+  princip: >
+    Veřejný popis vzniká z původního p (a) odstraněním všech osobních údajů
+    podle sekce 4 a (b) převedením na věcné obecné označení účelu. Původní p
+    se NIKDY nezveřejňuje přímo. Konkrétní mapování všech 508 unikátních popisů
+    vzniká v úkolu 1.1/1.7 a schválené veřejné popisy se zapisují do
+    verejna-allowlist.yml (sekce schvalene_verejne_popisy).
+  priklady_prevodu:            # ilustrace principu, ne závazná data
+    - vzor: "adresa + přípojka"       -> "vodovodní přípojka"
+    - vzor: "jméno + popl. za odpad"  -> "poplatek za komunální odpad"
+
+# ---------------------------------------------------------------------------
+# 6. Transformace částek, dat a storen
+# ---------------------------------------------------------------------------
+transformace:
+  castka: "ukládat v celých haléřích (round(net*100)); na webu zobrazit v Kč"
+  datum:  "veřejně jen měsíc a rok; přesný den pouze přes allowlist"
+  storno: "storna se párují k původním zápisům (úkol 1.7); znaménko částky zůstává"
+
+# ---------------------------------------------------------------------------
+# 7. Datové báze — nesměšovat (ZADANI, CLAUDE.md)
+# ---------------------------------------------------------------------------
+datove_baze:
+  ucet_518:     accrual_cost    # akruální náklad
+  rozpocet_fin: cash_budget     # peněžní rozpočet FIN 2-12 M
+  pravidlo: "součty různých bází se nikdy nesčítají ani nekontrolují jako stejný údaj"

@@ -4,7 +4,7 @@ Web transparentniprstice.cz: srozumitelná a doložitelná občanská datová an
 hospodaření obce Prštice. Provozovatel: Petr Novotný, občan Prštic — osobní
 občanský projekt, neutrální datový tón. Projekt není audit.
 
-**Závazné zadání je v `ZADANI.md` v1.4.** Prováděcí kopie je v `PLAN.md` v1.4;
+**Závazné zadání je v `ZADANI.md` v1.5.** Prováděcí kopie je v `PLAN.md` v1.5;
 autorský originál obou dokumentů leží v PACT workspace:
 `0_Projects/4_PRŠTICE/2026_08_21 TransparentniPrstice.cz/`.
 

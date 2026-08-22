@@ -98,7 +98,7 @@ Spouštěcí prompt:
 > Zásada: nejdřív bezpečná a ověřená data, pak design. Soukromé originály
 > nikdy nevstupují do veřejného repozitáře.
 
-- [ ] **1.0 🤝 Veřejné datové schéma a soukromá zóna** — Petr určí soukromou
+- [x] **1.0 🤝 Veřejné datové schéma a soukromá zóna** — Petr určí soukromou
   složku mimo webový repozitář. AI připraví `anonymizace/pravidla.yml` a
   `anonymizace/verejna-allowlist.yml`. Výchozí veřejná pole účetního zápisu:
   účetní rok, měsíc, částka v haléřích, opravená kategorie, kontrolovaný veřejný
@@ -106,6 +106,13 @@ Spouštěcí prompt:
   a jméno fyzické osoby se zveřejní jen po výslovném schválení v allowlistu.
   Deliverable: schválené schéma, pravidla a privátní manifest s SHA-256 originálů.
   **Blokuje všechny veřejné exporty.**
+  ✅ hotovo 22. 8. 2026: schéma schválil Petr (6 veřejných polí: rok, měsíc,
+  částka v haléřích, opravená kategorie, veřejný popis, ID). Pravidla v
+  `anonymizace/pravidla.yml` a `anonymizace/verejna-allowlist.yml`
+  (deny-default, prázdný allowlist; ověřen výskyt jmen/adres v poli `p`).
+  Soukromá zóna `~/Developer/transparentniprstice-private/` s `README.md`,
+  `manifest-originalu.yml` (7 originálů, SHA-256) a složkami `extrakty/`,
+  `qa-reporty/`. Originály zůstávají v PACTu, mimo web repo.
 - [ ] **1.1 🤖 Soukromá extrakce a veřejný export účtu 518** — vytáhnout
   1 335 účetních zápisů z `Detail_uctu_518_Prstice.html` (ř. 160) nejprve jen
   do soukromé zóny. Skript pak deterministicky vytvoří

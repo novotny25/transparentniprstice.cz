@@ -1,0 +1,50 @@
+# Publikační allowlist — Transparentní Prštice
+# Verze: 1.0 (2026-08-22) · k PLAN.md úkol 1.0 · ZADANI P-8a
+#
+# VÝCHOZÍ STAV = ZAKÁZÁNO VŠE CITLIVÉ.
+# Cokoli ze seznamu `pouze_pres_allowlist` v pravidla.yml (přesný den,
+# číslo dokladu, původní popis, jméno fyzické osoby) se zveřejní JEN tehdy,
+# je-li zde výslovně uvedeno s důvodem a s Petrovým schválením.
+#
+# Prázdný seznam = nic z dané kategorie se nezveřejňuje.
+# Tento soubor NESMÍ obsahovat soukromé QA reporty.
+
+meta:
+  verze: "1.0"
+  datum: "2026-08-22"
+  vychozi_politika: deny        # vše citlivé zakázáno, dokud není níže povoleno
+
+# ---------------------------------------------------------------------------
+# Jména fyzických osob povolená ke zveřejnění
+# Prázdné = žádné jméno se nezveřejňuje. Každá výjimka musí mít důvod,
+# kdo schválil a datum. (Pozor: soukromé osoby chráníme přísněji než
+# veřejné funkcionáře — ZADANI §9.)
+# ---------------------------------------------------------------------------
+povolena_jmena: []
+  # PŘÍKLAD (neaktivní, jen ukázka formátu):
+  # - hodnota: "Jan Novák"
+  #   duvod:   "statutární zástupce dodavatele, veřejně dohledatelné v registru"
+  #   schvalil: "Petr Novotný"
+  #   datum:    "2026-08-22"
+
+# ---------------------------------------------------------------------------
+# Přesná data dokladu (celé datum) povolená ke zveřejnění
+# ---------------------------------------------------------------------------
+povolene_presne_dny: []
+
+# ---------------------------------------------------------------------------
+# Původní čísla dokladů povolená ke zveřejnění
+# ---------------------------------------------------------------------------
+povolena_cisla_dokladu: []
+
+# ---------------------------------------------------------------------------
+# Schválené veřejné popisy (kontrolované mapování z původního p)
+# Naplňuje se v úkolu 1.1 / 1.7: každý řádek = věcné veřejné označení bez
+# osobních údajů. Do schválení zůstává prázdné a export se nesmí spustit
+# s nezmapovaným popisem.
+# ---------------------------------------------------------------------------
+schvalene_verejne_popisy: []
+  # PŘÍKLAD (neaktivní, jen ukázka formátu):
+  # - verejny:          "vodovodní přípojka"
+  #   pokryva_kategorii: "Voda/kanalizace (provoz)"
+  #   schvalil:          "Petr Novotný"
