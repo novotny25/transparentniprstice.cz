@@ -129,6 +129,25 @@ if rozp:
 else:
     NA("rozpočet", "data/rozpocet.json zatím neexistuje (úkol 1.4)")
 
+# řízení + tracker žádostí (úkol 1.6, zatím DRAFT)
+riz = load(os.path.join(DATA, "rizeni.json"))
+if riz:
+    recs = riz.get("rizeni", [])
+    typ_ok = recs and all(r.get("typ") in ("soudni", "spravni") for r in recs)
+    (OK if typ_ok else FAIL)("řízení/typ", "každý záznam má povinné typ soudni|spravni" if typ_ok else "chybí/špatný typ")
+    uohs_soud = [r for r in recs if "ÚOHS" in r.get("instituce", "") and r.get("typ") == "soudni"]
+    (FAIL if uohs_soud else OK)("řízení/ÚOHS", "ÚOHS není označen jako soud" if not uohs_soud else "ÚOHS chybně jako soudni!")
+    WARN("řízení/stav", "DRAFT — správní část ÚOHS k ověření, soudní část čeká na odpověď obce")
+else:
+    NA("řízení", "data/rizeni.json zatím neexistuje (úkol 1.6)")
+
+zad = load(os.path.join(DATA, "zadosti-106.json"))
+if zad:
+    ok_z = all(z.get("datum_podani") and z.get("predmet") and z.get("stav") for z in zad.get("zadosti", []))
+    (OK if ok_z else FAIL)("žádosti/pole", "každá žádost má datum, předmět a stav" if ok_z else "chybí povinné pole")
+else:
+    NA("žádosti", "data/zadosti-106.json zatím neexistuje (úkol 1.6)")
+
 # FIN a VZZ se nekontrolují proti sobě jako stejný ukazatel (strukturální připomínka)
 OK("báze/oddělení", "účet 518 = accrual_cost; rozpočet FIN = cash_budget; nesčítají se")
 
@@ -198,9 +217,6 @@ else:
 # ==========================================================================
 # C. PŘIPRAVENÉ KONTROLY (zatím N/A)
 # ==========================================================================
-for soubor, popis in [("rizeni.json", "soudní/správní řízení + povinné pole typ (úkol 1.6)")]:
-    if load(os.path.join(DATA, soubor)) is None:
-        NA("data", f"{soubor} — {popis}")
 if not os.path.isdir(os.path.join(WEB_ROOT, "web")) or not any(
         f.endswith(".html") for f in os.listdir(os.path.join(WEB_ROOT, "web")) if os.path.isfile(os.path.join(WEB_ROOT, "web", f))):
     NA("web", "HTML zatím neexistuje — kontrola 'žádná čísla mimo datové zdroje' (fáze 3)")

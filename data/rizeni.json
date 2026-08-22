@@ -1,0 +1,60 @@
+{
+ "meta": {
+  "nazev": "Soudní a správní řízení",
+  "obec": "Prštice",
+  "ico": "00282405",
+  "stav_ke_dni": "2026-08-22",
+  "upozorneni": "Seznam nemusí být úplný. SOUDNÍ část se doplní až podle odpovědi obce na žádost z 15. 8. 2026 (řízení od 1. 1. 2018). SPRÁVNÍ část (ÚOHS) je zatím DRAFT — předmět, výsledek a právní moc u jednotlivých spisových značek je nutné ověřit přímo z rozhodnutí ÚOHS.",
+  "schvaluje": "Petr Novotný (finální seznam)",
+  "pravidlo": "typ = soudni | spravni je povinné. ÚOHS je správní orgán a NIKDY se neoznačuje jako soud. Souhrnné počty se pro obě části nemíchají.",
+  "lead_k_overeni": "Veřejná rešerše naznačuje, že jeden z případů ÚOHS se týká neuveřejnění smlouvy o úvěru s Komerční bankou (uzavřena 20. 12. 2023) a byla uložena pokuta 4 000 Kč dle § 269 odst. 3 písm. a) zák. 134/2016 Sb. Přiřazení ke konkrétní spisové značce je nutné ověřit z rozhodnutí."
+ },
+ "rizeni": [
+  {
+   "typ": "spravni",
+   "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
+   "spisova_znacka": "S0589/2023/VZ",
+   "obdobi": "2023",
+   "predmet": "k ověření z rozhodnutí ÚOHS",
+   "role_obce": "zadavatel veřejné zakázky",
+   "iniciator": "k ověření",
+   "stav": "k ověření",
+   "vysledek": "k ověření",
+   "pravni_moc": "k ověření",
+   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
+   "datum_overeni": null
+  },
+  {
+   "typ": "spravni",
+   "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
+   "spisova_znacka": "S1089/2024/VZ",
+   "obdobi": "2024",
+   "predmet": "k ověření z rozhodnutí ÚOHS",
+   "role_obce": "zadavatel veřejné zakázky",
+   "iniciator": "k ověření",
+   "stav": "k ověření",
+   "vysledek": "k ověření",
+   "pravni_moc": "k ověření",
+   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
+   "datum_overeni": null
+  },
+  {
+   "typ": "spravni",
+   "instituce": "Úřad pro ochranu hospodářské soutěže (ÚOHS)",
+   "spisova_znacka": "S0071/2025/VZ",
+   "obdobi": "2025",
+   "predmet": "k ověření z rozhodnutí ÚOHS (možná neuveřejnění smlouvy o úvěru — viz lead_k_overeni)",
+   "role_obce": "zadavatel veřejné zakázky",
+   "iniciator": "k ověření",
+   "stav": "k ověření",
+   "vysledek": "k ověření",
+   "pravni_moc": "k ověření",
+   "zdroj": "Sbírka rozhodnutí ÚOHS (uohs.gov.cz)",
+   "datum_overeni": null
+  }
+ ],
+ "soudni_rizeni": {
+  "stav": "čeká se na odpověď obce",
+  "poznamka": "Žádost o přehled soudních řízení od 1. 1. 2018 podána 15. 8. 2026. Do obdržení odpovědi zůstává tato část prázdná a web uvádí, že seznam nemusí být úplný."
+ }
+}

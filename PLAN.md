@@ -200,6 +200,14 @@ Spouštěcí prompt:
   dataset i web říkají „seznam nemusí být úplný". Samostatně sestavit
   `data/zadosti-106.json` ze všech složek žádostí; stav řízení a původ informace
   jsou dvě různá pole. Petr schválí finální seznam.
+  🔶 ROZPRACOVÁNO 22. 8. 2026: `data/zadosti-106.json` — tracker 8 žádostí
+  z lokálních složek (datum, předmět, č. j., stav, počet dní), hotové k revizi.
+  `data/rizeni.json` — DRAFT: tři správní řízení ÚOHS (S0589/2023, S1089/2024,
+  S0071/2025) s povinným `typ: spravni` a rolí obce; předmět/výsledek/právní moc
+  je nutné OVĚŘIT z rozhodnutí ÚOHS (rešerše zatím jen naznačila případ
+  neuveřejnění smlouvy o úvěru s KB, pokuta 4 000 Kč). **Soudní část čeká na
+  odpověď obce** (žádost 15. 8. 2026). `validace.py` hlídá povinné `typ`
+  a že ÚOHS není soud. Úkol zůstává otevřený (ÚOHS ověřit + Petrovo schválení).
 - [x] **1.7 🤖 Oprava kategorií, storen a rozklad změn 518** — vytvořit
   verzovaná pravidla kategorizace, přiřadit storna k původním zápisům a opravit
   zjevná chybná zařazení. Zvlášť zkontrolovat všechny řádky, které tvoří alespoň

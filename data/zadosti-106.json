@@ -1,0 +1,110 @@
+{
+ "meta": {
+  "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
+  "obec": "Prštice",
+  "ico": "00282405",
+  "stav_ke_dni": "2026-08-22",
+  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží (u KrÚ JMK do 27. 8. 2026) a odpověď obce na žádost o soudní řízení z 15. 8. 2026 se čeká.",
+  "poznamka_pole": "„stav\" = stav vyřízení žádosti; „puvod_informace\" = jak byla informace získána — dvě různá pole.",
+  "schvaluje": "Petr Novotný (finální seznam)",
+  "zdroj": "Vlastní žádosti žadatele a kontrolní dokument lhůt (15. 8. 2026)"
+ },
+ "zadosti": [
+  {
+   "datum_podani": "2026-06-04",
+   "predmet": "Rozpis nákladů účtu 518 (dodavatel, předmět plnění, datum zdanitelného plnění, částka) za 2022–2025 ve strojově čitelném formátu",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace",
+   "stav": "částečně poskytnuto",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 79,
+   "zdroj": "složka 2026_06_04_zadost_106_prstice",
+   "poznamka": "Obec poskytla účetní detail 518 bez údajů o dodavatelích."
+  },
+  {
+   "datum_podani": "2026-06-23",
+   "predmet": "Obecní zpravodaje (podklady/rozbor témat)",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace",
+   "stav": "k ověření",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 60,
+   "zdroj": "složka 2026_06_23 Zpravodaje obce Prštice",
+   "poznamka": "Stav vyřízení doplní Petr."
+  },
+  {
+   "datum_podani": "2026-07-01",
+   "predmet": "Detail smluv k položkám účtu 518",
+   "adresat": "Obec Prštice",
+   "cj": "SP/088/2026",
+   "typ_podani": "žádost o informace",
+   "stav": "neposkytnuto",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 52,
+   "zdroj": "složka 2026_07_01 Žádost o detail smluv na účtu 518; kontrola lhůt",
+   "poznamka": "17. 7. obec doručila jen slovní sdělení č. j. OUPR-867-2026, ne dokumenty → podána stížnost."
+  },
+  {
+   "datum_podani": "2026-07-17",
+   "predmet": "Stížnost podle § 16a InfZ na postup obce (k žádosti SP/088/2026)",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "stížnost § 16a",
+   "stav": "stížnost — lhůta marně uplynula",
+   "puvod_informace": "vlastní podání",
+   "pocet_dni_od_podani": 36,
+   "zdroj": "složka 2026_07_17 Stížnost 16a a nová žádost 518; kontrola lhůt",
+   "poznamka": "Stížnost doručena obci 20. 7.; sedmidenní lhůta § 16a odst. 5 marně uplynula 27. 7. 2026."
+  },
+  {
+   "datum_podani": "2026-07-17",
+   "predmet": "Opis deníku účtu 518 za 1.–30. 6. 2026",
+   "adresat": "Obec Prštice",
+   "cj": "OUPR-1007/2026",
+   "typ_podani": "žádost o informace",
+   "stav": "poskytnuto",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 36,
+   "zdroj": "složka 2026_07_17 / 2026_08_03; OUPR-1007/2026",
+   "poznamka": "Obec poskytla 3. 8. 2026 opis deníku 518 za leden–červen 2026."
+  },
+  {
+   "datum_podani": "2026-07-28",
+   "predmet": "Žádost o opatření proti nečinnosti obce",
+   "adresat": "Krajský úřad Jihomoravského kraje",
+   "cj": null,
+   "typ_podani": "žádost o opatření proti nečinnosti (§ 80 SŘ)",
+   "stav": "u kraje",
+   "puvod_informace": "vlastní podání",
+   "pocet_dni_od_podani": 25,
+   "zdroj": "složka 2026_07_28 Opatření proti nečinnosti KrÚ JMK; kontrola lhůt",
+   "poznamka": "Doručeno KrÚ 28. 7. 2026; 30denní lhůta pro rozhodnutí uplyne 27. 8. 2026."
+  },
+  {
+   "datum_podani": "2026-08-15",
+   "predmet": "GDPR pověřenec — rámcová smlouva, měsíční paušál a rozsah plnění",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace (opakovaná)",
+   "stav": "podáno",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 7,
+   "zdroj": "složka 2026_08_15 Opakovaná žádost o informace - GDPR",
+   "poznamka": "Cílem je doložit měsíční cenu a rozsah služby pověřence."
+  },
+  {
+   "datum_podani": "2026-08-15",
+   "predmet": "Přehled soudních řízení, v nichž byla obec účastníkem, od 1. 1. 2018",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace",
+   "stav": "podáno — odpověď se čeká",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 7,
+   "zdroj": "složka 2026_08_15 Žádost o informace soudní procesy",
+   "poznamka": "Do obdržení odpovědi je přehled soudních řízení nutně neúplný."
+  }
+ ]
+}
