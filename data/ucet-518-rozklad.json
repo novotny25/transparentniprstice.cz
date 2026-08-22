@@ -1,0 +1,655 @@
+{
+  "zdroj_id": "detail-518-2022-2025",
+  "jednotka": "haléře (celé Kč × 100)",
+  "poznamka": "Rozklad odpovídá na otázku, co tvoří meziroční rozdíl, nikoli bez dalších dokladů, proč obec službu objednala. Běžné ceny, bez odečtení inflace.",
+  "zasady_prirazeni": [
+    "Storna a opravy jsou přiřazeny k tématu opravovaného dokladu.",
+    "Storno 2025 −309 366 Kč patří k ČOV (autorské rozhodnutí).",
+    "Pojištění obecních budov je samostatné téma, ne součást zámku.",
+    "Doprava kontejnerů zůstává v odpadech."
+  ],
+  "rocni_soucty_hal": {
+    "2022": 291339650,
+    "2023": 582301934,
+    "2024": 351193808,
+    "2025": 473307640
+  },
+  "jerab_hal": {
+    "2022": 45163250,
+    "2023": 39485930,
+    "2024": 0,
+    "2025": 0
+  },
+  "rozklady": [
+    {
+      "z_roku": 2022,
+      "do_roku": 2023,
+      "celkova_zmena_hal": 290962284,
+      "prispevky": [
+        {
+          "tema": "ČOV / převzatá odpadní voda",
+          "hodnota_pred_hal": 22358270,
+          "hodnota_po_hal": 160201091,
+          "zmena_hal": 137842821,
+          "podil_na_zmene_pct": 47.4
+        },
+        {
+          "tema": "Zámek – opravy a údržba budovy",
+          "hodnota_pred_hal": 63774494,
+          "hodnota_po_hal": 128051715,
+          "zmena_hal": 64277221,
+          "podil_na_zmene_pct": 22.1
+        },
+        {
+          "tema": "Odpady",
+          "hodnota_pred_hal": 111522458,
+          "hodnota_po_hal": 155157075,
+          "zmena_hal": 43634617,
+          "podil_na_zmene_pct": 15.0
+        },
+        {
+          "tema": "Právní služby",
+          "hodnota_pred_hal": 29224400,
+          "hodnota_po_hal": 58322400,
+          "zmena_hal": 29098000,
+          "podil_na_zmene_pct": 10.0
+        },
+        {
+          "tema": "Veřejná zeleň",
+          "hodnota_pred_hal": 6349966,
+          "hodnota_po_hal": 223500,
+          "zmena_hal": -6126466,
+          "podil_na_zmene_pct": -2.1
+        },
+        {
+          "tema": "Vodovod a kanalizace (provoz)",
+          "hodnota_pred_hal": 16429469,
+          "hodnota_po_hal": 22213550,
+          "zmena_hal": 5784081,
+          "podil_na_zmene_pct": 2.0
+        },
+        {
+          "tema": "Obecní zpravodaj",
+          "hodnota_pred_hal": 3520000,
+          "hodnota_po_hal": 8250000,
+          "zmena_hal": 4730000,
+          "podil_na_zmene_pct": 1.6
+        },
+        {
+          "tema": "Notářské služby",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 3016880,
+          "zmena_hal": 3016880,
+          "podil_na_zmene_pct": 1.0
+        },
+        {
+          "tema": "Ostatní",
+          "hodnota_pred_hal": 2023100,
+          "hodnota_po_hal": 4778544,
+          "zmena_hal": 2755444,
+          "podil_na_zmene_pct": 0.9
+        },
+        {
+          "tema": "Správa a IT",
+          "hodnota_pred_hal": 13297070,
+          "hodnota_po_hal": 16010778,
+          "zmena_hal": 2713708,
+          "podil_na_zmene_pct": 0.9
+        },
+        {
+          "tema": "Hřbitov a pohřebnictví",
+          "hodnota_pred_hal": 2976358,
+          "hodnota_po_hal": 938400,
+          "zmena_hal": -2037958,
+          "podil_na_zmene_pct": -0.7
+        },
+        {
+          "tema": "Obecní les",
+          "hodnota_pred_hal": 1886300,
+          "hodnota_po_hal": 333960,
+          "zmena_hal": -1552340,
+          "podil_na_zmene_pct": -0.5
+        },
+        {
+          "tema": "Obecní vozidla",
+          "hodnota_pred_hal": 875600,
+          "hodnota_po_hal": 2399900,
+          "zmena_hal": 1524300,
+          "podil_na_zmene_pct": 0.5
+        },
+        {
+          "tema": "Geometrie a katastr",
+          "hodnota_pred_hal": -595000,
+          "hodnota_po_hal": 862500,
+          "zmena_hal": 1457500,
+          "podil_na_zmene_pct": 0.5
+        },
+        {
+          "tema": "Kultura a akce",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 1349500,
+          "zmena_hal": 1349500,
+          "podil_na_zmene_pct": 0.5
+        },
+        {
+          "tema": "Revize hasicích přístrojů",
+          "hodnota_pred_hal": 210000,
+          "hodnota_po_hal": 1042000,
+          "zmena_hal": 832000,
+          "podil_na_zmene_pct": 0.3
+        },
+        {
+          "tema": "Hasiči (SDH)",
+          "hodnota_pred_hal": 109690,
+          "hodnota_po_hal": 876887,
+          "zmena_hal": 767197,
+          "podil_na_zmene_pct": 0.3
+        },
+        {
+          "tema": "Poštovné",
+          "hodnota_pred_hal": 433700,
+          "hodnota_po_hal": 796700,
+          "zmena_hal": 363000,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Mateřská škola – úvěr",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 300000,
+          "zmena_hal": 300000,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Telefony a internet",
+          "hodnota_pred_hal": 6998411,
+          "hodnota_po_hal": 7289243,
+          "zmena_hal": 290832,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Bankovní poplatky",
+          "hodnota_pred_hal": 2165407,
+          "hodnota_po_hal": 1888620,
+          "zmena_hal": -276787,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "Školení",
+          "hodnota_pred_hal": 1019000,
+          "hodnota_po_hal": 770000,
+          "zmena_hal": -249000,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "BOZP",
+          "hodnota_pred_hal": 100000,
+          "hodnota_po_hal": 275000,
+          "zmena_hal": 175000,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Cestovné",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 147400,
+          "zmena_hal": 147400,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Daňový poradce",
+          "hodnota_pred_hal": 2394480,
+          "hodnota_po_hal": 2491100,
+          "zmena_hal": 96620,
+          "podil_na_zmene_pct": 0.0
+        },
+        {
+          "tema": "Dětské hřiště",
+          "hodnota_pred_hal": 220000,
+          "hodnota_po_hal": 250000,
+          "zmena_hal": 30000,
+          "podil_na_zmene_pct": 0.0
+        },
+        {
+          "tema": "Rozhlas a OSA",
+          "hodnota_pred_hal": 438202,
+          "hodnota_po_hal": 456916,
+          "zmena_hal": 18714,
+          "podil_na_zmene_pct": 0.0
+        }
+      ]
+    },
+    {
+      "z_roku": 2023,
+      "do_roku": 2024,
+      "celkova_zmena_hal": -231108126,
+      "prispevky": [
+        {
+          "tema": "ČOV / převzatá odpadní voda",
+          "hodnota_pred_hal": 160201091,
+          "hodnota_po_hal": 36905360,
+          "zmena_hal": -123295731,
+          "podil_na_zmene_pct": 53.3
+        },
+        {
+          "tema": "Zámek – opravy a údržba budovy",
+          "hodnota_pred_hal": 128051715,
+          "hodnota_po_hal": 17032590,
+          "zmena_hal": -111019125,
+          "podil_na_zmene_pct": 48.0
+        },
+        {
+          "tema": "Odpady",
+          "hodnota_pred_hal": 155157075,
+          "hodnota_po_hal": 164235067,
+          "zmena_hal": 9077992,
+          "podil_na_zmene_pct": -3.9
+        },
+        {
+          "tema": "Veřejná zeleň",
+          "hodnota_pred_hal": 223500,
+          "hodnota_po_hal": 7504900,
+          "zmena_hal": 7281400,
+          "podil_na_zmene_pct": -3.2
+        },
+        {
+          "tema": "Vodovod a kanalizace (provoz)",
+          "hodnota_pred_hal": 22213550,
+          "hodnota_po_hal": 15087924,
+          "zmena_hal": -7125626,
+          "podil_na_zmene_pct": 3.1
+        },
+        {
+          "tema": "Ostatní",
+          "hodnota_pred_hal": 4778544,
+          "hodnota_po_hal": -201320,
+          "zmena_hal": -4979864,
+          "podil_na_zmene_pct": 2.2
+        },
+        {
+          "tema": "Obecní zpravodaj",
+          "hodnota_pred_hal": 8250000,
+          "hodnota_po_hal": 4088000,
+          "zmena_hal": -4162000,
+          "podil_na_zmene_pct": 1.8
+        },
+        {
+          "tema": "Notářské služby",
+          "hodnota_pred_hal": 3016880,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -3016880,
+          "podil_na_zmene_pct": 1.3
+        },
+        {
+          "tema": "Pojištění obecních budov",
+          "hodnota_pred_hal": 2377000,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -2377000,
+          "podil_na_zmene_pct": 1.0
+        },
+        {
+          "tema": "BOZP",
+          "hodnota_pred_hal": 275000,
+          "hodnota_po_hal": 2500000,
+          "zmena_hal": 2225000,
+          "podil_na_zmene_pct": -1.0
+        },
+        {
+          "tema": "Geometrie a katastr",
+          "hodnota_pred_hal": 862500,
+          "hodnota_po_hal": 3000000,
+          "zmena_hal": 2137500,
+          "podil_na_zmene_pct": -0.9
+        },
+        {
+          "tema": "Právní služby",
+          "hodnota_pred_hal": 58322400,
+          "hodnota_po_hal": 60145200,
+          "zmena_hal": 1822800,
+          "podil_na_zmene_pct": -0.8
+        },
+        {
+          "tema": "Správa a IT",
+          "hodnota_pred_hal": 16010778,
+          "hodnota_po_hal": 17575423,
+          "zmena_hal": 1564645,
+          "podil_na_zmene_pct": -0.7
+        },
+        {
+          "tema": "Opravy dokladů (nezařazeno)",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 1444600,
+          "zmena_hal": 1444600,
+          "podil_na_zmene_pct": -0.6
+        },
+        {
+          "tema": "Hasiči (SDH)",
+          "hodnota_pred_hal": 876887,
+          "hodnota_po_hal": 123800,
+          "zmena_hal": -753087,
+          "podil_na_zmene_pct": 0.3
+        },
+        {
+          "tema": "Hřbitov a pohřebnictví",
+          "hodnota_pred_hal": 938400,
+          "hodnota_po_hal": 187550,
+          "zmena_hal": -750850,
+          "podil_na_zmene_pct": 0.3
+        },
+        {
+          "tema": "Školení",
+          "hodnota_pred_hal": 770000,
+          "hodnota_po_hal": 1458490,
+          "zmena_hal": 688490,
+          "podil_na_zmene_pct": -0.3
+        },
+        {
+          "tema": "Revize hasicích přístrojů",
+          "hodnota_pred_hal": 1042000,
+          "hodnota_po_hal": 430000,
+          "zmena_hal": -612000,
+          "podil_na_zmene_pct": 0.3
+        },
+        {
+          "tema": "Daňový poradce",
+          "hodnota_pred_hal": 2491100,
+          "hodnota_po_hal": 3019700,
+          "zmena_hal": 528600,
+          "podil_na_zmene_pct": -0.2
+        },
+        {
+          "tema": "Obecní vozidla",
+          "hodnota_pred_hal": 2399900,
+          "hodnota_po_hal": 2746600,
+          "zmena_hal": 346700,
+          "podil_na_zmene_pct": -0.2
+        },
+        {
+          "tema": "Obecní les",
+          "hodnota_pred_hal": 333960,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -333960,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Mateřská škola – úvěr",
+          "hodnota_pred_hal": 300000,
+          "hodnota_po_hal": 75000,
+          "zmena_hal": -225000,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Kultura a akce",
+          "hodnota_pred_hal": 1349500,
+          "hodnota_po_hal": 1543200,
+          "zmena_hal": 193700,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "Údržba obce",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 181500,
+          "zmena_hal": 181500,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "Cestovné",
+          "hodnota_pred_hal": 147400,
+          "hodnota_po_hal": 20000,
+          "zmena_hal": -127400,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Poštovné",
+          "hodnota_pred_hal": 796700,
+          "hodnota_po_hal": 892600,
+          "zmena_hal": 95900,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Bankovní poplatky",
+          "hodnota_pred_hal": 1888620,
+          "hodnota_po_hal": 1950600,
+          "zmena_hal": 61980,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Rozhlas a OSA",
+          "hodnota_pred_hal": 456916,
+          "hodnota_po_hal": 494196,
+          "zmena_hal": 37280,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Telefony a internet",
+          "hodnota_pred_hal": 7289243,
+          "hodnota_po_hal": 7271553,
+          "zmena_hal": -17690,
+          "podil_na_zmene_pct": 0.0
+        }
+      ]
+    },
+    {
+      "z_roku": 2024,
+      "do_roku": 2025,
+      "celkova_zmena_hal": 122113832,
+      "prispevky": [
+        {
+          "tema": "Zámek – opravy a údržba budovy",
+          "hodnota_pred_hal": 17032590,
+          "hodnota_po_hal": 72042335,
+          "zmena_hal": 55009745,
+          "podil_na_zmene_pct": 45.0
+        },
+        {
+          "tema": "GDPR – pověřenec",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 27225000,
+          "zmena_hal": 27225000,
+          "podil_na_zmene_pct": 22.3
+        },
+        {
+          "tema": "Základní škola – opravy",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 11733370,
+          "zmena_hal": 11733370,
+          "podil_na_zmene_pct": 9.6
+        },
+        {
+          "tema": "Odpady",
+          "hodnota_pred_hal": 164235067,
+          "hodnota_po_hal": 174915119,
+          "zmena_hal": 10680052,
+          "podil_na_zmene_pct": 8.7
+        },
+        {
+          "tema": "Vodovod a kanalizace (provoz)",
+          "hodnota_pred_hal": 15087924,
+          "hodnota_po_hal": 22302052,
+          "zmena_hal": 7214128,
+          "podil_na_zmene_pct": 5.9
+        },
+        {
+          "tema": "Správa a IT",
+          "hodnota_pred_hal": 17575423,
+          "hodnota_po_hal": 24711187,
+          "zmena_hal": 7135764,
+          "podil_na_zmene_pct": 5.8
+        },
+        {
+          "tema": "ČOV / převzatá odpadní voda",
+          "hodnota_pred_hal": 36905360,
+          "hodnota_po_hal": 30435893,
+          "zmena_hal": -6469467,
+          "podil_na_zmene_pct": -5.3
+        },
+        {
+          "tema": "Pojištění obecních budov",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 4754000,
+          "zmena_hal": 4754000,
+          "podil_na_zmene_pct": 3.9
+        },
+        {
+          "tema": "Geometrie a katastr",
+          "hodnota_pred_hal": 3000000,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -3000000,
+          "podil_na_zmene_pct": -2.5
+        },
+        {
+          "tema": "Knihovna",
+          "hodnota_pred_hal": 517275,
+          "hodnota_po_hal": 3325887,
+          "zmena_hal": 2808612,
+          "podil_na_zmene_pct": 2.3
+        },
+        {
+          "tema": "Hasiči (SDH)",
+          "hodnota_pred_hal": 123800,
+          "hodnota_po_hal": 2193900,
+          "zmena_hal": 2070100,
+          "podil_na_zmene_pct": 1.7
+        },
+        {
+          "tema": "Právní služby",
+          "hodnota_pred_hal": 60145200,
+          "hodnota_po_hal": 61726200,
+          "zmena_hal": 1581000,
+          "podil_na_zmene_pct": 1.3
+        },
+        {
+          "tema": "Ostatní",
+          "hodnota_pred_hal": -201320,
+          "hodnota_po_hal": 1324871,
+          "zmena_hal": 1526191,
+          "podil_na_zmene_pct": 1.2
+        },
+        {
+          "tema": "Obecní les",
+          "hodnota_pred_hal": 0,
+          "hodnota_po_hal": 1516000,
+          "zmena_hal": 1516000,
+          "podil_na_zmene_pct": 1.2
+        },
+        {
+          "tema": "Opravy dokladů (nezařazeno)",
+          "hodnota_pred_hal": 1444600,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -1444600,
+          "podil_na_zmene_pct": -1.2
+        },
+        {
+          "tema": "Obecní zpravodaj",
+          "hodnota_pred_hal": 4088000,
+          "hodnota_po_hal": 5488000,
+          "zmena_hal": 1400000,
+          "podil_na_zmene_pct": 1.1
+        },
+        {
+          "tema": "Kultura a akce",
+          "hodnota_pred_hal": 1543200,
+          "hodnota_po_hal": 2855200,
+          "zmena_hal": 1312000,
+          "podil_na_zmene_pct": 1.1
+        },
+        {
+          "tema": "BOZP",
+          "hodnota_pred_hal": 2500000,
+          "hodnota_po_hal": 1875000,
+          "zmena_hal": -625000,
+          "podil_na_zmene_pct": -0.5
+        },
+        {
+          "tema": "Veřejná zeleň",
+          "hodnota_pred_hal": 7504900,
+          "hodnota_po_hal": 7050100,
+          "zmena_hal": -454800,
+          "podil_na_zmene_pct": -0.4
+        },
+        {
+          "tema": "Obecní vozidla",
+          "hodnota_pred_hal": 2746600,
+          "hodnota_po_hal": 2299800,
+          "zmena_hal": -446800,
+          "podil_na_zmene_pct": -0.4
+        },
+        {
+          "tema": "Poštovné",
+          "hodnota_pred_hal": 892600,
+          "hodnota_po_hal": 467800,
+          "zmena_hal": -424800,
+          "podil_na_zmene_pct": -0.3
+        },
+        {
+          "tema": "Školení",
+          "hodnota_pred_hal": 1458490,
+          "hodnota_po_hal": 1097000,
+          "zmena_hal": -361490,
+          "podil_na_zmene_pct": -0.3
+        },
+        {
+          "tema": "Revize hasicích přístrojů",
+          "hodnota_pred_hal": 430000,
+          "hodnota_po_hal": 195000,
+          "zmena_hal": -235000,
+          "podil_na_zmene_pct": -0.2
+        },
+        {
+          "tema": "Hřbitov a pohřebnictví",
+          "hodnota_pred_hal": 187550,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -187550,
+          "podil_na_zmene_pct": -0.2
+        },
+        {
+          "tema": "Údržba obce",
+          "hodnota_pred_hal": 181500,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -181500,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "Telefony a internet",
+          "hodnota_pred_hal": 7271553,
+          "hodnota_po_hal": 7415368,
+          "zmena_hal": 143815,
+          "podil_na_zmene_pct": 0.1
+        },
+        {
+          "tema": "Mateřská škola – úvěr",
+          "hodnota_pred_hal": 75000,
+          "hodnota_po_hal": 0,
+          "zmena_hal": -75000,
+          "podil_na_zmene_pct": -0.1
+        },
+        {
+          "tema": "Rozhlas a OSA",
+          "hodnota_pred_hal": 494196,
+          "hodnota_po_hal": 449368,
+          "zmena_hal": -44828,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Bankovní poplatky",
+          "hodnota_pred_hal": 1950600,
+          "hodnota_po_hal": 1915720,
+          "zmena_hal": -34880,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Cestovné",
+          "hodnota_pred_hal": 20000,
+          "hodnota_po_hal": 5000,
+          "zmena_hal": -15000,
+          "podil_na_zmene_pct": -0.0
+        },
+        {
+          "tema": "Daňový poradce",
+          "hodnota_pred_hal": 3019700,
+          "hodnota_po_hal": 3024470,
+          "zmena_hal": 4770,
+          "podil_na_zmene_pct": 0.0
+        }
+      ]
+    }
+  ]
+}

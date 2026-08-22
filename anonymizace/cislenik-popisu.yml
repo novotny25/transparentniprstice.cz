@@ -23,6 +23,11 @@ verze: 1
 schvaleno: null
 
 kody:
+  # ── Pojištění obecních budov (dřív než „kaple" u hřbitova) ──────────
+  - kod: pojisteni-budovy
+    oznaceni: "Pojištění obecních budov a majetku"
+    klicova_slova: ["pojisteni-zamek"]
+
   # ── Revize hasicích přístrojů (dřív než „hasiči" i „zámek") ──────────
   - kod: revize-hasici-pristroje
     oznaceni: "Revize a nákup hasicích přístrojů"
@@ -54,9 +59,6 @@ kody:
   - kod: zamek-plyn-kotle
     oznaceni: "Zámek – plynové kotle a revize komínů"
     klicova_slova: ["revize kominu", "plynovych kotlu", "plynovych kotu", "plynove kotle", "prohlidka plynovych", "vymena plynovych"]
-  - kod: pojisteni-budovy
-    oznaceni: "Pojištění obecních budov a majetku"
-    klicova_slova: ["pojisteni-zamek", "pojisteni-"]
   - kod: zamek-ostatni
     oznaceni: "Zámek – ostatní práce a materiál"
     klicova_slova: ["zamek"]
