@@ -168,31 +168,30 @@ def kontrola_html(V, repo):
 
 
 def tracked_soubory(repo):
+    """Verzované i nové (dosud necommitnuté) soubory — vše, co půjde do commitu.
+    Ignorované soubory (.gitignore) se vynechají."""
     try:
-        out = subprocess.run(["git", "-C", str(repo), "ls-files"],
-                             capture_output=True, text=True, check=True).stdout
-        return [repo / line for line in out.splitlines() if line.strip()]
+        tracked = subprocess.run(["git", "-C", str(repo), "ls-files"],
+                                 capture_output=True, text=True, check=True).stdout.splitlines()
+        others = subprocess.run(["git", "-C", str(repo), "ls-files", "--others",
+                                 "--exclude-standard"],
+                                capture_output=True, text=True, check=True).stdout.splitlines()
+        return [repo / line for line in (tracked + others) if line.strip()]
     except Exception:
         return list(repo.rglob("*"))
 
 
 def kontrola_pii(V, repo, soukroma):
-    # známá jména z popisy-zasahy.yml (pokud dostupná v soukromé zóně)
+    # Seznam příjmení k ověření se načítá VÝHRADNĚ ze soukromé zóny
+    # (popisy-zasahy.yml, pole jmena_k_overeni). Do veřejného skriptu se
+    # žádné jméno nepíše. Bez soukromé zóny se ověřují jen tvrdé vzory.
     jmena = set()
     pz = soukroma / "popisy-zasahy.yml"
     if pz.exists():
         try:
             import yaml
             z = yaml.safe_load(pz.read_text(encoding="utf-8"))
-            for orig, zas in z.get("zasahy", {}).items():
-                if zas.get("typ") == "osobni_udaj":
-                    for w in re.findall(r'\b[\wÁ-Žá-ž]{3,}\b', orig):
-                        if w[0].isupper() and nd(w).lower() not in (
-                                "voda", "jánská", "kelendrov", "mezírka", "kratochvíl"):
-                            pass  # jména sbereme z konkrétního seznamu níže
-            # explicitní seznam příjmení k ověření absence
-            jmena = {"Půža", "Vítámvás", "Drábek", "Chladilová", "Tomečková",
-                     "Tupá", "Kratochvíl", "Červený"}
+            jmena = set(z.get("jmena_k_overeni", []))
         except Exception:
             pass
 

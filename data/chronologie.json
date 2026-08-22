@@ -1,0 +1,94 @@
+{
+  "poznamka": "Chronologie občanské datové analýzy hospodaření obce Prštice. Obsahuje spisové značky a čísla jednací úřadů (nejsou osobní údaj). Neobsahuje osobní údaje žadatele ani třetích osob. Odkazy na sanitizovaná PDF se doplní po zpracování dokumentů (pipeline běží na Macu, úkol 2.5). NÁVRH k revizi a doplnění Petrem (úkol 2.4 / 1.6).",
+  "kroky": [
+    {
+      "datum": "2026-04-30",
+      "titulek": "Sběr veřejných výkazů obce",
+      "popis": "Z otevřených dat MONITOR MF ČR staženy rozvaha a výkaz zisku a ztráty obce za roky 2015–2025. První datový základ analýzy.",
+      "cislo_jednaci": null,
+      "puvod": "veřejná data (MONITOR MF ČR, IČO 00282405)",
+      "dokument": null
+    },
+    {
+      "datum": "2026-06-04",
+      "titulek": "Žádost o účetní detail účtu 518",
+      "popis": "Podána žádost dle zákona č. 106/1999 Sb. o podrobný účetní deník účtu 518 (Ostatní služby).",
+      "cislo_jednaci": null,
+      "puvod": "žádost o informace dle 106/1999 Sb.",
+      "dokument": null
+    },
+    {
+      "datum": "2026-06-22",
+      "titulek": "Zpracování účetního detailu 518",
+      "popis": "Z poskytnutého deníku sestaveno 1 335 účetních zápisů účtu 518 za roky 2022–2025; roční součty ověřeny proti výkazu zisku a ztráty.",
+      "cislo_jednaci": null,
+      "puvod": "odpověď obce",
+      "dokument": null
+    },
+    {
+      "datum": "2026-07-01",
+      "titulek": "Žádost o informace obci",
+      "popis": "Podána žádost o informace obci Prštice.",
+      "cislo_jednaci": "SP/088/2026",
+      "puvod": "žádost o informace dle 106/1999 Sb.",
+      "dokument": null
+    },
+    {
+      "datum": "2026-07-17",
+      "titulek": "Sdělení obce a stížnost",
+      "popis": "Obec doručila pouze slovní sdělení, nikoli požadované dokumenty. Téhož dne podána stížnost podle § 16a zákona č. 106/1999 Sb.",
+      "cislo_jednaci": "OUPR-867-2026",
+      "puvod": "sdělení obce + stížnost žadatele",
+      "dokument": null
+    },
+    {
+      "datum": "2026-07-20",
+      "titulek": "Stížnost doručena obci",
+      "popis": "Stížnost podle § 16a doručena obci do datové schránky.",
+      "cislo_jednaci": null,
+      "puvod": "dodejka datové schránky",
+      "dokument": null
+    },
+    {
+      "datum": "2026-07-27",
+      "titulek": "Marně uplynula lhůta obce",
+      "popis": "Uplynula sedmidenní lhůta obce podle § 16a odst. 5 zákona č. 106/1999 Sb., aniž obec stížnost vyřídila.",
+      "cislo_jednaci": null,
+      "puvod": "výpočet zákonné lhůty",
+      "dokument": null
+    },
+    {
+      "datum": "2026-07-28",
+      "titulek": "Žádost o opatření proti nečinnosti (Krajský úřad JMK)",
+      "popis": "Krajskému úřadu Jihomoravského kraje doručena žádost o opatření proti nečinnosti podle § 80 odst. 3 správního řádu.",
+      "cislo_jednaci": null,
+      "puvod": "podání žadatele, dodejka datové schránky",
+      "dokument": null
+    },
+    {
+      "datum": "2026-08-03",
+      "titulek": "Obec poskytla deník 518 za 1–6/2026",
+      "popis": "Obec poskytla opis deníku účtu 518 za leden–červen 2026 (jiná žádost). Neúplné období — na webu vedeno samostatně, nesměšuje se s uzavřenými roky.",
+      "cislo_jednaci": "OUPR-1007/2026",
+      "puvod": "odpověď obce",
+      "dokument": null
+    },
+    {
+      "datum": "2026-08-15",
+      "titulek": "Žádost o přehled soudních řízení a opakovaná žádost GDPR",
+      "popis": "Podána žádost o přehled soudních řízení, jejichž účastníkem byla obec od 1. 1. 2018, a opakovaná žádost ve věci pověřence pro ochranu osobních údajů (GDPR).",
+      "cislo_jednaci": null,
+      "puvod": "žádost o informace dle 106/1999 Sb.",
+      "dokument": null
+    },
+    {
+      "datum": "2026-08-27",
+      "titulek": "Uplyne lhůta Krajského úřadu",
+      "popis": "Uplyne třicetidenní lhůta Krajského úřadu JMK pro rozhodnutí o žádosti o opatření proti nečinnosti (§ 71 odst. 3 správního řádu). Stav se po tomto datu doplní.",
+      "cislo_jednaci": null,
+      "puvod": "výpočet zákonné lhůty",
+      "dokument": null,
+      "stav": "probíhá"
+    }
+  ]
+}
