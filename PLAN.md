@@ -156,7 +156,7 @@ Spouštěcí prompt:
   „leden–červen 2026"). Kategorie přiřazeny pravidly podle popisu (zdroj je
   neobsahuje; schválil Petr). 2 popisy s adresou/jménem podrženy a nahrazeny
   čistým popisem z privátní mapy. Data necommitnuta (privacy gate).
-- [ ] **1.4 🤖 Rozpočtová data z MONITORu** — stáhnout FIN 2-12 M pro IČO
+- [x] **1.4 🤖 Rozpočtová data z MONITORu** — stáhnout FIN 2-12 M pro IČO
   00282405, roky 2019–2025; napojit číselníky paragrafů na česká jména agend
   → `data/rozpocet.json`. Uložit skutečné příjmy, skutečné výdaje, saldo a
   rozlišení běžné/kapitálové; případné údaje schváleného či upraveného rozpočtu
@@ -171,15 +171,17 @@ Spouštěcí prompt:
   `basis: accrual_cost`; jejich součty se navzájem nekontrolují jako stejný údaj.
   Deliverable: příjmy a výdaje po agendách a letech. Záložní cesta je ruční
   export z profilu obce v MONITORu.
-  🔶 ROZPRACOVÁNO 22. 8. 2026 (PŘEDBĚŽNÉ): MONITOR byl v údržbě, lokální
-  `monitor_*.html` byly prázdné skořápky. Skript `skripty/extrakce_rozpocet.py`
-  vytáhl skutečnost z lokálních výkazů FIN 2-12 M (PDF) pro **2022 a 2023** →
-  `data/rozpocet.json` (basis: cash_budget, stav incomplete). Výdaje po 41
-  paragrafech, součet = rekapitulace „Výdaje celkem" na 0,00 Kč. 6330 „Převody
-  vlastním fondům" označeny jako vnitřní převod. **Zbývá:** doplnit 2019–2021,
-  2024, 2025 z MONITORu (až bude dostupný) a pak s Petrem metodiku P-33
-  (opakované vs. jednorázové) do `data/rozpocet-metodika.md`. Úkol proto zůstává
-  otevřený.
+  ✅ hotovo 25. 8. 2026: MONITOR po údržbě zpět. Skript
+  `skripty/extrakce_rozpocet.py` čte oficiální open-data FIN 2-12 M (CSUIS,
+  tabulka FINM201, skutečnost ZU_ROZKZ) — řádky Prštic 2019–2025 vytažené do
+  soukromé zóny (`prstice-finm-2019-2025.csv`), názvy agend z číselníku
+  `CIS_PARAGRAF.CSV`. Výstup `data/rozpocet.json` (basis: cash_budget, complete):
+  příjmy/výdaje/saldo, výdaje po paragrafech, běžné/kapitálové. **Metodika P-33
+  schválena Petrem** (`data/rozpocet-metodika.md`): opakovaná = paragraf
+  s nenulovým výdajem ve všech 7 letech (26 agend); jednorázové = nepravidelné +
+  kapitálové; 6330 vnitřní převody zvlášť. Křížová kontrola 2022 výdaje = FIN PDF
+  na **0,00 Kč**. Gate: 33 PASS, 0 FAIL. Velké ZIP (150 MB) smazány, zdroje
+  v manifestu.
 - [x] **1.5 🤖 Počty obyvatel z ČSÚ** — stáhnout počet obyvatel Prštic
   k 1. 1. každého roku 2015–2026 → `data/obyvatele.json` se zdrojem a datem.
   Deliverable: soubor pro přepínač „Kč na obyvatele" a kontrolní tabulka.

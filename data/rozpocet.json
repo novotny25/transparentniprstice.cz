@@ -4,368 +4,2112 @@
   "jednotka": "Kč",
   "obec": "Prštice",
   "ico": "00282405",
-  "zdroj": "Výkaz FIN 2-12 M (skutečnost k 31.12.), lokální PDF",
-  "stav": "incomplete",
-  "dostupne_roky": [
-   2022,
-   2023
-  ],
-  "chybi_roky": [
+  "zdroj": "MONITOR (MF ČR), výkaz FIN 2-12 M, skutečnost k 31.12. (open-data CSUIS)",
+  "zdroj_url": "https://monitor.statnipokladna.gov.cz/datovy-katalog/open-data",
+  "stav": "complete",
+  "roky": [
    2019,
    2020,
    2021,
+   2022,
+   2023,
    2024,
    2025
   ],
-  "poznamka": "PŘEDBĚŽNÉ. MONITOR byl v údržbě; doplní se roky 2019–2021, 2024, 2025 z MONITORu. Rozlišení opakované/jednorázové (P-33) vyžaduje celou řadu let a zatím se nedělá. cash_budget se nesčítá s účtem 518 (accrual_cost). 6330 = vnitřní převody, ne výdaj na agendu.",
-  "vygenerovano": "2026-08-22 22:44"
+  "poznamka": "cash_budget se NEsčítá s účtem 518 (accrual_cost). 6330 = vnitřní převody vlastním fondům, vedeny zvlášť. P-33: opakovaná = paragraf s nenulovým výdajem ve všech letech 2019–2025; jednorázové = nepravidelné agendy + kapitálové výdaje. Metodika a hraniční případy v rozpocet-metodika.md (schvaluje Petr).",
+  "vygenerovano": "2026-08-25 09:29"
  },
  "roky": {
-  "2022": {
-   "prijmy_celkem_kc": 26198634.34,
-   "vydaje_celkem_kc": 24054654.06,
-   "prijmy_po_konsolidaci_kc": 24920408.34,
-   "vydaje_po_konsolidaci_kc": 22776428.06,
-   "saldo_po_konsolidaci_kc": 2143980.28,
+  "2019": {
+   "prijmy_celkem_kc": 18320967.57,
+   "vydaje_celkem_kc": 16689541.39,
+   "saldo_kc": 1631426.18,
+   "bezne_vydaje_kc": 14192054.07,
+   "kapitalove_vydaje_kc": 2497487.32,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 12681986.71,
+    "jednorazove_kc": 3081327.68,
+    "vnitrni_prevody_kc": 926227.0
+   },
    "vydaje_po_paragrafech": {
-    "1039": {
-     "nazev": "Ostatní záležitosti lesního hospodářství",
-     "skutecnost_kc": 18863.0
-    },
-    "2212": {
-     "nazev": "Silnice",
-     "skutecnost_kc": 0.0
-    },
-    "2219": {
-     "nazev": "Ostatní záležitosti pozemních komunikací",
-     "skutecnost_kc": 0.0
-    },
-    "2221": {
-     "nazev": "Provoz veřejné silniční dopravy",
-     "skutecnost_kc": 0.0
-    },
-    "2292": {
-     "nazev": "Dopravní obslužnost veřejnými službami - linková",
-     "skutecnost_kc": 142430.0
-    },
-    "2310": {
-     "nazev": "Pitná voda",
-     "skutecnost_kc": 560643.94
-    },
-    "2321": {
-     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
-     "skutecnost_kc": 1433682.0
-    },
-    "2341": {
-     "nazev": "Vodní díla v zemědělské krajině",
-     "skutecnost_kc": 0.0
-    },
-    "2411": {
-     "nazev": "Záležitosti pošt",
-     "skutecnost_kc": 484126.37
-    },
-    "3111": {
-     "nazev": "Mateřské školy",
-     "skutecnost_kc": 97598.0
-    },
-    "3113": {
-     "nazev": "Základní školy",
-     "skutecnost_kc": 1796007.0
-    },
-    "3314": {
-     "nazev": "Činnosti knihovnické",
-     "skutecnost_kc": 110895.46
-    },
-    "3319": {
-     "nazev": "Ostatní záležitosti kultury",
-     "skutecnost_kc": 23384.0
-    },
     "3322": {
      "nazev": "Zachování a obnova kulturních památek",
-     "skutecnost_kc": 9999821.19
-    },
-    "3329": {
-     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
-     "skutecnost_kc": 2400.0
-    },
-    "3341": {
-     "nazev": "Rozhlas a televize",
-     "skutecnost_kc": 3032.02
-    },
-    "3349": {
-     "nazev": "Ostatní záležitosti sdělovacích prostředků",
-     "skutecnost_kc": 35200.0
-    },
-    "3399": {
-     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
-     "skutecnost_kc": 19544.0
-    },
-    "3421": {
-     "nazev": "Využití volného času dětí a mládeže",
-     "skutecnost_kc": 20200.0
-    },
-    "3429": {
-     "nazev": "Ostatní zájmová činnost a rekreace",
-     "skutecnost_kc": 0.0
-    },
-    "3631": {
-     "nazev": "Veřejné osvětlení",
-     "skutecnost_kc": 206758.67
-    },
-    "3632": {
-     "nazev": "Pohřebnictví",
-     "skutecnost_kc": 70604.17
-    },
-    "3635": {
-     "nazev": "Územní plánování",
-     "skutecnost_kc": 85000.0
-    },
-    "3639": {
-     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
-     "skutecnost_kc": 12489.0
-    },
-    "3721": {
-     "nazev": "Sběr a svoz nebezpečných odpadů",
-     "skutecnost_kc": 17090.34
-    },
-    "3722": {
-     "nazev": "Sběr a svoz komunálních odpadů",
-     "skutecnost_kc": 952270.85
-    },
-    "3725": {
-     "nazev": "Využívání a zneškodňování komunálních odpadů",
-     "skutecnost_kc": 206432.71
-    },
-    "3745": {
-     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
-     "skutecnost_kc": 1254157.25
-    },
-    "3900": {
-     "nazev": "Ostatní činnosti související se službami pro fyzické osoby",
-     "skutecnost_kc": 0.0
-    },
-    "4359": {
-     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
-     "skutecnost_kc": 9000.0
-    },
-    "5213": {
-     "nazev": "Krizová opatření",
-     "skutecnost_kc": 0.0
-    },
-    "5512": {
-     "nazev": "Požární ochrana - dobrovolná část",
-     "skutecnost_kc": 100851.51
-    },
-    "6112": {
-     "nazev": "Zastupitelstva obcí",
-     "skutecnost_kc": 1199709.67
-    },
-    "6115": {
-     "nazev": "Volby do zastupitelstev územních samosprávných celků",
-     "skutecnost_kc": 49099.8
-    },
-    "6118": {
-     "nazev": "Volba prezidenta republiky",
-     "skutecnost_kc": 85.0
+     "skutecnost_kc": 4954601.59,
+     "bezne_kc": 3075315.27,
+     "kapitalove_kc": 1879286.32,
+     "opakovana": true
     },
     "6171": {
      "nazev": "Činnost místní správy",
-     "skutecnost_kc": 3283615.56
+     "skutecnost_kc": 3041166.1,
+     "bezne_kc": 2731261.1,
+     "kapitalove_kc": 309905.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1148402.53,
+     "bezne_kc": 1148402.53,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 999448.23,
+     "bezne_kc": 965448.23,
+     "kapitalove_kc": 34000.0,
+     "opakovana": true
+    },
+    "6330": {
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "skutecnost_kc": 926227.0,
+     "bezne_kc": 926227.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
+     "vnitrni_prevod": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 912232.48,
+     "bezne_kc": 912232.48,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 892080.4,
+     "bezne_kc": 686081.4,
+     "kapitalove_kc": 205999.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 880814.92,
+     "bezne_kc": 880814.92,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6399": {
+     "nazev": "Ostatní finanční operace",
+     "skutecnost_kc": 676091.0,
+     "bezne_kc": 676091.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 526969.68,
+     "bezne_kc": 526969.68,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 383808.92,
+     "bezne_kc": 383808.92,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 371350.3,
+     "bezne_kc": 371350.3,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 189471.2,
+     "bezne_kc": 121674.2,
+     "kapitalove_kc": 67797.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 126667.0,
+     "bezne_kc": 126667.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 122488.86,
+     "bezne_kc": 122488.86,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 68009.0,
+     "bezne_kc": 68009.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 60284.0,
+     "bezne_kc": 60284.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 57174.0,
+     "bezne_kc": 57174.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 48464.98,
+     "bezne_kc": 48464.98,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 44520.0,
+     "bezne_kc": 44520.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 38321.3,
+     "bezne_kc": 38321.3,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 34625.5,
+     "bezne_kc": 34625.5,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 27527.5,
+     "bezne_kc": 27527.5,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6117": {
+     "nazev": "Volby do Evropského parlamentu",
+     "skutecnost_kc": 24379.8,
+     "bezne_kc": 24379.8,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 23470.0,
+     "bezne_kc": 23470.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
     },
     "6310": {
      "nazev": "Obecné příjmy a výdaje z finančních operací",
-     "skutecnost_kc": 21654.07
+     "skutecnost_kc": 16888.4,
+     "bezne_kc": 16888.4,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2141": {
+     "nazev": "Vnitřní obchod",
+     "skutecnost_kc": 16000.0,
+     "bezne_kc": 16000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 14978.0,
+     "bezne_kc": 14978.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 14859.0,
+     "bezne_kc": 14859.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 13584.0,
+     "bezne_kc": 13584.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 9653.0,
+     "bezne_kc": 9653.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6402": {
+     "nazev": "Finanční vypořádání",
+     "skutecnost_kc": 8915.3,
+     "bezne_kc": 8915.3,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 5000.0,
+     "bezne_kc": 5000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
     },
     "6320": {
      "nazev": "Pojištění funkčně nespecifikované",
-     "skutecnost_kc": 3037.0
+     "skutecnost_kc": 4992.4,
+     "bezne_kc": 4992.4,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 3075.0,
+     "bezne_kc": 2575.0,
+     "kapitalove_kc": 500.0,
+     "opakovana": false
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 3000.0,
+     "bezne_kc": 3000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5212": {
+     "nazev": "Ochrana obyvatelstva",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    }
+   }
+  },
+  "2020": {
+   "prijmy_celkem_kc": 20034753.19,
+   "vydaje_celkem_kc": 20380643.09,
+   "saldo_kc": -345889.9,
+   "bezne_vydaje_kc": 14251373.54,
+   "kapitalove_vydaje_kc": 6129269.55,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 11447394.76,
+    "jednorazove_kc": 6596897.33,
+    "vnitrni_prevody_kc": 2336351.0
+   },
+   "vydaje_po_paragrafech": {
+    "3322": {
+     "nazev": "Zachování a obnova kulturních památek",
+     "skutecnost_kc": 3430267.29,
+     "bezne_kc": 1916094.72,
+     "kapitalove_kc": 1514172.57,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 2492993.71,
+     "bezne_kc": 1404845.52,
+     "kapitalove_kc": 1088148.19,
+     "opakovana": true
+    },
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 2384887.9,
+     "bezne_kc": 2034963.16,
+     "kapitalove_kc": 349924.74,
+     "opakovana": true
+    },
+    "6330": {
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "skutecnost_kc": 2336351.0,
+     "bezne_kc": 2336351.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
+     "vnitrni_prevod": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 1702109.0,
+     "bezne_kc": 19109.0,
+     "kapitalove_kc": 1683000.0,
+     "opakovana": true
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 1634415.16,
+     "bezne_kc": 326497.0,
+     "kapitalove_kc": 1307918.16,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1163201.8,
+     "bezne_kc": 1163201.8,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 1153800.48,
+     "bezne_kc": 1153800.48,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 825053.6,
+     "bezne_kc": 825053.6,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 656346.0,
+     "bezne_kc": 656346.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 510225.54,
+     "bezne_kc": 510225.54,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 437613.86,
+     "bezne_kc": 437613.86,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6399": {
+     "nazev": "Ostatní finanční operace",
+     "skutecnost_kc": 433145.0,
+     "bezne_kc": 433145.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 163446.0,
+     "bezne_kc": 163446.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 143517.38,
+     "bezne_kc": 12861.49,
+     "kapitalove_kc": 130655.89,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 127634.03,
+     "bezne_kc": 127634.03,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 115489.78,
+     "bezne_kc": 115489.78,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 110788.54,
+     "bezne_kc": 110788.54,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 91300.0,
+     "bezne_kc": 91300.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 69149.0,
+     "bezne_kc": 69149.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 65528.0,
+     "bezne_kc": 65528.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 55450.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 55450.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 43521.0,
+     "bezne_kc": 43521.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 38257.09,
+     "bezne_kc": 38257.09,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6115": {
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "skutecnost_kc": 34146.0,
+     "bezne_kc": 34146.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 32241.21,
+     "bezne_kc": 32241.21,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 29661.0,
+     "bezne_kc": 29661.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 18173.52,
+     "bezne_kc": 18173.52,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 14813.0,
+     "bezne_kc": 14813.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 14522.0,
+     "bezne_kc": 14522.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 11228.0,
+     "bezne_kc": 11228.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 9947.0,
+     "bezne_kc": 9947.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 8649.0,
+     "bezne_kc": 8649.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 5000.0,
+     "bezne_kc": 5000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 5000.0,
+     "bezne_kc": 5000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6402": {
+     "nazev": "Finanční vypořádání",
+     "skutecnost_kc": 4620.2,
+     "bezne_kc": 4620.2,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 3037.0,
+     "bezne_kc": 3037.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 2770.0,
+     "bezne_kc": 2770.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 2344.0,
+     "bezne_kc": 2344.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    }
+   }
+  },
+  "2021": {
+   "prijmy_celkem_kc": 19443032.92,
+   "vydaje_celkem_kc": 16849859.18,
+   "saldo_kc": 2593173.74,
+   "bezne_vydaje_kc": 16605062.18,
+   "kapitalove_vydaje_kc": 244797.0,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 15291046.53,
+    "jednorazove_kc": 662057.65,
+    "vnitrni_prevody_kc": 896755.0
+   },
+   "vydaje_po_paragrafech": {
+    "3322": {
+     "nazev": "Zachování a obnova kulturních památek",
+     "skutecnost_kc": 5931214.63,
+     "bezne_kc": 5811417.63,
+     "kapitalove_kc": 119797.0,
+     "opakovana": true
+    },
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 2681100.95,
+     "bezne_kc": 2556100.95,
+     "kapitalove_kc": 125000.0,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 1291734.86,
+     "bezne_kc": 1291734.86,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1216789.71,
+     "bezne_kc": 1216789.71,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 943532.02,
+     "bezne_kc": 943532.02,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6330": {
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "skutecnost_kc": 896755.0,
+     "bezne_kc": 896755.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
+     "vnitrni_prevod": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 706346.0,
+     "bezne_kc": 706346.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6399": {
+     "nazev": "Ostatní finanční operace",
+     "skutecnost_kc": 552115.0,
+     "bezne_kc": 552115.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 524557.05,
+     "bezne_kc": 524557.05,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 461718.28,
+     "bezne_kc": 461718.28,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 417460.0,
+     "bezne_kc": 417460.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 304937.39,
+     "bezne_kc": 304937.39,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 149405.05,
+     "bezne_kc": 149405.05,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 141603.0,
+     "bezne_kc": 141603.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 119568.76,
+     "bezne_kc": 119568.76,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 73874.0,
+     "bezne_kc": 73874.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 65073.25,
+     "bezne_kc": 65073.25,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 48810.0,
+     "bezne_kc": 48810.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 45042.0,
+     "bezne_kc": 45042.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 42948.74,
+     "bezne_kc": 42948.74,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 38500.0,
+     "bezne_kc": 38500.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 35477.0,
+     "bezne_kc": 35477.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6114": {
+     "nazev": "Volby do Parlamentu ČR",
+     "skutecnost_kc": 30884.52,
+     "bezne_kc": 30884.52,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 30098.22,
+     "bezne_kc": 30098.22,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 21924.75,
+     "bezne_kc": 21924.75,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 17907.0,
+     "bezne_kc": 17907.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 15395.0,
+     "bezne_kc": 15395.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 15164.0,
+     "bezne_kc": 15164.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 12671.0,
+     "bezne_kc": 12671.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 5000.0,
+     "bezne_kc": 5000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 4875.0,
+     "bezne_kc": 4875.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 3037.0,
+     "bezne_kc": 3037.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6402": {
+     "nazev": "Finanční vypořádání",
+     "skutecnost_kc": 2991.0,
+     "bezne_kc": 2991.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 1349.0,
+     "bezne_kc": 1349.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3635": {
+     "nazev": "Územní plánování",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    }
+   }
+  },
+  "2022": {
+   "prijmy_celkem_kc": 26198634.34,
+   "vydaje_celkem_kc": 24054654.06,
+   "saldo_kc": 2143980.28,
+   "bezne_vydaje_kc": 23264720.18,
+   "kapitalove_vydaje_kc": 789933.88,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 21794427.38,
+    "jednorazove_kc": 982000.68,
+    "vnitrni_prevody_kc": 1278226.0
+   },
+   "vydaje_po_paragrafech": {
+    "3322": {
+     "nazev": "Zachování a obnova kulturních památek",
+     "skutecnost_kc": 9999821.19,
+     "bezne_kc": 9553827.31,
+     "kapitalove_kc": 445993.88,
+     "opakovana": true
+    },
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 3283615.56,
+     "bezne_kc": 3120265.56,
+     "kapitalove_kc": 163350.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 1796007.0,
+     "bezne_kc": 1796007.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 1433682.0,
+     "bezne_kc": 1433682.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
     },
     "6330": {
      "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
      "skutecnost_kc": 1278226.0,
+     "bezne_kc": 1278226.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
      "vnitrni_prevod": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 1254157.25,
+     "bezne_kc": 1158567.25,
+     "kapitalove_kc": 95590.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1199709.67,
+     "bezne_kc": 1199709.67,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 952270.85,
+     "bezne_kc": 952270.85,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 560643.94,
+     "bezne_kc": 560643.94,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
     },
     "6399": {
      "nazev": "Ostatní finanční operace",
-     "skutecnost_kc": 555945.0
+     "skutecnost_kc": 555945.0,
+     "bezne_kc": 555945.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 484126.37,
+     "bezne_kc": 484126.37,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 206758.67,
+     "bezne_kc": 206758.67,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 206432.71,
+     "bezne_kc": 206432.71,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 142430.0,
+     "bezne_kc": 142430.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 110895.46,
+     "bezne_kc": 110895.46,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 100851.51,
+     "bezne_kc": 100851.51,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 97598.0,
+     "bezne_kc": 97598.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3635": {
+     "nazev": "Územní plánování",
+     "skutecnost_kc": 85000.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 85000.0,
+     "opakovana": false
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 70604.17,
+     "bezne_kc": 70604.17,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6115": {
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "skutecnost_kc": 49099.8,
+     "bezne_kc": 49099.8,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 35200.0,
+     "bezne_kc": 35200.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 23384.0,
+     "bezne_kc": 23384.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 21654.07,
+     "bezne_kc": 21654.07,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 20200.0,
+     "bezne_kc": 20200.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 19544.0,
+     "bezne_kc": 19544.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 18863.0,
+     "bezne_kc": 18863.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 17090.34,
+     "bezne_kc": 17090.34,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 12489.0,
+     "bezne_kc": 12489.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 9000.0,
+     "bezne_kc": 9000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 3037.0,
+     "bezne_kc": 3037.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 3032.02,
+     "bezne_kc": 3032.02,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 2400.0,
+     "bezne_kc": 2400.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
     },
     "6402": {
      "nazev": "Finanční vypořádání",
-     "skutecnost_kc": 800.48
+     "skutecnost_kc": 800.48,
+     "bezne_kc": 800.48,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6118": {
+     "nazev": "Volba prezidenta republiky",
+     "skutecnost_kc": 85.0,
+     "bezne_kc": 85.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
     }
    }
   },
   "2023": {
    "prijmy_celkem_kc": 29338020.1,
-   "vydaje_celkem_kc": 34439393.62,
-   "prijmy_po_konsolidaci_kc": 24382386.1,
-   "vydaje_po_konsolidaci_kc": 29483759.62,
-   "saldo_po_konsolidaci_kc": -5101373.52,
+   "vydaje_celkem_kc": 34439399.26,
+   "saldo_kc": -5101379.16,
+   "bezne_vydaje_kc": 25789363.06,
+   "kapitalove_vydaje_kc": 8650036.2,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 19960195.78,
+    "jednorazove_kc": 9523569.48,
+    "vnitrni_prevody_kc": 4955634.0
+   },
    "vydaje_po_paragrafech": {
-    "1039": {
-     "nazev": "Ostatní záležitosti lesního hospodářství",
-     "skutecnost_kc": 0.0
-    },
-    "2212": {
-     "nazev": "Silnice",
-     "skutecnost_kc": 692604.0
-    },
-    "2219": {
-     "nazev": "Ostatní záležitosti pozemních komunikací",
-     "skutecnost_kc": 2396.0
-    },
-    "2221": {
-     "nazev": "Provoz veřejné silniční dopravy",
-     "skutecnost_kc": 0.0
-    },
-    "2292": {
-     "nazev": "Dopravní obslužnost veřejnými službami - linková",
-     "skutecnost_kc": 136727.0
-    },
-    "2310": {
-     "nazev": "Pitná voda",
-     "skutecnost_kc": 1071381.35
-    },
-    "2321": {
-     "nazev": "Odvádění a čistění odpadních vod a nakládání s kaly",
-     "skutecnost_kc": 1877573.11
-    },
-    "2341": {
-     "nazev": "Vodní díla v zemědělské krajině",
-     "skutecnost_kc": 0.0
-    },
-    "2411": {
-     "nazev": "Záležitosti pošt",
-     "skutecnost_kc": 549729.39
-    },
-    "3111": {
-     "nazev": "Mateřské školy",
-     "skutecnost_kc": 54641.28
-    },
-    "3113": {
-     "nazev": "Základní školy",
-     "skutecnost_kc": 1083700.0
-    },
-    "3118": {
-     "nazev": "Druhý stupeň základních škol",
-     "skutecnost_kc": 59620.0
-    },
-    "3314": {
-     "nazev": "Činnosti knihovnické",
-     "skutecnost_kc": 114279.75
-    },
-    "3319": {
-     "nazev": "Ostatní záležitosti kultury",
-     "skutecnost_kc": 21849.0
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 11556427.76,
+     "bezne_kc": 3423327.76,
+     "kapitalove_kc": 8133100.0,
+     "opakovana": true
     },
     "3322": {
      "nazev": "Zachování a obnova kulturních památek",
-     "skutecnost_kc": 6728512.61
-    },
-    "3329": {
-     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
-     "skutecnost_kc": 13304.36
-    },
-    "3341": {
-     "nazev": "Rozhlas a televize",
-     "skutecnost_kc": 13386.96
-    },
-    "3349": {
-     "nazev": "Ostatní záležitosti sdělovacích prostředků",
-     "skutecnost_kc": 80745.0
-    },
-    "3399": {
-     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
-     "skutecnost_kc": 21446.0
-    },
-    "3421": {
-     "nazev": "Využití volného času dětí a mládeže",
-     "skutecnost_kc": 35811.98
-    },
-    "3429": {
-     "nazev": "Ostatní zájmová činnost a rekreace",
-     "skutecnost_kc": 0.0
-    },
-    "3631": {
-     "nazev": "Veřejné osvětlení",
-     "skutecnost_kc": 143160.63
-    },
-    "3632": {
-     "nazev": "Pohřebnictví",
-     "skutecnost_kc": 409400.05
-    },
-    "3635": {
-     "nazev": "Územní plánování",
-     "skutecnost_kc": 0.0
-    },
-    "3639": {
-     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
-     "skutecnost_kc": 12489.0
-    },
-    "3721": {
-     "nazev": "Sběr a svoz nebezpečných odpadů",
-     "skutecnost_kc": 19242.57
-    },
-    "3722": {
-     "nazev": "Sběr a svoz komunálních odpadů",
-     "skutecnost_kc": 1122209.46
-    },
-    "3725": {
-     "nazev": "Využívání a zneškodňování komunálních odpadů",
-     "skutecnost_kc": 315027.52
-    },
-    "3745": {
-     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
-     "skutecnost_kc": 1074701.12
-    },
-    "3900": {
-     "nazev": "Ostatní činnosti související se službami pro fyzické osoby",
-     "skutecnost_kc": 0.0
-    },
-    "4359": {
-     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
-     "skutecnost_kc": 9923.0
-    },
-    "5213": {
-     "nazev": "Krizová opatření",
-     "skutecnost_kc": 0.0
-    },
-    "5512": {
-     "nazev": "Požární ochrana - dobrovolná část",
-     "skutecnost_kc": 264512.46
-    },
-    "6112": {
-     "nazev": "Zastupitelstva obcí",
-     "skutecnost_kc": 1324929.86
-    },
-    "6118": {
-     "nazev": "Volba prezidenta republiky",
-     "skutecnost_kc": 39386.0
-    },
-    "6171": {
-     "nazev": "Činnost místní správy",
-     "skutecnost_kc": 11556427.76
-    },
-    "6310": {
-     "nazev": "Obecné příjmy a výdaje z finančních operací",
-     "skutecnost_kc": 29227.2
-    },
-    "6320": {
-     "nazev": "Pojištění funkčně nespecifikované",
-     "skutecnost_kc": 3037.0
+     "skutecnost_kc": 6728512.61,
+     "bezne_kc": 6224886.41,
+     "kapitalove_kc": 503626.2,
+     "opakovana": true
     },
     "6330": {
      "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
      "skutecnost_kc": 4955634.0,
+     "bezne_kc": 4955634.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
+     "vnitrni_prevod": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 1877573.11,
+     "bezne_kc": 1877573.11,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1324929.86,
+     "bezne_kc": 1324929.86,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 1122209.46,
+     "bezne_kc": 1122209.46,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 1083700.0,
+     "bezne_kc": 1083700.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 1074701.12,
+     "bezne_kc": 1074701.12,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 1071381.35,
+     "bezne_kc": 1071381.35,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 692604.0,
+     "bezne_kc": 692604.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6399": {
+     "nazev": "Ostatní finanční operace",
+     "skutecnost_kc": 591173.0,
+     "bezne_kc": 591173.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 549729.39,
+     "bezne_kc": 549729.39,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 409400.05,
+     "bezne_kc": 409400.05,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 315027.52,
+     "bezne_kc": 315027.52,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 264512.46,
+     "bezne_kc": 264512.46,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 143160.63,
+     "bezne_kc": 143160.63,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 136727.0,
+     "bezne_kc": 136727.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 114279.75,
+     "bezne_kc": 114279.75,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 80745.0,
+     "bezne_kc": 80745.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3118": {
+     "nazev": "Druhý stupeň základních škol",
+     "skutecnost_kc": 59620.0,
+     "bezne_kc": 59620.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 54641.28,
+     "bezne_kc": 54641.28,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6118": {
+     "nazev": "Volba prezidenta republiky",
+     "skutecnost_kc": 39386.0,
+     "bezne_kc": 39386.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 35811.98,
+     "bezne_kc": 35811.98,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 29227.2,
+     "bezne_kc": 29227.2,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 21849.0,
+     "bezne_kc": 21849.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 21446.0,
+     "bezne_kc": 21446.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 19242.57,
+     "bezne_kc": 19242.57,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 13386.96,
+     "bezne_kc": 13386.96,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 13310.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 13310.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 12489.0,
+     "bezne_kc": 12489.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6402": {
+     "nazev": "Finanční vypořádání",
+     "skutecnost_kc": 11205.2,
+     "bezne_kc": 11205.2,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 9923.0,
+     "bezne_kc": 9923.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 3037.0,
+     "bezne_kc": 3037.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 2396.0,
+     "bezne_kc": 2396.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3635": {
+     "nazev": "Územní plánování",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    }
+   }
+  },
+  "2024": {
+   "prijmy_celkem_kc": 25755119.4,
+   "vydaje_celkem_kc": 19861344.82,
+   "saldo_kc": 5893774.58,
+   "bezne_vydaje_kc": 18707845.68,
+   "kapitalove_vydaje_kc": 1153499.14,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 17786760.06,
+    "jednorazove_kc": 1280961.76,
+    "vnitrni_prevody_kc": 793623.0
+   },
+   "vydaje_po_paragrafech": {
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 4208584.38,
+     "bezne_kc": 4208584.38,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3322": {
+     "nazev": "Zachování a obnova kulturních památek",
+     "skutecnost_kc": 2801016.8,
+     "bezne_kc": 2478182.86,
+     "kapitalove_kc": 322833.94,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 2296430.58,
+     "bezne_kc": 1860830.58,
+     "kapitalove_kc": 435600.0,
+     "opakovana": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 1592218.55,
+     "bezne_kc": 1592218.55,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1435954.03,
+     "bezne_kc": 1435954.03,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 1322918.0,
+     "bezne_kc": 1322918.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 1261433.31,
+     "bezne_kc": 1261433.31,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 1169033.26,
+     "bezne_kc": 870698.06,
+     "kapitalove_kc": 298335.2,
+     "opakovana": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 905286.09,
+     "bezne_kc": 905286.09,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6330": {
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "skutecnost_kc": 793623.0,
+     "bezne_kc": 793623.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
      "vnitrni_prevod": true
     },
     "6399": {
      "nazev": "Ostatní finanční operace",
-     "skutecnost_kc": 591173.0
+     "skutecnost_kc": 542300.0,
+     "bezne_kc": 542300.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 344686.4,
+     "bezne_kc": 344686.4,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 252763.53,
+     "bezne_kc": 252763.53,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 222398.85,
+     "bezne_kc": 125668.85,
+     "kapitalove_kc": 96730.0,
+     "opakovana": true
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 193067.27,
+     "bezne_kc": 193067.27,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 137639.0,
+     "bezne_kc": 137639.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 102643.25,
+     "bezne_kc": 102643.25,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 40880.0,
+     "bezne_kc": 40880.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 31058.0,
+     "bezne_kc": 31058.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6115": {
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "skutecnost_kc": 29497.14,
+     "bezne_kc": 29497.14,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6117": {
+     "nazev": "Volby do Evropského parlamentu",
+     "skutecnost_kc": 28054.0,
+     "bezne_kc": 28054.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 20436.9,
+     "bezne_kc": 20436.9,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 19506.0,
+     "bezne_kc": 19506.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 18500.0,
+     "bezne_kc": 18500.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 17449.0,
+     "bezne_kc": 17449.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 17199.0,
+     "bezne_kc": 17199.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 13424.47,
+     "bezne_kc": 13424.47,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 9946.81,
+     "bezne_kc": 9946.81,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 9074.0,
+     "bezne_kc": 9074.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 7860.0,
+     "bezne_kc": 7860.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6409": {
+     "nazev": "Ostatní činnosti jinde nezařazené",
+     "skutecnost_kc": 5750.17,
+     "bezne_kc": 5750.17,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 3861.96,
+     "bezne_kc": 3861.96,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3111": {
+     "nazev": "Předškolní zařízení",
+     "skutecnost_kc": 2744.84,
+     "bezne_kc": 2744.84,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
     },
     "6402": {
      "nazev": "Finanční vypořádání",
-     "skutecnost_kc": 11205.2
+     "skutecnost_kc": 2365.0,
+     "bezne_kc": 2365.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 1741.23,
+     "bezne_kc": 1741.23,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3118": {
+     "nazev": "Druhý stupeň základních škol",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3635": {
+     "nazev": "Územní plánování",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    }
+   }
+  },
+  "2025": {
+   "prijmy_celkem_kc": 28380970.77,
+   "vydaje_celkem_kc": 22484603.25,
+   "saldo_kc": 5896367.52,
+   "bezne_vydaje_kc": 21137560.42,
+   "kapitalove_vydaje_kc": 1347042.83,
+   "rozdeleni_p33": {
+    "opakovany_bezny_chod_kc": 19876910.18,
+    "jednorazove_kc": 1716693.07,
+    "vnitrni_prevody_kc": 891000.0
+   },
+   "vydaje_po_paragrafech": {
+    "3322": {
+     "nazev": "Zachování a obnova kulturních památek",
+     "skutecnost_kc": 4591054.67,
+     "bezne_kc": 3613315.94,
+     "kapitalove_kc": 977738.73,
+     "opakovana": true
+    },
+    "6171": {
+     "nazev": "Činnost místní správy",
+     "skutecnost_kc": 4353333.48,
+     "bezne_kc": 4353333.48,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3113": {
+     "nazev": "Základní školy",
+     "skutecnost_kc": 2163689.8,
+     "bezne_kc": 2163689.8,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3745": {
+     "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+     "skutecnost_kc": 1686826.45,
+     "bezne_kc": 1317522.35,
+     "kapitalove_kc": 369304.1,
+     "opakovana": true
+    },
+    "2321": {
+     "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+     "skutecnost_kc": 1620386.01,
+     "bezne_kc": 1620386.01,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6112": {
+     "nazev": "Zastupitelstva obcí",
+     "skutecnost_kc": 1487219.26,
+     "bezne_kc": 1487219.26,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3722": {
+     "nazev": "Sběr a svoz komunálních odpadů",
+     "skutecnost_kc": 1289987.63,
+     "bezne_kc": 1289987.63,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6399": {
+     "nazev": "Ostatní finanční operace",
+     "skutecnost_kc": 1010774.0,
+     "bezne_kc": 1010774.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6330": {
+     "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+     "skutecnost_kc": 891000.0,
+     "bezne_kc": 891000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false,
+     "vnitrni_prevod": true
+    },
+    "2310": {
+     "nazev": "Pitná voda",
+     "skutecnost_kc": 884706.89,
+     "bezne_kc": 884706.89,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2411": {
+     "nazev": "Záležitosti pošt",
+     "skutecnost_kc": 719432.65,
+     "bezne_kc": 719432.65,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3725": {
+     "nazev": "Využívání a zneškodňování komunálních odpadů",
+     "skutecnost_kc": 423862.67,
+     "bezne_kc": 423862.67,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "5512": {
+     "nazev": "Požární ochrana - dobrovolná část",
+     "skutecnost_kc": 272082.98,
+     "bezne_kc": 272082.98,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2219": {
+     "nazev": "Ostatní záležitosti pozemních komunikací",
+     "skutecnost_kc": 245102.8,
+     "bezne_kc": 245102.8,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3631": {
+     "nazev": "Veřejné osvětlení",
+     "skutecnost_kc": 180715.68,
+     "bezne_kc": 180715.68,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2292": {
+     "nazev": "Dopravní obslužnost veřejnými službami",
+     "skutecnost_kc": 139599.0,
+     "bezne_kc": 139599.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3314": {
+     "nazev": "Činnosti knihovnické",
+     "skutecnost_kc": 101246.15,
+     "bezne_kc": 101246.15,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3632": {
+     "nazev": "Pohřebnictví",
+     "skutecnost_kc": 63807.92,
+     "bezne_kc": 63807.92,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3349": {
+     "nazev": "Ostatní záležitosti sdělovacích prostředků",
+     "skutecnost_kc": 54880.0,
+     "bezne_kc": 54880.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3421": {
+     "nazev": "Využití volného času dětí a mládeže",
+     "skutecnost_kc": 49835.0,
+     "bezne_kc": 49835.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "4359": {
+     "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+     "skutecnost_kc": 44203.0,
+     "bezne_kc": 44203.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6114": {
+     "nazev": "Volby do Parlamentu ČR",
+     "skutecnost_kc": 42283.44,
+     "bezne_kc": 42283.44,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "1039": {
+     "nazev": "Ostatní záležitosti lesního hospodářství",
+     "skutecnost_kc": 25160.0,
+     "bezne_kc": 25160.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3118": {
+     "nazev": "Druhý stupeň základních škol",
+     "skutecnost_kc": 23000.0,
+     "bezne_kc": 23000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3399": {
+     "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+     "skutecnost_kc": 19727.0,
+     "bezne_kc": 19727.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6310": {
+     "nazev": "Obecné příjmy a výdaje z finančních operací",
+     "skutecnost_kc": 19157.2,
+     "bezne_kc": 19157.2,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3639": {
+     "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+     "skutecnost_kc": 17337.0,
+     "bezne_kc": 17337.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3900": {
+     "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+     "skutecnost_kc": 16174.0,
+     "bezne_kc": 16174.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3721": {
+     "nazev": "Sběr a svoz nebezpečných odpadů",
+     "skutecnost_kc": 13785.4,
+     "bezne_kc": 13785.4,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3726": {
+     "nazev": "Využívání a zneškodňování ostatních odpadů",
+     "skutecnost_kc": 12100.0,
+     "bezne_kc": 12100.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6402": {
+     "nazev": "Finanční vypořádání",
+     "skutecnost_kc": 9720.86,
+     "bezne_kc": 9720.86,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "6320": {
+     "nazev": "Pojištění funkčně nespecifikované",
+     "skutecnost_kc": 4000.0,
+     "bezne_kc": 4000.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3341": {
+     "nazev": "Rozhlas a televize",
+     "skutecnost_kc": 3953.68,
+     "bezne_kc": 3953.68,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "3329": {
+     "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+     "skutecnost_kc": 2628.63,
+     "bezne_kc": 2628.63,
+     "kapitalove_kc": 0.0,
+     "opakovana": true
+    },
+    "2212": {
+     "nazev": "Silnice",
+     "skutecnost_kc": 1830.0,
+     "bezne_kc": 1830.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2221": {
+     "nazev": "Provoz veřejné silniční dopravy",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "2341": {
+     "nazev": "Vodní díla v zemědělské krajině",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3319": {
+     "nazev": "Ostatní záležitosti kultury",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3429": {
+     "nazev": "Ostatní zájmová činnost a rekreace",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "3635": {
+     "nazev": "Územní plánování",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "5213": {
+     "nazev": "Krizová opatření",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
+    },
+    "6115": {
+     "nazev": "Volby do zastupitelstev územních samosprávných celků",
+     "skutecnost_kc": 0.0,
+     "bezne_kc": 0.0,
+     "kapitalove_kc": 0.0,
+     "opakovana": false
     }
    }
   }
