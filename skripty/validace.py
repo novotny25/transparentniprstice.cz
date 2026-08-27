@@ -166,7 +166,9 @@ for ex in (priv, load(os.path.join(PRIVATE_ZONE, "extrakty", "ucet-518-2026H1-pr
 RE_CP    = re.compile(r'č\.?\s?[pe]\.?\s?\d')                 # adresa čp./če.
 RE_DOC   = re.compile(r'\b\d{2}-\d{3}-\d{5}\b')               # interní číslo dokladu
 RE_EMAIL = re.compile(r'[\w.+-]+@[\w.-]+\.\w{2,}')
-RE_RC    = re.compile(r'\b\d{6}/\d{3,4}\b')                   # rodné číslo
+# Rodné číslo: YYMMDD/XXXX. Měsíc musí být platný (01–12, u žen +50),
+# jinak by vzor chytal i čísla jednací typu „123854/2026“.
+RE_RC    = re.compile(r'\b\d{2}(?:0[1-9]|1[0-2]|5[1-9]|6[0-2])(?:0[1-9]|[12]\d|3[01])/\d{3,4}\b')
 HARD_PAT = [("adresa čp./če.", RE_CP), ("číslo dokladu", RE_DOC),
             ("e-mail", RE_EMAIL), ("rodné číslo", RE_RC)]
 

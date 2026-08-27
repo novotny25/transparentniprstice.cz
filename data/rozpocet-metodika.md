@@ -1,6 +1,6 @@
 # Metodika rozlišení výdajů: opakované vs. jednorázové (P-33)
 
-Obec Prštice, IČO 00282405 · zdroj MONITOR FIN 2-12 M · roky 2019–2025 · vygenerováno 2026-08-25
+Obec Prštice, IČO 00282405 · zdroj MONITOR FIN 2-12 M · roky 2019–2025 · vygenerováno 2026-08-27
 
 > **SCHVALUJE Petr.** Web nepoužívá pojem 'mandatorní výdaje' a netvrdí, že opakovaný výdaj je ze zákona povinný nebo jednorázový zbytný. Jde o **doložitelné** rozlišení z dat, ne o právní výklad.
 

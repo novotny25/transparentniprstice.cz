@@ -1,0 +1,211 @@
+{
+ "meta": {
+  "rok": 2025,
+  "basis": "cash_budget",
+  "jednotka": "Kč",
+  "zdroj": "MONITOR (MF ČR), výkaz FIN 2-12 M, skutečnost k 31.12.2025",
+  "prijmy_celkem_kc": 28380970.77,
+  "poznamka": "Dvě úrovně: skupina (zařazeno autorem) → položka rozpočtové skladby. Vnitřní převody (4134, 4139) jsou vedeny zvlášť — nejde o příjem zvenčí.",
+  "vygenerovano": "2026-08-25 21:05"
+ },
+ "skupiny": [
+  {
+   "skupina": "Daně přerozdělené státem",
+   "barva": "#0a84ff",
+   "popis": "DPH a daně z příjmů. Vybírá je stát a přerozděluje obcím podle zákona — obec jejich výši neovlivní.",
+   "kc": 19323572.15,
+   "polozky": [
+    {
+     "kod": "1211",
+     "nazev": "Daň z přidané hodnoty",
+     "kc": 9283934.74
+    },
+    {
+     "kod": "1121",
+     "nazev": "Daně z příjmů právnických osob",
+     "kc": 4973605.33
+    },
+    {
+     "kod": "1111",
+     "nazev": "Daň z příjmů fyzických osob ze závislé činnosti",
+     "kc": 3369904.42
+    },
+    {
+     "kod": "1122",
+     "nazev": "Daně z příjmů právnických osob za obce",
+     "kc": 714840.0
+    },
+    {
+     "kod": "1113",
+     "nazev": "Daně z příjmů fyzických osob z kapitálových výnosů",
+     "kc": 657146.58
+    },
+    {
+     "kod": "1112",
+     "nazev": "Daně z příjmů fyzických osob - SVČ",
+     "kc": 324141.08
+    }
+   ]
+  },
+  {
+   "skupina": "Příjmy z vlastní činnosti a majetku",
+   "barva": "#1a9e4b",
+   "popis": "Poplatky za služby obce, nájmy, úroky z vkladů, pojistné náhrady.",
+   "kc": 5003251.2,
+   "polozky": [
+    {
+     "kod": "2111",
+     "nazev": "Příjmy z poskytování služeb a výrobků",
+     "kc": 4366943.39
+    },
+    {
+     "kod": "2112",
+     "nazev": "Příjmy z prodeje zboží (nakoup. za účel. prodeje)",
+     "kc": 352954.46
+    },
+    {
+     "kod": "2132",
+     "nazev": "Příjmy z pronájmu ost. nemovitostí a jejich částí",
+     "kc": 110602.0
+    },
+    {
+     "kod": "2324",
+     "nazev": "Přijaté nekapitálové příspěvky a náhrady",
+     "kc": 108683.45
+    },
+    {
+     "kod": "2131",
+     "nazev": "Příjmy z pronájmu pozemků",
+     "kc": 40679.0
+    },
+    {
+     "kod": "2322",
+     "nazev": "Přijaté pojistné náhrady",
+     "kc": 11200.0
+    },
+    {
+     "kod": "2212",
+     "nazev": "Silnice",
+     "kc": 8226.0
+    },
+    {
+     "kod": "2139",
+     "nazev": "Ostatní příjmy z pronájmu majetku",
+     "kc": 2603.0
+    },
+    {
+     "kod": "2141",
+     "nazev": "Příjmy z úroků",
+     "kc": 1347.68
+    },
+    {
+     "kod": "2119",
+     "nazev": "Ostatní příjmy z vlastní činnosti",
+     "kc": 12.22
+    }
+   ]
+  },
+  {
+   "skupina": "Daň z nemovitých věcí",
+   "barva": "#f5a524",
+   "popis": "Daň z pozemků a staveb v obci. Její výši může obec ovlivnit koeficientem.",
+   "kc": 1247278.73,
+   "polozky": [
+    {
+     "kod": "1511",
+     "nazev": "Daň z nemovitých věcí",
+     "kc": 1247278.73
+    }
+   ]
+  },
+  {
+   "skupina": "Místní poplatky a daně z hazardu",
+   "barva": "#e63562",
+   "popis": "Poplatek za odpad, ze psů, správní poplatky a podíl na daních z hazardních her.",
+   "kc": 1006636.59,
+   "polozky": [
+    {
+     "kod": "1345",
+     "nazev": "Poplatek za obecní systém odpadového hospodářství",
+     "kc": 693935.0
+    },
+    {
+     "kod": "1386",
+     "nazev": "Příjem z daně z hazardních her s výjimkou technických her neprovozovaných prostřednictvím internetu",
+     "kc": 181191.74
+    },
+    {
+     "kod": "1387",
+     "nazev": "Příjem z daně z technických her neprovozovaných prostřednictvím internetu",
+     "kc": 71015.23
+    },
+    {
+     "kod": "1341",
+     "nazev": "Poplatek ze psů",
+     "kc": 37100.0
+    },
+    {
+     "kod": "1361",
+     "nazev": "Správní poplatky",
+     "kc": 18050.0
+    },
+    {
+     "kod": "1334",
+     "nazev": "Odvody za odnětí zemědělské půdy",
+     "kc": 2529.9
+    },
+    {
+     "kod": "1381",
+     "nazev": "Příjem z daně z hazardních her s výjimkou dílčí daně z technických her za zdaňovací období do konce roku 2023",
+     "kc": 1424.75
+    },
+    {
+     "kod": "1343",
+     "nazev": "Poplatek za užívání veřejného prostranství",
+     "kc": 1389.97
+    }
+   ]
+  },
+  {
+   "skupina": "Dotace a transfery",
+   "barva": "#5e5ce6",
+   "popis": "Peníze ze státního rozpočtu nebo kraje, často na konkrétní účel.",
+   "kc": 909232.1,
+   "polozky": [
+    {
+     "kod": "4116",
+     "nazev": "Ostatní neinv. přij. transf. ze státního rozpočtu",
+     "kc": 645732.1
+    },
+    {
+     "kod": "4112",
+     "nazev": "Neinv.přij.transf. z SR v rámci souhr.dotač.vztahu",
+     "kc": 231000.0
+    },
+    {
+     "kod": "4111",
+     "nazev": "Neinv.přij.transf. z všeobecné pokladní správy SR",
+     "kc": 32500.0
+    }
+   ]
+  },
+  {
+   "skupina": "Vnitřní převody",
+   "barva": "#8e8e93",
+   "popis": "Přesun peněz mezi účty obce — nejde o nový příjem zvenčí.",
+   "kc": 891000.0,
+   "polozky": [
+    {
+     "kod": "4139",
+     "nazev": "Ostatní převody z vlastních fondů (vnitřní převod)",
+     "kc": 826000.0
+    },
+    {
+     "kod": "4134",
+     "nazev": "Převody z rozpočtových účtů (vnitřní převod)",
+     "kc": 65000.0
+    }
+   ]
+  }
+ ]
+}

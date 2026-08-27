@@ -1,0 +1,291 @@
+{
+ "meta": {
+  "ukol": "P-35 — jednorázová kontextová rešerše, ne průběžně aktualizovaná tabulka",
+  "skupina": "obce okresu Brno-venkov s 900–1100 obyvateli",
+  "metodika_rozpocet": "tříletý průměr konsolidovaných příjmů 2022–2024 dělený počtem obyvatel k 1. 1. 2025",
+  "zdroje": [
+   "ČSÚ — počty obyvatel a průměrný věk podle obcí",
+   "ARES — IČO obcí",
+   "MONITOR MF ČR — rozklikávací rozpočet",
+   "Wikidata — souřadnice obcí"
+  ],
+  "vygenerovano": "2026-08-27 06:23"
+ },
+ "rozpocet": {
+  "obci_ve_skupine": 17,
+  "poradi_prstic_od_nejnizsiho": 5,
+  "prstice_na_obyvatele_kc": 24829,
+  "median_kc": 27608,
+  "obce": [
+   {
+    "kod": "583111",
+    "obec": "Chudčice",
+    "ico": "00362956",
+    "obyvatel": 1008,
+    "prumer_prijmu_kc": 21521069,
+    "na_obyvatele_kc": 21350
+   },
+   {
+    "kod": "582921",
+    "obec": "Česká",
+    "ico": "00281671",
+    "obyvatel": 1010,
+    "prumer_prijmu_kc": 23890417,
+    "na_obyvatele_kc": 23654
+   },
+   {
+    "kod": "583421",
+    "obec": "Moravské Bránice",
+    "ico": "00488208",
+    "obyvatel": 994,
+    "prumer_prijmu_kc": 23564861,
+    "na_obyvatele_kc": 23707
+   },
+   {
+    "kod": "584240",
+    "obec": "Žatčany",
+    "ico": "00282944",
+    "obyvatel": 957,
+    "prumer_prijmu_kc": 23614109,
+    "na_obyvatele_kc": 24675
+   },
+   {
+    "kod": "583707",
+    "obec": "Prštice",
+    "ico": "00282405",
+    "obyvatel": 997,
+    "prumer_prijmu_kc": 24754763,
+    "na_obyvatele_kc": 24829
+   },
+   {
+    "kod": "583367",
+    "obec": "Medlov",
+    "ico": "00488046",
+    "obyvatel": 902,
+    "prumer_prijmu_kc": 23093735,
+    "na_obyvatele_kc": 25603
+   },
+   {
+    "kod": "583685",
+    "obec": "Prace",
+    "ico": "00599247",
+    "obyvatel": 998,
+    "prumer_prijmu_kc": 25861995,
+    "na_obyvatele_kc": 25914
+   },
+   {
+    "kod": "583341",
+    "obec": "Malhostovice",
+    "ico": "00282057",
+    "obyvatel": 1028,
+    "prumer_prijmu_kc": 26901518,
+    "na_obyvatele_kc": 26169
+   },
+   {
+    "kod": "583481",
+    "obec": "Neslovice",
+    "ico": "00282197",
+    "obyvatel": 999,
+    "prumer_prijmu_kc": 27580086,
+    "na_obyvatele_kc": 27608
+   },
+   {
+    "kod": "584118",
+    "obec": "Veverské Knínice",
+    "ico": "00378640",
+    "obyvatel": 999,
+    "prumer_prijmu_kc": 28663167,
+    "na_obyvatele_kc": 28692
+   },
+   {
+    "kod": "583774",
+    "obec": "Rebešovice",
+    "ico": "00488089",
+    "obyvatel": 1092,
+    "prumer_prijmu_kc": 31368951,
+    "na_obyvatele_kc": 28726
+   },
+   {
+    "kod": "584843",
+    "obec": "Přibice",
+    "ico": "00600211",
+    "obyvatel": 1098,
+    "prumer_prijmu_kc": 32519754,
+    "na_obyvatele_kc": 29617
+   },
+   {
+    "kod": "584151",
+    "obec": "Vranov",
+    "ico": "00282855",
+    "obyvatel": 920,
+    "prumer_prijmu_kc": 29447225,
+    "na_obyvatele_kc": 32008
+   },
+   {
+    "kod": "583791",
+    "obec": "Rozdrojovice",
+    "ico": "00282499",
+    "obyvatel": 1078,
+    "prumer_prijmu_kc": 37852260,
+    "na_obyvatele_kc": 35113
+   },
+   {
+    "kod": "583189",
+    "obec": "Jiříkovice",
+    "ico": "00362981",
+    "obyvatel": 982,
+    "prumer_prijmu_kc": 35632316,
+    "na_obyvatele_kc": 36285
+   },
+   {
+    "kod": "585025",
+    "obec": "Vlasatice",
+    "ico": "00283711",
+    "obyvatel": 952,
+    "prumer_prijmu_kc": 35818172,
+    "na_obyvatele_kc": 37624
+   },
+   {
+    "kod": "583511",
+    "obec": "Nové Bránice",
+    "ico": "00488224",
+    "obyvatel": 967,
+    "prumer_prijmu_kc": 44489044,
+    "na_obyvatele_kc": 46007
+   }
+  ]
+ },
+ "vek": {
+  "prstice": 43.3,
+  "okres": 41.65,
+  "obci_v_okrese": 187,
+  "starsich_obci_v_okrese": 29,
+  "poradi_prstic_od_nejstarsiho": 30,
+  "nejblizsich": 20,
+  "prumer_nejblizsich": 41.5,
+  "median_nejblizsich": 42.1,
+  "max_km": 7.2,
+  "obce": [
+   {
+    "obec": "Silůvky",
+    "km": 1.0,
+    "obyvatel": 853,
+    "vek": 44.2
+   },
+   {
+    "obec": "Radostice",
+    "km": 2.1,
+    "obyvatel": 789,
+    "vek": 41.9
+   },
+   {
+    "obec": "Hlína",
+    "km": 3.2,
+    "obyvatel": 315,
+    "vek": 42.8
+   },
+   {
+    "obec": "Ořechov",
+    "km": 3.8,
+    "obyvatel": 2915,
+    "vek": 41.2
+   },
+   {
+    "obec": "Moravské Bránice",
+    "km": 4.3,
+    "obyvatel": 994,
+    "vek": 43.7
+   },
+   {
+    "obec": "Mělčany",
+    "km": 4.6,
+    "obyvatel": 498,
+    "vek": 42.3
+   },
+   {
+    "obec": "Střelice",
+    "km": 4.8,
+    "obyvatel": 3283,
+    "vek": 41.4
+   },
+   {
+    "obec": "Dolní Kounice",
+    "km": 5.0,
+    "obyvatel": 2571,
+    "vek": 42.6
+   },
+   {
+    "obec": "Nové Bránice",
+    "km": 5.3,
+    "obyvatel": 967,
+    "vek": 41.7
+   },
+   {
+    "obec": "Hajany",
+    "km": 6.1,
+    "obyvatel": 713,
+    "vek": 37.3
+   },
+   {
+    "obec": "Omice",
+    "km": 6.3,
+    "obyvatel": 829,
+    "vek": 42.9
+   },
+   {
+    "obec": "Nebovidy",
+    "km": 6.6,
+    "obyvatel": 871,
+    "vek": 41.4
+   },
+   {
+    "obec": "Bratčice",
+    "km": 6.7,
+    "obyvatel": 693,
+    "vek": 42.1
+   },
+   {
+    "obec": "Pravlov",
+    "km": 6.7,
+    "obyvatel": 697,
+    "vek": 40.9
+   },
+   {
+    "obec": "Troubsko",
+    "km": 6.7,
+    "obyvatel": 2397,
+    "vek": 42.6
+   },
+   {
+    "obec": "Neslovice",
+    "km": 6.8,
+    "obyvatel": 999,
+    "vek": 40.1
+   },
+   {
+    "obec": "Syrovice",
+    "km": 6.8,
+    "obyvatel": 2097,
+    "vek": 36.8
+   },
+   {
+    "obec": "Ivančice",
+    "km": 7.0,
+    "obyvatel": 9898,
+    "vek": 43.9
+   },
+   {
+    "obec": "Popůvky",
+    "km": 7.0,
+    "obyvatel": 1866,
+    "vek": 37.5
+   },
+   {
+    "obec": "Trboušany",
+    "km": 7.2,
+    "obyvatel": 389,
+    "vek": 42.4
+   }
+  ]
+ }
+}

@@ -263,7 +263,7 @@ Spouštěcí prompt:
 
 ## Fáze 2 — Obsah (2–3 dny, hybrid — Petr schvaluje význam i zjednodušení)
 
-- [ ] **2.1 🤖 Texty přehledu a slovníček** — AI napíše úvod, „rozpočet
+- [x] **2.1 🤖 Texty přehledu a slovníček** — AI napíše úvod, „rozpočet
   v kostce", vysvětlení účtu 518 pro laika a mini-slovníček. Jazyk: běžná
   čeština, krátké věty, žádný účetní žargon bez vysvětlení. Povinné jednoduché
   vysvětlení rozdílu:
@@ -271,7 +271,15 @@ Spouštěcí prompt:
   > kdy byl zaúčtován náklad na službu; platba může proběhnout v jiném období.
   > Proto se oba součty nemusí rovnat a na webu je nesčítáme.
   Deliverable: `web/obsah/*.md` k Petrově revizi.
-- [ ] **2.2 🤝 Příběh účtu 518 a úplný rozklad změn** — z úkolu 1.7 připravit
+  ✅ hotovo 25. 8. 2026 (Petr koncepty schválil „vesměs dobré", finální doladění
+  po vizuální verzi). Vytvořeno `web/obsah/`: `00-uvod.md`, `01-rozpocet-v-kostce.md`,
+  `02-ucet-518-vysvetleni.md`, `slovnicek.md` (+ legenda štítků P-4). Na Petrovu
+  žádost **úvod rozšířen** (kdo je obec, odkud/kam peníze jdou, co obec ovlivňuje)
+  a doplněna **kontextová rešerše** (P-35): příjmy na obyvatele vs. 17 obcí
+  900–1100 Brno-venkov (Prštice 5. nejnižší, podprůměr; medián 28,3 tis.) a
+  průměrný věk vs. okolí a okres (43,3 vs. 41,5 / 41,6 — spíš starší). Čísla
+  ověřena ze zdrojů; **zformalizování dat řeší úkol 2.9**.
+- [x] **2.2 🤝 Příběh účtu 518 a úplný rozklad změn** — z úkolu 1.7 připravit
   jednu čáru 2015–2025, nenápadný tříletý klouzavý průměr a jednoduchý graf
   „Co vytvořilo meziroční rozdíl". Roční hodnoty zůstávají viditelné; klouzavý
   průměr je pouze pomůcka, nesmí je nahrazovat. Text výslovně řekne, že vývoj
@@ -280,7 +288,12 @@ Spouštěcí prompt:
   totéž po přiřazení storen. Vedle grafu krátce uvést „Co z deníku nevíme".
   Graf nese krátkou poznámku „běžné ceny, bez odečtení inflace". Deliverable:
   schválený datový příběh bez tvrzení o nedoložené příčině.
-- [ ] **2.3 🤝 Tři vybraná témata v kompaktní struktuře** — právní služby,
+  ✅ hotovo 25. 8. 2026 (Petr schválil). `web/obsah/03-ucet-518-pribeh.md`:
+  nesouvislý vývoj (vrchol 2023 → pokles 2024 → růst 2025), úplný rozklad všech
+  tří meziročních změn, sekce „Co z deníku nevíme". **Na pokyn Petra jeřáb do
+  příběhu příčin nepatří** — přesouvá se do autorského výběru konkrétních položek
+  k prozkoumání hospodárnosti (výběr položek řídí Petr, viz 2.3).
+- [x] **2.3 🤝 Tři vybraná témata v kompaktní struktuře** — právní služby,
   GDPR a jeřáb. Každé téma má nahoře pouze čtyři krátké řádky: **Co víme / Co
   jsme vypočítali / Co zatím nevíme / Jak se vyjádřila obec**. Pod nimi je
   rozbalitelný kontext, srovnání, otázky a jasně podepsaný komentář Petra.
@@ -299,13 +312,35 @@ Spouštěcí prompt:
     Mezi účetními roky 2022 a 2023 tato skupina klesla o 56 773,20 Kč, proto
     se nepoužije jako vysvětlení skoku účtu 518.
   Deliverable: schválené texty tří témat.
-- [ ] **2.4 🤖 Chronologie občanské datové analýzy jako data** —
+  🔶 25. 8. 2026: Petr potvrdil a rozšířil výběr položek — **GDPR, právní služby,
+  jeřáb** + nově **odpadové hospodářství** a **ČOV/odpadní vody** (úhel: rostoucí
+  náklady, které se přeúčtovávají občanům). Texty se napíšou, až budou podklady
+  (část čísel u GDPR a právních služeb se teprve žádá dle 106). Jeřáb patří do
+  autorského výběru položek, ne do příběhu příčin 518 (viz 2.2).
+  ✅ hotovo 26. 8. 2026 — postaveno rovnou na webu (sekce „Ptáme se na vybrané výdaje"):
+  GDPR (272 250 Kč 2025 + 108 900 za 1H2026; paušál 22 500 bez DPH; orientační srovnání
+  s ceníky pro obce do 1 000 obyv.), právní služby (2 094 182 Kč 2022–2025), jeřáb jako
+  **poslední** a s výslovným uznáním, že jeřáb je při opravě nezbytný — sazba 28 000 Kč
+  bez DPH/měsíc odpovídá trhu, otázkou je délka pronájmu (18 plateb, 609 840 Kč nájemné)
+  vs. ceny použitých jeřábů 370–800 tis. Kč. Každé téma má čtyřřádkový souhrn, graf,
+  varování k výkladu a otevřené otázky.
+  🔶 Dřívější koncept `web/obsah/04-vybrane-polozky.md` (25. 8. 2026): plná témata
+  **jeřáb / odpadové hospodářství / ČOV** (u odpadů doloženo výdaje 1,74 mil. vs.
+  poplatky 694 tis. za 2025 = občané kryjí ~40 %); **GDPR a právní služby** jako
+  karty „čeká se na doložení". Hlubší hodnocení hospodárnosti odkázáno do autorské
+  interpretační sekce (P-34). K revizi Petra.
+- [x] **2.4 🤖 Chronologie občanské datové analýzy jako data** —
   `data/chronologie.json`: datum, titulek, věcný popis, č. j., původ informace
   a odkaz na veřejný sanitizovaný dokument. Vychází z kontrolního dokumentu
   lhůt a všech složek od prvního sběru zdrojů 30. 4. 2026 po aktuální stav.
   Deliverable: úplná, průběžně doplnitelná osa; název zdrojové složky může
   obsahovat „Audit", veřejný text používá „analýza".
-- [ ] **2.5 🤖 Strojová anonymizace JSON/CSV/HTML/PDF** — Petr ukáže soukromou
+  🔶 ROZPRACOVÁNO 25. 8. 2026: vytvořeno `data/chronologie.json` (14 událostí
+  30. 4.–27. 8. 2026; pole datum/typ/titulek/popis/č.j./původ/dokument) a text
+  `web/obsah/06-jak-jsme-postupovali.md` včetně **trackeru žádostí a podání
+  (P-28)**. Odkazy na sanitizované dokumenty (`dokument`) doplní krok 2.5.
+  K revizi Petra.
+- [x] **2.5 🤖 Strojová anonymizace JSON/CSV/HTML/PDF** — Petr ukáže soukromou
   složku s originály. `skripty/anonymizace.py build` provede inventuru a hashe,
   vytvoří veřejné strukturované exporty podle allowlistu, každou stránku PDF
   vyrenderuje, lokálním OCR najde kandidáty, vypálí začernění, odstraní původní
@@ -322,7 +357,18 @@ Spouštěcí prompt:
   a všechny strany, případné opravy zapíše AI do pravidel a vše přegeneruje.**
   Deliverable: veřejné deriváty, nevyřešené nálezy 0 a
   `ANONYMIZACE-SIGNOFF.md` pro aktuální commit.
-- [ ] **2.6 🤝 Sekce Soudní a správní řízení — obsah** — jedna stránka, dvě
+  ✅ hotovo 26. 8. 2026 (v rozsahu textových PDF): `skripty/anonymizace.py`
+  (PyMuPDF `apply_redactions` — text se z PDF **skutečně odstraní**, nejen překryje;
+  navíc smazána metadata). Zpracováno **9 dokumentů** (7 podání žadatele, sdělení
+  obce OUPR-867-2026, rozhodnutí KrÚ JMK) → `web/dokumenty/`, rejstřík
+  `data/dokumenty.json`, publikováno na stránce *Jak to víme*. **55 redakcí**:
+  adresa, ID datové schránky, datum narození, rodné číslo, soukromý e-mail/telefon.
+  Ponecháno vědomě: jméno autora, jména v úřední roli, čísla jednací, údaje obce.
+  ⚠️ **Poučení z chyby:** první běh přehlédl „Datum narození:" a „ID: xxx", protože
+  kontrola používala **tytéž vzory** jako redakce. Doplněn **nezávislý denylist**
+  konkrétních hodnot; teprve pak PASS. Skenované PDF s podpisy (OCR větev) zatím
+  nebylo potřeba — všechny dokumenty jsou textové.
+- [x] **2.6 🤝 Sekce Soudní a správní řízení — obsah** — jedna stránka, dvě
   samostatné části a žádný společný počet, který by vydával ÚOHS za soud.
   Soudní karty zdůrazní řízení iniciovaná obcí, ale datově zachovají procesní
   roli u všech případů z odpovědi obce. Správní karty popíší kontrolu, zjištění,
@@ -330,19 +376,48 @@ Spouštěcí prompt:
   Nahoře samostatný graf právních nákladů 518; propojení na konkrétní řízení
   pouze s přímým dokladem. Viditelný stav žádosti z 15. 8. 2026 a upozornění na
   možnou neúplnost do obdržení odpovědi. Petr schvaluje finální znění.
+  🔶 ROZPRACOVÁNO 25. 8. 2026: `web/obsah/05-soudni-spravni-rizeni.md` — dvě
+  oddělené části, ÚOHS ≠ soud, 3 pravomocná rozhodnutí (pokuty 11 000 Kč),
+  právní rozlišení registr smluv (340/2015 — na obec se nevztahuje) vs. profil
+  zadavatele (134/2016). Na pokyn Petra je **primární věcná podstata a výsledek**
+  řízení; náklady na právní služby jen jako **doplněk** (přesunou se do sekce
+  o hospodárnosti). Soudní část čeká na odpověď obce. Čeká na finální schválení.
 - [ ] **2.7 🤝 Stránka „Pro další obce a občany" + návod „Udělejte si sami"**
   — použít revidovaný `NAVOD-UDELEJTE-SI-SAMI.md`; osobní údaje se nedávají do
   cloudového AI promptu a veřejný výstup se nenazývá audit. Pokud tento úkol
   ohrozí termín, přesune se celý do v2; pro v1 je povinná pouze stránka „Jak
   jsme postupovali". Licence se vztahuje na vlastní kód a text, ne automaticky
   na převzaté dokumenty a zdrojová data.
-- [ ] **2.8 🤖 AI kontrola faktů a jazyka + Petrovo schválení** — AI vytvoří
+- [x] **2.8 🤖 AI kontrola faktů a jazyka + Petrovo schválení** — AI vytvoří
   jednoduchý registr všech publikovaných skutkových tvrzení: tvrzení, typ (zdroj/výpočet/
   autorské zařazení/nezjištěno), zdroj, výpočet a stav kontroly. AI ověří každý
   řádek; tvrdý release gate platí zejména pro 100 % headline čísel, negativních
   tvrzení a výroků o konkrétních osobách. Opraví formulace bez podkladu a
   sugestivní otázky. Výstup: protokol NÁLEZ → OPRAVA.
   Finální text čte a schvaluje Petr; žádná další lidská kontrola není v plánu.
+  ✅ hotovo 27. 8. 2026: `skripty/kontrola_faktu.py` — registr **28 tvrzení**
+  (15 zdroj / 7 výpočet / 6 autorské zařazení). Skript hodnoty **přepočítá
+  z dat** a zároveň ověří, že tvrzené číslo na webu opravdu je.
+  Výsledek: **0 neshod**, 25 ověřeno proti datům i textu, 3 „POZOR" = číslo je
+  správné, jen se na webu píše zaokrouhleně (24,4 mil., 7,8 mil.).
+- [x] **2.9 🤖 Srovnání s podobnými obcemi jako data (P-35, reprodukovatelně)** —
+  z rešerše k úvodu udělat trvalá data: (a) rozpočty obcí 900–1100 Brno-venkov
+  z MONITOR API `/api/rozpocet/souhrnny` (konsolidovaná skutečnost) + IČO z ARES;
+  (b) průměrný věk obcí z ČSÚ (soubor v manifestu) + okresní průměr; (c) souřadnice
+  obcí (Wikidata) pro „nejbližší". Výstup: `data/srovnani-obci.json` + skript(y)
+  v `skripty/`, zdroje v manifestu, čísla přes `validace.py`. Deliverable:
+  reprodukovatelné datové soubory, ze kterých se generuje srovnání v úvodu.
+  ✅ hotovo 26. 8. 2026: `skripty/srovnani_obci.py` → `data/srovnani-obci.json`,
+  zobrazeno v sekci „Obec v číslech" (dvě karty + rozbalovací tabulka 17 obcí).
+  Metodika: **tříletý průměr konsolidovaných příjmů 2022–2024** dělený počtem
+  obyvatel k 1. 1. 2025 (jeden rok by kolísal podle investic). Zdroje: ČSÚ,
+  ARES (IČO), MONITOR (rozklikávací rozpočet), Wikidata (souřadnice); odpovědi
+  API se cachují v soukromé zóně, běh jde zopakovat i `--offline`.
+  Tvrdé kontroly (obyvatelé, věk Prštic, okresní průměr) PASS.
+  Výsledek: **24 829 Kč/obyv., 5. nejnižší ze 17** (medián 27 608 Kč);
+  věk 43,3 vs. okolí 41,5 a okres 41,65 → **30. nejstarší ze 187 obcí okresu**.
+  Pozn.: čísla se drobně liší od první rešerše (25 251 Kč) — sjednocen jmenovatel
+  na počet obyvatel k 1. 1. 2025; pořadí i závěr beze změny.
 
 ## Fáze 3 — Stavba webu (2–3 dny, AI skillem /web)
 
@@ -351,15 +426,15 @@ Spouštěcí prompt:
 > ke schválení** → teprve pak celek. Grafy se staví podle explicitních pravidel
 > v tomto plánu.
 
-- [ ] **3.1 🤝 Zakotvení a výběr směru** — předmět: hospodaření malé obce;
+- [x] **3.1 🤝 Zakotvení a výběr směru** — předmět: hospodaření malé obce;
   publikum: občan-laik + nepřátelský čtenář; hlavní úloha: pochopit za 2 min.
   AI nabídne 2–3 směry (očekávaný charakter: civilní, důvěryhodný, „úřední
   čistota bez úřední šedi" — žádná skandální červená), Petr vybere. *(~20 min)*
-- [ ] **3.2 🤝 Živá ukázka v0** — hero + příjmy, výdaje a saldo z reálných dat
+- [x] **3.2 🤝 Živá ukázka v0** — hero + příjmy, výdaje a saldo z reálných dat
   + náhled vývoje 518, v prohlížeči. Žádný Sankey, který by naznačoval účelové
   propojení konkrétních příjmů a výdajů.
   **Nestaví se dál bez Petrova „tenhle směr ano".** *(~15 min)*
-- [ ] **3.3 🤖 Stavba celku** — hlavní navigace: Přehled → Kam šly peníze →
+- [x] **3.3 🤖 Stavba celku** — hlavní navigace: Přehled → Kam šly peníze →
   Účet 518 → Soudy a řízení → Jak to víme. Pořadí stavby: layout → sanitizovaná
   data → rozpočet (seřazené sloupce + rozlišení opakované/jednorázové dle P-33
   + tabulky + přepínač na obyvatele) → 518 →
@@ -368,8 +443,15 @@ Spouštěcí prompt:
   uvádí hlavně na úrovni grafu nebo karty; čtyřřádkový souhrn se použije jednou
   na každé vybrané téma, ne u každého čísla. **Designové detaily až nakonec.**
   Každá sekce = samostatný commit. Deliverable: kompletní web lokálně.
-- [ ] **3.4 🤖 Neviditelná vrstva** — title, description, OG obrázek, sitemap,
+- [x] **3.4 🤖 Neviditelná vrstva** — title, description, OG obrázek, sitemap,
   robots.txt, favicon (P-16); kontrola `lang="cs"` a čitelnosti dle P-14.
+  ✅ hotovo 26. 8. 2026: u všech tří stránek title, description, canonical,
+  Open Graph (vč. og:image = ilustrace zámku) a Twitter card; `favicon.svg`,
+  `robots.txt`, `sitemap.xml`. Ověřeno: jeden H1 na stránku, `lang="cs"`,
+  text 19 px, 0 obrázků bez alt, mobil 360 px bez vodorovného posuvu,
+  čistá konzole. **Struktura webu:** `index.html` (hospodaření), `rizeni.html`,
+  `jak-to-vime.html`, sdílený `styl.css`; data do všech stránek vkládá
+  `skripty/vlozit_data.py` (do HTML se ručně nesahá).
 
 ## Fáze 4 — Ověření (½–1 den; AI kontroly + finální oči Petra)
 
@@ -384,7 +466,7 @@ Spouštěcí prompt:
   klávesou Tab, kontrast, odkazy, čistá konzole a skutečné tabulkové alternativy
   grafů. Světlý režim je povinný; tmavý režim lze vypustit, pokud by zdržoval.
   Důkaz: screenshoty a protokol.
-- [ ] **4.3 🤖 Fakta a reprodukovatelnost** — spustit validační skript z 1.8,
+- [x] **4.3 🤖 Fakta a reprodukovatelnost** — spustit validační skript z 1.8,
   znovu vygenerovat všechny odvozené hodnoty a porovnat 100 % headline čísel
   a tvrzení s registrem z 2.8. Zvlášť ověřit storna, právní služby, jeřáb,
   odpadní vodu a rozdíl cash/accrual. Kritérium: žádné neověřené hlavní tvrzení.

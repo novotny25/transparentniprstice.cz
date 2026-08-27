@@ -1,0 +1,148 @@
+{
+ "meta": {
+  "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
+  "obec": "Prštice",
+  "ico": "00282405",
+  "stav_ke_dni": "2026-08-26",
+  "upozorneni": "Osa se průběžně doplňuje. Řízení u Krajského úřadu JMK běží (lhůta do 27. 8. 2026) a odpověď obce na žádost o přehled soudních řízení z 15. 8. 2026 se čeká.",
+  "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty doplní krok strojové anonymizace (PLAN 2.5).",
+  "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
+ },
+ "udalosti": [
+  {
+   "datum": "2026-04-30",
+   "typ": "nález",
+   "titulek": "Nález ve veřejných účetních výkazech",
+   "popis": "Z veřejných výkazů (MONITOR, rozvaha a výkaz zisku a ztráty 2015–2025) sestaven přehled hospodaření obce. Nápadný nárůst účtu 518 „Ostatní služby“ dal podnět k bližšímu zkoumání.",
+   "cj": null,
+   "puvod_informace": "veřejné zdroje (MONITOR)",
+   "dokument": null
+  },
+  {
+   "datum": "2026-06-04",
+   "typ": "žádost 106",
+   "titulek": "Žádost o rozpis účtu 518 (2022–2025)",
+   "popis": "Žádost o seznam dokladů na účtu 518 (dodavatel, předmět, datum, částka) ve strojově čitelném formátu.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-06-23",
+   "typ": "žádost 106",
+   "titulek": "Žádost o obecní zpravodaje",
+   "popis": "Požádal jsem o obecní zpravodaje ve strojově čitelné podobě. Cílem bylo vytáhnout si z nich přehled dění v obci vlastními silami — a nemuset se tak obce ptát na každou jednotlivost. Obec zpravodaje v požadované podobě neposkytla.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-07-01",
+   "typ": "žádost 106",
+   "titulek": "Žádost o detail smluv k účtu 518",
+   "popis": "Žádost o smlouvy k položkám účtu 518.",
+   "cj": "SP/088/2026",
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-07-17",
+   "typ": "vyřízení + podání",
+   "titulek": "Obec doručila jen slovní sdělení; podána stížnost",
+   "popis": "Obec doručila sdělení č. j. OUPR-867-2026 — pouze slovní komentář, bez požadovaných dokladů. Téhož dne podána stížnost podle § 16a zákona 106/1999 Sb.",
+   "cj": "OUPR-867-2026",
+   "puvod_informace": "vyřízení obce + vlastní podání",
+   "dokument": null
+  },
+  {
+   "datum": "2026-07-17",
+   "typ": "žádost 106",
+   "titulek": "Žádost o opis deníku účtu 518 za 1.–30. 6. 2026",
+   "popis": "Žádost o opis účetního deníku účtu 518 za první pololetí 2026.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-07-20",
+   "typ": "milník",
+   "titulek": "Stížnost doručena obci; lhůta marně uplynula",
+   "popis": "Stížnost podle § 16a doručena obci do datové schránky. Sedmidenní lhůta podle § 16a odst. 5 marně uplynula 27. 7. 2026.",
+   "cj": null,
+   "puvod_informace": "procesní krok",
+   "dokument": null
+  },
+  {
+   "datum": "2026-07-28",
+   "typ": "podání",
+   "titulek": "Žádost o opatření proti nečinnosti — Krajský úřad JMK",
+   "popis": "Podána žádost o opatření proti nečinnosti podle § 80 správního řádu ke Krajskému úřadu Jihomoravského kraje (nadřízený orgán obce).",
+   "cj": null,
+   "puvod_informace": "vlastní podání",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-03",
+   "typ": "vyřízení",
+   "titulek": "Obec poskytla opis deníku 518 za leden–červen 2026",
+   "popis": "Obec poskytla opis účetního deníku účtu 518 za první pololetí 2026 (č. j. OUPR-1007/2026).",
+   "cj": "OUPR-1007/2026",
+   "puvod_informace": "vyřízení obce",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-15",
+   "typ": "žádost 106",
+   "titulek": "Opakovaná žádost — pověřenec GDPR",
+   "popis": "Žádost o rámcovou smlouvu, měsíční paušál a rozsah plnění pověřence pro ochranu osobních údajů.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-15",
+   "typ": "žádost 106",
+   "titulek": "Žádost o přehled soudních řízení obce",
+   "popis": "Žádost o přehled soudních řízení, v nichž byla obec účastníkem od 1. 1. 2018.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-19",
+   "typ": "rozhodnutí",
+   "titulek": "Krajský úřad dal stížnosti za pravdu a přikázal obci žádost vyřídit",
+   "popis": "Krajský úřad Jihomoravského kraje rozhodl o stížnosti ze 17. 7. 2026 tak, že obci Prštice přikázal vyřídit žádost o informace z 1. 7. 2026 ve lhůtě do 15 dnů od doručení rozhodnutí. Šlo o faktury, smlouvy a výkazy práce k právním službám, ke službám pověřence GDPR a k nájmu stavebního jeřábu. Proti rozhodnutí se nelze odvolat.",
+   "cj": "JMK 123854/2026 (sp. zn. S-JMK 113937/2026 OKP)",
+   "puvod_informace": "rozhodnutí nadřízeného orgánu",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-22",
+   "typ": "nález",
+   "titulek": "Ověření tří rozhodnutí ÚOHS",
+   "popis": "Z veřejné Sbírky rozhodnutí ÚOHS ověřena tři pravomocná rozhodnutí (neuveřejnění smlouvy nebo dodatku na profilu zadavatele).",
+   "cj": null,
+   "puvod_informace": "veřejný zdroj (ÚOHS)",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-25",
+   "typ": "žádost 106",
+   "titulek": "Žádost o rozpis účtu 511 „Opravy a udržování“ (2021–2025)",
+   "popis": "Žádost o seznam dokladů na účtu 511 (dodavatel, předmět, datum, částka) a o způsob výběru dodavatele u největších oprav.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": null
+  },
+  {
+   "datum": "2026-08-27",
+   "typ": "milník (budoucí)",
+   "titulek": "Uplyne 30denní lhůta Krajského úřadu JMK",
+   "popis": "Uplyne 30denní lhůta pro rozhodnutí o žádosti o opatření proti nečinnosti. Krajský úřad musí vydat usnesení, i když žádosti nevyhoví.",
+   "cj": null,
+   "puvod_informace": "procesní milník",
+   "dokument": null
+  }
+ ]
+}

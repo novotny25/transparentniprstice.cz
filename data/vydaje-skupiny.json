@@ -1,0 +1,7876 @@
+{
+ "meta": {
+  "basis": "cash_budget",
+  "jednotka": "Kč",
+  "roky": [
+   2019,
+   2020,
+   2021,
+   2022,
+   2023,
+   2024,
+   2025
+  ],
+  "zdroj": "MONITOR (MF ČR), výkaz FIN 2-12 M, skutečnost k 31.12.",
+  "vygenerovano": "2026-08-27 06:23",
+  "poznamka": "Tři úrovně: oblast (zařazeno autorem) → agenda = paragraf → položka = druh výdaje. Součet oblastí se v každém roce rovná celkovým výdajům."
+ },
+ "roky": {
+  "2019": {
+   "celkem_kc": 16689541.39,
+   "oblasti": [
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 4989227.09,
+     "kapitalove_kc": 1879286.32,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 4954601.59,
+       "kapitalove_kc": 1879286.32,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 1918209.12
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 1879286.32
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 860854.7
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 239923.05
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 33042.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 15564.4
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 5022.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 2700.0
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 34625.5,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 30758.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1580.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1241.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1046.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 4920835.53,
+     "kapitalove_kc": 309905.0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 3041166.1,
+       "kapitalove_kc": 309905.0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 950362.05
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 309905.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 237853.99
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 227651.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 199911.24
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 199771.78
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 192177.0
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 148291.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 126623.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 100135.6
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 91414.5
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 85908.63
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 35826.61
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 25562.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 20600.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 14294.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 14269.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 14099.5
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 13285.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 9000.0
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 7561.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 4105.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 4099.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 2769.2
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 1981.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 1975.0
+        },
+        {
+         "kod": "5173",
+         "nazev": "Cestovné (tuzemské i zahraniční)",
+         "kc": 966.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 769.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1148402.53,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 829681.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 146212.1
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 76639.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 47799.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 21923.0
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 12307.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9055.23
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 4743.2
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 43.0
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 676091.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 476520.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 199571.0
+        }
+       ]
+      },
+      {
+       "par": "6117",
+       "nazev": "Volby do Evropského parlamentu",
+       "kc": 24379.8,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 20259.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 1312.0
+        },
+        {
+         "kod": "5173",
+         "nazev": "Cestovné (tuzemské i zahraniční)",
+         "kc": 1140.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1017.8
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 436.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 148.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 67.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 16888.4,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 16888.4
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 8915.3,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 8915.3
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 4992.4,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4992.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 1439202.16,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 912232.48,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 742168.48
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 60984.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 56551.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 25770.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 24684.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1812.0
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 263.0
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 526969.68,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 317676.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 161839.68
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24675.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8988.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 7651.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 3071.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 2889.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 180.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1287524.73,
+     "kapitalove_kc": 101797.0,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 999448.23,
+       "kapitalove_kc": 34000.0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 627725.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 156252.32
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 56496.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 37343.51
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 34000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 30303.6
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 17795.8
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 17696.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 13726.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 4304.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 2125.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1140.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 541.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 189471.2,
+       "kapitalove_kc": 67797.0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 99670.0
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 67797.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 22004.2
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 60284.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 43940.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 16344.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 38321.3,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 20899.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 10500.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 3400.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1936.3
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 930.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 656.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 1022569.26,
+     "kapitalove_kc": 205999.0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 892080.4,
+       "kapitalove_kc": 205999.0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 608784.0
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 205999.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 26002.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 17369.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 15506.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4790.4
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 3630.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 122488.86,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 113296.86
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 9192.0
+        }
+       ]
+      },
+      {
+       "par": "3429",
+       "nazev": "Ostatní zájmová činnost a rekreace",
+       "kc": 5000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 5000.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 3000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 3000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 956807.4,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 880814.92,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 880814.92
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 48464.98,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 48464.98
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 27527.5,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 27527.5
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 926227.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 926227.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 736227.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 190000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 815408.22,
+     "kapitalove_kc": 500.0,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 383808.92,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 271015.95
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 70225.59
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 25363.37
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 10262.41
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 4950.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 1360.8
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 630.8
+        }
+       ]
+      },
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 371350.3,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 367634.3
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 3173.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 543.0
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 57174.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5193",
+         "nazev": "(položka 5193)",
+         "kc": 57174.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 3075.0,
+       "kapitalove_kc": 500.0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2575.0
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 500.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 205073.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 68009.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 43800.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 23338.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 871.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 44520.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 44520.0
+        }
+       ]
+      },
+      {
+       "par": "3900",
+       "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+       "kc": 23470.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 22990.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 480.0
+        }
+       ]
+      },
+      {
+       "par": "2141",
+       "nazev": "Vnitřní obchod",
+       "kc": 16000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 16000.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 14978.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 6998.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 4349.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 3030.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 601.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 14859.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 5808.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 5467.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3584.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 13584.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 12000.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 1584.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 9653.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 6898.0
+        },
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 2755.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 126667.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 126667.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 72880.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 30216.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 6696.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 5382.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 5000.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4469.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 1831.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 193.0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2020": {
+   "celkem_kc": 20380643.09,
+   "oblasti": [
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 5914628.87,
+     "kapitalove_kc": 4134516.35,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 2492993.71,
+       "kapitalove_kc": 1088148.19,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 1022808.19
+        },
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 788378.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 195519.43
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 177853.74
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 70958.0
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 65340.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 40935.35
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 38325.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 26620.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 21849.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 14589.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 13716.0
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 12703.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 2016.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1163.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 220.0
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 1702109.0,
+       "kapitalove_kc": 1683000.0,
+       "polozky": [
+        {
+         "kod": "6130",
+         "nazev": "Pozemky",
+         "kc": 1683000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 9295.0
+        },
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 7140.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 2674.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 1634415.16,
+       "kapitalove_kc": 1307918.16,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 1307918.16
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 202733.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 92788.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 23716.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 7260.0
+        }
+       ]
+      },
+      {
+       "par": "2341",
+       "nazev": "Vodní díla v zemědělské krajině",
+       "kc": 55450.0,
+       "kapitalove_kc": 55450.0,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 55450.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 29661.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 15471.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 7800.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2113.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 1927.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1667.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 683.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 4041211.42,
+     "kapitalove_kc": 349924.74,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 2384887.9,
+       "kapitalove_kc": 349924.74,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 678719.0
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 349924.74
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 229249.0
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 223368.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 212964.28
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 190650.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 94775.52
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 88019.0
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 77330.98
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 62222.33
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 56933.19
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 25684.38
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 21419.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 13200.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 11492.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 11223.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 9000.0
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 8115.0
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 7260.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 4462.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 3855.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 2491.48
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 2100.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 430.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1163201.8,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 886287.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 159741.94
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 81880.28
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 23977.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8160.46
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 2100.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 659.12
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 396.0
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 433145.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 339530.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 93615.0
+        }
+       ]
+      },
+      {
+       "par": "6115",
+       "nazev": "Volby do zastupitelstev územních samosprávných celků",
+       "kc": 34146.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24485.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 6233.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 1651.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 970.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 328.0
+        },
+        {
+         "kod": "5173",
+         "nazev": "Cestovné (tuzemské i zahraniční)",
+         "kc": 242.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 177.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 60.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 18173.52,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 18173.52
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 4620.2,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 4620.2
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 3037.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 3037.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 3432611.29,
+     "kapitalove_kc": 1514172.57,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 3430267.29,
+       "kapitalove_kc": 1514172.57,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 1584740.96
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 1514172.57
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 234106.7
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 71132.2
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 14805.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 8654.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2655.86
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 2344.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 1260.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1084.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 2336351.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 2336351.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 2136351.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 200000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 1664026.02,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 1153800.48,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 1082661.18
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 40773.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 27060.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1727.3
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1579.0
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 510225.54,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 283751.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 93386.66
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 56826.24
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 36525.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 24603.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 7803.6
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3857.3
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 3208.74
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 264.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 990944.72,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 825053.6,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 825053.6
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 127634.03,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 127634.03
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 38257.09,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 38257.09
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 731874.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 656346.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 650000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 3630.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 2716.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 65528.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 60932.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4596.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 5000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 5000.0
+        }
+       ]
+      },
+      {
+       "par": "3429",
+       "nazev": "Ostatní zájmová činnost a rekreace",
+       "kc": 5000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 5000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 668543.64,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 437613.86,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 318660.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 79028.35
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 28679.74
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9887.25
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 1304.52
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 54.0
+        }
+       ]
+      },
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 115489.78,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 115489.78
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 69149.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5193",
+         "nazev": "(položka 5193)",
+         "kc": 69149.0
+        }
+       ]
+      },
+      {
+       "par": "2221",
+       "nazev": "Provoz veřejné silniční dopravy",
+       "kc": 43521.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 34580.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 7744.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1197.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 2770.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2120.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 650.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 556982.92,
+     "kapitalove_kc": 130655.89,
+     "agendy": [
+      {
+       "par": "1039",
+       "nazev": "Ostatní záležitosti lesního hospodářství",
+       "kc": 163446.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 160446.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 3000.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 143517.38,
+       "kapitalove_kc": 130655.89,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 130655.89
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 9619.0
+        },
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 2832.49
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 410.0
+        }
+       ]
+      },
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 110788.54,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 37575.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 25691.14
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 20497.4
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 19523.0
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 7502.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 91300.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 91300.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 14813.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 12000.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2813.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 14522.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 10135.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 3607.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 780.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 9947.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 9251.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 696.0
+        }
+       ]
+      },
+      {
+       "par": "3900",
+       "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+       "kc": 8649.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 5250.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3399.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 43469.21,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 32241.21,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 18404.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 9368.21
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4469.0
+        }
+       ]
+      },
+      {
+       "par": "5213",
+       "nazev": "Krizová opatření",
+       "kc": 11228.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 8128.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 3100.0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2021": {
+   "celkem_kc": 16849859.18,
+   "oblasti": [
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 5932563.63,
+     "kapitalove_kc": 119797.0,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 5931214.63,
+       "kapitalove_kc": 119797.0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 3512388.71
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1971594.84
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 302763.08
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 119797.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 11017.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 8654.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 5000.0
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 1349.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1349.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 4508842.93,
+     "kapitalove_kc": 125000.0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 2681100.95,
+       "kapitalove_kc": 125000.0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 842879.1
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 286332.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 253649.95
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 242139.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 181500.0
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 125000.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 120118.78
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 101232.0
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 92047.09
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 69664.05
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 56980.22
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 56337.68
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 46170.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 28694.72
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 26790.84
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 25600.0
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 21172.4
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 20706.72
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 14616.7
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 14494.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 13548.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 11000.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 9259.7
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 8521.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 4420.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 3750.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 3287.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 750.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 440.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1216789.71,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 891094.9
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 160961.86
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 82369.32
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 33990.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24000.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9456.32
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 8712.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 5216.31
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 593.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 396.0
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 552115.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 448590.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 103525.0
+        }
+       ]
+      },
+      {
+       "par": "6114",
+       "nazev": "Volby do Parlamentu ČR",
+       "kc": 30884.52,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24416.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 2979.9
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 2101.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 1008.1
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 243.52
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 136.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 21924.75,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 21924.75
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 3037.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 3037.0
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 2991.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 2991.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1497311.86,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 1291734.86,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 708231.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 187782.77
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 175643.4
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 63744.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 41704.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 33384.69
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 27640.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 25318.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 16177.0
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 7280.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 2500.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1205.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 1125.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 141603.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 121641.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 19962.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 48810.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 29077.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 13000.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 3105.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1667.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 1452.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 509.0
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 15164.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 8024.0
+        },
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 7140.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 1123035.29,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 943532.02,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 943532.02
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 149405.05,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 149405.05
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 30098.22,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 30098.22
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 942017.05,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 524557.05,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 323301.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 110425.99
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 53841.12
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 23300.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8613.36
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2611.08
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2253.5
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 211.0
+        }
+       ]
+      },
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 417460.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 345644.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 42950.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 26850.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1971.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 45.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 896755.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 896755.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 706755.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 190000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 845404.67,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 461718.28,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 288689.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 71042.79
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 29835.0
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 25941.59
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 16533.12
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 11567.28
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 6899.5
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 5460.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 5000.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 750.0
+        }
+       ]
+      },
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 304937.39,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 301826.39
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2420.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 691.0
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 73874.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5193",
+         "nazev": "(položka 5193)",
+         "kc": 73874.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 4875.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 4875.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 754294.74,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 706346.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 700000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 3630.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 2716.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 42948.74,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 38352.74
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4596.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 5000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 3000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 230065.25,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 65073.25,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 41850.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 16214.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 5172.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1280.25
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 449.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 108.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 45042.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 32924.1
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 5674.8
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3521.1
+        },
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 2922.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 38500.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 38500.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 35477.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 11939.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 11458.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 9075.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3005.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 17907.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 17500.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 407.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 15395.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5223",
+         "nazev": "(položka 5223)",
+         "kc": 15395.0
+        }
+       ]
+      },
+      {
+       "par": "3900",
+       "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+       "kc": 12671.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 12671.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 119568.76,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 119568.76,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 40580.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 38077.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 8566.8
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 6790.96
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 5640.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 5445.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4469.0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2022": {
+   "celkem_kc": 24054654.06,
+   "oblasti": [
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 10002221.19,
+     "kapitalove_kc": 445993.88,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 9999821.19,
+       "kapitalove_kc": 445993.88,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 7737867.75
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 795378.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 642211.94
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 365580.88
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 179935.8
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 152110.14
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 80413.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 25600.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 12069.68
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 8654.0
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 2400.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2400.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 5113946.58,
+     "kapitalove_kc": 163350.0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 3283615.56,
+       "kapitalove_kc": 163350.0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 975669.0
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 604613.15
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 332943.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 284156.11
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 193400.0
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 163350.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 141814.76
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 104998.88
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 79638.37
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 70105.18
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 59112.6
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 42096.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 38011.48
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 37394.21
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 30313.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 22400.0
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 19632.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 17033.82
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 14955.0
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 14307.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 10190.0
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 9040.0
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 7260.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4888.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 3740.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 2554.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1199709.67,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 887024.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 160961.14
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 82921.83
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 34320.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 21547.68
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9029.91
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 3905.11
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 555945.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 555945.0
+        }
+       ]
+      },
+      {
+       "par": "6115",
+       "nazev": "Volby do zastupitelstev územních samosprávných celků",
+       "kc": 49099.8,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 32087.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 6830.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 5556.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 2628.8
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 1880.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 118.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 21654.07,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 21654.07
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 3037.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 3037.0
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 800.48,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 800.48
+        }
+       ]
+      },
+      {
+       "par": "6118",
+       "nazev": "Volba prezidenta republiky",
+       "kc": 85.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 85.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 1994325.94,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 1433682.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1407203.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 23400.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2400.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 598.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 81.0
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 560643.94,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 380864.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 127538.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 27000.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 12896.18
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 7015.37
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 4877.39
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 453.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 1913805.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 1796007.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5336",
+         "nazev": "Neinvestiční transfery zřízeným příspěv.organizac.",
+         "kc": 913291.0
+        },
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 880000.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 2716.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 97598.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 93002.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4596.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 20200.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 18000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2200.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1629009.09,
+     "kapitalove_kc": 180590.0,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 1254157.25,
+       "kapitalove_kc": 95590.0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 702091.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 174119.88
+        },
+        {
+         "kod": "6119",
+         "nazev": "Ostatní nákup dlouhodobého nehmotného majetku",
+         "kc": 95590.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 83844.65
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 63242.66
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 63189.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 23881.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 19199.0
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 10511.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 8035.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 7000.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 1635.06
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1269.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 550.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 206758.67,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 205911.67
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 847.0
+        }
+       ]
+      },
+      {
+       "par": "3635",
+       "nazev": "Územní plánování",
+       "kc": 85000.0,
+       "kapitalove_kc": 85000.0,
+       "polozky": [
+        {
+         "kod": "6119",
+         "nazev": "Ostatní nákup dlouhodobého nehmotného majetku",
+         "kc": 85000.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 70604.17,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 29913.58
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 24980.59
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 2678.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1667.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 727.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 638.0
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 12489.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 7140.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 5349.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 1278226.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 1278226.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 1058226.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 220000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 1175793.9,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 952270.85,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 952270.85
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 206432.71,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 206432.71
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 17090.34,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 17090.34
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 626556.37,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 484126.37,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 343550.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 85201.07
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 30919.29
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 16204.83
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 3325.0
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 3152.18
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 1774.0
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 142430.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5323",
+         "nazev": "Neinvestiční transfery krajům",
+         "kc": 142430.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 219918.48,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 110895.46,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 58800.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 38954.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 6256.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 6067.46
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 818.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 35200.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 35200.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 23384.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 18000.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 4182.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1202.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 19544.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 8168.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 7609.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 3767.0
+        }
+       ]
+      },
+      {
+       "par": "1039",
+       "nazev": "Ostatní záležitosti lesního hospodářství",
+       "kc": 18863.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 18863.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 9000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5223",
+         "nazev": "(položka 5223)",
+         "kc": 9000.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 3032.02,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 3032.02
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 100851.51,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 100851.51,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 33874.48
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 26168.33
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 10831.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 6925.8
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4469.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 3284.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 3034.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 1111.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 751.7
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 402.2
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2023": {
+   "celkem_kc": 34439399.26,
+   "oblasti": [
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 13555386.02,
+     "kapitalove_kc": 8133100.0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 11556427.76,
+       "kapitalove_kc": 8133100.0,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 8000000.0
+        },
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 1115087.0
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 473513.8
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 325925.94
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 289984.97
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 279920.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 164670.67
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 133100.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 126920.35
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 118277.07
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 104576.41
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 102902.14
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 75764.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 57600.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 39175.57
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 24278.65
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 19790.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 18403.35
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 18221.8
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 14086.6
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 12784.44
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 10348.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 7549.0
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 7260.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 7010.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 3600.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 2961.0
+        },
+        {
+         "kod": "5179",
+         "nazev": "Ostatní nákupy jinde nezařazené",
+         "kc": 1500.0
+        },
+        {
+         "kod": "5173",
+         "nazev": "Cestovné (tuzemské i zahraniční)",
+         "kc": 700.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 517.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1324929.86,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 988791.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 171997.11
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 94324.77
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 59264.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8409.98
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 2143.0
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 591173.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 515470.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 75703.0
+        }
+       ]
+      },
+      {
+       "par": "6118",
+       "nazev": "Volba prezidenta republiky",
+       "kc": 39386.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 28785.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 7279.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 1123.0
+        },
+        {
+         "kod": "5173",
+         "nazev": "Cestovné (tuzemské i zahraniční)",
+         "kc": 774.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 619.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 425.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 381.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 29227.2,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 29227.2
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 11205.2,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 11205.2
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 3037.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 3037.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 6741822.61,
+     "kapitalove_kc": 516936.2,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 6728512.61,
+       "kapitalove_kc": 503626.2,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 4515181.41
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 905277.67
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 503626.2
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 496003.3
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 270582.77
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 15937.26
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 13250.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 8654.0
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 13310.0,
+       "kapitalove_kc": 13310.0,
+       "polozky": [
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 13310.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 4955634.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 4955634.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 4730634.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 225000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 2948954.46,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 1877573.11,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1845431.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 18800.0
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1596.33
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1512.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 228.0
+        },
+        {
+         "kod": "5179",
+         "nazev": "Ostatní nákupy jinde nezařazené",
+         "kc": 5.78
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 1071381.35,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 874073.2
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 142187.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 24038.45
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 18950.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 5652.36
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 3970.34
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1902.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 400.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 208.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1639750.8,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 1074701.12,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 752322.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 186577.31
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 67711.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 25763.08
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 15676.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 8992.0
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 7872.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 6229.73
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1452.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1398.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 499.0
+        },
+        {
+         "kod": "5131",
+         "nazev": "Potraviny",
+         "kc": 209.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 409400.05,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 363006.95
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 23058.1
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 11000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 9384.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1667.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 647.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 637.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 143160.63,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 143160.63
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 12489.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 7140.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 5349.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 1456479.55,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 1122209.46,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1122209.46
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 315027.52,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 315027.52
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 19242.57,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 19242.57
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 1381456.39,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 692604.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 692604.0
+        }
+       ]
+      },
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 549729.39,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 389060.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 96487.64
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 35015.16
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 17245.59
+        },
+        {
+         "kod": "5424",
+         "nazev": "(položka 5424)",
+         "kc": 8138.4
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3782.6
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 136727.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5323",
+         "nazev": "Neinvestiční transfery krajům",
+         "kc": 136727.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 2396.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1271.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 1125.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 1233773.26,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 1083700.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 1020000.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 60984.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 2716.0
+        }
+       ]
+      },
+      {
+       "par": "3118",
+       "nazev": "Druhý stupeň základních škol",
+       "kc": 59620.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 59620.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 54641.28,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 47795.28
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 6846.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 35811.98,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 27000.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 6311.98
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2500.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 264512.46,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 264512.46,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 140231.56
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 74130.03
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 20000.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 6943.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 6619.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 6060.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 5535.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 3120.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 1055.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 818.87
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 261629.71,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 114279.75,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 73825.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 34122.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 5172.75
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1100.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 60.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 80745.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 80745.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 21849.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 20750.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 1099.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 21446.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 13654.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 5695.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 2097.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 13386.96,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 9897.8
+        },
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 3489.16
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 9923.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 5943.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2000.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 1980.0
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2024": {
+   "celkem_kc": 19861344.82,
+   "oblasti": [
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 6272010.72,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 4208584.38,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 1251595.65
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 667497.0
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 411690.09
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 355379.72
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 347981.15
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 238400.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 162231.43
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 150262.78
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 133811.5
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 128969.95
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 95333.5
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 71437.65
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 41803.7
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 41435.26
+        },
+        {
+         "kod": "5172",
+         "nazev": "Programové vybavení",
+         "kc": 23438.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 19200.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 13684.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 12472.0
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 10574.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 10120.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 8075.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4294.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 4000.0
+        },
+        {
+         "kod": "5909",
+         "nazev": "Ostatní neinvestiční výdaje jinde nezařazené",
+         "kc": 3460.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 768.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 554.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 116.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1435954.03,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 1100793.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 199773.57
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 101223.82
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24000.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8915.64
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 1188.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 60.0
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 542300.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 529150.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 13150.0
+        }
+       ]
+      },
+      {
+       "par": "6115",
+       "nazev": "Volby do zastupitelstev územních samosprávných celků",
+       "kc": 29497.14,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 22551.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 3619.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 2100.83
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 710.31
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 439.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 77.0
+        }
+       ]
+      },
+      {
+       "par": "6117",
+       "nazev": "Volby do Evropského parlamentu",
+       "kc": 28054.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 22249.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4633.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 607.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 359.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 206.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 19506.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 19506.0
+        }
+       ]
+      },
+      {
+       "par": "6409",
+       "nazev": "Ostatní činnosti jinde nezařazené",
+       "kc": 5750.17,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5904",
+         "nazev": "(položka 5904)",
+         "kc": 5750.17
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 2365.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 2365.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 2802758.03,
+     "kapitalove_kc": 322833.94,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 2801016.8,
+       "kapitalove_kc": 322833.94,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 2022364.75
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 322833.94
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 147931.38
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 142632.73
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 93014.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 72240.0
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 1741.23,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1741.23
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 2559140.92,
+     "kapitalove_kc": 435600.0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 2296430.58,
+       "kapitalove_kc": 435600.0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1351420.58
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 509410.0
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 435600.0
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 252763.53,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 252763.53
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 9946.81,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 9946.81
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 2497504.64,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 1592218.55,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1570296.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 19200.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2713.27
+        },
+        {
+         "kod": "5179",
+         "nazev": "Ostatní nákupy jinde nezařazené",
+         "kc": 9.28
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 905286.09,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 720917.73
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 109617.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 29168.88
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 20681.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 11023.91
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 8423.22
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 4938.45
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 515.9
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1816635.98,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 1261433.31,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 738559.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 181023.6
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 113646.0
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 65695.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 56837.64
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 40131.85
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 31446.5
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 10625.2
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 10000.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 7054.72
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 2500.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1543.0
+        },
+        {
+         "kod": "5132",
+         "nazev": "Ochranné pomůcky",
+         "kc": 1064.8
+        },
+        {
+         "kod": "5131",
+         "nazev": "Potraviny",
+         "kc": 1032.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 274.0
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 344686.4,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 287617.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 30557.05
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 15200.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 4464.9
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3702.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2015.5
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 1129.95
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 193067.27,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 193067.27
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 17449.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 10309.0
+        },
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 7140.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 1351154.73,
+     "kapitalove_kc": 298335.2,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 1169033.26,
+       "kapitalove_kc": 298335.2,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 434539.35
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 298335.2
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 264278.72
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 106741.11
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 38737.23
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 15295.59
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 8107.06
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2760.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 239.0
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 137639.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5323",
+         "nazev": "Neinvestiční transfery krajům",
+         "kc": 137639.0
+        }
+       ]
+      },
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 31058.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 30000.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1058.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 13424.47,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 11609.47
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1815.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 1344162.84,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 1322918.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 1300000.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 19542.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3376.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 18500.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 16000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2500.0
+        }
+       ]
+      },
+      {
+       "par": "3111",
+       "nazev": "Předškolní zařízení",
+       "kc": 2744.84,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 1994.84
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 750.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 793623.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 793623.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 663623.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 130000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 222398.85,
+     "kapitalove_kc": 96730.0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 222398.85,
+       "kapitalove_kc": 96730.0,
+       "polozky": [
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 96730.0
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 48327.4
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 28362.6
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 13138.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 12379.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 10523.08
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 3721.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 3556.77
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 2202.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 2174.0
+        },
+        {
+         "kod": "5131",
+         "nazev": "Potraviny",
+         "kc": 636.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 520.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 129.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 201955.11,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 102643.25,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 77500.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 15991.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 6702.25
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 1950.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 440.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 60.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 40880.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 40880.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 20436.9,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 10178.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 9563.9
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 695.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 17199.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 5403.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4408.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 4300.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 3088.0
+        }
+       ]
+      },
+      {
+       "par": "3319",
+       "nazev": "Ostatní záležitosti kultury",
+       "kc": 9074.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 7000.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 1794.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 280.0
+        }
+       ]
+      },
+      {
+       "par": "3900",
+       "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+       "kc": 7860.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 6861.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 999.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 3861.96,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 3861.96
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  "2025": {
+   "celkem_kc": 22484603.25,
+   "oblasti": [
+    {
+     "oblast": "Chod úřadu a zastupitelstvo",
+     "barva": "#0a84ff",
+     "popis": "Provoz obecního úřadu, odměny zastupitelů, finanční operace a volby.",
+     "kc": 6926488.24,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6171",
+       "nazev": "Činnost místní správy",
+       "kc": 4353333.48,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 1239009.29
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 916508.0
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 367898.13
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 345377.85
+        },
+        {
+         "kod": "5153",
+         "nazev": "Plyn",
+         "kc": 331832.86
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 225339.24
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 219100.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 162240.74
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 125333.5
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 122760.5
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 78389.84
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 63526.3
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 36649.02
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 34268.06
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 22838.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 12539.0
+        },
+        {
+         "kod": "5038",
+         "nazev": "Povinné pojistné na úrazové pojištění",
+         "kc": 11277.0
+        },
+        {
+         "kod": "5167",
+         "nazev": "Služby školení a vzdělávání",
+         "kc": 10410.0
+        },
+        {
+         "kod": "5321",
+         "nazev": "Neinvestiční transfery obcím",
+         "kc": 9600.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 5963.15
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 5367.0
+        },
+        {
+         "kod": "5191",
+         "nazev": "Zaplacené sankce",
+         "kc": 4000.0
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 3000.0
+        },
+        {
+         "kod": "5133",
+         "nazev": "Léky a zdravotnický materiál",
+         "kc": 106.0
+        }
+       ]
+      },
+      {
+       "par": "6112",
+       "nazev": "Zastupitelstva obcí",
+       "kc": 1487219.26,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5023",
+         "nazev": "Odměny členů zastupitelstev obcí a krajů",
+         "kc": 1139374.0
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 209342.08
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 104691.68
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 24000.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9811.5
+        }
+       ]
+      },
+      {
+       "par": "6399",
+       "nazev": "Ostatní finanční operace",
+       "kc": 1010774.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5365",
+         "nazev": "Platby daní a poplatků krajům, obcím a stát.fondům",
+         "kc": 714840.0
+        },
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 295934.0
+        }
+       ]
+      },
+      {
+       "par": "6114",
+       "nazev": "Volby do Parlamentu ČR",
+       "kc": 42283.44,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 22505.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 11301.44
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4094.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 2011.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1380.0
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 810.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 182.0
+        }
+       ]
+      },
+      {
+       "par": "6310",
+       "nazev": "Obecné příjmy a výdaje z finančních operací",
+       "kc": 19157.2,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 19157.2
+        }
+       ]
+      },
+      {
+       "par": "6402",
+       "nazev": "Finanční vypořádání",
+       "kc": 9720.86,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5364",
+         "nazev": "Vratky VR ústř. úrovně transferů poskyt. v minul.",
+         "kc": 9720.86
+        }
+       ]
+      },
+      {
+       "par": "6320",
+       "nazev": "Pojištění funkčně nespecifikované",
+       "kc": 4000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 4000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zámek a památky",
+     "barva": "#5e5ce6",
+     "popis": "Obnova a údržba kulturních památek — v Pršticích především budova zámku.",
+     "kc": 4593683.3,
+     "kapitalove_kc": 977738.73,
+     "agendy": [
+      {
+       "par": "3322",
+       "nazev": "Zachování a obnova kulturních památek",
+       "kc": 4591054.67,
+       "kapitalove_kc": 977738.73,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 2648744.64
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 977738.73
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 791386.25
+        },
+        {
+         "kod": "5141",
+         "nazev": "Úroky vlastní",
+         "kc": 76986.99
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 43306.54
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 20023.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 17308.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 15560.52
+        }
+       ]
+      },
+      {
+       "par": "3329",
+       "nazev": "Ostatní záležitosti ochrany památek a péče o kulturní dědictví",
+       "kc": 2628.63,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 1960.63
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 668.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Voda a kanalizace",
+     "barva": "#0f9fbd",
+     "popis": "Odvádění a čištění odpadních vod, pitná voda.",
+     "kc": 2505092.9,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2321",
+       "nazev": "Odvádění a čištění odpadních vod a nakládání s kaly",
+       "kc": 1620386.01,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1435055.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 148361.73
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 23600.0
+        },
+        {
+         "kod": "5192",
+         "nazev": "Poskytnuté náhrady",
+         "kc": 7196.0
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 3500.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 2601.15
+        },
+        {
+         "kod": "5161",
+         "nazev": "Poštovní služby",
+         "kc": 60.0
+        },
+        {
+         "kod": "5179",
+         "nazev": "Ostatní nákupy jinde nezařazené",
+         "kc": 12.13
+        }
+       ]
+      },
+      {
+       "par": "2310",
+       "nazev": "Pitná voda",
+       "kc": 884706.89,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5151",
+         "nazev": "Studená voda",
+         "kc": 655532.41
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 151903.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 34800.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 16919.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 8391.0
+        },
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 6834.82
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 5568.26
+        },
+        {
+         "kod": "5166",
+         "nazev": "Konzultační, poradenské a právní služby",
+         "kc": 3500.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 1258.4
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Škola a děti",
+     "barva": "#f5a524",
+     "popis": "Základní škola, mateřská škola, volný čas dětí a mládeže.",
+     "kc": 2236524.8,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3113",
+       "nazev": "Základní školy",
+       "kc": 2163689.8,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5331",
+         "nazev": "Neinvestiční příspěvky vlastním PO",
+         "kc": 1376000.0
+        },
+        {
+         "kod": "5336",
+         "nazev": "Neinvestiční transfery zřízeným příspěv.organizac.",
+         "kc": 645732.1
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 117333.7
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 14624.0
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 10000.0
+        }
+       ]
+      },
+      {
+       "par": "3421",
+       "nazev": "Využití volného času dětí a mládeže",
+       "kc": 49835.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 46000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 2500.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1335.0
+        }
+       ]
+      },
+      {
+       "par": "3118",
+       "nazev": "Druhý stupeň základních škol",
+       "kc": 23000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5339",
+         "nazev": "Neinvestiční transfery cizím PO",
+         "kc": 23000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Zeleň a veřejná prostranství",
+     "barva": "#1a9e4b",
+     "popis": "Péče o vzhled obce, veřejné osvětlení, pohřebnictví, vodní plochy, územní plánování.",
+     "kc": 1948687.05,
+     "kapitalove_kc": 369304.1,
+     "agendy": [
+      {
+       "par": "3745",
+       "nazev": "Péče o vzhled obcí a veřejnou zeleň",
+       "kc": 1686826.45,
+       "kapitalove_kc": 369304.1,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 789332.0
+        },
+        {
+         "kod": "6121",
+         "nazev": "Budovy, haly a stavby",
+         "kc": 233784.1
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 193668.55
+        },
+        {
+         "kod": "6122",
+         "nazev": "Stroje, přístroje a zařízení",
+         "kc": 135520.0
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 70283.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 68867.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 47159.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 35171.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 33328.91
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 29380.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 28580.0
+        },
+        {
+         "kod": "5134",
+         "nazev": "Prádlo, oděv a obuv",
+         "kc": 11070.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 8816.89
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 1634.0
+        },
+        {
+         "kod": "5131",
+         "nazev": "Potraviny",
+         "kc": 232.0
+        }
+       ]
+      },
+      {
+       "par": "3631",
+       "nazev": "Veřejné osvětlení",
+       "kc": 180715.68,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 180715.68
+        }
+       ]
+      },
+      {
+       "par": "3632",
+       "nazev": "Pohřebnictví",
+       "kc": 63807.92,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5154",
+         "nazev": "Elektrická energie",
+         "kc": 44115.48
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 11700.0
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 3334.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 2330.0
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 1549.44
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 779.0
+        }
+       ]
+      },
+      {
+       "par": "3639",
+       "nazev": "Komunální služby a územní rozvoj jinde nezařazené",
+       "kc": 17337.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5362",
+         "nazev": "Platby daní a poplatků státnímu rozpočtu",
+         "kc": 10197.0
+        },
+        {
+         "kod": "5164",
+         "nazev": "Nájemné",
+         "kc": 6440.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 700.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Odpady",
+     "barva": "#a2845e",
+     "popis": "Svoz a zpracování komunálního i nebezpečného odpadu.",
+     "kc": 1739735.7,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3722",
+       "nazev": "Sběr a svoz komunálních odpadů",
+       "kc": 1289987.63,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 1289987.63
+        }
+       ]
+      },
+      {
+       "par": "3725",
+       "nazev": "Využívání a zneškodňování komunálních odpadů",
+       "kc": 423862.67,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 423862.67
+        }
+       ]
+      },
+      {
+       "par": "3721",
+       "nazev": "Sběr a svoz nebezpečných odpadů",
+       "kc": 13785.4,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 13785.4
+        }
+       ]
+      },
+      {
+       "par": "3726",
+       "nazev": "Využívání a zneškodňování ostatních odpadů",
+       "kc": 12100.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 12100.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Doprava a pošta",
+     "barva": "#e63562",
+     "popis": "Pošta, místní komunikace, dopravní obslužnost.",
+     "kc": 1105964.45,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "2411",
+       "nazev": "Záležitosti pošt",
+       "kc": 719432.65,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5011",
+         "nazev": "Platy zaměstnanců v pracovním poměru",
+         "kc": 528373.71
+        },
+        {
+         "kod": "5031",
+         "nazev": "Povinné pojistné na sociální zabezp. a SPZ",
+         "kc": 126457.52
+        },
+        {
+         "kod": "5032",
+         "nazev": "Povinné pojistné na veřejné zdravotní pojištění",
+         "kc": 45889.82
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 9468.92
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 4712.28
+        },
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 3980.4
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 550.0
+        }
+       ]
+      },
+      {
+       "par": "2219",
+       "nazev": "Ostatní záležitosti pozemních komunikací",
+       "kc": 245102.8,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 241975.8
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 2118.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1009.0
+        }
+       ]
+      },
+      {
+       "par": "2292",
+       "nazev": "Dopravní obslužnost veřejnými službami",
+       "kc": 139599.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5323",
+         "nazev": "Neinvestiční transfery krajům",
+         "kc": 139599.0
+        }
+       ]
+      },
+      {
+       "par": "2212",
+       "nazev": "Silnice",
+       "kc": 1830.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 1830.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Vnitřní převody",
+     "barva": "#8e8e93",
+     "popis": "Přesun peněz mezi účty obce — není to výdaj navenek.",
+     "kc": 891000.0,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "6330",
+       "nazev": "Převody vlastním fondům v rozpočtech územní úrovně",
+       "kc": 891000.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5345",
+         "nazev": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
+         "kc": 826000.0
+        },
+        {
+         "kod": "5348",
+         "nazev": "(položka 5348)",
+         "kc": 65000.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Hasiči",
+     "barva": "#ff6b35",
+     "popis": "Dobrovolná požární ochrana a krizová opatření.",
+     "kc": 272082.98,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "5512",
+       "nazev": "Požární ochrana - dobrovolná část",
+       "kc": 272082.98,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5137",
+         "nazev": "Drobný hmotný dlouhodobý majetek",
+         "kc": 171056.51
+        },
+        {
+         "kod": "5222",
+         "nazev": "Neinvestiční transfery spolkům",
+         "kc": 40000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 24229.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 16326.47
+        },
+        {
+         "kod": "5163",
+         "nazev": "Služby peněžních ústavů",
+         "kc": 6144.0
+        },
+        {
+         "kod": "5156",
+         "nazev": "Pohonné hmoty a maziva",
+         "kc": 5589.0
+        },
+        {
+         "kod": "5171",
+         "nazev": "Opravy a udržování",
+         "kc": 5582.0
+        },
+        {
+         "kod": "5019",
+         "nazev": "Ostatní platy",
+         "kc": 2358.0
+        },
+        {
+         "kod": "5039",
+         "nazev": "Ostatní povinné pojistné placené zaměstnavatelem",
+         "kc": 798.0
+        }
+       ]
+      }
+     ]
+    },
+    {
+     "oblast": "Kultura, knihovna a ostatní",
+     "barva": "#af52de",
+     "popis": "Knihovna, zpravodaj, sociální služby, lesy a další drobné agendy.",
+     "kc": 265343.83,
+     "kapitalove_kc": 0,
+     "agendy": [
+      {
+       "par": "3314",
+       "nazev": "Činnosti knihovnické",
+       "kc": 101246.15,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 63600.0
+        },
+        {
+         "kod": "5136",
+         "nazev": "Knihy, učební pomůcky a tisk",
+         "kc": 24067.0
+        },
+        {
+         "kod": "5168",
+         "nazev": "Zpracov. dat a služby souvisej. s inform. technol.",
+         "kc": 8339.15
+        },
+        {
+         "kod": "5162",
+         "nazev": "Služby telekomunikací a radiokomunikací",
+         "kc": 5200.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 40.0
+        }
+       ]
+      },
+      {
+       "par": "3349",
+       "nazev": "Ostatní záležitosti sdělovacích prostředků",
+       "kc": 54880.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 54880.0
+        }
+       ]
+      },
+      {
+       "par": "4359",
+       "nazev": "Ostatní služby a činnosti v oblasti sociální péče",
+       "kc": 44203.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5339",
+         "nazev": "Neinvestiční transfery cizím PO",
+         "kc": 25000.0
+        },
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 8564.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 4839.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 4075.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 1725.0
+        }
+       ]
+      },
+      {
+       "par": "1039",
+       "nazev": "Ostatní záležitosti lesního hospodářství",
+       "kc": 25160.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 15160.0
+        },
+        {
+         "kod": "5021",
+         "nazev": "Ostatní osobní výdaje",
+         "kc": 10000.0
+        }
+       ]
+      },
+      {
+       "par": "3399",
+       "nazev": "Ostatní záležitosti kultury, církví a sdělovacích prostředků",
+       "kc": 19727.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5169",
+         "nazev": "Nákup ostatních služeb",
+         "kc": 15000.0
+        },
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 2381.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 2346.0
+        }
+       ]
+      },
+      {
+       "par": "3900",
+       "nazev": "Ostatní činnosti související se službami pro obyvatelstvo",
+       "kc": 16174.0,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5194",
+         "nazev": "Věcné dary",
+         "kc": 10596.0
+        },
+        {
+         "kod": "5139",
+         "nazev": "Nákup materiálu jinde nezařazený",
+         "kc": 4259.0
+        },
+        {
+         "kod": "5175",
+         "nazev": "Pohoštění",
+         "kc": 1319.0
+        }
+       ]
+      },
+      {
+       "par": "3341",
+       "nazev": "Rozhlas a televize",
+       "kc": 3953.68,
+       "kapitalove_kc": 0,
+       "polozky": [
+        {
+         "kod": "5041",
+         "nazev": "Odměny za užití duševního vlastnictví",
+         "kc": 3953.68
+        }
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ }
+}

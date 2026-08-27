@@ -4,3 +4,11 @@
 __pycache__/
 .venv/
 node_modules/
+
+# nikdy nesmí do repa: originály a soukromá zóna
+*.xlsx
+Detail_uctu_*
+audit-prstice-*
+prstice-finm-*
+cz0643*
+qa-report*

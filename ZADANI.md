@@ -245,6 +245,36 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   metodika a hraniční případy jsou v `data/rozpocet-metodika.md`, který
   schvaluje Petr. Web **nepoužívá pojem „mandatorní výdaje"** ani netvrdí,
   že opakovaný výdaj je ze zákona povinný nebo že jednorázový je zbytný.
+- **P-34 (přidáno 25. 8. 2026, Petr — mění §7 bod 4):** Web má dvě jasně a
+  **graficky oddělené vrstvy**: (a) **tvrdá fakta** — přehledná data z ověřených
+  zdrojů (státní pokladna/MONITOR, informace dle 106), neutrálně pro občany;
+  (b) **autorská interpretační / investigativní sekce** — výslovně označená jako
+  názor a šetření autora. V ní autor upozorňuje na nesrovnalosti, provádí
+  **průzkum trhu (obvyklé ceny)**, srovnává a **vyčísluje případné nadhodnocení**,
+  zejména u **stavebních zakázek a právních služeb**. Sekce se řídí přísně §9:
+  jen doložené indicie s uvedeným kritériem, u soukromých osob a firem opatrněji
+  než u veřejného funkcionáře, obci vždy prostor k vyjádření, žádné hodnotící
+  nálepky. **O zveřejnění této sekce rozhoduje autor samostatně a až po právní
+  kontrole**; do té doby je to jeho privátní analýza (pracovní poznámky mimo repo).
+  Upřesnění 25. 8. 2026: **datová vrstva (a) se záměrně nemění a zůstává čistým,
+  kopírovatelným vzorem** — jakákoli obec ji může replikovat podle návodu
+  (P-30/P-32). **Interpretační vrstva (b)** má na hlavní stránce **výrazný vstup
+  („tlačítko Interpretace")** a je graficky nezaměnitelně oddělená, aby čtenáři
+  bylo hned jasné, že jde o **zhodnocení závislé na tom, kdo hodnotí, které nemusí
+  být potvrzené**. Každé zjištění má formu **hypotéza → potvrzeno / vyvráceno**,
+  nebo otevřená **otázka „k ověření"**; data mohou k závěru navádět, ale závěr se
+  ověřuje dalším zkoumáním, jehož **postup je transparentně uveden**.
+- **P-35 (přidáno 25. 8. 2026, Petr — do v1):** Úvod obsahuje **jednorázovou
+  kontextovou rešerši**, která zařadí obec: (a) **objem rozpočtu na obyvatele**
+  vůči obcím srovnatelné velikosti (okres Brno-venkov, 900–1100 obyv.; Prštice
+  patří do statistické velikostní skupiny ČSÚ **500–999**); (b) **průměrný věk**
+  vůči ~20 nejbližším obcím a vůči okresnímu průměru; (c) odkaz na to, které
+  srovnatelné malé obce (bez zákonné povinnosti) **dobrovolně zveřejňují smlouvy**
+  v registru smluv — primárně v sekci *Jak jsme postupovali*. Data jsou
+  **reprodukovatelná** (skript + soubor v `data/`) a mají uvedený zdroj (MONITOR
+  konsolidovaná skutečnost, ČSÚ průměrný věk a okresní průměr, registr smluv /
+  Hlídač státu). Nejde o průběžně aktualizovanou srovnávací tabulku (ta zůstává
+  ve v2, P-21). **Mění §7 bod 2.**
 - **P-31:** Zásobník pro v2+ (každý nápad se před realizací zváží proti §7):
   mapa investic v obci (co se kde opravilo a za kolik); roční jednostránkový
   report „Rozpočet za 60 sekund" ke stažení a tisku do schránek; interaktivní
@@ -256,12 +286,19 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
 
 1. **Žádná automatika napojená na MONITOR** — v1 se staví z ručně ověřených dat;
    automatizace až v2, aby chyba pipeline nemohla poškodit důvěryhodnost při startu.
-2. **Žádné srovnání s okolními obcemi** — vyžaduje MONITOR pipeline a pečlivý
-   výběr srovnatelných obcí; polovičaté srovnání by byl snadný terč kritiky.
+2. **Žádná průběžně aktualizovaná srovnávací tabulka s okolními obcemi** — plná
+   srovnávací funkce (výběr obcí, stažení, průběžná aktualizace) zůstává pro v2
+   (P-21). **Výjimkou je jednorázová kontextová rešerše v úvodu podle P-35**
+   (přidáno 25. 8. 2026, Petr): objem rozpočtu na obyvatele a průměrný věk vůči
+   obcím srovnatelné velikosti a vůči okresu, se zdroji a reprodukovatelným
+   výpočtem. Musí být udělaná pořádně (pevná velikostní skupina, tříletý průměr,
+   konsolidovaná data z MONITORu), ne polovičatě.
 3. **Žádný redakční systém, přihlašování, komentáře ani diskuse** — statický web;
    reakce občanů jde přes e-mail.
-4. **Žádné hodnocení současného/nového vedení** — web hodnotí hospodaření,
-   ne osoby; sekce pro další období zůstává prázdná struktura.
+4. **Žádné hodnocení současného/nového vedení v části tvrdých fakt** — ta hodnotí
+   hospodaření, ne osoby. **Výjimkou je vyčleněná autorská investigativní sekce
+   podle P-34** (oddělená, označená jako názor, zveřejnění po rozhodnutí autora
+   a právní kontrole). Sekce pro další volební období zůstává prázdná struktura.
 5. **Žádná anglická verze, žádný newsletter, žádné sociální sítě jako součást
    webu** — sdílení řeší OG metadata.
 6. **Žádné hodnocení ani predikce výsledků běžících soudních či správních

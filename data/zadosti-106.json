@@ -3,7 +3,7 @@
   "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-22",
+  "stav_ke_dni": "2026-08-26",
   "upozorneni": "Seznam nemusí být úplný — část procesu stále běží (u KrÚ JMK do 27. 8. 2026) a odpověď obce na žádost o soudní řízení z 15. 8. 2026 se čeká.",
   "poznamka_pole": "„stav\" = stav vyřízení žádosti; „puvod_informace\" = jak byla informace získána — dvě různá pole.",
   "schvaluje": "Petr Novotný (finální seznam)",
@@ -28,11 +28,11 @@
    "adresat": "Obec Prštice",
    "cj": null,
    "typ_podani": "žádost o informace",
-   "stav": "k ověření",
+   "stav": "neposkytnuto",
    "puvod_informace": "vlastní žádost",
    "pocet_dni_od_podani": 60,
    "zdroj": "složka 2026_06_23 Zpravodaje obce Prštice",
-   "poznamka": "Stav vyřízení doplní Petr."
+   "poznamka": "Žádáno ve strojově čitelné podobě, aby šlo dění v obci dohledat bez dalších dotazů. Obec v této podobě neposkytla."
   },
   {
    "datum_podani": "2026-07-01",
@@ -40,11 +40,11 @@
    "adresat": "Obec Prštice",
    "cj": "SP/088/2026",
    "typ_podani": "žádost o informace",
-   "stav": "neposkytnuto",
+   "stav": "kraj nařídil vyřídit",
    "puvod_informace": "vlastní žádost",
    "pocet_dni_od_podani": 52,
    "zdroj": "složka 2026_07_01 Žádost o detail smluv na účtu 518; kontrola lhůt",
-   "poznamka": "17. 7. obec doručila jen slovní sdělení č. j. OUPR-867-2026, ne dokumenty → podána stížnost."
+   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026)."
   },
   {
    "datum_podani": "2026-07-17",
@@ -52,11 +52,11 @@
    "adresat": "Obec Prštice",
    "cj": null,
    "typ_podani": "stížnost § 16a",
-   "stav": "stížnost — lhůta marně uplynula",
+   "stav": "vyhověno",
    "puvod_informace": "vlastní podání",
    "pocet_dni_od_podani": 36,
    "zdroj": "složka 2026_07_17 Stížnost 16a a nová žádost 518; kontrola lhůt",
-   "poznamka": "Stížnost doručena obci 20. 7.; sedmidenní lhůta § 16a odst. 5 marně uplynula 27. 7. 2026."
+   "poznamka": "Krajský úřad JMK dal 19. 8. 2026 stížnosti za pravdu a přikázal obci žádost vyřídit do 15 dnů."
   },
   {
    "datum_podani": "2026-07-17",
@@ -76,11 +76,11 @@
    "adresat": "Krajský úřad Jihomoravského kraje",
    "cj": null,
    "typ_podani": "žádost o opatření proti nečinnosti (§ 80 SŘ)",
-   "stav": "u kraje",
+   "stav": "vyřízeno krajem",
    "puvod_informace": "vlastní podání",
    "pocet_dni_od_podani": 25,
    "zdroj": "složka 2026_07_28 Opatření proti nečinnosti KrÚ JMK; kontrola lhůt",
-   "poznamka": "Doručeno KrÚ 28. 7. 2026; 30denní lhůta pro rozhodnutí uplyne 27. 8. 2026."
+   "poznamka": "Krajský úřad ve věci rozhodl 19. 8. 2026 ve prospěch žadatele."
   },
   {
    "datum_podani": "2026-08-15",
@@ -105,6 +105,18 @@
    "pocet_dni_od_podani": 7,
    "zdroj": "složka 2026_08_15 Žádost o informace soudní procesy",
    "poznamka": "Do obdržení odpovědi je přehled soudních řízení nutně neúplný."
+  },
+  {
+   "datum_podani": "2026-08-25",
+   "predmet": "Rozpis nákladů účtu 511 „Opravy a udržování\" za 2021–2025 (dodavatel, předmět plnění, datum, částka)",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace",
+   "stav": "podáno",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 1,
+   "zdroj": "složka 2026_08_25 Žádost 106 účet 511 opravy",
+   "poznamka": "Účet 511 je největší nákladový účet obce (2022: 7,8 mil. Kč) a dosud k němu nebyl vyžádán detail."
   }
  ]
 }
