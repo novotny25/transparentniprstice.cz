@@ -3,7 +3,7 @@
   "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-26",
+  "stav_ke_dni": "2026-08-27",
   "upozorneni": "Seznam nemusí být úplný — část procesu stále běží (u KrÚ JMK do 27. 8. 2026) a odpověď obce na žádost o soudní řízení z 15. 8. 2026 se čeká.",
   "poznamka_pole": "„stav\" = stav vyřízení žádosti; „puvod_informace\" = jak byla informace získána — dvě různá pole.",
   "schvaluje": "Petr Novotný (finální seznam)",
@@ -117,6 +117,18 @@
    "pocet_dni_od_podani": 1,
    "zdroj": "složka 2026_08_25 Žádost 106 účet 511 opravy",
    "poznamka": "Účet 511 je největší nákladový účet obce (2022: 7,8 mil. Kč) a dosud k němu nebyl vyžádán detail."
+  },
+  {
+   "datum_podani": "2026-08-26",
+   "predmet": "Vnitřní směrnice pro zadávání veřejných zakázek, pravidla finanční kontroly a doklady o jejich kontrole",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace",
+   "stav": "podáno",
+   "puvod_informace": "vlastní žádost",
+   "pocet_dni_od_podani": 1,
+   "zdroj": "složka 2026_08_26 Žádost o směrnici k zakázkám",
+   "poznamka": "Navazuje na tři pravomocná rozhodnutí ÚOHS za neuveřejnění smluv na profilu zadavatele — zjišťuje, zda má obec nastavená pravidla, která tomu předcházejí."
   }
  ]
 }

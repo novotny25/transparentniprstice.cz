@@ -3,7 +3,7 @@
   "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-26",
+  "stav_ke_dni": "2026-08-27",
   "upozorneni": "Osa se průběžně doplňuje. Řízení u Krajského úřadu JMK běží (lhůta do 27. 8. 2026) a odpověď obce na žádost o přehled soudních řízení z 15. 8. 2026 se čeká.",
   "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty doplní krok strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
@@ -134,6 +134,15 @@
    "cj": null,
    "puvod_informace": "žádost dle zákona 106/1999 Sb.",
    "dokument": null
+  },
+  {
+   "datum": "2026-08-26",
+   "typ": "žádost",
+   "titulek": "Žádost o vnitřní pravidla pro zadávání veřejných zakázek",
+   "popis": "Po zjištění, že obec byla třikrát potrestána za neuveřejnění smlouvy na profilu zadavatele, jsem požádal o vnitřní směrnici pro zadávání veřejných zakázek, pravidla finanční kontroly a doklady o tom, že se jejich dodržování kontroluje. Cílem je zjistit, zda obec má nastavená pravidla, která podobným pochybením předcházejí.",
+   "cj": null,
+   "puvod_informace": "vlastní žádost",
+   "dokument": "2026-08-26_zadost-smernice-zakazky.pdf"
   },
   {
    "datum": "2026-08-27",

@@ -75,6 +75,9 @@ DOKUMENTY = [
     (f"{PACT}/2026_06_23 Zpravodaje obce Prštice/zadost-106-zpravodaje-prstice.pdf",
      "2026-06-23_zadost-zpravodaje.pdf",
      "Žádost o obecní zpravodaje ve strojově čitelné podobě"),
+    (f"{PACT}/2026_08_26 Žádost o směrnici k zakázkám/2026_08_26_Zadost_106_smernice_zakazky.pdf",
+     "2026-08-26_zadost-smernice-zakazky.pdf",
+     "Žádost o vnitřní pravidla pro zadávání veřejných zakázek a finanční kontrolu"),
 ]
 
 

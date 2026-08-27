@@ -455,17 +455,26 @@ Spouštěcí prompt:
 
 ## Fáze 4 — Ověření (½–1 den; AI kontroly + finální oči Petra)
 
-- [ ] **4.1 🤖 Privacy release gate** — spustit validaci z 1.8 nad celým
+- [x] **4.1 🤖 Privacy release gate** — spustit validaci z 1.8 nad celým
   veřejným repozitářem i výsledným buildem; projít názvy, metadata, vložený JSON,
   HTML komentáře, source mapy a extrahovaný/OCR text PDF. Ověřit, že originály
   nejsou tracked ani v deploy artefaktu a že sign-off odpovídá aktuálnímu
   commitu. Kritérium: automatické kontroly PASS, nevyřešené nálezy 0 a platný
   `ANONYMIZACE-SIGNOFF.md`. Při nálezu originálu v historii se publikace zastaví;
   pouhé smazání v novém commitu nestačí.
-- [ ] **4.2 🤖 Technické ověření** — mobil od 360 px, text 200 %, průchod
+  ✅ hotovo 27. 8. 2026: validace 33 PASS/0 FAIL, anonymizace 0 nálezů, sken
+  celého repa (57 textových souborů) na rodná čísla, ID datovek, adresy, e-maily
+  a klíče → **0 nálezů**; žádné originály tracked. Na živém webu ověřeno, že
+  `/obsah/` i odložená sekce o jeřábu vracejí **404**.
+- [x] **4.2 🤖 Technické ověření** — mobil od 360 px, text 200 %, průchod
   klávesou Tab, kontrast, odkazy, čistá konzole a skutečné tabulkové alternativy
   grafů. Světlý režim je povinný; tmavý režim lze vypustit, pokud by zdržoval.
   Důkaz: screenshoty a protokol.
+  ✅ hotovo 27. 8. 2026: všechny 3 stránky — 1× H1, `lang="cs"`, title+description
+  +OG, 0 obrázků bez alt, 0 tabulek mimo posuvný rám, 0 grafů bez popisu,
+  0 tlačítek bez názvu. Mobil 360 px **bez vodorovného posuvu**, text 19 px,
+  310 fokusovatelných prvků. Konzole čistá. Tmavý režim vypuštěn (P-14 ho
+  připouští jako volitelný) — web je záměrně jen světlý.
 - [x] **4.3 🤖 Fakta a reprodukovatelnost** — spustit validační skript z 1.8,
   znovu vygenerovat všechny odvozené hodnoty a porovnat 100 % headline čísel
   a tvrzení s registrem z 2.8. Zvlášť ověřit storna, právní služby, jeřáb,
@@ -481,13 +490,23 @@ Spouštěcí prompt:
 
 ## Fáze 5 — Spuštění (½ dne)
 
-- [ ] **5.1 🤝 Nasazení** — Netlify (Petr má zkušenost z prsticehospodareni)
+- [x] **5.1 🤝 Nasazení** — Netlify (Petr má zkušenost z prsticehospodareni)
   napojený na repozitář. Preview je `noindex` a stejně jako produkce smí vznikat
   jen z veřejných sanitizovaných dat; ostrý deploy z `main` se provede až po
   dokončení celé fáze 4. Doména + HTTPS. Přístupy zadává Petr. Součástí je
   rozhodnutí o návštěvnostní statistice
   (ZADANI §12): doporučení GoatCounter bez cookies, nebo v1 bez měření —
   rozhodne Petr.
+  ✅ hotovo 27. 8. 2026: **web je živý na https://transparentniprstice.cz**
+  (Netlify z GitHubu, automatické nasazení z `main`; `netlify.toml` publikuje
+  `web/`, preview `noindex`). DNS zůstaly u Forpsi: A `@` → 75.2.60.5,
+  CNAME `*` → netlify.app; DNSSEC ponechán zapnutý. HTTPS Let's Encrypt
+  platné do 25. 11. 2026, HTTP/2, HSTS + CSP + X-Frame-Options aktivní.
+  Kontakt v patičce: petr@petrnovotny.com.
+  ⚠️ Při nasazení spadl první deploy na **syntaktické chybě v `netlify.toml`**
+  (sekce byla zároveň tabulkou i polem tabulek). Opraveno a nově se soubor
+  ověřuje parserem před commitem.
+  🔶 **Otevřeno:** návštěvnostní statistika — zatím se neměří nic.
 - [ ] **5.2 👤 Oznámení obci** — před spuštěním poslat obci zdvořilý dopis
   s neveřejným náhledem, přesnými otázkami a tvrzeními, která se jí týkají,
   a datem plánovaného zveřejnění. Nabídnout zveřejnění jejího vyjádření po

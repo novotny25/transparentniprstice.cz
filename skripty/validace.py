@@ -166,6 +166,9 @@ for ex in (priv, load(os.path.join(PRIVATE_ZONE, "extrakty", "ucet-518-2026H1-pr
 RE_CP    = re.compile(r'č\.?\s?[pe]\.?\s?\d')                 # adresa čp./če.
 RE_DOC   = re.compile(r'\b\d{2}-\d{3}-\d{5}\b')               # interní číslo dokladu
 RE_EMAIL = re.compile(r'[\w.+-]+@[\w.-]+\.\w{2,}')
+# Kontaktní adresa autora je na webu záměrně (P-11 vyžaduje uvedení kontaktu),
+# takže není únikem osobního údaje.
+POVOLENE_EMAILY = {"petr@petrnovotny.com"}
 # Rodné číslo: YYMMDD/XXXX. Měsíc musí být platný (01–12, u žen +50),
 # jinak by vzor chytal i čísla jednací typu „123854/2026“.
 RE_RC    = re.compile(r'\b\d{2}(?:0[1-9]|1[0-2]|5[1-9]|6[0-2])(?:0[1-9]|[12]\d|3[01])/\d{3,4}\b')
@@ -192,7 +195,10 @@ for rel in sorted(scan_files):
         continue
     base = os.path.basename(rel)
     # originály/privátní soubory se nikdy nesmí objevit v repu
-    if any(z.lower() in base.lower() for z in ZAKAZANE_NAZVY):
+    # web/dokumenty/ obsahuje veřejné deriváty, které prošly anonymizací
+    # (skripty/anonymizace.py) — ty se kontrolují tam, ne tady jako originály
+    je_derivat = rel.replace(os.sep, "/").startswith("web/dokumenty/")
+    if not je_derivat and any(z.lower() in base.lower() for z in ZAKAZANE_NAZVY):
         FAIL("privacy/originál", f"zakázaný soubor v repu: {rel}")
         continue
     try:
@@ -205,9 +211,11 @@ for rel in sorted(scan_files):
             FAIL("privacy/popis", f"{rel}: uniklý původní popis „{s[:40]}…“")
     # strukturované vzory
     for label, rx in HARD_PAT:
-        m = rx.search(text)
-        if m:
+        for m in rx.finditer(text):
+            if label == "e-mail" and m.group(0).lower() in POVOLENE_EMAILY:
+                continue          # kontakt autora je zveřejněn záměrně (P-11)
             FAIL("privacy/vzor", f"{rel}: {label} → „{m.group(0)}“")
+            break
 
 # kontrola, že privátní extrakt existuje mimo repo (a tedy denylist není prázdný omylem)
 if not denylist:
