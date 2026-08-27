@@ -32,3 +32,11 @@
     Content-Disposition = "inline"
     Content-Security-Policy = "default-src 'self'; object-src 'self'; frame-ancestors 'self'"
     X-Content-Type-Options = "nosniff"
+
+# Manuál v Markdownu: nabídnout ke stažení, ale umožnit i zobrazení
+[[headers]]
+  for = "/dokumenty/*.md"
+
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Content-Disposition = "inline"

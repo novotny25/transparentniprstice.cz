@@ -378,3 +378,13 @@ section[id],h2[id]{scroll-margin-top:118px}
   .kinner{padding:0 18px 18px}
   .krok .kcas{display:none}
 }
+.manual{background:linear-gradient(160deg,#f3f1ff,#fbfaff)}
+.mhead{display:flex;gap:16px;align-items:center;margin-bottom:16px}
+.mikona{width:52px;height:52px;border-radius:14px;background:#5e5ce6;color:#fff;flex:none;
+  display:grid;place-items:center;font-size:.85rem;font-weight:800;letter-spacing:.03em}
+.mhead h3{margin:0}
+.mmeta{margin:2px 0 0;font-size:.86rem;color:var(--muted)}
+.manual p{font-size:.98rem;margin:0 0 12px}
+.mseznam{margin:0 0 14px;padding-left:20px;font-size:.96rem}
+.mseznam li{margin-bottom:7px}
+.mpasti{background:#fff8e8;border-radius:12px;padding:13px 16px;color:#6b5518;font-size:.95rem!important}
