@@ -20,7 +20,8 @@ HTML = os.path.join(WEB, "web", "index.html")
 STRANKY = {                       # soubor -> {id bloku: název datového souboru}
     "index.html":      {"d-vydaje": None, "d-prijmy": None, "d-rady": None,
                         "d-temata": None, "d-vybrane": None, "d-518": None,
-                        "d-srovnani": "srovnani-obci.json"},
+                        "d-srovnani": "srovnani-obci.json",
+                        "d-obyvatele": "obyvatele.json"},
     "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None},
     "pro-dalsi-obce.html": {"d-navod": "navod.json"},
     "jak-to-vime.html": {"d-zadosti": "zadosti-106.json",
