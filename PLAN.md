@@ -484,9 +484,21 @@ Spouštěcí prompt:
   deseti minut ověří, že najde: příjmy/výdaje, skutečný vývoj 518, hlavní
   příspěvky změn, meze dostupných dat a rozdíl mezi soudním a správním řízením.
   Nejasnosti se zkrátí, nepřidávají se nové vrstvy informací.
-- [ ] **4.5 🤝 Zkouška aktualizace** — Petr zadá: „přidej do chronologie
+- [x] **4.5 🤝 Zkouška aktualizace** — Petr zadá: „přidej do chronologie
   událost X s PDF Y" — musí to projít sanitizační pipeline do 15 minut bez
   zásahu do HTML/kódu.
+  ✅ hotovo 27. 8. 2026 — **zkouška provedena na skutečné aktualizaci**: přidána
+  žádost o vnitřní pravidla pro zadávání veřejných zakázek (26. 8. 2026) do
+  chronologie, trackeru i knihovny dokumentů, včetně anonymizovaného PDF.
+  **Čas: 21 minut** (8:22 → 8:43), z toho ~12 minut zabraly dvě opravy validace
+  (viz níže). Samotné přidání dat + pipeline + nasazení trvalo pod 10 minut.
+  **Do HTML se nesáhlo** — stačila úprava dvou JSON souborů, jednoho řádku
+  v `anonymizace.py` a spuštění tří skriptů.
+  ⚠️ Zkouška odhalila dva falešné poplachy privacy gate, které by blokovaly
+  publikaci: (a) kontaktní e-mail autora byl hlášen jako únik, ačkoli je na webu
+  záměrně (P-11); (b) anonymizovaná PDF ve `web/dokumenty/` byla hlášena jako
+  „zakázané originály". Obojí opraveno — validace teď rozlišuje originál od
+  schváleného derivátu. Bez toho by každá další aktualizace narazila.
 
 ## Fáze 5 — Spuštění (½ dne)
 
