@@ -143,13 +143,34 @@
 
   var D=J('d-dokumenty');
   if(D.dokumenty){
-    document.getElementById('dokumenty').innerHTML='<ul class="dokseznam">'+D.dokumenty.map(function(x){
+    document.getElementById('dokumenty').innerHTML='<ul class="dokseznam">'+D.dokumenty.map(function(x,i){
       var datum=x.soubor.slice(0,10).split('-'), d=datum[2].replace(/^0/,'')+'. '+datum[1].replace(/^0/,'')+'. '+datum[0];
-      return '<li><a href="dokumenty/'+encodeURIComponent(x.soubor)+'">'+
-        '<span class="ikona" aria-hidden="true">PDF</span>'+
-        '<span class="dtext"><b>'+esc(x.popis)+'</b><span class="dmeta">'+d+' · '+x.stran+
-        (x.stran===1?' strana':(x.stran<5?' strany':' stran'))+' · '+x.velikost_kb+' kB</span></span></a></li>';
+      var cesta='dokumenty/'+encodeURIComponent(x.soubor);
+      var pocet=x.stran===1?' strana':(x.stran<5?' strany':' stran');
+      return '<li>'+
+        '<div class="dokradek">'+
+          '<span class="ikona" aria-hidden="true">PDF</span>'+
+          '<span class="dtext"><b>'+esc(x.popis)+'</b>'+
+            '<span class="dmeta">'+d+' · '+x.stran+pocet+' · '+x.velikost_kb+' kB</span></span>'+
+          '<span class="dakce">'+
+            '<button class="btn nahled" type="button" data-src="'+cesta+'" aria-expanded="false">Zobrazit</button>'+
+            '<a class="btn ghostbtn" href="'+cesta+'" target="_blank" rel="noopener">Otevřít v novém panelu</a>'+
+          '</span>'+
+        '</div></li>';
     }).join('')+'</ul>';
+
+    // náhled PDF přímo na stránce
+    document.querySelectorAll('.nahled').forEach(function(b){
+      b.addEventListener('click',function(){
+        var radek=b.closest('li');
+        var box=radek.querySelector('.pdfbox');
+        if(box){ box.remove(); b.setAttribute('aria-expanded','false'); b.textContent='Zobrazit'; return; }
+        radek.insertAdjacentHTML('beforeend',
+          '<div class="pdfbox"><iframe src="'+b.dataset.src+'#view=FitH" title="Náhled dokumentu" loading="lazy"></iframe>'+
+          '<p class="src">Nejde-li dokument zobrazit, otevřete ho v novém panelu — některé prohlížeče vestavěný náhled nepodporují.</p></div>');
+        b.setAttribute('aria-expanded','true'); b.textContent='Skrýt';
+      });
+    });
   }
 
   var C=J('d-chronologie');

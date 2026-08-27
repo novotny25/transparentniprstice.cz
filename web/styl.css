@@ -336,3 +336,18 @@ section[id],h2[id]{scroll-margin-top:118px}
 .zb span{display:block;height:100%;border-radius:99px}
 .zv{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 @media(max-width:560px){.zr{grid-template-columns:1fr auto}.zb{display:none}}
+.dokradek{display:flex;gap:14px;align-items:center;padding:14px 8px;flex-wrap:wrap}
+.dokseznam .dtext{flex:1;min-width:200px}
+.dakce{display:flex;gap:8px;flex-wrap:wrap}
+.dakce .btn{font-size:.86rem;padding:7px 14px}
+.ghostbtn{background:transparent;color:var(--muted);border:1px solid var(--line)}
+.ghostbtn:hover{background:#f1f2f4;color:var(--text);text-decoration:none}
+.nahled[aria-expanded="true"]{background:var(--accent);color:#fff}
+.pdfbox{margin:0 8px 16px}
+.pdfbox iframe{width:100%;height:min(78vh,880px);border:1px solid var(--line);border-radius:14px;background:#fff}
+@media(max-width:560px){
+  .dokradek{gap:10px}
+  .dakce{width:100%}
+  .dakce .btn{flex:1;text-align:center}
+  .pdfbox iframe{height:70vh}
+}
