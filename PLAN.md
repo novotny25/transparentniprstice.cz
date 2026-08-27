@@ -382,12 +382,21 @@ Spouštěcí prompt:
   zadavatele (134/2016). Na pokyn Petra je **primární věcná podstata a výsledek**
   řízení; náklady na právní služby jen jako **doplněk** (přesunou se do sekce
   o hospodárnosti). Soudní část čeká na odpověď obce. Čeká na finální schválení.
-- [ ] **2.7 🤝 Stránka „Pro další obce a občany" + návod „Udělejte si sami"**
+- [x] **2.7 🤝 Stránka „Pro další obce a občany" + návod „Udělejte si sami"**
   — použít revidovaný `NAVOD-UDELEJTE-SI-SAMI.md`; osobní údaje se nedávají do
   cloudového AI promptu a veřejný výstup se nenazývá audit. Pokud tento úkol
   ohrozí termín, přesune se celý do v2; pro v1 je povinná pouze stránka „Jak
   jsme postupovali". Licence se vztahuje na vlastní kód a text, ne automaticky
   na převzaté dokumenty a zdrojová data.
+  ✅ hotovo 27. 8. 2026 — **stránka je živá**: /pro-dalsi-obce.html.
+  Osm rozklikávacích kroků s **hotovými prompty a tlačítkem Zkopírovat**,
+  tři zásady (ověřuj / rozlišuj / anonymizuj), náklady (2–4 víkendy, ~800 Kč)
+  a „čeho se vyvarovat". Odkaz na otevřený repozitář a nabídka pomoci na
+  kontaktní e-mail. Kroky se generují z `data/navod.json` (vytěženo
+  z `NAVOD-UDELEJTE-SI-SAMI.md`), takže úprava návodu nevyžaduje zásah do HTML.
+  Doplněno do navigace všech stránek i do sitemap.
+  Pozn.: zadání stránku připouštělo odložit do v2 — termín neohrozila,
+  tak zůstává ve v1.
 - [x] **2.8 🤖 AI kontrola faktů a jazyka + Petrovo schválení** — AI vytvoří
   jednoduchý registr všech publikovaných skutkových tvrzení: tvrzení, typ (zdroj/výpočet/
   autorské zařazení/nezjištěno), zdroj, výpočet a stav kontroly. AI ověří každý
