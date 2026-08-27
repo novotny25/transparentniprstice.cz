@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Udělejte si to samé ve své obci — Transparentní Prštice</title>
+<link rel="canonical" href="https://transparentniprstice.cz/pro-dalsi-obce.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta name="description" content="Návod v osmi krocích, jak si s pomocí AI udělat občanskou datovou analýzu hospodaření vlastní obce. Včetně hotových promptů a toho, čeho se vyvarovat.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Transparentní Prštice">
+<meta property="og:locale" content="cs_CZ">
+<meta property="og:title" content="Udělejte si to samé ve své obci">
+<meta property="og:description" content="Návod v osmi krocích, jak si s pomocí AI udělat občanskou datovou analýzu hospodaření vlastní obce.">
+<meta property="og:url" content="https://transparentniprstice.cz/pro-dalsi-obce.html">
+<meta property="og:image" content="https://transparentniprstice.cz/obrazky/zamek-prstice.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="author" content="Petr Novotný">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<a class="skip" href="#obsah">Přeskočit na obsah</a>
+
+<header class="site">
+  <div class="navrow">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="var(--accent)" stroke-width="2.2"/><path d="M9 20l4-8 3 5 2-3 5 6" fill="none" stroke="var(--accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      Transparentní Prštice
+    </a>
+    <nav class="hlavni" aria-label="Hlavní">
+      <a href="index.html">Hospodaření obce</a>
+      <a href="index.html#polozky" class="zjisteni">Zjištění, na která se ptáme</a>
+      <a href="rizeni.html">Soudy a řízení</a>
+      <a href="jak-to-vime.html">Jak to víme</a>
+      <a href="pro-dalsi-obce.html" aria-current="page">Pro další obce</a>
+    </nav>
+  </div>
+  <div class="navrow podnav" aria-label="Části stránky">
+    <span class="sipka">Na této stránce:</span>
+    <a href="#zasady-h">Tři zásady</a>
+    <a href="#kroky-h">Osm kroků</a>
+    <a href="#naklady-h">Co to stojí</a>
+    <a href="#pozor-h">Čeho se vyvarovat</a>
+  </div>
+</header>
+
+<main id="obsah">
+  <div class="hero">
+    <div class="inner">
+      <p class="kicker">Návod k použití</p>
+      <h1>Udělejte si to samé ve své obci</h1>
+      <p class="lede">Tenhle web nevznikl nijak složitě. Celý postup je popsaný níž — <strong>osm kroků, hotové prompty a zdroje zdarma</strong>. Data o hospodaření své obce si takhle zpracuje kdokoli.</p>
+    </div>
+  </div>
+
+  <section class="wide">
+    <div class="upozorneni">
+      <p><b>Nepotřebujete být účetní ani programátor.</b> Potřebujete trpělivost, dvě až čtyři víkendová odpoledne a chuť ověřovat si čísla. Všechna data o hospodaření obcí jsou veřejná — jen nejsou čitelná.</p>
+    </div>
+
+    <h2 id="zasady-h" style="margin-top:44px">Tři zásady, které platí pořád</h2>
+    <div class="grid" style="margin-top:22px">
+      <div class="tile t-blue"><p class="k">Zásada 1</p><p class="v" style="font-size:1.35rem">Ověřujte</p>
+        <p class="c">AI si umí vymýšlet. Každé číslo zkontrolujte kontrolním součtem proti oficiálnímu výkazu, každé právní tvrzení proti zákonu. Co si neověříte, nezveřejňujte.</p></div>
+      <div class="tile t-indigo"><p class="k">Zásada 2</p><p class="v" style="font-size:1.35rem">Rozlišujte</p>
+        <p class="c">U každého údaje uveďte, jestli je převzatý ze zdroje, vypočítaný, zařazený vámi, nebo nezjištěný. Komentář držte odděleně od faktů a podepište ho.</p></div>
+      <div class="tile t-green"><p class="k">Zásada 3</p><p class="v" style="font-size:1.35rem">Anonymizujte</p>
+        <p class="c">Neanonymizované účetní deníky, faktury ani žádosti nenahrávejte do cloudové AI. Před zveřejněním odstraňte osobní údaje ze všech souborů — včetně PDF.</p></div>
+    </div>
+
+    <h2 id="kroky-h" style="margin-top:52px">Osm kroků</h2>
+    <p class="souhrn">U každého kroku je, <b>co uděláte vy</b>, <b>co za vás udělá AI</b> a <b>hotový prompt</b> ke zkopírování. Kroky jsou v pořadí, v jakém proběhly v Pršticích.</p>
+    <div id="kroky"></div>
+
+    <h2 id="naklady-h" style="margin-top:52px">Co to stojí</h2>
+    <div class="card">
+      <div class="grid2">
+        <div class="srovk"><p class="k">Čas</p><p class="v">2–4 víkendy</p>
+          <p class="c">Nejvíc zaberou kroky 4 a 8 — rozbor dat a stavba webu. Čekání na odpovědi obce běží mezitím.</p></div>
+        <div class="srovk"><p class="k">Peníze</p><p class="v">≈ 800 Kč</p>
+          <p class="c">Doména ~300 Kč/rok, hosting zdarma, AI asistent ~500 Kč měsíčně. Žádost podle zákona 106 je zdarma.</p></div>
+      </div>
+      <p class="src">Obec může podle § 17 zákona č. 106/1999 Sb. požadovat úhradu nákladů (kopie, nosiče dat, odeslání, mimořádně rozsáhlé vyhledávání) — musí to ale oznámit předem. Když žádáte elektronický opis do datové schránky, bývá to bez nákladů.</p>
+    </div>
+
+    <h2 id="pozor-h" style="margin-top:52px">Čeho se vyvarovat</h2>
+    <div class="card">
+      <ul class="varovani-seznam">
+        <li><b>Nezveřejňujte nic, co nemáte doložené.</b> Ani sugestivní otázka nesmí nahrazovat chybějící skutkový základ.</li>
+        <li><b>Nenechte AI „dopočítat" chybějící údaj.</b> Chybějící údaj je zjištění, ne mezera k vyplnění.</li>
+        <li><b>Nepouštějte se do osobních útoků</b> na zastupitele ani dodavatele. Zabije to důvěryhodnost a vystaví vás žalobě.</li>
+        <li><b>Dejte obci vždy prostor k vyjádření</b> a zveřejněte ho — po nezbytné anonymizaci a v nezkrácené podobě.</li>
+      </ul>
+    </div>
+
+    <div class="card" style="margin-top:24px">
+      <h3>Vezměte si rovnou náš kód</h3>
+      <p style="margin:.4em 0 0">Celý tento web je otevřený. Nejjednodušší cesta je vzít repozitář, vyměnit datové soubory a texty — struktura, kontroly i anonymizační skript zůstanou.</p>
+      <div class="btnrow"><a class="btn" href="https://github.com/novotny25/transparentniprstice.cz" target="_blank" rel="noopener">Repozitář na GitHubu</a></div>
+      <p class="src">Otevřená licence se vztahuje na vlastní kód a texty, nikoli automaticky na převzaté dokumenty a zdrojová data.</p>
+    </div>
+
+    <div class="card" style="margin-top:24px">
+      <h3>Něco vám nejde?</h3>
+      <p style="margin:.4em 0 0">Napište mi na <a href="mailto:petr@petrnovotny.com">petr@petrnovotny.com</a>. Rád poradím — čím víc obcí bude mít svá data v čitelné podobě, tím líp.</p>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="inner">
+    <p><strong>Kdo je za webem:</strong> Petr Novotný, občan Prštic. Osobní občanský projekt. Kontakt: <a href="mailto:petr@petrnovotny.com">petr@petrnovotny.com</a>.</p>
+    <p>Není to účetní, právní ani úřední audit — je to <strong>občanská datová analýza</strong> z veřejných zdrojů.</p>
+    <p class="muted">Další stránky: <a href="index.html">Hospodaření obce</a> · <a href="rizeni.html">Soudy a řízení</a> · <a href="jak-to-vime.html">Jak jsme k datům došli</a>.</p>
+  </div>
+</footer>
+
+<script type="application/json" id="d-navod">{"kroky":[{"c":"1","n":"Najděte oficiální čísla své obce","cas":"30 minut","vy":"zjistěte IČO své obce (je na webu obce v povinných informacích) a otevřete její profil v MONITORu státní pokladny: `monitor.statnipokladna.gov.cz/ucetni-jednotka/<IČO>`. Stáhněte výkaz zisku a ztráty a rozvahu za posledních 8–10 let (jdou exportovat po letech).","ai":"vysvětlí vám, na co se díváte.","p":"Jsem občan obce [název], nejsem účetní. Přikládám výkaz zisku a ztráty a rozvahu obce z MONITORu státní pokladny. Vysvětli mi běžným jazykem: 1) co lze z těchto výkazů bezpečně vyčíst, 2) které nákladové a výnosové účty jsou největší, 3) které účty se v čase nejvíce změnily. Vysvětli rozdíl mezi rozpočtovým peněžním výdajem a účetním nákladem. Z čísla účtu neurčuj, co je povinné ze zákona, kdo o výdaji rozhodl ani kdo jej přímo ovlivňuje. Když něco nevyčteš, řekni to.","pozn":""},{"c":"2","n":"Nechte AI najít, co vybočuje","cas":"1 hodina","vy":"nahrajte AI výkazy za všechny stažené roky najednou.","ai":"sestaví časové řady a označí neobvyklé změny, které stojí za ověření.","p":"Z přiložených výkazů obce [název] za roky [2015–2025] sestav tabulku vývoje všech nákladových a výnosových účtů po letech. Označ účty, které: a) vzrostly meziročně o více než 50 %, b) rostou setrvale rychleji než inflace, c) se chovají skokově. Ke každému označenému účtu napiš, co se na něm obvykle účtuje a jaké neškodné vysvětlení růstu připadá v úvahu — ať vím, na co se ptát, ne co tvrdit. Výslednou tabulku mi dej i jako CSV.","pozn":"V Pršticích takto „vyskočil\" účet 518 Ostatní služby: z ~2,3 mil. Kč v roce 2021 na 5,8 mil. Kč v roce 2023."},{"c":"3","n":"Požádejte o detail podle zákona 106","cas":"30 minut","vy":"žádost pošlete datovou schránkou nebo na elektronickou podatelnu obce a doplňte zákonem požadovanou identifikaci žadatele. Obec má na vyřízení 15 dnů (ze závažných důvodů může lhůtu prodloužit až o 10 dnů — musí vám to ale oznámit).","ai":"pomůže žádost přesně a jednoznačně vymezit.","p":"Napiš žádost o informace podle zákona č. 106/1999 Sb. adresovanou obci [název]. Žádám opis položek účetního deníku k účtu [518] za roky [2022–2025] v rozsahu: datum, číslo dokladu, dodavatel, popis plnění, částka — ideálně ve strojově čitelném formátu (CSV/XLSX). Formuluj přesně a jednoznačně, ať je zřejmé, jaké informace žádám. Osobní údaje ponech jako zástupné značky [JMÉNO], [DATUM NAROZENÍ] a [ADRESA]; doplním je až lokálně po ukončení práce s AI. Střízlivý úřední tón, žádné výčitky.","pozn":""},{"c":"4","n":"Analyzujte, co vám obec poslala","cas":"2 hodiny","vy":"zkontrolujte, jestli jste dostali všechno, oč jste žádali (v Pršticích obec poslala deník bez dodavatelů — i to je zjištění).","ai":"roztřídí stovky řádků a najde vzory.","p":"Přikládám anonymizovaný opis účetního deníku účtu [518] obce [název] za roky [2022–2025]. Udělej: 1) kontrolní součet po letech a porovnej s výkazem zisku a ztráty (přikládám) — pokud nesedí, vytvoř přehled rozdílů a nepokračuj v interpretaci, dokud rozdíl nevysvětlíme; 2) roztřiď položky do kategorií podle popisu (odpady, právní služby, IT, …) a označ kategorie jako svůj odhad; 3) najdi: opakované stejné částky (paušály), dlouho se opakující pronájmy, položky nad [50 000] Kč, storna; 4) ke každému nálezu napiš neutrální otázku, kterou bych měl obci položit. U každého výsledku označ: převzato ze zdroje / vypočítáno / zařazeno autorem / nezjištěno. Fakta odděl od domněnek a komentáře.","pozn":""},{"c":"5","n":"Vyžádejte si doklady k zajímavým položkám","cas":"30 minut","vy":"vyberte 3–5 položek, u kterých chcete vidět smlouvu, objednávku či výkaz práce. Méně je více — úzká žádost se hůř odmítá.","ai":"","p":"Napiš navazující žádost dle zákona 106/1999 Sb. obci [název]. K těmto účetním zápisům [vyjmenuj: datum, částka, popis] žádám: kopii smlouvy nebo objednávky, fakturu a doklad o rozsahu plnění (výkaz práce/předávací protokol). U paušálních plateb žádám rámcovou smlouvu a vymezení rozsahu služeb. Každý bod formuluj samostatně, aby byla žádost přehledná a každý bod samostatně přezkoumatelný.","pozn":""},{"c":"6","n":"Když obec mlčí nebo krouží: lhůty a stížnost","cas":"1 hodina","vy":"hlídejte kalendář; každé podání i odpověď si ukládejte (dodejky!).","ai":"pohlídá procesní postup — ale pozor, tady si nechte klíčové kroky potvrdit i z druhého zdroje (poradna Otevřená společnost, Frank Bold).","p":"Chronologie mé žádosti dle zákona 106/1999 Sb.: [data podání, co přišlo/nepřišlo]. Řekni mi: 1) jaké lhůty běží mně a jaké obci a kdy přesně končí, 2) jaký je správný další krok (stížnost dle § 16a? odvolání? podnět kraji na nečinnost?), 3) čeho se vyvarovat (např. předčasná žaloba). Připrav koncept příslušného podání. U každého tvrzení uveď konkrétní ustanovení zákona, ať si to můžu ověřit.","pozn":""},{"c":"7","n":"Dejte číslům kontext","cas":"2 hodiny","vy":"vyberete, co srovnávat. AI: najde srovnatelné ceny se zdroji.","ai":"najde srovnatelné ceny se zdroji.","p":"Obec [název] ([počet] obyvatel) podle [smlouvy / účetního deníku] vykazuje [částka a přesně popsané období] za [služby pověřence GDPR]. Nejdřív ověř, co zdroj skutečně dokládá; z opakovaných účetních zápisů automaticky neodvozuj měsíční smluvní cenu. Zjisti z veřejných zdrojů, kolik za srovnatelnou službu platí obce podobné velikosti a co nabízejí svazy obcí; u každého údaje uveď zdroj s odkazem a porovnej známý rozsah služby, počet zapojených organizací, období a DPH. Kde rozsah neznáme, označ cenu jen jako orientační indicii. Pak přepočítej výdaj obce na obyvatele a na rok. Piš neutrálně — výstupem má být srovnání, ne obvinění.","pozn":""},{"c":"8","n":"Zveřejněte to srozumitelně","cas":"víkend práce","vy":"rozhodujete, co a jak se řekne; podepište se pod to.","ai":"postaví web. Nejjednodušší cesta: vezměte náš repozitář jako šablonu (github.com/novotny25/transparentniprstice.cz — podmínky převzetí v souboru LICENSE v repozitáři), vyměňte datové soubory a texty. Nebo od nuly:","p":"Jsem občan obce [název] a mám ověřená data o jejím hospodaření (přikládám pouze sanitizované CSV + chronologii žádostí o informace). Postav statický web bez závislostí, který: 1) ukáže rozpočet obce srozumitelně laikovi (příjmy, výdaje, saldo, kategorie a přepočet na obyvatele), 2) má sekci s vývojem účtu [518] a mými otázkami k vybraným účetním zápisům — fakta vždy odděl od komentáře a u každého čísla uveď zdroj, 3) obsahuje chronologii mých žádostí dle zákona 106 s dokumenty ke stažení. Výstup označ jako občanskou datovou analýzu, nikoli audit. Rozpočtové peněžní výdaje a účetní náklady 518 ukaž odděleně. Použij jednu stručnou legendu typů informace. Nejdřív mi navrhni strukturu a design, nic nestav, dokud strukturu neschválím. Pak postupuj po malých krocích a po každém mi ukaž výsledek.","pozn":""}]}</script>
+<script>
+(function(){
+  var J=function(id){return JSON.parse(document.getElementById(id).textContent);};
+  var esc=function(t){return String(t==null?'':t).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');};
+  var N=J('d-navod'); if(!N.kroky) return;
+
+  document.getElementById('kroky').innerHTML=N.kroky.map(function(k){
+    return '<details class="krok"><summary>'+
+      '<span class="cislo">'+k.c+'</span>'+
+      '<span class="knazev">'+esc(k.n)+'</span>'+
+      '<span class="kcas">'+esc(k.cas)+'</span>'+
+      '<span class="caret">▶</span></summary>'+
+      '<div class="kinner">'+
+        (k.vy?'<p class="kr"><b>Co uděláte vy:</b> '+esc(k.vy)+'</p>':'')+
+        (k.ai?'<p class="kr"><b>Co udělá AI:</b> '+esc(k.ai)+'</p>':'')+
+        (k.pozn?'<p class="kpozn">'+esc(k.pozn)+'</p>':'')+
+        (k.p?'<div class="prompt"><div class="ph"><span>Hotový prompt</span>'+
+          '<button class="btn kopir" type="button">Zkopírovat</button></div>'+
+          '<pre>'+esc(k.p)+'</pre></div>':'')+
+      '</div></details>';
+  }).join('');
+
+  document.querySelectorAll('.kopir').forEach(function(b){
+    b.addEventListener('click',function(){
+      var t=b.closest('.prompt').querySelector('pre').textContent;
+      navigator.clipboard.writeText(t).then(function(){
+        b.textContent='Zkopírováno'; setTimeout(function(){b.textContent='Zkopírovat';},1800);
+      }).catch(function(){ b.textContent='Nepodařilo se'; });
+    });
+  });
+})();
+</script>
+</body>
+</html>

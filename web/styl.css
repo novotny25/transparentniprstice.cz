@@ -351,3 +351,30 @@ section[id],h2[id]{scroll-margin-top:118px}
   .dakce .btn{flex:1;text-align:center}
   .pdfbox iframe{height:70vh}
 }
+
+/* ── Návod pro další obce ────────────────────────────────────────── */
+.krok{background:var(--card);border-radius:var(--r);box-shadow:var(--shadow);margin-bottom:14px}
+.krok>summary{list-style:none;cursor:pointer;padding:18px 22px;display:flex;align-items:center;gap:14px}
+.krok>summary::-webkit-details-marker{display:none}
+.krok .cislo{width:34px;height:34px;border-radius:50%;background:var(--accent);color:#fff;flex:none;
+  display:grid;place-items:center;font-weight:700}
+.krok .knazev{flex:1;font-weight:600;font-size:1.06rem;min-width:0}
+.krok .kcas{font-size:.82rem;color:var(--muted);background:#f1f2f4;padding:4px 12px;border-radius:999px;white-space:nowrap}
+.krok .caret{color:#c3c5cb;font-size:.8rem;transition:transform .25s ease;flex:none}
+.krok[open] .caret{transform:rotate(90deg)}
+.kinner{padding:0 22px 20px 70px}
+.kinner .kr{margin:0 0 10px;font-size:.97rem}
+.kpozn{background:#eef6ff;border-radius:12px;padding:10px 14px;font-size:.92rem;color:#1d3f63;margin:0 0 14px}
+.prompt{background:#f7f8fa;border-radius:14px;overflow:hidden;margin-top:14px}
+.ph{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.ph span{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.ph .btn{font-size:.82rem;padding:5px 12px}
+.prompt pre{margin:0;padding:14px;font-size:.9rem;line-height:1.55;white-space:pre-wrap;
+  font-family:ui-monospace,SFMono-Regular,Menlo,monospace;color:var(--text);overflow-x:auto}
+.varovani-seznam{margin:0;padding-left:20px}
+.varovani-seznam li{margin-bottom:10px;font-size:.98rem}
+.varovani-seznam li:last-child{margin-bottom:0}
+@media(max-width:560px){
+  .kinner{padding:0 18px 18px}
+  .krok .kcas{display:none}
+}

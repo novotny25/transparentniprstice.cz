@@ -22,6 +22,7 @@ STRANKY = {                       # soubor -> {id bloku: název datového soubor
                         "d-temata": None, "d-vybrane": None, "d-518": None,
                         "d-srovnani": "srovnani-obci.json"},
     "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None},
+    "pro-dalsi-obce.html": {"d-navod": "navod.json"},
     "jak-to-vime.html": {"d-zadosti": "zadosti-106.json",
                          "d-chronologie": "chronologie.json",
                          "d-dokumenty": "dokumenty.json"},
