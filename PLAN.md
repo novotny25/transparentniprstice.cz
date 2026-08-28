@@ -548,14 +548,14 @@ Spouštěcí prompt:
 - [ ] **6.4** Po volbách: naplnit strukturu sekce nového období (P-22).
 - [ ] **6.5** Compound krok: z hotového projektu nechat AI vytvořit skill
   „aktualizace transparentního webu", aby další doplnění byla rutina.
-- [ ] **6.6 🤖+👤 Stránka „Obec v kostce" (P-37)** — sběr údajů z oficiálních
+- [x] **6.6 🤖+👤 Stránka „Obec v kostce" (P-37)** — HOTOVO 28. 8., nasazeno. — sběr údajů z oficiálních
   zdrojů (web obce, ČSÚ, volby.cz, RÚIAN/ARES, seznam datových schránek),
   návrh stránky, Petr schvaluje obsah. **Rozhodnuto 28. 8.: bez fotografií**
   (autorská práva — rešerše
   `2026_08_28_Pravni-reserse_fotky-kontakty-zastupitelu.md` v PACT);
   starosta + místostarosta zvýrazněně s plnými úředními kontakty,
   zastupitelé doplňkově.
-- [ ] **6.7 🤖 Přepracování „Pro další obce" (P-38)** — rámeček „Co k tomu
+- [x] **6.7 🤖 Přepracování „Pro další obce" (P-38)** — HOTOVO 28. 8., nasazeno. — rámeček „Co k tomu
   opravdu potřebujete" (špičkový AI model v agentním režimu, GitHub, reálný
   čas/náklady; s běžným chatem zdarma výsledek nevznikne), rozdělení kroků
   na úroveň „zvládne běžný chat" (1–7) a „vyžaduje vibe coding" (8),

@@ -167,8 +167,16 @@ RE_CP    = re.compile(r'č\.?\s?[pe]\.?\s?\d')                 # adresa čp./če
 RE_DOC   = re.compile(r'\b\d{2}-\d{3}-\d{5}\b')               # interní číslo dokladu
 RE_EMAIL = re.compile(r'[\w.+-]+@[\w.-]+\.\w{2,}')
 # Kontaktní adresa autora je na webu záměrně (P-11 vyžaduje uvedení kontaktu),
-# takže není únikem osobního údaje.
-POVOLENE_EMAILY = {"petr@petrnovotny.com"}
+# takže není únikem osobního údaje. Úřední kontakty obce a funkcionářů na
+# stránce „Obec v kostce" (P-37) jsou údaje o veřejné činnosti dle § 8a
+# odst. 2 zákona 106/1999 Sb., převzaté z oficiálního webu obce — schválil
+# Petr 28. 8. 2026.
+POVOLENE_EMAILY = {
+    "petr@petrnovotny.com",
+    "prstice@prstice.cz",   # obecní úřad + podatelna (oficiální web obce)
+    "danek@prstice.cz",     # starosta — úřední kontakt (oficiální web obce)
+    "urban@prstice.cz",     # místostarosta — úřední kontakt (oficiální web obce)
+}
 # Rodné číslo: YYMMDD/XXXX. Měsíc musí být platný (01–12, u žen +50),
 # jinak by vzor chytal i čísla jednací typu „123854/2026“.
 RE_RC    = re.compile(r'\b\d{2}(?:0[1-9]|1[0-2]|5[1-9]|6[0-2])(?:0[1-9]|[12]\d|3[01])/\d{3,4}\b')
