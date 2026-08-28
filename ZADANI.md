@@ -275,6 +275,69 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   konsolidovaná skutečnost, ČSÚ průměrný věk a okresní průměr, registr smluv /
   Hlídač státu). Nejde o průběžně aktualizovanou srovnávací tabulku (ta zůstává
   ve v2, P-21). **Mění §7 bod 2.**
+- **P-37 (přidáno 28. 8. 2026, Petr):** Nová stránka **„Obec v kostce"** —
+  vyčerpávající, ale střízlivý rozcestník základních informací o obci:
+  - **Identifikace:** název, IČO, kód obce, okres, kraj, katastrální území,
+    části obce, rozloha, nadmořská výška, počet obyvatel (odkaz ČSÚ).
+  - **Úřad:** přesná adresa, úřední hodiny, telefon, e-mail, elektronická
+    podatelna, **ID datové schránky**, odkaz na oficiální web obce a na
+    **úřední desku**.
+  - **Vedení obce (rozhodnutí Petra 28. 8. 2026): BEZ fotografií.**
+    **Starosta a místostarosta zvýrazněně** s kompletními úředními kontakty
+    (e-mail, telefon); **zastupitelé jen doplňkově** (jméno, funkce, výbory).
+    Zdroj: oficiální web obce + volby.cz (ověřitelné). Právní opora
+    (rešerše 28. 8. 2026, soubor
+    `2026_08_28_Pravni-reserse_fotky-kontakty-zastupitelu.md` v PACT):
+    jména/funkce/úřední kontakty jsou v pořádku (§ 8a InfZ). Fotografie by
+    vyžadovaly souhlas kvůli autorským právům fotografa — proto v1 bez nich.
+    Nikdy neúřední zaměstnanci (účetní, referenti), nikdy soukromé kontakty
+    a soukromý kontext. Ke stránce krátká informace o zpracování údajů
+    (správce, účel, kontakt pro námitku).
+  - **Rozcestník odkazů:** územní plán, sbírka právních předpisů obce
+    (vyhlášky, poplatky), zápisy a usnesení zastupitelstva, profil obce
+    v MONITORu, registr smluv, výsledky voleb (volby.cz), obecní zpravodaj,
+    nahlížení do katastru.
+  - **Občanská vybavenost:** škola a školka, knihovna, pošta, SDH/hasiči,
+    spolky, doprava (IDS JMK), svoz odpadu, hlášení poruch (voda, elektřina).
+  - **Zásady:** stránka je jasně označená jako **neoficiální občanský
+    rozcestník** (nezaměnitelnost s webem obce, §9); u proměnlivých údajů
+    (hodiny, telefony) přednostně **odkazovat na autoritativní zdroj**, ne
+    kopírovat hodnoty; každý údaj má zdroj a datum ověření. Smysl: web je
+    užitečný i mimo hospodaření → důvěra, návštěvnost, služba občanům.
+- **P-38 (přidáno 28. 8. 2026, Petr — mění P-30/P-32):** Stránka „Pro další
+  obce" musí být **poctivá ohledně nároků na zopakování**. Nahoře viditelný
+  rámeček „Co k tomu opravdu potřebujete": (a) **špičkový AI model v režimu
+  agenta / vibe codingu** (např. Claude Opus 4.8+ v Claude Code / cowork
+  módu, či srovnatelně vyspělý nástroj) — **s běžným chatem zdarma tento
+  výsledek nevznikne**; (b) účet na GitHubu a základní ochotu učit se;
+  (c) realistický čas a náklady. Osm kroků se **nemaže celé**, ale rozdělí
+  na dvě poctivě označené úrovně: **kroky 1–7** (porozumění výkazům, žádosti
+  dle 106, analýza, srovnání) zvládne i běžný chatovací nástroj — to je
+  občansky nejcennější část; **krok 8** (stavba webu) se výslovně označí
+  jako část vyžadující výbavu z rámečku. Primárním artefaktem stránky
+  zůstává **manuál pro AI** (NAVOD-PRO-AI), doplněný o tytéž požadavky
+  v úvodu souboru. **POTVRZENO Petrem 28. 8. 2026: kroky 1–7 zůstávají,
+  dělení na dvě úrovně podle úrovně AI platí.**
+- **P-39 (přidáno 28. 8. 2026, Petr):** Blok **„Odměny vedení obce"** na
+  stránce „Obec v kostce" (u vedení obce), s odkazem z rozpočtové sekce
+  hlavní stránky:
+  - **Uvolněný starosta:** měsíční odměna je **daná zákonem** (od 1. 1. 2024
+    výpočet dle zákona o obcích po novele č. 418/2023 Sb.; dříve nařízení
+    vlády č. 318/2017 Sb.) — pevná zákonná výše pro velikostní kategorii
+    obce, uvést částku po letech.
+  - **Neuvolněný místostarosta a zastupitelé:** zákon určuje **maximum**;
+    skutečnou výši stanovuje zastupitelstvo a **může být nižší** — tento
+    disclaimer uvést u všech neuvolněných funkcí. Skutečnou výši dohledat
+    v usneseních zastupitelstva (ustavující zasedání po volbách 2022 +
+    pozdější změny); co nejde dohledat online, vyžádat dle 106.
+  - **Křížová kontrola s daty webu:** FIN paragraf 6112, položka 5023
+    (odměny členů zastupitelstva — v datech webu: 830 tis. Kč 2019 →
+    1 139 tis. Kč 2025); součet vyplacených odměn musí řádově odpovídat
+    zákonným částkám. Případný nesoulad je otázka k doložení, ne tvrzení.
+  - **Rámec (§9):** jde o **transparentní kontext, ne „zjištění"** — výše
+    odměny uvolněného starosty je daná zákonem a nelze ji obci vyčítat.
+    Blok se prezentuje neutrálně a odděleně od sekce otázek; smysl: „říkáme
+    transparentně vše, tedy i kolik bere vedení obce".
 - **P-31:** Zásobník pro v2+ (každý nápad se před realizací zváží proti §7):
   mapa investic v obci (co se kde opravilo a za kolik); roční jednostránkový
   report „Rozpočet za 60 sekund" ke stažení a tisku do schránek; interaktivní

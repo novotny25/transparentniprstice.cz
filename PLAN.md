@@ -548,6 +548,29 @@ Spouštěcí prompt:
 - [ ] **6.4** Po volbách: naplnit strukturu sekce nového období (P-22).
 - [ ] **6.5** Compound krok: z hotového projektu nechat AI vytvořit skill
   „aktualizace transparentního webu", aby další doplnění byla rutina.
+- [ ] **6.6 🤖+👤 Stránka „Obec v kostce" (P-37)** — sběr údajů z oficiálních
+  zdrojů (web obce, ČSÚ, volby.cz, RÚIAN/ARES, seznam datových schránek),
+  návrh stránky, Petr schvaluje obsah. **Rozhodnuto 28. 8.: bez fotografií**
+  (autorská práva — rešerše
+  `2026_08_28_Pravni-reserse_fotky-kontakty-zastupitelu.md` v PACT);
+  starosta + místostarosta zvýrazněně s plnými úředními kontakty,
+  zastupitelé doplňkově.
+- [ ] **6.7 🤖 Přepracování „Pro další obce" (P-38)** — rámeček „Co k tomu
+  opravdu potřebujete" (špičkový AI model v agentním režimu, GitHub, reálný
+  čas/náklady; s běžným chatem zdarma výsledek nevznikne), rozdělení kroků
+  na úroveň „zvládne běžný chat" (1–7) a „vyžaduje vibe coding" (8),
+  stejný rámeček do úvodu `NAVOD-PRO-AI-obcanska-analyza-obce.md`.
+  **Varianta potvrzena Petrem 28. 8.** — kroky 1–7 zůstávají.
+- [ ] **6.8 🤖+👤 Blok „Odměny vedení obce" (P-39)** — vstupy HOTOVÉ:
+  rešerše 28. 8. (`2026_08_28_Reserse_odmeny-zastupitelu.md` v PACT) —
+  starosta uvolněný (usn. 4+5/2022/Z1, pevná výše 54 086 → 75 736 Kč/měs
+  2022→2026), místostarosta neuvolněný 10 000 Kč (≈ 24 % maxima,
+  usn. 13/2022/Z1), zastupitel 1 623 Kč, předseda výboru 3 245 Kč, člen
+  výboru 500 Kč od 4/2023 (usn. 33/2023/Z3); křížová kontrola s FIN
+  5023/5021 sedí (±0,7 %). Postavit se stránkou „Obec v kostce".
+  Zbývá vyžádat dle 106: chybějící zápisy 6/2025–8/2026, úplné zápisy
+  z 21. 10. 2022 a 7. 3. 2023, přehled vyplacených odměn po funkcích
+  (koncept žádosti připraví AI, odešle Petr).
 
 ---
 

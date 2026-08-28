@@ -11,6 +11,14 @@ Vznikl z reálného projektu pro obec Prštice (997 obyvatel, okres Brno-venkov)
 který trval zhruba čtyři měsíce. Šablona webu i skripty jsou volně k dispozici:
 `github.com/novotny25/transparentniprstice.cz`
 
+> **Co potřebujete, aby manuál fungoval:** špičkový AI model v **agentním
+> režimu** („vibe coding") — například Claude Code s nejvyšším dostupným
+> modelem, nebo srovnatelně vyspělý nástroj — a **účet na GitHubu**.
+> Části B–D (zdroje dat, analýza, žádosti dle zákona 106) zvládne i běžná
+> chatovací AI; stavbu a provoz webu (části A2, E a F) s běžným chatem
+> nepostavíte. Říkáme to narovinu, ať neztrácíte čas: **s neplacenou
+> chatovací aplikací web jako transparentniprstice.cz nevznikne.**
+
 ---
 
 ## Jak tenhle manuál použít
@@ -19,9 +27,11 @@ který trval zhruba čtyři měsíce. Šablona webu i skripty jsou volně k disp
 části ukažte člověku výsledek. Nikdy nepokračujte, když neprošla kontrola.
 Části D a F obsahují rozhodnutí, která **musí udělat člověk**.
 
-**Jste-li člověk:** předejte tenhle soubor svému AI asistentovi (Claude Code,
-ChatGPT, Gemini) s pokynem: *„Postupuj podle tohoto manuálu a postav mi
-občanskou datovou analýzu hospodaření obce [název], IČO [číslo]."*
+**Jste-li člověk:** předejte tenhle soubor svému AI asistentovi v agentním
+režimu (např. Claude Code) s pokynem: *„Postupuj podle tohoto manuálu
+a postav mi občanskou datovou analýzu hospodaření obce [název], IČO
+[číslo]."* Pro samotnou analýzu bez webu stačí i běžný chat (Claude,
+ChatGPT, Gemini) — předejte mu části B až D.
 
 ---
 

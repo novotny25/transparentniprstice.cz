@@ -51,9 +51,9 @@
   .reveal.in{opacity:1;transform:none}
   @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}}
 
-  section{padding:74px 0}
+  section{padding:48px 0}
   .soft{background:var(--bg-soft)}
-  .sec-head{text-align:center;max-width:46ch;margin:0 auto 44px}
+  .sec-head{text-align:center;max-width:46ch;margin:0 auto 32px}
   .sec-head p{color:var(--muted);font-size:1.1rem;margin:.55em 0 0}
 
   /* Dlaždice s podbarvením */
@@ -91,7 +91,7 @@
   .card h3{margin-bottom:.15em}
   .card .sub{color:var(--muted);font-size:1rem;margin:0 0 18px}
   .chart{width:100%;height:330px}
-  .chart text{font-family:var(--sans);fill:var(--muted);font-size:12px}
+  .chart text{font-family:var(--sans);fill:var(--muted);font-size:11px}
   .legend{display:flex;flex-wrap:wrap;gap:10px 22px;margin:14px 2px 0;font-size:.95rem}
   .legend .lg{display:inline-flex;align-items:center;gap:8px}
   .swatch{width:14px;height:14px;border-radius:4px;flex:none}
@@ -133,27 +133,28 @@
     background:#f1eeff;border-radius:999px;padding:2px 9px;white-space:nowrap}
 
   /* Vybrané položky */
-  .polozka{background:var(--card);border-radius:var(--r);padding:28px 30px;box-shadow:var(--shadow)}
-  .polozka+.polozka{margin-top:24px}
-  .phead{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:14px}
+  .polozka{background:var(--card);border-radius:var(--r);padding:32px 34px;box-shadow:var(--shadow)}
+  .polozka+.polozka{margin-top:28px}
+  .phead{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-bottom:18px}
   .phead h3{font-size:1.35rem;flex:1;min-width:200px}
   .poradi{width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;
     display:grid;place-items:center;font-weight:700;font-size:.95rem;flex:none}
   .stav{font-size:.78rem;font-weight:600;color:var(--muted);background:#f1f2f4;padding:4px 12px;border-radius:999px}
   .uvodem{background:#eef6ff;border-radius:14px;padding:14px 18px;margin:0 0 18px;font-size:.98rem}
-  .ctyri{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:20px}
+  .ctyri{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:14px;margin-bottom:22px}
+  .ctyri>div{background:#fbfbfd;border-radius:14px;padding:16px 18px}
   .ctyri .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;
-    color:var(--accent);margin:0 0 6px}
-  .ctyri p:last-child{margin:0;font-size:.96rem;line-height:1.5}
+    color:var(--accent);margin:0 0 8px}
+  .ctyri p:last-child{margin:0;font-size:.97rem;line-height:1.6}
   .polozka .graf svg{width:100%;height:132px;display:block}
-  .polozka .graf svg text{font-size:11px;fill:var(--faint)}
-  .srov{margin-top:20px;padding:18px 20px;background:#fbfbfd;border-radius:16px}
-  .srov .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
-  .srov p{font-size:.96rem;margin:0 0 10px}
+  .polozka .graf svg text{font-size:9.5px;fill:var(--faint)}
+  .srov{margin-top:22px;padding:22px 24px;background:#fbfbfd;border-radius:16px}
+  .srov .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
+  .srov p{font-size:.97rem;line-height:1.6;margin:0 0 12px}
   .srov table{font-size:.92rem;margin:6px 0 12px}
   .varovani{background:#fff8e8;border-radius:12px;padding:12px 16px;margin:0!important;
     font-size:.92rem!important;color:#6b5518}
-  .otazky{margin:18px 0 0;padding:14px 18px;background:#f7f8fa;border-radius:14px;font-size:.95rem;color:var(--muted)}
+  .otazky{margin:20px 0 0;padding:16px 20px;background:#f7f8fa;border-radius:14px;font-size:.95rem;line-height:1.6;color:var(--muted)}
   .otazky b{color:var(--text)}
 
   /* Karty témat */
@@ -166,7 +167,7 @@
   .tema .zmena.down{color:#1a7a45;background:#e9f7ee}
   .tema .popis{color:var(--muted);margin:.3em 0 16px;max-width:70ch}
   .tema svg{width:100%;height:150px;display:block}
-  .tema svg text{font-size:11px;fill:var(--faint)}
+  .tema svg text{font-size:9px;fill:var(--faint)}
   .tema .legend{margin-top:10px}
   .tema .hvezda{margin:10px 0 0;font-size:.86rem;color:var(--faint);max-width:74ch}
   .tema .hvezda b{color:var(--muted)}
@@ -235,15 +236,18 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .upozorneni p:last-child{margin:0}
 .upozorneni.pravni{background:#eef6ff;margin-top:22px}
 .upozorneni.pravni p{color:#1d3f63}
-.souhrn{max-width:74ch;color:var(--muted);font-size:1.02rem;margin:0 auto 22px}
+.souhrn{max-width:74ch;color:var(--muted);font-size:1.02rem;line-height:1.6;margin:0 0 22px}
 .rizeni{background:var(--card);border-radius:var(--r);padding:24px 28px;box-shadow:var(--shadow)}
 .rizeni+.rizeni{margin-top:18px}
 .rhead{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:baseline;margin-bottom:14px}
 .rhead h3{flex:1;min-width:220px;font-size:1.12rem}
 .znacka{font-size:.8rem;font-weight:600;color:var(--muted);background:#f1f2f4;padding:4px 12px;border-radius:999px;white-space:nowrap}
-.rdl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px 24px;margin:0}
-.rdl dt{font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--accent);margin-bottom:3px}
-.rdl dd{margin:0;font-size:.95rem;line-height:1.5}
+.rdl{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin:0}
+.rdl>div{background:#fbfbfd;border-radius:12px;padding:14px 16px}
+.rdl dt{font-size:.74rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin-bottom:5px}
+.rdl dd{margin:0;font-size:.98rem;line-height:1.55}
+.jmena{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0 0;padding:0;list-style:none}
+.jmena li{background:#f1f2f4;border-radius:999px;padding:6px 15px;font-size:.93rem;font-weight:600}
 .ceka{background:var(--card);border-radius:var(--r);padding:24px 28px;box-shadow:var(--shadow)}
 .ceka .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);margin:0 0 10px}
 .ceka p{margin:0 0 10px;font-size:.98rem}
@@ -317,11 +321,14 @@ section[id],h2[id]{scroll-margin-top:118px}
 .dokseznam .dtext b{font-weight:600;font-size:.98rem;color:var(--accent)}
 .dokseznam .dmeta{font-size:.85rem;color:var(--faint)}
 .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:4px}
-.srovk{background:#fbfbfd;border-radius:16px;padding:20px 22px}
+.srovk{background:#fbfbfd;border-radius:16px;padding:26px 28px}
 .srovk .k{color:var(--muted);font-size:.92rem;margin:0;font-weight:500}
-.srovk .v{font-size:2rem;font-weight:800;letter-spacing:-.03em;color:var(--accent);margin:.08em 0 .25em;
+.srovk .v{font-size:2rem;font-weight:800;letter-spacing:-.03em;color:var(--text);margin:.08em 0 .3em;
   font-variant-numeric:tabular-nums}
-.srovk .c{font-size:.95rem;margin:0;line-height:1.5}
+.srovk .verdikt{display:inline-block;font-size:.85rem;font-weight:700;color:var(--accent);
+  background:rgba(0,113,227,.09);padding:4px 12px;border-radius:999px;margin:0 0 12px}
+.srovk .c{font-size:.97rem;margin:0;line-height:1.6;color:var(--muted)}
+.srovk .c b{color:var(--text)}
 .zmena518{background:#fbfbfd;border-radius:16px;padding:18px 20px}
 .zmena518+.zmena518{margin-top:14px}
 .zh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:12px}
@@ -418,3 +425,17 @@ section[id],h2[id]{scroll-margin-top:118px}
 .zdrojeseznam a{font-weight:600;font-size:1rem}
 .zdrojeseznam span{display:block;font-size:.92rem;color:var(--muted);margin-top:3px;max-width:70ch}
 .zvyrazneno{background:linear-gradient(160deg,#eef6ff,#fbfdff)}
+
+/* Mapa zjištění pod hero (index) */
+#zjisteni-prehled{padding-top:40px}
+.zjmapa{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.zjkarta{display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);padding:24px 24px 20px;
+  box-shadow:var(--shadow);color:inherit;border-top:4px solid var(--zb,var(--accent));
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s}
+.zjkarta:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi);text-decoration:none}
+.zjkarta .k{color:var(--muted);font-size:.9rem;font-weight:600;margin:0}
+.zjkarta .v{font-size:clamp(1.9rem,3.2vw,2.35rem);font-weight:800;letter-spacing:-.03em;color:var(--text);margin:.1em 0 .3em}
+.zjkarta .v small{font-size:.45em;font-weight:600;color:var(--muted);letter-spacing:normal}
+.zjkarta .c{font-size:.95rem;line-height:1.5;color:var(--text);margin:0 0 14px}
+.zjkarta .go{margin-top:auto;margin-bottom:0;font-size:.9rem;font-weight:600;color:var(--accent)}
+.zjdalsi{max-width:74ch;margin:26px auto 0;text-align:center;color:var(--muted);font-size:1rem}
