@@ -11,7 +11,7 @@ Vznikl z reálného projektu pro obec Prštice (997 obyvatel, okres Brno-venkov)
 který trval zhruba čtyři měsíce. Šablona webu i skripty jsou volně k dispozici:
 `github.com/novotny25/transparentniprstice.cz`
 
-> **Co potřebujete, aby manuál fungoval:** špičkový AI model v **agentním
+> **Co potřebujete, aby manuál fungoval:** špičková AI v **agentním
 > režimu** („vibe coding") — například Claude Code s nejvyšším dostupným
 > modelem, nebo srovnatelně vyspělý nástroj — a **účet na GitHubu**.
 > Části B–D (zdroje dat, analýza, žádosti dle zákona 106) zvládne i běžná
