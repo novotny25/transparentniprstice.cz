@@ -1,67 +1,329 @@
 {
-  "_navod": [
-    "Váže číslo napsané ručně v textu na hodnotu v datovém souboru.",
-    "Když se rozejdou, hlídka to nahlásí — web pak nezačne tiše lhát.",
-    "Hlídají se jen čísla psaná v souvislém textu. Čísla v grafech a tabulkách",
-    "se generují z dat sama, ta hlídat netřeba.",
-    "Pozor: hlídka čte jen text napsaný v HTML. Obsah, který dokresluje",
-    "JavaScript (rizeni.html, chronologie), takto ověřit nelze."
-  ],
-  "kontroly": [
-    {
-      "popis": "Účet 511 (opravy a udržování) za roky 2020–2025 — v textu 4×",
-      "stranka": "index.html",
-      "zdroj": {
-        "soubor": "vykazy-rady.json",
-        "soucet": {
-          "v": "rady.ucet_511.hodnoty_kc",
-          "klice": ["2020", "2021", "2022", "2023", "2024", "2025"]
-        }
-      },
-      "delitel": 1000000,
-      "desetinna": 1,
-      "pripona": " mil. Kč",
-      "v_textu": "24,4 mil. Kč"
-    },
-    {
-      "popis": "Účet 518 v roce 2025 — text „Ze 2,0 na 4,7 milionu ročně“",
-      "stranka": "index.html",
-      "zdroj": { "soubor": "vykazy-rady.json", "klic": "rady.ucet_518.hodnoty_kc.2025" },
-      "delitel": 1000000,
-      "desetinna": 1,
-      "pripona": " milionu",
-      "v_textu": "4,7 milionu"
-    },
-    {
-      "popis": "Účet 518 — vrchol v roce 2023",
-      "stranka": "index.html",
-      "zdroj": { "soubor": "vykazy-rady.json", "klic": "rady.ucet_518.hodnoty_kc.2023" },
-      "delitel": 1000000,
-      "desetinna": 1,
-      "pripona": " mil.",
-      "v_textu": "5,8 mil."
-    },
-    {
-      "popis": "Počet obyvatel k 1. 1. 2025 — v úvodní větě webu",
-      "stranka": "index.html",
-      "zdroj": { "soubor": "obyvatele.json", "klic": "obyvatele.2025" },
-      "pripona": " obyvatel",
-      "v_textu": "997 obyvatel"
-    },
-    {
-      "popis": "Počet obyvatel v roce 2015 — text „za 10 let z 931“",
-      "stranka": "index.html",
-      "zdroj": { "soubor": "obyvatele.json", "klic": "obyvatele.2015" },
-      "predpona": "z ",
-      "v_textu": "z 931"
+ "_navod": [
+  "Váže číslo napsané ručně v textu na hodnotu v datovém souboru.",
+  "Když se rozejdou, hlídka to nahlásí — web pak nezačne tiše lhát.",
+  "Hlídají se jen čísla psaná v souvislém textu. Čísla v grafech a tabulkách",
+  "se generují z dat sama, ta hlídat netřeba.",
+  "Pozor: hlídka čte jen text napsaný v HTML. Obsah, který dokresluje",
+  "JavaScript (rizeni.html, chronologie), takto ověřit nelze."
+ ],
+ "kontroly": [
+  {
+   "popis": "Účet 511 (opravy a udržování) za roky 2020–2025 — v textu 4×",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "soucet": {
+     "v": "rady.ucet_511.hodnoty_kc",
+     "klice": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+     ]
     }
-  ],
-  "_klice": {
-    "klic": "tečková cesta v JSONu: rady.ucet_518.hodnoty_kc.2025",
-    "soucet": "sečte hodnoty; u seznamu 'pole' + 'kde', u slovníku 'klice'",
-    "delitel": "čím vydělit (1000000 = na miliony, 100 = haléře na koruny)",
-    "desetinna": "kolik desetinných míst",
-    "predpona/pripona": "co je v textu těsně před/za číslem",
-    "v_textu": "poznámka pro tebe — jak to znělo při nastavení"
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil. Kč",
+   "v_textu": "24,4 mil. Kč"
+  },
+  {
+   "popis": "Účet 518 v roce 2025 — text „Ze 2,0 na 4,7 milionu ročně“",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "klic": "rady.ucet_518.hodnoty_kc.2025"
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " milionu",
+   "v_textu": "4,7 milionu"
+  },
+  {
+   "popis": "Účet 518 — vrchol v roce 2023",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "klic": "rady.ucet_518.hodnoty_kc.2023"
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil.",
+   "v_textu": "5,8 mil."
+  },
+  {
+   "popis": "Počet obyvatel k 1. 1. 2025 — v úvodní větě webu",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "obyvatele.json",
+    "klic": "obyvatele.2025"
+   },
+   "pripona": " obyvatel",
+   "v_textu": "997 obyvatel"
+  },
+  {
+   "popis": "Počet obyvatel v roce 2015 — text „za 10 let z 931“",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "obyvatele.json",
+    "klic": "obyvatele.2015"
+   },
+   "predpona": "z ",
+   "v_textu": "z 931"
+  },
+  {
+   "popis": "GDPR: součet plateb 2025 = 272 250 Kč",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "ucet-518-polozky-public.json",
+    "soucet": {
+     "pole": "castka_haleru",
+     "kde": {
+      "kategorie": "GDPR / pověřenec",
+      "ucetni_rok": 2025
+     }
+    }
+   },
+   "delitel": 100,
+   "pripona": " Kč"
+  },
+  {
+   "popis": "GDPR: platby 1. pololetí 2026 = 108 900 Kč",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "ucet-518-2026H1-public.json",
+    "soucet": {
+     "v": "polozky",
+     "pole": "castka_haleru",
+     "kde": {
+      "kategorie": "GDPR / pověřenec"
+     }
+    }
+   },
+   "delitel": 100,
+   "pripona": " Kč"
+  },
+  {
+   "popis": "Právní služby 2022–2025 = 2 094 182 Kč",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "ucet-518-polozky-public.json",
+    "soucet": {
+     "pole": "castka_haleru",
+     "kde": {
+      "kategorie": "Právní služby"
+     }
+    }
+   },
+   "delitel": 100,
+   "pripona": " Kč"
+  },
+  {
+   "popis": "Právní služby 2023 = 583 224 (řada po letech)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "ucet-518-polozky-public.json",
+    "soucet": {
+     "pole": "castka_haleru",
+     "kde": {
+      "kategorie": "Právní služby",
+      "ucetni_rok": 2023
+     }
+    }
+   },
+   "delitel": 100,
+   "predpona": "292 244 → ",
+   "pripona": " → 601 452"
+  },
+  {
+   "popis": "Právní služby 1. pololetí 2026 = 313 364 Kč",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "ucet-518-2026H1-public.json",
+    "soucet": {
+     "v": "polozky",
+     "pole": "castka_haleru",
+     "kde": {
+      "kategorie": "Právní služby"
+     }
+    }
+   },
+   "delitel": 100,
+   "pripona": " Kč"
+  },
+  {
+   "popis": "Účet 511 rok 2022 = 7,8 mil.",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "soucet": {
+     "v": "rady.ucet_511.hodnoty_kc",
+     "klice": [
+      "2022"
+     ]
+    }
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil. Kč"
+  },
+  {
+   "popis": "Účet 511 za 2021–2023 = 17,4 mil.",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "soucet": {
+     "v": "rady.ucet_511.hodnoty_kc",
+     "klice": [
+      "2021",
+      "2022",
+      "2023"
+     ]
+    }
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil. Kč — víc než jedenapůlnásobek"
+  },
+  {
+   "popis": "Účet 518 rok 2015 = 2,0 mil. („Ze 2,0 na 4,7…“)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "vykazy-rady.json",
+    "soucet": {
+     "v": "rady.ucet_518.hodnoty_kc",
+     "klice": [
+      "2015"
+     ]
+    }
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "predpona": "Ze ",
+   "pripona": " na 4,7"
+  },
+  {
+   "popis": "Výdaje 2023 = 34,4 mil. (rok, kdy obec vydala víc, než přijala)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "rozpocet.json",
+    "klic": "roky.2023.vydaje_celkem_kc"
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil."
+  },
+  {
+   "popis": "Kapitálové výdaje 2023 = 8,65 mil.",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "rozpocet.json",
+    "klic": "roky.2023.kapitalove_vydaje_kc"
+   },
+   "delitel": 1000000,
+   "desetinna": 2,
+   "pripona": " mil."
+  },
+  {
+   "popis": "Kapitálové výdaje 2024 = 1,15 mil.",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "rozpocet.json",
+    "klic": "roky.2024.kapitalove_vydaje_kc"
+   },
+   "delitel": 1000000,
+   "desetinna": 2,
+   "pripona": " mil."
+  },
+  {
+   "popis": "Kapitálové výdaje 2025 = 1,35 mil.",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "rozpocet.json",
+    "klic": "roky.2025.kapitalove_vydaje_kc"
+   },
+   "delitel": 1000000,
+   "desetinna": 2,
+   "pripona": " mil."
+  },
+  {
+   "popis": "Dotace 2012–2018 = 33,8 mil. (cihlička banneru)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "dotace-web.json",
+    "soucet": {
+     "v": "prsticeDrive",
+     "pole": "kc"
+    }
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "pripona": " mil. → 1,0 mil."
+  },
+  {
+   "popis": "Dotace 2019–2025 vlastní projekty ≈ 1,0 mil. (cihlička banneru)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "dotace-web.json",
+    "soucet": {
+     "v": "prstice2025",
+     "pole": "kc",
+     "kde": {
+      "typ": "obec"
+     }
+    }
+   },
+   "delitel": 1000000,
+   "desetinna": 1,
+   "predpona": "33,8 mil. → ",
+   "pripona": " mil."
+  },
+  {
+   "popis": "Průměrný věk Prštic 43,3",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "srovnani-obci.json",
+    "klic": "vek.prstice"
+   },
+   "desetinna": 1,
+   "pripona": " let"
+  },
+  {
+   "popis": "Migrace +57 (bilance ČSÚ 2015–2024)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "obyvatele-bilance.json",
+    "klic": "soucty.saldo_migrace"
+   },
+   "predpona": "migrace +"
+  },
+  {
+   "popis": "Přirozený přírůstek +25 (bilance ČSÚ)",
+   "stranka": "index.html",
+   "zdroj": {
+    "soubor": "obyvatele-bilance.json",
+    "klic": "soucty.prirozeny_prirustek"
+   },
+   "predpona": "rozením +"
+  },
+  {
+   "popis": "Počet obyvatel 997 na Obci v kostce",
+   "stranka": "obec.html",
+   "zdroj": {
+    "soubor": "obyvatele.json",
+    "klic": "obyvatele.2025"
+   }
   }
+ ],
+ "_klice": {
+  "klic": "tečková cesta v JSONu: rady.ucet_518.hodnoty_kc.2025",
+  "soucet": "sečte hodnoty; u seznamu 'pole' + 'kde', u slovníku 'klice'",
+  "delitel": "čím vydělit (1000000 = na miliony, 100 = haléře na koruny)",
+  "desetinna": "kolik desetinných míst",
+  "predpona/pripona": "co je v textu těsně před/za číslem",
+  "v_textu": "poznámka pro tebe — jak to znělo při nastavení"
+ }
 }

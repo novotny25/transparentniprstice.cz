@@ -1,27 +1,27 @@
 {
-  "_navod": [
-    "Stránky mají data vložená přímo v HTML v blocích <script type=\"application/json\">.",
-    "Sem se píše, ze kterého souboru v data/ který blok pochází.",
-    "Hlídka pak pozná, když se rozejdou — a varuje dřív, než publikační skript",
-    "vlozit_data.py přepíše web starší verzí dat.",
-    "null = blok se do HTML píše rovnou a žádný zdrojový soubor nemá."
-  ],
-  "bloky": {
-    "d-srovnani": "srovnani-obci.json",
-    "d-obyvatele": "obyvatele.json",
-    "d-rizeni": "rizeni.json",
-    "d-navod": "navod.json",
-    "d-zadosti": "zadosti-106.json",
-    "d-chronologie": "chronologie.json",
-    "d-dokumenty": "dokumenty.json",
-    "d-vydaje": null,
-    "d-prijmy": null,
-    "d-rady": null,
-    "d-temata": null,
-    "d-vybrane": null,
-    "d-518": null,
-    "d-rozpocet": null,
-    "d-dotace": null,
-    "d-penize": null
-  }
+ "_navod": [
+  "Stránky mají data vložená přímo v HTML v blocích <script type=\"application/json\">.",
+  "Sem se píše, ze kterého souboru v data/ který blok pochází.",
+  "Hlídka pak pozná, když se rozejdou — a varuje dřív, než publikační skript",
+  "vlozit_data.py přepíše web starší verzí dat.",
+  "null = blok se do HTML píše rovnou a žádný zdrojový soubor nemá."
+ ],
+ "bloky": {
+  "d-srovnani": "srovnani-obci.json",
+  "d-obyvatele": "obyvatele.json",
+  "d-rizeni": "rizeni.json",
+  "d-navod": "navod.json",
+  "d-zadosti": "zadosti-106.json",
+  "d-chronologie": "chronologie.json",
+  "d-dokumenty": "dokumenty.json",
+  "d-vydaje": null,
+  "d-prijmy": null,
+  "d-rady": null,
+  "d-temata": null,
+  "d-vybrane": null,
+  "d-518": null,
+  "d-rozpocet": null,
+  "d-dotace": "dotace-web.json",
+  "d-penize": null
+ }
 }

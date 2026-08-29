@@ -1,155 +1,345 @@
 {
-  "_navod": [
-    "Věty na webu, které jednou přestanou platit. Hlídka je sleduje každý den.",
-    "Až nastane 'datum_kontroly', položí 'otazka' a bude ji opakovat, dokud",
-    "nezapíšeš buď \"vyrizeno\": true, nebo nové 'datum_kontroly'.",
-    "'citace' musí být přesný kus věty ze stránky — podle ní hlídka pozná,",
-    "jestli tam věta pořád je. Když ji přepíšeš, uprav i citaci tady.",
-    "Prázdná 'citace' = hlídá se jen datum (u obsahu, který kreslí JavaScript).",
-    "Řádky začínající podtržítkem hlídka ignoruje, jsou jen pro tebe."
-  ],
-  "tvrzeni": [
-    {
-      "id": "ucet-511-lhuta",
-      "stranka": "index.html",
-      "citace": "obec ho měla doložit do 9. 9. 2026.",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Došel už od obce rozpis účtu 511 (žádost z 25. 8. 2026, lhůta do 9. 9. 2026)?",
-      "co_udelat": "Když došel — nahradit větu tím, co obec doložila, a doplnit rozbor. Když nedošel — přepsat na „lhůta marně uplynula“, doplnit chronologii a zvážit stížnost podle § 16a.",
-      "vyrizeno": false
-    },
-    {
-      "id": "ucet-511-cekame",
-      "stranka": "index.html",
-      "citace": "Zákonná lhůta do 9. 9. 2026",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Platí ještě štítek „Odpověď čekáme do 9. září“ u karty o účtu 511?",
-      "co_udelat": "Přepsat štítek podle skutečnosti — buď „doloženo“, nebo „lhůta uplynula“.",
-      "vyrizeno": false
-    },
-    {
-      "id": "ucet-511-zakonna-lhuta",
-      "stranka": "index.html",
-      "citace": "zákonná lhůta pro odpověď byla 15 dnů, tedy do 9. 9. 2026",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Lhůta k účtu 511 uplynula — je text v rozboru pořád v přítomném čase („běží“)?",
-      "co_udelat": "Přepsat z „běží do“ na minulý čas a doplnit, co se stalo.",
-      "vyrizeno": false
-    },
-    {
-      "id": "ucet-511-co-bude-dal",
-      "stranka": "index.html",
-      "citace": "zákonná lhůta pro vyřízení je 15 dnů, tedy do 9. 9. 2026",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Sekce „Co bude dál“ u žádosti o účet 511 — je aktuální?",
-      "co_udelat": "Doplnit, jak žádost dopadla.",
-      "vyrizeno": false
-    },
-    {
-      "id": "srovnani-pripravujeme",
-      "stranka": "index.html",
-      "citace": "Srovnání s okolními obcemi připravujeme",
-      "typ": "relativni_cas",
-      "datum_kontroly": "2026-08-29",
-      "otazka": "Věta slibuje srovnání s okolními obcemi, které je přitom na téže stránce už hotové (sekce Dotace, dvanáct obcí). Odstranit?",
-      "co_udelat": "Nahradit odkazem na hotové srovnání níž na stránce.",
-      "vyrizeno": true,
-      "_poznamka": "Vyřízeno 29. 8. 2026 commitem 7287da0 — věta nahrazena odkazem na hotové srovnání."
-    },
-    {
-      "id": "soudni-rizeni-zadost",
-      "stranka": "rizeni.html",
-      "citace": "",
-      "typ": "probihajici_rizeni",
-      "datum_kontroly": "2026-09-05",
-      "otazka": "Odpověděla obec na žádost o přehled soudních řízení od 1. 1. 2018 (podáno 15. 8. 2026)? Sekce soudních řízení je zatím prázdná.",
-      "co_udelat": "Doplnit soudní řízení do data/rizeni.json, nebo zaznamenat nečinnost obce.",
-      "vyrizeno": false
-    },
-    {
-      "id": "vedeni-obce-po-volbach",
-      "stranka": "obec.html",
-      "citace": "",
-      "typ": "zmeni_volby",
-      "datum_kontroly": "2026-10-05",
-      "otazka": "Proběhly komunální volby — sedí ještě jména, e-maily a funkce vedení obce na stránce „Obec v kostce“?",
-      "co_udelat": "Aktualizovat kontakty a složení zastupitelstva podle nového ustavujícího zasedání. Zkontrolovat i odměny vedení obce.",
-      "vyrizeno": false
-    },
-    {
-      "id": "csu-obyvatele-novy-rok",
-      "stranka": "index.html",
-      "citace": "997 obyvatel",
-      "typ": "posledni_dostupny_rok",
-      "datum_kontroly": "2027-04-01",
-      "otazka": "ČSÚ zveřejnil demografická data k 1. 1. 2027 — aktualizovat počet obyvatel a průměrný věk?",
-      "co_udelat": "Stáhnout nová data ČSÚ, přegenerovat data/obyvatele.json a upravit čísla v textu.",
-      "vyrizeno": false
-    },
-    {
-      "id": "rozpocet-novy-rok",
-      "stranka": "index.html",
-      "citace": "",
-      "typ": "pribude_dalsi_rok",
-      "datum_kontroly": "2027-04-01",
-      "otazka": "Je v MONITORu závěrečný účet za rok 2026 — doplnit další rok do rozpočtu, účtu 518 a srovnání obcí?",
-      "co_udelat": "Spustit extrakční skripty na rok 2026 a přegenerovat data.",
-      "vyrizeno": false
-    },
-    {
-      "id": "pravni-sluzby-detail",
-      "stranka": "index.html",
-      "citace": "zakročit musel až krajský úřad, který doložení nařídil. Na detail čekáme.",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-06",
-      "otazka": "Doložila obec faktury a výkazy práce k právním službám, jak jí nařídil krajský úřad (rozhodnutí z 19. 8. 2026)?",
-      "co_udelat": "Když doložila — rozebrat podklady a přepsat větu. Když ne — doplnit, že rozhodnutí krajského úřadu nesplnila, a zvážit opatření proti nečinnosti.",
-      "vyrizeno": false
-    },
-    {
-      "id": "dve-polozky-cekame",
-      "stranka": "index.html",
-      "citace": "U dvou z nich stále čekáme na podklady od obce",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-06",
-      "otazka": "Pořád čekáte na podklady u dvou ze tří položek „pod lupou“?",
-      "co_udelat": "Upravit počet podle skutečnosti — nebo větu odstranit, až budou podklady všechny.",
-      "vyrizeno": false
-    },
-    {
-      "id": "gdpr-ramcova-smlouva",
-      "stranka": "index.html",
-      "citace": "Rámcovou smlouvu, sjednaný rozsah plnění a dodavatele této konkrétní služby.",
-      "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-06",
-      "otazka": "Došly podklady k pověřenci GDPR (žádost z 15. 8. 2026)? Obec nabídla vysvětlení, že náklady zahrnují i dobu od roku 2018 — je čím na ně odpovědět?",
-      "co_udelat": "Doplnit sekci „Co zatím nevíme“ o to, co dorazilo, a vyrovnat se s vysvětlením obce.",
-      "vyrizeno": false
-    },
-    {
-      "id": "kru-jmk-lhuta",
-      "stranka": "jak-to-vime.html",
-      "citace": "",
-      "typ": "probihajici_rizeni",
-      "datum_kontroly": "2026-09-01",
-      "otazka": "Uplynula 30denní lhůta z rozhodnutí Krajského úřadu JMK (19. 8. 2026). Splnila obec, co jí bylo nařízeno?",
-      "co_udelat": "Doplnit do chronologie, jak to dopadlo.",
-      "vyrizeno": false
-    },
-    {
-      "id": "zmrazeny-sloupec-dni",
-      "stranka": "jak-to-vime.html",
-      "citace": "",
-      "typ": "relativni_cas",
-      "datum_kontroly": "2026-09-01",
-      "otazka": "Sloupec „Dní“ v tabulce žádostí je zmrazený — čísla byla spočítaná k 28. 8. 2026 a každý den víc zaostávají. Přepsat na výpočet v prohlížeči?",
-      "co_udelat": "V JS počítat rozdíl ode dne podání a pole pocet_dni_od_podani z dat úplně odstranit. Do té doby hlídka připomene každý týden.",
-      "vyrizeno": true,
-      "_poznamka": "Vyřízeno 29. 8. 2026 — sloupec „Dní“ nahrazen pevným datem zákonné lhůty, pole pocet_dni_od_podani odstraněno z dat."
-    }
-  ]
+ "_navod": [
+  "Věty na webu, které jednou přestanou platit. Hlídka je sleduje každý den.",
+  "Až nastane 'datum_kontroly', položí 'otazka' a bude ji opakovat, dokud",
+  "nezapíšeš buď \"vyrizeno\": true, nebo nové 'datum_kontroly'.",
+  "'citace' musí být přesný kus věty ze stránky — podle ní hlídka pozná,",
+  "jestli tam věta pořád je. Když ji přepíšeš, uprav i citaci tady.",
+  "Prázdná 'citace' = hlídá se jen datum (u obsahu, který kreslí JavaScript).",
+  "Řádky začínající podtržítkem hlídka ignoruje, jsou jen pro tebe."
+ ],
+ "tvrzeni": [
+  {
+   "id": "ucet-511-lhuta",
+   "stranka": "index.html",
+   "citace": "obec ho měla doložit do 9. 9. 2026.",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Došel už od obce rozpis účtu 511 (žádost z 25. 8. 2026, lhůta do 9. 9. 2026)?",
+   "co_udelat": "Když došel — nahradit větu tím, co obec doložila, a doplnit rozbor. Když nedošel — přepsat na „lhůta marně uplynula“, doplnit chronologii a zvážit stížnost podle § 16a.",
+   "vyrizeno": false
+  },
+  {
+   "id": "ucet-511-cekame",
+   "stranka": "index.html",
+   "citace": "Zákonná lhůta do 9. 9. 2026",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Platí ještě štítek „Odpověď čekáme do 9. září“ u karty o účtu 511?",
+   "co_udelat": "Přepsat štítek podle skutečnosti — buď „doloženo“, nebo „lhůta uplynula“.",
+   "vyrizeno": false
+  },
+  {
+   "id": "ucet-511-zakonna-lhuta",
+   "stranka": "index.html",
+   "citace": "zákonná lhůta pro odpověď byla 15 dnů, tedy do 9. 9. 2026",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Lhůta k účtu 511 uplynula — je text v rozboru pořád v přítomném čase („běží“)?",
+   "co_udelat": "Přepsat z „běží do“ na minulý čas a doplnit, co se stalo.",
+   "vyrizeno": false
+  },
+  {
+   "id": "ucet-511-co-bude-dal",
+   "stranka": "index.html",
+   "citace": "zákonná lhůta pro vyřízení je 15 dnů, tedy do 9. 9. 2026",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Sekce „Co bude dál“ u žádosti o účet 511 — je aktuální?",
+   "co_udelat": "Doplnit, jak žádost dopadla.",
+   "vyrizeno": false
+  },
+  {
+   "id": "srovnani-pripravujeme",
+   "stranka": "index.html",
+   "citace": "Srovnání s okolními obcemi připravujeme",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-08-29",
+   "otazka": "Věta slibuje srovnání s okolními obcemi, které je přitom na téže stránce už hotové (sekce Dotace, dvanáct obcí). Odstranit?",
+   "co_udelat": "Nahradit odkazem na hotové srovnání níž na stránce.",
+   "vyrizeno": true,
+   "_poznamka": "Vyřízeno 29. 8. 2026 commitem 7287da0 — věta nahrazena odkazem na hotové srovnání."
+  },
+  {
+   "id": "soudni-rizeni-zadost",
+   "stranka": "rizeni.html",
+   "citace": "",
+   "typ": "probihajici_rizeni",
+   "datum_kontroly": "2026-09-05",
+   "otazka": "Odpověděla obec na žádost o přehled soudních řízení od 1. 1. 2018 (podáno 15. 8. 2026)? Sekce soudních řízení je zatím prázdná.",
+   "co_udelat": "Doplnit soudní řízení do data/rizeni.json, nebo zaznamenat nečinnost obce.",
+   "vyrizeno": false
+  },
+  {
+   "id": "vedeni-obce-po-volbach",
+   "stranka": "obec.html",
+   "citace": "",
+   "typ": "zmeni_volby",
+   "datum_kontroly": "2026-10-05",
+   "otazka": "Proběhly komunální volby — sedí ještě jména, e-maily a funkce vedení obce na stránce „Obec v kostce“?",
+   "co_udelat": "Aktualizovat kontakty a složení zastupitelstva podle nového ustavujícího zasedání. Zkontrolovat i odměny vedení obce.",
+   "vyrizeno": false
+  },
+  {
+   "id": "csu-obyvatele-novy-rok",
+   "stranka": "index.html",
+   "citace": "997 obyvatel",
+   "typ": "posledni_dostupny_rok",
+   "datum_kontroly": "2027-04-01",
+   "otazka": "ČSÚ zveřejnil demografická data k 1. 1. 2027 — aktualizovat počet obyvatel a průměrný věk?",
+   "co_udelat": "Stáhnout nová data ČSÚ, přegenerovat data/obyvatele.json a upravit čísla v textu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "rozpocet-novy-rok",
+   "stranka": "index.html",
+   "citace": "",
+   "typ": "pribude_dalsi_rok",
+   "datum_kontroly": "2027-04-01",
+   "otazka": "Je v MONITORu závěrečný účet za rok 2026 — doplnit další rok do rozpočtu, účtu 518 a srovnání obcí?",
+   "co_udelat": "Spustit extrakční skripty na rok 2026 a přegenerovat data.",
+   "vyrizeno": false
+  },
+  {
+   "id": "pravni-sluzby-detail",
+   "stranka": "index.html",
+   "citace": "zakročit musel až krajský úřad, který doložení nařídil. Na detail čekáme.",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Doložila obec faktury a výkazy práce k právním službám, jak jí nařídil krajský úřad (rozhodnutí z 19. 8. 2026)?",
+   "co_udelat": "Když doložila — rozebrat podklady a přepsat větu. Když ne — doplnit, že rozhodnutí krajského úřadu nesplnila, a zvážit opatření proti nečinnosti.",
+   "vyrizeno": false
+  },
+  {
+   "id": "dve-polozky-cekame",
+   "stranka": "index.html",
+   "citace": "U dvou z nich stále čekáme na podklady od obce",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Pořád čekáte na podklady u dvou ze tří položek „pod lupou“?",
+   "co_udelat": "Upravit počet podle skutečnosti — nebo větu odstranit, až budou podklady všechny.",
+   "vyrizeno": false
+  },
+  {
+   "id": "gdpr-ramcova-smlouva",
+   "stranka": "index.html",
+   "citace": "Rámcovou smlouvu, sjednaný rozsah plnění a dodavatele této konkrétní služby.",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Došly podklady k pověřenci GDPR (žádost z 15. 8. 2026)? Obec nabídla vysvětlení, že náklady zahrnují i dobu od roku 2018 — je čím na ně odpovědět?",
+   "co_udelat": "Doplnit sekci „Co zatím nevíme“ o to, co dorazilo, a vyrovnat se s vysvětlením obce.",
+   "vyrizeno": false
+  },
+  {
+   "id": "kru-jmk-lhuta",
+   "stranka": "jak-to-vime.html",
+   "citace": "",
+   "typ": "probihajici_rizeni",
+   "datum_kontroly": "2026-09-01",
+   "otazka": "Uplynula 15denní lhůta z rozhodnutí Krajského úřadu JMK (19. 8. 2026). Splnila obec, co jí bylo nařízeno?",
+   "co_udelat": "Doplnit do chronologie, jak to dopadlo.",
+   "vyrizeno": false
+  },
+  {
+   "id": "zmrazeny-sloupec-dni",
+   "stranka": "jak-to-vime.html",
+   "citace": "",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-09-01",
+   "otazka": "Sloupec „Dní“ v tabulce žádostí je zmrazený — čísla byla spočítaná k 28. 8. 2026 a každý den víc zaostávají. Přepsat na výpočet v prohlížeči?",
+   "co_udelat": "V JS počítat rozdíl ode dne podání a pole pocet_dni_od_podani z dat úplně odstranit. Do té doby hlídka připomene každý týden.",
+   "vyrizeno": true,
+   "_poznamka": "Vyřízeno 29. 8. 2026 — sloupec „Dní“ nahrazen pevným datem zákonné lhůty, pole pocet_dni_od_podani odstraněno z dat."
+  },
+  {
+   "id": "pravni-kru-vyrizeni",
+   "stranka": "index.html",
+   "citace": "",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Doložila obec faktury, smlouvu a výkazy k právním službám? KrÚ jí to nařídil 19. 8., lhůta 15 dnů běží od doručení (zhruba do 5. 9.).",
+   "co_udelat": "Po doložení: přepsat sekci právních služeb (Co víme / Co jsme vypočítali), aktualizovat větu v tématech (vlozit_data.py) a chronologii. Bez reakce: opatření proti nečinnosti.",
+   "vyrizeno": false
+  },
+  {
+   "id": "pravni-brzy-dolozi",
+   "stranka": "index.html",
+   "citace": "Podrobnosti k právním službám tedy obec bude muset brzy doložit",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Platí ještě „brzy doloží“ u právních služeb?",
+   "co_udelat": "Po doložení nahradit doloženým obsahem; při marné lhůtě přepsat podle skutečnosti.",
+   "vyrizeno": false
+  },
+  {
+   "id": "pravni-stitek-kraj",
+   "stranka": "index.html",
+   "citace": "Kraj rozhodl v náš prospěch",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Štítek u právních služeb říká „Kraj rozhodl v náš prospěch“ — po doložení podkladů už bude zastaralý.",
+   "co_udelat": "Změnit štítek na stav podle skutečnosti (např. „Podklady doloženy“).",
+   "vyrizeno": false
+  },
+  {
+   "id": "gdpr-stitek-podklady",
+   "stranka": "index.html",
+   "citace": "Podklady vyžádány",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-01",
+   "otazka": "Odpověděla obec na žádost o smlouvu s pověřencem GDPR (z 15. 8., lhůta do 31. 8.)?",
+   "co_udelat": "Po odpovědi aktualizovat sekci GDPR a štítek; jinak stížnost dle § 16a.",
+   "vyrizeno": false
+  },
+  {
+   "id": "rozcestnik-511-dolozeni",
+   "stranka": "index.html",
+   "citace": "po doložení obcí přibudou opravy až na dodavatele",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Došel rozpis účtu 511? Rozcestník slibuje, že po doložení přibudou opravy až na dodavatele.",
+   "co_udelat": "Po doložení zpracovat kapitolu 511 a rozcestník přepsat na hotové.",
+   "vyrizeno": false
+  },
+  {
+   "id": "zjdalsi-511-rozpis",
+   "stranka": "index.html",
+   "citace": "zatím nemá veřejný rozpis",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Věta „largest účet zatím nemá veřejný rozpis“ — už rozpis máme?",
+   "co_udelat": "Po doložení nahradit odkazem na novou kapitolu 511.",
+   "vyrizeno": false
+  },
+  {
+   "id": "gdpr-ceniky-overeni",
+   "stranka": "index.html",
+   "citace": "ověřeno 26. 8. 2026",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-11-26",
+   "otazka": "Ceníky pověřenců GDPR byly ověřeny 26. 8. 2026 — přeověřit (čtvrtletně).",
+   "co_udelat": "Znovu projít veřejné ceníky, aktualizovat rozpětí a datum ověření.",
+   "vyrizeno": false
+  },
+  {
+   "id": "mas-pocet-obci",
+   "stranka": "index.html",
+   "citace": "sdružuje třináct obcí",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2027-03-01",
+   "otazka": "Má MAS Bobrava pořád 13 členských obcí? (ověřeno 29. 8. 2026 z masbobrava.cz)",
+   "co_udelat": "Ověřit členskou základnu na webu MAS a upravit číslovku i výčet.",
+   "vyrizeno": false
+  },
+  {
+   "id": "rezerva-volebni-obdobi",
+   "stranka": "index.html",
+   "citace": "bude možné využít v následujícím volebním období",
+   "typ": "zmeni_volby",
+   "datum_kontroly": "2026-10-05",
+   "otazka": "Po komunálních volbách: přepsat „následující volební období“ na konkrétní situaci?",
+   "co_udelat": "Aktualizovat komentář autora u peněz na účtech podle povolebního stavu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "uzemni-plan-zmena1",
+   "stranka": "obec.html",
+   "citace": "",
+   "typ": "probihajici_rizeni",
+   "datum_kontroly": "2026-12-01",
+   "otazka": "V jaké fázi je změna č. 1 územního plánu Prštic?",
+   "co_udelat": "Ověřit na webu ORP Šlapanice a aktualizovat větu na obec.html.",
+   "vyrizeno": false
+  },
+  {
+   "id": "usneseni-chybejici-vypisy",
+   "stranka": "obec.html",
+   "citace": "",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-10-01",
+   "otazka": "Zveřejnila obec chybějící výpisy usnesení (od června 2025)?",
+   "co_udelat": "Doplnit rešerši odměn o nová usnesení; případně vyžádat dle 106.",
+   "vyrizeno": false
+  },
+  {
+   "id": "obec-kontakty-overeni",
+   "stranka": "obec.html",
+   "citace": "ověřeno 28. 8. 2026",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-11-28",
+   "otazka": "Kontakty a odkazy na Obec v kostce byly ověřeny 28. 8. — přeověřit (a po volbách zkontrolovat jména funkcionářů!).",
+   "co_udelat": "Projít úřední desku a web obce, aktualizovat data ověření.",
+   "vyrizeno": false
+  },
+  {
+   "id": "odmeny-zakladna-2027",
+   "stranka": "obec.html",
+   "citace": "",
+   "typ": "pribude_dalsi_rok",
+   "datum_kontroly": "2027-01-05",
+   "otazka": "Vyšlo sdělení MV ČR se základnou odměn pro rok 2027? Tabulka odměn končí rokem 2026.",
+   "co_udelat": "Doplnit sloupec 2027 dle sdělení ve Sbírce a přegenerovat tabulku.",
+   "vyrizeno": false
+  },
+  {
+   "id": "rizeni-kru-doplneni",
+   "stranka": "rizeni.html",
+   "citace": "",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Stránka řízení píše, že podrobnosti k právním službám očekáváme — už je máme?",
+   "co_udelat": "Aktualizovat blok Doplnění na rizeni.html.",
+   "vyrizeno": false
+  },
+  {
+   "id": "uohs-nova-rizeni",
+   "stranka": "rizeni.html",
+   "citace": "",
+   "typ": "posledni_dostupny_rok",
+   "datum_kontroly": "2026-11-22",
+   "otazka": "Nepřibylo ve sbírce ÚOHS nové řízení s obcí Prštice? (poslední ověření 22. 8. 2026)",
+   "co_udelat": "Prohledat sbírku rozhodnutí ÚOHS, aktualizovat rizeni.json a datum ověření.",
+   "vyrizeno": false
+  },
+  {
+   "id": "chronologie-milniky-zari",
+   "stranka": "jak-to-vime.html",
+   "citace": "",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Milníky 5. 9. a 9. 9. v chronologii nastaly — proměnit „budoucí“ záznamy na skutečnost.",
+   "co_udelat": "Přepsat záznamy v chronologie.json podle toho, co obec doložila či nedoložila.",
+   "vyrizeno": false
+  },
+  {
+   "id": "zadosti-stav-ke-dni",
+   "stranka": "jak-to-vime.html",
+   "citace": "",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "„Stav ke dni“ v přehledu žádostí je z 28. 8. — po zářijových lhůtách aktualizovat.",
+   "co_udelat": "Aktualizovat zadosti-106.json (stavy, meta) a spustit vlozit_data.py.",
+   "vyrizeno": false
+  },
+  {
+   "id": "smernice-zakazky-odpoved",
+   "stranka": "jak-to-vime.html",
+   "citace": "",
+   "typ": "cekame_na_odpoved",
+   "datum_kontroly": "2026-09-11",
+   "otazka": "Odpověděla obec na žádost o směrnici k zakázkám (z 26. 8., lhůta do 10. 9.)?",
+   "co_udelat": "Aktualizovat stav žádosti; případně zpracovat směrnici do webu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "manual-karta-verze",
+   "stranka": "pro-dalsi-obce.html",
+   "citace": "verze 1.1",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-12-01",
+   "otazka": "Sedí velikost a verze na kartě manuálu s aktuálním souborem?",
+   "co_udelat": "Po každé změně manuálu aktualizovat řádek „Markdown · … kB · verze …“.",
+   "vyrizeno": false
+  }
+ ]
 }
