@@ -110,6 +110,14 @@
   th:first-child,td:first-child{text-align:left}
   thead th{border-bottom:2px solid var(--line);color:var(--muted);font-weight:600}
   .tblscroll{overflow-x:auto}
+  /* náznak „dá se posouvat": stín u okraje zmizí, až když je obsah dorolovaný */
+  .tblscroll,.matice{background:
+    linear-gradient(to right,#fff 30%,rgba(255,255,255,0)) left,
+    linear-gradient(to left,#fff 30%,rgba(255,255,255,0)) right,
+    radial-gradient(farthest-side at 0 50%,rgba(0,0,0,.16),transparent) left,
+    radial-gradient(farthest-side at 100% 50%,rgba(0,0,0,.16),transparent) right;
+    background-size:40px 100%,40px 100%,14px 100%,14px 100%;
+    background-repeat:no-repeat;background-attachment:local,local,scroll,scroll}
   .src{color:var(--faint);font-size:.88rem;margin-top:16px}
 
   /* Přepínač roků + akce */
@@ -536,3 +544,13 @@ section[id],h2[id]{scroll-margin-top:118px}
 .najdete a::after{content:"→";color:var(--accent);font-weight:700;position:absolute;right:14px;top:50%;transform:translateY(-50%)}
 .najdete b{display:block;color:var(--text);font-size:.94rem}
 .najdete .pop{display:block;color:var(--muted);font-size:.86rem;line-height:1.45;margin-top:1px}
+
+/* Mobil — finální kontrola (blok B) */
+@media(max-width:700px){
+  header.site{position:static}
+}
+@media(max-width:560px){
+  .row>summary{flex-wrap:wrap;row-gap:4px}
+  .row .nm{min-width:9ch}
+  .row .amt{margin-left:auto}
+}
