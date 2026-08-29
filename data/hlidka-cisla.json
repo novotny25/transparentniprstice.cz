@@ -1,0 +1,67 @@
+{
+  "_navod": [
+    "Váže číslo napsané ručně v textu na hodnotu v datovém souboru.",
+    "Když se rozejdou, hlídka to nahlásí — web pak nezačne tiše lhát.",
+    "Hlídají se jen čísla psaná v souvislém textu. Čísla v grafech a tabulkách",
+    "se generují z dat sama, ta hlídat netřeba.",
+    "Pozor: hlídka čte jen text napsaný v HTML. Obsah, který dokresluje",
+    "JavaScript (rizeni.html, chronologie), takto ověřit nelze."
+  ],
+  "kontroly": [
+    {
+      "popis": "Účet 511 (opravy a udržování) za roky 2020–2025 — v textu 4×",
+      "stranka": "index.html",
+      "zdroj": {
+        "soubor": "vykazy-rady.json",
+        "soucet": {
+          "v": "rady.ucet_511.hodnoty_kc",
+          "klice": ["2020", "2021", "2022", "2023", "2024", "2025"]
+        }
+      },
+      "delitel": 1000000,
+      "desetinna": 1,
+      "pripona": " mil. Kč",
+      "v_textu": "24,4 mil. Kč"
+    },
+    {
+      "popis": "Účet 518 v roce 2025 — text „Ze 2,0 na 4,7 milionu ročně“",
+      "stranka": "index.html",
+      "zdroj": { "soubor": "vykazy-rady.json", "klic": "rady.ucet_518.hodnoty_kc.2025" },
+      "delitel": 1000000,
+      "desetinna": 1,
+      "pripona": " milionu",
+      "v_textu": "4,7 milionu"
+    },
+    {
+      "popis": "Účet 518 — vrchol v roce 2023",
+      "stranka": "index.html",
+      "zdroj": { "soubor": "vykazy-rady.json", "klic": "rady.ucet_518.hodnoty_kc.2023" },
+      "delitel": 1000000,
+      "desetinna": 1,
+      "pripona": " mil.",
+      "v_textu": "5,8 mil."
+    },
+    {
+      "popis": "Počet obyvatel k 1. 1. 2025 — v úvodní větě webu",
+      "stranka": "index.html",
+      "zdroj": { "soubor": "obyvatele.json", "klic": "obyvatele.2025" },
+      "pripona": " obyvatel",
+      "v_textu": "997 obyvatel"
+    },
+    {
+      "popis": "Počet obyvatel v roce 2015 — text „za 10 let z 931“",
+      "stranka": "index.html",
+      "zdroj": { "soubor": "obyvatele.json", "klic": "obyvatele.2015" },
+      "predpona": "z ",
+      "v_textu": "z 931"
+    }
+  ],
+  "_klice": {
+    "klic": "tečková cesta v JSONu: rady.ucet_518.hodnoty_kc.2025",
+    "soucet": "sečte hodnoty; u seznamu 'pole' + 'kde', u slovníku 'klice'",
+    "delitel": "čím vydělit (1000000 = na miliony, 100 = haléře na koruny)",
+    "desetinna": "kolik desetinných míst",
+    "predpona/pripona": "co je v textu těsně před/za číslem",
+    "v_textu": "poznámka pro tebe — jak to znělo při nastavení"
+  }
+}

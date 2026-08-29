@@ -3,9 +3,9 @@
   "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-27",
-  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží (u KrÚ JMK do 27. 8. 2026) a odpověď obce na žádost o soudní řízení z 15. 8. 2026 se čeká.",
-  "poznamka_pole": "„stav\" = stav vyřízení žádosti; „puvod_informace\" = jak byla informace získána — dvě různá pole.",
+  "stav_ke_dni": "2026-08-28",
+  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží: obec musí podle rozhodnutí KrÚ JMK z 19. 8. 2026 vyřídit žádost o smlouvy a faktury do 15 dnů od doručení (očekáváme začátek září) a čekají se odpovědi na žádosti z 15., 25. a 26. 8. 2026.",
+  "poznamka_pole": "„stav“ = stav vyřízení žádosti; „puvod_informace“ = jak byla informace získána — dvě různá pole. „lhuta_do“ = zákonná lhůta pro vyřízení žádosti o informace (15 dnů od přijetí, § 14 odst. 5 písm. d zákona 106/1999 Sb.). U stížnosti podle § 16a a u opatření proti nečinnosti běží lhůta nadřízenému orgánu, proto se neuvádí.",
   "schvaluje": "Petr Novotný (finální seznam)",
   "zdroj": "Vlastní žádosti žadatele a kontrolní dokument lhůt (15. 8. 2026)"
  },
@@ -18,9 +18,9 @@
    "typ_podani": "žádost o informace",
    "stav": "částečně poskytnuto",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 79,
    "zdroj": "složka 2026_06_04_zadost_106_prstice",
-   "poznamka": "Obec poskytla účetní detail 518 bez údajů o dodavatelích."
+   "poznamka": "Obec poskytla účetní detail 518 bez údajů o dodavatelích.",
+   "lhuta_do": "2026-06-19"
   },
   {
    "datum_podani": "2026-06-23",
@@ -30,9 +30,9 @@
    "typ_podani": "žádost o informace",
    "stav": "neposkytnuto",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 60,
    "zdroj": "složka 2026_06_23 Zpravodaje obce Prštice",
-   "poznamka": "Žádáno ve strojově čitelné podobě, aby šlo dění v obci dohledat bez dalších dotazů. Obec v této podobě neposkytla."
+   "poznamka": "Žádáno ve strojově čitelné podobě, aby šlo dění v obci dohledat bez dalších dotazů. Obec je v této podobě neposkytla.",
+   "lhuta_do": "2026-07-08"
   },
   {
    "datum_podani": "2026-07-01",
@@ -42,9 +42,9 @@
    "typ_podani": "žádost o informace",
    "stav": "kraj nařídil vyřídit",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 52,
    "zdroj": "složka 2026_07_01 Žádost o detail smluv na účtu 518; kontrola lhůt",
-   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026)."
+   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026).",
+   "lhuta_do": "2026-07-16"
   },
   {
    "datum_podani": "2026-07-17",
@@ -54,9 +54,9 @@
    "typ_podani": "stížnost § 16a",
    "stav": "vyhověno",
    "puvod_informace": "vlastní podání",
-   "pocet_dni_od_podani": 36,
    "zdroj": "složka 2026_07_17 Stížnost 16a a nová žádost 518; kontrola lhůt",
-   "poznamka": "Krajský úřad JMK dal 19. 8. 2026 stížnosti za pravdu a přikázal obci žádost vyřídit do 15 dnů."
+   "poznamka": "Krajský úřad JMK dal 19. 8. 2026 stížnosti za pravdu a přikázal obci žádost vyřídit do 15 dnů.",
+   "lhuta_do": null
   },
   {
    "datum_podani": "2026-07-17",
@@ -66,9 +66,9 @@
    "typ_podani": "žádost o informace",
    "stav": "poskytnuto",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 36,
    "zdroj": "složka 2026_07_17 / 2026_08_03; OUPR-1007/2026",
-   "poznamka": "Obec poskytla 3. 8. 2026 opis deníku 518 za leden–červen 2026."
+   "poznamka": "Obec poskytla 3. 8. 2026 opis deníku 518 za leden–červen 2026.",
+   "lhuta_do": "2026-08-01"
   },
   {
    "datum_podani": "2026-07-28",
@@ -78,9 +78,9 @@
    "typ_podani": "žádost o opatření proti nečinnosti (§ 80 SŘ)",
    "stav": "vyřízeno krajem",
    "puvod_informace": "vlastní podání",
-   "pocet_dni_od_podani": 25,
    "zdroj": "složka 2026_07_28 Opatření proti nečinnosti KrÚ JMK; kontrola lhůt",
-   "poznamka": "Krajský úřad ve věci rozhodl 19. 8. 2026 ve prospěch žadatele."
+   "poznamka": "Krajský úřad ve věci rozhodl 19. 8. 2026 ve prospěch žadatele.",
+   "lhuta_do": null
   },
   {
    "datum_podani": "2026-08-15",
@@ -90,9 +90,9 @@
    "typ_podani": "žádost o informace (opakovaná)",
    "stav": "podáno",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 7,
    "zdroj": "složka 2026_08_15 Opakovaná žádost o informace - GDPR",
-   "poznamka": "Cílem je doložit měsíční cenu a rozsah služby pověřence."
+   "poznamka": "Cílem je doložit měsíční cenu a rozsah služby pověřence.",
+   "lhuta_do": "2026-08-30"
   },
   {
    "datum_podani": "2026-08-15",
@@ -102,21 +102,21 @@
    "typ_podani": "žádost o informace",
    "stav": "podáno — odpověď se čeká",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 7,
    "zdroj": "složka 2026_08_15 Žádost o informace soudní procesy",
-   "poznamka": "Do obdržení odpovědi je přehled soudních řízení nutně neúplný."
+   "poznamka": "Do obdržení odpovědi je přehled soudních řízení nutně neúplný.",
+   "lhuta_do": "2026-08-30"
   },
   {
    "datum_podani": "2026-08-25",
-   "predmet": "Rozpis nákladů účtu 511 „Opravy a udržování\" za 2021–2025 (dodavatel, předmět plnění, datum, částka)",
+   "predmet": "Rozpis nákladů účtu 511 „Opravy a udržování“ za 2021–2025 (dodavatel, předmět plnění, datum, částka)",
    "adresat": "Obec Prštice",
    "cj": null,
    "typ_podani": "žádost o informace",
    "stav": "podáno",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 1,
    "zdroj": "složka 2026_08_25 Žádost 106 účet 511 opravy",
-   "poznamka": "Účet 511 je největší nákladový účet obce (2022: 7,8 mil. Kč) a dosud k němu nebyl vyžádán detail."
+   "poznamka": "Účet 511 je největší nákladový účet obce (2022: 7,8 mil. Kč) a dosud k němu nebyl vyžádán detail.",
+   "lhuta_do": "2026-09-09"
   },
   {
    "datum_podani": "2026-08-26",
@@ -126,9 +126,9 @@
    "typ_podani": "žádost o informace",
    "stav": "podáno",
    "puvod_informace": "vlastní žádost",
-   "pocet_dni_od_podani": 1,
    "zdroj": "složka 2026_08_26 Žádost o směrnici k zakázkám",
-   "poznamka": "Navazuje na tři pravomocná rozhodnutí ÚOHS za neuveřejnění smluv na profilu zadavatele — zjišťuje, zda má obec nastavená pravidla, která tomu předcházejí."
+   "poznamka": "Navazuje na tři pravomocná rozhodnutí ÚOHS za neuveřejnění smluv na profilu zadavatele — cílem je zjistit, zda má obec nastavená pravidla, která podobným pochybením předcházejí.",
+   "lhuta_do": "2026-09-10"
   }
  ]
 }
