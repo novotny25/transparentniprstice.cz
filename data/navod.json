@@ -4,10 +4,11 @@
    "c": "1",
    "n": "Najděte oficiální čísla své obce",
    "cas": "30 minut",
-   "vy": "zjistěte IČO své obce (je na webu obce v povinných informacích) a otevřete její profil v MONITORu státní pokladny: `monitor.statnipokladna.gov.cz/ucetni-jednotka/<IČO>`. Stáhněte výkaz zisku a ztráty a rozvahu za posledních 8–10 let (jdou exportovat po letech).",
+   "vy": "zjistěte IČO své obce (je na jejím webu v povinných informacích) a otevřete její profil v MONITORu státní pokladny: `monitor.statnipokladna.gov.cz/ucetni-jednotka/<IČO>`. Stáhněte výkaz zisku a ztráty a rozvahu za posledních 8–10 let (jdou exportovat po letech).",
    "ai": "vysvětlí vám, na co se díváte.",
    "p": "Jsem občan obce [název], nejsem účetní. Přikládám výkaz zisku a ztráty a rozvahu obce z MONITORu státní pokladny. Vysvětli mi běžným jazykem: 1) co lze z těchto výkazů bezpečně vyčíst, 2) které nákladové a výnosové účty jsou největší, 3) které účty se v čase nejvíce změnily. Vysvětli rozdíl mezi rozpočtovým peněžním výdajem a účetním nákladem. Z čísla účtu neurčuj, co je povinné ze zákona, kdo o výdaji rozhodl ani kdo jej přímo ovlivňuje. Když něco nevyčteš, řekni to.",
-   "pozn": ""
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "2",
@@ -16,7 +17,8 @@
    "vy": "nahrajte AI výkazy za všechny stažené roky najednou.",
    "ai": "sestaví časové řady a označí neobvyklé změny, které stojí za ověření.",
    "p": "Z přiložených výkazů obce [název] za roky [2015–2025] sestav tabulku vývoje všech nákladových a výnosových účtů po letech. Označ účty, které: a) vzrostly meziročně o více než 50 %, b) rostou setrvale rychleji než inflace, c) se chovají skokově. Ke každému označenému účtu napiš, co se na něm obvykle účtuje a jaké neškodné vysvětlení růstu připadá v úvahu — ať vím, na co se ptát, ne co tvrdit. Výslednou tabulku mi dej i jako CSV.",
-   "pozn": "V Pršticích takto „vyskočil\" účet 518 Ostatní služby: z ~2,3 mil. Kč v roce 2021 na 5,8 mil. Kč v roce 2023."
+   "pozn": "V Pršticích takto „vyskočil“ účet 518 Ostatní služby: z ~2,3 mil. Kč v roce 2021 na 5,8 mil. Kč v roce 2023.",
+   "u": "chat"
   },
   {
    "c": "3",
@@ -25,7 +27,8 @@
    "vy": "žádost pošlete datovou schránkou nebo na elektronickou podatelnu obce a doplňte zákonem požadovanou identifikaci žadatele. Obec má na vyřízení 15 dnů (ze závažných důvodů může lhůtu prodloužit až o 10 dnů — musí vám to ale oznámit).",
    "ai": "pomůže žádost přesně a jednoznačně vymezit.",
    "p": "Napiš žádost o informace podle zákona č. 106/1999 Sb. adresovanou obci [název]. Žádám opis položek účetního deníku k účtu [518] za roky [2022–2025] v rozsahu: datum, číslo dokladu, dodavatel, popis plnění, částka — ideálně ve strojově čitelném formátu (CSV/XLSX). Formuluj přesně a jednoznačně, ať je zřejmé, jaké informace žádám. Osobní údaje ponech jako zástupné značky [JMÉNO], [DATUM NAROZENÍ] a [ADRESA]; doplním je až lokálně po ukončení práce s AI. Střízlivý úřední tón, žádné výčitky.",
-   "pozn": ""
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "4",
@@ -34,7 +37,8 @@
    "vy": "zkontrolujte, jestli jste dostali všechno, oč jste žádali (v Pršticích obec poslala deník bez dodavatelů — i to je zjištění).",
    "ai": "roztřídí stovky řádků a najde vzory.",
    "p": "Přikládám anonymizovaný opis účetního deníku účtu [518] obce [název] za roky [2022–2025]. Udělej: 1) kontrolní součet po letech a porovnej s výkazem zisku a ztráty (přikládám) — pokud nesedí, vytvoř přehled rozdílů a nepokračuj v interpretaci, dokud rozdíl nevysvětlíme; 2) roztřiď položky do kategorií podle popisu (odpady, právní služby, IT, …) a označ kategorie jako svůj odhad; 3) najdi: opakované stejné částky (paušály), dlouho se opakující pronájmy, položky nad [50 000] Kč, storna; 4) ke každému nálezu napiš neutrální otázku, kterou bych měl obci položit. U každého výsledku označ: převzato ze zdroje / vypočítáno / zařazeno autorem / nezjištěno. Fakta odděl od domněnek a komentáře.",
-   "pozn": ""
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "5",
@@ -42,8 +46,9 @@
    "cas": "30 minut",
    "vy": "vyberte 3–5 položek, u kterých chcete vidět smlouvu, objednávku či výkaz práce. Méně je více — úzká žádost se hůř odmítá.",
    "ai": "",
-   "p": "Napiš navazující žádost dle zákona 106/1999 Sb. obci [název]. K těmto účetním zápisům [vyjmenuj: datum, částka, popis] žádám: kopii smlouvy nebo objednávky, fakturu a doklad o rozsahu plnění (výkaz práce/předávací protokol). U paušálních plateb žádám rámcovou smlouvu a vymezení rozsahu služeb. Každý bod formuluj samostatně, aby byla žádost přehledná a každý bod samostatně přezkoumatelný.",
-   "pozn": ""
+   "p": "Napiš navazující žádost dle zákona 106/1999 Sb. obci [název]. K těmto účetním zápisům [vyjmenuj: datum, částka, popis] žádám: kopii smlouvy nebo objednávky, fakturu a doklad o rozsahu plnění (výkaz práce/předávací protokol). U paušálních plateb žádám rámcovou smlouvu a vymezení rozsahu služeb. Každý bod formuluj zvlášť, aby byla žádost přehledná a jednotlivé body samostatně přezkoumatelné.",
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "6",
@@ -52,16 +57,18 @@
    "vy": "hlídejte kalendář; každé podání i odpověď si ukládejte (dodejky!).",
    "ai": "pohlídá procesní postup — ale pozor, tady si nechte klíčové kroky potvrdit i z druhého zdroje (poradna Otevřená společnost, Frank Bold).",
    "p": "Chronologie mé žádosti dle zákona 106/1999 Sb.: [data podání, co přišlo/nepřišlo]. Řekni mi: 1) jaké lhůty běží mně a jaké obci a kdy přesně končí, 2) jaký je správný další krok (stížnost dle § 16a? odvolání? podnět kraji na nečinnost?), 3) čeho se vyvarovat (např. předčasná žaloba). Připrav koncept příslušného podání. U každého tvrzení uveď konkrétní ustanovení zákona, ať si to můžu ověřit.",
-   "pozn": ""
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "7",
    "n": "Dejte číslům kontext",
    "cas": "2 hodiny",
-   "vy": "vyberete, co srovnávat. AI: najde srovnatelné ceny se zdroji.",
+   "vy": "vyberte, co srovnávat.",
    "ai": "najde srovnatelné ceny se zdroji.",
    "p": "Obec [název] ([počet] obyvatel) podle [smlouvy / účetního deníku] vykazuje [částka a přesně popsané období] za [služby pověřence GDPR]. Nejdřív ověř, co zdroj skutečně dokládá; z opakovaných účetních zápisů automaticky neodvozuj měsíční smluvní cenu. Zjisti z veřejných zdrojů, kolik za srovnatelnou službu platí obce podobné velikosti a co nabízejí svazy obcí; u každého údaje uveď zdroj s odkazem a porovnej známý rozsah služby, počet zapojených organizací, období a DPH. Kde rozsah neznáme, označ cenu jen jako orientační indicii. Pak přepočítej výdaj obce na obyvatele a na rok. Piš neutrálně — výstupem má být srovnání, ne obvinění.",
-   "pozn": ""
+   "pozn": "",
+   "u": "chat"
   },
   {
    "c": "8",
@@ -70,7 +77,8 @@
    "vy": "rozhodujete, co a jak se řekne; podepište se pod to.",
    "ai": "postaví web. Nejjednodušší cesta: vezměte náš repozitář jako šablonu (github.com/novotny25/transparentniprstice.cz — podmínky převzetí v souboru LICENSE v repozitáři), vyměňte datové soubory a texty. Nebo od nuly:",
    "p": "Jsem občan obce [název] a mám ověřená data o jejím hospodaření (přikládám pouze sanitizované CSV + chronologii žádostí o informace). Postav statický web bez závislostí, který: 1) ukáže rozpočet obce srozumitelně laikovi (příjmy, výdaje, saldo, kategorie a přepočet na obyvatele), 2) má sekci s vývojem účtu [518] a mými otázkami k vybraným účetním zápisům — fakta vždy odděl od komentáře a u každého čísla uveď zdroj, 3) obsahuje chronologii mých žádostí dle zákona 106 s dokumenty ke stažení. Výstup označ jako občanskou datovou analýzu, nikoli audit. Rozpočtové peněžní výdaje a účetní náklady 518 ukaž odděleně. Použij jednu stručnou legendu typů informace. Nejdřív mi navrhni strukturu a design, nic nestav, dokud strukturu neschválím. Pak postupuj po malých krocích a po každém mi ukaž výsledek.",
-   "pozn": ""
+   "pozn": "",
+   "u": "agent"
   }
  ]
 }

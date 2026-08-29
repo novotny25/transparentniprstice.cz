@@ -3,9 +3,9 @@
   "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-27",
-  "upozorneni": "Osa se průběžně doplňuje. Řízení u Krajského úřadu JMK běží (lhůta do 27. 8. 2026) a odpověď obce na žádost o přehled soudních řízení z 15. 8. 2026 se čeká.",
-  "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty doplní krok strojové anonymizace (PLAN 2.5).",
+  "stav_ke_dni": "2026-08-28",
+  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK rozhodl 19. 8. 2026 ve prospěch žadatele; nyní běží lhůta obce na doložení podkladů a čekají se odpovědi na žádosti z 15., 25. a 26. 8. 2026.",
+  "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty přibudou v kroku strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
  },
  "udalosti": [
@@ -145,10 +145,19 @@
    "dokument": "2026-08-26_zadost-smernice-zakazky.pdf"
   },
   {
-   "datum": "2026-08-27",
+   "datum": "2026-09-05",
    "typ": "milník (budoucí)",
-   "titulek": "Uplyne 30denní lhůta Krajského úřadu JMK",
-   "popis": "Uplyne 30denní lhůta pro rozhodnutí o žádosti o opatření proti nečinnosti. Krajský úřad musí vydat usnesení, i když žádosti nevyhoví.",
+   "titulek": "Očekávané doložení podkladů obcí (lhůta z rozhodnutí KrÚ)",
+   "popis": "Podle rozhodnutí Krajského úřadu JMK z 19. 8. 2026 musí obec do 15 dnů od jeho doručení vyřídit žádost o faktury, smlouvy a výkazy práce (právní služby, pověřenec GDPR, nájem jeřábu). Přesné datum závisí na dni doručení rozhodnutí obci — očekáváme začátek září 2026.",
+   "cj": null,
+   "puvod_informace": "procesní milník",
+   "dokument": null
+  },
+  {
+   "datum": "2026-09-09",
+   "typ": "milník (budoucí)",
+   "titulek": "Očekávaná odpověď na rozpis účtu 511",
+   "popis": "Uplyne 15denní zákonná lhůta pro vyřízení žádosti z 25. 8. 2026 o rozpis účtu 511 „Opravy a udržování“.",
    "cj": null,
    "puvod_informace": "procesní milník",
    "dokument": null
