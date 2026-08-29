@@ -1,0 +1,122 @@
+# Denní hlídka webu transparentniprstice.cz
+#
+# Každé ráno projde web a zkontroluje, že pořád platí: že se otevřou všechny
+# odkazy ven, že sedí kotvy a soubory uvnitř, že čísla v textu souhlasí
+# s daty — a že žádná věta nepřežila své datum spotřeby.
+#
+# Když je něco špatně nebo se hlídka na něco ptá, založí (nebo doplní)
+# ÚKOL (issue) na GitHubu a přijde e-mail. Když je vše v pořádku, úkol zavře.
+#
+# Běží v cloudu GitHubu — nezáleží na tom, jestli je počítač zapnutý.
+# Ručně se dá spustit v záložce Actions tlačítkem „Run workflow".
+
+name: Hlídka webu
+
+on:
+  schedule:
+    # 6:12 UTC = 8:12 v létě / 7:12 v zimě, středoevropského času.
+    # Záměrně ne v celou — v celou hodinu je GitHub nejvytíženější.
+    - cron: "12 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: hlidka-webu
+  cancel-in-progress: false
+
+jobs:
+  hlidka:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: Stáhnout web
+        uses: actions/checkout@v4
+
+      - name: Připravit Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Spustit hlídku
+        id: hlidka
+        run: |
+          set +e
+          python3 skripty/hlidac.py --report hlidka.md --tise
+          kod=$?
+          set -e
+          echo "kod=$kod" >> "$GITHUB_OUTPUT"
+          echo "### Hlášení hlídky" >> "$GITHUB_STEP_SUMMARY"
+          cat hlidka.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Založit nebo doplnit úkol
+        env:
+          GH_TOKEN: ${{ github.token }}
+          KOD: ${{ steps.hlidka.outputs.kod }}
+          REPO: ${{ github.repository }}
+          BEH: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, sys
+
+          TITULEK = "Hlídka webu — něco potřebuje tvoji pozornost"
+          STITEK  = "hlídka"
+          repo = os.environ["REPO"]
+          kod  = int(os.environ["KOD"])
+          beh  = os.environ["BEH"]
+          zprava = open("hlidka.md", encoding="utf-8").read().strip()
+
+          def gh(*args, **kw):
+              return subprocess.run(["gh", *args], capture_output=True,
+                                    text=True, check=False, **kw)
+
+          # najdi otevřený stálý úkol hlídky
+          r = gh("issue", "list", "--repo", repo, "--state", "open",
+                 "--search", f'"{TITULEK}" in:title', "--json", "number,title,body",
+                 "--limit", "20")
+          otevrene = json.loads(r.stdout or "[]")
+          ukol = next((u for u in otevrene if u["title"] == TITULEK), None)
+
+          # --- vše v pořádku -------------------------------------------------
+          if kod == 0:
+              if ukol:
+                  gh("issue", "comment", str(ukol["number"]), "--repo", repo,
+                     "--body", f"✅ Hlídka dnes proběhla bez nálezu — zavírám.\n\n[Záznam běhu]({beh})")
+                  gh("issue", "close", str(ukol["number"]), "--repo", repo)
+                  print("Vše v pořádku, úkol zavřen.")
+              else:
+                  print("Vše v pořádku.")
+              sys.exit(0)
+
+          telo = (f"{zprava}\n\n---\n\n"
+                  f"Automatická hlídka, [záznam běhu]({beh}). "
+                  f"Až všechno vyřídíš, úkol se při další hlídce zavře sám.")
+
+          # --- něco je -------------------------------------------------------
+          if ukol is None:
+              # štítek nemusí existovat — vytvoření je nepovinné
+              gh("label", "create", STITEK, "--repo", repo,
+                 "--color", "d93f0b", "--description", "Denní hlídka webu")
+              r = gh("issue", "create", "--repo", repo, "--title", TITULEK,
+                     "--body", telo, "--label", STITEK)
+              if r.returncode != 0:   # kdyby štítek nešel použít, zkus bez něj
+                  r = gh("issue", "create", "--repo", repo, "--title", TITULEK,
+                         "--body", telo)
+              print("Založen nový úkol:", r.stdout.strip() or r.stderr.strip())
+              sys.exit(0)
+
+          # úkol už běží — komentuj jen když se hlášení od minula změnilo
+          cislo = str(ukol["number"])
+          r = gh("issue", "view", cislo, "--repo", repo, "--json", "comments")
+          komentare = json.loads(r.stdout or '{"comments":[]}').get("comments", [])
+          posledni = komentare[-1]["body"] if komentare else (ukol.get("body") or "")
+
+          if zprava in posledni:
+              print("Stejné hlášení jako minule — nekomentuji, ať to nespamuje.")
+          else:
+              gh("issue", "comment", cislo, "--repo", repo, "--body", telo)
+              print("Doplněn komentář k úkolu", cislo)
+          PY
