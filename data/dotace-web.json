@@ -1,0 +1,339 @@
+{
+ "roky": [
+  "2019",
+  "2020",
+  "2021",
+  "2022",
+  "2023",
+  "2024",
+  "2025"
+ ],
+ "obce": [
+  {
+   "n": "Mělčany",
+   "ob": 498,
+   "sous": false,
+   "rada": [
+    3791102,
+    56000,
+    9659381,
+    22746602,
+    3497984,
+    100000,
+    17602727
+   ],
+   "celkem": 57453796,
+   "naob": 115369,
+   "let": 7
+  },
+  {
+   "n": "Radostice",
+   "ob": 789,
+   "sous": true,
+   "rada": [
+    6534120,
+    14676131,
+    6514537,
+    0,
+    1076630,
+    2353079,
+    2315369
+   ],
+   "celkem": 33469866,
+   "naob": 42421,
+   "let": 6
+  },
+  {
+   "n": "Moravany",
+   "ob": 3554,
+   "sous": false,
+   "rada": [
+    1276000,
+    1484487,
+    8584288,
+    1737727,
+    921732,
+    92990161,
+    3107297
+   ],
+   "celkem": 110101692,
+   "naob": 30980,
+   "let": 7
+  },
+  {
+   "n": "Želešice",
+   "ob": 1959,
+   "sous": false,
+   "rada": [
+    23444754,
+    7187217,
+    3562953,
+    2369973,
+    4880946,
+    7060922,
+    2379861
+   ],
+   "celkem": 50886626,
+   "naob": 25976,
+   "let": 7
+  },
+  {
+   "n": "Moravské Bránice",
+   "ob": 994,
+   "sous": false,
+   "rada": [
+    1959238,
+    279024,
+    6920761,
+    366114,
+    944988,
+    5360754,
+    9140927
+   ],
+   "celkem": 24971806,
+   "naob": 25123,
+   "let": 7
+  },
+  {
+   "n": "Střelice",
+   "ob": 3283,
+   "sous": false,
+   "rada": [
+    8812149,
+    1755686,
+    5692460,
+    5339602,
+    7467871,
+    20741935,
+    17537619
+   ],
+   "celkem": 67347322,
+   "naob": 20514,
+   "let": 7
+  },
+  {
+   "n": "Ořechov",
+   "ob": 2915,
+   "sous": true,
+   "rada": [
+    17805365,
+    5577713,
+    5503698,
+    3162781,
+    5415451,
+    1772242,
+    12519265
+   ],
+   "celkem": 51756515,
+   "naob": 17755,
+   "let": 7
+  },
+  {
+   "n": "Nebovidy",
+   "ob": 871,
+   "sous": false,
+   "rada": [
+    600279,
+    2050879,
+    3212132,
+    1495498,
+    404720,
+    586370,
+    1251513
+   ],
+   "celkem": 9601391,
+   "naob": 11023,
+   "let": 7
+  },
+  {
+   "n": "Hlína",
+   "ob": 315,
+   "sous": true,
+   "rada": [
+    532127,
+    70000,
+    121000,
+    70000,
+    448000,
+    829386,
+    100000
+   ],
+   "celkem": 2170513,
+   "naob": 6891,
+   "let": 7
+  },
+  {
+   "n": "Silůvky",
+   "ob": 853,
+   "sous": true,
+   "rada": [
+    32800,
+    718196,
+    166601,
+    911344,
+    80000,
+    1769617,
+    672272
+   ],
+   "celkem": 4350830,
+   "naob": 5101,
+   "let": 7
+  },
+  {
+   "n": "Hajany",
+   "ob": 713,
+   "sous": false,
+   "rada": [
+    82000,
+    40000,
+    40000,
+    1029523,
+    0,
+    0,
+    824410
+   ],
+   "celkem": 2015933,
+   "naob": 2827,
+   "let": 5
+  },
+  {
+   "n": "Prštice",
+   "ob": 997,
+   "sous": true,
+   "rada": [
+    0,
+    0,
+    96000,
+    913291,
+    75000,
+    788705,
+    645732
+   ],
+   "celkem": 2518728,
+   "naob": 2526,
+   "let": 5
+  }
+ ],
+ "prstice2025": [
+  {
+   "rok": "2019",
+   "ucel": "—",
+   "kc": 0,
+   "kdo": "",
+   "typ": "nic"
+  },
+  {
+   "rok": "2020",
+   "ucel": "—",
+   "kc": 0,
+   "kdo": "",
+   "typ": "nic"
+  },
+  {
+   "rok": "2021",
+   "ucel": "Výsadba listnatých stromů",
+   "kc": 96000,
+   "kdo": "SFŽP",
+   "typ": "obec"
+  },
+  {
+   "rok": "2022",
+   "ucel": "Šablony pro ZŠ a MŠ",
+   "kc": 913291,
+   "kdo": "MŠMT",
+   "typ": "skola"
+  },
+  {
+   "rok": "2023",
+   "ucel": "Věcné prostředky pro hasiče",
+   "kc": 75000,
+   "kdo": "Jihomoravský kraj",
+   "typ": "obec"
+  },
+  {
+   "rok": "2024",
+   "ucel": "Podpora domácího kompostování (90 kompostérů, štěpkovač)",
+   "kc": 788705,
+   "kdo": "MŽP / OPŽP",
+   "typ": "obec"
+  },
+  {
+   "rok": "2025",
+   "ucel": "Šablony pro ZŠ a MŠ II.",
+   "kc": 645732,
+   "kdo": "MŠMT",
+   "typ": "skola"
+  }
+ ],
+ "prsticeDrive": [
+  {
+   "rok": "2012",
+   "ucel": "Biocentrum Pod Horkou",
+   "kc": 16312912
+  },
+  {
+   "rok": "2014",
+   "ucel": "Protierozní a protipovodňová ochrana",
+   "kc": 9895862
+  },
+  {
+   "rok": "2013",
+   "ucel": "Zateplení základní školy",
+   "kc": 2467594
+  },
+  {
+   "rok": "2017",
+   "ucel": "Úpravy veřejného prostranství",
+   "kc": 2327014
+  },
+  {
+   "rok": "2015",
+   "ucel": "Environmentální hřiště u školky",
+   "kc": 1343102
+  },
+  {
+   "rok": "2012",
+   "ucel": "Posilový vrt pro veřejný vodovod",
+   "kc": 884139
+  },
+  {
+   "rok": "2018",
+   "ucel": "Rekonstrukce veřejného osvětlení",
+   "kc": 585432
+  }
+ ],
+ "sousedi": [
+  {
+   "obec": "Radostice",
+   "projekty": "Intenzifikace ČOV 31,5 mil. · rekonstrukce ulice 5,0 mil. · chodníky 2,2 mil. · stezka do Ořechova 4,7 mil. · hřiště 0,8 mil. · zdroje pitné vody 1,6 mil."
+  },
+  {
+   "obec": "Ořechov",
+   "projekty": "Škola a školka 14,2 mil. · chodníky a přechody 9,0 mil. · sociální byt 4,4 mil. · krajinné prvky 4,0 mil. · střecha s využitím dešťové vody 2,0 mil. · technika na zeleň, osvětlení, hasiči, knihovna"
+  },
+  {
+   "obec": "Silůvky",
+   "projekty": "Předcházení vzniku odpadu 0,8 mil. · lesnické technologie 0,9 mil. · územní plán 0,2 mil. · výstroj hasičů"
+  },
+  {
+   "obec": "Střelice",
+   "projekty": "Novostavba školky 65,4 mil. · učebny ZUŠ 12,6 mil. · chodníky 10,1 mil. · kompostéry 3,8 mil. · cisternová stříkačka 4,2 mil. · osvětlení, fotovoltaika, cyklotrasy"
+  },
+  {
+   "obec": "Želešice",
+   "projekty": "Přestavba objektu Viktorka 5,5 mil. · sběrný dvůr 2,2 mil. · osvětlení 1,1 mil. · dětské hřiště 0,9 mil. · lesnické technologie 0,8 mil. · elektromobilita"
+  },
+  {
+   "obec": "Moravské Bránice",
+   "projekty": "Hasičská zbrojnice 3,7 mil. · místní komunikace 3,4 mil. · sběrný dvůr 2,7 mil. · fotovoltaika 2,2 mil. · obecní dům 2,0 mil. · chodníky 1,2 mil."
+  },
+  {
+   "obec": "Mělčany",
+   "projekty": "Brownfield 31,2 mil. · chodníky u silnic 18,4 mil. · vrt a připojení do vodojemu 3,9 mil. · fotovoltaika 1,6 mil. · obchůdek"
+  },
+  {
+   "obec": "Nebovidy",
+   "projekty": "Chodník podél silnice 4,4 mil. · posílení separace odpadů 1,1 mil. · relaxační místo 0,8 mil. · vybavení haly 0,4 mil. · změna územního plánu"
+  }
+ ]
+}
