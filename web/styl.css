@@ -428,8 +428,8 @@ section[id],h2[id]{scroll-margin-top:118px}
 
 /* Mapa zjištění pod hero (index) */
 #zjisteni-prehled{padding-top:40px}
-.zjmapa{display:flex;flex-wrap:wrap;gap:18px;justify-content:center}
-.zjkarta{flex:1 1 258px;max-width:322px;display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);padding:24px 24px 20px;
+.zjmapa{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.zjkarta{display:flex;flex-direction:column;background:var(--card);border-radius:var(--r);padding:24px 24px 20px;
   box-shadow:var(--shadow);color:inherit;border-top:4px solid var(--zb,var(--accent));
   transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s}
 .zjkarta:hover{transform:translateY(-4px);box-shadow:var(--shadow-hi);text-decoration:none}
@@ -485,3 +485,21 @@ section[id],h2[id]{scroll-margin-top:118px}
 .era .c{font-size:.95rem;margin:.4em 0 0;color:var(--text)}
 .era ul{margin:12px 0 0;padding-left:18px;font-size:.92rem;color:var(--muted)}
 .era li{margin-bottom:3px}
+
+/* Banner nejzávažnějšího zjištění — přes celou šířku pod kartami */
+.zjbanner{display:block;margin-top:18px;padding:30px 34px;border-radius:var(--r);color:inherit;
+  background:linear-gradient(160deg,#e9f7ee,#fbfefc);border:1px solid #cfeadb;
+  transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s}
+.zjbanner:hover{transform:translateY(-3px);box-shadow:var(--shadow-hi);text-decoration:none}
+.zjbanner .odznak{background:#d9f0e2;color:#1a5c34;margin-bottom:12px}
+.zjbanner .odznak::before{background:#1a7a45}
+.zjbanner h3{font-size:clamp(1.35rem,2.6vw,1.85rem);margin:0 0 12px;letter-spacing:-.02em}
+.zjbanner .lead{font-size:1.05rem;line-height:1.6;margin:0 0 20px;max-width:78ch;color:var(--text)}
+.zjbanner .zbcisla{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-bottom:18px}
+.zjbanner .zbcisla>div{background:rgba(255,255,255,.75);border-radius:14px;padding:16px 18px}
+.zjbanner .zbcisla .v{font-size:clamp(1.5rem,3vw,1.95rem);font-weight:800;letter-spacing:-.03em;
+  color:#1a7a45;margin:0 0 .25em;font-variant-numeric:tabular-nums}
+.zjbanner .zbcisla .k{font-size:.92rem;line-height:1.5;color:var(--muted);margin:0}
+.zjbanner .zbpr{font-size:.97rem;line-height:1.6;color:var(--text);margin:0 0 16px;max-width:88ch}
+.zjbanner .go{margin:0;font-size:.94rem;font-weight:600;color:var(--accent)}
+@media(max-width:560px){.zjbanner{padding:24px 22px}}
