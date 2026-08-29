@@ -1,0 +1,712 @@
+{
+ "meta": {
+  "ukol": "Srovnání čerpání dotací s okolními obcemi (zadání Petra 29. 8. 2026)",
+  "definice": "Dotace = třída 4 rozpočtové skladby „Přijaté transfery“ (konsolidovaná skutečnost). Zahrnuje i pravidelné transfery na výkon státní správy, nejen investiční dotace.",
+  "obdobi": "2019–2025",
+  "zdroje": [
+   "MONITOR MF ČR — rozklikávací rozpočet",
+   "ARES — IČO obcí",
+   "ČSÚ — počty obyvatel k 1. 1. 2025"
+  ],
+  "poradi_prstic_od_nejvyssiho": 12,
+  "obci_celkem": 12
+ },
+ "obce": [
+  {
+   "obec": "Mělčany",
+   "kod": "583375",
+   "ico": "00282081",
+   "obyvatel": 498,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 20974418,
+     "dotace_kc": 3934486,
+     "podil_pct": 18.8,
+     "na_obyvatele_kc": 7901
+    },
+    "2020": {
+     "prijmy_kc": 18972482,
+     "dotace_kc": 806100,
+     "podil_pct": 4.2,
+     "na_obyvatele_kc": 1619
+    },
+    "2021": {
+     "prijmy_kc": 26710116,
+     "dotace_kc": 9901036,
+     "podil_pct": 37.1,
+     "na_obyvatele_kc": 19882
+    },
+    "2022": {
+     "prijmy_kc": 43240341,
+     "dotace_kc": 22948493,
+     "podil_pct": 53.1,
+     "na_obyvatele_kc": 46081
+    },
+    "2023": {
+     "prijmy_kc": 31796091,
+     "dotace_kc": 3656672,
+     "podil_pct": 11.5,
+     "na_obyvatele_kc": 7343
+    },
+    "2024": {
+     "prijmy_kc": 21057233,
+     "dotace_kc": 279500,
+     "podil_pct": 1.3,
+     "na_obyvatele_kc": 561
+    },
+    "2025": {
+     "prijmy_kc": 45099442,
+     "dotace_kc": 17755343,
+     "podil_pct": 39.4,
+     "na_obyvatele_kc": 35653
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 59281630,
+    "prijmy_celkem_kc": 207850123,
+    "podil_pct": 28.5,
+    "na_obyvatele_kc": 119039,
+    "rocne_na_obyvatele_kc": 17006
+   }
+  },
+  {
+   "obec": "Radostice",
+   "kod": "583740",
+   "ico": "00487520",
+   "obyvatel": 789,
+   "okruh": "sousední",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 21391058,
+     "dotace_kc": 6728820,
+     "podil_pct": 31.5,
+     "na_obyvatele_kc": 8528
+    },
+    "2020": {
+     "prijmy_kc": 30308698,
+     "dotace_kc": 15845531,
+     "podil_pct": 52.3,
+     "na_obyvatele_kc": 20083
+    },
+    "2021": {
+     "prijmy_kc": 22302643,
+     "dotace_kc": 6875603,
+     "podil_pct": 30.8,
+     "na_obyvatele_kc": 8714
+    },
+    "2022": {
+     "prijmy_kc": 17752132,
+     "dotace_kc": 281079,
+     "podil_pct": 1.6,
+     "na_obyvatele_kc": 356
+    },
+    "2023": {
+     "prijmy_kc": 21471418,
+     "dotace_kc": 1307030,
+     "podil_pct": 6.1,
+     "na_obyvatele_kc": 1657
+    },
+    "2024": {
+     "prijmy_kc": 23023892,
+     "dotace_kc": 2641079,
+     "podil_pct": 11.5,
+     "na_obyvatele_kc": 3347
+    },
+    "2025": {
+     "prijmy_kc": 24509687,
+     "dotace_kc": 2555869,
+     "podil_pct": 10.4,
+     "na_obyvatele_kc": 3239
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 36235011,
+    "prijmy_celkem_kc": 160759528,
+    "podil_pct": 22.5,
+    "na_obyvatele_kc": 45925,
+    "rocne_na_obyvatele_kc": 6561
+   }
+  },
+  {
+   "obec": "Moravany",
+   "kod": "583413",
+   "ico": "00282120",
+   "obyvatel": 3554,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 57574350,
+     "dotace_kc": 1980300,
+     "podil_pct": 3.4,
+     "na_obyvatele_kc": 557
+    },
+    "2020": {
+     "prijmy_kc": 66588331,
+     "dotace_kc": 6387237,
+     "podil_pct": 9.6,
+     "na_obyvatele_kc": 1797
+    },
+    "2021": {
+     "prijmy_kc": 78869131,
+     "dotace_kc": 10095074,
+     "podil_pct": 12.8,
+     "na_obyvatele_kc": 2840
+    },
+    "2022": {
+     "prijmy_kc": 76766802,
+     "dotace_kc": 2816269,
+     "podil_pct": 3.7,
+     "na_obyvatele_kc": 792
+    },
+    "2023": {
+     "prijmy_kc": 85002247,
+     "dotace_kc": 1804832,
+     "podil_pct": 2.1,
+     "na_obyvatele_kc": 508
+    },
+    "2024": {
+     "prijmy_kc": 180887376,
+     "dotace_kc": 93908261,
+     "podil_pct": 51.9,
+     "na_obyvatele_kc": 26423
+    },
+    "2025": {
+     "prijmy_kc": 98175039,
+     "dotace_kc": 3971197,
+     "podil_pct": 4.0,
+     "na_obyvatele_kc": 1117
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 120963170,
+    "prijmy_celkem_kc": 643863276,
+    "podil_pct": 18.8,
+    "na_obyvatele_kc": 34036,
+    "rocne_na_obyvatele_kc": 4862
+   }
+  },
+  {
+   "obec": "Střelice",
+   "kod": "583910",
+   "ico": "00282618",
+   "obyvatel": 3283,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 67050664,
+     "dotace_kc": 13535514,
+     "podil_pct": 20.2,
+     "na_obyvatele_kc": 4123
+    },
+    "2020": {
+     "prijmy_kc": 61723353,
+     "dotace_kc": 10494786,
+     "podil_pct": 17.0,
+     "na_obyvatele_kc": 3197
+    },
+    "2021": {
+     "prijmy_kc": 69653530,
+     "dotace_kc": 11595947,
+     "podil_pct": 16.6,
+     "na_obyvatele_kc": 3532
+    },
+    "2022": {
+     "prijmy_kc": 79347957,
+     "dotace_kc": 10897427,
+     "podil_pct": 13.7,
+     "na_obyvatele_kc": 3319
+    },
+    "2023": {
+     "prijmy_kc": 92662176,
+     "dotace_kc": 13193170,
+     "podil_pct": 14.2,
+     "na_obyvatele_kc": 4019
+    },
+    "2024": {
+     "prijmy_kc": 107929144,
+     "dotace_kc": 26108435,
+     "podil_pct": 24.2,
+     "na_obyvatele_kc": 7953
+    },
+    "2025": {
+     "prijmy_kc": 112247001,
+     "dotace_kc": 21558298,
+     "podil_pct": 19.2,
+     "na_obyvatele_kc": 6567
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 107383577,
+    "prijmy_celkem_kc": 590613825,
+    "podil_pct": 18.2,
+    "na_obyvatele_kc": 32709,
+    "rocne_na_obyvatele_kc": 4673
+   }
+  },
+  {
+   "obec": "Želešice",
+   "kod": "584266",
+   "ico": "00282952",
+   "obyvatel": 1959,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 56507823,
+     "dotace_kc": 23875054,
+     "podil_pct": 42.3,
+     "na_obyvatele_kc": 12187
+    },
+    "2020": {
+     "prijmy_kc": 41481955,
+     "dotace_kc": 9880817,
+     "podil_pct": 23.8,
+     "na_obyvatele_kc": 5044
+    },
+    "2021": {
+     "prijmy_kc": 41605202,
+     "dotace_kc": 4411957,
+     "podil_pct": 10.6,
+     "na_obyvatele_kc": 2252
+    },
+    "2022": {
+     "prijmy_kc": 46180096,
+     "dotace_kc": 2987040,
+     "podil_pct": 6.5,
+     "na_obyvatele_kc": 1525
+    },
+    "2023": {
+     "prijmy_kc": 54344129,
+     "dotace_kc": 5394146,
+     "podil_pct": 9.9,
+     "na_obyvatele_kc": 2754
+    },
+    "2024": {
+     "prijmy_kc": 88672966,
+     "dotace_kc": 7599822,
+     "podil_pct": 8.6,
+     "na_obyvatele_kc": 3879
+    },
+    "2025": {
+     "prijmy_kc": 59976094,
+     "dotace_kc": 2894461,
+     "podil_pct": 4.8,
+     "na_obyvatele_kc": 1478
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 57043297,
+    "prijmy_celkem_kc": 388768265,
+    "podil_pct": 14.7,
+    "na_obyvatele_kc": 29119,
+    "rocne_na_obyvatele_kc": 4160
+   }
+  },
+  {
+   "obec": "Moravské Bránice",
+   "kod": "583421",
+   "ico": "00488208",
+   "obyvatel": 994,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 17941589,
+     "dotace_kc": 2209421,
+     "podil_pct": 12.3,
+     "na_obyvatele_kc": 2223
+    },
+    "2020": {
+     "prijmy_kc": 16695176,
+     "dotace_kc": 1826424,
+     "podil_pct": 10.9,
+     "na_obyvatele_kc": 1837
+    },
+    "2021": {
+     "prijmy_kc": 24240105,
+     "dotace_kc": 7376237,
+     "podil_pct": 30.4,
+     "na_obyvatele_kc": 7421
+    },
+    "2022": {
+     "prijmy_kc": 19246958,
+     "dotace_kc": 762313,
+     "podil_pct": 4.0,
+     "na_obyvatele_kc": 767
+    },
+    "2023": {
+     "prijmy_kc": 22126964,
+     "dotace_kc": 1221276,
+     "podil_pct": 5.5,
+     "na_obyvatele_kc": 1229
+    },
+    "2024": {
+     "prijmy_kc": 29320660,
+     "dotace_kc": 5653555,
+     "podil_pct": 19.3,
+     "na_obyvatele_kc": 5688
+    },
+    "2025": {
+     "prijmy_kc": 31991609,
+     "dotace_kc": 9405343,
+     "podil_pct": 29.4,
+     "na_obyvatele_kc": 9462
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 28454569,
+    "prijmy_celkem_kc": 161563061,
+    "podil_pct": 17.6,
+    "na_obyvatele_kc": 28626,
+    "rocne_na_obyvatele_kc": 4089
+   }
+  },
+  {
+   "obec": "Ořechov",
+   "kod": "583561",
+   "ico": "00282278",
+   "obyvatel": 2915,
+   "okruh": "sousední",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 70362422,
+     "dotace_kc": 19011465,
+     "podil_pct": 27.0,
+     "na_obyvatele_kc": 6522
+    },
+    "2020": {
+     "prijmy_kc": 58305351,
+     "dotace_kc": 10093063,
+     "podil_pct": 17.3,
+     "na_obyvatele_kc": 3462
+    },
+    "2021": {
+     "prijmy_kc": 61657894,
+     "dotace_kc": 7223811,
+     "podil_pct": 11.7,
+     "na_obyvatele_kc": 2478
+    },
+    "2022": {
+     "prijmy_kc": 68491056,
+     "dotace_kc": 4507479,
+     "podil_pct": 6.6,
+     "na_obyvatele_kc": 1546
+    },
+    "2023": {
+     "prijmy_kc": 81113285,
+     "dotace_kc": 6827622,
+     "podil_pct": 8.4,
+     "na_obyvatele_kc": 2342
+    },
+    "2024": {
+     "prijmy_kc": 94596764,
+     "dotace_kc": 3014442,
+     "podil_pct": 3.2,
+     "na_obyvatele_kc": 1034
+    },
+    "2025": {
+     "prijmy_kc": 99559748,
+     "dotace_kc": 13683066,
+     "podil_pct": 13.7,
+     "na_obyvatele_kc": 4694
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 64360948,
+    "prijmy_celkem_kc": 534086520,
+    "podil_pct": 12.1,
+    "na_obyvatele_kc": 22079,
+    "rocne_na_obyvatele_kc": 3154
+   }
+  },
+  {
+   "obec": "Nebovidy",
+   "kod": "583456",
+   "ico": "00488097",
+   "obyvatel": 871,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 13983231,
+     "dotace_kc": 865179,
+     "podil_pct": 6.2,
+     "na_obyvatele_kc": 993
+    },
+    "2020": {
+     "prijmy_kc": 15815240,
+     "dotace_kc": 3279629,
+     "podil_pct": 20.7,
+     "na_obyvatele_kc": 3765
+    },
+    "2021": {
+     "prijmy_kc": 17892765,
+     "dotace_kc": 3588106,
+     "podil_pct": 20.1,
+     "na_obyvatele_kc": 4120
+    },
+    "2022": {
+     "prijmy_kc": 18776950,
+     "dotace_kc": 1873370,
+     "podil_pct": 10.0,
+     "na_obyvatele_kc": 2151
+    },
+    "2023": {
+     "prijmy_kc": 23204871,
+     "dotace_kc": 769599,
+     "podil_pct": 3.3,
+     "na_obyvatele_kc": 884
+    },
+    "2024": {
+     "prijmy_kc": 42100380,
+     "dotace_kc": 998755,
+     "podil_pct": 2.4,
+     "na_obyvatele_kc": 1147
+    },
+    "2025": {
+     "prijmy_kc": 23153252,
+     "dotace_kc": 1595290,
+     "podil_pct": 6.9,
+     "na_obyvatele_kc": 1832
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 12969928,
+    "prijmy_celkem_kc": 154926689,
+    "podil_pct": 8.4,
+    "na_obyvatele_kc": 14891,
+    "rocne_na_obyvatele_kc": 2127
+   }
+  },
+  {
+   "obec": "Hlína",
+   "kod": "583022",
+   "ico": "00488135",
+   "obyvatel": 315,
+   "okruh": "sousední",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 5401766,
+     "dotace_kc": 682527,
+     "podil_pct": 12.6,
+     "na_obyvatele_kc": 2167
+    },
+    "2020": {
+     "prijmy_kc": 5394992,
+     "dotace_kc": 544100,
+     "podil_pct": 10.1,
+     "na_obyvatele_kc": 1727
+    },
+    "2021": {
+     "prijmy_kc": 5496117,
+     "dotace_kc": 282819,
+     "podil_pct": 5.1,
+     "na_obyvatele_kc": 898
+    },
+    "2022": {
+     "prijmy_kc": 6542570,
+     "dotace_kc": 216737,
+     "podil_pct": 3.3,
+     "na_obyvatele_kc": 688
+    },
+    "2023": {
+     "prijmy_kc": 8249810,
+     "dotace_kc": 563900,
+     "podil_pct": 6.8,
+     "na_obyvatele_kc": 1790
+    },
+    "2024": {
+     "prijmy_kc": 8094030,
+     "dotace_kc": 969286,
+     "podil_pct": 12.0,
+     "na_obyvatele_kc": 3077
+    },
+    "2025": {
+     "prijmy_kc": 7648601,
+     "dotace_kc": 208800,
+     "podil_pct": 2.7,
+     "na_obyvatele_kc": 663
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 3468169,
+    "prijmy_celkem_kc": 46827886,
+    "podil_pct": 7.4,
+    "na_obyvatele_kc": 11010,
+    "rocne_na_obyvatele_kc": 1573
+   }
+  },
+  {
+   "obec": "Silůvky",
+   "kod": "583855",
+   "ico": "00488305",
+   "obyvatel": 853,
+   "okruh": "sousední",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 16942685,
+     "dotace_kc": 243800,
+     "podil_pct": 1.4,
+     "na_obyvatele_kc": 286
+    },
+    "2020": {
+     "prijmy_kc": 18422738,
+     "dotace_kc": 2029046,
+     "podil_pct": 11.0,
+     "na_obyvatele_kc": 2379
+    },
+    "2021": {
+     "prijmy_kc": 19521178,
+     "dotace_kc": 567589,
+     "podil_pct": 2.9,
+     "na_obyvatele_kc": 665
+    },
+    "2022": {
+     "prijmy_kc": 19786781,
+     "dotace_kc": 1218027,
+     "podil_pct": 6.2,
+     "na_obyvatele_kc": 1428
+    },
+    "2023": {
+     "prijmy_kc": 20433538,
+     "dotace_kc": 320800,
+     "podil_pct": 1.6,
+     "na_obyvatele_kc": 376
+    },
+    "2024": {
+     "prijmy_kc": 22834644,
+     "dotace_kc": 2033617,
+     "podil_pct": 8.9,
+     "na_obyvatele_kc": 2384
+    },
+    "2025": {
+     "prijmy_kc": 22709727,
+     "dotace_kc": 905872,
+     "podil_pct": 4.0,
+     "na_obyvatele_kc": 1062
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 7318751,
+    "prijmy_celkem_kc": 140651291,
+    "podil_pct": 5.2,
+    "na_obyvatele_kc": 8580,
+    "rocne_na_obyvatele_kc": 1226
+   }
+  },
+  {
+   "obec": "Hajany",
+   "kod": "582999",
+   "ico": "00637688",
+   "obyvatel": 713,
+   "okruh": "přes jednu obec",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 8868232,
+     "dotace_kc": 214500,
+     "podil_pct": 2.4,
+     "na_obyvatele_kc": 301
+    },
+    "2020": {
+     "prijmy_kc": 9832138,
+     "dotace_kc": 965300,
+     "podil_pct": 9.8,
+     "na_obyvatele_kc": 1354
+    },
+    "2021": {
+     "prijmy_kc": 10746187,
+     "dotace_kc": 320194,
+     "podil_pct": 3.0,
+     "na_obyvatele_kc": 449
+    },
+    "2022": {
+     "prijmy_kc": 18875504,
+     "dotace_kc": 1267304,
+     "podil_pct": 6.7,
+     "na_obyvatele_kc": 1777
+    },
+    "2023": {
+     "prijmy_kc": 14955466,
+     "dotace_kc": 198500,
+     "podil_pct": 1.3,
+     "na_obyvatele_kc": 278
+    },
+    "2024": {
+     "prijmy_kc": 18046501,
+     "dotace_kc": 225000,
+     "podil_pct": 1.2,
+     "na_obyvatele_kc": 316
+    },
+    "2025": {
+     "prijmy_kc": 18258767,
+     "dotace_kc": 1021910,
+     "podil_pct": 5.6,
+     "na_obyvatele_kc": 1433
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 4212708,
+    "prijmy_celkem_kc": 99582795,
+    "podil_pct": 4.2,
+    "na_obyvatele_kc": 5908,
+    "rocne_na_obyvatele_kc": 844
+   }
+  },
+  {
+   "obec": "Prštice",
+   "kod": "583707",
+   "ico": "00282405",
+   "obyvatel": 997,
+   "okruh": "sousední",
+   "roky": {
+    "2019": {
+     "prijmy_kc": 17394741,
+     "dotace_kc": 234400,
+     "podil_pct": 1.3,
+     "na_obyvatele_kc": 235
+    },
+    "2020": {
+     "prijmy_kc": 17698402,
+     "dotace_kc": 1462850,
+     "podil_pct": 8.3,
+     "na_obyvatele_kc": 1467
+    },
+    "2021": {
+     "prijmy_kc": 18546278,
+     "dotace_kc": 542452,
+     "podil_pct": 2.9,
+     "na_obyvatele_kc": 544
+    },
+    "2022": {
+     "prijmy_kc": 24920408,
+     "dotace_kc": 1254335,
+     "podil_pct": 5.0,
+     "na_obyvatele_kc": 1258
+    },
+    "2023": {
+     "prijmy_kc": 24382386,
+     "dotace_kc": 353800,
+     "podil_pct": 1.5,
+     "na_obyvatele_kc": 355
+    },
+    "2024": {
+     "prijmy_kc": 24961496,
+     "dotace_kc": 1083805,
+     "podil_pct": 4.3,
+     "na_obyvatele_kc": 1087
+    },
+    "2025": {
+     "prijmy_kc": 27489971,
+     "dotace_kc": 909232,
+     "podil_pct": 3.3,
+     "na_obyvatele_kc": 912
+    }
+   },
+   "souhrn": {
+    "dotace_celkem_kc": 5840874,
+    "prijmy_celkem_kc": 155393682,
+    "podil_pct": 3.8,
+    "na_obyvatele_kc": 5858,
+    "rocne_na_obyvatele_kc": 837
+   }
+  }
+ ]
+}
