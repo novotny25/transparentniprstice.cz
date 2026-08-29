@@ -64,23 +64,39 @@ def ares_ico(kod_obce):
 
 
 def monitor_prijmy(ico, rok):
-    """(celkové konsolidované příjmy, přijaté transfery třídy 4) za rok."""
+    """(příjmy celkem, transfery třídy 4, z toho investiční 42, položky detailu).
+
+    Rozlišení je podstatné: seskupení 41 jsou převážně pravidelné provozní
+    transfery (souhrnný dotační vztah na výkon státní správy, transfery na
+    školství), které dostává každá obec. Projektové a investiční dotace jsou
+    v seskupení 42 — tam se pozná, zda obec něco většího stavěla.
+    """
     url = ("https://monitor.statnipokladna.gov.cz/api/rozpocet/souhrnny"
            f"?obdobi={rok - 2000:02d}12&ic={ico}")
     try:
         d = http_json(url)
     except Exception:
-        return None, None
+        return None, None, None, {}
     for ch in d.get("children", []):
         if ch.get("name") != "Revenues":
             continue
         celkem = (ch.get("budget") or {}).get("reality")
-        transfery = None
+        transfery = investicni = 0.0
+        polozky = {}
         for g in ch.get("children", []):
-            if str(g.get("code")) == "4":
-                transfery = (g.get("budget") or {}).get("reality")
-        return celkem, (transfery or 0.0)
-    return None, None
+            if str(g.get("code")) != "4":
+                continue
+            transfery = (g.get("budget") or {}).get("reality") or 0.0
+            for sk in g.get("children", []):
+                if str(sk.get("code")) == "42":
+                    investicni = (sk.get("budget") or {}).get("reality") or 0.0
+                for pol in sk.get("children", []):
+                    castka = (pol.get("budget") or {}).get("reality") or 0.0
+                    if castka:
+                        polozky[str(pol.get("code"))] = {
+                            "nazev": pol.get("name"), "kc": round(castka)}
+        return celkem, transfery, investicni, polozky
+    return None, None, None, {}
 
 
 def main():
@@ -98,19 +114,23 @@ def main():
             continue
         rada = {}
         for rok in ROKY:
-            celkem, transfery = monitor_prijmy(ico, rok)
+            celkem, transfery, investicni, polozky = monitor_prijmy(ico, rok)
             time.sleep(0.2)
             if celkem:
                 rada[str(rok)] = {
                     "prijmy_kc": round(celkem),
                     "dotace_kc": round(transfery),
+                    "investicni_kc": round(investicni),
+                    "provozni_kc": round(transfery - investicni),
                     "podil_pct": round(transfery / celkem * 100, 1),
                     "na_obyvatele_kc": round(transfery / obyvatel),
+                    "polozky": polozky,
                 }
         if not rada:
             print(f"  ! {nazev}: žádná data z MONITORu")
             continue
         soucet_dot = sum(v["dotace_kc"] for v in rada.values())
+        soucet_inv = sum(v["investicni_kc"] for v in rada.values())
         soucet_prij = sum(v["prijmy_kc"] for v in rada.values())
         vysledky.append({
             "obec": nazev,
@@ -121,6 +141,9 @@ def main():
             "roky": rada,
             "souhrn": {
                 "dotace_celkem_kc": soucet_dot,
+                "investicni_celkem_kc": soucet_inv,
+                "investicni_na_obyvatele_kc": round(soucet_inv / obyvatel),
+                "let_s_investicni_dotaci": sum(1 for v in rada.values() if v["investicni_kc"] > 0),
                 "prijmy_celkem_kc": soucet_prij,
                 "podil_pct": round(soucet_dot / soucet_prij * 100, 1),
                 "na_obyvatele_kc": round(soucet_dot / obyvatel),
@@ -128,9 +151,9 @@ def main():
             },
         })
         s = vysledky[-1]["souhrn"]
-        print(f"  {nazev:20s} {obyvatel:5d} obyv. | dotace {soucet_dot:12,.0f} Kč "
-              f"| {s['podil_pct']:4.1f} % | {s['rocne_na_obyvatele_kc']:5d} Kč/obyv./rok"
-              .replace(",", " "))
+        print(f"  {nazev:18s} {obyvatel:5d} ob. | celkem {soucet_dot:11,.0f} "
+              f"| investiční {soucet_inv:11,.0f} Kč = {s['investicni_na_obyvatele_kc']:6d} Kč/ob. "
+              f"| let s inv. dotací: {s['let_s_investicni_dotaci']}".replace(",", " "))
 
     vysledky.sort(key=lambda o: o["souhrn"]["rocne_na_obyvatele_kc"], reverse=True)
     poradi = [o["obec"] for o in vysledky]

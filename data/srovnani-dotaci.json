@@ -22,48 +22,235 @@
     "2019": {
      "prijmy_kc": 20974418,
      "dotace_kc": 3934486,
+     "investicni_kc": 3100721,
+     "provozni_kc": 833765,
      "podil_pct": 18.8,
-     "na_obyvatele_kc": 7901
+     "na_obyvatele_kc": 7901,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 108700
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 321721
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 368660
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 5684
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 3098000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 2721
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 18972482,
      "dotace_kc": 806100,
+     "investicni_kc": 56000,
+     "provozni_kc": 750100,
      "podil_pct": 4.2,
-     "na_obyvatele_kc": 1619
+     "na_obyvatele_kc": 1619,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 638500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 111600
+      },
+      "4229": {
+       "nazev": "Ostatní investiční přijaté transfery od rozpočtů územní úrovně",
+       "kc": 56000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 26710116,
      "dotace_kc": 9901036,
+     "investicni_kc": 9398180,
+     "provozni_kc": 502856,
      "podil_pct": 37.1,
-     "na_obyvatele_kc": 19882
+     "na_obyvatele_kc": 19882,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 127655
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 114000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 261201
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 850782
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 8547398
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 43240341,
      "dotace_kc": 22948493,
+     "investicni_kc": 22652602,
+     "provozni_kc": 295890,
      "podil_pct": 53.1,
-     "na_obyvatele_kc": 46081
+     "na_obyvatele_kc": 46081,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 85708
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 113400
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 94000
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2782
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 21452602
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1200000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 31796091,
      "dotace_kc": 3656672,
+     "investicni_kc": 3000000,
+     "provozni_kc": 656672,
      "podil_pct": 11.5,
-     "na_obyvatele_kc": 7343
+     "na_obyvatele_kc": 7343,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 117700
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 377984
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2388
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      },
+      "4131": {
+       "nazev": "Převody z vlastních fondů podnikatelské činnosti",
+       "kc": 20000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 3000000
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 21057233,
      "dotace_kc": 279500,
+     "investicni_kc": 0,
+     "provozni_kc": 279500,
      "podil_pct": 1.3,
-     "na_obyvatele_kc": 561
+     "na_obyvatele_kc": 561,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 113400
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2600
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 45099442,
      "dotace_kc": 17755343,
+     "investicni_kc": 17220113,
+     "provozni_kc": 535230,
      "podil_pct": 39.4,
-     "na_obyvatele_kc": 35653
+     "na_obyvatele_kc": 35653,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 117100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 282614
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 3016
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 17158113
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 62000
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 59281630,
+    "investicni_celkem_kc": 55427616,
+    "investicni_na_obyvatele_kc": 111300,
+    "let_s_investicni_dotaci": 6,
     "prijmy_celkem_kc": 207850123,
     "podil_pct": 28.5,
     "na_obyvatele_kc": 119039,
@@ -80,48 +267,195 @@
     "2019": {
      "prijmy_kc": 21391058,
      "dotace_kc": 6728820,
+     "investicni_kc": 6490000,
+     "provozni_kc": 238820,
      "podil_pct": 31.5,
-     "na_obyvatele_kc": 8528
+     "na_obyvatele_kc": 8528,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 165700
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 44120
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 6490000
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 30308698,
      "dotace_kc": 15845531,
+     "investicni_kc": 14613929,
+     "provozni_kc": 1231602,
      "podil_pct": 52.3,
-     "na_obyvatele_kc": 20083
+     "na_obyvatele_kc": 20083,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 996000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 173400
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 62202
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 14613929
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 22302643,
      "dotace_kc": 6875603,
+     "investicni_kc": 5791048,
+     "provozni_kc": 1084555,
      "podil_pct": 30.8,
-     "na_obyvatele_kc": 8714
+     "na_obyvatele_kc": 8714,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 181066
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 180000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 653489
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 70000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 5791048
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 17752132,
      "dotace_kc": 281079,
+     "investicni_kc": 0,
+     "provozni_kc": 281079,
      "podil_pct": 1.6,
-     "na_obyvatele_kc": 356
+     "na_obyvatele_kc": 356,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 101079
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 180000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 21471418,
      "dotace_kc": 1307030,
+     "investicni_kc": 0,
+     "provozni_kc": 1307030,
      "podil_pct": 6.1,
-     "na_obyvatele_kc": 1657
+     "na_obyvatele_kc": 1657,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 191800
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 79860
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 996770
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 23023892,
      "dotace_kc": 2641079,
+     "investicni_kc": 2200867,
+     "provozni_kc": 440212,
      "podil_pct": 11.5,
-     "na_obyvatele_kc": 3347
+     "na_obyvatele_kc": 3347,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 186000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 152212
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 38500
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 2200867
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 24509687,
      "dotace_kc": 2555869,
+     "investicni_kc": 1631467,
+     "provozni_kc": 924402,
      "podil_pct": 10.4,
-     "na_obyvatele_kc": 3239
+     "na_obyvatele_kc": 3239,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 186000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 683902
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 22000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1631467
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 36235011,
+    "investicni_celkem_kc": 30727311,
+    "investicni_na_obyvatele_kc": 38945,
+    "let_s_investicni_dotaci": 5,
     "prijmy_celkem_kc": 160759528,
     "podil_pct": 22.5,
     "na_obyvatele_kc": 45925,
@@ -138,48 +472,215 @@
     "2019": {
      "prijmy_kc": 57574350,
      "dotace_kc": 1980300,
+     "investicni_kc": 1149500,
+     "provozni_kc": 830800,
      "podil_pct": 3.4,
-     "na_obyvatele_kc": 557
+     "na_obyvatele_kc": 557,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 58000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 646300
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 62000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 64500
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1149500
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 66588331,
      "dotace_kc": 6387237,
+     "investicni_kc": 730719,
+     "provozni_kc": 5656518,
      "podil_pct": 9.6,
-     "na_obyvatele_kc": 1797
+     "na_obyvatele_kc": 1797,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 4203250
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 699500
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 753768
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 730719
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 78869131,
      "dotace_kc": 10095074,
+     "investicni_kc": 5967082,
+     "provozni_kc": 4127992,
      "podil_pct": 12.8,
-     "na_obyvatele_kc": 2840
+     "na_obyvatele_kc": 2840,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 731885
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 778900
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 135036
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 2482170
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 187487
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 5722595
+      },
+      "4221": {
+       "nazev": "Investiční přijaté transfery od obcí",
+       "kc": 57000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 76766802,
      "dotace_kc": 2816269,
+     "investicni_kc": 0,
+     "provozni_kc": 2816269,
      "podil_pct": 3.7,
-     "na_obyvatele_kc": 792
+     "na_obyvatele_kc": 792,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 315042
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 763500
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 179533
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1558194
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 85002247,
      "dotace_kc": 1804832,
+     "investicni_kc": 240000,
+     "provozni_kc": 1564832,
      "podil_pct": 2.1,
-     "na_obyvatele_kc": 508
+     "na_obyvatele_kc": 508,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 77200
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 805900
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 681732
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 240000
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 180887376,
      "dotace_kc": 93908261,
+     "investicni_kc": 92990161,
+     "provozni_kc": 918100,
      "podil_pct": 51.9,
-     "na_obyvatele_kc": 26423
+     "na_obyvatele_kc": 26423,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 127000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 791100
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 92990161
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 98175039,
      "dotace_kc": 3971197,
+     "investicni_kc": 1568924,
+     "provozni_kc": 2402273,
      "podil_pct": 4.0,
-     "na_obyvatele_kc": 1117
+     "na_obyvatele_kc": 1117,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 65000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 798900
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 11616
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1377557
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 149200
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 143264
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1425660
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 120963170,
+    "investicni_celkem_kc": 102646386,
+    "investicni_na_obyvatele_kc": 28882,
+    "let_s_investicni_dotaci": 6,
     "prijmy_celkem_kc": 643863276,
     "podil_pct": 18.8,
     "na_obyvatele_kc": 34036,
@@ -196,48 +697,267 @@
     "2019": {
      "prijmy_kc": 67050664,
      "dotace_kc": 13535514,
+     "investicni_kc": 4592241,
+     "provozni_kc": 8943273,
      "podil_pct": 20.2,
-     "na_obyvatele_kc": 4123
+     "na_obyvatele_kc": 4123,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 81765
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 4499300
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 4056517
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 142300
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 163391
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 4592241
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 61723353,
      "dotace_kc": 10494786,
+     "investicni_kc": 1608143,
+     "provozni_kc": 8886643,
      "podil_pct": 17.0,
-     "na_obyvatele_kc": 3197
+     "na_obyvatele_kc": 3197,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 3857000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 4789800
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 147543
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 92300
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1608143
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 69653530,
      "dotace_kc": 11595947,
+     "investicni_kc": 4006345,
+     "provozni_kc": 7589602,
      "podil_pct": 16.6,
-     "na_obyvatele_kc": 3532
+     "na_obyvatele_kc": 3532,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 739487
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 5022700
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 243656
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1442459
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 141300
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 4006345
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 79347957,
      "dotace_kc": 10897427,
+     "investicni_kc": 4467752,
+     "provozni_kc": 6429675,
      "podil_pct": 13.7,
-     "na_obyvatele_kc": 3319
+     "na_obyvatele_kc": 3319,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 314925
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 5024900
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 871850
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 218000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 301752
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 2500000
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1666000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 92662176,
      "dotace_kc": 13193170,
+     "investicni_kc": 2667945,
+     "provozni_kc": 10525226,
      "podil_pct": 14.2,
-     "na_obyvatele_kc": 4019
+     "na_obyvatele_kc": 4019,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 77200
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 5274100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 4699926
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 374000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1109895
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1558050
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 107929144,
      "dotace_kc": 26108435,
+     "investicni_kc": 19372402,
+     "provozni_kc": 6736033,
      "podil_pct": 24.2,
-     "na_obyvatele_kc": 7953
+     "na_obyvatele_kc": 7953,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 127000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 5069500
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1236773
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 170000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 132760
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 17594402
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1778000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 112247001,
      "dotace_kc": 21558298,
+     "investicni_kc": 12643079,
+     "provozni_kc": 8915219,
      "podil_pct": 19.2,
-     "na_obyvatele_kc": 6567
+     "na_obyvatele_kc": 6567,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 70579
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 3780100
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 14000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 4795340
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 170000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 85200
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 386000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 12094279
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 162800
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 107383577,
+    "investicni_celkem_kc": 49357907,
+    "investicni_na_obyvatele_kc": 15034,
+    "let_s_investicni_dotaci": 7,
     "prijmy_celkem_kc": 590613825,
     "podil_pct": 18.2,
     "na_obyvatele_kc": 32709,
@@ -254,48 +974,211 @@
     "2019": {
      "prijmy_kc": 56507823,
      "dotace_kc": 23875054,
+     "investicni_kc": 19874841,
+     "provozni_kc": 4000213,
      "podil_pct": 42.3,
-     "na_obyvatele_kc": 12187
+     "na_obyvatele_kc": 12187,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 401300
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 3569913
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 19874841
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 41481955,
      "dotace_kc": 9880817,
+     "investicni_kc": 0,
+     "provozni_kc": 9880817,
      "podil_pct": 23.8,
-     "na_obyvatele_kc": 5044
+     "na_obyvatele_kc": 5044,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 2271000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 422600
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 7187217
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 41605202,
      "dotace_kc": 4411957,
+     "investicni_kc": 1699641,
+     "provozni_kc": 2712316,
      "podil_pct": 10.6,
-     "na_obyvatele_kc": 2252
+     "na_obyvatele_kc": 2252,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 407104
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 441900
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1863312
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1699641
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 46180096,
      "dotace_kc": 2987040,
+     "investicni_kc": 1276706,
+     "provozni_kc": 1710334,
      "podil_pct": 6.5,
-     "na_obyvatele_kc": 1525
+     "na_obyvatele_kc": 1525,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 169266
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 447800
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1093267
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1276706
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 54344129,
      "dotace_kc": 5394146,
+     "investicni_kc": 3029059,
+     "provozni_kc": 2365087,
      "podil_pct": 9.9,
-     "na_obyvatele_kc": 2754
+     "na_obyvatele_kc": 2754,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 474600
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 136965
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1679922
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 35000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1350630
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1678429
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 88672966,
      "dotace_kc": 7599822,
+     "investicni_kc": 6225017,
+     "provozni_kc": 1374805,
      "podil_pct": 8.6,
-     "na_obyvatele_kc": 3879
+     "na_obyvatele_kc": 3879,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 475400
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 835905
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 788650
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 4936367
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 500000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 59976094,
      "dotace_kc": 2894461,
+     "investicni_kc": 890399,
+     "provozni_kc": 2004062,
      "podil_pct": 4.8,
-     "na_obyvatele_kc": 1478
+     "na_obyvatele_kc": 1478,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 482100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1340082
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 149380
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 890399
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 57043297,
+    "investicni_celkem_kc": 32995663,
+    "investicni_na_obyvatele_kc": 16843,
+    "let_s_investicni_dotaci": 6,
     "prijmy_celkem_kc": 388768265,
     "podil_pct": 14.7,
     "na_obyvatele_kc": 29119,
@@ -312,48 +1195,283 @@
     "2019": {
      "prijmy_kc": 17941589,
      "dotace_kc": 2209421,
+     "investicni_kc": 1406000,
+     "provozni_kc": 803421,
      "podil_pct": 12.3,
-     "na_obyvatele_kc": 2223
+     "na_obyvatele_kc": 2223,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 215500
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 48274
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 442964
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 5684
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 62000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1156000
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 250000
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 16695176,
      "dotace_kc": 1826424,
+     "investicni_kc": 0,
+     "provozni_kc": 1826424,
      "podil_pct": 10.9,
-     "na_obyvatele_kc": 1837
+     "na_obyvatele_kc": 1837,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 1268500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 222900
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 40511
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 129513
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 109000
+      },
+      "4129": {
+       "nazev": "Ostatní neinvestiční přijaté transfery od rozpočtů územní úrovně",
+       "kc": 56000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 24240105,
      "dotace_kc": 7376237,
+     "investicni_kc": 6234244,
+     "provozni_kc": 1141993,
      "podil_pct": 30.4,
-     "na_obyvatele_kc": 7421
+     "na_obyvatele_kc": 7421,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 225576
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 229900
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 24086
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 598431
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 64000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 5734244
+      },
+      "4221": {
+       "nazev": "Investiční přijaté transfery od obcí",
+       "kc": 250000
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 250000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 19246958,
      "dotace_kc": 762313,
+     "investicni_kc": 0,
+     "provozni_kc": 762313,
      "podil_pct": 4.0,
-     "na_obyvatele_kc": 767
+     "na_obyvatele_kc": 767,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 113217
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 225200
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 24778
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 91336
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2782
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 250000
+      },
+      "4129": {
+       "nazev": "Ostatní neinvestiční přijaté transfery od rozpočtů územní úrovně",
+       "kc": 55000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 22126964,
      "dotace_kc": 1221276,
+     "investicni_kc": 0,
+     "provozni_kc": 1221276,
      "podil_pct": 5.5,
-     "na_obyvatele_kc": 1229
+     "na_obyvatele_kc": 1229,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 235300
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 21113
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 923875
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2388
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 29320660,
      "dotace_kc": 5653555,
+     "investicni_kc": 5204329,
+     "provozni_kc": 449226,
      "podil_pct": 19.3,
-     "na_obyvatele_kc": 5688
+     "na_obyvatele_kc": 5688,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 226700
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 22535
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 66096
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 2600
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 67794
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 4204329
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1000000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 31991609,
      "dotace_kc": 9405343,
+     "investicni_kc": 8306800,
+     "provozni_kc": 1098543,
      "podil_pct": 29.4,
-     "na_obyvatele_kc": 9462
+     "na_obyvatele_kc": 9462,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 228900
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 23782
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 743345
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 3016
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 67000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 2982664
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 3676228
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 1647908
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 28454569,
+    "investicni_celkem_kc": 21151373,
+    "investicni_na_obyvatele_kc": 21279,
+    "let_s_investicni_dotaci": 4,
     "prijmy_celkem_kc": 161563061,
     "podil_pct": 17.6,
     "na_obyvatele_kc": 28626,
@@ -370,48 +1488,291 @@
     "2019": {
      "prijmy_kc": 70362422,
      "dotace_kc": 19011465,
+     "investicni_kc": 17583229,
+     "provozni_kc": 1428236,
      "podil_pct": 27.0,
-     "na_obyvatele_kc": 6522
+     "na_obyvatele_kc": 6522,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 58000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1138100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 179136
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 10000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 43000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 17383229
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 200000
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 58305351,
      "dotace_kc": 10093063,
+     "investicni_kc": 4409654,
+     "provozni_kc": 5683409,
      "podil_pct": 17.3,
-     "na_obyvatele_kc": 3462
+     "na_obyvatele_kc": 3462,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 3543250
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 962100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 1019059
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 10000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 149000
+      },
+      "4211": {
+       "nazev": "Investiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 4131812
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 77842
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 200000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 61657894,
      "dotace_kc": 7223811,
+     "investicni_kc": 2923856,
+     "provozni_kc": 4299955,
      "podil_pct": 11.7,
-     "na_obyvatele_kc": 2478
+     "na_obyvatele_kc": 2478,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 689014
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1016100
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 196943
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 2344899
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 15000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 38000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1965269
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 617787
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 340800
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 68491056,
      "dotace_kc": 4507479,
+     "investicni_kc": 2802752,
+     "provozni_kc": 1704727,
      "podil_pct": 6.6,
-     "na_obyvatele_kc": 1546
+     "na_obyvatele_kc": 1546,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 299198
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1000500
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 111029
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 45000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 249000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1578542
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1129700
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 94510
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 81113285,
      "dotace_kc": 6827622,
+     "investicni_kc": 2052322,
+     "provozni_kc": 4775299,
      "podil_pct": 8.4,
-     "na_obyvatele_kc": 2342
+     "na_obyvatele_kc": 2342,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 77200
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1081300
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 3164129
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 253670
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 199000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 1992645
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 59677
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 94596764,
      "dotace_kc": 3014442,
+     "investicni_kc": 1026252,
+     "provozni_kc": 1988190,
      "podil_pct": 3.2,
-     "na_obyvatele_kc": 1034
+     "na_obyvatele_kc": 1034,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 127000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1070200
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 259990
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 45000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 486000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 500000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 526252
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 99559748,
      "dotace_kc": 13683066,
+     "investicni_kc": 10152365,
+     "provozni_kc": 3530701,
      "podil_pct": 13.7,
-     "na_obyvatele_kc": 4694
+     "na_obyvatele_kc": 4694,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 65000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 1053800
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 2164717
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 45000
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 202183
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 198483
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 9953882
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 64360948,
+    "investicni_celkem_kc": 40950430,
+    "investicni_na_obyvatele_kc": 14048,
+    "let_s_investicni_dotaci": 7,
     "prijmy_celkem_kc": 534086520,
     "podil_pct": 12.1,
     "na_obyvatele_kc": 22079,
@@ -428,48 +1789,243 @@
     "2019": {
      "prijmy_kc": 13983231,
      "dotace_kc": 865179,
+     "investicni_kc": 0,
+     "provozni_kc": 865179,
      "podil_pct": 6.2,
-     "na_obyvatele_kc": 993
+     "na_obyvatele_kc": 993,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 164400
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 600279
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 71500
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 15815240,
      "dotace_kc": 3279629,
+     "investicni_kc": 1556518,
+     "provozni_kc": 1723111,
      "podil_pct": 20.7,
-     "na_obyvatele_kc": 3765
+     "na_obyvatele_kc": 3765,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 1052250
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 176500
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 398361
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 96000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 1414518
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 142000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 17892765,
      "dotace_kc": 3588106,
+     "investicni_kc": 3008155,
+     "provozni_kc": 579952,
      "podil_pct": 20.1,
-     "na_obyvatele_kc": 4120
+     "na_obyvatele_kc": 4120,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 185675
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 190300
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 75913
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 110064
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 18000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 187627
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 2773528
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 47000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 18776950,
      "dotace_kc": 1873370,
+     "investicni_kc": 903235,
+     "provozni_kc": 970135,
      "podil_pct": 10.0,
-     "na_obyvatele_kc": 2151
+     "na_obyvatele_kc": 2151,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 102490
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 192200
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 498263
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 83182
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 94000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 772235
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 131000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 23204871,
      "dotace_kc": 769599,
+     "investicni_kc": 159720,
+     "provozni_kc": 609879,
      "podil_pct": 3.3,
-     "na_obyvatele_kc": 884
+     "na_obyvatele_kc": 884,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 203700
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 122579
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 245000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 159720
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 42100380,
      "dotace_kc": 998755,
+     "investicni_kc": 44891,
+     "provozni_kc": 953864,
      "podil_pct": 2.4,
-     "na_obyvatele_kc": 1147
+     "na_obyvatele_kc": 1147,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 197400
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 541479
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 151485
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 44891
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 23153252,
      "dotace_kc": 1595290,
+     "investicni_kc": 250000,
+     "provozni_kc": 1345290,
      "podil_pct": 6.9,
-     "na_obyvatele_kc": 1832
+     "na_obyvatele_kc": 1832,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 201600
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 400000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 601513
+      },
+      "4121": {
+       "nazev": "Neinvestiční přijaté transfery od obcí",
+       "kc": 109677
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 250000
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 12969928,
+    "investicni_celkem_kc": 5922519,
+    "investicni_na_obyvatele_kc": 6800,
+    "let_s_investicni_dotaci": 6,
     "prijmy_celkem_kc": 154926689,
     "podil_pct": 8.4,
     "na_obyvatele_kc": 14891,
@@ -486,48 +2042,183 @@
     "2019": {
      "prijmy_kc": 5401766,
      "dotace_kc": 682527,
+     "investicni_kc": 532127,
+     "provozni_kc": 150400,
      "podil_pct": 12.6,
-     "na_obyvatele_kc": 2167
+     "na_obyvatele_kc": 2167,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 65400
+      },
+      "4129": {
+       "nazev": "Ostatní neinvestiční přijaté transfery od rozpočtů územní úrovně",
+       "kc": 56000
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 532127
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 5394992,
      "dotace_kc": 544100,
+     "investicni_kc": 0,
+     "provozni_kc": 544100,
      "podil_pct": 10.1,
-     "na_obyvatele_kc": 1727
+     "na_obyvatele_kc": 1727,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 406000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 68100
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 70000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 5496117,
      "dotace_kc": 282819,
+     "investicni_kc": 55000,
+     "provozni_kc": 227819,
      "podil_pct": 5.1,
-     "na_obyvatele_kc": 898
+     "na_obyvatele_kc": 898,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 91019
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 70800
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 66000
+      },
+      "4229": {
+       "nazev": "Ostatní investiční přijaté transfery od rozpočtů územní úrovně",
+       "kc": 55000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 6542570,
      "dotace_kc": 216737,
+     "investicni_kc": 0,
+     "provozni_kc": 216737,
      "podil_pct": 3.3,
-     "na_obyvatele_kc": 688
+     "na_obyvatele_kc": 688,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 75037
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 71700
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 70000
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 8249810,
      "dotace_kc": 563900,
+     "investicni_kc": 348000,
+     "provozni_kc": 215900,
      "podil_pct": 6.8,
-     "na_obyvatele_kc": 1790
+     "na_obyvatele_kc": 1790,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 77300
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 348000
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 8094030,
      "dotace_kc": 969286,
+     "investicni_kc": 729386,
+     "provozni_kc": 239900,
      "podil_pct": 12.0,
-     "na_obyvatele_kc": 3077
+     "na_obyvatele_kc": 3077,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 76400
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 454386
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 275000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 7648601,
      "dotace_kc": 208800,
+     "investicni_kc": 0,
+     "provozni_kc": 208800,
      "podil_pct": 2.7,
-     "na_obyvatele_kc": 663
+     "na_obyvatele_kc": 663,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 76300
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 100000
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 3468169,
+    "investicni_celkem_kc": 1664513,
+    "investicni_na_obyvatele_kc": 5284,
+    "let_s_investicni_dotaci": 4,
     "prijmy_celkem_kc": 46827886,
     "podil_pct": 7.4,
     "na_obyvatele_kc": 11010,
@@ -544,48 +2235,187 @@
     "2019": {
      "prijmy_kc": 16942685,
      "dotace_kc": 243800,
+     "investicni_kc": 0,
+     "provozni_kc": 243800,
      "podil_pct": 1.4,
-     "na_obyvatele_kc": 286
+     "na_obyvatele_kc": 286,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 182000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 32800
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 18422738,
      "dotace_kc": 2029046,
+     "investicni_kc": 0,
+     "provozni_kc": 2029046,
      "podil_pct": 11.0,
-     "na_obyvatele_kc": 2379
+     "na_obyvatele_kc": 2379,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 1119750
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 191100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 718196
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 19521178,
      "dotace_kc": 567589,
+     "investicni_kc": 0,
+     "provozni_kc": 567589,
      "podil_pct": 2.9,
-     "na_obyvatele_kc": 665
+     "na_obyvatele_kc": 665,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 198288
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 202700
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 110601
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 56000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 19786781,
      "dotace_kc": 1218027,
+     "investicni_kc": 92974,
+     "provozni_kc": 1125053,
      "podil_pct": 6.2,
-     "na_obyvatele_kc": 1428
+     "na_obyvatele_kc": 1428,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 105883
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 200800
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 818370
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 92974
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 20433538,
      "dotace_kc": 320800,
+     "investicni_kc": 0,
+     "provozni_kc": 320800,
      "podil_pct": 1.6,
-     "na_obyvatele_kc": 376
+     "na_obyvatele_kc": 376,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 202200
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 80000
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 22834644,
      "dotace_kc": 2033617,
+     "investicni_kc": 1707813,
+     "provozni_kc": 325804,
      "podil_pct": 8.9,
-     "na_obyvatele_kc": 2384
+     "na_obyvatele_kc": 2384,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 200500
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 61804
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 931300
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 576513
+      },
+      "4222": {
+       "nazev": "Investiční přijaté transfery od krajů",
+       "kc": 200000
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 22709727,
      "dotace_kc": 905872,
+     "investicni_kc": 0,
+     "provozni_kc": 905872,
      "podil_pct": 4.0,
-     "na_obyvatele_kc": 1062
+     "na_obyvatele_kc": 1062,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 201100
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 608272
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 64000
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 7318751,
+    "investicni_celkem_kc": 1800787,
+    "investicni_na_obyvatele_kc": 2111,
+    "let_s_investicni_dotaci": 2,
     "prijmy_celkem_kc": 140651291,
     "podil_pct": 5.2,
     "na_obyvatele_kc": 8580,
@@ -602,48 +2432,163 @@
     "2019": {
      "prijmy_kc": 8868232,
      "dotace_kc": 214500,
+     "investicni_kc": 0,
+     "provozni_kc": 214500,
      "podil_pct": 2.4,
-     "na_obyvatele_kc": 301
+     "na_obyvatele_kc": 301,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 103500
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 82000
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 9832138,
      "dotace_kc": 965300,
+     "investicni_kc": 0,
+     "provozni_kc": 965300,
      "podil_pct": 9.8,
-     "na_obyvatele_kc": 1354
+     "na_obyvatele_kc": 1354,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 798500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 126800
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 40000
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 10746187,
      "dotace_kc": 320194,
+     "investicni_kc": 0,
+     "provozni_kc": 320194,
      "podil_pct": 3.0,
-     "na_obyvatele_kc": 449
+     "na_obyvatele_kc": 449,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 136594
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 143600
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 40000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 18875504,
      "dotace_kc": 1267304,
+     "investicni_kc": 229564,
+     "provozni_kc": 1037741,
      "podil_pct": 6.7,
-     "na_obyvatele_kc": 1777
+     "na_obyvatele_kc": 1777,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 89182
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 148600
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 206000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 593959
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 229564
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 14955466,
      "dotace_kc": 198500,
+     "investicni_kc": 0,
+     "provozni_kc": 198500,
      "podil_pct": 1.3,
-     "na_obyvatele_kc": 278
+     "na_obyvatele_kc": 278,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 159900
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 18046501,
      "dotace_kc": 225000,
+     "investicni_kc": 0,
+     "provozni_kc": 225000,
      "podil_pct": 1.2,
-     "na_obyvatele_kc": 316
+     "na_obyvatele_kc": 316,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 161500
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 18258767,
      "dotace_kc": 1021910,
+     "investicni_kc": 824410,
+     "provozni_kc": 197500,
      "podil_pct": 5.6,
-     "na_obyvatele_kc": 1433
+     "na_obyvatele_kc": 1433,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 165000
+      },
+      "4213": {
+       "nazev": "Investiční přijaté transfery ze státních fondů",
+       "kc": 824410
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 4212708,
+    "investicni_celkem_kc": 1053974,
+    "investicni_na_obyvatele_kc": 1478,
+    "let_s_investicni_dotaci": 2,
     "prijmy_celkem_kc": 99582795,
     "podil_pct": 4.2,
     "na_obyvatele_kc": 5908,
@@ -660,48 +2605,159 @@
     "2019": {
      "prijmy_kc": 17394741,
      "dotace_kc": 234400,
+     "investicni_kc": 0,
+     "provozni_kc": 234400,
      "podil_pct": 1.3,
-     "na_obyvatele_kc": 235
+     "na_obyvatele_kc": 235,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 29000
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 205400
+      }
+     }
     },
     "2020": {
      "prijmy_kc": 17698402,
      "dotace_kc": 1462850,
+     "investicni_kc": 0,
+     "provozni_kc": 1462850,
      "podil_pct": 8.3,
-     "na_obyvatele_kc": 1467
+     "na_obyvatele_kc": 1467,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 1244750
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 218100
+      }
+     }
     },
     "2021": {
      "prijmy_kc": 18546278,
      "dotace_kc": 542452,
+     "investicni_kc": 0,
+     "provozni_kc": 542452,
      "podil_pct": 2.9,
-     "na_obyvatele_kc": 544
+     "na_obyvatele_kc": 544,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 220852
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 225600
+      },
+      "4113": {
+       "nazev": "Neinvestiční přijaté transfery ze státních fondů",
+       "kc": 96000
+      }
+     }
     },
     "2022": {
      "prijmy_kc": 24920408,
      "dotace_kc": 1254335,
+     "investicni_kc": 0,
+     "provozni_kc": 1254335,
      "podil_pct": 5.0,
-     "na_obyvatele_kc": 1258
+     "na_obyvatele_kc": 1258,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 113044
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 228000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 913291
+      }
+     }
     },
     "2023": {
      "prijmy_kc": 24382386,
      "dotace_kc": 353800,
+     "investicni_kc": 0,
+     "provozni_kc": 353800,
      "podil_pct": 1.5,
-     "na_obyvatele_kc": 355
+     "na_obyvatele_kc": 355,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 38600
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 240200
+      },
+      "4122": {
+       "nazev": "Neinvestiční přijaté transfery od krajů",
+       "kc": 75000
+      }
+     }
     },
     "2024": {
      "prijmy_kc": 24961496,
      "dotace_kc": 1083805,
+     "investicni_kc": 339768,
+     "provozni_kc": 744037,
      "podil_pct": 4.3,
-     "na_obyvatele_kc": 1087
+     "na_obyvatele_kc": 1087,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 63500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 231600
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 448937
+      },
+      "4216": {
+       "nazev": "Ostatní investiční přijaté transfery ze státního rozpočtu",
+       "kc": 339768
+      }
+     }
     },
     "2025": {
      "prijmy_kc": 27489971,
      "dotace_kc": 909232,
+     "investicni_kc": 0,
+     "provozni_kc": 909232,
      "podil_pct": 3.3,
-     "na_obyvatele_kc": 912
+     "na_obyvatele_kc": 912,
+     "polozky": {
+      "4111": {
+       "nazev": "Neinvestiční přijaté transfery z všeobecné pokladní správy státního rozpočtu",
+       "kc": 32500
+      },
+      "4112": {
+       "nazev": "Neinvestiční přijaté transfery ze státního rozpočtu v rámci souhrnného dotačního vztahu",
+       "kc": 231000
+      },
+      "4116": {
+       "nazev": "Ostatní neinvestiční přijaté transfery ze státního rozpočtu",
+       "kc": 645732
+      }
+     }
     }
    },
    "souhrn": {
     "dotace_celkem_kc": 5840874,
+    "investicni_celkem_kc": 339768,
+    "investicni_na_obyvatele_kc": 341,
+    "let_s_investicni_dotaci": 1,
     "prijmy_celkem_kc": 155393682,
     "podil_pct": 3.8,
     "na_obyvatele_kc": 5858,
