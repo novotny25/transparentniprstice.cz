@@ -100,14 +100,16 @@ TEMATA = [
  {"id": "pravni", "nadpis": "Právní a poradenské služby", "barva": "#e63562",
   "pol": ["5166"],
   "popis": "Výdaje na konzultační, poradenské a právní služby rostou nepřetržitě "
-           "od roku 2020 — každý rok jsou vyšší než ten předchozí.",
-  "nevime": "Z rozpočtu nevyčteme, kterých věcí se služby týkají, kdo je dodavatelem "
-            "ani jaká je sjednaná sazba. O detail smluv obec požádána byla; věc řeší Krajský úřad."},
+           "od roku 2020 — každý rok jsou vyšší než v tom předchozím. V roce 2025 na ně "
+           "z rozpočtu šlo víc než trojnásobek toho, co na hasiče.",
+  "nevime": "Z rozpočtu nevyčteme, čeho se služby týkají, kdo je dodavatelem ani jaká je "
+            "sjednaná sazba. O detail smluv byla obec požádána; krajský úřad 19. 8. 2026 "
+            "obci nařídil žádost vyřídit."},
  {"id": "uroky", "nadpis": "Úroky z úvěrů", "barva": "#af52de",
   "pol": ["5141"],
   "popis": "Kolik obec ročně zaplatí na úrocích. Nárůst souvisí s úvěrem, který obec "
            "čerpala v roce 2023 na pořízení nemovitosti; úroky se pak projevují i v rozpočtech "
-           "dalších let. Samotný nákup nemovitosti může být pro obec dobrý krok — o tom, "
+           "dalších let. Samotný nákup může být pro obec dobrý krok — o tom, "
            "jestli se úvěr vyplatil, rozhoduje využití pořízeného majetku, ne výše úroků.",
   "nevime": "Úroková sazba, doba splácení ani podmínky úvěru nejsou z rozpočtu patrné."},
  {"id": "skola", "nadpis": "Příspěvek základní a mateřské škole", "barva": "#f5a524",
@@ -119,11 +121,11 @@ TEMATA = [
   "nevime": "Rozpočet neukazuje, co konkrétně růst příspěvku pokrývá (energie, mzdy, provoz)."},
  {"id": "voda", "nadpis": "Voda a odpadní vody", "barva": "#0f9fbd",
   "par": ["2321", "2310"],
-  "popis": "Náklady na pitnou vodu, kanalizaci a čištění odpadních vod. Výrazný skok přišel "
-           "v roce 2023. Za první pololetí 2026 je přitom vyčerpáno víc než za celý rok 2025 — "
-           "pokud se tempo udrží, čeká nás další výrazný skok.",
-  "nevime": "Co přesně skok roku 2023 tvořilo a jak se náklady promítají do stočného, "
-            "z rozpočtu nevyplývá."},
+  "popis": "Výdaje na pitnou vodu, kanalizaci a čištění odpadních vod prudce vzrostly "
+           "v roce 2023. Za první pololetí 2026 jsou přitom náklady vyšší než za celý "
+           "rok 2025 — pokud se tempo udrží, čeká nás další citelný nárůst.",
+  "nevime": "Co nárůst v roce 2023 způsobilo a jak se náklady promítají do stočného, "
+            "z rozpočtu není patrné."},
 ]
 
 
@@ -198,9 +200,18 @@ def blok_temata():
     out.insert(1, {
         "id": "odpady", "n": "Odpadové hospodářství", "barva": "#a2845e",
         "popis": "Výdaje na svoz a zpracování odpadu rostou rychleji než poplatek, "
-                 "který za odpad platí občané. Rozdíl doplácí obec z ostatních příjmů.",
+                 "který za něj platí občané. Rozdíl doplácí obec z ostatních příjmů.",
         "nevime": "Smlouvu se svozovou firmou, ceník, množství odpadu v tunách ani míru "
                   "vytřídění rozpočet neukazuje.",
+        "komentar": "Krytí 40 % může působit jako vstřícnost k občanům, podstata je ale "
+                    "jinde: tlak na výdaje dál poroste, protože zákonný poplatek za "
+                    "skládkování využitelného odpadu se každý rok zvyšuje — až na 1 850 Kč "
+                    "za tunu v roce 2029. Sníženou sazbu 500 Kč za tunu platí jen obce, "
+                    "které splní zákonné cíle třídění. Pokud obec odpadové hospodářství "
+                    "nezefektivní — víc třídit, vyřešit bioodpad — výdaje se budou dál "
+                    "zvyšovat a dřív nebo později se promítnou do poplatku pro občany.",
+        "kpozn": "Sazby: zákon č. 541/2020 Sb., příloha č. 9. Jde o komentář autora — "
+                 "interpretaci, ne doložený závěr.",
         "rada": vyd, "rada2": popl, "l1": "Výdaje obce na odpad", "l2": "Poplatky od občanů",
         "kryti": [round(p / x * 100) if x else 0 for p, x in zip(popl, vyd)],
         **({"h1": h1(par=odp_par), "h1b": h1(pol={"1340", "1345"}), "odhad": True,

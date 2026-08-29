@@ -41,7 +41,9 @@ VZORY = [
     (r"\bID\s*(?:DS|datové\s*schránky)?\s*[:\s]\s*[a-z0-9]{7}\b", "ID datové schránky"),
     (r"(?:datum\s+narození|nar\.)\s*[:\s]*\d{1,2}\.\s?\d{1,2}\.\s?(?:19|20)\d{2}", "datum narození"),
     (r"\bAdresa\s+trvalého\s+pobytu\s*:?[^\n]{0,40}", "adresa"),
-    (r"\b\d{6}\s?/\s?\d{3,4}\b", "rodné číslo"),
+    # rodné číslo: RRMMDD/XXX(X) — vyžadujeme platný měsíc narození (01–12,
+    # u žen +50 → 51–62), jinak vzor chytá i čísla jednací typu „123854/2026"
+    (r"\b\d{2}(?:0[1-9]|1[0-2]|5[1-9]|6[0-2])\d{2}\s?/\s?\d{3,4}\b", "rodné číslo"),
     (r"[\w.\-]+@(?!prstice\.cz|kr-jihomoravsky\.cz)[\w.\-]+\.\w{2,}", "e-mail"),
     (r"\b(?:\+420\s?)?7\d{2}\s?\d{3}\s?\d{3}\b", "telefon"),
 ]

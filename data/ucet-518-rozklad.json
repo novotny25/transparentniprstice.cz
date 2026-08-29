@@ -5,7 +5,7 @@
   "baze": "accrual_cost",
   "poznamka": "Rozklad ukazuje, které skupiny nákladů tvoří meziroční rozdíl. Není tvrzením o důvodu objednávky. Běžné ceny, bez inflace.",
   "pravidla_oprav": "verzovaná privátní pravidla (kategorie-opravy.yml); storna párována k původnímu dokladu",
-  "vygenerovano": "2026-08-27 06:23"
+  "vygenerovano": "2026-08-29 23:06"
  },
  "kategorie_po_letech_kc": {
   "Bankovní poplatky": {

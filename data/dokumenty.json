@@ -1,7 +1,7 @@
 {
  "meta": {
   "poznamka": "Veřejné anonymizované deriváty. Odstraněny: adresa, ID datové schránky, datum narození, rodné číslo, soukromý e-mail a telefon. Text je z dokumentu skutečně odstraněn, nejen překryt.",
-  "vygenerovano": "2026-08-27 20:14"
+  "vygenerovano": "2026-08-29 23:09"
  },
  "dokumenty": [
   {
@@ -9,70 +9,70 @@
    "popis": "Žádost o smlouvy, faktury a výkazy práce k vybraným položkám účtu 518",
    "stran": 5,
    "velikost_kb": 314,
-   "sha256": "14ae24bc10fef10c"
+   "sha256": "d6162afcb932758f"
   },
   {
    "soubor": "2026-07-17_stiznost-16a.pdf",
    "popis": "Stížnost na postup obce při vyřizování žádosti (§ 16a InfZ)",
    "stran": 3,
    "velikost_kb": 49,
-   "sha256": "b39708d95ab78037"
+   "sha256": "569143c9ffb577c0"
   },
   {
    "soubor": "2026-07-28_opatreni-proti-necinnosti.pdf",
    "popis": "Žádost ke Krajskému úřadu o opatření proti nečinnosti obce",
    "stran": 2,
    "velikost_kb": 46,
-   "sha256": "08f1ba2495e6ed3b"
+   "sha256": "de5394498e9b7f8e"
   },
   {
    "soubor": "2026-07-17_odpoved-obce-OUPR-867-2026.pdf",
    "popis": "Sdělení obce Prštice — odpověď na žádost z 1. 7. 2026",
    "stran": 2,
    "velikost_kb": 138,
-   "sha256": "79db46f44998692f"
+   "sha256": "7de6b36fb3774668"
   },
   {
    "soubor": "2026-08-19_rozhodnuti-KrU-JMK.pdf",
    "popis": "Rozhodnutí Krajského úřadu JMK — přikazuje obci žádost vyřídit",
    "stran": 6,
    "velikost_kb": 239,
-   "sha256": "84853b5abfcbb1e3"
+   "sha256": "fb26350af57df1b2"
   },
   {
    "soubor": "2026-08-15_zadost-GDPR-pausal.pdf",
    "popis": "Žádost o rámcovou smlouvu a rozsah plnění pověřence GDPR",
    "stran": 2,
    "velikost_kb": 27,
-   "sha256": "740a4c3a3996ade6"
+   "sha256": "315b981ccfe915e0"
   },
   {
    "soubor": "2026-08-15_zadost-soudni-rizeni.pdf",
    "popis": "Žádost o přehled soudních řízení obce od 1. 1. 2018",
    "stran": 2,
    "velikost_kb": 24,
-   "sha256": "18890845f272364d"
+   "sha256": "4d4fb85eabd58b66"
   },
   {
    "soubor": "2026-08-25_zadost-ucet-511.pdf",
    "popis": "Žádost o rozpis účtu 511 „Opravy a udržování“ za období 1. 1. 2020 – 30. 6. 2026",
    "stran": 2,
    "velikost_kb": 25,
-   "sha256": "c2916b99c507b17f"
+   "sha256": "e7148f9d93351976"
   },
   {
    "soubor": "2026-06-23_zadost-zpravodaje.pdf",
    "popis": "Žádost o obecní zpravodaje ve strojově čitelné podobě",
    "stran": 1,
    "velikost_kb": 145,
-   "sha256": "b7d2c0542c016f87"
+   "sha256": "6f22ae712ffa9977"
   },
   {
    "soubor": "2026-08-26_zadost-smernice-zakazky.pdf",
    "popis": "Žádost o vnitřní pravidla pro zadávání veřejných zakázek a finanční kontrolu",
    "stran": 3,
    "velikost_kb": 58,
-   "sha256": "4a878301b744f1e5"
+   "sha256": "f8f8a1b3b90d6413"
   }
  ]
 }

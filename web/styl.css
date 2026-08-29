@@ -43,6 +43,7 @@
   .hero .inner{max-width:900px;margin-inline:auto;padding:88px 24px 56px}
   .kicker{color:var(--accent);font-weight:600;font-size:.95rem;margin:0 0 16px}
   .hero .lede{font-size:clamp(1.15rem,2.3vw,1.5rem);color:var(--muted);max-width:37ch;margin:22px auto 0;line-height:1.42}
+.hero .hero-autor{font-size:.92rem;color:var(--muted);margin:10px 0 0}
   .hero .lede strong{color:var(--text);white-space:nowrap}
   .hero .zamek{display:block;width:min(780px,100%);height:auto;margin:38px auto -14px}
   @media(max-width:600px){.hero .zamek{margin-top:26px}}
