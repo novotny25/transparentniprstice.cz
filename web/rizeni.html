@@ -144,7 +144,7 @@
     pop.forEach(function(r,i){
       var v=a[i],h=v/max*(H-pT-pB),cx=g*i+g/2,y=H-pB-h,nep=(t.h1&&i===N-1);
       out+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+
-        '" rx="5" fill="#0071e3"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč</title></rect>';
+        '" rx="5" fill="var(--accent)"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč</title></rect>';
       out+='<text x="'+cx+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#6e6e73">'+(v/1000).toFixed(0)+'</text>';
       out+='<text x="'+cx+'" y="'+(H-5)+'" text-anchor="middle" font-size="11" fill="'+(nep?'#b9bcc3':'#6e6e73')+'">'+r+'</text>';
     });

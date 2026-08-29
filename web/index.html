@@ -727,10 +727,10 @@
       var v=hod[i],h=Math.abs(v)/max*(H-pT-pB),cx=g*i+g/2,akt=(r===aktualni);
       var y=H-pB-h;
       s+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+
-         '" rx="4" fill="'+(akt?'#0071e3':'#c9d3dd')+'"><title>'+r+': '+fmt(v)+' Kč</title></rect>';
+         '" rx="4" fill="'+(akt?'var(--accent)':'#c9d3dd')+'"><title>'+r+': '+fmt(v)+' Kč</title></rect>';
       s+='<text x="'+cx+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle" font-size="11"'+
-         (akt?' font-weight="700" fill="#0071e3"':' fill="#6e6e73"')+'>'+pop(v)+'</text>';
-      s+='<text x="'+cx+'" y="'+(H-4)+'" text-anchor="middle"'+(akt?' fill="#0071e3" font-weight="600"':'')+'>'+r+'</text>';
+         (akt?' font-weight="700" fill="var(--accent)"':' fill="#6e6e73"')+'>'+pop(v)+'</text>';
+      s+='<text x="'+cx+'" y="'+(H-4)+'" text-anchor="middle"'+(akt?' fill="var(--accent)" font-weight="600"':'')+'>'+r+'</text>';
     });
 
     var prvni=hod[0],posl=hod[n-1];
@@ -982,7 +982,7 @@
       pop.forEach(function(r,i){
         var v=a[i],h=v/max*(H-pT-pB),cx=g*i+g/2,y=H-pB-h,nep=(t.h1&&i===N-1);
         s+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+
-           '" rx="5" fill="#0071e3"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč'+(nep?' (leden–červen)':'')+'</title></rect>';
+           '" rx="5" fill="var(--accent)"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč'+(nep?' (leden–červen)':'')+'</title></rect>';
         s+='<text x="'+cx+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#6e6e73">'+fp(v)+'</text>';
         s+='<text x="'+cx+'" y="'+(H-5)+'" text-anchor="middle"'+(nep?' fill="#b9bcc3"':'')+'>'+r+'</text>';
       });
