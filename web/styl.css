@@ -503,3 +503,21 @@ section[id],h2[id]{scroll-margin-top:118px}
 .zjbanner .zbpr{font-size:.97rem;line-height:1.6;color:var(--text);margin:0 0 16px;max-width:88ch}
 .zjbanner .go{margin:0;font-size:.94rem;font-weight:600;color:var(--accent)}
 @media(max-width:560px){.zjbanner{padding:24px 22px}}
+
+/* Úvodní bilance + co na webu najdete */
+#souhrn{padding-top:40px;padding-bottom:0}
+.shrn2{display:grid;grid-template-columns:1.45fr 1fr;gap:22px;align-items:start}
+@media(max-width:860px){.shrn2{grid-template-columns:1fr}}
+.shrnlist{list-style:none;margin:14px 0 0;padding:0}
+.shrnlist a{display:flex;gap:11px;align-items:baseline;padding:10px 12px;margin:0 -12px;border-radius:12px;
+  color:inherit;font-size:.99rem;line-height:1.55}
+.shrnlist a:hover{background:#f5f7fa;text-decoration:none}
+.shrnlist a::before{content:"—";color:var(--accent);font-weight:700;flex:none}
+.shrnlist b{color:var(--text)}
+.shrnlist .sip{color:var(--accent);font-weight:600;white-space:nowrap}
+.najdete{list-style:none;margin:14px 0 0;padding:0}
+.najdete li+li{border-top:1px solid var(--line)}
+.najdete a{display:block;padding:11px 2px;color:inherit;font-size:.95rem;line-height:1.5}
+.najdete a:hover{text-decoration:none;background:#f7f8fa;border-radius:10px}
+.najdete b{color:var(--accent)}
+.najdete .pop{display:block;color:var(--muted);font-size:.88rem;margin-top:1px}
