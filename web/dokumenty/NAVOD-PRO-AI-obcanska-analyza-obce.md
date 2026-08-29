@@ -1,6 +1,6 @@
 # Občanská datová analýza hospodaření obce — provozní manuál
 
-**Verze 1.0 · 27. 8. 2026 · Petr Novotný, transparentniprstice.cz**
+**Verze 1.1 · 29. 8. 2026 · Petr Novotný, transparentniprstice.cz**
 
 Tenhle dokument je psaný tak, aby podle něj **AI asistent postavil obdobný web
 pro libovolnou českou obec**. Obsahuje konkrétní zdroje dat, adresy rozhraní,
@@ -23,7 +23,7 @@ který trval zhruba čtyři měsíce. Šablona webu i skripty jsou volně k disp
 
 ## Jak tenhle manuál použít
 
-**Jste-li AI asistent:** čtěte celé, postupujte po částech A → F a po každé
+**Jste-li AI asistent:** čtěte celé, postupujte po částech A → G a po každé
 části ukažte člověku výsledek. Nikdy nepokračujte, když neprošla kontrola.
 Části D a F obsahují rozhodnutí, která **musí udělat člověk**.
 
@@ -529,6 +529,80 @@ Tenhle krok nevynechávejte. Chrání vás právně i reputačně a je to slušn
 
 ---
 
+# ČÁST G — Redakce a iterace: práce, která rozhoduje
+
+Tahle část v první verzi manuálu chyběla — a je možná nejdůležitější.
+Všechno výše popsané vám dá **správný web. Tahle část z něj dělá web,
+kterému lidé porozumí a uvěří.**
+
+## G1. První verze je polotovar
+
+První nasazená verze bývá datově v pořádku — a přesto jí laik nerozumí.
+V Pršticích vznikla za víkend; **ze 60 revizí webu jich ale 45 přišlo až
+po ní**, rozložených do dalších týdnů. Počítejte s tím dopředu a pracujte
+v malých cyklech: *připomínka → úprava → validace → nasazení → ověření na
+živém webu*. Každá úprava malá a hned venku, žádné hromadění změn.
+
+## G2. Rozhodnutí, která musí udělat člověk
+
+AI umí navrhnout formulaci, ale tato rozhodnutí za autora udělat nesmí —
+bez nich web sklouzne buď k bulváru, nebo k nečitelné opatrnosti:
+
+- **Pojmenování zjištění.** U nás „stojí za pozornost" a „závažná zjištění
+  k ověření" — nikdy „podezřelé", „tunel", „skandál".
+- **Co je hlavní sdělení** a v jakém pořadí zjištění stojí. (Hlavním
+  zjištěním se u nás staly dotace — ale až po průzkumu okolních obcí,
+  který to doložil.)
+- **Co na web nepatří**, i když je to lákavé: fotky zastupitelů (autorská
+  práva), přepočty nákladů „na občana" ve větách (sugestivní; jako přepínač
+  grafu v pořádku), přesný počet zjištění v úvodu („několik věcí" — ať se
+  počty na různých místech webu nerozjedou).
+- **Tón komentářů.** Komentář autora je vždy podepsaný, graficky oddělený
+  a formulovaný jako možné vysvětlení, ne jako závěr.
+
+## G3. Tvrďte jen tolik, kolik unesou data — a zkoušejte se shodit
+
+Dvě pravidla, která nás opakovaně zachránila:
+
+1. **Eskalace tvrzení až po datech.** Chcete-li říct víc, než současná data
+   unesou, nejdřív si dodělejte průzkum. U dotací jsme tvrzení napřed
+   **zmírnili**, pak udělali srovnání dvanácti okolních obcí — a teprve
+   s ním v ruce napsali „poslední z dvanácti". Obráceně to nejde.
+2. **Protiargumentový test.** Než zjištění zveřejníte, zkuste ho sami
+   shodit nejsilnější námitkou, jakou by vznesl obhájce obce. (U dotací:
+   „sousedé jen dohánějí kanalizaci" — data ukázala, že ji 8 z 9 obcí má
+   hotovou stejně jako naše obec.) Když námitku data vyvrátí, dejte na web
+   **obojí** — námitku i vyvrácení; je to přesvědčivější než tvrzení samo.
+   Když ji vyvrátit neumíte, tvrzení zmírněte.
+
+## G4. Testovací čtenáři
+
+Dejte web 2–3 lidem, kteří o účetnictví nevědí nic, a ptejte se, **co si
+zapamatovali** — ne jestli se jim líbí. Co si nezapamatovali, není napsané
+dost jasně. Každou připomínku proměňte v konkrétní úpravu; neřešte vkus,
+řešte srozumitelnost. Připomínky choďte sbírat opakovaně — web se mění.
+
+## G5. Korektura nakonec — i v datech
+
+Po obsahovém ustálení projděte celý web jazykově: shoda podmětu
+s přísudkem, opakující se slova, české uvozovky „ ", typografické mezery.
+**Pozor na past:** velká část textů webu bývá v JSON datech, ne v HTML —
+korektura je musí projít taky (u nás z toho bylo 63 oprav). Po každém
+zásahu do JSON ověřte, že soubor dál parsuje.
+
+## G6. Web je živý dokument
+
+- **Věty s datem spotřeby** pište s pevným datem („obec doloží do
+  9. září 2026"), nikdy relativně („do 15 dnů") — relativní údaje tiše
+  zastarají a nikdo si toho nevšimne.
+- Nasaďte **denní hlídku**: skript, který kontroluje funkčnost odkazů,
+  existenci kotev a dokumentů, čísla v HTML proti datovým souborům
+  a věty s prošlým datem spotřeby.
+- **Každá odpověď obce je nová kapitola:** doplnit, přeznačit
+  „nezjištěno" na doložené, případně opravit — a zapsat do chronologie.
+
+---
+
 # Příloha 1 — Kontrolní seznam pro AI
 
 Než ohlásíte hotovo, projděte:
@@ -541,6 +615,8 @@ Než ohlásíte hotovo, projděte:
 6. Prošly všechny tři kontroly?
 7. Prohlédl jsem si výsledek anonymizace očima?
 8. Dal jsem obci prostor k vyjádření?
+9. Otestoval jsem hlavní zjištění nejsilnější protiargumentací (G3)?
+10. Prošla závěrečná jazyková korektura — včetně textů v datových souborech?
 
 ## Příloha 2 — Odhad času
 
@@ -550,12 +626,15 @@ Než ohlásíte hotovo, projděte:
 | B — sběr dat ze všech zdrojů | 3–4 hodiny |
 | C — analýza a hledání zajímavého | 4–6 hodin |
 | D — žádosti (čistý čas psaní) | 2 hodiny + čekání na lhůty |
-| E — stavba webu | 1–2 víkendy |
+| E — stavba webu (první verze) | 1–2 víkendy |
 | F — kontroly, anonymizace, nasazení | 4 hodiny |
+| G — redakce a iterace po spuštění | **2–3 týdny po večerech — největší položka** |
 
-**Celkem zhruba 2–4 víkendy** rozložené do několika měsíců, protože se čeká
-na odpovědi. Náklady: doména ~300 Kč/rok, hosting zdarma, AI asistent
-~500 Kč/měsíc.
+**Poctivý souhrn:** analýza dat a žádosti zaberou 2–4 odpoledne. Web jako
+transparentniprstice.cz je ale se stavbou, redakcí a iterací zhruba **měsíc
+práce po večerech** — a kalendářně se vše rozloží do několika měsíců,
+protože se čeká na odpovědi obce. Náklady: doména ~300 Kč/rok, hosting
+zdarma, AI asistent ~500 Kč/měsíc.
 
 ---
 
