@@ -1,0 +1,79 @@
+{
+ "meta": {
+  "obec": "Prštice",
+  "kod_obce": "583707",
+  "ukazatel": "bilance pohybu obyvatel — narození, zemřelí, přistěhovalí, vystěhovalí",
+  "zdroj": "ČSÚ — Databáze demografických údajů za obce ČR, soubor za okres Brno-venkov (cz0643.xlsx)",
+  "zdroj_url": "https://csu.gov.cz/databaze-demografickych-udaju-za-obce-cr",
+  "obdobi": "2015–2024",
+  "poznamka": "Součet přírůstků (+82) nesedí na rozdíl stavů 1. 1. 2015 → 1. 1. 2025 (931 → 997 = +66), protože revize podle Sčítání 2021 snížila stav obce o 16 osob mimo bilanci (stav 31. 12. 2020 = 985, stav 1. 1. 2021 = 969).",
+  "stazeno": "2026-08-29"
+ },
+ "roky": {
+  "2015": {
+   "narozeni": 8,
+   "zemreli": 4,
+   "pristehovali": 15,
+   "vystehovali": 12
+  },
+  "2016": {
+   "narozeni": 14,
+   "zemreli": 11,
+   "pristehovali": 32,
+   "vystehovali": 22
+  },
+  "2017": {
+   "narozeni": 10,
+   "zemreli": 13,
+   "pristehovali": 22,
+   "vystehovali": 15
+  },
+  "2018": {
+   "narozeni": 13,
+   "zemreli": 6,
+   "pristehovali": 32,
+   "vystehovali": 20
+  },
+  "2019": {
+   "narozeni": 6,
+   "zemreli": 11,
+   "pristehovali": 34,
+   "vystehovali": 32
+  },
+  "2020": {
+   "narozeni": 14,
+   "zemreli": 11,
+   "pristehovali": 27,
+   "vystehovali": 16
+  },
+  "2021": {
+   "narozeni": 6,
+   "zemreli": 8,
+   "pristehovali": 20,
+   "vystehovali": 9
+  },
+  "2022": {
+   "narozeni": 13,
+   "zemreli": 7,
+   "pristehovali": 24,
+   "vystehovali": 26
+  },
+  "2023": {
+   "narozeni": 9,
+   "zemreli": 3,
+   "pristehovali": 31,
+   "vystehovali": 38
+  },
+  "2024": {
+   "narozeni": 10,
+   "zemreli": 4,
+   "pristehovali": 26,
+   "vystehovali": 16
+  }
+ },
+ "soucty": {
+  "prirozeny_prirustek": 25,
+  "saldo_migrace": 57,
+  "celkem": 82
+ }
+}
