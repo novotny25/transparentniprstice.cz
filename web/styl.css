@@ -3,7 +3,7 @@
     color-scheme: light;
     --bg:#ffffff; --bg-soft:#fbfbfd; --card:#ffffff;
     --text:#1d1d1f; --muted:#6e6e73; --faint:#86868b;
-    --accent:#0071e3; --line:#ececf0;
+    --accent:#2c5c8f; --line:#ececf0;
     --pos:#248a3d; --neg:#c0392b;
     --blue:#0a84ff; --orange:#f08a00; --indigo:#5e5ce6;
     --green:#1a9e4b; --teal:#0f9fbd; --pink:#e63562;
@@ -34,7 +34,7 @@
   .navrow{max-width:1120px;margin-inline:auto;padding:12px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px}
   .brand{font-weight:700;font-size:1.05rem;color:var(--text);display:flex;align-items:center;gap:9px;margin-right:auto;letter-spacing:-.01em}
   .brand:hover{text-decoration:none}
-  .brand svg{width:22px;height:22px;flex:none}
+  .brand svg{width:26px;height:26px;flex:none}
   nav.site a{color:var(--muted);font-size:.92rem;padding:4px 2px}
   nav.site a:hover{color:var(--text);text-decoration:none}
 
