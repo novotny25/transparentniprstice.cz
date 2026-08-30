@@ -20,6 +20,7 @@
 <meta property="og:image:alt" content="Ilustrace zámku v Pršticích">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="author" content="Petr Novotný">
+<script>document.documentElement.className+=" js";</script>
 <link rel="stylesheet" href="styl.css">
 </head>
 <body>
@@ -41,7 +42,7 @@
       <a href="o-webu.html">O webu</a>
     </nav>
   </div>
-  <div class="navrow podnav" aria-label="Části stránky Hospodaření">
+  <nav class="navrow podnav" aria-label="Části stránky Hospodaření">
       <span class="sipka">Na této stránce:</span>
       <a href="#souhrn">Shrnutí</a>
       <a href="#zjisteni-prehled">Stojí za pozornost</a>
@@ -52,7 +53,7 @@
       <a href="#zmeny">Rostoucí výdaje</a>
       <a href="#ucet518">Účet 518</a>
       <a href="#rok2025">Rozpočet zblízka</a>
-    </div>
+    </nav>
 </header>
 
 
@@ -76,11 +77,11 @@
   <section id="souhrn" class="wide reveal">
     <div class="shrn2">
       <div class="card">
-        <h3>Bilance posledních let v sedmi větách</h3>
+        <h2 class="h3like">Bilance posledních let v sedmi větách</h2>
         <p class="sub" style="margin-bottom:0">Jen shrnutí toho, co ukázala veřejná data. Každá věta vede na podrobný rozbor s doklady.</p>
         <ul class="bilance">
           <li><a href="#dotace" style="--zb:#1a9e4b"><span class="cif">12. z 12<small>obcí v okolí</small></span><span class="tx">skončily Prštice v čerpání <b>dotací na rozvoj</b>. Obec téměř nežádá — zatímco sousedé si za dotace staví chodníky, školky a hasičárny. <span class="sip">↓</span></span></a></li>
-          <li><a href="#p-pravni" style="--zb:#5e5ce6"><span class="cif">50 tis. Kč<small>měsíčně</small></span><span class="tx">platí obec za <b>právní služby</b>. Faktury a výkazy práce k nim odmítla doložit — zakročit musel až krajský úřad, který doložení nařídil. Na detail čekáme. <span class="sip">↓</span></span></a></li>
+          <li><a href="#p-pravni" style="--zb:#5e5ce6"><span class="cif">50 tis. Kč<small>měsíčně</small></span><span class="tx">platí obec v roce 2025 za <b>právní služby</b>. Faktury a výkazy práce k nim odmítla doložit — zakročit musel až krajský úřad, který doložení nařídil. Na detail čekáme. <span class="sip">↓</span></span></a></li>
           <li><a href="#p-gdpr" style="--zb:#e63562"><span class="cif">22 500 Kč<small>měsíčně</small></span><span class="tx">platí za <b>pověřence GDPR</b> — stejná služba se obcím této velikosti běžně nabízí za cenu kolem 500&nbsp;korun měsíčně. <span class="sip">↓</span></span></a></li>
           <li><a href="#t-voda" style="--zb:#0f9fbd"><span class="cif">+74 %<small>od roku 2019</small></span><span class="tx">vzrostly výdaje na <b>vodu a odpadní vody</b>. A rostou dál — jen první pololetí 2026 stálo víc než celý rok 2025. <span class="sip">↓</span></span></a></li>
           <li><a href="#t-odpady" style="--zb:#a2845e"><span class="cif">+82 %<small>od roku 2019</small></span><span class="tx">vzrostly výdaje na <b>odpadové hospodářství</b> — poplatky od občanů je v roce 2025 pokryly už jen ze 40&nbsp;% a rozdíl obec doplácí. <span class="sip">↓</span></span></a></li>
@@ -90,7 +91,7 @@
         <p class="src">Vše z veřejných zdrojů a z podkladů poskytnutých obcí; zdroje jsou uvedené u každého rozboru. Nejde o hodnocení — <a href="o-webu.html">o webu</a>.</p>
       </div>
       <div class="card">
-        <h3>Co na webu najdete</h3>
+        <h2 class="h3like">Co na webu najdete</h2>
         <ul class="najdete">
           <li><a href="#rok2025"><b>Rozklikávací rozpočet od roku 2019</b><span class="pop">každá koruna až do poslední položky</span></a></li>
           <li><a href="#ucet518"><b>Nakupované služby do detailu</b><span class="pop">účet 518; po doložení obcí přibudou opravy až na dodavatele</span></a></li>
@@ -122,7 +123,7 @@
       <a class="zjkarta" href="#p-pravni" style="--zb:#5e5ce6">
         <p class="k">Právní služby</p>
         <p class="v">≈ 600 <small>tis. Kč ročně</small></p>
-        <p class="c">stojí obec právní služby. Faktury, smlouvu i výkazy práce obec <strong>odmítla doložit</strong> — krajský úřad jí nařídil naši žádost vyřídit.</p>
+        <p class="c">stojí obec právní služby od roku 2023. Faktury, smlouvu i výkazy práce obec <strong>odmítla doložit</strong> — krajský úřad jí nařídil naši žádost vyřídit.</p>
         <p class="go">Podívat se na data ↓</p>
       </a>
       <a class="zjkarta" href="#t-voda" style="--zb:#0f9fbd">
@@ -143,7 +144,7 @@
       <h3>Prštice přestaly žádat o dotace — jako jediné v okolí</h3>
       <p class="lead">Zatímco sousední obce si za dotace stavěly chodníky, školky, hřiště a hasičské zbrojnice, <strong>Prštice o dotace prakticky přestaly žádat</strong>. Obce kolem se díky nim rozvíjejí, Prštice na to rezignovaly. A není to tím, že by sousedé jen doháněli kanalizaci — tu má osm z devíti obcí hotovou stejně jako Prštice.</p>
       <div class="zbcisla">
-        <div><p class="v">12. z 12</p><p class="k">skončily Prštice v čerpání dotací na obyvatele mezi okolními obcemi — na posledním místě</p></div>
+        <div><p class="v">12. z 12</p><p class="k">skončily Prštice v čerpání dotací na obyvatele mezi okolními obcemi — na posledním místě. Počítány všechny přijaté transfery 2019–2025 dle MONITORu</p></div>
         <div><p class="v">33,8 mil. → 1,0 mil.</p><p class="k">Kč získala obec na dotacích v letech 2012–2018 a pak v letech 2019–2025. Dřív to uměla</p></div>
         <div><p class="v">0 Kč</p><p class="k">z evropského programu LEADER — obec jako jediná z okolí není v MAS Bobrava</p></div>
       </div>
@@ -319,7 +320,7 @@
       <div class="phead"><span class="poradi">1</span><h3>Pověřenec GDPR: 22 500 Kč měsíčně, běžná cena je ve stovkách korun</h3>
         <span class="stav">Podklady vyžádány</span></div>
       <div class="ctyri">
-        <div><p class="lab">Co víme</p><p>V roce 2025 se v účetnictví objevila nová pravidelná platba za pověřence pro GDPR — <b>10 zápisů po 27 225 Kč</b>. V letech 2022–2024 tato položka v účetním detailu není. Obec uvedla, že pověřenectví je vykonáváno <b>pro obec i pro základní a mateřskou školu</b>. <span class="chip zdroj">zdroj</span></p></div>
+        <div><p class="lab">Co víme</p><p>V roce 2025 se v účetnictví objevila nová pravidelná platba za pověřence pro GDPR — <b>10 zápisů po 27 225 Kč</b>. V letech 2022–2024 tato položka v účetním detailu není. Obec uvedla, že pověřenectví je vykonáváno <b>pro obec i pro základní a mateřskou školu</b>. <a class="chip zdroj" href="https://github.com/novotny25/transparentniprstice.cz/blob/main/data/ucet-518-polozky-public.csv">zdroj</a></p></div>
         <div><p class="lab">Co jsme vypočítali</p><p>Za rok 2025 celkem <b>272 250 Kč</b>. Částka 27 225 Kč odpovídá <b>22 500 Kč bez DPH měsíčně</b>. V 1. pololetí 2026 platby pokračují — další <b>108 900 Kč</b>. Celkem tak obec za pověřence od začátku roku 2025 zaplatila už <b>381 150 Kč</b>. <span class="chip vypocet">výpočet</span></p></div>
         <div><p class="lab">Co zatím nevíme</p><p>Rámcovou smlouvu, sjednaný rozsah plnění a dodavatele této konkrétní služby. V účetnictví jsou platby označované střídavě jako „GDPR“ i „právní služby“, což naznačuje souvislost s advokátní kanceláří obce — potvrdí to ale až smlouva. <span class="chip nezjisteno">nezjištěno</span></p></div>
         <div><p class="lab">Jak se vyjádřila obec</p><p>Sdělila, že pověřenectví pokrývá obec i školu a že náklady zahrnují i dobu od jeho vzniku v roce 2018. Rámcovou smlouvu ani rozsah plnění nedoložila.</p></div>
@@ -333,13 +334,14 @@
         <p class="varovani"><b>Co by to mohlo vyvrátit:</b> pokud by smlouva ukázala výrazně širší rozsah plnění, než jaký běžné ceníky pokrývají, byl by rozdíl vysvětlitelný. Proto o smlouvu a popis rozsahu žádáme — <b>naše domněnka se potvrdí, nebo vyvrátí až podle toho, co obec doloží</b>. Do té doby jde o indicii, ne o závěr. <span class="chip zdroj">zdroj</span> veřejné ceníky poskytovatelů, ověřeno 26. 8. 2026</p>
       </div>
       <p class="otazky"><b>Otázky k dosledování:</b> Jaký je sjednaný měsíční paušál a co přesně zahrnuje? Kdo službu dodává? Proběhl před uzavřením smlouvy průzkum trhu nebo oslovení více dodavatelů?</p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#p-pravni">Další: právní služby →</a></p>
     </div>
 
     <div class="polozka" id="p-pravni">
       <div class="phead"><span class="poradi">2</span><h3>Právní služby: 2,1 milionu za čtyři roky — podrobnosti musí obec doložit</h3>
         <span class="stav">Kraj rozhodl v náš prospěch</span></div>
       <div class="ctyri">
-        <div><p class="lab">Co víme</p><p>Na účtu 518 jsou v letech 2022–2025 náklady na právní služby ve výši <b style="white-space:nowrap">2 094 182 Kč</b>. Obec uvedla, že je poskytuje <b>advokát Mgr. Radovan Vrbka</b>, na základě usnesení zastupitelstva <b>č. 271/2010/Z26 z 11. 3. 2010</b>, za ceny podle advokátního tarifu. <span class="chip zdroj">zdroj</span></p></div>
+        <div><p class="lab">Co víme</p><p>Na účtu 518 jsou v letech 2022–2025 náklady na právní služby ve výši <b style="white-space:nowrap">2 094 182 Kč</b>. Obec uvedla, že je poskytuje <b>advokát Mgr. Radovan Vrbka</b>, na základě usnesení zastupitelstva <b>č. 271/2010/Z26 z 11. 3. 2010</b>, za ceny podle advokátního tarifu. <a class="chip zdroj" href="https://github.com/novotny25/transparentniprstice.cz/blob/main/data/ucet-518-polozky-public.csv">zdroj</a></p></div>
         <div><p class="lab">Co jsme vypočítali</p><p>Po letech: 292 244 → 583 224 → 601 452 → <b>617 262 Kč</b>. Od roku 2023 se náklady drží kolem <b>600 tis. Kč ročně</b>; v 1. pololetí 2026 dalších 313 364 Kč. <span class="chip vypocet">výpočet</span></p></div>
         <div><p class="lab">Co zatím nevíme</p><p>Kterých konkrétních věcí se služby týkaly, jaká byla sjednaná sazba a kolik hodin práce za částkami stojí. <span class="chip nezjisteno">nezjištěno</span></p></div>
         <div><p class="lab">Jak se vyjádřila obec</p><p>Uvedla, že právní služby jsou poskytovány komplexně — zastupování před správními orgány a soudy i příprava a revize smluv. Konkrétní doklady neposkytla.</p></div>
@@ -358,6 +360,7 @@
         <p>Podrobnosti k právním službám tedy obec bude muset brzy doložit. Až je dostaneme, doplníme je sem.</p>
       </div>
       <p class="otazky"><b>Otázky k dosledování:</b> Za co obec platí řádově 600 tis. Kč ročně? Kolik hodin práce za tím stojí a jaká je hodinová sazba? Souvisí náklady se soudními spory, které obec vede? <b>Vazba na konkrétní řízení zatím není doložena.</b></p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#p-511">Další: opravy za 24,4 mil. →</a></p>
     </div>
 
     <div class="polozka" id="p-511">
@@ -365,12 +368,13 @@
         <span class="stav">Zákonná lhůta do 9.&nbsp;9.&nbsp;2026</span></div>
       <p class="uvodem">Účet 518, který je na tomto webu podrobně rozebraný, <b>není největší nákladový účet obce</b>. Tím je <b>účet 511 „Opravy a udržování“</b>. Jeho podrobný rozpis zatím nemáme — <b>25. 8. 2026 jsme o něj obec požádali</b> a zákonná lhůta pro odpověď byla 15 dnů, tedy <b>do 9.&nbsp;9.&nbsp;2026</b>.</p>
       <div class="ctyri">
-        <div><p class="lab">Co víme</p><p>Za roky 2020–2025 obec zaúčtovala na opravy a udržování celkem <b>24,4 mil. Kč</b>. Nejvyšší náklady připadly na rok 2022 (<b>7,8 mil. Kč</b>), druhé nejvyšší na rok 2023 (5,6 mil. Kč). <span class="chip zdroj">zdroj</span> výkaz zisku a ztráty</p></div>
+        <div><p class="lab">Co víme</p><p>Za roky 2020–2025 obec zaúčtovala na opravy a udržování celkem <b>24,4 mil. Kč</b>. Nejvyšší náklady připadly na rok 2022 (<b>7,8 mil. Kč</b>), druhé nejvyšší na rok 2023 (5,6 mil. Kč). <a class="chip zdroj" href="https://monitor.statnipokladna.gov.cz/ucetni-jednotka/00282405">zdroj</a> výkaz zisku a ztráty</p></div>
         <div><p class="lab">Co jsme vypočítali</p><p>Jen za roky 2021–2023 jde o <b>17,4 mil. Kč</b> — víc než jedenapůlnásobek toho, co ve stejných letech prošlo účtem 518. <span class="chip vypocet">výpočet</span></p></div>
         <div><p class="lab">Co zatím nevíme</p><p><b>Prakticky vše o skladbě.</b> Neznáme dodavatele, jednotlivé částky ani to, co se opravovalo. <span class="chip nezjisteno">nezjištěno</span></p></div>
         <div><p class="lab">Co jsme udělali</p><p><b>25. 8. 2026</b> jsme obec požádali o rozpis účtu 511 za období <b>od 1. 1. 2020 do 30. 6. 2026</b> — dodavatel, předmět plnění, datum a částka u každé položky, ve strojově čitelném formátu. <a href="dokumenty/2026-08-25_zadost-ucet-511.pdf">Text žádosti (PDF)</a></p></div>
       </div>
       <p class="otazky"><b>Co bude dál:</b> zákonná lhůta pro vyřízení je 15 dnů, tedy <b>do 9.&nbsp;9.&nbsp;2026</b>. Jakmile data dostaneme, projdeme je stejným způsobem jako účet 518 a zveřejníme je zde — včetně dodavatelů a konkrétních částek.</p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#dotace">Další: dotace →</a></p>
     </div>
 
     <p class="src" style="max-width:70ch;margin-inline:auto">Zdroj čísel: účetní deník účtu 518 poskytnutý obcí (2022–2025 a 1–6/2026) <span class="chip zdroj">zdroj</span>. Zařazení zápisů do skupin je <span class="chip autor">zařazeno autorem</span> podle krátkých popisů; deník neobsahuje dodavatele ani smlouvy. Tržní srovnání je <b>orientační</b> a slouží jako indicie, ne jako důkaz. Hlubší hodnocení hospodárnosti patří do samostatné autorské sekce, která je označená jako názor autora.</p>
@@ -463,6 +467,7 @@
         <p>Které z těch vysvětlení platí — nebo jestli platí obě, či žádné — z dat nepoznáme.</p>
         <p class="pozn">Jde o interpretaci autora, ne o doložený závěr; motiv z čísel vyčíst nelze. Vysvětlením může být i personální kapacita úřadu.</p>
       </div>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#zmeny">Další: rostoucí výdaje →</a></p>
     </div>
   </section>
 
@@ -602,6 +607,16 @@
   var fmt=function(n){return Math.round(n).toLocaleString('cs-CZ');};
   var BLUE='#0a84ff',ORANGE='#f08a00',GREEN='#1a9e4b',PINK='#e63562',LINE='#ececf0';
 
+  // Grafy se kreslí v souřadnicích, které kopírují skutečnou šířku prvku
+  // (1 jednotka viewBoxu ≈ 1 px na obrazovce) — popisky tak mají čitelnou
+  // velikost i na telefonu. Při změně šířky okna se překreslí.
+  var sirkaGrafu=function(el,def){
+    var w=el?(el.clientWidth||el.getBoundingClientRect().width||(el.parentNode&&el.parentNode.clientWidth)||0):0;
+    return Math.max(240,Math.min(Math.round(w)||def,Math.round(def*1.15)));};
+  var PREKRESLI=[];
+  (function(){var t,w=innerWidth;addEventListener('resize',function(){clearTimeout(t);t=setTimeout(function(){
+    if(Math.abs(innerWidth-w)<40)return;w=innerWidth;PREKRESLI.forEach(function(f){try{f();}catch(e){}});},220);},{passive:true});})();
+
   function csv(name,head,rows){
     var b=new Blob([[head].concat(rows).map(function(r){return r.join(',');}).join('\n')],{type:'text/csv;charset=utf-8'});
     var a=document.createElement('a');a.href=URL.createObjectURL(b);a.download=name;document.body.appendChild(a);a.click();a.remove();
@@ -610,50 +625,44 @@
   /* --- graf 1: příjmy/výdaje --- */
   var d1=J('d-rozpocet');
   (function(){
-    var W=900,H=330,pL=54,pR=14,pT=16,pB=40;
-    var max=Math.max.apply(null,d1.prijmy.concat(d1.vydaje)),top=Math.ceil(max/5e6)*5e6;
-    var pw=W-pL-pR,ph=H-pT-pB,n=d1.roky.length,g=pw/n,bw=Math.min(30,g/3.1),gap=8;
-    var y=function(v){return pT+ph-(v/top)*ph;},s='';
-    for(var q=0;q<=top;q+=5e6){var yy=y(q);
-      s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="'+LINE+'"/>';
-      s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(q/1e6)+'</text>';}
-    s+='<text x="'+pL+'" y="11" font-size="11">mil. Kč</text>';
-    d1.roky.forEach(function(r,i){var cx=pL+g*i+g/2;
-      [[d1.prijmy[i],BLUE,cx-bw-gap/2,'příjmy'],[d1.vydaje[i],ORANGE,cx+gap/2,'výdaje']].forEach(function(b){
-        s+='<rect x="'+b[2].toFixed(1)+'" y="'+y(b[0]).toFixed(1)+'" width="'+bw+'" height="'+((b[0]/top)*ph).toFixed(1)+'" rx="6" fill="'+b[1]+'"><title>'+r+' '+b[3]+': '+fmt(b[0])+' Kč</title></rect>';});
-      s+='<text x="'+cx+'" y="'+(H-pB+18)+'" text-anchor="middle">'+r+'</text>';});
-    document.getElementById('chart-rozpocet').innerHTML=s;
-    var tb=document.querySelector('#tbl-rozpocet tbody');
-    d1.roky.forEach(function(r,i){var sa=d1.prijmy[i]-d1.vydaje[i];
-      tb.insertAdjacentHTML('beforeend','<tr><td>'+r+'</td><td>'+fmt(d1.prijmy[i])+'</td><td>'+fmt(d1.vydaje[i])+'</td><td>'+(sa>=0?'+':'−')+fmt(Math.abs(sa))+'</td></tr>');});
-    // přepínač Kč celkem / na obyvatele (P-2)
+    var el=document.getElementById('chart-rozpocet'),H=330,pT=16,pB=40;
     var OB=J('d-obyvatele').obyvatele||{};
-    function prekresli(najednoho){
-      var pr=d1.prijmy.map(function(v,i){var o=OB[String(d1.roky[i])];return najednoho&&o?v/o:v;});
-      var vy=d1.vydaje.map(function(v,i){var o=OB[String(d1.roky[i])];return najednoho&&o?v/o:v;});
+    var rezim=false;   // false = Kč celkem, true = na obyvatele (P-2)
+    function kresli(){
+      var W=sirkaGrafu(el,900),pL=W<560?46:54,pR=12,pw=W-pL-pR,ph=H-pT-pB;
+      var n=d1.roky.length,g=pw/n,bw=Math.min(30,g/3.1),gap=Math.min(8,g/8);
+      var pr=d1.prijmy.map(function(v,i){var o=OB[String(d1.roky[i])];return rezim&&o?v/o:v;});
+      var vy=d1.vydaje.map(function(v,i){var o=OB[String(d1.roky[i])];return rezim&&o?v/o:v;});
       var max=Math.max.apply(null,pr.concat(vy));
-      var krok=najednoho?5000:5e6, top=Math.ceil(max/krok)*krok;
-      var s2='';
-      for(var q=0;q<=top;q+=krok){var yy=pT+ph-(q/top)*ph;
-        s2+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="'+LINE+'"/>';
-        s2+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(najednoho?Math.round(q/1000):q/1e6)+'</text>';}
-      s2+='<text x="'+pL+'" y="11" font-size="11">'+(najednoho?'tis. Kč/obyv.':'mil. Kč')+'</text>';
+      var krok=(rezim?5000:5e6)*(W<560?2:1), top=Math.ceil(max/krok)*krok;
+      var y=function(v){return pT+ph-(v/top)*ph;},s='';
+      for(var q=0;q<=top;q+=krok){var yy=y(q);
+        s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="'+LINE+'"/>';
+        s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(rezim?Math.round(q/1000):q/1e6)+'</text>';}
+      s+='<text x="'+pL+'" y="11">'+(rezim?'tis. Kč/obyv.':'mil. Kč')+'</text>';
       d1.roky.forEach(function(r,i){var cx=pL+g*i+g/2;
         [[pr[i],BLUE,cx-bw-gap/2,'příjmy'],[vy[i],ORANGE,cx+gap/2,'výdaje']].forEach(function(b){
-          var y2=pT+ph-(b[0]/top)*ph;
-          s2+='<rect x="'+b[2].toFixed(1)+'" y="'+y2.toFixed(1)+'" width="'+bw+'" height="'+((b[0]/top)*ph).toFixed(1)+
-             '" rx="6" fill="'+b[1]+'"><title>'+r+' '+b[3]+': '+fmt(b[0])+' Kč'+(najednoho?' na obyvatele':'')+'</title></rect>';});
-        s2+='<text x="'+cx+'" y="'+(H-pB+18)+'" text-anchor="middle">'+r+'</text>';});
-      document.getElementById('chart-rozpocet').innerHTML=s2;
-      document.getElementById('rozp-sub').textContent=najednoho
+          s+='<rect x="'+b[2].toFixed(1)+'" y="'+y(b[0]).toFixed(1)+'" width="'+bw+'" height="'+((b[0]/top)*ph).toFixed(1)+
+             '" rx="6" fill="'+b[1]+'"><title>'+r+' '+b[3]+': '+fmt(b[0])+' Kč'+(rezim?' na obyvatele':'')+'</title></rect>';});
+        if(W>=340||i%2===(n-1)%2)
+          s+='<text x="'+cx+'" y="'+(H-pB+18)+'" text-anchor="middle">'+r+'</text>';});
+      el.setAttribute('viewBox','0 0 '+W+' '+H);
+      el.innerHTML=s;
+      document.getElementById('rozp-sub').textContent=rezim
         ? 'Skutečnost podle výkazu FIN 2-12 M, přepočteno na jednoho obyvatele (počty ČSÚ k 1. 1.).'
         : 'Skutečnost podle výkazu FIN 2-12 M, v milionech Kč.';
     }
+    kresli(); PREKRESLI.push(kresli);
+
+    var tb=document.querySelector('#tbl-rozpocet tbody');
+    d1.roky.forEach(function(r,i){var sa=d1.prijmy[i]-d1.vydaje[i];
+      tb.insertAdjacentHTML('beforeend','<tr><td>'+r+'</td><td>'+fmt(d1.prijmy[i])+'</td><td>'+fmt(d1.vydaje[i])+'</td><td>'+(sa>=0?'+':'−')+fmt(Math.abs(sa))+'</td></tr>');});
+
     document.querySelectorAll('[data-jednotka]').forEach(function(b){
       b.addEventListener('click',function(){
         document.querySelectorAll('[data-jednotka]').forEach(function(x){
           x.setAttribute('aria-pressed', x===b?'true':'false');});
-        prekresli(b.dataset.jednotka==='obyvatel');
+        rezim=(b.dataset.jednotka==='obyvatel'); kresli();
       });
     });
 
@@ -665,23 +674,31 @@
   /* --- graf 2: peníze obce --- */
   var d2=J('d-penize');
   (function(){
-    var W=900,H=330,pL=54,pR=14,pT=16,pB=40;
-    var max=Math.max.apply(null,d2.ucty.concat(d2.uvery)),top=Math.ceil(max/5e6)*5e6;
-    var pw=W-pL-pR,ph=H-pT-pB,n=d2.roky.length;
-    var x=function(i){return pL+(pw/n)*i+(pw/n)/2;},y=function(v){return pT+ph-(v/top)*ph;},s='';
-    for(var q=0;q<=top;q+=5e6){var yy=y(q);
-      s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="'+LINE+'"/>';
-      s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(q/1e6)+'</text>';}
-    s+='<text x="'+pL+'" y="11" font-size="11">mil. Kč</text>';
-    var pts=function(a){return a.map(function(v,i){return x(i).toFixed(1)+','+y(v).toFixed(1);}).join(' ');};
-    s+='<polygon points="'+pts(d2.ucty)+' '+x(n-1).toFixed(1)+','+y(0)+' '+x(0).toFixed(1)+','+y(0)+'" fill="'+GREEN+'" opacity=".10"/>';
-    s+='<polyline points="'+pts(d2.ucty)+'" fill="none" stroke="'+GREEN+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>';
-    s+='<polyline points="'+pts(d2.uvery)+'" fill="none" stroke="'+PINK+'" stroke-width="3" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>';
-    d2.roky.forEach(function(r,i){
-      s+='<circle cx="'+x(i).toFixed(1)+'" cy="'+y(d2.ucty[i]).toFixed(1)+'" r="4.5" fill="'+GREEN+'"><title>'+r+' na účtech: '+fmt(d2.ucty[i])+' Kč</title></circle>';
-      s+='<circle cx="'+x(i).toFixed(1)+'" cy="'+y(d2.uvery[i]).toFixed(1)+'" r="4.5" fill="'+PINK+'"><title>'+r+' úvěry: '+fmt(d2.uvery[i])+' Kč</title></circle>';
-      s+='<text x="'+x(i).toFixed(1)+'" y="'+(H-pB+18)+'" text-anchor="middle">'+r+'</text>';});
-    document.getElementById('chart-penize').innerHTML=s;
+    var el=document.getElementById('chart-penize'),H=330,pT=16,pB=40;
+    function kresli(){
+      var W=sirkaGrafu(el,900),pL=W<560?46:54,pR=12,pw=W-pL-pR,ph=H-pT-pB;
+      var n=d2.roky.length;
+      var max=Math.max.apply(null,d2.ucty.concat(d2.uvery));
+      var krok=5e6*(W<560?2:1), top=Math.ceil(max/krok)*krok;
+      var x=function(i){return pL+(pw/n)*i+(pw/n)/2;},y=function(v){return pT+ph-(v/top)*ph;},s='';
+      for(var q=0;q<=top;q+=krok){var yy=y(q);
+        s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="'+LINE+'"/>';
+        s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(q/1e6)+'</text>';}
+      s+='<text x="'+pL+'" y="11">mil. Kč</text>';
+      var pts=function(a){return a.map(function(v,i){return x(i).toFixed(1)+','+y(v).toFixed(1);}).join(' ');};
+      s+='<polygon points="'+pts(d2.ucty)+' '+x(n-1).toFixed(1)+','+y(0)+' '+x(0).toFixed(1)+','+y(0)+'" fill="'+GREEN+'" opacity=".10"/>';
+      s+='<polyline points="'+pts(d2.ucty)+'" fill="none" stroke="'+GREEN+'" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>';
+      s+='<polyline points="'+pts(d2.uvery)+'" fill="none" stroke="'+PINK+'" stroke-width="3" stroke-dasharray="7 5" stroke-linecap="round" stroke-linejoin="round"/>';
+      d2.roky.forEach(function(r,i){
+        s+='<circle cx="'+x(i).toFixed(1)+'" cy="'+y(d2.ucty[i]).toFixed(1)+'" r="4.5" fill="'+GREEN+'"><title>'+r+' na účtech: '+fmt(d2.ucty[i])+' Kč</title></circle>';
+        s+='<circle cx="'+x(i).toFixed(1)+'" cy="'+y(d2.uvery[i]).toFixed(1)+'" r="4.5" fill="'+PINK+'"><title>'+r+' úvěry: '+fmt(d2.uvery[i])+' Kč</title></circle>';
+        if(W>=340||i%2===(n-1)%2)
+          s+='<text x="'+x(i).toFixed(1)+'" y="'+(H-pB+18)+'" text-anchor="middle">'+r+'</text>';});
+      el.setAttribute('viewBox','0 0 '+W+' '+H);
+      el.innerHTML=s;
+    }
+    kresli(); PREKRESLI.push(kresli);
+
     var tb=document.querySelector('#tbl-penize tbody');
     d2.roky.forEach(function(r,i){var n2=d2.ucty[i]-d2.uvery[i];
       tb.insertAdjacentHTML('beforeend','<tr><td>'+r+'</td><td>'+fmt(d2.ucty[i])+'</td><td>'+fmt(d2.uvery[i])+'</td><td>'+(n2>=0?'+':'−')+fmt(Math.abs(n2))+'</td></tr>');});
@@ -723,7 +740,7 @@
       return del===1?fmt(v):(v/del).toFixed(des).replace('.',',');
     };
 
-    var W=720,H=126,pB=18,pT=26,g=W/n,bw=Math.min(46,g*0.56),s='';
+    var W=sirkaGrafu(document.getElementById('rows-vydaje'),780)-60,H=126,pB=18,pT=26,g=W/n,bw=Math.min(46,g*0.56),s='';
     roky.forEach(function(r,i){
       var v=hod[i],h=Math.abs(v)/max*(H-pT-pB),cx=g*i+g/2,akt=(r===aktualni);
       var y=H-pB-h;
@@ -917,7 +934,7 @@
       var celyRok=function(v,smi){return smi?v*2:v;};
       var max=Math.max.apply(null,a.concat(b||[]).concat(h1!==null&&t.odhad?[h1*2]:[]))||1;
 
-      var W=760,H=158,pB=20,pT=26,g=W/N,bw=b?Math.min(26,g*0.30):Math.min(48,g*0.5),mez=4,s='';
+      var W=sirkaGrafu(document.getElementById('temata'),800)-44,H=158,pB=20,pT=26,g=W/N,bw=b?Math.min(26,g*0.30):Math.min(48,g*0.5),mez=4,s='',uzky=W<520;
       var del=max>=1e6?1e6:1e3, jed=max>=1e6?'mil. Kč':'tis. Kč';
       var des=max/del>=100?0:(max/del>=10?1:2);
       var pop=function(v){return v===0?'0':(v/del).toFixed(des).replace('.',',');};
@@ -931,17 +948,18 @@
             var hc=(v*2)/max*(H-pT-pB), yc=H-pB-hc;
             s+='<rect x="'+(cx+posun-bw/2).toFixed(1)+'" y="'+yc.toFixed(1)+'" width="'+bw+'" height="'+(hc-h).toFixed(1)+
                '" rx="4" fill="'+barva+'" opacity="0.16"><title>'+r+' mechanický dvojnásobek pololetí: '+fmt(v*2)+' Kč</title></rect>';
-            s+='<text x="'+(cx+posun).toFixed(1)+'" y="'+(yc-6).toFixed(1)+'" text-anchor="middle" font-size="10" fill="#b9bcc3">'+pop(v*2)+'</text>';
+            if(!uzky) s+='<text x="'+(cx+posun).toFixed(1)+'" y="'+(yc-6).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#b9bcc3">'+pop(v*2)+'</text>';
           }
           s+='<rect x="'+(cx+posun-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+
              '" rx="4" fill="'+barva+'"'+(nedokoncen?' opacity="0.55"':'')+'><title>'+r+': '+fmt(v)+' Kč'+
              (nedokoncen?' (leden–červen)':'')+'</title></rect>';
-          if(!(nedokoncen&&smiOdhad))
-            s+='<text x="'+(cx+posun).toFixed(1)+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="#6e6e73">'+pop(v)+'</text>';
+          if(!(nedokoncen&&smiOdhad)&&!(uzky&&posun>0))
+            s+='<text x="'+(cx+posun).toFixed(1)+'" y="'+(y-6).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#6e6e73">'+pop(v)+'</text>';
         };
         if(b){ kresli(a[i],t.barva,-(bw/2+mez/2),t.odhad!==false); kresli(b[i],'#c9d3dd',(bw/2+mez/2),t.odhad2!==false&&t.odhad!==false); }
         else  { kresli(a[i],t.barva,0,t.odhad!==false); }
-        s+='<text x="'+cx+'" y="'+(H-5)+'" text-anchor="middle"'+(nedokoncen?' fill="#b9bcc3"':'')+'>'+r+'</text>';
+        if(!uzky||i%2===(N-1)%2)
+          s+='<text x="'+cx+'" y="'+(H-5)+'" text-anchor="middle"'+(nedokoncen?' fill="#b9bcc3"':'')+'>'+r+'</text>';
       });
       return {svg:'<svg viewBox="0 0 '+W+' '+H+'" role="img" aria-label="'+esc(t.n)+
         ', vývoj v letech '+popisky[0]+' až '+popisky[N-1]+' v '+jed+': '+
@@ -949,6 +967,7 @@
         jed:jed, ma2026:h1!==null, odhad:t.odhad!==false};
     }
 
+    function kresliTemata(){
     document.getElementById('temata').innerHTML=T.temata.map(function(t){
       var a=t.rada, zm=a[0]>0?Math.round((a[n-1]-a[0])/a[0]*100):null;
       var gr=graf(t);
@@ -966,17 +985,20 @@
         '</div><p class="popis">'+esc(t.popis)+'</p>'+gr.svg+leg+
         '<p class="nevime"><b>Co z rozpočtu nevíme:</b> '+esc(t.nevime)+'</p>'+(t.komentar?'<div class="nazor"><p class="lab">Komentář autora</p><p>'+esc(t.komentar)+'</p>'+(t.kpozn?'<p class="pozn">'+esc(t.kpozn)+'</p>':'')+'</div>':'')+'</div>';
     }).join('');
+    }
+    kresliTemata(); PREKRESLI.push(kresliTemata);
   })();
 
   /* --- grafy u vybraných položek --- */
   (function(){
     var V=J('d-vybrane'); if(!V.roky) return;
+    function kresliVybrane(){
     document.querySelectorAll('[data-graf]').forEach(function(el){
       var t=V[el.dataset.graf]; if(!t) return;
       var a=t.rada.slice(), pop=V.roky.slice();
       if(t.h1){ a.push(t.h1); pop.push('2026*'); }
       var N=a.length, max=Math.max.apply(null,a)||1;
-      var W=760,H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),s='';
+      var W=sirkaGrafu(el,760),H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),s='';
       var del=max>=1e6?1e6:1e3, jed=max>=1e6?'mil. Kč':'tis. Kč';
       var des=max/del>=100?0:(max/del>=10?1:2);
       var fp=function(v){return v===0?'0':(v/del).toFixed(des).replace('.',',');};
@@ -992,6 +1014,8 @@
         '<p class="src" style="margin-top:6px">Hodnoty v '+jed+' (účetní deník 518).'+
         (t.h1?' <b>2026*</b> = jen leden–červen 2026.':'')+'</p>';
     });
+    }
+    kresliVybrane(); PREKRESLI.push(kresliVybrane);
   })();
 
   /* --- srovnání s podobnými obcemi --- */
@@ -1038,24 +1062,32 @@
       ' mil. Kč. <b>Vývoj ale není plynulý:</b> vrchol <b>'+(Math.max.apply(null,U.hodnoty)/1e6).toFixed(1).replace('.',',')+
       ' mil. Kč v roce 2023</b>, pak pokles a znovu růst.';
 
-    var W=900,H=330,pL=54,pR=14,pT=22,pB=42,pw=W-pL-pR,ph=H-pT-pB;
-    var g=pw/N, bw=Math.min(38,g*0.5), s='';
-    var y=function(v){return pT+ph-(v/top)*ph;};
-    for(var q=0;q<=top;q+=1e6){ var yy=y(q);
-      s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="#ececf0"/>';
-      s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(q/1e6)+'</text>'; }
-    s+='<text x="'+pL+'" y="12" font-size="11">mil. Kč</text>';
-    roky.forEach(function(r,i){
-      var cx=pL+g*i+g/2, v=hod[i], h=(v/top)*ph, nep=(U.h1_2026&&i===N-1);
-      s+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y(v).toFixed(1)+'" width="'+bw+'" height="'+h.toFixed(1)+
-         '" rx="5" fill="#5e5ce6"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč'+(nep?' (leden–červen)':'')+'</title></rect>';
-      s+='<text x="'+cx+'" y="'+(y(v)-6).toFixed(1)+'" text-anchor="middle" font-size="10.5" fill="#6e6e73">'+
-         (v/1e6).toFixed(1).replace('.',',')+'</text>';
-      s+='<text x="'+cx+'" y="'+(H-pB+18)+'" text-anchor="middle"'+(nep?' fill="#b9bcc3"':'')+'>'+r+'</text>';
-    });
-    var body=klz.map(function(v,i){return v?(pL+g*i+g/2).toFixed(1)+','+y(v).toFixed(1):null;}).filter(Boolean);
-    if(body.length>1) s+='<polyline points="'+body.join(' ')+'" fill="none" stroke="#c9d3dd" stroke-width="2.5" stroke-linecap="round"/>';
-    document.getElementById('chart-518').innerHTML=s;
+    var el518=document.getElementById('chart-518');
+    function kresli518(){
+      var W=sirkaGrafu(el518,900),H=330,pL=W<560?46:54,pR=12,pT=22,pB=42,pw=W-pL-pR,ph=H-pT-pB;
+      var g=pw/N, bw=Math.min(38,g*0.5), uzky=W<560, s='';
+      var y=function(v){return pT+ph-(v/top)*ph;};
+      var krok=uzky?2e6:1e6;
+      for(var q=0;q<=top;q+=krok){ var yy=y(q);
+        s+='<line x1="'+pL+'" y1="'+yy.toFixed(1)+'" x2="'+(W-pR)+'" y2="'+yy.toFixed(1)+'" stroke="#ececf0"/>';
+        s+='<text x="'+(pL-8)+'" y="'+(yy+4).toFixed(1)+'" text-anchor="end">'+(q/1e6)+'</text>'; }
+      s+='<text x="'+pL+'" y="12">mil. Kč</text>';
+      roky.forEach(function(r,i){
+        var cx=pL+g*i+g/2, v=hod[i], h=(v/top)*ph, nep=(U.h1_2026&&i===N-1);
+        s+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y(v).toFixed(1)+'" width="'+bw+'" height="'+h.toFixed(1)+
+           '" rx="5" fill="#5e5ce6"'+(nep?' opacity="0.5"':'')+'><title>'+r+': '+fmt(v)+' Kč'+(nep?' (leden–červen)':'')+'</title></rect>';
+        if(!uzky||i%2===(N-1)%2||nep)
+          s+='<text x="'+cx+'" y="'+(y(v)-6).toFixed(1)+'" text-anchor="middle" font-size="11" fill="#6e6e73">'+
+             (v/1e6).toFixed(1).replace('.',',')+'</text>';
+        if(!uzky||i%2===(N-1)%2||nep)
+          s+='<text x="'+cx+'" y="'+(H-pB+18)+'" text-anchor="middle"'+(nep?' fill="#b9bcc3"':'')+'>'+r+'</text>';
+      });
+      var body=klz.map(function(v,i){return v?(pL+g*i+g/2).toFixed(1)+','+y(v).toFixed(1):null;}).filter(Boolean);
+      if(body.length>1) s+='<polyline points="'+body.join(' ')+'" fill="none" stroke="#c9d3dd" stroke-width="2.5" stroke-linecap="round"/>';
+      el518.setAttribute('viewBox','0 0 '+W+' 330');
+      el518.innerHTML=s;
+    }
+    kresli518(); PREKRESLI.push(kresli518);
 
     var tb=document.querySelector('#tbl-518 tbody');
     U.roky.forEach(function(r,i){

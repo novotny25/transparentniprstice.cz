@@ -17,6 +17,38 @@ PRIV = os.path.expanduser("~/Developer/transparentniprstice-private")
 M2026 = os.path.join(PRIV, "zdroje", "monitor-2026")
 DATA = os.path.join(WEB, "data")
 HTML = os.path.join(WEB, "web", "index.html")
+def esc_html(t):
+    return (str(t or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
+
+
+def renderuj_kroky(navod):
+    """Vykreslí kroky návodu do statického HTML — stejné značení, jaké kreslí
+    JavaScript na stránce. Díky <details>/<summary> funguje i úplně bez JS;
+    skript na stránce pak jen připojí tlačítka kopírování."""
+    out = []
+    for k in navod["kroky"]:
+        znacka = ('<span class="stavZ cast">AI agent</span>' if k.get("u") == "agent"
+                  else '<span class="stavZ ok">běžný chat</span>')
+        vnitrek = ""
+        if k.get("vy"):
+            vnitrek += '<p class="kr"><b>Co uděláte vy:</b> ' + esc_html(k["vy"]) + "</p>"
+        if k.get("ai"):
+            vnitrek += '<p class="kr"><b>Co udělá AI:</b> ' + esc_html(k["ai"]) + "</p>"
+        if k.get("pozn"):
+            vnitrek += '<p class="kpozn">' + esc_html(k["pozn"]) + "</p>"
+        if k.get("p"):
+            vnitrek += ('<div class="prompt"><div class="ph"><span>Hotový prompt</span>'
+                        '<button class="btn kopir" type="button">Zkopírovat</button></div>'
+                        "<pre>" + esc_html(k["p"]) + "</pre></div>")
+        out.append('<details class="krok"><summary>'
+                   '<span class="cislo">' + esc_html(k["c"]) + "</span>"
+                   '<span class="knazev">' + esc_html(k["n"]) + "</span>" + znacka +
+                   '<span class="kcas">' + esc_html(k.get("cas", "")) + "</span>"
+                   '<span class="caret">▶</span></summary>'
+                   '<div class="kinner">' + vnitrek + "</div></details>")
+    return "".join(out)
+
+
 STRANKY = {                       # soubor -> {id bloku: název datového souboru}
     "index.html":      {"d-vydaje": None, "d-prijmy": None, "d-rady": None,
                         "d-temata": None, "d-vybrane": None, "d-518": None,
@@ -311,6 +343,12 @@ def main():
                 json.load(open(os.path.join(DATA, zdroj), encoding="utf-8"))
             html = vloz(html, blok_id, data)
             vlozeno.append(blok_id)
+            # návod: kroky vykreslit i staticky, ať existují bez JavaScriptu
+            if blok_id == "d-navod":
+                html = re.sub(r"<!--kroky-start-->.*?<!--kroky-konec-->",
+                              "<!--kroky-start-->" + renderuj_kroky(data) + "<!--kroky-konec-->",
+                              html, flags=re.S)
+                vlozeno.append("kroky (statické HTML)")
         open(cesta, "w", encoding="utf-8").write(html)
         print(f"  {soubor}: {', '.join(vlozeno)}")
 

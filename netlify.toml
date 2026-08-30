@@ -40,3 +40,31 @@
   [headers.values]
     Content-Type = "text/plain; charset=utf-8"
     Content-Disposition = "inline"
+
+# Kanonická podoba adres je s .html (odpovídá sitemap a canonical);
+# krátké adresy přesměrovat trvale, ať neexistují dvě verze téže stránky.
+[[redirects]]
+  from = "/obec"
+  to = "/obec.html"
+  status = 301
+
+[[redirects]]
+  from = "/rizeni"
+  to = "/rizeni.html"
+  status = 301
+
+[[redirects]]
+  from = "/jak-to-vime"
+  to = "/jak-to-vime.html"
+  status = 301
+
+[[redirects]]
+  from = "/pro-dalsi-obce"
+  to = "/pro-dalsi-obce.html"
+  status = 301
+
+[[redirects]]
+  from = "/o-webu"
+  to = "/o-webu.html"
+  status = 301
+

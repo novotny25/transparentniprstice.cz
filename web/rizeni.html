@@ -20,6 +20,7 @@
 <meta property="og:image:alt" content="Ilustrace zámku v Pršticích">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="author" content="Petr Novotný">
+<script>document.documentElement.className+=" js";</script>
 <link rel="stylesheet" href="styl.css">
 </head>
 <body>
@@ -41,12 +42,12 @@
       <a href="o-webu.html">O webu</a>
     </nav>
   </div>
-  <div class="navrow podnav" aria-label="Části stránky">
+  <nav class="navrow podnav" aria-label="Části stránky">
       <span class="sipka">Na této stránce:</span>
       <a href="#spravni-h">Správní řízení (ÚOHS)</a>
       <a href="#soudni-h">Soudní řízení</a>
       <a href="#naklady-h">Náklady na právní služby</a>
-    </div>
+    </nav>
 </header>
 
 <main id="obsah">
@@ -140,7 +141,7 @@
     var t=V.pravni,a=t.rada.slice(),pop=V.roky.slice();
     if(t.h1){a.push(t.h1);pop.push('2026*');}
     var N=a.length,max=Math.max.apply(null,a)||1;
-    var W=760,H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),out='';
+    var W=Math.max(300,Math.min(el.clientWidth||el.getBoundingClientRect().width||760,880)),H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),out='';
     pop.forEach(function(r,i){
       var v=a[i],h=v/max*(H-pT-pB),cx=g*i+g/2,y=H-pB-h,nep=(t.h1&&i===N-1);
       out+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+
