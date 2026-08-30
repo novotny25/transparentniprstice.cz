@@ -597,6 +597,10 @@
 (function(){
   var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
   var els=Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+  // Pojistka: obsah se skrývá kvůli plynulému odkrývání, ale nikdy nesmí
+  // zůstat skrytý. Když cokoli v tomhle skriptu selže, odkryj vše hned.
+  var odkryjVse=function(){ document.querySelectorAll('.reveal').forEach(function(e){e.classList.add('in');}); };
+  addEventListener('error', odkryjVse);
   function check(){els=els.filter(function(e){var r=e.getBoundingClientRect();
     if(r.top<innerHeight*0.88&&r.bottom>0){e.classList.add('in');return false;}return true;});}
   if(rm){els.forEach(function(e){e.classList.add('in');});els=[];}
