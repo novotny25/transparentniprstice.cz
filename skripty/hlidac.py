@@ -33,6 +33,7 @@ Návratový kód:  0 = vše v pořádku
 from __future__ import annotations
 
 import argparse
+import shutil
 import json
 import os
 import re
@@ -763,6 +764,162 @@ def kontrola_ziveho_webu(stranky: dict[str, Stranka]) -> None:
 # ---------------------------------------------------------------------------
 # Hlášení
 # ---------------------------------------------------------------------------
+# ---------------------------------------------------------------------------
+# 7. VIDITELNOST OBSAHU — nejzákeřnější porucha: stránka se načte, ale je bílá
+# ---------------------------------------------------------------------------
+# Vzniklo z ostré poruchy 30. 8. 2026: pravidlo `html.js .reveal{opacity:0}`
+# přebilo `.reveal.in{opacity:1}`, protože má vyšší specificitu. Sekce dostaly
+# příznak „ukaž se", ale zůstaly průhledné — pod hero bylo bílo. HTTP kódy,
+# odkazy i čísla přitom seděly, takže to žádná dosavadní kontrola neviděla.
+
+def _specificita(selektor: str) -> tuple:
+    """Spočítá CSS specificitu (id, třídy/atributy/pseudotřídy, elementy)."""
+    sel = re.sub(r"::[a-zA-Z-]+", " ", selektor)          # pseudoelementy zvlášť
+    idcka = len(re.findall(r"#[\w-]+", sel))
+    tridy = len(re.findall(r"\.[\w-]+", sel)) + len(re.findall(r"\[[^\]]+\]", sel)) \
+        + len(re.findall(r":(?!not\()[a-zA-Z-]+", sel))
+    elementy = len(re.findall(r"(?:^|[\s>+~])([a-zA-Z][\w-]*)", sel))
+    return (idcka, tridy, elementy)
+
+
+def _tridy_v(selektor: str) -> set:
+    return set(re.findall(r"\.([\w-]+)", selektor))
+
+
+def kontrola_viditelnosti() -> None:
+    """Skrývá-li CSS obsah (opacity:0), musí existovat silnější pravidlo,
+    které ho zase odkryje. Jinak zůstane web bílý, i když je obsah v HTML."""
+    css = os.path.join(WEB, "styl.css")
+    if not os.path.exists(css):
+        return
+    with open(css, encoding="utf-8") as f:
+        zdroj = f.read()
+
+    # pravidla „selektor { ... }" mimo @media (uvnitř @media je logika jiná)
+    pravidla = []
+    for m in re.finditer(r"([^{}@]+)\{([^{}]*)\}", zdroj):
+        sel, telo = m.group(1).strip(), m.group(2)
+        if not sel or sel.startswith("@"):
+            continue
+        op = re.search(r"(?:^|;|\s)opacity\s*:\s*([\d.]+)", telo)
+        if op:
+            pravidla.append((sel, float(op.group(1)), zdroj[:m.start()].count("\n") + 1))
+
+    skryvaci = [p for p in pravidla if p[1] == 0]
+    odkryvaci = [p for p in pravidla if p[1] > 0]
+
+    for sel_s, _, radek_s in skryvaci:
+        tridy_s = _tridy_v(sel_s)
+        if not tridy_s:
+            continue
+        # Cílová třída = ta, na které skrývání visí (poslední v selektoru).
+        # Odkrývací pravidlo ji musí obsahovat taky — a nemusí mít zbylé třídy
+        # skrývacího selektoru; právě ten rozdíl bývá zdrojem chyby.
+        posledni = re.findall(r"\.([\w-]+)", sel_s)
+        if not posledni:
+            continue
+        cilova = posledni[-1]
+        partneri = [o for o in odkryvaci
+                    if cilova in _tridy_v(o[0]) and _tridy_v(o[0]) != tridy_s]
+        if not partneri:
+            continue  # nic to neodkrývá — buď je to záměr, nebo to řeší JS jinak
+        nejsilnejsi = max(partneri, key=lambda o: _specificita(o[0]))
+        if _specificita(nejsilnejsi[0]) <= _specificita(sel_s):
+            rozbite("viditelnost",
+                    f"styl.css:{radek_s} — `{sel_s}` skrývá obsah (opacity:0), ale "
+                    f"`{nejsilnejsi[0]}` (řádek {nejsilnejsi[2]}), které ho má zase "
+                    f"odkrýt, je slabší nebo stejně silné pravidlo. "
+                    f"Specificita {_specificita(sel_s)} vs. {_specificita(nejsilnejsi[0])}. "
+                    f"Obsah zůstane neviditelný — na webu bude bílo. "
+                    f"Oprava: doplň do odkrývacího selektoru stejného předka "
+                    f"(např. `{sel_s.rsplit(' ', 1)[0]} {nejsilnejsi[0].strip()}`).")
+        else:
+            vporadku(f"Odkrývání obsahu: `{nejsilnejsi[0]}` správně přebíjí `{sel_s}`.")
+
+
+def najdi_chrome() -> str:
+    """Cesta k prohlížeči pro vykreslovací test, nebo prázdno."""
+    kandidati = [
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Chromium.app/Contents/MacOS/Chromium",
+    ]
+    for jmeno in ("google-chrome", "chromium", "chromium-browser"):
+        cesta = shutil.which(jmeno)
+        if cesta:
+            kandidati.append(cesta)
+    for c in kandidati:
+        if os.path.exists(c):
+            return c
+    return ""
+
+
+def kontrola_vykresleni(stranky: dict) -> None:
+    """Vykreslí živou hlavní stránku prohlížečem a ověří, že JavaScript
+    opravdu naplnil obsah. Chytá pád skriptu, který HTML kontroly nevidí."""
+    prohlizec = najdi_chrome()
+    if not prohlizec:
+        vporadku("Vykreslení v prohlížeči: přeskočeno (Chrome/Chromium není k dispozici).")
+        return
+    if not ZIVY:
+        return
+
+    # id kontejnerů, které plní JavaScript — musí být po vykreslení neprázdné
+    cile = {"temata": "grafy rostoucích výdajů",
+            "rows-vydaje": "rozklikávací rozpočet",
+            "chart-rozpocet": "graf příjmů a výdajů"}
+    # Chrome s `--dump-dom` vypíše hotový DOM, ale sám se neukončí. Píšeme
+    # proto do souboru a proces ukončíme, jakmile výstup přestane růst.
+    import subprocess, tempfile, time
+    vystup = ""
+    try:
+        with tempfile.TemporaryDirectory() as tmp:
+            dom = os.path.join(tmp, "dom.html")
+            with open(dom, "w") as f:
+                proc = subprocess.Popen(
+                    [prohlizec, "--headless", "--disable-gpu", "--no-sandbox",
+                     f"--user-data-dir={tmp}/profil", "--virtual-time-budget=9000",
+                     "--dump-dom", ZIVY + "/"],
+                    stdout=f, stderr=subprocess.DEVNULL)
+                predchozi, stabilni = -1, 0
+                for _ in range(40):                       # nejvýš ~40 s
+                    time.sleep(1)
+                    velikost = os.path.getsize(dom)
+                    if velikost > 5000 and velikost == predchozi:
+                        stabilni += 1
+                        if stabilni >= 2:                 # dvě kola beze změny
+                            break
+                    else:
+                        stabilni = 0
+                    predchozi = velikost
+                    if proc.poll() is not None:
+                        break
+                proc.kill()
+                proc.wait(timeout=10)
+            with open(dom, encoding="utf-8", errors="ignore") as f:
+                vystup = f.read()
+    except Exception as e:  # noqa: BLE001
+        varovani("vykreslení", f"prohlížeč se nepodařilo spustit ({type(e).__name__}) "
+                               f"— vykreslení se nekontroluje")
+        return
+
+    if len(vystup) < 5000:
+        rozbite("vykreslení", "živá hlavní stránka se v prohlížeči nevykreslila "
+                              "(prázdný výstup) — zkontroluj ji očima hned")
+        return
+
+    prazdne = []
+    for cil, popis in cile.items():
+        m = re.search(r'id="%s"[^>]*>(.*?)</' % re.escape(cil), vystup, re.S)
+        if not m or len(m.group(1).strip()) < 40:
+            prazdne.append(f"{popis} (#{cil})")
+    if prazdne:
+        rozbite("vykreslení", "po spuštění JavaScriptu zůstalo prázdné: "
+                + ", ".join(prazdne)
+                + ". Skript nejspíš spadl — otevři web v prohlížeči a přečti konzoli.")
+    else:
+        vporadku(f"Vykreslení v prohlížeči: {len(cile)} obsahových bloků se naplnilo.")
+
+
 def hlaseni() -> str:
     dnes = date.today().isoformat()
     r = [f"# Hlídka webu {DOMENA or os.path.basename(KOREN)} — {dnes}", ""]
@@ -844,12 +1001,14 @@ def main() -> int:
     kontrola_cisel(stranky)
     kontrola_bloku(stranky)
     kontrola_tvrzeni(stranky)
+    kontrola_viditelnosti()
     if a.bez_site:
         vporadku("Kontroly přes internet přeskočeny (--bez-site).")
     else:
         kontrola_odkazu_ven(stranky)
         if DOMENA:
             kontrola_ziveho_webu(stranky)
+            kontrola_vykresleni(stranky)
         else:
             varovani("živý web", "nepodařilo se zjistit doménu (chybí sitemap.xml, "
                                  "CNAME i robots.txt) — živý web se nekontroluje. "
