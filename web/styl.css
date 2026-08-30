@@ -32,9 +32,10 @@
     backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
     border-bottom:1px solid var(--line)}
   .navrow{max-width:1120px;margin-inline:auto;padding:12px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px}
-  .brand{font-weight:700;font-size:1.05rem;color:var(--text);display:flex;align-items:center;gap:9px;margin-right:auto;letter-spacing:-.01em}
+  .brand{font-weight:700;font-size:1.18rem;color:var(--text);display:flex;align-items:center;gap:9px;margin-right:auto;letter-spacing:-.01em}
   .brand:hover{text-decoration:none}
-  .brand svg{width:26px;height:26px;flex:none}
+  .brand svg{width:56px;height:56px;flex:none}
+  @media(max-width:560px){.brand svg{width:46px;height:46px}}
   nav.site a{color:var(--muted);font-size:.92rem;padding:4px 2px}
   nav.site a:hover{color:var(--text);text-decoration:none}
 
