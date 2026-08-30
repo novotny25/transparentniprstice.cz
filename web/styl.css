@@ -557,5 +557,17 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 }
 
 /* Navigace mezi zjištěními */
-.zjnav{display:flex;justify-content:space-between;gap:12px;margin:18px 0 0;font-size:.94rem}
+.zjnav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:18px 0 0;font-size:.94rem;flex-wrap:wrap}
 .zjnav a{font-weight:600}
+.zjnav .sdilet{font:inherit;font-weight:600;border:0;cursor:pointer;color:var(--accent);
+  background:rgba(0,113,227,.1);border-radius:980px;padding:7px 16px;order:0}
+.zjnav .sdilet:hover{background:rgba(0,113,227,.18)}
+@media(max-width:560px){
+  .zjnav{gap:8px}
+  .zjnav .sdilet{order:-1;width:100%;text-align:center;padding:9px 16px}
+}
+/* hlášení pro odečítače i vidoucí (nezakrývá obsah) */
+.sdilet-hlas{position:fixed;left:50%;bottom:18px;transform:translateX(-50%);margin:0;
+  background:var(--text);color:#fff;border-radius:980px;padding:8px 18px;font-size:.9rem;
+  z-index:30;pointer-events:none}
+.sdilet-hlas:empty{display:none}

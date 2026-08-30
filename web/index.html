@@ -334,7 +334,7 @@
         <p class="varovani"><b>Co by to mohlo vyvrátit:</b> pokud by smlouva ukázala výrazně širší rozsah plnění, než jaký běžné ceníky pokrývají, byl by rozdíl vysvětlitelný. Proto o smlouvu a popis rozsahu žádáme — <b>naše domněnka se potvrdí, nebo vyvrátí až podle toho, co obec doloží</b>. Do té doby jde o indicii, ne o závěr. <span class="chip zdroj">zdroj</span> veřejné ceníky poskytovatelů, ověřeno 26. 8. 2026</p>
       </div>
       <p class="otazky"><b>Otázky k dosledování:</b> Jaký je sjednaný měsíční paušál a co přesně zahrnuje? Kdo službu dodává? Proběhl před uzavřením smlouvy průzkum trhu nebo oslovení více dodavatelů?</p>
-      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#p-pravni">Další: právní služby →</a></p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><button class="sdilet" type="button" data-kotva="p-gdpr" data-popis="Pověřenec GDPR: 22 500 Kč měsíčně">Sdílet toto zjištění</button><a href="#p-pravni">Další: právní služby →</a></p>
     </div>
 
     <div class="polozka" id="p-pravni">
@@ -360,7 +360,7 @@
         <p>Podrobnosti k právním službám tedy obec bude muset brzy doložit. Až je dostaneme, doplníme je sem.</p>
       </div>
       <p class="otazky"><b>Otázky k dosledování:</b> Za co obec platí řádově 600 tis. Kč ročně? Kolik hodin práce za tím stojí a jaká je hodinová sazba? Souvisí náklady se soudními spory, které obec vede? <b>Vazba na konkrétní řízení zatím není doložena.</b></p>
-      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#p-511">Další: opravy za 24,4 mil. →</a></p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><button class="sdilet" type="button" data-kotva="p-pravni" data-popis="Právní služby: 2,1 milionu za čtyři roky">Sdílet toto zjištění</button><a href="#p-511">Další: opravy za 24,4 mil. →</a></p>
     </div>
 
     <div class="polozka" id="p-511">
@@ -374,7 +374,7 @@
         <div><p class="lab">Co jsme udělali</p><p><b>25. 8. 2026</b> jsme obec požádali o rozpis účtu 511 za období <b>od 1. 1. 2020 do 30. 6. 2026</b> — dodavatel, předmět plnění, datum a částka u každé položky, ve strojově čitelném formátu. <a href="dokumenty/2026-08-25_zadost-ucet-511.pdf">Text žádosti (PDF)</a></p></div>
       </div>
       <p class="otazky"><b>Co bude dál:</b> zákonná lhůta pro vyřízení je 15 dnů, tedy <b>do 9.&nbsp;9.&nbsp;2026</b>. Jakmile data dostaneme, projdeme je stejným způsobem jako účet 518 a zveřejníme je zde — včetně dodavatelů a konkrétních částek.</p>
-      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#dotace">Další: dotace →</a></p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><button class="sdilet" type="button" data-kotva="p-511" data-popis="Největší účet obce: 24,4 mil. Kč za opravy">Sdílet toto zjištění</button><a href="#dotace">Další: dotace →</a></p>
     </div>
 
     <p class="src" style="max-width:70ch;margin-inline:auto">Zdroj čísel: účetní deník účtu 518 poskytnutý obcí (2022–2025 a 1–6/2026) <span class="chip zdroj">zdroj</span>. Zařazení zápisů do skupin je <span class="chip autor">zařazeno autorem</span> podle krátkých popisů; deník neobsahuje dodavatele ani smlouvy. Tržní srovnání je <b>orientační</b> a slouží jako indicie, ne jako důkaz. Hlubší hodnocení hospodárnosti patří do samostatné autorské sekce, která je označená jako názor autora.</p>
@@ -467,7 +467,7 @@
         <p>Které z těch vysvětlení platí — nebo jestli platí obě, či žádné — z dat nepoznáme.</p>
         <p class="pozn">Jde o interpretaci autora, ne o doložený závěr; motiv z čísel vyčíst nelze. Vysvětlením může být i personální kapacita úřadu.</p>
       </div>
-      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><a href="#zmeny">Další: rostoucí výdaje →</a></p>
+      <p class="zjnav"><a href="#zjisteni-prehled">← Zpět na přehled zjištění</a><button class="sdilet" type="button" data-kotva="dotace" data-popis="Prštice přestaly žádat o dotace — poslední z dvanácti obcí">Sdílet toto zjištění</button><a href="#zmeny">Další: rostoucí výdaje →</a></p>
     </div>
   </section>
 
@@ -1115,6 +1115,35 @@
 
     document.getElementById('csv-518').onclick=function(){
       csv('prstice-ucet-518-2015-2025.csv',['rok','ucet_518_kc'],U.roky.map(function(r,i){return [r,U.hodnoty[i]];}));};
+  })();
+
+  /* --- sdílení konkrétního zjištění --- */
+  (function(){
+    var tl=document.querySelectorAll('.sdilet'); if(!tl.length) return;
+    var hlas=document.createElement('p');
+    hlas.className='sdilet-hlas'; hlas.setAttribute('role','status'); hlas.setAttribute('aria-live','polite');
+    document.body.appendChild(hlas);
+    function rekni(t){ hlas.textContent=t; clearTimeout(hlas._t); hlas._t=setTimeout(function(){hlas.textContent='';},4000); }
+    tl.forEach(function(b){
+      b.addEventListener('click',function(){
+        var url=location.origin+location.pathname+'#'+b.dataset.kotva;
+        var popis=b.dataset.popis;
+        var puvodni=b.textContent;
+        function hotovo(t){ b.textContent=t; rekni(t); setTimeout(function(){b.textContent=puvodni;},2200); }
+        if(navigator.share){
+          navigator.share({title:'Transparentní Prštice — '+popis, text:popis, url:url})
+            .then(function(){rekni('Odkaz odeslán.');})
+            .catch(function(){});   // uživatel sdílení zrušil — mlčet
+          return;
+        }
+        if(navigator.clipboard&&navigator.clipboard.writeText){
+          navigator.clipboard.writeText(url).then(function(){ hotovo('Odkaz zkopírován'); })
+            .catch(function(){ hotovo('Nepodařilo se zkopírovat'); });
+        } else {
+          window.prompt('Zkopírujte odkaz na toto zjištění:', url);
+        }
+      });
+    });
   })();
 })();
 </script>
