@@ -133,7 +133,7 @@ TEMATA = [
   "pol": ["5166"],
   "vazba": {"text": "Pozor, tady měříme širší rozpočtovou položku 5166 — vedle právních služeb "
                     "zahrnuje i konzultace a poradenství. Rozbor samotných právních služeb "
-                    "z účetního deníku (617 tis. Kč za rok 2025) je výše.",
+                    "z účetního deníku (617 tis. Kč za rok 2025) je výše.",
             "kotva": "#p-pravni", "odkaz": "přejít na rozbor právních služeb ↑"},
   "popis": "Výdaje na konzultační, poradenské a právní služby rostou nepřetržitě "
            "od roku 2020 — každý rok jsou vyšší než v tom předchozím. V roce 2025 na ně "
