@@ -45,7 +45,8 @@
   .kicker{color:var(--accent);font-weight:600;font-size:.95rem;margin:0 0 16px}
   .hero .lede{font-size:clamp(1.15rem,2.3vw,1.5rem);color:var(--muted);max-width:37ch;margin:22px auto 0;line-height:1.42}
 .hero .hero-autor{font-size:.92rem;color:var(--muted);margin:10px 0 0}
-  .hero .lede strong{color:var(--text);white-space:nowrap}
+  .hero .lede strong{color:var(--text)}
+  @media(min-width:701px){.hero .lede strong{white-space:nowrap}}
   .hero .zamek{display:block;width:min(780px,100%);height:auto;margin:38px auto -14px}
   @media(max-width:600px){.hero .zamek{margin-top:26px}}
 
@@ -334,7 +335,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .dokseznam .dtext{display:flex;flex-direction:column;gap:2px;min-width:0}
 .dokseznam .dtext b{font-weight:600;font-size:.98rem;color:var(--accent)}
 .dokseznam .dmeta{font-size:.85rem;color:var(--faint)}
-.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin-top:4px}
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:18px;margin-top:4px}
 .srovk{background:#fbfbfd;border-radius:16px;padding:26px 28px}
 .srovk .k{color:var(--muted);font-size:.92rem;margin:0;font-weight:500}
 .srovk .v{font-size:2rem;font-weight:800;letter-spacing:-.03em;color:var(--text);margin:.08em 0 .3em;
@@ -585,10 +586,11 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .zjmapa a:hover{background:#fff;transform:translateY(-3px);box-shadow:var(--shadow);text-decoration:none}
 .zjmapa .cif{font-weight:800;font-size:1.32rem;letter-spacing:-.02em;line-height:1.1;
   color:var(--zb,var(--accent));font-variant-numeric:tabular-nums;white-space:nowrap}
-.zjmapa small{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.zjmapa small{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .zjmapa .tx{font-size:.85rem;line-height:1.45;color:var(--text)}
 .zjmapa .sip{margin-top:auto;padding-top:6px;color:var(--accent);font-weight:700}
 @media(max-width:560px){.zjmapa{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:379px){.zjmapa .cif{font-size:1.02rem;white-space:normal}}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .tema .vazba{font-size:.9rem;color:var(--muted);background:#f6f7f9;border-radius:10px;padding:9px 13px;margin:0 0 10px}
 

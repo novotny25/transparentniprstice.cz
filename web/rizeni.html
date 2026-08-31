@@ -77,7 +77,7 @@
     <div class="card">
       <p class="sub">Vedlejší údaj pro celkový obraz — <b>nejde o náklady konkrétního sporu</b>. Je to celá skupina „právní služby“ z účetního deníku 518.</p>
       <div class="graf" data-graf="pravni"></div>
-      <p class="src"><b>Vazba konkrétního nákladu na konkrétní řízení není doložena.</b> <span class="chip nezjisteno">nezjištěno</span> Uvedeme ji jen tam, kde ji potvrdí faktura, smlouva nebo obec. O faktury, smlouvu a výkazy práce jsme obec požádali; <b>Krajský úřad JMK jí 19. 8. 2026 přikázal žádost vyřídit</b> — podrobnosti tedy očekáváme. Více v sekci <a href="index.html#p-pravni">Ptáme se na vybrané výdaje</a>.</p>
+      <p class="src"><b>Vazba konkrétního nákladu na konkrétní řízení není doložena.</b> <span class="chip nezjisteno">nezjištěno</span> Uvedeme ji jen tam, kde ji potvrdí faktura, smlouva nebo obec. O faktury, smlouvu a výkazy práce jsme obec požádali; <b>Krajský úřad JMK jí 19. 8. 2026 přikázal žádost vyřídit</b> — podrobnosti tedy očekáváme. Více v <a href="index.html#p-pravni">podrobném rozboru právních služeb na hlavní stránce</a>.</p>
     </div>
   </section>
 </main>
@@ -141,7 +141,7 @@
     var t=V.pravni,a=t.rada.slice(),pop=V.roky.slice();
     if(t.h1){a.push(t.h1);pop.push('2026*');}
     var N=a.length,max=Math.max.apply(null,a)||1;
-    var W=Math.max(300,Math.min(el.clientWidth||el.getBoundingClientRect().width||760,880)),H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),out='';
+    var W=Math.max(200,Math.min(el.clientWidth||el.getBoundingClientRect().width||760,880)),H=132,pB=20,pT=26,g=W/N,bw=Math.min(70,g*0.44),out='';
     pop.forEach(function(r,i){
       var v=a[i],h=v/max*(H-pT-pB),cx=g*i+g/2,y=H-pB-h,nep=(t.h1&&i===N-1);
       out+='<rect x="'+(cx-bw/2).toFixed(1)+'" y="'+y.toFixed(1)+'" width="'+bw+'" height="'+Math.max(h,1.5).toFixed(1)+

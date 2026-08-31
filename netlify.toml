@@ -41,6 +41,11 @@
     Content-Type = "text/plain; charset=utf-8"
     Content-Disposition = "inline"
 
+[[redirects]]
+  from = "/favicon.ico"
+  to = "/favicon-32.png"
+  status = 301
+
 # Kanonická podoba adres je s .html (odpovídá sitemap a canonical);
 # krátké adresy přesměrovat trvale, ať neexistují dvě verze téže stránky.
 [[redirects]]

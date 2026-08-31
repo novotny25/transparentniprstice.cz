@@ -32,7 +32,7 @@
   {
    "id": "ucet-511-zakonna-lhuta",
    "stranka": "index.html",
-   "citace": "zákonná lhůta pro odpověď byla 15 dnů, tedy do 9. 9. 2026",
+   "citace": "zákonná lhůta pro vyřízení je 15 dnů",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-10",
    "otazka": "Lhůta k účtu 511 uplynula — je text v rozboru pořád v přítomném čase („běží“)?",
@@ -113,10 +113,10 @@
   {
    "id": "dve-polozky-cekame",
    "stranka": "index.html",
-   "citace": "U dvou z nich stále čekáme na podklady od obce",
+   "citace": "U všech tří stále čekáme na podklady od obce",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
-   "otazka": "Pořád čekáte na podklady u dvou ze tří položek „pod lupou“?",
+   "otazka": "Pořád čekáte na podklady u všech tří ze tří položek „pod lupou“?",
    "co_udelat": "Upravit počet podle skutečnosti — nebo větu odstranit, až budou podklady všechny.",
    "vyrizeno": false
   },
