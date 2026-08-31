@@ -129,8 +129,12 @@ def blok_rady():
 # Témata sekce „Zajímavé změny nákladů". Každé se počítá z už ověřených dat;
 # výběr témat je autorský, čísla nikoli.
 TEMATA = [
- {"id": "pravni", "nadpis": "Právní a poradenské služby", "barva": "#e63562",
+ {"id": "pravni", "nadpis": "Konzultační a právní služby (rozpočtová položka)", "barva": "#e63562",
   "pol": ["5166"],
+  "vazba": {"text": "Pozor, tady měříme širší rozpočtovou položku 5166 — vedle právních služeb "
+                    "zahrnuje i konzultace a poradenství. Rozbor samotných právních služeb "
+                    "z účetního deníku (617 tis. Kč za rok 2025) je výše.",
+            "kotva": "#p-pravni", "odkaz": "přejít na rozbor právních služeb ↑"},
   "popis": "Výdaje na konzultační, poradenské a právní služby rostou nepřetržitě "
            "od roku 2020 — každý rok jsou vyšší než v tom předchozím. V roce 2025 na ně "
            "z rozpočtu šlo víc než trojnásobek toho, co na hasiče.",
@@ -218,6 +222,8 @@ def blok_temata():
         rada = [vydaj(r, t.get("pol"), t.get("par")) for r in roky]
         z = {"id": t["id"], "n": t["nadpis"], "barva": t["barva"], "popis": t["popis"],
              "nevime": t["nevime"], "rada": rada}
+        if t.get("vazba"):
+            z["vazba"] = t["vazba"]
         # u témat vázaných na paragraf bereme paragrafy, jinak položky
         v26 = h1(par=t["par"]) if t.get("par") and not t.get("pol") else h1(pol=t.get("pol"))
         if v26:

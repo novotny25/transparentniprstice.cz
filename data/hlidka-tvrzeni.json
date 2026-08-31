@@ -12,7 +12,7 @@
   {
    "id": "ucet-511-lhuta",
    "stranka": "index.html",
-   "citace": "obec ho měla doložit do 9. 9. 2026.",
+   "citace": "tedy do 9. 9. 2026",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-10",
    "otazka": "Došel už od obce rozpis účtu 511 (žádost z 25. 8. 2026, lhůta do 9. 9. 2026)?",
@@ -103,7 +103,7 @@
   {
    "id": "pravni-sluzby-detail",
    "stranka": "index.html",
-   "citace": "zakročit musel až krajský úřad, který doložení nařídil. Na detail čekáme.",
+   "citace": "doložení faktur musel nařídit až kraj",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
    "otazka": "Doložila obec faktury a výkazy práce k právním službám, jak jí nařídil krajský úřad (rozhodnutí z 19. 8. 2026)?",
@@ -194,10 +194,10 @@
   {
    "id": "rozcestnik-511-dolozeni",
    "stranka": "index.html",
-   "citace": "po doložení obcí přibudou opravy až na dodavatele",
+   "citace": "zveřejníme je zde — včetně dodavatelů",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-10",
-   "otazka": "Došel rozpis účtu 511? Rozcestník slibuje, že po doložení přibudou opravy až na dodavatele.",
+   "otazka": "Došel rozpis účtu 511? Rozbor slibuje, že data zveřejníme včetně dodavatelů.",
    "co_udelat": "Po doložení zpracovat kapitolu 511 a rozcestník přepsat na hotové.",
    "vyrizeno": false
   },

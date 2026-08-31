@@ -507,7 +507,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .zjbanner:hover{transform:translateY(-3px);box-shadow:var(--shadow-hi);text-decoration:none}
 .zjbanner .odznak{background:#f8ded7;color:#8f2f23;margin-bottom:12px}
 .zjbanner .odznak::before{background:#b2402f}
-.zjbanner h3{font-size:clamp(1.35rem,2.6vw,1.85rem);margin:0 0 12px;letter-spacing:-.02em}
+.zjbanner h2,.zjbanner h3{font-size:clamp(1.35rem,2.6vw,1.85rem);margin:0 0 12px;letter-spacing:-.02em}
 .zjbanner .lead{font-size:1.05rem;line-height:1.6;margin:0 0 20px;max-width:78ch;color:var(--text)}
 .zjbanner .zbcisla{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:16px;margin-bottom:18px}
 .zjbanner .zbcisla>div{background:rgba(255,255,255,.75);border-radius:14px;padding:16px 18px}
@@ -572,3 +572,22 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   background:var(--text);color:#fff;border-radius:980px;padding:8px 18px;font-size:.9rem;
   z-index:30;pointer-events:none}
 .sdilet-hlas:empty{display:none}
+
+/* Mapa zjištění — dlaždice */
+.zjmapa{list-style:none;margin:18px 0 0;padding:0;display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+@media(min-width:1060px){.zjmapa{grid-template-columns:repeat(7,1fr)}
+  .zjmapa .cif{font-size:1.18rem}}
+.zjmapa a{display:flex;flex-direction:column;gap:4px;height:100%;
+  background:#fbfbfd;border-top:4px solid var(--zb,var(--accent));border-radius:14px;
+  padding:14px 14px 12px;color:inherit;
+  transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s,background .22s}
+.zjmapa a:hover{background:#fff;transform:translateY(-3px);box-shadow:var(--shadow);text-decoration:none}
+.zjmapa .cif{font-weight:800;font-size:1.32rem;letter-spacing:-.02em;line-height:1.1;
+  color:var(--zb,var(--accent));font-variant-numeric:tabular-nums;white-space:nowrap}
+.zjmapa small{font-size:.68rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.zjmapa .tx{font-size:.85rem;line-height:1.45;color:var(--text)}
+.zjmapa .sip{margin-top:auto;padding-top:6px;color:var(--accent);font-weight:700}
+@media(max-width:560px){.zjmapa{grid-template-columns:repeat(2,1fr)}}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.tema .vazba{font-size:.9rem;color:var(--muted);background:#f6f7f9;border-radius:10px;padding:9px 13px;margin:0 0 10px}
