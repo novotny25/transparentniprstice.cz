@@ -66,7 +66,7 @@
   },
   {
    "popis": "Počet obyvatel v roce 2015 — text „za 10 let z 931“",
-   "stranka": "index.html",
+   "stranka": "obec.html",
    "zdroj": {
     "soubor": "obyvatele.json",
     "klic": "obyvatele.2015"
@@ -283,7 +283,7 @@
   },
   {
    "popis": "Průměrný věk Prštic 43,3",
-   "stranka": "index.html",
+   "stranka": "obec.html",
    "zdroj": {
     "soubor": "srovnani-obci.json",
     "klic": "vek.prstice"
@@ -293,7 +293,7 @@
   },
   {
    "popis": "Migrace +57 (bilance ČSÚ 2015–2024)",
-   "stranka": "index.html",
+   "stranka": "obec.html",
    "zdroj": {
     "soubor": "obyvatele-bilance.json",
     "klic": "soucty.saldo_migrace"
@@ -302,7 +302,7 @@
   },
   {
    "popis": "Přirozený přírůstek +25 (bilance ČSÚ)",
-   "stranka": "index.html",
+   "stranka": "obec.html",
    "zdroj": {
     "soubor": "obyvatele-bilance.json",
     "klic": "soucty.prirozeny_prirustek"

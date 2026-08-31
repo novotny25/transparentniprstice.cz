@@ -45,7 +45,7 @@
   <nav class="navrow podnav" aria-label="Části stránky Hospodaření">
       <span class="sipka">Na této stránce:</span>
       <a href="#souhrn">Zjištění</a>
-      <a href="#zajimavosti">Obec v číslech</a>
+      <a href="#zajimavosti">Srovnání s okolím</a>
       <a href="#hospodareni">Rozpočet 2019–2025</a>
       <a href="#polozky">Vybrané výdaje</a>
       <a href="#dotace">Dotace</a>
@@ -112,52 +112,25 @@
   <!-- ZAJÍMAVOSTI -->
   <section id="zajimavosti" class="wide reveal">
     <div class="sec-head">
-      <h2>Co možná o Pršticích nevíte</h2>
-      <p>Několik čísel, která zasazují obec do kontextu — než se podíváme na hospodaření.</p>
-    </div>
-    <div class="grid">
-      <div class="tile t-blue">
-        <p class="k">Počet obyvatel</p>
-        <p class="v">997</p>
-        <p class="c">Roste — od roku 2015 z 931. A roste hlavně <strong>stěhováním</strong>: za deset let migrace +57, rozením +25 (část růstu zpětně odečetla revize při sčítání 2021).</p>
-        <div class="chips"><span class="chip zdroj">zdroj</span><span class="chip vypocet">výpočet</span><span class="chip src">ČSÚ, 1.&nbsp;1.&nbsp;2025</span></div>
-      </div>
-      <div class="tile t-orange">
-        <p class="k">Průměrný věk</p>
-        <p class="v">43,3 <small>let</small></p>
-        <p class="c">Patří k <strong>nejstarším v okrese</strong> — 30. nejvyšší ze 187 obcí (průměr okresu 41,7). Přes příliv nových lidí obec nemládne.</p>
-        <div class="chips"><span class="chip zdroj">zdroj</span><span class="chip vypocet">výpočet</span><span class="chip src">ČSÚ 2025</span></div>
-      </div>
-      <div class="tile t-indigo">
-        <p class="k">První písemná zmínka</p>
-        <p class="v">1289</p>
-        <p class="c">Doložená historie <strong>od roku 1289</strong>. Dnes jedna část obce, katastr Prštice.</p>
-        <div class="chips"><span class="chip zdroj">zdroj</span><span class="chip src">historické prameny</span></div>
-      </div>
-      <div class="tile t-green">
-        <p class="k">Rozloha katastru</p>
-        <p class="v">7,83 <small>km²</small></p>
-        <p class="c"><strong>≈ 7 850 m² na obyvatele</strong>; hustota 127 obyvatel na km². Nadmořská výška 293 m.</p>
-        <div class="chips"><span class="chip zdroj">zdroj</span><span class="chip vypocet">výpočet</span><span class="chip src">ČSÚ</span></div>
-      </div>
-      <div class="tile t-teal">
-        <p class="k">Počet domů</p>
-        <p class="v">305</p>
-        <p class="c">Vychází <strong>≈ 3,3 obyvatele</strong> na jeden dům.</p>
-        <div class="chips"><span class="chip zdroj">zdroj</span><span class="chip vypocet">výpočet</span><span class="chip src">ČSÚ, sčítání 2021</span></div>
-      </div>
-      <div class="tile t-pink">
-        <p class="k">Roční rozpočet obce</p>
-        <p class="v">≈ 24 <small>mil. Kč</small></p>
-        <p class="c">S čím obec ročně hospodaří (dlouhodobý průměr příjmů 2019–2025). <a href="#hospodareni">Jak se vyvíjí →</a></p>
-        <div class="chips"><span class="chip vypocet">výpočet</span><span class="chip src">MONITOR MF ČR</span></div>
-      </div>
-    </div>
-    <div class="didyou">
-      <p><strong>Věděli jste?</strong> Při kopání tunelu u Prštic byl v roce 1870 nalezen mamutí kel a stolička — dnes jsou v rajhradském klášteře.</p>
+      <h2>Jak si Prštice stojí v okolí</h2>
+      <p class="sub" id="srov-sub"></p>
     </div>
 
-    <details class="card legenda" id="legenda">
+    <div class="grid2 srovmapa" id="srov-karty"></div>
+    <div class="card" id="srovnani" style="margin-top:20px">
+      <div class="nazor">
+        <p class="lab">Komentář autora — možná vysvětlení</p>
+        <p><b>Podprůměrné příjmy na obyvatele</b> mohou mít víc příčin. Jednou z nich je, kolik obec získává z dotací. V <a href="#rok2025">členění příjmů</a> tvoří přijaté transfery 1,2&nbsp;% až 7,3&nbsp;% příjmů ročně — jsou v tom ale <b>všechny transfery včetně provozních</b>, které dostává každá obec víceméně automaticky (příspěvek na výkon státní správy, peníze pro školu, na volby). Na <b>vlastní rozvojové projekty</b> získaly Prštice za sedm let 2019–2025 jen zhruba <b>1 milion Kč</b> — a ve <a href="#dotace">srovnání s okolními obcemi</a> skončily poslední z dvanácti, přestože se v něm počítaly všechny transfery, tedy metodikou pro obec nejpříznivější. <span class="chip vypocet">výpočet</span></p>
+        <p><b>Vyšší průměrný věk</b> zase často souvisí s tím, jak atraktivní podmínky obec nabízí mladým rodinám s dětmi — především kolik nové výstavby umožňuje. Územní plán Prštic přitom platí v původní podobě <b>z roku 1999</b>. Obce, kam se mladé rodiny stěhují, v průměru mládnou; Prštice rostou stěhováním, ale nemládnou.</p>
+        <p class="pozn">Jde o interpretaci autora — možná vysvětlení, ne doložené závěry. V úvahu připadají i jiná; obojí půjde ověřit dalšími daty (srovnání dotací s okolními obcemi, tempo výstavby).</p>
+      </div>
+      <details class="tbl"><summary>Zobrazit srovnávané obce</summary>
+        <div class="tblscroll"><table id="tbl-srovnani">
+          <thead><tr><th>Obec</th><th>Obyvatel</th><th>Průměrné příjmy</th><th>Na obyvatele</th></tr></thead>
+          <tbody></tbody></table></div></details>
+      <p class="src" id="srov-zdroj"></p>
+    </div>
+      <details class="card legenda" id="legenda">
       <summary><b>Jak číst čísla na tomto webu</b> — vysvětlení značek a pojmů</summary>
       <div class="linner">
         <p class="lnadpis">Značky u čísel</p>
@@ -182,23 +155,6 @@
         </dl>
       </div>
     </details>
-
-    <div class="card" id="srovnani" style="margin-top:24px">
-      <h3>Prštice hospodaří s podprůměrným rozpočtem na obyvatele</h3>
-      <p class="sub" id="srov-sub"></p>
-      <div class="grid2" id="srov-karty"></div>
-      <div class="nazor">
-        <p class="lab">Komentář autora — možná vysvětlení</p>
-        <p><b>Podprůměrné příjmy na obyvatele</b> mohou mít víc příčin. Jednou z nich je, kolik obec získává z dotací. V <a href="#rok2025">členění příjmů</a> tvoří přijaté transfery 1,2&nbsp;% až 7,3&nbsp;% příjmů ročně — jsou v tom ale <b>všechny transfery včetně provozních</b>, které dostává každá obec víceméně automaticky (příspěvek na výkon státní správy, peníze pro školu, na volby). Na <b>vlastní rozvojové projekty</b> získaly Prštice za sedm let 2019–2025 jen zhruba <b>1 milion Kč</b> — a ve <a href="#dotace">srovnání s okolními obcemi</a> skončily poslední z dvanácti, přestože se v něm počítaly všechny transfery, tedy metodikou pro obec nejpříznivější. <span class="chip vypocet">výpočet</span></p>
-        <p><b>Vyšší průměrný věk</b> zase často souvisí s tím, jak atraktivní podmínky obec nabízí mladým rodinám s dětmi — především kolik nové výstavby umožňuje. Územní plán Prštic přitom platí v původní podobě <b>z roku 1999</b>. Obce, kam se mladé rodiny stěhují, v průměru mládnou; Prštice rostou stěhováním, ale nemládnou.</p>
-        <p class="pozn">Jde o interpretaci autora — možná vysvětlení, ne doložené závěry. V úvahu připadají i jiná; obojí půjde ověřit dalšími daty (srovnání dotací s okolními obcemi, tempo výstavby).</p>
-      </div>
-      <details class="tbl"><summary>Zobrazit srovnávané obce</summary>
-        <div class="tblscroll"><table id="tbl-srovnani">
-          <thead><tr><th>Obec</th><th>Obyvatel</th><th>Průměrné příjmy</th><th>Na obyvatele</th></tr></thead>
-          <tbody></tbody></table></div></details>
-      <p class="src" id="srov-zdroj"></p>
-    </div>
   </section>
 
   <!-- HOSPODAŘENÍ -->

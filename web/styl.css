@@ -591,3 +591,20 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 @media(max-width:560px){.zjmapa{grid-template-columns:repeat(2,1fr)}}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .tema .vazba{font-size:.9rem;color:var(--muted);background:#f6f7f9;border-radius:10px;padding:9px 13px;margin:0 0 10px}
+
+/* Kompaktní dlaždice (Obec v číslech na podstránce) */
+.grid.kompakt{grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+@media(min-width:1060px){.grid.kompakt{grid-template-columns:repeat(6,1fr)}}
+.grid.kompakt .tile{padding:16px 16px 14px}
+.grid.kompakt .tile .v{font-size:clamp(1.6rem,3vw,2rem)}
+.grid.kompakt .tile .c{font-size:.88rem}
+.grid.kompakt .tile::after{width:90px;height:90px;right:-28px;top:-28px}
+
+/* Dvě srovnávací dlaždice na hlavní stránce */
+.srovmapa{margin-top:18px}
+.srovmapa .srovk{border-top:4px solid var(--zb,var(--accent));border-radius:var(--r);
+  background:#fbfbfd;box-shadow:var(--shadow);padding:22px 24px}
+.srovmapa .srovk:first-child{--zb:#0071e3}
+.srovmapa .srovk:last-child{--zb:#f08a00}
+.srovmapa .srovk .v{color:var(--zb);font-size:clamp(2rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.srovmapa .srovk .verdikt{display:inline-block;background:rgba(0,0,0,.05);border-radius:980px;padding:3px 12px;font-weight:700;font-size:.85rem;margin:4px 0 8px}
