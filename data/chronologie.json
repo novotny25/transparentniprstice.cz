@@ -3,8 +3,8 @@
   "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-28",
-  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK rozhodl 19. 8. 2026 ve prospěch žadatele; nyní běží lhůta obce na doložení podkladů a čekají se odpovědi na žádosti z 15., 25. a 26. 8. 2026.",
+  "stav_ke_dni": "2026-09-01",
+  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK rozhodl 19. 8. 2026 ve prospěch žadatele; obec 1. 9. 2026 odpověděla na žádost o soudní řízení jen částečně. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026.",
   "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty přibudou v kroku strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
  },
@@ -143,6 +143,15 @@
    "cj": null,
    "puvod_informace": "vlastní žádost",
    "dokument": "2026-08-26_zadost-smernice-zakazky.pdf"
+  },
+  {
+   "datum": "2026-09-01",
+   "typ": "odpověď",
+   "titulek": "Obec poskytla seznam soudních sporů, bez podrobností",
+   "popis": "Obec Prštice odpověděla na žádost z 15. 8. 2026 sdělením č. j. OUPR-1109/2026: uvedla dvanáct spisových značek a souhrnně čtyři protistrany, u dalších bodů žádosti odkázala na www.justice.cz. Předmět jednotlivých řízení, přiřazení protistran, výsledky, náklady ani kopie rozhodnutí poskytnuty nebyly a o této části žádosti nebylo vydáno rozhodnutí o odmítnutí. Průběh všech dvanácti řízení (data zahájení, rozhodnutí, právní moci, odvolací řízení a aktuální stav) jsme doplnili z veřejné aplikace infoSoud a zveřejnili v tabulce.",
+   "cj": "OUPR-1109/2026",
+   "puvod_informace": "datová schránka žadatele",
+   "dokument": "dokumenty/2026-09-01_odpoved-obce-OUPR-1109-2026.pdf"
   },
   {
    "datum": "2026-09-05",

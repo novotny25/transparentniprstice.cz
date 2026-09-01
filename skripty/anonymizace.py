@@ -80,6 +80,9 @@ DOKUMENTY = [
     (f"{PACT}/2026_08_26 Žádost o směrnici k zakázkám/2026_08_26_Zadost_106_smernice_zakazky.pdf",
      "2026-08-26_zadost-smernice-zakazky.pdf",
      "Žádost o vnitřní pravidla pro zadávání veřejných zakázek a finanční kontrolu"),
+    (f"{PACT}/2026_09_02 Stížnosti 16a - soudní řízení a GDPR/Priloha_Sdeleni_obce_2026-09-01_soudni_spory.pdf",
+     "2026-09-01_odpoved-obce-OUPR-1109-2026.pdf",
+     "Sdělení obce Prštice — částečná odpověď na žádost o přehled soudních řízení"),
 ]
 
 

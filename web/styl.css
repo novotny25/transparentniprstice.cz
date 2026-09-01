@@ -634,3 +634,27 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   .aktuality li{flex-direction:column;gap:2px}
   .aktuality .ad{width:auto}
 }
+
+/* Tabulka soudních řízení (rizeni.html) */
+.spory table{font-size:.92rem;min-width:840px;table-layout:fixed}
+.spory col.c1{width:19%}.spory col.c2{width:12%}.spory col.c3{width:10%}
+.spory col.c4{width:25%}.spory col.c5{width:8%}.spory col.c6{width:26%}
+.spory th,.spory td{text-align:left;vertical-align:top;padding:8px 10px}
+.spory td.n,.spory th.n{text-align:right;white-space:nowrap}
+.spory td.zn{font-weight:600;color:var(--accent)}
+.spory td.zn .z{white-space:nowrap}
+.spory .stavZ{white-space:normal}
+.spory td.n,.spory th.n{padding-right:16px}
+.spory td small{display:block;color:var(--faint);font-size:.82em;font-weight:400;margin-top:3px;line-height:1.35}
+.spory tr.bezi td{background:#fff8e8}
+.spory .prazdno{color:var(--faint)}
+.sporySouhrn{display:grid;grid-template-columns:repeat(auto-fit,minmax(132px,1fr));
+  gap:10px;margin:0 0 6px}
+.sporySouhrn div{min-width:0;background:#fbfbfd;border-left:4px solid var(--accent);
+  border-radius:12px;padding:10px 14px}
+.sporySouhrn div.zvyraz{border-left-color:#f2a11b;background:#fff8e8}
+.sporySouhrn .c{display:block;font-size:1.5rem;font-weight:700;font-variant-numeric:tabular-nums;line-height:1.1}
+.sporySouhrn .p{display:block;font-size:.82rem;color:var(--muted);margin-top:2px}
+.chybi{margin:14px 0 0;padding-left:20px;font-size:.95rem;color:var(--muted)}
+.chybi li{margin-bottom:4px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}

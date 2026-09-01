@@ -7,6 +7,16 @@
  "zobrazit": 6,
  "polozky": [
   {
+   "datum": "2026-09-01",
+   "text": "Obec odpověděla na žádost o přehled soudních řízení (č. j. OUPR-1109/2026): sdělila dvanáct spisových značek a souhrnný výčet čtyř protistran. Data zahájení, předměty řízení, výsledky, náklady ani kopie rozhodnutí neposkytla; u zbytku žádosti nevydala rozhodnutí o odmítnutí.",
+   "odkaz": "dokumenty/2026-09-01_odpoved-obce-OUPR-1109-2026.pdf"
+  },
+  {
+   "datum": "2026-09-01",
+   "text": "V sekci Soudy a řízení je nová tabulka všech dvanácti soudních sporů obce — průběh jsme doplnili z veřejné aplikace infoSoud: čtyři řízení běží, osm je skončeno, celkem 38 nařízených jednání a 15 odvolacích řízení.",
+   "odkaz": "rizeni.html#soudni-h"
+  },
+  {
    "datum": "2026-08-31",
    "text": "Web prošel kompletní nezávislou prověrkou (technika, čísla, odkazy, mobil) a je připraven. Doplněno měření návštěvnosti bez cookies.",
    "odkaz": "o-webu.html"

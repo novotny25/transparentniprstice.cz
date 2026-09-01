@@ -65,9 +65,9 @@
    "stranka": "rizeni.html",
    "citace": "",
    "typ": "probihajici_rizeni",
-   "datum_kontroly": "2026-09-05",
-   "otazka": "Odpověděla obec na žádost o přehled soudních řízení od 1. 1. 2018 (podáno 15. 8. 2026)? Sekce soudních řízení je zatím prázdná.",
-   "co_udelat": "Doplnit soudní řízení do data/rizeni.json, nebo zaznamenat nečinnost obce.",
+   "datum_kontroly": "2026-09-03",
+   "otazka": "Byla 2. 9. odeslána stížnost § 16a k soudním řízením (a GDPR)? Pokud ano, zveřejnit připravené aktuality, chronologii a dokumenty stížností.",
+   "co_udelat": "Po odeslání: spustit připravený krok „stiznosti-na-web“ (viz složka 2026_09_02 Stížnosti 16a). Pokud se odeslání odložilo, posunout datum v HTML stížností a přegenerovat PDF.",
    "vyrizeno": false
   },
   {
@@ -135,8 +135,8 @@
    "stranka": "jak-to-vime.html",
    "citace": "",
    "typ": "probihajici_rizeni",
-   "datum_kontroly": "2026-09-01",
-   "otazka": "Uplynula 15denní lhůta z rozhodnutí Krajského úřadu JMK (19. 8. 2026). Splnila obec, co jí bylo nařízeno?",
+   "datum_kontroly": "2026-09-06",
+   "otazka": "Doložila obec faktury a výkazy k právním službám dle příkazu KrÚ (15 dnů od doručení, tj. zhruba do 5. 9.)?",
    "co_udelat": "Doplnit do chronologie, jak to dopadlo.",
    "vyrizeno": false
   },
@@ -186,8 +186,8 @@
    "stranka": "index.html",
    "citace": "Podklady vyžádány",
    "typ": "cekame_na_odpoved",
-   "datum_kontroly": "2026-09-01",
-   "otazka": "Odpověděla obec na žádost o smlouvu s pověřencem GDPR (z 15. 8., lhůta do 31. 8.)?",
+   "datum_kontroly": "2026-09-03",
+   "otazka": "Stížnost § 16a ke smlouvě GDPR měla odejít 2. 9. — po odeslání aktualizovat štítek u pověřence a zveřejnit dokument.",
    "co_udelat": "Po odpovědi aktualizovat sekci GDPR a štítek; jinak stížnost dle § 16a.",
    "vyrizeno": false
   },

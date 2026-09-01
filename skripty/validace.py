@@ -137,7 +137,25 @@ if riz:
     (OK if typ_ok else FAIL)("řízení/typ", "každý záznam má povinné typ soudni|spravni" if typ_ok else "chybí/špatný typ")
     uohs_soud = [r for r in recs if "ÚOHS" in r.get("instituce", "") and r.get("typ") == "soudni"]
     (FAIL if uohs_soud else OK)("řízení/ÚOHS", "ÚOHS není označen jako soud" if not uohs_soud else "ÚOHS chybně jako soudni!")
-    WARN("řízení/stav", "správní část ÚOHS ověřená; soudní část čeká na odpověď obce (fáze 6)")
+    sr = riz.get("soudni_rizeni", {})
+    veci = sr.get("veci", [])
+    if veci:
+        sh = sr.get("souhrn", {})
+        sedi = (sh.get("celkem") == len(veci)
+                and sh.get("bezi") == sum(1 for v in veci if v.get("bezi"))
+                and sh.get("skonceno") == sum(1 for v in veci if not v.get("bezi"))
+                and sh.get("odvolacich_rizeni") == sum(len(v.get("odvolani", [])) for v in veci)
+                and sh.get("narizenych_jednani") == sum(v.get("narizenych_jednani", 0) for v in veci))
+        (OK if sedi else FAIL)("řízení/souhrn", f"souhrnná čísla souhlasí s {len(veci)} záznamy"
+                               if sedi else "souhrnná čísla nesedí se seznamem věcí")
+        pole_ok = all(v.get("spisova_znacka") and v.get("soud") and v.get("zahajeno") and v.get("stav")
+                      for v in veci)
+        (OK if pole_ok else FAIL)("řízení/soudní pole", "každé řízení má značku, soud, datum zahájení a stav"
+                                  if pole_ok else "u některého řízení chybí povinný údaj")
+        WARN("řízení/stav", "správní část ÚOHS ověřená; soudní část = seznam od obce + průběh z infoSoudu, "
+                            "předmět a výsledky obec neposkytla (podána stížnost)")
+    else:
+        WARN("řízení/stav", "správní část ÚOHS ověřená; soudní část čeká na odpověď obce (fáze 6)")
 else:
     NA("řízení", "data/rizeni.json zatím neexistuje (úkol 1.6)")
 
