@@ -21,6 +21,29 @@ def esc_html(t):
     return (str(t or "").replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;"))
 
 
+def renderuj_aktuality(akt):
+    """Pruh aktualit na hlavní stránce — statické HTML, rozbalování řeší
+    nativní <details>, žádný JavaScript není potřeba."""
+    mesice = ["", "ledna", "února", "března", "dubna", "května", "června",
+              "července", "srpna", "září", "října", "listopadu", "prosince"]
+    def datum_cz(iso):
+        r, m, d = iso.split("-")
+        return f"{int(d)}. {mesice[int(m)]} {int(r)}"
+    polozky = akt["polozky"][:akt.get("zobrazit", 6)]
+    prvni = polozky[0]
+    radky = ""
+    for a in polozky:
+        odkaz = f' <a href="{a["odkaz"]}">více →</a>' if a.get("odkaz") else ""
+        radky += (f'<li><span class="ad">{datum_cz(a["datum"])}</span>'
+                  f'<span class="at">{esc_html(a["text"])}{odkaz}</span></li>')
+    return (f'<details class="aktuality"><summary><span class="aznak">Aktuálně</span>'
+            f'<span class="ateaser"><b>{datum_cz(prvni["datum"])}:</b> {esc_html(prvni["text"])}</span>'
+            f'<span class="acaret">▾</span></summary>'
+            f'<ul>{radky}</ul>'
+            f'<p class="apata">Úplný přehled všech kroků a dokladů: '
+            f'<a href="jak-to-vime.html">Jak to víme</a>.</p></details>')
+
+
 def renderuj_kroky(navod):
     """Vykreslí kroky návodu do statického HTML — stejné značení, jaké kreslí
     JavaScript na stránce. Díky <details>/<summary> funguje i úplně bez JS;
@@ -349,6 +372,13 @@ def main():
                 json.load(open(os.path.join(DATA, zdroj), encoding="utf-8"))
             html = vloz(html, blok_id, data)
             vlozeno.append(blok_id)
+            # aktuality: pruh na hlavní stránce ze souboru data/aktuality.json
+            if soubor == "index.html" and blok_id == "d-obyvatele":
+                akt = json.load(open(os.path.join(DATA, "aktuality.json"), encoding="utf-8"))
+                html = re.sub(r"<!--aktuality-start-->.*?<!--aktuality-konec-->",
+                              "<!--aktuality-start-->" + renderuj_aktuality(akt) + "<!--aktuality-konec-->",
+                              html, flags=re.S)
+                vlozeno.append("aktuality (statické HTML)")
             # návod: kroky vykreslit i staticky, ať existují bez JavaScriptu
             if blok_id == "d-navod":
                 html = re.sub(r"<!--kroky-start-->.*?<!--kroky-konec-->",

@@ -1,0 +1,35 @@
+{
+ "_navod": [
+  "Aktuality na hlavní stránce. Nové položky přidávej NAHORU (první = teaser).",
+  "Po úpravě spusť: python3 skripty/vlozit_data.py (vloží do webu) a nasaď.",
+  "datum: RRRR-MM-DD · text: 1–2 věty, neutrálně, s pevnými daty · odkaz: volitelný cíl"
+ ],
+ "zobrazit": 6,
+ "polozky": [
+  {
+   "datum": "2026-08-31",
+   "text": "Web prošel kompletní nezávislou prověrkou (technika, čísla, odkazy, mobil) a je připraven. Doplněno měření návštěvnosti bez cookies.",
+   "odkaz": "o-webu.html"
+  },
+  {
+   "datum": "2026-08-26",
+   "text": "Podána žádost o vnitřní směrnici obce pro zadávání veřejných zakázek. Lhůta pro odpověď běží do 10. 9. 2026.",
+   "odkaz": "jak-to-vime.html"
+  },
+  {
+   "datum": "2026-08-25",
+   "text": "Podána žádost o rozpis největšího nákladového účtu obce — 511 „Opravy a udržování“ (24,4 mil. Kč za roky 2020–2025). Obec má odpovědět do 9. 9. 2026.",
+   "odkaz": "index.html#p-511"
+  },
+  {
+   "datum": "2026-08-19",
+   "text": "Krajský úřad JMK rozhodl v náš prospěch: obci přikázal vyřídit žádost o faktury a výkazy k právním službám. Proti rozhodnutí není odvolání.",
+   "odkaz": "index.html#p-pravni"
+  },
+  {
+   "datum": "2026-08-15",
+   "text": "Podány dvě žádosti: o rámcovou smlouvu s pověřencem GDPR a o přehled soudních řízení obce od roku 2018.",
+   "odkaz": "jak-to-vime.html"
+  }
+ ]
+}

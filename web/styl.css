@@ -610,3 +610,27 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .srovmapa .srovk:last-child{--zb:#f08a00}
 .srovmapa .srovk .v{color:var(--zb);font-size:clamp(2rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
 .srovmapa .srovk .verdikt{display:inline-block;background:rgba(0,0,0,.05);border-radius:980px;padding:3px 12px;font-weight:700;font-size:.85rem;margin:4px 0 8px}
+
+/* Pruh aktualit pod úvodem — výrazný, ale úsporný; rozbalení řeší <details> */
+.aktuality{margin:18px auto 0;border-radius:14px;border:1px solid #f2dcb8;
+  background:linear-gradient(160deg,#fff8ec,#fffdf8);box-shadow:var(--shadow)}
+.aktuality summary{list-style:none;cursor:pointer;display:flex;align-items:center;
+  gap:12px;padding:12px 18px}
+.aktuality summary::-webkit-details-marker{display:none}
+.aktuality .aznak{flex:none;background:#f5a524;color:#4a3200;font-weight:800;
+  font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;
+  border-radius:980px;padding:4px 12px}
+.aktuality .ateaser{font-size:.95rem;line-height:1.5;color:var(--text);
+  overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.aktuality .acaret{flex:none;color:#b3812a;transition:transform .25s ease}
+.aktuality[open] .acaret{transform:rotate(180deg)}
+.aktuality[open] .ateaser{display:none}
+.aktuality ul{list-style:none;margin:0;padding:2px 18px 6px}
+.aktuality li{display:flex;gap:14px;padding:9px 0;border-top:1px solid #f4e6cd}
+.aktuality .ad{flex:none;width:9.5em;font-weight:700;font-size:.88rem;color:#8a5f10}
+.aktuality .at{font-size:.95rem;line-height:1.55}
+.aktuality .apata{margin:0;padding:10px 18px 14px;font-size:.9rem;color:var(--muted)}
+@media(max-width:560px){
+  .aktuality li{flex-direction:column;gap:2px}
+  .aktuality .ad{width:auto}
+}
