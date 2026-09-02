@@ -100,7 +100,7 @@
    "adresat": "Obec Prštice",
    "cj": "OUPR-1109/2026",
    "typ_podani": "žádost o informace",
-   "stav": "vyřízeno částečně — podána stížnost",
+   "stav": "vyřízeno částečně — podána stížnost § 16a",
    "puvod_informace": "vlastní žádost",
    "zdroj": "složka 2026_08_15 Žádost o informace soudní procesy",
    "poznamka": "Obec 1. 9. 2026 poskytla dvanáct spisových značek a souhrnný výčet čtyř protistran. Předmět řízení, přiřazení protistran, výsledky, náklady ani kopie rozhodnutí neposkytla a o zbytku žádosti nevydala rozhodnutí o odmítnutí; proto podána stížnost podle § 16a odst. 1 písm. c) InfZ.",
@@ -129,6 +129,13 @@
    "zdroj": "složka 2026_08_26 Žádost o směrnici k zakázkám",
    "poznamka": "Navazuje na tři pravomocná rozhodnutí ÚOHS za neuveřejnění smluv na profilu zadavatele — cílem je zjistit, zda má obec nastavená pravidla, která podobným pochybením předcházejí.",
    "lhuta_do": "2026-09-10"
+  },
+  {
+   "datum_podani": "2026-09-01",
+   "predmet": "Stížnost podle § 16a odst. 1 písm. c) InfZ — částečné vyřízení žádosti z 15. 8. 2026 o přehled soudních řízení (sp. zn. SP/106/2026)",
+   "typ_podani": "stížnost § 16a",
+   "stav": "podána — obec má 7 dnů na vyhovění (autoremedura), poté předkládá krajskému úřadu",
+   "lhuta_do": "2026-09-08"
   },
   {
    "datum_podani": "2026-09-02",

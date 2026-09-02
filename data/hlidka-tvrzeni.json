@@ -65,8 +65,8 @@
    "stranka": "rizeni.html",
    "citace": "",
    "typ": "probihajici_rizeni",
-   "datum_kontroly": "2026-09-03",
-   "otazka": "Byla 2. 9. odeslána stížnost § 16a k soudním řízením (a GDPR)? Pokud ano, zveřejnit připravené aktuality, chronologii a dokumenty stížností.",
+   "datum_kontroly": "2026-09-09",
+   "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti z 1. 9. 2026, nebo ji předložila krajskému úřadu?",
    "co_udelat": "Po odeslání: spustit připravený krok „stiznosti-na-web“ (viz složka 2026_09_02 Stížnosti 16a). Pokud se odeslání odložilo, posunout datum v HTML stížností a přegenerovat PDF.",
    "vyrizeno": false
   },
