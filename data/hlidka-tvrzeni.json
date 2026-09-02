@@ -224,10 +224,10 @@
   {
    "id": "mas-pocet-obci",
    "stranka": "index.html",
-   "citace": "sdružuje třináct obcí",
+   "citace": "působí na území třinácti obcí",
    "typ": "relativni_cas",
    "datum_kontroly": "2027-03-01",
-   "otazka": "Má MAS Bobrava pořád 13 členských obcí? (ověřeno 29. 8. 2026 z masbobrava.cz)",
+   "otazka": "Má MAS Bobrava pořád 13 obcí v územní působnosti a je členský příspěvek stále 25 Kč/obyvatele? (ověřeno 2. 9. 2026 z výroční zprávy 2025 a usnesení VH)",
    "co_udelat": "Ověřit členskou základnu na webu MAS a upravit číslovku i výčet.",
    "vyrizeno": false
   },
