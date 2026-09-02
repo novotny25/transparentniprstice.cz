@@ -691,3 +691,8 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .ukaz td .pozn{font-size:.82rem;color:var(--muted);display:block;margin-top:4px;max-width:none}
 .meritko-nova{background:linear-gradient(160deg,#e6f7ec,#f5fdf8);border-radius:var(--r);padding:24px 28px}
 .meritko-nova h3{margin-top:0}
+/* Dobře vedená obec: odstavce do bloku (od tabletu výš, s dělením slov) */
+@media(min-width:701px){
+  .oblast>p,.oblast .nazor li,.oblast .pravidla li,.oblast .overit li,.predem .tile .c,.meritko-txt p{
+    text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-justify:inter-word}
+}
