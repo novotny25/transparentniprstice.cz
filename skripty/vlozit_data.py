@@ -41,7 +41,7 @@ def renderuj_aktuality(akt):
             f'<span class="acaret">▾</span></summary>'
             f'<ul>{radky}</ul>'
             f'<p class="apata">Úplný přehled všech kroků a dokladů: '
-            f'<a href="jak-to-vime.html">Jak to vím</a>.</p></details>')
+            f'<a href="jak-to-vime.html">Zdroje a doklady</a>.</p></details>')
 
 
 def renderuj_kroky(navod):
