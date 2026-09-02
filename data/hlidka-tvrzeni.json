@@ -350,6 +350,46 @@
    "otazka": "Vyhlásilo MMR novou výzvu podprogramu Podpora obnovy a rozvoje venkova s aktivitou na místní komunikace? (poslední byla 2023, výzva 2025 komunikace vyloučila)",
    "co_udelat": "Když je výzva otevřená, upravit větu a sledovat, zda obec žádost podá — to je nová aktualita.",
    "vyrizeno": false
+  },
+  {
+   "id": "dvo-vyrocni-zprava-106",
+   "stranka": "dobre-vedena-obec.html",
+   "citace": "Za roky 2024 a 2025 na webu nejsou",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-09-16",
+   "otazka": "Zveřejnila obec na prstice.cz/urad/vyrocni-zpravy/ výroční zprávu podle § 18 InfZ za rok 2024 nebo 2025?",
+   "co_udelat": "Pokud ano, přepsat větu na 'doplněny dodatečně dne …' a označit jako nápravu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "dvo-smernice-106",
+   "stranka": "dobre-vedena-obec.html",
+   "citace": "vyžádal jsem si ji 26. 8. 2026 (lhůta 10. 9.)",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-09-11",
+   "otazka": "Poskytla obec směrnici pro zakázky malého rozsahu (žádost z 26. 8. 2026)?",
+   "co_udelat": "Poskytnuto → anonymizovat, zveřejnit v dokumentech a přepsat větu; neposkytnuto → stížnost § 16a a přepsat větu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "dvo-munipolis-pocet",
+   "stranka": "dobre-vedena-obec.html",
+   "citace": "126 přihlášených odběratelů k 2. 9. 2026",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-12-01",
+   "otazka": "Kolik odběratelů má prstice.munipolis.cz nyní?",
+   "co_udelat": "Aktualizovat číslo i datum.",
+   "vyrizeno": false
+  },
+  {
+   "id": "dvo-usneseni-2-polozky",
+   "stranka": "dobre-vedena-obec.html",
+   "citace": "drží jen dvě poslední položky",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-10-01",
+   "otazka": "Kolik položek má sekce prstice.cz/obec/usneseni-ze-zasedani/ (po zasedání 27. 8. 2026)?",
+   "co_udelat": "Upravit počet; pokud obec začala zveřejňovat zápisy, přepsat celý bod jako nápravu.",
+   "vyrizeno": false
   }
  ]
 }
