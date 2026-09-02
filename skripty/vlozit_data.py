@@ -77,6 +77,7 @@ STRANKY = {                       # soubor -> {id bloku: název datového soubor
                         "d-temata": None, "d-vybrane": None, "d-518": None,
                         "d-srovnani": "srovnani-obci.json",
                         "d-mas": "mas-bobrava.json",
+                        "d-spolky": "spolky-okoli.json",
                         "d-obyvatele": "obyvatele.json"},
     "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None},
     "pro-dalsi-obce.html": {"d-navod": "navod.json"},
@@ -348,6 +349,37 @@ def blok_518():
             "zmeny": zmeny}
 
 
+def renderuj_spolky(sp):
+    """Statické HTML pro zjištění o podpoře spolků: vodorovné sloupce
+    (Kč na obyvatele, 2025) a tabulka obec × rok. Bez JavaScriptu."""
+    srov = json.load(open(os.path.join(DATA, "srovnani-dotaci.json"), encoding="utf-8"))
+    okruh = {o["kod"]: o.get("okruh", "") for o in srov["obce"]}
+    obce = sorted(sp["obce"], key=lambda o: -o["na_obyv_2025"])
+    mx = max(o["na_obyv_2025"] for o in obce) or 1
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", "\u00a0")
+    radky = []
+    for o in obce:
+        my = o["kod"] == "583707"
+        sous = okruh.get(o["kod"], "") == "sousední"
+        cls = "radek my" if my else ("radek sous" if sous else "radek")
+        w = max(o["na_obyv_2025"] / mx * 100, 0.6)
+        radky.append(f'<div class="{cls}"><span class="jm">{esc_html(o["obec"])}{" *" if sous and not my else ""}</span>'
+                     f'<span class="zl"><i style="width:{w:.1f}%"></i></span>'
+                     f'<span class="hod">{kcs(o["na_obyv_2025"])}\u00a0Kč</span></div>')
+    barh = "".join(radky) + ('<p class="src" style="margin-top:10px">* sousední obec Prštic. Hodnota = transfery spolkům '
+            'a neziskovým organizacím v roce 2025 na jednoho obyvatele.</p>')
+    roky = [str(r) for r in range(2019, 2026)]
+    hlav = '<tr><th>obec</th>' + "".join(f"<th>{r}</th>" for r in roky) + '<th>Ø/obyv.</th></tr>'
+    telo = []
+    for o in obce:
+        my = o["kod"] == "583707"
+        bunky = "".join(f'<td>{kcs((o["roky"][r]["5222"] + o["roky"][r]["5229"]) / 1000)}</td>' for r in roky)
+        telo.append(f'<tr{" class=\"my\"" if my else ""}><th>{esc_html(o["obec"])}</th>{bunky}<td><b>{kcs(o["na_obyv_prumer"])}</b></td></tr>')
+    tab = ('<table><thead>' + hlav + '</thead><tbody>' + "".join(telo) + '</tbody></table>')
+    return barh, tab
+
+
 def vloz(html, blok_id, data):
     vzor = re.compile(r'(<script type="application/json" id="%s">)(.*?)(</script>)' % re.escape(blok_id), re.S)
     if not vzor.search(html):
@@ -380,6 +412,14 @@ def main():
                               "<!--aktuality-start-->" + renderuj_aktuality(akt) + "<!--aktuality-konec-->",
                               html, flags=re.S)
                 vlozeno.append("aktuality (statické HTML)")
+            # spolky: sloupce a tabulka staticky, ať existují bez JavaScriptu
+            if blok_id == "d-spolky":
+                barh, tab = renderuj_spolky(data)
+                html = re.sub(r"<!--spolky-barh-start-->.*?<!--spolky-barh-konec-->",
+                              "<!--spolky-barh-start-->" + barh + "<!--spolky-barh-konec-->", html, flags=re.S)
+                html = re.sub(r"<!--spolky-tab-start-->.*?<!--spolky-tab-konec-->",
+                              "<!--spolky-tab-start-->" + tab + "<!--spolky-tab-konec-->", html, flags=re.S)
+                vlozeno.append("spolky (statické HTML)")
             # návod: kroky vykreslit i staticky, ať existují bez JavaScriptu
             if blok_id == "d-navod":
                 html = re.sub(r"<!--kroky-start-->.*?<!--kroky-konec-->",
