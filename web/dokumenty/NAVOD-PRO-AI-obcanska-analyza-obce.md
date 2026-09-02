@@ -225,7 +225,8 @@ SELECT ?obecLabel ?lat ?lon WHERE {
 
 > **Právní past, na které se dá shodit celý web:** zákon o registru smluv
 > (340/2015 Sb.) **se na malé obce nevztahuje** — mají výjimku podle
-> § 3 odst. 2 písm. l). Nikdy netvrďte, že obec „porušuje registr smluv".
+> § 3 odst. 2 **písm. k)** (pozor, řada zdrojů uvádí chybně písm. l) — ověřeno
+> v konsolidovaném znění 2. 9. 2026). Nikdy netvrďte, že obec „porušuje registr smluv".
 > Pokuty ÚOHS se týkají **jiné** povinnosti: uveřejnění na **profilu
 > zadavatele** podle zákona o zadávání veřejných zakázek (134/2016 Sb.).
 > Tohle rozlišení si ověřte dřív, než cokoli napíšete.
