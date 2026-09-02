@@ -512,11 +512,8 @@ roli, čísla jednací a spisové značky (bez nich nejde dokument ověřit).
 - odkáže na web a shrne, co na něm je,
 - vyjmenuje konkrétní údaje, které se obce týkají, s čísly a zdroji,
 - požádá o dvě věci: upozornění na věcnou chybu a případné vyjádření,
-- slíbí, že vyjádření **k uvedeným údajům** zveřejníte nezkrácené, označené a bez komentáře,
-- **vymezí rozsah nabídky**: platí pro vysvětlení konkrétních položek, doplnění souvislostí,
-  doložení dokumentem a upozornění na chybu — ne pro texty o vaší osobě. Bez tohoto
-  vymezení dáváte protistraně bianko šek na vlastním webu; s ním zůstáváte féroví
-  a přitom nemusíte otiskovat pamflet. Že podání přišlo a čeho se týkalo, uveďte vždy.
+- slíbí, že **vysvětlení ke konkrétním údajům** zveřejníte u nich, včetně doplňujících
+  dokumentů,
 - dá rozumnou lhůtu (osvědčily se dva týdny),
 - vysvětlí, že nejde o osobní spor.
 
@@ -579,6 +576,19 @@ Dvě pravidla, která nás opakovaně zachránila:
    hotovou stejně jako naše obec.) Když námitku data vyvrátí, dejte na web
    **obojí** — námitku i vyvrácení; je to přesvědčivější než tvrzení samo.
    Když ji vyvrátit neumíte, tvrzení zmírněte.
+
+## G3b. Nabídku obci formulujte pozitivně, obranu si nechte v záloze
+
+Nabídku prostoru k vyjádření piště **kladně a stručně**: uvítáte vysvětlení
+ke konkrétním položkám, zveřejníte je u nich včetně dokumentů, opravíte chybu.
+Nepiště do ní předem, co zveřejňovat nebudete („ne texty o mé osobě") — takové
+vymezení působí, jako byste už byli v konfliktu, a čtenáři to podsouvá napětí,
+které tam nemusí být.
+
+Mějte ale **připravené**, co uděláte, kdyby přišel text, který se zveřejněných
+údajů netýká: zveřejnit fakt, že podání přišlo a čeho se týkalo, a vysvětlit,
+proč web není platforma pro obsah mimo věc. Zveřejněte to teprve tehdy, když
+situace nastane — do té doby to na web nepatří.
 
 ## G4. Testovací čtenáři
 
