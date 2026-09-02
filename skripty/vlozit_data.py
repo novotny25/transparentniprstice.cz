@@ -370,12 +370,18 @@ def renderuj_spolky(sp):
     barh = "".join(radky) + ('<p class="src" style="margin-top:10px">* sousední obec Prštic. Hodnota = transfery spolkům '
             'a neziskovým organizacím v roce 2025 na jednoho obyvatele.</p>')
     roky = [str(r) for r in range(2019, 2026)]
-    hlav = '<tr><th>obec</th>' + "".join(f"<th>{r}</th>" for r in roky) + '<th>Ø/obyv.</th></tr>'
+    def rocni(o, r):
+        return o["roky"][r]["5222"] + o["roky"][r]["5229"]
+    tabulka = sorted(sp["obce"], key=lambda o: -rocni(o, "2025"))
+    hlav = ('<tr><th>obec</th>' + "".join(f"<th>{r}</th>" for r in roky)
+            + '<th>2019–2025</th><th>obyvatel</th><th>2025 na obyv.</th></tr>')
     telo = []
-    for o in obce:
+    for o in tabulka:
         my = o["kod"] == "583707"
-        bunky = "".join(f'<td>{kcs((o["roky"][r]["5222"] + o["roky"][r]["5229"]) / 1000)}</td>' for r in roky)
-        telo.append(f'<tr{" class=\"my\"" if my else ""}><th>{esc_html(o["obec"])}</th>{bunky}<td><b>{kcs(o["na_obyv_prumer"])}</b></td></tr>')
+        bunky = "".join(f'<td>{kcs(rocni(o, r) / 1000)}</td>' for r in roky)
+        celkem = sum(rocni(o, r) for r in roky) / 1000
+        telo.append(f'<tr{" class=\"my\"" if my else ""}><th>{esc_html(o["obec"])}</th>{bunky}'
+                    f'<td><b>{kcs(celkem)}</b></td><td>{kcs(o["obyvatel"])}</td><td>{kcs(o["na_obyv_2025"])}\u00a0Kč</td></tr>')
     tab = ('<table><thead>' + hlav + '</thead><tbody>' + "".join(telo) + '</tbody></table>')
     return barh, tab
 
