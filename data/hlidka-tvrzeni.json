@@ -113,7 +113,7 @@
   {
    "id": "dve-polozky-cekame",
    "stranka": "index.html",
-   "citace": "U všech tří stále čekám na podklady od obce",
+   "citace": "U tří z nich stále čekám na podklady od obce",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
    "otazka": "Pořád čekáte na podklady u všech tří ze tří položek „pod lupou“?",
@@ -389,6 +389,16 @@
    "datum_kontroly": "2026-10-01",
    "otazka": "Kolik položek má sekce prstice.cz/obec/usneseni-ze-zasedani/ (po zasedání 27. 8. 2026)?",
    "co_udelat": "Upravit počet; pokud obec začala zveřejňovat zápisy, přepsat celý bod jako nápravu.",
+   "vyrizeno": false
+  },
+  {
+   "id": "prezkum-2026",
+   "stranka": "index.html",
+   "citace": "Za rok 2025 je závěr a): nebyly zjištěny chyby a nedostatky",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2027-06-01",
+   "otazka": "Je na prstice.cz zveřejněn návrh závěrečného účtu za rok 2026 se zprávou o přezkoumání? Jaký je závěr?",
+   "co_udelat": "Doplnit rok 2026 do zjištění na index.html i do komentáře na dobre-vedena-obec.html.",
    "vyrizeno": false
   }
  ]
