@@ -159,10 +159,10 @@ REGISTR = [
     ("Řízení", "Pokuty ÚOHS celkem 11 000 Kč", "výpočet",
      lambda: (sum(r.get("pokuta_kc", 0) for r in D["rizeni"]["rizeni"]), 11000)),
 
-    ("Jak to víme", "Podáno 9 žádostí a podání", "zdroj",
-     lambda: (len(D["zadosti-106"]["zadosti"]), 9)),
-    ("Jak to víme", "Zveřejněno 9 anonymizovaných dokumentů", "zdroj",
-     lambda: (len(D["dokumenty"]["dokumenty"]), 9)),
+    ("Jak to vím", "Podáno 10 žádostí a podání", "zdroj",
+     lambda: (len(D["zadosti-106"]["zadosti"]), 10)),
+    ("Jak to vím", "Zveřejněno 11 anonymizovaných dokumentů", "zdroj",
+     lambda: (len(D["dokumenty"]["dokumenty"]), 11)),
 ]
 
 

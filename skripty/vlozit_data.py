@@ -41,7 +41,7 @@ def renderuj_aktuality(akt):
             f'<span class="acaret">▾</span></summary>'
             f'<ul>{radky}</ul>'
             f'<p class="apata">Úplný přehled všech kroků a dokladů: '
-            f'<a href="jak-to-vime.html">Jak to víme</a>.</p></details>')
+            f'<a href="jak-to-vime.html">Jak to vím</a>.</p></details>')
 
 
 def renderuj_kroky(navod):
@@ -154,7 +154,7 @@ def blok_rady():
 TEMATA = [
  {"id": "pravni", "nadpis": "Konzultační a právní služby (rozpočtová položka)", "barva": "#e63562",
   "pol": ["5166"],
-  "vazba": {"text": "Pozor, tady měříme širší rozpočtovou položku 5166 — vedle právních služeb "
+  "vazba": {"text": "Pozor, tady měřím širší rozpočtovou položku 5166 — vedle právních služeb "
                     "zahrnuje i konzultace a poradenství. Rozbor samotných právních služeb "
                     "z účetního deníku (617 tis. Kč za rok 2025) je výše.",
             "kotva": "#p-pravni", "odkaz": "přejít na rozbor právních služeb ↑"},
@@ -182,7 +182,7 @@ TEMATA = [
   "par": ["2321", "2310"],
   "popis": "Výdaje na pitnou vodu, kanalizaci a čištění odpadních vod prudce vzrostly "
            "v roce 2023. Za první pololetí 2026 jsou přitom náklady vyšší než za celý "
-           "rok 2025 — pokud se tempo udrží, čeká nás další citelný nárůst.",
+           "rok 2025 — pokud se tempo udrží, čeká obec další citelný nárůst.",
   "nevime": "Co nárůst v roce 2023 způsobilo a jak se náklady promítají do stočného, "
             "z rozpočtu není patrné."},
 ]
@@ -282,7 +282,7 @@ def blok_temata():
 
 
 def blok_vybrane():
-    """Řady pro sekci „Ptáme se na vybrané výdaje" — z účetního deníku 518."""
+    """Řady pro sekci vybraných výdajů — z účetního deníku 518."""
     r = json.load(open(os.path.join(DATA, "ucet-518-rozklad.json"), encoding="utf-8"))
     kat = r["kategorie_po_letech_kc"]
     roky = ["2022", "2023", "2024", "2025"]

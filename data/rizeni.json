@@ -67,7 +67,7 @@
  ],
  "soudni_rizeni": {
   "stav": "částečná odpověď obce",
-  "poznamka": "Obec 1. 9. 2026 sdělila dvanáct spisových značek a čtyři protistrany, ale bez přiřazení k jednotlivým věcem a bez předmětu, výsledku a nákladů. Průběh řízení jsme proto doplnili z veřejné aplikace infoSoud. Zbytek žádosti je předmětem stížnosti.",
+  "poznamka": "Obec 1. 9. 2026 sdělila dvanáct spisových značek a čtyři protistrany, ale bez přiřazení k jednotlivým věcem a bez předmětu, výsledku a nákladů. Průběh řízení jsem proto doplnil z veřejné aplikace infoSoud. Zbytek žádosti je předmětem stížnosti.",
   "zdroj_seznamu": "Sdělení obce Prštice č. j. OUPR-1109/2026 ze dne 1. 9. 2026 (sp. zn. SP/106/2026), odpověď na žádost o informace ze dne 15. 8. 2026",
   "zdroj_prubehu": "infoSoud (infosoud.gov.cz), ověřeno 1. 9. 2026; údaje platné k 1. 9. 2026 11:27",
   "dokument": "dokumenty/2026-09-01_odpoved-obce-OUPR-1109-2026.pdf",
@@ -97,7 +97,7 @@
     "ico": "14101599"
    }
   ],
-  "protistrany_poznamka": "Obec uvedla protistrany souhrnně za všech dvanáct řízení, nikoli u jednotlivých věcí. Které z nich patří ke které spisové značce, zatím nevíme.",
+  "protistrany_poznamka": "Obec uvedla protistrany souhrnně za všech dvanáct řízení, nikoli u jednotlivých věcí. Které z nich patří ke které spisové značce, zatím nevím.",
   "souhrn": {
    "celkem": 12,
    "bezi": 4,
