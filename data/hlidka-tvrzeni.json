@@ -340,6 +340,16 @@
    "otazka": "Sedí velikost a verze na kartě manuálu s aktuálním souborem?",
    "co_udelat": "Po každé změně manuálu aktualizovat řádek „Markdown · … kB · verze …“.",
    "vyrizeno": false
+  },
+  {
+   "id": "mmr-titul-komunikace",
+   "stranka": "index.html",
+   "citace": "titul není momentálně otevřený",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-11-15",
+   "otazka": "Vyhlásilo MMR novou výzvu podprogramu Podpora obnovy a rozvoje venkova s aktivitou na místní komunikace? (poslední byla 2023, výzva 2025 komunikace vyloučila)",
+   "co_udelat": "Když je výzva otevřená, upravit větu a sledovat, zda obec žádost podá — to je nová aktualita.",
+   "vyrizeno": false
   }
  ]
 }
