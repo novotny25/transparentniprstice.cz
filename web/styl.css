@@ -696,3 +696,22 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   .oblast>p,.oblast .nazor li,.oblast .pravidla li,.oblast .overit li,.predem .tile .c,.meritko-txt p{
     text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-justify:inter-word}
 }
+/* Spolky: tabulka s drobnými roky a dvěma velkými čísly */
+.spolkytab{min-width:820px;border-collapse:separate;border-spacing:0}
+.spolkytab th,.spolkytab td{padding:8px 10px;vertical-align:middle}
+.spolkytab thead th{font-size:.78rem;color:var(--muted);font-weight:600;text-align:right;border-bottom:1px solid var(--line)}
+.spolkytab thead th.ob{text-align:left}
+.spolkytab th.ob{text-align:left;font-weight:600;white-space:nowrap}
+.spolkytab th.ob small{display:block;font-size:.74rem;color:var(--faint);font-weight:500}
+.spolkytab td.rok,.spolkytab th.rok{font-size:.74rem;color:#9a9ca3;text-align:right;padding:8px 5px;font-variant-numeric:tabular-nums}
+.spolkytab td.suma,.spolkytab th.suma{text-align:right;border-left:1px solid var(--line);padding-left:14px;min-width:150px}
+.spolkytab td.suma{font-variant-numeric:tabular-nums;font-weight:700;font-size:1rem;position:relative}
+.spolkytab td.suma span{position:relative;z-index:1}
+.spolkytab td.suma::before{content:"";position:absolute;left:8px;top:6px;bottom:6px;width:calc(var(--p) - 16px);min-width:2px;
+  background:#dbe9ff;border-radius:5px}
+.spolkytab td.r25,.spolkytab th.r25{text-align:right;border-left:3px double var(--line);padding-left:16px;font-variant-numeric:tabular-nums;font-weight:600}
+.spolkytab td.naob,.spolkytab th.naob{text-align:right;font-variant-numeric:tabular-nums;color:var(--muted)}
+.spolkytab tbody tr:nth-child(even) td,.spolkytab tbody tr:nth-child(even) th{background:#fafbfc}
+.spolkytab tr.my th,.spolkytab tr.my td{background:#fdeeeb!important;color:#b03a2e}
+.spolkytab tr.my td.rok{color:#c9776c}
+.spolkytab tr.my td.suma::before{background:#f6c9c3}

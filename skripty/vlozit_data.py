@@ -372,17 +372,24 @@ def renderuj_spolky(sp):
     roky = [str(r) for r in range(2019, 2026)]
     def rocni(o, r):
         return o["roky"][r]["5222"] + o["roky"][r]["5229"]
-    tabulka = sorted(sp["obce"], key=lambda o: -rocni(o, "2025"))
-    hlav = ('<tr><th>obec</th>' + "".join(f"<th>{r}</th>" for r in roky)
-            + '<th>2019–2025</th><th>obyvatel</th><th>2025 na obyv.</th></tr>')
+    def suma(o):
+        return sum(rocni(o, r) for r in roky)
+    tabulka = sorted(sp["obce"], key=lambda o: -o["na_obyv_2025"])   # stejné pořadí jako sloupce
+    max_suma = max(suma(o) for o in tabulka) or 1
+    hlav = ('<tr><th class="ob">obec</th>'
+            + "".join(f'<th class="rok">{r}</th>' for r in roky[:-1])
+            + '<th class="suma">2019–2025 celkem</th><th class="r25">rok 2025</th><th class="naob">2025 na obyvatele</th></tr>')
     telo = []
     for o in tabulka:
         my = o["kod"] == "583707"
-        bunky = "".join(f'<td>{kcs(rocni(o, r) / 1000)}</td>' for r in roky)
-        celkem = sum(rocni(o, r) for r in roky) / 1000
-        telo.append(f'<tr{" class=\"my\"" if my else ""}><th>{esc_html(o["obec"])}</th>{bunky}'
-                    f'<td><b>{kcs(celkem)}</b></td><td>{kcs(o["obyvatel"])}</td><td>{kcs(o["na_obyv_2025"])}\u00a0Kč</td></tr>')
-    tab = ('<table><thead>' + hlav + '</thead><tbody>' + "".join(telo) + '</tbody></table>')
+        drobne = "".join(f'<td class="rok">{kcs(rocni(o, r) / 1000)}</td>' for r in roky[:-1])
+        podil = suma(o) / max_suma * 100
+        telo.append(f'<tr{" class=\"my\"" if my else ""}>'
+                    f'<th class="ob">{esc_html(o["obec"])}<small>{kcs(o["obyvatel"])}\u00a0obyv.</small></th>{drobne}'
+                    f'<td class="suma" style="--p:{podil:.1f}%"><span>{kcs(suma(o))}\u00a0Kč</span></td>'
+                    f'<td class="r25">{kcs(rocni(o, "2025"))}\u00a0Kč</td>'
+                    f'<td class="naob">{kcs(o["na_obyv_2025"])}\u00a0Kč</td></tr>')
+    tab = ('<table class="spolkytab"><thead>' + hlav + '</thead><tbody>' + "".join(telo) + '</tbody></table>')
     return barh, tab
 
 
