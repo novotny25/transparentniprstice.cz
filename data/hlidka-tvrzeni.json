@@ -184,10 +184,10 @@
   {
    "id": "gdpr-stitek-podklady",
    "stranka": "index.html",
-   "citace": "Podklady vyžádány",
+   "citace": "Podána stížnost § 16a",
    "typ": "cekame_na_odpoved",
-   "datum_kontroly": "2026-09-03",
-   "otazka": "Stížnost § 16a ke smlouvě GDPR měla odejít 2. 9. — po odeslání aktualizovat štítek u pověřence a zveřejnit dokument.",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti (do 9. 9. 2026), nebo předložila stížnost krajskému úřadu?",
    "co_udelat": "Po odpovědi aktualizovat sekci GDPR a štítek; jinak stížnost dle § 16a.",
    "vyrizeno": false
   },
@@ -399,6 +399,16 @@
    "datum_kontroly": "2027-06-01",
    "otazka": "Je na prstice.cz zveřejněn návrh závěrečného účtu za rok 2026 se zprávou o přezkoumání? Jaký je závěr?",
    "co_udelat": "Doplnit rok 2026 do zjištění na index.html i do komentáře na dobre-vedena-obec.html.",
+   "vyrizeno": false
+  },
+  {
+   "id": "stiznost-gdpr-lhuta",
+   "stranka": "index.html",
+   "citace": "lhůta uplynula 31. 8., proto jsem 2. 9. podal stížnost podle § 16a",
+   "typ": "relativni_cas",
+   "datum_kontroly": "2026-09-10",
+   "otazka": "Co obec udělala se stížností § 16a z 2. 9. 2026 (GDPR)? Vyhověla, nebo předložila KrÚ JMK?",
+   "co_udelat": "Doplnit aktualitu i chronologii; upravit stav v zadosti-106.json a štítek u zjištění GDPR.",
    "vyrizeno": false
   }
  ]
