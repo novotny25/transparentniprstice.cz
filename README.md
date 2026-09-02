@@ -32,3 +32,11 @@ repozitář, jeho historii i deploy preview.
 Zdroje dat: účetní podklady poskytnuté dle zákona 106/1999 Sb., MONITOR
 státní pokladny MF ČR, úřední deska obce, odpovědi obce a primární záznamy
 soudních či správních orgánů.
+
+## Pracovní postup nasazení
+
+Změny se ukládají na větev `draft` — to nic nestojí a Netlify k otevřenému
+Pull Requestu samo vygeneruje živý náhled (Deploy Preview) zdarma. Na
+produkci (transparentniprstice.cz) se změna dostane až sloučením
+(„Merge pull request") PR do větve `main` — to je jediný moment, kdy se
+strhávají Netlify kredity.
