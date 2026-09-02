@@ -76,6 +76,7 @@ STRANKY = {                       # soubor -> {id bloku: název datového soubor
     "index.html":      {"d-vydaje": None, "d-prijmy": None, "d-rady": None,
                         "d-temata": None, "d-vybrane": None, "d-518": None,
                         "d-srovnani": "srovnani-obci.json",
+                        "d-mas": "mas-bobrava.json",
                         "d-obyvatele": "obyvatele.json"},
     "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None},
     "pro-dalsi-obce.html": {"d-navod": "navod.json"},

@@ -1,0 +1,93 @@
+{
+ "_navod": [
+  "Zjištění k MAS Bobrava. Zdroj: 2026_09_02 Rešerše MAS Bobrava (145 odkazů, ověřeno 2. 9. 2026).",
+  "Částky jsou v Kč. 'obyvatel' k 1.1.2025 dle výroční zprávy MAS."
+ ],
+ "uzemi": {
+  "obci": 13,
+  "projektu": 112,
+  "vydaje_kc": 96429008,
+  "dotace_kc": 65230789
+ },
+ "prispevek_kc_obyvatel": 25,
+ "prispevek_prstice_kc": 24925,
+ "obce": [
+  {
+   "obec": "Nebovidy",
+   "obyvatel": 738,
+   "projektu": 13,
+   "dotace_kc": 6846441
+  },
+  {
+   "obec": "Radostice",
+   "obyvatel": 789,
+   "projektu": 9,
+   "dotace_kc": 5839196
+  },
+  {
+   "obec": "Želešice",
+   "obyvatel": 1705,
+   "projektu": 10,
+   "dotace_kc": 2081501
+  },
+  {
+   "obec": "Modřice",
+   "obyvatel": 5410,
+   "projektu": 2,
+   "dotace_kc": 1970736
+  },
+  {
+   "obec": "Silůvky",
+   "obyvatel": 828,
+   "projektu": 5,
+   "dotace_kc": 1157466
+  },
+  {
+   "obec": "Popůvky",
+   "obyvatel": 1866,
+   "projektu": 2,
+   "dotace_kc": 579025
+  },
+  {
+   "obec": "Hajany",
+   "obyvatel": 446,
+   "projektu": 1,
+   "dotace_kc": 400000,
+   "pozn": "v území, není členem spolku"
+  },
+  {
+   "obec": "Omice",
+   "obyvatel": 779,
+   "projektu": 0,
+   "dotace_kc": 0,
+   "pozn": "členská obec bez jediného projektu"
+  },
+  {
+   "obec": "Prštice",
+   "obyvatel": 997,
+   "projektu": 0,
+   "dotace_kc": 0,
+   "pozn": "mimo území MAS",
+   "nase": true
+  }
+ ],
+ "chodniky": [
+  {
+   "obec": "Nebovidy",
+   "projekt": "Stavební úpravy chodníku podél silnice III/15275",
+   "vydaje_kc": 5176917,
+   "dotace_kc": 4264379
+  },
+  {
+   "obec": "Radostice",
+   "projekt": "Chodníky na ulici Prostřední",
+   "dotace_kc": 2443412
+  },
+  {
+   "obec": "Ořechov",
+   "projekt": "Přechod pro chodce",
+   "dotace_kc": 1100000
+  }
+ ],
+ "dotace_pct": 95
+}
