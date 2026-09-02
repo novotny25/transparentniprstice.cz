@@ -1,6 +1,6 @@
 # Občanská datová analýza hospodaření obce — provozní manuál
 
-**Verze 1.1 · 29. 8. 2026 · Petr Novotný, transparentniprstice.cz**
+**Verze 1.2 · 2. 9. 2026 · Petr Novotný, transparentniprstice.cz**
 
 Tenhle dokument je psaný tak, aby podle něj **AI asistent postavil obdobný web
 pro libovolnou českou obec**. Obsahuje konkrétní zdroje dat, adresy rozhraní,
@@ -49,7 +49,7 @@ ChatGPT, Gemini) — předejte mu části B až D.
 5. **Fakta oddělte od komentáře.** Komentář podepište a graficky odlište.
 6. **Není to audit.** Je to občanská datová analýza. Tak to i pojmenujte —
    slovo „audit" má v účetnictví a právu jiný, chráněný význam.
-7. **Obci vždy prostor k vyjádření**, ještě než web začnete šířit.
+7. **Obci vždy prostor vysvětlit zveřejněné údaje**, ještě než web začnete šířit — nabídku ale předem vymezte na věc (viz F4).
 
 ---
 
@@ -511,7 +511,11 @@ roli, čísla jednací a spisové značky (bez nich nejde dokument ověřit).
 - odkáže na web a shrne, co na něm je,
 - vyjmenuje konkrétní údaje, které se obce týkají, s čísly a zdroji,
 - požádá o dvě věci: upozornění na věcnou chybu a případné vyjádření,
-- slíbí, že vyjádření zveřejníte **nezkrácené a označené**,
+- slíbí, že vyjádření **k uvedeným údajům** zveřejníte nezkrácené, označené a bez komentáře,
+- **vymezí rozsah nabídky**: platí pro vysvětlení konkrétních položek, doplnění souvislostí,
+  doložení dokumentem a upozornění na chybu — ne pro texty o vaší osobě. Bez tohoto
+  vymezení dáváte protistraně bianko šek na vlastním webu; s ním zůstáváte féroví
+  a přitom nemusíte otiskovat pamflet. Že podání přišlo a čeho se týkalo, uveďte vždy.
 - dá rozumnou lhůtu (osvědčily se dva týdny),
 - vysvětlí, že nejde o osobní spor.
 
