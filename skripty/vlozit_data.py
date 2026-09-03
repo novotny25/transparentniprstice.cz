@@ -266,13 +266,7 @@ def blok_temata():
                  "který za něj platí občané. Rozdíl doplácí obec z ostatních příjmů.",
         "nevime": "Smlouvu se svozovou firmou, ceník, množství odpadu v tunách ani míru "
                   "vytřídění rozpočet neukazuje.",
-        "komentar": "Krytí 40 % může působit jako vstřícnost k občanům, podstata je ale "
-                    "jinde: tlak na výdaje dál poroste, protože zákonný poplatek za "
-                    "skládkování využitelného odpadu se každý rok zvyšuje — až na 1 850 Kč "
-                    "za tunu v roce 2029. Sníženou sazbu 500 Kč za tunu platí jen obce, "
-                    "které splní zákonné cíle třídění. Pokud obec odpadové hospodářství "
-                    "nezefektivní — víc třídit, vyřešit bioodpad — výdaje se budou dál "
-                    "zvyšovat a dřív nebo později se promítnou do poplatku pro občany.",
+        "komentar": "Nízký poplatek je pro občany dnes výhodný. Zákonný poplatek za skládkování využitelného odpadu ale poroste každý rok — až na 1 850 Kč za tunu v roce 2029; sníženou sazbu 500 Kč za tunu platí jen obce, které splní zákonné cíle třídění. Čím víc se vytřídí a čím dřív se vyřeší bioodpad, tím méně se rostoucí výdaje promítnou do poplatku pro občany.",
         "kpozn": "Sazby: zákon č. 541/2020 Sb., příloha č. 9. Jde o komentář autora — "
                  "interpretaci, ne doložený závěr.",
         "rada": vyd, "rada2": popl, "l1": "Výdaje obce na odpad", "l2": "Poplatky od občanů",

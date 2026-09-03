@@ -103,7 +103,7 @@
   {
    "id": "pravni-sluzby-detail",
    "stranka": "index.html",
-   "citace": "doložení faktur musel nařídit až kraj",
+   "citace": "doklady si vyžádal i krajský úřad",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
    "otazka": "Doložila obec faktury a výkazy práce k právním službám, jak jí nařídil krajský úřad (rozhodnutí z 19. 8. 2026)?",
@@ -164,7 +164,7 @@
   {
    "id": "pravni-brzy-dolozi",
    "stranka": "index.html",
-   "citace": "Podrobnosti k právním službám tedy obec bude muset brzy doložit",
+   "citace": "Podrobnosti k právním službám tedy obec doplní",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
    "otazka": "Platí ještě „brzy doloží“ u právních služeb?",
@@ -174,7 +174,7 @@
   {
    "id": "pravni-stitek-kraj",
    "stranka": "index.html",
-   "citace": "Kraj rozhodl v můj prospěch",
+   "citace": "Kraj přikázal obci žádost vyřídit",
    "typ": "cekame_na_odpoved",
    "datum_kontroly": "2026-09-06",
    "otazka": "Štítek u právních služeb říká „Kraj rozhodl v náš prospěch“ — po doložení podkladů už bude zastaralý.",

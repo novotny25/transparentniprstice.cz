@@ -715,3 +715,13 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .spolkytab tr.my th,.spolkytab tr.my td{background:#fdeeeb!important;color:#b03a2e}
 .spolkytab tr.my td.rok{color:#c9776c}
 .spolkytab tr.my td.suma::before{background:#f6c9c3}
+/* Úvodník + neutrální ladění štítků (bez červené) */
+.uvodnik{max-width:74ch;margin:26px auto 0;padding:22px 26px;background:var(--card);border-radius:16px;box-shadow:var(--shadow)}
+.uvodnik h2{font-size:1.15rem;margin:0 0 10px}
+.uvodnik p{margin:0 0 10px;font-size:1rem;line-height:1.6}
+.uvodnik p.podpis{font-size:.9rem;color:var(--muted);margin:0}
+.hlavni a.zjisteni{background:#fff2df;color:#8a5a14}
+.hlavni a.zjisteni:hover{background:#ffe6c2;color:#6e4710}
+.hlavni a.zjisteni::before{background:#e0a030;box-shadow:0 0 0 3px rgba(224,160,48,.18)}
+.odznak{color:#8a5a14;background:#fff2df}
+.odznak::before{background:#e0a030}

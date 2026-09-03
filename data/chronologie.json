@@ -4,7 +4,7 @@
   "obec": "Prštice",
   "ico": "00282405",
   "stav_ke_dni": "2026-09-01",
-  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK rozhodl 19. 8. 2026 ve prospěch žadatele; obec 1. 9. 2026 odpověděla na žádost o soudní řízení jen částečně. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026.",
+  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit; obec 1. 9. 2026 odpověděla na žádost o soudní řízení jen částečně. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026.",
   "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty přibudou v kroku strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
  },
@@ -31,7 +31,7 @@
    "datum": "2026-06-23",
    "typ": "žádost 106",
    "titulek": "Žádost o obecní zpravodaje",
-   "popis": "Požádal jsem o obecní zpravodaje ve strojově čitelné podobě. Cílem bylo vytáhnout si z nich přehled dění v obci vlastními silami — a nemuset se tak obce ptát na každou jednotlivost. Obec zpravodaje v požadované podobě neposkytla.",
+   "popis": "Požádal jsem o obecní zpravodaje ve strojově čitelné podobě. Cílem bylo vytáhnout si z nich přehled dění v obci vlastními silami a mít přehled o dění bez dalších dotazů. Obec zpravodaje v požadované podobě neposkytla.",
    "cj": null,
    "puvod_informace": "žádost dle zákona 106/1999 Sb.",
    "dokument": null
@@ -111,7 +111,7 @@
   {
    "datum": "2026-08-19",
    "typ": "rozhodnutí",
-   "titulek": "Krajský úřad dal stížnosti za pravdu a přikázal obci žádost vyřídit",
+   "titulek": "Krajský úřad přikázal obci žádost vyřídit",
    "popis": "Krajský úřad Jihomoravského kraje rozhodl o stížnosti ze 17. 7. 2026 tak, že obci Prštice přikázal vyřídit žádost o informace z 1. 7. 2026 ve lhůtě do 15 dnů od doručení rozhodnutí. Šlo o faktury, smlouvy a výkazy práce k právním službám, ke službám pověřence GDPR a k nájmu stavebního jeřábu. Proti rozhodnutí se nelze odvolat.",
    "cj": "JMK 123854/2026 (sp. zn. S-JMK 113937/2026 OKP)",
    "puvod_informace": "rozhodnutí nadřízeného orgánu",
@@ -139,7 +139,7 @@
    "datum": "2026-08-26",
    "typ": "žádost",
    "titulek": "Žádost o vnitřní pravidla pro zadávání veřejných zakázek",
-   "popis": "Po zjištění, že obec byla třikrát potrestána za neuveřejnění smlouvy na profilu zadavatele, jsem požádal o vnitřní směrnici pro zadávání veřejných zakázek, pravidla finanční kontroly a doklady o tom, že se jejich dodržování kontroluje. Cílem je zjistit, zda obec má nastavená pravidla, která podobným pochybením předcházejí.",
+   "popis": "Po ověření tří rozhodnutí ÚOHS o neuveřejnění smlouvy na profilu zadavatele jsem požádal o vnitřní směrnici pro zadávání veřejných zakázek, pravidla finanční kontroly a doklady o tom, že se jejich dodržování kontroluje. Cílem je zjistit, zda obec má nastavená pravidla, která podobným pochybením předcházejí.",
    "cj": null,
    "puvod_informace": "vlastní žádost",
    "dokument": "2026-08-26_zadost-smernice-zakazky.pdf"
