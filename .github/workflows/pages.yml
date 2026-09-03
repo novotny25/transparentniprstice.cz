@@ -1,0 +1,40 @@
+# Záložní hosting: GitHub Pages — publikuje složku web/ při každém pushi na main.
+# Netlify zůstává primární; tohle je nezávislá kopie webu na
+# https://novotny25.github.io/transparentniprstice.cz/ (a po přesměrování DNS i na doméně).
+name: Zveřejnit web na GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  publikovat:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/configure-pages@v5
+      # Kopie na github.io se nesmí indexovat — kanonická adresa zůstává doména.
+      # Až bude doména mířit na GitHub Pages, tento krok smazat.
+      - name: Označit kopii jako neindexovanou
+        run: |
+          for f in web/*.html; do
+            sed -i 's|<meta charset="UTF-8">|<meta charset="UTF-8"><meta name="robots" content="noindex">|' "$f"
+          done
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: web
+      - id: deploy
+        uses: actions/deploy-pages@v4
