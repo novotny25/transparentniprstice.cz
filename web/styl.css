@@ -344,19 +344,6 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   background:rgba(0,113,227,.09);padding:4px 12px;border-radius:999px;margin:0 0 12px}
 .srovk .c{font-size:.97rem;margin:0;line-height:1.6;color:var(--muted)}
 .srovk .c b{color:var(--text)}
-.zmena518{background:#fbfbfd;border-radius:16px;padding:18px 20px}
-.zmena518+.zmena518{margin-top:14px}
-.zh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 12px;margin-bottom:12px}
-.zh b{font-size:1.05rem}
-.ztitul{color:var(--muted);font-size:.92rem;flex:1}
-.zcelkem{font-weight:700;font-variant-numeric:tabular-nums;padding:3px 12px;border-radius:999px}
-.zcelkem.up{color:#b03a2e;background:#fdeeeb}
-.zcelkem.down{color:#1a7a45;background:#e9f7ee}
-.zr{display:grid;grid-template-columns:minmax(120px,1.4fr) 2fr auto;gap:10px;align-items:center;padding:4px 0;font-size:.93rem}
-.zn{color:var(--muted);overflow:hidden;text-overflow:ellipsis}
-.zb{height:8px;border-radius:99px;background:var(--line);overflow:hidden}
-.zb span{display:block;height:100%;border-radius:99px}
-.zv{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
 @media(max-width:560px){.zr{grid-template-columns:1fr auto}.zb{display:none}}
 .dokradek{display:flex;gap:14px;align-items:center;padding:14px 8px;flex-wrap:wrap}
 .dokseznam .dtext{flex:1;min-width:200px}
@@ -716,12 +703,61 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .spolkytab tr.my td.rok{color:#c9776c}
 .spolkytab tr.my td.suma::before{background:#f6c9c3}
 /* Úvodník + neutrální ladění štítků (bez červené) */
-.uvodnik{max-width:74ch;margin:26px auto 0;padding:22px 26px;background:var(--card);border-radius:16px;box-shadow:var(--shadow)}
-.uvodnik h2{font-size:1.15rem;margin:0 0 10px}
-.uvodnik p{margin:0 0 10px;font-size:1rem;line-height:1.6}
-.uvodnik p.podpis{font-size:.9rem;color:var(--muted);margin:0}
+.uvodnik{position:relative;margin:22px auto 0;padding:30px 72px 26px 112px;
+  background:linear-gradient(160deg,#f5f7fb,#fdfefe);border-radius:16px;
+  border-left:5px solid var(--accent);box-shadow:var(--shadow)}
+.uvodnik h2{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 16px}
+.uvodnik blockquote{margin:0;position:relative;max-width:78ch}
+.uvodnik blockquote::before,.uvodnik blockquote::after{position:absolute;font-family:Georgia,"Times New Roman",serif;
+  font-size:6rem;line-height:1;color:var(--accent);opacity:.22;pointer-events:none}
+.uvodnik blockquote::before{content:"\201E";left:-78px;top:-6px}
+.uvodnik blockquote::after{content:"\201C";right:-52px;bottom:-30px}
+.uvodnik blockquote p{margin:0 0 14px;font-family:Georgia,"Times New Roman",serif;font-style:italic;
+  font-size:1.22rem;line-height:1.7;color:#2a2f38}
+.uvodnik blockquote p:last-child{margin-bottom:0}
+.uvodnik p.podpis{margin:20px 0 0;font-size:.95rem;color:var(--muted);font-weight:600;text-align:right}
+.uvodnik p.podpis::before{content:"\2014\00a0"}
+@media(max-width:640px){
+  .uvodnik{padding:24px 22px 20px 26px}
+  .uvodnik blockquote::before,.uvodnik blockquote::after{display:none}
+  .uvodnik blockquote p{font-size:1.1rem}
+  .uvodnik p.podpis{text-align:left}
+}
 .hlavni a.zjisteni{background:#fff2df;color:#8a5a14}
 .hlavni a.zjisteni:hover{background:#ffe6c2;color:#6e4710}
 .hlavni a.zjisteni::before{background:#e0a030;box-shadow:0 0 0 3px rgba(224,160,48,.18)}
 .odznak{color:#8a5a14;background:#fff2df}
 .odznak::before{background:#e0a030}
+
+/* Dotace: dvojice podbarvených boxů + podnadpisy v kartě */
+.dvojice{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:14px;margin-top:14px}
+.box{border-radius:14px;padding:16px 18px;font-size:.96rem;line-height:1.55}
+.box p{margin:0 0 8px}
+.box p:last-child{margin:0}
+.box .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;margin:0 0 8px;opacity:.8}
+.box .cif{font-size:1.7rem;font-weight:800;letter-spacing:-.02em;margin:0 0 8px}
+.box .cif small{font-size:.5em;font-weight:600;letter-spacing:normal}
+.box .pozn{margin-top:8px;max-width:none}
+.box.zel{background:#e9f7ee;color:#1a5c34}
+.box.mod{background:#eef6ff;color:#1d3f63}
+.box.sed{background:#f4f5f7;color:var(--text)}
+.box.sed .lab{color:var(--muted)}
+h4.podnadpis{font-size:1.08rem;margin:26px 0 4px}
+
+/* Trojice dlaždic v kartě: vždy roztáhnout na šířku karty (přebíjí šestisloupcovou mřížku „Obec v číslech“) */
+.grid.kompakt.trojice{grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:14px}
+.grid.kompakt.trojice .tile{padding:18px 18px 16px}
+.grid.kompakt.trojice .tile .v{font-size:clamp(1.7rem,2.6vw,2.1rem)}
+.grid.kompakt.trojice .tile .c{font-size:.92rem;line-height:1.5}
+
+/* Mapa území MAS */
+.mapamas{margin:20px 0 0;padding:0}
+.mapamas img{display:block;width:100%;height:auto;border-radius:14px;background:#fbfcfe;border:1px solid var(--line)}
+.mapamas figcaption{font-size:.86rem;color:var(--muted);line-height:1.55;margin-top:10px;max-width:78ch}
+
+/* Banner dotace: infografiky místo číselných dlaždic */
+.zjbanner .zbcisla.infog{grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:18px}
+.zjbanner .zbcisla.infog>div{padding:18px 20px 16px}
+.zjbanner .ignad{font-size:.78rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8f2f23;margin:0 0 10px}
+.zjbanner svg.ig{display:block;width:100%;height:auto;margin:0 0 10px}

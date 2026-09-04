@@ -274,3 +274,26 @@ if fails:
     print("\n❌ VALIDACE NEPROŠLA — nestaví se fáze 3, necommitují se veřejná data.")
     sys.exit(1)
 print("\n✅ VALIDACE PROŠLA — číselná integrita i privacy gate v pořádku.")
+
+# --- MAS Bobrava: tabulka obcí musí být úplná a sedět na řádek Celkem (±1 Kč) ---
+def _kontrola_mas():
+    import json, os
+    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "mas-bobrava.json")
+    d = json.load(open(p, encoding="utf-8"))
+    s = sum(o["dotace_kc"] for o in d["obce"]); n = sum(o["projektu"] for o in d["obce"])
+    assert abs(s - d["uzemi"]["dotace_kc"]) <= 1, f"MAS: součet řádků {s} ≠ území {d['uzemi']['dotace_kc']}"
+    assert n == d["uzemi"]["projektu"], f"MAS: projektů {n} ≠ {d['uzemi']['projektu']}"
+    assert len([o for o in d["obce"] if o["obec"] != "Prštice"]) == d["uzemi"]["obci"], "MAS: chybí obce území"
+_kontrola_mas()
+
+# --- poměr dotací mezi obdobími musí sedět na text v banneru ---
+def _kontrola_pomeru_dotaci():
+    import json, os, re
+    K = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    d = json.load(open(os.path.join(K, "data", "dotace-web.json"), encoding="utf-8"))
+    driv = sum(x["kc"] for x in d["prsticeDrive"])
+    nyni = sum(x["kc"] for x in d["prstice2025"] if x.get("typ") == "obec")
+    ocekavano = f"{round(driv / nyni)}× méně"
+    html = open(os.path.join(K, "web", "index.html"), encoding="utf-8").read().replace("\u00a0", " ")
+    assert ocekavano in html, f"pomer dotací: v datech vychází „{ocekavano}“, na stránce není"
+_kontrola_pomeru_dotaci()

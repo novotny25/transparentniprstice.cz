@@ -1,7 +1,8 @@
 {
  "_navod": [
   "Zjištění k MAS Bobrava. Zdroj: 2026_09_02 Rešerše MAS Bobrava (145 odkazů, ověřeno 2. 9. 2026).",
-  "Částky jsou v Kč. 'obyvatel' k 1.1.2025 dle výroční zprávy MAS."
+  "Částky jsou v Kč. 'obyvatel' k 1.1.2025 dle výroční zprávy MAS.",
+  "Součet řádků obcí = 65 230 788 Kč, součet území na mapě MAS = 65 230 789 Kč; rozdíl 1 Kč je ze zaokrouhlení haléřů. Tabulka musí obsahovat všech 13 obcí území + Prštice, jinak nesedí na řádek Celkem."
  ],
  "uzemi": {
   "obci": 13,
@@ -12,6 +13,36 @@
  "prispevek_kc_obyvatel": 25,
  "prispevek_prstice_kc": 24925,
  "obce": [
+  {
+   "obec": "Střelice",
+   "obyvatel": 2928,
+   "projektu": 22,
+   "dotace_kc": 14907712
+  },
+  {
+   "obec": "Troubsko",
+   "obyvatel": 2250,
+   "projektu": 18,
+   "dotace_kc": 9174628
+  },
+  {
+   "obec": "Ostopovice",
+   "obyvatel": 1657,
+   "projektu": 7,
+   "dotace_kc": 8000430
+  },
+  {
+   "obec": "Moravany",
+   "obyvatel": 2741,
+   "projektu": 9,
+   "dotace_kc": 7305704
+  },
+  {
+   "obec": "Ořechov",
+   "obyvatel": 2694,
+   "projektu": 14,
+   "dotace_kc": 6967949
+  },
   {
    "obec": "Nebovidy",
    "obyvatel": 738,
