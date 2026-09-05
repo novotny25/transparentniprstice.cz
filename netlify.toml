@@ -67,6 +67,12 @@
   force = true
 
 [[redirects]]
+  from = "/dobre-vedena-obec"
+  to = "/dobre-vedena-obec.html"
+  status = 301
+  force = true
+
+[[redirects]]
   from = "/pro-dalsi-obce"
   to = "/pro-dalsi-obce.html"
   status = 301

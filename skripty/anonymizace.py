@@ -89,6 +89,9 @@ DOKUMENTY = [
     (f"{PACT}/2026_09_02 Stížnosti 16a - soudní řízení a GDPR/2026_09_02_Stiznost_16a_GDPR_smlouva.pdf",
      "2026-09-02_stiznost-16a-gdpr.pdf",
      "Stížnost § 16a — nečinnost obce u žádosti o smlouvu s pověřencem GDPR"),
+    (f"{PACT}/2026_09_04 Odpoved obce po rozhodnuti KrU/2026_09_03_Odpoved_obce_OUPR-1132-2026.pdf",
+     "2026-09-04_odpoved-obce-OUPR-1132-2026.pdf",
+     "Sdělení obce Prštice po rozhodnutí kraje — právní služby, pověřenec GDPR a nájem jeřábu"),
 ]
 
 

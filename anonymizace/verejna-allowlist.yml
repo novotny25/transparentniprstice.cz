@@ -20,7 +20,15 @@ meta:
 # kdo schválil a datum. (Pozor: soukromé osoby chráníme přísněji než
 # veřejné funkcionáře — ZADANI §9.)
 # ---------------------------------------------------------------------------
-povolena_jmena: []
+povolena_jmena:
+  - hodnota: "Mgr. Radovan Vrbka"
+    duvod:   "advokát podnikající pod vlastním IČO 60653091 jako dodavatel obce;
+              údaj sdělila sama obec v odpovědích podle zák. 106/1999 Sb.
+              (č. j. OUPR-867/2026 a OUPR-1132/2026), je uveden ve zveřejněných
+              dokumentech na webu a obec jej sama zveřejňuje v povinných
+              informacích jako pověřence pro ochranu osobních údajů"
+    schvalil: "Petr Novotný"
+    datum:    "2026-09-04"
   # PŘÍKLAD (neaktivní, jen ukázka formátu):
   # - hodnota: "Jan Novák"
   #   duvod:   "statutární zástupce dodavatele, veřejně dohledatelné v registru"

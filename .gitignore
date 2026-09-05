@@ -12,3 +12,6 @@ audit-prstice-*
 prstice-finm-*
 cz0643*
 qa-report*
+
+# Lokální nastavení náhledu (server na 8778) — nepatří do repozitáře
+.claude/

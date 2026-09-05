@@ -3,8 +3,8 @@
   "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-09-01",
-  "upozorneni": "Osa se průběžně doplňuje. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit; obec 1. 9. 2026 odpověděla na žádost o soudní řízení jen částečně. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026.",
+  "stav_ke_dni": "2026-09-04",
+  "upozorneni": "Osa se průběžně doplňuje. Obec 4. 9. 2026 odpověděla na žádost, kterou jí přikázal vyřídit krajský úřad — slovním sdělením bez dokladů. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026 a vyřízení dvou stížností § 16a.",
   "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty přibudou v kroku strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
  },
@@ -172,13 +172,13 @@
    "dokument": "dokumenty/2026-09-02_stiznost-16a-gdpr.pdf"
   },
   {
-   "datum": "2026-09-05",
-   "typ": "milník (budoucí)",
-   "titulek": "Očekávané doložení podkladů obcí (lhůta z rozhodnutí KrÚ)",
-   "popis": "Podle rozhodnutí Krajského úřadu JMK z 19. 8. 2026 musí obec do 15 dnů od jeho doručení vyřídit žádost o faktury, smlouvy a výkazy práce (právní služby, pověřenec GDPR, nájem jeřábu). Přesné datum závisí na dni doručení rozhodnutí obci — očekáváme začátek září 2026.",
-   "cj": null,
-   "puvod_informace": "procesní milník",
-   "dokument": null
+   "datum": "2026-09-04",
+   "typ": "odpověď",
+   "titulek": "Obec po příkazu kraje zopakovala červencovou odpověď, doklady nedoložila",
+   "popis": "Sdělení č. j. OUPR-1132/2026 ze dne 3. 9. 2026, doručeno 4. 9. 2026, vydané v souladu s rozhodnutím Krajského úřadu JMK č. j. JMK 123854/2026. Text se ze 70 % shoduje se sdělením z 17. 7. 2026; nově obsahuje IČO advokáta (60653091), IČO dodavatele jeřábu STAVOS Brno, a. s. (65277911) a usnesení č. 189/2021/Z17 ze dne 24. 6. 2021, kterým zastupitelstvo pronájem jeřábu schválilo. Rámcovou smlouvu, faktury ani výkazy práce obec nedoložila u žádné ze tří položek a rozsah plnění pověřence GDPR nerozvedla s odkazem na to, že jej stanoví evropské nařízení. Obec uvádí, že požadované informace už poskytla a že jejich rozšiřující výklad není v její gesci. V závěru sděluje, že od 4. 6. 2026 eviduje osm žádostí, odkazuje na § 11a InfZ o ochraně před zneužitím práva na informace a vyzývá k zvážení nutnosti dalších žádostí.",
+   "cj": "OUPR-1132/2026 (sp. zn. SP/101/2026)",
+   "puvod_informace": "vyřízení obce",
+   "dokument": "dokumenty/2026-09-04_odpoved-obce-OUPR-1132-2026.pdf"
   },
   {
    "datum": "2026-09-09",

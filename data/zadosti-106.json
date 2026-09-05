@@ -3,8 +3,8 @@
   "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-08-28",
-  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží: obec musí podle rozhodnutí KrÚ JMK z 19. 8. 2026 vyřídit žádost o smlouvy a faktury do 15 dnů od doručení (očekáváme začátek září) a čekají se odpovědi na žádosti z 15., 25. a 26. 8. 2026.",
+  "stav_ke_dni": "2026-09-04",
+  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží: obec 4. 9. 2026 vyřídila žádost z 1. 7. 2026 slovním sdělením bez dokladů a čekají se odpovědi na žádosti z 25. a 26. 8. 2026 a vyřízení dvou stížností § 16a.",
   "poznamka_pole": "„stav“ = stav vyřízení žádosti; „puvod_informace“ = jak byla informace získána — dvě různá pole. „lhuta_do“ = zákonná lhůta pro vyřízení žádosti o informace (15 dnů od přijetí, § 14 odst. 5 písm. d zákona 106/1999 Sb.). U stížnosti podle § 16a a u opatření proti nečinnosti běží lhůta nadřízenému orgánu, proto se neuvádí.",
   "schvaluje": "Petr Novotný (finální seznam)",
   "zdroj": "Vlastní žádosti žadatele a kontrolní dokument lhůt (15. 8. 2026)"
@@ -40,10 +40,10 @@
    "adresat": "Obec Prštice",
    "cj": "SP/088/2026",
    "typ_podani": "žádost o informace",
-   "stav": "kraj nařídil vyřídit",
+   "stav": "vyřízeno slovním sdělením — doklady nedoloženy",
    "puvod_informace": "vlastní žádost",
    "zdroj": "složka 2026_07_01 Žádost o detail smluv na účtu 518; kontrola lhůt",
-   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026).",
+   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026). Obec 4. 9. 2026 odpověděla sdělením č. j. OUPR-1132/2026: doplnila dodavatele jeřábu (STAVOS Brno) a IČO advokáta, faktury, smlouvu ani výkazy práce však nedoložila.",
    "lhuta_do": "2026-07-16"
   },
   {
@@ -84,18 +84,6 @@
   },
   {
    "datum_podani": "2026-08-15",
-   "predmet": "GDPR pověřenec — rámcová smlouva, měsíční paušál a rozsah plnění",
-   "adresat": "Obec Prštice",
-   "cj": null,
-   "typ_podani": "žádost o informace (opakovaná)",
-   "stav": "bez odpovědi ve lhůtě — podána stížnost § 16a",
-   "puvod_informace": "vlastní žádost",
-   "zdroj": "složka 2026_08_15 Opakovaná žádost o informace - GDPR",
-   "poznamka": "Cílem je doložit měsíční cenu a rozsah služby pověřence.",
-   "lhuta_do": "2026-08-30"
-  },
-  {
-   "datum_podani": "2026-08-15",
    "predmet": "Přehled soudních řízení, v nichž byla obec účastníkem, od 1. 1. 2018",
    "adresat": "Obec Prštice",
    "cj": "OUPR-1109/2026",
@@ -105,6 +93,18 @@
    "zdroj": "složka 2026_08_15 Žádost o informace soudní procesy",
    "poznamka": "Obec 1. 9. 2026 poskytla dvanáct spisových značek a souhrnný výčet čtyř protistran. Předmět řízení, přiřazení protistran, výsledky, náklady ani kopie rozhodnutí neposkytla a o zbytku žádosti nevydala rozhodnutí o odmítnutí; proto podána stížnost podle § 16a odst. 1 písm. c) InfZ.",
    "lhuta_do": "2026-08-30"
+  },
+  {
+   "datum_podani": "2026-08-16",
+   "predmet": "GDPR pověřenec — rámcová smlouva, měsíční paušál a rozsah plnění",
+   "adresat": "Obec Prštice",
+   "cj": null,
+   "typ_podani": "žádost o informace (opakovaná)",
+   "stav": "bez odpovědi ve lhůtě — podána stížnost § 16a",
+   "puvod_informace": "vlastní žádost",
+   "zdroj": "složka 2026_08_15 Opakovaná žádost o informace - GDPR",
+   "poznamka": "Cílem je doložit měsíční cenu a rozsah služby pověřence.",
+   "lhuta_do": "2026-08-31"
   },
   {
    "datum_podani": "2026-08-25",

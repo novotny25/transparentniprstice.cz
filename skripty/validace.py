@@ -297,3 +297,35 @@ def _kontrola_pomeru_dotaci():
     html = open(os.path.join(K, "web", "index.html"), encoding="utf-8").read().replace("\u00a0", " ")
     assert ocekavano in html, f"pomer dotací: v datech vychází „{ocekavano}“, na stránce není"
 _kontrola_pomeru_dotaci()
+
+# --- poměr Prštic k mediánu sousedů musí sedět na text v banneru ---
+def _kontrola_medianu_sousedu():
+    import json, os, statistics
+    K = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    o = json.load(open(os.path.join(K, "data", "dotace-web.json"), encoding="utf-8"))["obce"]
+    prstice = [x for x in o if x["n"] == "Prštice"][0]["naob"]
+    ostatni = [x["naob"] for x in o if x["n"] != "Prštice"]
+    median = statistics.median(ostatni)
+    html = open(os.path.join(K, "web", "index.html"), encoding="utf-8").read().replace(" ", " ")
+    for cislo in (f"{median:,.0f}".replace(",", " "), f"{prstice:,.0f}".replace(",", " ")):
+        assert cislo in html, f"medián sousedů: číslo „{cislo} Kč“ z dat na stránce chybí"
+    pomer = f"{median / prstice:.1f}".replace(".", ",") + "× méně"
+    assert pomer in html, f"medián sousedů: v datech vychází „{pomer}“, na stránce není"
+    assert f"Medián {['nula','jednoho','dvou','tří','čtyř','pěti','šesti','sedmi','osmi','devíti','deseti','jedenácti','dvanácti'][len(ostatni)]} sousedů" in html, \
+        f"medián sousedů: v datech je {len(ostatni)} obcí bez Prštic, text uvádí jiný počet"
+_kontrola_medianu_sousedu()
+
+# --- členství v MAS: text webu musí odpovídat poznámce v datech ---
+def _kontrola_clenstvi_mas():
+    import json, os
+    K = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    d = json.load(open(os.path.join(K, "data", "mas-bobrava.json"), encoding="utf-8"))
+    prstice = [x for x in d["obce"] if x["obec"] == "Prštice"]
+    assert prstice, "MAS: v datech chybí řádek Prštic"
+    assert prstice[0].get("pozn") == "není členem MAS", \
+        f"MAS: poznámka u Prštic je „{prstice[0].get('pozn')}“, čekáno „není členem MAS“"
+    for soubor in ("index.html", "obrazky/mapa-mas-bobrava.svg", "obrazky/mapa-mas-bobrava-mobil.svg"):
+        text = open(os.path.join(K, "web", soubor), encoding="utf-8").read().replace(" ", " ")
+        assert "není členem MAS" in text, f"MAS: v {soubor} chybí formulace „není členem MAS“"
+        assert "mimo území" not in text, f"MAS: v {soubor} zůstala zavádějící formulace „mimo území“"
+_kontrola_clenstvi_mas()

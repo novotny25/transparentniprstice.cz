@@ -1,7 +1,7 @@
 {
  "meta": {
   "poznamka": "Veřejné anonymizované deriváty. Odstraněny: adresa, ID datové schránky, datum narození, rodné číslo, soukromý e-mail a telefon. Text je z dokumentu skutečně odstraněn, nejen překryt.",
-  "vygenerovano": "2026-09-02 23:27"
+  "vygenerovano": "2026-09-04 18:24"
  },
  "dokumenty": [
   {
@@ -9,91 +9,98 @@
    "popis": "Žádost o smlouvy, faktury a výkazy práce k vybraným položkám účtu 518",
    "stran": 5,
    "velikost_kb": 314,
-   "sha256": "0dc6ba2753821021"
+   "sha256": "d73bd2ae33fd74ba"
   },
   {
    "soubor": "2026-07-17_stiznost-16a.pdf",
    "popis": "Stížnost na postup obce při vyřizování žádosti (§ 16a InfZ)",
    "stran": 3,
    "velikost_kb": 49,
-   "sha256": "cd253425994f5088"
+   "sha256": "a8bf7f19bea52feb"
   },
   {
    "soubor": "2026-07-28_opatreni-proti-necinnosti.pdf",
    "popis": "Žádost ke Krajskému úřadu o opatření proti nečinnosti obce",
    "stran": 2,
    "velikost_kb": 46,
-   "sha256": "e2b1397b56c96764"
+   "sha256": "b039a2f203de61e5"
   },
   {
    "soubor": "2026-07-17_odpoved-obce-OUPR-867-2026.pdf",
    "popis": "Sdělení obce Prštice — odpověď na žádost z 1. 7. 2026",
    "stran": 2,
    "velikost_kb": 138,
-   "sha256": "dd1968d331e0188f"
+   "sha256": "0f1e012d1907805e"
   },
   {
    "soubor": "2026-08-19_rozhodnuti-KrU-JMK.pdf",
    "popis": "Rozhodnutí Krajského úřadu JMK — přikazuje obci žádost vyřídit",
    "stran": 6,
    "velikost_kb": 239,
-   "sha256": "a6dcd785352819a5"
+   "sha256": "84836504b548ec26"
   },
   {
    "soubor": "2026-08-15_zadost-GDPR-pausal.pdf",
    "popis": "Žádost o rámcovou smlouvu a rozsah plnění pověřence GDPR",
    "stran": 2,
    "velikost_kb": 27,
-   "sha256": "fb9d2e18bfedac4c"
+   "sha256": "f66c7ae56730f452"
   },
   {
    "soubor": "2026-08-15_zadost-soudni-rizeni.pdf",
    "popis": "Žádost o přehled soudních řízení obce od 1. 1. 2018",
    "stran": 2,
    "velikost_kb": 24,
-   "sha256": "70ef3927e7876885"
+   "sha256": "09d20c1306adb856"
   },
   {
    "soubor": "2026-08-25_zadost-ucet-511.pdf",
    "popis": "Žádost o rozpis účtu 511 „Opravy a udržování“ za období 1. 1. 2020 – 30. 6. 2026",
    "stran": 2,
    "velikost_kb": 25,
-   "sha256": "34be48574be3f5f4"
+   "sha256": "1833a9dfd25c2e58"
   },
   {
    "soubor": "2026-06-23_zadost-zpravodaje.pdf",
    "popis": "Žádost o obecní zpravodaje ve strojově čitelné podobě",
    "stran": 1,
    "velikost_kb": 145,
-   "sha256": "e7f762edc167dd1b"
+   "sha256": "008eb35559800bb1"
   },
   {
    "soubor": "2026-08-26_zadost-smernice-zakazky.pdf",
    "popis": "Žádost o vnitřní pravidla pro zadávání veřejných zakázek a finanční kontrolu",
    "stran": 3,
    "velikost_kb": 58,
-   "sha256": "43fd0b68bde7534a"
+   "sha256": "d33e9b8469fb2f42"
   },
   {
    "soubor": "2026-09-01_odpoved-obce-OUPR-1109-2026.pdf",
    "popis": "Sdělení obce Prštice — částečná odpověď na žádost o přehled soudních řízení",
    "stran": 1,
    "velikost_kb": 109,
-   "sha256": "84f7f8b4b1d13b69"
+   "sha256": "9bc402d68a1af086"
   },
   {
    "soubor": "2026-09-01_stiznost-16a-soudni-rizeni.pdf",
    "popis": "Stížnost § 16a — částečné vyřízení žádosti o přehled soudních řízení",
    "stran": 3,
    "velikost_kb": 65,
-   "sha256": "1b07dca9c68446c5"
+   "sha256": "91bc303adac34b5b"
   },
   {
    "soubor": "2026-09-02_stiznost-16a-gdpr.pdf",
    "popis": "Stížnost § 16a — nečinnost obce u žádosti o smlouvu s pověřencem GDPR",
    "stran": 2,
    "velikost_kb": 55,
-   "sha256": "dd6fa57aea85ea61"
+   "sha256": "d30bab8f79df09c6"
+  },
+  {
+   "soubor": "2026-09-04_odpoved-obce-OUPR-1132-2026.pdf",
+   "popis": "Sdělení obce Prštice po rozhodnutí kraje — právní služby, pověřenec GDPR a nájem jeřábu",
+   "stran": 2,
+   "velikost_kb": 122,
+   "sha256": "f6ef6b76ac2fdd2d"
   }
  ]
 }
