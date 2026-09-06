@@ -1,0 +1,3276 @@
+{
+ "meta": {
+  "nazev": "Výdaje obcí okresu Brno-venkov na konzultační, poradenské a právní služby",
+  "zdroj": "MONITOR MF ČR, rozklikávací rozpočet (API souhrnný), skutečnost k 31. 12.; IČO obcí z ARES; obyvatelé ČSÚ k 1. 1. 2025",
+  "polozka": "5166 Konzultační, poradenské a právní služby (rozpočtová skladba, hotovostní báze)",
+  "obdobi": "2022–2025",
+  "stazeno": "2026-09-06",
+  "okres": "Brno-venkov (CZ0643)",
+  "obci_v_okrese": 187,
+  "skupina": "obce se 700–1 500 obyvateli k 1. 1. 2025",
+  "skupina_pocet": 63,
+  "median_skupiny_bez_prstic_celkem": 325170,
+  "median_skupiny_bez_prstic_na_obyv": 307,
+  "median_vylucuje_kod": "583707",
+  "median_okresu_bez_prstic_celkem": 179269,
+  "prstice": {
+   "kod": "583707",
+   "celkem_2022_2025": 2397462,
+   "na_obyv": 2405,
+   "podil_vydaju_pct": 2.58,
+   "poradi_skupina_celkem": 1,
+   "poradi_skupina_na_obyv": 1,
+   "poradi_okres_celkem": 7,
+   "poradi_okres_na_obyv": 5,
+   "poradi_okres_podil": 2,
+   "ucet_518_pravni_2022_2025": 2094182,
+   "ucet_518_gdpr_2022_2025": 272250,
+   "podil_pravni_a_gdpr_na_polozce_pct": 99
+  },
+  "poznamka": "Položka 5166 zahrnuje i poradenství mimo právní služby (projektové, daňové, GDPR). Obce nejsou jednotné v tom, co sem zařadí; některé účtují právní služby na 5169. Srovnání je proto orientační — stejná položka, stejná léta a stejný zdroj pro všechny obce. U Prštic tvoří právní služby a pověřenec GDPR podle detailu účtu 518 uvedený podíl položky (akruální náklady vs. hotovostní výdaje se v jednotlivých letech liší, v součtu za čtyři roky ne)."
+ },
+ "obce": [
+  {
+   "kod": "583251",
+   "obec": "Kuřim",
+   "ico": "00281964",
+   "obyvatel": 11860,
+   "roky": {
+    "2022": 2505850,
+    "2023": 2422432,
+    "2024": 3258207,
+    "2025": 2356921
+   },
+   "celkem_2022_2025": 10543410,
+   "na_obyv": 889,
+   "vydaje_2022_2025": 2058341519,
+   "podil_vydaju_pct": 0.51,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584002",
+   "obec": "Tišnov",
+   "ico": "00282707",
+   "obyvatel": 9225,
+   "roky": {
+    "2022": 1397597,
+    "2023": 1933833,
+    "2024": 1562515,
+    "2025": 4722586
+   },
+   "celkem_2022_2025": 9616531,
+   "na_obyv": 1042,
+   "vydaje_2022_2025": 1489881491,
+   "podil_vydaju_pct": 0.65,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583952",
+   "obec": "Šlapanice",
+   "ico": "00282651",
+   "obyvatel": 7915,
+   "roky": {
+    "2022": 1101573,
+    "2023": 2092599,
+    "2024": 1788437,
+    "2025": 3252504
+   },
+   "celkem_2022_2025": 8235113,
+   "na_obyv": 1040,
+   "vydaje_2022_2025": 1458380950,
+   "podil_vydaju_pct": 0.56,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582824",
+   "obec": "Bílovice nad Svitavou",
+   "ico": "00281581",
+   "obyvatel": 3725,
+   "roky": {
+    "2022": 1113945,
+    "2023": 1560311,
+    "2024": 1012252,
+    "2025": 2635241
+   },
+   "celkem_2022_2025": 6321749,
+   "na_obyv": 1697,
+   "vydaje_2022_2025": 460055731,
+   "podil_vydaju_pct": 1.37,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584282",
+   "obec": "Židlochovice",
+   "ico": "00282979",
+   "obyvatel": 3676,
+   "roky": {
+    "2022": 941508,
+    "2023": 574786,
+    "2024": 819188,
+    "2025": 1188424
+   },
+   "celkem_2022_2025": 3523906,
+   "na_obyv": 959,
+   "vydaje_2022_2025": 903653663,
+   "podil_vydaju_pct": 0.39,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583286",
+   "obec": "Lelekovice",
+   "ico": "00281999",
+   "obyvatel": 2016,
+   "roky": {
+    "2022": 703240,
+    "2023": 403382,
+    "2024": 727605,
+    "2025": 1461452
+   },
+   "celkem_2022_2025": 3295679,
+   "na_obyv": 1635,
+   "vydaje_2022_2025": 243409209,
+   "podil_vydaju_pct": 1.35,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583707",
+   "obec": "Prštice",
+   "ico": "00282405",
+   "obyvatel": 997,
+   "roky": {
+    "2022": 332943,
+    "2023": 473514,
+    "2024": 667497,
+    "2025": 923508
+   },
+   "celkem_2022_2025": 2397462,
+   "na_obyv": 2405,
+   "vydaje_2022_2025": 92921513,
+   "podil_vydaju_pct": 2.58,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 1
+  },
+  {
+   "kod": "584100",
+   "obec": "Veverská Bítýška",
+   "ico": "00282804",
+   "obyvatel": 3512,
+   "roky": {
+    "2022": 301210,
+    "2023": 589797,
+    "2024": 1045326,
+    "2025": 444793
+   },
+   "celkem_2022_2025": 2381126,
+   "na_obyv": 678,
+   "vydaje_2022_2025": 306848238,
+   "podil_vydaju_pct": 0.78,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582841",
+   "obec": "Blažovice",
+   "ico": "00281603",
+   "obyvatel": 1248,
+   "roky": {
+    "2022": 781655,
+    "2023": 865992,
+    "2024": 436214,
+    "2025": 269536
+   },
+   "celkem_2022_2025": 2353397,
+   "na_obyv": 1886,
+   "vydaje_2022_2025": 108569113,
+   "podil_vydaju_pct": 2.17,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 2
+  },
+  {
+   "kod": "584266",
+   "obec": "Želešice",
+   "ico": "00282952",
+   "obyvatel": 1959,
+   "roky": {
+    "2022": 217703,
+    "2023": 471153,
+    "2024": 1238564,
+    "2025": 243244
+   },
+   "celkem_2022_2025": 2170664,
+   "na_obyv": 1108,
+   "vydaje_2022_2025": 238691473,
+   "podil_vydaju_pct": 0.91,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583910",
+   "obec": "Střelice",
+   "ico": "00282618",
+   "obyvatel": 3283,
+   "roky": {
+    "2022": 225852,
+    "2023": 738172,
+    "2024": 748095,
+    "2025": 353417
+   },
+   "celkem_2022_2025": 2065536,
+   "na_obyv": 629,
+   "vydaje_2022_2025": 384800345,
+   "podil_vydaju_pct": 0.54,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584134",
+   "obec": "Vohančice",
+   "ico": "00366013",
+   "obyvatel": 193,
+   "roky": {
+    "2022": 382512,
+    "2023": 343094,
+    "2024": 449620,
+    "2025": 828306
+   },
+   "celkem_2022_2025": 2003532,
+   "na_obyv": 10381,
+   "vydaje_2022_2025": 239741424,
+   "podil_vydaju_pct": 0.84,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "585033",
+   "obec": "Vranovice",
+   "ico": "00283720",
+   "obyvatel": 2446,
+   "roky": {
+    "2022": 518691,
+    "2023": 506102,
+    "2024": 420429,
+    "2025": 417671
+   },
+   "celkem_2022_2025": 1862893,
+   "na_obyv": 762,
+   "vydaje_2022_2025": 261015157,
+   "podil_vydaju_pct": 0.71,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584029",
+   "obec": "Troubsko",
+   "ico": "00282723",
+   "obyvatel": 2397,
+   "roky": {
+    "2022": 230819,
+    "2023": 190741,
+    "2024": 1089796,
+    "2025": 325765
+   },
+   "celkem_2022_2025": 1837121,
+   "na_obyv": 766,
+   "vydaje_2022_2025": 264402634,
+   "podil_vydaju_pct": 0.69,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584762",
+   "obec": "Pasohlávky",
+   "ico": "00283461",
+   "obyvatel": 773,
+   "roky": {
+    "2022": 457174,
+    "2023": 439794,
+    "2024": 472016,
+    "2025": 456218
+   },
+   "celkem_2022_2025": 1825202,
+   "na_obyv": 2361,
+   "vydaje_2022_2025": 459935942,
+   "podil_vydaju_pct": 0.4,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 3
+  },
+  {
+   "kod": "583383",
+   "obec": "Měnín",
+   "ico": "00282090",
+   "obyvatel": 1897,
+   "roky": {
+    "2022": 714770,
+    "2023": 376456,
+    "2024": 302793,
+    "2025": 316375
+   },
+   "celkem_2022_2025": 1710394,
+   "na_obyv": 902,
+   "vydaje_2022_2025": 205678955,
+   "podil_vydaju_pct": 0.83,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583898",
+   "obec": "Sokolnice",
+   "ico": "00282596",
+   "obyvatel": 2490,
+   "roky": {
+    "2022": 224544,
+    "2023": 532314,
+    "2024": 222607,
+    "2025": 705329
+   },
+   "celkem_2022_2025": 1684794,
+   "na_obyv": 677,
+   "vydaje_2022_2025": 349893416,
+   "podil_vydaju_pct": 0.48,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583502",
+   "obec": "Nová Ves",
+   "ico": "00637530",
+   "obyvatel": 843,
+   "roky": {
+    "2022": 325632,
+    "2023": 275030,
+    "2024": 493097,
+    "2025": 577272
+   },
+   "celkem_2022_2025": 1671031,
+   "na_obyv": 1982,
+   "vydaje_2022_2025": 93349935,
+   "podil_vydaju_pct": 1.79,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 4
+  },
+  {
+   "kod": "582794",
+   "obec": "Babice nad Svitavou",
+   "ico": "00281557",
+   "obyvatel": 1462,
+   "roky": {
+    "2022": 287250,
+    "2023": 214480,
+    "2024": 341963,
+    "2025": 813136
+   },
+   "celkem_2022_2025": 1656829,
+   "na_obyv": 1133,
+   "vydaje_2022_2025": 140455713,
+   "podil_vydaju_pct": 1.18,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 5
+  },
+  {
+   "kod": "582263",
+   "obec": "Rohozec",
+   "ico": "00280861",
+   "obyvatel": 232,
+   "roky": {
+    "2022": 327500,
+    "2023": 407021,
+    "2024": 419875,
+    "2025": 447700
+   },
+   "celkem_2022_2025": 1602096,
+   "na_obyv": 6906,
+   "vydaje_2022_2025": 113592029,
+   "podil_vydaju_pct": 1.41,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583235",
+   "obec": "Kratochvilka",
+   "ico": "00488186",
+   "obyvatel": 506,
+   "roky": {
+    "2022": 357836,
+    "2023": 399049,
+    "2024": 399906,
+    "2025": 420756
+   },
+   "celkem_2022_2025": 1577547,
+   "na_obyv": 3118,
+   "vydaje_2022_2025": 39460827,
+   "podil_vydaju_pct": 4.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583031",
+   "obec": "Holasice",
+   "ico": "00488143",
+   "obyvatel": 1402,
+   "roky": {
+    "2022": 269539,
+    "2023": 514159,
+    "2024": 203683,
+    "2025": 449946
+   },
+   "celkem_2022_2025": 1437327,
+   "na_obyv": 1025,
+   "vydaje_2022_2025": 129764614,
+   "podil_vydaju_pct": 1.11,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 6
+  },
+  {
+   "kod": "583553",
+   "obec": "Opatovice",
+   "ico": "00488241",
+   "obyvatel": 1172,
+   "roky": {
+    "2022": 308945,
+    "2023": 353246,
+    "2024": 469579,
+    "2025": 296035
+   },
+   "celkem_2022_2025": 1427805,
+   "na_obyv": 1218,
+   "vydaje_2022_2025": 185255303,
+   "podil_vydaju_pct": 0.77,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 7
+  },
+  {
+   "kod": "584037",
+   "obec": "Tvarožná",
+   "ico": "00282731",
+   "obyvatel": 1370,
+   "roky": {
+    "2022": 619231,
+    "2023": 164508,
+    "2024": 251084,
+    "2025": 344081
+   },
+   "celkem_2022_2025": 1378904,
+   "na_obyv": 1006,
+   "vydaje_2022_2025": 137579011,
+   "podil_vydaju_pct": 1.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 8
+  },
+  {
+   "kod": "594962",
+   "obec": "Troskotovice",
+   "ico": "00637637",
+   "obyvatel": 749,
+   "roky": {
+    "2022": 665792,
+    "2023": 200490,
+    "2024": 243748,
+    "2025": 167229
+   },
+   "celkem_2022_2025": 1277259,
+   "na_obyv": 1705,
+   "vydaje_2022_2025": 107413012,
+   "podil_vydaju_pct": 1.19,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 9
+  },
+  {
+   "kod": "581976",
+   "obec": "Lomnice",
+   "ico": "00280577",
+   "obyvatel": 1483,
+   "roky": {
+    "2022": 186098,
+    "2023": 432448,
+    "2024": 439473,
+    "2025": 206660
+   },
+   "celkem_2022_2025": 1264679,
+   "na_obyv": 853,
+   "vydaje_2022_2025": 211750731,
+   "podil_vydaju_pct": 0.6,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 10
+  },
+  {
+   "kod": "581429",
+   "obec": "Březina",
+   "ico": "00280020",
+   "obyvatel": 1144,
+   "roky": {
+    "2022": 620233,
+    "2023": 199719,
+    "2024": 283231,
+    "2025": 126541
+   },
+   "celkem_2022_2025": 1229724,
+   "na_obyv": 1075,
+   "vydaje_2022_2025": 94915148,
+   "podil_vydaju_pct": 1.3,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 11
+  },
+  {
+   "kod": "582956",
+   "obec": "Dolní Kounice",
+   "ico": "00281701",
+   "obyvatel": 2571,
+   "roky": {
+    "2022": 319925,
+    "2023": 487088,
+    "2024": 193241,
+    "2025": 155815
+   },
+   "celkem_2022_2025": 1156069,
+   "na_obyv": 450,
+   "vydaje_2022_2025": 298605265,
+   "podil_vydaju_pct": 0.39,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584231",
+   "obec": "Žabčice",
+   "ico": "00282936",
+   "obyvatel": 1664,
+   "roky": {
+    "2022": 0,
+    "2023": 274366,
+    "2024": 426691,
+    "2025": 452486
+   },
+   "celkem_2022_2025": 1153543,
+   "na_obyv": 693,
+   "vydaje_2022_2025": 321380537,
+   "podil_vydaju_pct": 0.36,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583413",
+   "obec": "Moravany",
+   "ico": "00282120",
+   "obyvatel": 3554,
+   "roky": {
+    "2022": 562489,
+    "2023": 310294,
+    "2024": 164443,
+    "2025": 105802
+   },
+   "celkem_2022_2025": 1143028,
+   "na_obyv": 322,
+   "vydaje_2022_2025": 388960219,
+   "podil_vydaju_pct": 0.29,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582999",
+   "obec": "Hajany",
+   "ico": "00637688",
+   "obyvatel": 713,
+   "roky": {
+    "2022": 243188,
+    "2023": 208188,
+    "2024": 216167,
+    "2025": 453357
+   },
+   "celkem_2022_2025": 1120900,
+   "na_obyv": 1572,
+   "vydaje_2022_2025": 69474036,
+   "podil_vydaju_pct": 1.61,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 12
+  },
+  {
+   "kod": "583995",
+   "obec": "Těšany",
+   "ico": "00282693",
+   "obyvatel": 1299,
+   "roky": {
+    "2022": 401033,
+    "2023": 273684,
+    "2024": 196309,
+    "2025": 239511
+   },
+   "celkem_2022_2025": 1110537,
+   "na_obyv": 855,
+   "vydaje_2022_2025": 131414644,
+   "podil_vydaju_pct": 0.85,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 13
+  },
+  {
+   "kod": "584061",
+   "obec": "Unkovice",
+   "ico": "00488356",
+   "obyvatel": 713,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 729630,
+    "2025": 294030
+   },
+   "celkem_2022_2025": 1023660,
+   "na_obyv": 1436,
+   "vydaje_2022_2025": 74799947,
+   "podil_vydaju_pct": 1.37,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 14
+  },
+  {
+   "kod": "549746",
+   "obec": "Předklášteří",
+   "ico": "00365416",
+   "obyvatel": 1469,
+   "roky": {
+    "2022": 59900,
+    "2023": 150856,
+    "2024": 245260,
+    "2025": 467438
+   },
+   "celkem_2022_2025": 923454,
+   "na_obyv": 629,
+   "vydaje_2022_2025": 236010828,
+   "podil_vydaju_pct": 0.39,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 15
+  },
+  {
+   "kod": "583481",
+   "obec": "Neslovice",
+   "ico": "00282197",
+   "obyvatel": 999,
+   "roky": {
+    "2022": 192260,
+    "2023": 146398,
+    "2024": 286266,
+    "2025": 290189
+   },
+   "celkem_2022_2025": 915113,
+   "na_obyv": 916,
+   "vydaje_2022_2025": 114137287,
+   "podil_vydaju_pct": 0.8,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 16
+  },
+  {
+   "kod": "584045",
+   "obec": "Újezd u Brna",
+   "ico": "00282740",
+   "obyvatel": 3375,
+   "roky": {
+    "2022": 274563,
+    "2023": 388338,
+    "2024": 166919,
+    "2025": 64386
+   },
+   "celkem_2022_2025": 894206,
+   "na_obyv": 265,
+   "vydaje_2022_2025": 521445783,
+   "podil_vydaju_pct": 0.17,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582913",
+   "obec": "Čebín",
+   "ico": "00281662",
+   "obyvatel": 1978,
+   "roky": {
+    "2022": 297034,
+    "2023": 178610,
+    "2024": 191603,
+    "2025": 226827
+   },
+   "celkem_2022_2025": 894074,
+   "na_obyv": 452,
+   "vydaje_2022_2025": 278984599,
+   "podil_vydaju_pct": 0.32,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583081",
+   "obec": "Hrušovany u Brna",
+   "ico": "00281824",
+   "obyvatel": 3518,
+   "roky": {
+    "2022": 76084,
+    "2023": 182713,
+    "2024": 283409,
+    "2025": 324228
+   },
+   "celkem_2022_2025": 866434,
+   "na_obyv": 246,
+   "vydaje_2022_2025": 289695168,
+   "podil_vydaju_pct": 0.3,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583405",
+   "obec": "Mokrá-Horákov",
+   "ico": "00282111",
+   "obyvatel": 2908,
+   "roky": {
+    "2022": 171262,
+    "2023": 253472,
+    "2024": 245780,
+    "2025": 171801
+   },
+   "celkem_2022_2025": 842315,
+   "na_obyv": 290,
+   "vydaje_2022_2025": 342275575,
+   "podil_vydaju_pct": 0.25,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584126",
+   "obec": "Viničné Šumice",
+   "ico": "00488372",
+   "obyvatel": 1372,
+   "roky": {
+    "2022": 26892,
+    "2023": 164169,
+    "2024": 115500,
+    "2025": 486340
+   },
+   "celkem_2022_2025": 792901,
+   "na_obyv": 578,
+   "vydaje_2022_2025": 177975021,
+   "podil_vydaju_pct": 0.45,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 17
+  },
+  {
+   "kod": "585025",
+   "obec": "Vlasatice",
+   "ico": "00283711",
+   "obyvatel": 952,
+   "roky": {
+    "2022": 114000,
+    "2023": 114000,
+    "2024": 125550,
+    "2025": 438450
+   },
+   "celkem_2022_2025": 792000,
+   "na_obyv": 832,
+   "vydaje_2022_2025": 129740949,
+   "podil_vydaju_pct": 0.61,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 18
+  },
+  {
+   "kod": "583588",
+   "obec": "Oslavany",
+   "ico": "00282286",
+   "obyvatel": 4873,
+   "roky": {
+    "2022": 260568,
+    "2023": 164327,
+    "2024": 194473,
+    "2025": 150253
+   },
+   "celkem_2022_2025": 769621,
+   "na_obyv": 158,
+   "vydaje_2022_2025": 493372857,
+   "podil_vydaju_pct": 0.16,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583189",
+   "obec": "Jiříkovice",
+   "ico": "00362981",
+   "obyvatel": 982,
+   "roky": {
+    "2022": 125413,
+    "2023": 219587,
+    "2024": 78000,
+    "2025": 328503
+   },
+   "celkem_2022_2025": 751503,
+   "na_obyv": 765,
+   "vydaje_2022_2025": 94791481,
+   "podil_vydaju_pct": 0.79,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 19
+  },
+  {
+   "kod": "583685",
+   "obec": "Prace",
+   "ico": "00599247",
+   "obyvatel": 998,
+   "roky": {
+    "2022": 14802,
+    "2023": 34414,
+    "2024": 22534,
+    "2025": 604369
+   },
+   "celkem_2022_2025": 676119,
+   "na_obyv": 677,
+   "vydaje_2022_2025": 94391030,
+   "podil_vydaju_pct": 0.72,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 20
+  },
+  {
+   "kod": "583839",
+   "obec": "Říčany",
+   "ico": "00282537",
+   "obyvatel": 2143,
+   "roky": {
+    "2022": 143846,
+    "2023": 27104,
+    "2024": 273887,
+    "2025": 230714
+   },
+   "celkem_2022_2025": 675551,
+   "na_obyv": 315,
+   "vydaje_2022_2025": 297054774,
+   "podil_vydaju_pct": 0.23,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583821",
+   "obec": "Řícmanice",
+   "ico": "00374903",
+   "obyvatel": 828,
+   "roky": {
+    "2022": 304746,
+    "2023": 149418,
+    "2024": 73794,
+    "2025": 103380
+   },
+   "celkem_2022_2025": 631338,
+   "na_obyv": 762,
+   "vydaje_2022_2025": 77298004,
+   "podil_vydaju_pct": 0.82,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 21
+  },
+  {
+   "kod": "583936",
+   "obec": "Syrovice",
+   "ico": "00282634",
+   "obyvatel": 2097,
+   "roky": {
+    "2022": 111925,
+    "2023": 0,
+    "2024": 513040,
+    "2025": 0
+   },
+   "celkem_2022_2025": 624965,
+   "na_obyv": 298,
+   "vydaje_2022_2025": 249412419,
+   "podil_vydaju_pct": 0.25,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584720",
+   "obec": "Nosislav",
+   "ico": "00283428",
+   "obyvatel": 1379,
+   "roky": {
+    "2022": 88309,
+    "2023": 120927,
+    "2024": 136375,
+    "2025": 273455
+   },
+   "celkem_2022_2025": 619066,
+   "na_obyv": 449,
+   "vydaje_2022_2025": 147580710,
+   "podil_vydaju_pct": 0.42,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 22
+  },
+  {
+   "kod": "583201",
+   "obec": "Ketkovice",
+   "ico": "00375322",
+   "obyvatel": 638,
+   "roky": {
+    "2022": 25953,
+    "2023": 265726,
+    "2024": 132760,
+    "2025": 177573
+   },
+   "celkem_2022_2025": 602012,
+   "na_obyv": 944,
+   "vydaje_2022_2025": 56848839,
+   "podil_vydaju_pct": 1.06,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584223",
+   "obec": "Zbýšov",
+   "ico": "00282928",
+   "obyvatel": 3671,
+   "roky": {
+    "2022": 38010,
+    "2023": 39933,
+    "2024": 244012,
+    "2025": 263553
+   },
+   "celkem_2022_2025": 585508,
+   "na_obyv": 159,
+   "vydaje_2022_2025": 417049658,
+   "podil_vydaju_pct": 0.14,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583782",
+   "obec": "Rosice",
+   "ico": "00282481",
+   "obyvatel": 6784,
+   "roky": {
+    "2022": 71849,
+    "2023": 132937,
+    "2024": 112414,
+    "2025": 259587
+   },
+   "celkem_2022_2025": 576787,
+   "na_obyv": 85,
+   "vydaje_2022_2025": 1151123695,
+   "podil_vydaju_pct": 0.05,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583600",
+   "obec": "Ostrovačice",
+   "ico": "00377155",
+   "obyvatel": 829,
+   "roky": {
+    "2022": 74420,
+    "2023": 126411,
+    "2024": 282309,
+    "2025": 69080
+   },
+   "celkem_2022_2025": 552220,
+   "na_obyv": 666,
+   "vydaje_2022_2025": 123630807,
+   "podil_vydaju_pct": 0.45,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 23
+  },
+  {
+   "kod": "583561",
+   "obec": "Ořechov",
+   "ico": "00282278",
+   "obyvatel": 2915,
+   "roky": {
+    "2022": 355890,
+    "2023": 34260,
+    "2024": 28200,
+    "2025": 130840
+   },
+   "celkem_2022_2025": 549190,
+   "na_obyv": 188,
+   "vydaje_2022_2025": 331706841,
+   "podil_vydaju_pct": 0.17,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583791",
+   "obec": "Rozdrojovice",
+   "ico": "00282499",
+   "obyvatel": 1078,
+   "roky": {
+    "2022": 71540,
+    "2023": 152962,
+    "2024": 119640,
+    "2025": 202420
+   },
+   "celkem_2022_2025": 546562,
+   "na_obyv": 507,
+   "vydaje_2022_2025": 92035450,
+   "podil_vydaju_pct": 0.59,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 24
+  },
+  {
+   "kod": "582948",
+   "obec": "Deblín",
+   "ico": "00281697",
+   "obyvatel": 1132,
+   "roky": {
+    "2022": 95106,
+    "2023": 136972,
+    "2024": 157943,
+    "2025": 156324
+   },
+   "celkem_2022_2025": 546345,
+   "na_obyv": 483,
+   "vydaje_2022_2025": 139161804,
+   "podil_vydaju_pct": 0.39,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 25
+  },
+  {
+   "kod": "584215",
+   "obec": "Zbraslav",
+   "ico": "00282910",
+   "obyvatel": 1285,
+   "roky": {
+    "2022": 99819,
+    "2023": 57832,
+    "2024": 190077,
+    "2025": 186145
+   },
+   "celkem_2022_2025": 533873,
+   "na_obyv": 415,
+   "vydaje_2022_2025": 218357800,
+   "podil_vydaju_pct": 0.24,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 26
+  },
+  {
+   "kod": "594377",
+   "obec": "Loděnice",
+   "ico": "00293083",
+   "obyvatel": 616,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 513645
+   },
+   "celkem_2022_2025": 513645,
+   "na_obyv": 834,
+   "vydaje_2022_2025": 75051589,
+   "podil_vydaju_pct": 0.68,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583677",
+   "obec": "Pozořice",
+   "ico": "00282375",
+   "obyvatel": 2413,
+   "roky": {
+    "2022": 22191,
+    "2023": 15498,
+    "2024": 186292,
+    "2025": 260342
+   },
+   "celkem_2022_2025": 484323,
+   "na_obyv": 201,
+   "vydaje_2022_2025": 286049510,
+   "podil_vydaju_pct": 0.17,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583090",
+   "obec": "Hvozdec",
+   "ico": "00362948",
+   "obyvatel": 354,
+   "roky": {
+    "2022": 150446,
+    "2023": 115078,
+    "2024": 108900,
+    "2025": 108900
+   },
+   "celkem_2022_2025": 483324,
+   "na_obyv": 1365,
+   "vydaje_2022_2025": 33730059,
+   "podil_vydaju_pct": 1.43,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583065",
+   "obec": "Hradčany",
+   "ico": "00362875",
+   "obyvatel": 676,
+   "roky": {
+    "2022": 27579,
+    "2023": 171868,
+    "2024": 155191,
+    "2025": 111476
+   },
+   "celkem_2022_2025": 466114,
+   "na_obyv": 690,
+   "vydaje_2022_2025": 71573661,
+   "podil_vydaju_pct": 0.65,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584801",
+   "obec": "Pohořelice",
+   "ico": "00283509",
+   "obyvatel": 6126,
+   "roky": {
+    "2022": 129471,
+    "2023": 182153,
+    "2024": 63710,
+    "2025": 82914
+   },
+   "celkem_2022_2025": 458248,
+   "na_obyv": 75,
+   "vydaje_2022_2025": 1349480722,
+   "podil_vydaju_pct": 0.03,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582883",
+   "obec": "Bratčice",
+   "ico": "00488127",
+   "obyvatel": 693,
+   "roky": {
+    "2022": 94028,
+    "2023": 90655,
+    "2024": 56300,
+    "2025": 204432
+   },
+   "celkem_2022_2025": 445415,
+   "na_obyv": 643,
+   "vydaje_2022_2025": 105541816,
+   "podil_vydaju_pct": 0.42,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584207",
+   "obec": "Zastávka",
+   "ico": "00488399",
+   "obyvatel": 2495,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 428157,
+    "2025": 10890
+   },
+   "celkem_2022_2025": 439047,
+   "na_obyv": 176,
+   "vydaje_2022_2025": 323901657,
+   "podil_vydaju_pct": 0.14,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583723",
+   "obec": "Přibyslavice",
+   "ico": "00637548",
+   "obyvatel": 563,
+   "roky": {
+    "2022": 207364,
+    "2023": 127050,
+    "2024": 0,
+    "2025": 87120
+   },
+   "celkem_2022_2025": 421534,
+   "na_obyv": 749,
+   "vydaje_2022_2025": 86107029,
+   "podil_vydaju_pct": 0.49,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583111",
+   "obec": "Chudčice",
+   "ico": "00362956",
+   "obyvatel": 1008,
+   "roky": {
+    "2022": 90750,
+    "2023": 109551,
+    "2024": 109082,
+    "2025": 108900
+   },
+   "celkem_2022_2025": 418283,
+   "na_obyv": 415,
+   "vydaje_2022_2025": 97634393,
+   "podil_vydaju_pct": 0.43,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 27
+  },
+  {
+   "kod": "582859",
+   "obec": "Blučina",
+   "ico": "00281611",
+   "obyvatel": 2277,
+   "roky": {
+    "2022": 88863,
+    "2023": 89824,
+    "2024": 111120,
+    "2025": 113486
+   },
+   "celkem_2022_2025": 403293,
+   "na_obyv": 177,
+   "vydaje_2022_2025": 265652266,
+   "podil_vydaju_pct": 0.15,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583693",
+   "obec": "Pravlov",
+   "ico": "00488071",
+   "obyvatel": 697,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 400510,
+    "2025": 0
+   },
+   "celkem_2022_2025": 400510,
+   "na_obyv": 575,
+   "vydaje_2022_2025": 53982223,
+   "podil_vydaju_pct": 0.74,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583294",
+   "obec": "Lesní Hluboké",
+   "ico": "00637190",
+   "obyvatel": 278,
+   "roky": {
+    "2022": 26015,
+    "2023": 19943,
+    "2024": 232424,
+    "2025": 121534
+   },
+   "celkem_2022_2025": 399916,
+   "na_obyv": 1439,
+   "vydaje_2022_2025": 49919216,
+   "podil_vydaju_pct": 0.8,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583456",
+   "obec": "Nebovidy",
+   "ico": "00488097",
+   "obyvatel": 871,
+   "roky": {
+    "2022": 30266,
+    "2023": 71976,
+    "2024": 23669,
+    "2025": 272973
+   },
+   "celkem_2022_2025": 398884,
+   "na_obyv": 458,
+   "vydaje_2022_2025": 84199450,
+   "podil_vydaju_pct": 0.47,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 28
+  },
+  {
+   "kod": "583987",
+   "obec": "Tetčice",
+   "ico": "44947917",
+   "obyvatel": 1124,
+   "roky": {
+    "2022": 84650,
+    "2023": 88038,
+    "2024": 92444,
+    "2025": 105704
+   },
+   "celkem_2022_2025": 370836,
+   "na_obyv": 330,
+   "vydaje_2022_2025": 96553676,
+   "podil_vydaju_pct": 0.38,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 29
+  },
+  {
+   "kod": "583634",
+   "obec": "Podolí",
+   "ico": "00282332",
+   "obyvatel": 1418,
+   "roky": {
+    "2022": 53344,
+    "2023": 78080,
+    "2024": 140337,
+    "2025": 97708
+   },
+   "celkem_2022_2025": 369469,
+   "na_obyv": 261,
+   "vydaje_2022_2025": 138077660,
+   "podil_vydaju_pct": 0.27,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 30
+  },
+  {
+   "kod": "583171",
+   "obec": "Jinačovice",
+   "ico": "00281883",
+   "obyvatel": 805,
+   "roky": {
+    "2022": 102089,
+    "2023": 69778,
+    "2024": 79903,
+    "2025": 110634
+   },
+   "celkem_2022_2025": 362404,
+   "na_obyv": 450,
+   "vydaje_2022_2025": 71114057,
+   "podil_vydaju_pct": 0.51,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 31
+  },
+  {
+   "kod": "583774",
+   "obec": "Rebešovice",
+   "ico": "00488089",
+   "obyvatel": 1092,
+   "roky": {
+    "2022": 59910,
+    "2023": 72279,
+    "2024": 65950,
+    "2025": 156722
+   },
+   "celkem_2022_2025": 354861,
+   "na_obyv": 325,
+   "vydaje_2022_2025": 92589488,
+   "podil_vydaju_pct": 0.38,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 32
+  },
+  {
+   "kod": "591661",
+   "obec": "Senorady",
+   "ico": "00378593",
+   "obyvatel": 389,
+   "roky": {
+    "2022": 64906,
+    "2023": 35356,
+    "2024": 36986,
+    "2025": 203772
+   },
+   "celkem_2022_2025": 341020,
+   "na_obyv": 877,
+   "vydaje_2022_2025": 54426411,
+   "podil_vydaju_pct": 0.63,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596892",
+   "obec": "Tišnovská Nová Ves",
+   "ico": "00599883",
+   "obyvatel": 102,
+   "roky": {
+    "2022": 93945,
+    "2023": 81809,
+    "2024": 78261,
+    "2025": 75479
+   },
+   "celkem_2022_2025": 329494,
+   "na_obyv": 3230,
+   "vydaje_2022_2025": 14760948,
+   "podil_vydaju_pct": 2.23,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583758",
+   "obec": "Rajhrad",
+   "ico": "00282456",
+   "obyvatel": 4136,
+   "roky": {
+    "2022": 72959,
+    "2023": 44491,
+    "2024": 61937,
+    "2025": 130315
+   },
+   "celkem_2022_2025": 309702,
+   "na_obyv": 75,
+   "vydaje_2022_2025": 452931869,
+   "podil_vydaju_pct": 0.07,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583596",
+   "obec": "Ostopovice",
+   "ico": "00282294",
+   "obyvatel": 1751,
+   "roky": {
+    "2022": 88696,
+    "2023": 71407,
+    "2024": 84724,
+    "2025": 52276
+   },
+   "celkem_2022_2025": 297103,
+   "na_obyv": 170,
+   "vydaje_2022_2025": 286437124,
+   "podil_vydaju_pct": 0.1,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583430",
+   "obec": "Moravské Knínice",
+   "ico": "00488216",
+   "obyvatel": 1153,
+   "roky": {
+    "2022": 19888,
+    "2023": 129042,
+    "2024": 101156,
+    "2025": 45393
+   },
+   "celkem_2022_2025": 295479,
+   "na_obyv": 256,
+   "vydaje_2022_2025": 130582421,
+   "podil_vydaju_pct": 0.23,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 33
+  },
+  {
+   "kod": "583545",
+   "obec": "Omice",
+   "ico": "00488232",
+   "obyvatel": 829,
+   "roky": {
+    "2022": 72600,
+    "2023": 72600,
+    "2024": 72600,
+    "2025": 72600
+   },
+   "celkem_2022_2025": 290400,
+   "na_obyv": 350,
+   "vydaje_2022_2025": 53512410,
+   "podil_vydaju_pct": 0.54,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 34
+  },
+  {
+   "kod": "583863",
+   "obec": "Sivice",
+   "ico": "00488313",
+   "obyvatel": 1101,
+   "roky": {
+    "2022": 70885,
+    "2023": 66550,
+    "2024": 78952,
+    "2025": 72600
+   },
+   "celkem_2022_2025": 288987,
+   "na_obyv": 262,
+   "vydaje_2022_2025": 127940233,
+   "podil_vydaju_pct": 0.23,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 35
+  },
+  {
+   "kod": "583324",
+   "obec": "Lukovany",
+   "ico": "00282031",
+   "obyvatel": 677,
+   "roky": {
+    "2022": 44601,
+    "2023": 35338,
+    "2024": 81186,
+    "2025": 126740
+   },
+   "celkem_2022_2025": 287865,
+   "na_obyv": 425,
+   "vydaje_2022_2025": 50549444,
+   "podil_vydaju_pct": 0.57,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583219",
+   "obec": "Kobylnice",
+   "ico": "00488160",
+   "obyvatel": 1258,
+   "roky": {
+    "2022": 63370,
+    "2023": 110410,
+    "2024": 31418,
+    "2025": 74041
+   },
+   "celkem_2022_2025": 279239,
+   "na_obyv": 222,
+   "vydaje_2022_2025": 92720940,
+   "podil_vydaju_pct": 0.3,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 36
+  },
+  {
+   "kod": "583766",
+   "obec": "Rajhradice",
+   "ico": "00488291",
+   "obyvatel": 1579,
+   "roky": {
+    "2022": 97250,
+    "2023": 72095,
+    "2024": 49895,
+    "2025": 44702
+   },
+   "celkem_2022_2025": 263942,
+   "na_obyv": 167,
+   "vydaje_2022_2025": 143734068,
+   "podil_vydaju_pct": 0.18,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583375",
+   "obec": "Mělčany",
+   "ico": "00282081",
+   "obyvatel": 498,
+   "roky": {
+    "2022": 110098,
+    "2023": 44493,
+    "2024": 25991,
+    "2025": 80828
+   },
+   "celkem_2022_2025": 261410,
+   "na_obyv": 525,
+   "vydaje_2022_2025": 156275963,
+   "podil_vydaju_pct": 0.17,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583979",
+   "obec": "Telnice",
+   "ico": "00282677",
+   "obyvatel": 1670,
+   "roky": {
+    "2022": 57508,
+    "2023": 37860,
+    "2024": 83366,
+    "2025": 78233
+   },
+   "celkem_2022_2025": 256967,
+   "na_obyv": 154,
+   "vydaje_2022_2025": 125088849,
+   "podil_vydaju_pct": 0.21,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582921",
+   "obec": "Česká",
+   "ico": "00281671",
+   "obyvatel": 1010,
+   "roky": {
+    "2022": 13068,
+    "2023": 123420,
+    "2024": 74899,
+    "2025": 42592
+   },
+   "celkem_2022_2025": 253979,
+   "na_obyv": 251,
+   "vydaje_2022_2025": 101216355,
+   "podil_vydaju_pct": 0.25,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 37
+  },
+  {
+   "kod": "583961",
+   "obec": "Štěpánovice",
+   "ico": "00365548",
+   "obyvatel": 493,
+   "roky": {
+    "2022": 76458,
+    "2023": 87120,
+    "2024": 54400,
+    "2025": 31600
+   },
+   "celkem_2022_2025": 249578,
+   "na_obyv": 506,
+   "vydaje_2022_2025": 50424268,
+   "podil_vydaju_pct": 0.49,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583391",
+   "obec": "Modřice",
+   "ico": "00282103",
+   "obyvatel": 5755,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 236192
+   },
+   "celkem_2022_2025": 236192,
+   "na_obyv": 41,
+   "vydaje_2022_2025": 716647251,
+   "podil_vydaju_pct": 0.03,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584185",
+   "obec": "Zakřany",
+   "ico": "00282880",
+   "obyvatel": 805,
+   "roky": {
+    "2022": 58080,
+    "2023": 58080,
+    "2024": 58080,
+    "2025": 58080
+   },
+   "celkem_2022_2025": 232320,
+   "na_obyv": 289,
+   "vydaje_2022_2025": 106895664,
+   "podil_vydaju_pct": 0.22,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 38
+  },
+  {
+   "kod": "583855",
+   "obec": "Silůvky",
+   "ico": "00488305",
+   "obyvatel": 853,
+   "roky": {
+    "2022": 25989,
+    "2023": 37911,
+    "2024": 48458,
+    "2025": 102207
+   },
+   "celkem_2022_2025": 214565,
+   "na_obyv": 252,
+   "vydaje_2022_2025": 77468468,
+   "podil_vydaju_pct": 0.28,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 39
+  },
+  {
+   "kod": "593834",
+   "obec": "Branišovice",
+   "ico": "00637360",
+   "obyvatel": 645,
+   "roky": {
+    "2022": 191264,
+    "2023": 9831,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 201095,
+   "na_obyv": 312,
+   "vydaje_2022_2025": 74556936,
+   "podil_vydaju_pct": 0.27,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583120",
+   "obec": "Ivančice",
+   "ico": "00281859",
+   "obyvatel": 9898,
+   "roky": {
+    "2022": 0,
+    "2023": 127050,
+    "2024": 45930,
+    "2025": 26620
+   },
+   "celkem_2022_2025": 199600,
+   "na_obyv": 20,
+   "vydaje_2022_2025": 1311029931,
+   "podil_vydaju_pct": 0.02,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583260",
+   "obec": "Lažánky",
+   "ico": "00281972",
+   "obyvatel": 816,
+   "roky": {
+    "2022": 28927,
+    "2023": 96025,
+    "2024": 36567,
+    "2025": 25147
+   },
+   "celkem_2022_2025": 186666,
+   "na_obyv": 229,
+   "vydaje_2022_2025": 69826940,
+   "podil_vydaju_pct": 0.27,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 40
+  },
+  {
+   "kod": "595667",
+   "obec": "Horní Loučky",
+   "ico": "00599395",
+   "obyvatel": 312,
+   "roky": {
+    "2022": 48500,
+    "2023": 101543,
+    "2024": 7139,
+    "2025": 25000
+   },
+   "celkem_2022_2025": 182182,
+   "na_obyv": 584,
+   "vydaje_2022_2025": 41500551,
+   "podil_vydaju_pct": 0.44,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583740",
+   "obec": "Radostice",
+   "ico": "00487520",
+   "obyvatel": 789,
+   "roky": {
+    "2022": 68850,
+    "2023": 66882,
+    "2024": 2925,
+    "2025": 37700
+   },
+   "celkem_2022_2025": 176357,
+   "na_obyv": 224,
+   "vydaje_2022_2025": 55654905,
+   "podil_vydaju_pct": 0.32,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 41
+  },
+  {
+   "kod": "584517",
+   "obec": "Ivaň",
+   "ico": "00600164",
+   "obyvatel": 754,
+   "roky": {
+    "2022": 53000,
+    "2023": 0,
+    "2024": 68365,
+    "2025": 53630
+   },
+   "celkem_2022_2025": 174995,
+   "na_obyv": 232,
+   "vydaje_2022_2025": 139711318,
+   "podil_vydaju_pct": 0.13,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 42
+  },
+  {
+   "kod": "584843",
+   "obec": "Přibice",
+   "ico": "00600211",
+   "obyvatel": 1098,
+   "roky": {
+    "2022": 30000,
+    "2023": 50000,
+    "2024": 50000,
+    "2025": 30000
+   },
+   "celkem_2022_2025": 160000,
+   "na_obyv": 146,
+   "vydaje_2022_2025": 113500576,
+   "podil_vydaju_pct": 0.14,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 43
+  },
+  {
+   "kod": "596175",
+   "obec": "Nedvědice",
+   "ico": "00294845",
+   "obyvatel": 1277,
+   "roky": {
+    "2022": 36000,
+    "2023": 38970,
+    "2024": 43150,
+    "2025": 36000
+   },
+   "celkem_2022_2025": 154120,
+   "na_obyv": 121,
+   "vydaje_2022_2025": 171839733,
+   "podil_vydaju_pct": 0.09,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 44
+  },
+  {
+   "kod": "584169",
+   "obec": "Všechovice",
+   "ico": "00366072",
+   "obyvatel": 268,
+   "roky": {
+    "2022": 51111,
+    "2023": 1635,
+    "2024": 48859,
+    "2025": 52000
+   },
+   "celkem_2022_2025": 153605,
+   "na_obyv": 573,
+   "vydaje_2022_2025": 41692847,
+   "podil_vydaju_pct": 0.37,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "594903",
+   "obec": "Šumice",
+   "ico": "00637602",
+   "obyvatel": 311,
+   "roky": {
+    "2022": 41400,
+    "2023": 14142,
+    "2024": 64600,
+    "2025": 30656
+   },
+   "celkem_2022_2025": 150798,
+   "na_obyv": 485,
+   "vydaje_2022_2025": 51739352,
+   "podil_vydaju_pct": 0.29,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584240",
+   "obec": "Žatčany",
+   "ico": "00282944",
+   "obyvatel": 957,
+   "roky": {
+    "2022": 80530,
+    "2023": 33480,
+    "2024": 5445,
+    "2025": 18150
+   },
+   "celkem_2022_2025": 137605,
+   "na_obyv": 144,
+   "vydaje_2022_2025": 107255944,
+   "podil_vydaju_pct": 0.13,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 45
+  },
+  {
+   "kod": "584274",
+   "obec": "Železné",
+   "ico": "00366129",
+   "obyvatel": 631,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 69878,
+    "2025": 59769
+   },
+   "celkem_2022_2025": 129647,
+   "na_obyv": 205,
+   "vydaje_2022_2025": 45061089,
+   "podil_vydaju_pct": 0.29,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584011",
+   "obec": "Trboušany",
+   "ico": "00365726",
+   "obyvatel": 389,
+   "roky": {
+    "2022": 51387,
+    "2023": 0,
+    "2024": 40066,
+    "2025": 32700
+   },
+   "celkem_2022_2025": 124153,
+   "na_obyv": 319,
+   "vydaje_2022_2025": 70515619,
+   "podil_vydaju_pct": 0.18,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583014",
+   "obec": "Heroltice",
+   "ico": "00362841",
+   "obyvatel": 239,
+   "roky": {
+    "2022": 24645,
+    "2023": 48990,
+    "2024": 43829,
+    "2025": 0
+   },
+   "celkem_2022_2025": 117464,
+   "na_obyv": 491,
+   "vydaje_2022_2025": 36240607,
+   "podil_vydaju_pct": 0.32,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583341",
+   "obec": "Malhostovice",
+   "ico": "00282057",
+   "obyvatel": 1028,
+   "roky": {
+    "2022": 40305,
+    "2023": 0,
+    "2024": 34902,
+    "2025": 36534
+   },
+   "celkem_2022_2025": 111741,
+   "na_obyv": 109,
+   "vydaje_2022_2025": 115166960,
+   "podil_vydaju_pct": 0.1,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 46
+  },
+  {
+   "kod": "583448",
+   "obec": "Moutnice",
+   "ico": "00282154",
+   "obyvatel": 1158,
+   "roky": {
+    "2022": 54777,
+    "2023": 47698,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 102475,
+   "na_obyv": 88,
+   "vydaje_2022_2025": 143488826,
+   "podil_vydaju_pct": 0.07,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 47
+  },
+  {
+   "kod": "595527",
+   "obec": "Dolní Loučky",
+   "ico": "00294241",
+   "obyvatel": 1320,
+   "roky": {
+    "2022": 41684,
+    "2023": 54102,
+    "2024": 0,
+    "2025": 6600
+   },
+   "celkem_2022_2025": 102386,
+   "na_obyv": 78,
+   "vydaje_2022_2025": 148601350,
+   "podil_vydaju_pct": 0.07,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 48
+  },
+  {
+   "kod": "584151",
+   "obec": "Vranov",
+   "ico": "00282855",
+   "obyvatel": 920,
+   "roky": {
+    "2022": 53119,
+    "2023": 10164,
+    "2024": 24200,
+    "2025": 12000
+   },
+   "celkem_2022_2025": 99483,
+   "na_obyv": 108,
+   "vydaje_2022_2025": 109383919,
+   "podil_vydaju_pct": 0.09,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 49
+  },
+  {
+   "kod": "584070",
+   "obec": "Úsuší",
+   "ico": "00366005",
+   "obyvatel": 125,
+   "roky": {
+    "2022": 33033,
+    "2023": 42350,
+    "2024": 10890,
+    "2025": 0
+   },
+   "celkem_2022_2025": 86273,
+   "na_obyv": 690,
+   "vydaje_2022_2025": 14957101,
+   "podil_vydaju_pct": 0.58,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582565",
+   "obec": "Unín",
+   "ico": "00636746",
+   "obyvatel": 242,
+   "roky": {
+    "2022": 7865,
+    "2023": 36960,
+    "2024": 17775,
+    "2025": 17075
+   },
+   "celkem_2022_2025": 79675,
+   "na_obyv": 329,
+   "vydaje_2022_2025": 33008031,
+   "podil_vydaju_pct": 0.24,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "549894",
+   "obec": "Skryje",
+   "ico": "00599816",
+   "obyvatel": 72,
+   "roky": {
+    "2022": 68982,
+    "2023": 0,
+    "2024": 0,
+    "2025": 8470
+   },
+   "celkem_2022_2025": 77452,
+   "na_obyv": 1076,
+   "vydaje_2022_2025": 8234774,
+   "podil_vydaju_pct": 0.94,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582972",
+   "obec": "Drásov",
+   "ico": "00281727",
+   "obyvatel": 2103,
+   "roky": {
+    "2022": 72544,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 72544,
+   "na_obyv": 34,
+   "vydaje_2022_2025": 277846218,
+   "podil_vydaju_pct": 0.03,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "581402",
+   "obec": "Brumov",
+   "ico": "00532088",
+   "obyvatel": 260,
+   "roky": {
+    "2022": 0,
+    "2023": 71150,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 71150,
+   "na_obyv": 274,
+   "vydaje_2022_2025": 27773541,
+   "podil_vydaju_pct": 0.26,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "550272",
+   "obec": "Cvrčovice",
+   "ico": "00600156",
+   "obyvatel": 673,
+   "roky": {
+    "2022": 70000,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 70000,
+   "na_obyv": 104,
+   "vydaje_2022_2025": 88250984,
+   "podil_vydaju_pct": 0.08,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582808",
+   "obec": "Babice u Rosic",
+   "ico": "00362531",
+   "obyvatel": 798,
+   "roky": {
+    "2022": 33679,
+    "2023": 0,
+    "2024": 0,
+    "2025": 34515
+   },
+   "celkem_2022_2025": 68194,
+   "na_obyv": 85,
+   "vydaje_2022_2025": 52507966,
+   "podil_vydaju_pct": 0.13,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 50
+  },
+  {
+   "kod": "595837",
+   "obec": "Kaly",
+   "ico": "00543942",
+   "obyvatel": 311,
+   "roky": {
+    "2022": 54190,
+    "2023": 0,
+    "2024": 13915,
+    "2025": 0
+   },
+   "celkem_2022_2025": 68105,
+   "na_obyv": 219,
+   "vydaje_2022_2025": 29193668,
+   "podil_vydaju_pct": 0.23,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582255",
+   "obec": "Rašov",
+   "ico": "00532151",
+   "obyvatel": 246,
+   "roky": {
+    "2022": 21608,
+    "2023": 17730,
+    "2024": 10890,
+    "2025": 14705
+   },
+   "celkem_2022_2025": 64933,
+   "na_obyv": 264,
+   "vydaje_2022_2025": 30057538,
+   "podil_vydaju_pct": 0.22,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583421",
+   "obec": "Moravské Bránice",
+   "ico": "00488208",
+   "obyvatel": 994,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 57742,
+    "2025": 0
+   },
+   "celkem_2022_2025": 57742,
+   "na_obyv": 58,
+   "vydaje_2022_2025": 92597420,
+   "podil_vydaju_pct": 0.06,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 51
+  },
+  {
+   "kod": "583316",
+   "obec": "Lomnička",
+   "ico": "00363197",
+   "obyvatel": 676,
+   "roky": {
+    "2022": 57618,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 57618,
+   "na_obyv": 85,
+   "vydaje_2022_2025": 57389692,
+   "podil_vydaju_pct": 0.1,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583499",
+   "obec": "Nesvačilka",
+   "ico": "00637505",
+   "obyvatel": 332,
+   "roky": {
+    "2022": 1452,
+    "2023": 51150,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 52602,
+   "na_obyv": 158,
+   "vydaje_2022_2025": 30973653,
+   "podil_vydaju_pct": 0.17,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583278",
+   "obec": "Ledce",
+   "ico": "00488194",
+   "obyvatel": 262,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 3300,
+    "2025": 48987
+   },
+   "celkem_2022_2025": 52287,
+   "na_obyv": 200,
+   "vydaje_2022_2025": 36428865,
+   "podil_vydaju_pct": 0.14,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583928",
+   "obec": "Svatoslav",
+   "ico": "00282626",
+   "obyvatel": 461,
+   "roky": {
+    "2022": 46488,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 46488,
+   "na_obyv": 101,
+   "vydaje_2022_2025": 50686949,
+   "podil_vydaju_pct": 0.09,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584177",
+   "obec": "Vysoké Popovice",
+   "ico": "00282871",
+   "obyvatel": 777,
+   "roky": {
+    "2022": 15450,
+    "2023": 15450,
+    "2024": 0,
+    "2025": 15450
+   },
+   "celkem_2022_2025": 46350,
+   "na_obyv": 60,
+   "vydaje_2022_2025": 71908074,
+   "podil_vydaju_pct": 0.06,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 52
+  },
+  {
+   "kod": "582174",
+   "obec": "Osiky",
+   "ico": "00532134",
+   "obyvatel": 132,
+   "roky": {
+    "2022": 3000,
+    "2023": 5645,
+    "2024": 34735,
+    "2025": 0
+   },
+   "celkem_2022_2025": 43380,
+   "na_obyv": 329,
+   "vydaje_2022_2025": 17340922,
+   "podil_vydaju_pct": 0.25,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595985",
+   "obec": "Kuřimská Nová Ves",
+   "ico": "00599522",
+   "obyvatel": 156,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 42350
+   },
+   "celkem_2022_2025": 42350,
+   "na_obyv": 271,
+   "vydaje_2022_2025": 68577032,
+   "podil_vydaju_pct": 0.06,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595314",
+   "obec": "Borač",
+   "ico": "00294021",
+   "obyvatel": 349,
+   "roky": {
+    "2022": 7790,
+    "2023": 8000,
+    "2024": 10500,
+    "2025": 15125
+   },
+   "celkem_2022_2025": 41415,
+   "na_obyv": 119,
+   "vydaje_2022_2025": 37319471,
+   "podil_vydaju_pct": 0.11,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583227",
+   "obec": "Kovalovice",
+   "ico": "00488178",
+   "obyvatel": 671,
+   "roky": {
+    "2022": 4235,
+    "2023": 8929,
+    "2024": 18000,
+    "2025": 8000
+   },
+   "celkem_2022_2025": 39164,
+   "na_obyv": 58,
+   "vydaje_2022_2025": 56222194,
+   "podil_vydaju_pct": 0.07,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583669",
+   "obec": "Popůvky",
+   "ico": "00488275",
+   "obyvatel": 1866,
+   "roky": {
+    "2022": 5324,
+    "2023": 10164,
+    "2024": 8470,
+    "2025": 14363
+   },
+   "celkem_2022_2025": 38321,
+   "na_obyv": 21,
+   "vydaje_2022_2025": 288317760,
+   "podil_vydaju_pct": 0.01,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582891",
+   "obec": "Březina",
+   "ico": "00362883",
+   "obyvatel": 399,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 36693
+   },
+   "celkem_2022_2025": 36693,
+   "na_obyv": 92,
+   "vydaje_2022_2025": 31615784,
+   "podil_vydaju_pct": 0.12,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596302",
+   "obec": "Olší",
+   "ico": "00294977",
+   "obyvatel": 355,
+   "roky": {
+    "2022": 4235,
+    "2023": 24805,
+    "2024": 2722,
+    "2025": 2268
+   },
+   "celkem_2022_2025": 34030,
+   "na_obyv": 96,
+   "vydaje_2022_2025": 49046707,
+   "podil_vydaju_pct": 0.07,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582735",
+   "obec": "Zhoř",
+   "ico": "00637777",
+   "obyvatel": 75,
+   "roky": {
+    "2022": 30250,
+    "2023": 3105,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 33355,
+   "na_obyv": 445,
+   "vydaje_2022_2025": 8029504,
+   "podil_vydaju_pct": 0.42,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "506699",
+   "obec": "Otmarov",
+   "ico": "00488259",
+   "obyvatel": 398,
+   "roky": {
+    "2022": 18810,
+    "2023": 9680,
+    "2024": 0,
+    "2025": 3025
+   },
+   "celkem_2022_2025": 31515,
+   "na_obyv": 79,
+   "vydaje_2022_2025": 23021080,
+   "podil_vydaju_pct": 0.14,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595993",
+   "obec": "Kuřimské Jestřabí",
+   "ico": "00599531",
+   "obyvatel": 178,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 30000,
+    "2025": 0
+   },
+   "celkem_2022_2025": 30000,
+   "na_obyv": 169,
+   "vydaje_2022_2025": 19063667,
+   "podil_vydaju_pct": 0.16,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583367",
+   "obec": "Medlov",
+   "ico": "00488046",
+   "obyvatel": 902,
+   "roky": {
+    "2022": 16335,
+    "2023": 9075,
+    "2024": 2916,
+    "2025": 0
+   },
+   "celkem_2022_2025": 28326,
+   "na_obyv": 31,
+   "vydaje_2022_2025": 69995422,
+   "podil_vydaju_pct": 0.04,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 53
+  },
+  {
+   "kod": "584142",
+   "obec": "Vojkovice",
+   "ico": "00488381",
+   "obyvatel": 1190,
+   "roky": {
+    "2022": 25500,
+    "2023": 0,
+    "2024": 2550,
+    "2025": 0
+   },
+   "celkem_2022_2025": 28050,
+   "na_obyv": 24,
+   "vydaje_2022_2025": 98401580,
+   "podil_vydaju_pct": 0.03,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 54
+  },
+  {
+   "kod": "545295",
+   "obec": "Skalička",
+   "ico": "00365432",
+   "obyvatel": 167,
+   "roky": {
+    "2022": 5781,
+    "2023": 1007,
+    "2024": 126,
+    "2025": 19900
+   },
+   "celkem_2022_2025": 26814,
+   "na_obyv": 161,
+   "vydaje_2022_2025": 9895062,
+   "podil_vydaju_pct": 0.27,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582832",
+   "obec": "Biskoupky",
+   "ico": "00637513",
+   "obyvatel": 185,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 2360,
+    "2025": 23730
+   },
+   "celkem_2022_2025": 26090,
+   "na_obyv": 141,
+   "vydaje_2022_2025": 23401613,
+   "podil_vydaju_pct": 0.11,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583472",
+   "obec": "Němčičky",
+   "ico": "00488054",
+   "obyvatel": 343,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 20207
+   },
+   "celkem_2022_2025": 20207,
+   "na_obyv": 59,
+   "vydaje_2022_2025": 38625645,
+   "podil_vydaju_pct": 0.05,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583880",
+   "obec": "Sobotovice",
+   "ico": "00488321",
+   "obyvatel": 654,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 3300,
+    "2025": 15167
+   },
+   "celkem_2022_2025": 18467,
+   "na_obyv": 28,
+   "vydaje_2022_2025": 45179857,
+   "podil_vydaju_pct": 0.04,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584193",
+   "obec": "Zálesná Zhoř",
+   "ico": "49457284",
+   "obyvatel": 67,
+   "roky": {
+    "2022": 0,
+    "2023": 18150,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 18150,
+   "na_obyv": 271,
+   "vydaje_2022_2025": 15286175,
+   "podil_vydaju_pct": 0.12,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "549908",
+   "obec": "Újezd u Tišnova",
+   "ico": "00599972",
+   "obyvatel": 145,
+   "roky": {
+    "2022": 5488,
+    "2023": 5993,
+    "2024": 0,
+    "2025": 6000
+   },
+   "celkem_2022_2025": 17481,
+   "na_obyv": 121,
+   "vydaje_2022_2025": 19403105,
+   "podil_vydaju_pct": 0.09,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583057",
+   "obec": "Hostěnice",
+   "ico": "00488151",
+   "obyvatel": 833,
+   "roky": {
+    "2022": 7260,
+    "2023": 9801,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 17061,
+   "na_obyv": 20,
+   "vydaje_2022_2025": 93935783,
+   "podil_vydaju_pct": 0.02,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 55
+  },
+  {
+   "kod": "583804",
+   "obec": "Rudka",
+   "ico": "00378542",
+   "obyvatel": 403,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 6534
+   },
+   "celkem_2022_2025": 6534,
+   "na_obyv": 16,
+   "vydaje_2022_2025": 32647332,
+   "podil_vydaju_pct": 0.02,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583944",
+   "obec": "Šerkovice",
+   "ico": "00375276",
+   "obyvatel": 342,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 5000
+   },
+   "celkem_2022_2025": 5000,
+   "na_obyv": 15,
+   "vydaje_2022_2025": 28234043,
+   "podil_vydaju_pct": 0.02,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583537",
+   "obec": "Ochoz u Brna",
+   "ico": "00282243",
+   "obyvatel": 1560,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 4000,
+    "2025": 0
+   },
+   "celkem_2022_2025": 4000,
+   "na_obyv": 3,
+   "vydaje_2022_2025": 211550816,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583715",
+   "obec": "Příbram na Moravě",
+   "ico": "00282413",
+   "obyvatel": 648,
+   "roky": {
+    "2022": 3700,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 3700,
+   "na_obyv": 6,
+   "vydaje_2022_2025": 63707937,
+   "podil_vydaju_pct": 0.01,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583651",
+   "obec": "Popovice",
+   "ico": "00488267",
+   "obyvatel": 373,
+   "roky": {
+    "2022": 2130,
+    "2023": 0,
+    "2024": 1127,
+    "2025": 0
+   },
+   "celkem_2022_2025": 3257,
+   "na_obyv": 9,
+   "vydaje_2022_2025": 36017122,
+   "podil_vydaju_pct": 0.01,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583511",
+   "obec": "Nové Bránice",
+   "ico": "00488224",
+   "obyvatel": 967,
+   "roky": {
+    "2022": 0,
+    "2023": 1198,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 1198,
+   "na_obyv": 1,
+   "vydaje_2022_2025": 131316379,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 56
+  },
+  {
+   "kod": "595551",
+   "obec": "Doubravník",
+   "ico": "00294268",
+   "obyvatel": 861,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 1000
+   },
+   "celkem_2022_2025": 1000,
+   "na_obyv": 1,
+   "vydaje_2022_2025": 103531238,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 57
+  },
+  {
+   "kod": "582123",
+   "obec": "Ochoz u Tišnova",
+   "ico": "00600580",
+   "obyvatel": 114,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 1000,
+    "2025": 0
+   },
+   "celkem_2022_2025": 1000,
+   "na_obyv": 9,
+   "vydaje_2022_2025": 12310521,
+   "podil_vydaju_pct": 0.01,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "581321",
+   "obec": "Běleč",
+   "ico": "00532070",
+   "obyvatel": 205,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 21711409,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595331",
+   "obec": "Borovník",
+   "ico": "00599310",
+   "obyvatel": 110,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 20480955,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582875",
+   "obec": "Braníškov",
+   "ico": "00362832",
+   "obyvatel": 210,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 21653062,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "581437",
+   "obec": "Bukovice",
+   "ico": "00637726",
+   "obyvatel": 97,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 7727448,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595446",
+   "obec": "Černvír",
+   "ico": "00599344",
+   "obyvatel": 138,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 10692366,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582930",
+   "obec": "Čučice",
+   "ico": "00637521",
+   "obyvatel": 452,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 41984596,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582964",
+   "obec": "Domašov",
+   "ico": "00281719",
+   "obyvatel": 709,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 104073423,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 58
+  },
+  {
+   "kod": "595560",
+   "obec": "Drahonín",
+   "ico": "00375331",
+   "obyvatel": 112,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 10752418,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583022",
+   "obec": "Hlína",
+   "ico": "00488135",
+   "obyvatel": 315,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 33808487,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "581577",
+   "obec": "Hluboké Dvory",
+   "ico": "00637734",
+   "obyvatel": 107,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 10742938,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583154",
+   "obec": "Javůrek",
+   "ico": "00377007",
+   "obyvatel": 356,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 42069773,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583197",
+   "obec": "Kanice",
+   "ico": "00363171",
+   "obyvatel": 1120,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 72564541,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 59
+  },
+  {
+   "kod": "587907",
+   "obec": "Katov",
+   "ico": "00842672",
+   "obyvatel": 277,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 30472719,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "595934",
+   "obec": "Křižínkov",
+   "ico": "00842681",
+   "obyvatel": 224,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 21854357,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583243",
+   "obec": "Kupařovice",
+   "ico": "00405493",
+   "obyvatel": 388,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 25804657,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583308",
+   "obec": "Litostrov",
+   "ico": "00637556",
+   "obyvatel": 131,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 17188448,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596078",
+   "obec": "Lubné",
+   "ico": "00599565",
+   "obyvatel": 52,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 5314753,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583332",
+   "obec": "Malešovice",
+   "ico": "00488038",
+   "obyvatel": 838,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 79079563,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 60
+  },
+  {
+   "kod": "583359",
+   "obec": "Maršov",
+   "ico": "00363278",
+   "obyvatel": 522,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 40640691,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583464",
+   "obec": "Nelepeč-Žernůvka",
+   "ico": "00365297",
+   "obyvatel": 74,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 8288045,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596191",
+   "obec": "Níhov",
+   "ico": "00842699",
+   "obyvatel": 262,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 22571822,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583529",
+   "obec": "Odrovice",
+   "ico": "00488062",
+   "obyvatel": 217,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 28132869,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596400",
+   "obec": "Pernštejnské Jestřabí",
+   "ico": "00599662",
+   "obyvatel": 212,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 43977556,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "549738",
+   "obec": "Ponětovice",
+   "ico": "00365408",
+   "obyvatel": 445,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 36000933,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583731",
+   "obec": "Přísnotice",
+   "ico": "00488283",
+   "obyvatel": 878,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 133855118,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 61
+  },
+  {
+   "kod": "596582",
+   "obec": "Rojetín",
+   "ico": "00599751",
+   "obyvatel": 84,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 11431620,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "549789",
+   "obec": "Říčky",
+   "ico": "00636789",
+   "obyvatel": 426,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 25385132,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "596698",
+   "obec": "Řikonín",
+   "ico": "00599794",
+   "obyvatel": 60,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 5149416,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583847",
+   "obec": "Sentice",
+   "ico": "00282545",
+   "obyvatel": 671,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 55051666,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "583901",
+   "obec": "Stanoviště",
+   "ico": "00488330",
+   "obyvatel": 415,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 61994123,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582379",
+   "obec": "Strhaře",
+   "ico": "00636673",
+   "obyvatel": 149,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 16397347,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "582450",
+   "obec": "Synalov",
+   "ico": "00532193",
+   "obyvatel": 118,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 19460372,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584053",
+   "obec": "Újezd u Rosic",
+   "ico": "00488348",
+   "obyvatel": 275,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 37343696,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "584096",
+   "obec": "Velatice",
+   "ico": "00488364",
+   "obyvatel": 769,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 64213134,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 62
+  },
+  {
+   "kod": "584118",
+   "obec": "Veverské Knínice",
+   "ico": "00378640",
+   "obyvatel": 999,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 124096804,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": true,
+   "poradi_ve_skupine": 63
+  },
+  {
+   "kod": "597104",
+   "obec": "Vratislávka",
+   "ico": "00599930",
+   "obyvatel": 89,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 11769986,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  },
+  {
+   "kod": "597171",
+   "obec": "Žďárec",
+   "ico": "00295833",
+   "obyvatel": 377,
+   "roky": {
+    "2022": 0,
+    "2023": 0,
+    "2024": 0,
+    "2025": 0
+   },
+   "celkem_2022_2025": 0,
+   "na_obyv": 0,
+   "vydaje_2022_2025": 68545766,
+   "podil_vydaju_pct": 0.0,
+   "skupina_700_1500": false
+  }
+ ]
+}

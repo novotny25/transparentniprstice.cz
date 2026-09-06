@@ -5,7 +5,8 @@
   "obyvatele": "ČSÚ k 1. 1. 2025 (stejně jako srovnání dotací)",
   "stazeno": "2026-09-02",
   "poznamka": "Hajany 2022: 5 205 tis. Kč na 5222 je jednorázový extrém; průměry ho obsahují, pořadí se počítá z roku 2025.",
-  "median_na_obyv_2025": 334.5
+  "median_ostatnich_na_obyv_2025": 387,
+  "median_vylucuje_kod": "583707"
  },
  "obce": [
   {

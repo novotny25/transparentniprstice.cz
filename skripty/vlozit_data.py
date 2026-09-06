@@ -13,8 +13,6 @@ Spuštění: python3 skripty/vlozit_data.py
 import os, re, sys, json
 
 WEB  = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-PRIV = os.path.expanduser("~/Developer/transparentniprstice-private")
-M2026 = os.path.join(PRIV, "zdroje", "monitor-2026")
 DATA = os.path.join(WEB, "data")
 HTML = os.path.join(WEB, "web", "index.html")
 def esc_html(t):
@@ -33,7 +31,8 @@ def renderuj_aktuality(akt):
     prvni = polozky[0]
     radky = ""
     for a in polozky:
-        odkaz = f' <a href="{a["odkaz"]}">více →</a>' if a.get("odkaz") else ""
+        href = bezpecny_href(a.get("odkaz"))
+        odkaz = f' <a href="{esc_html(href)}">více →</a>' if href else ""
         radky += (f'<li><span class="ad">{datum_cz(a["datum"])}</span>'
                   f'<span class="at">{esc_html(a["text"])}{odkaz}</span></li>')
     return (f'<details class="aktuality"><summary><span class="aznak">Aktuálně</span>'
@@ -72,14 +71,28 @@ def renderuj_kroky(navod):
     return "".join(out)
 
 
+def bezpecny_href(hodnota):
+    """Povolí jen běžný webový nebo relativní odkaz z publikačních dat."""
+    if not hodnota or not isinstance(hodnota, str):
+        return None
+    hodnota = hodnota.strip()
+    if re.match(r"^https?://", hodnota, re.I):
+        return hodnota
+    if not re.match(r"^[a-z][a-z0-9+.-]*:", hodnota, re.I) and not hodnota.startswith("//"):
+        return hodnota
+    raise ValueError(f"Nepovolené schéma odkazu v datech: {hodnota!r}")
+
+
 STRANKY = {                       # soubor -> {id bloku: název datového souboru}
-    "index.html":      {"d-vydaje": None, "d-prijmy": None, "d-rady": None,
+    "index.html":      {"d-rozpocet": None, "d-penize": None,
+                        "d-vydaje": None, "d-prijmy": None, "d-rady": None,
                         "d-temata": None, "d-vybrane": None, "d-518": None,
-                        "d-srovnani": "srovnani-obci.json",
+                        "d-dotace": "dotace-web.json",
                         "d-mas": "mas-bobrava.json",
                         "d-spolky": "spolky-okoli.json",
                         "d-obyvatele": "obyvatele.json"},
-    "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None},
+    "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None,
+                        "d-pravni-okres": "pravni-okres.json"},
     "pro-dalsi-obce.html": {"d-navod": "navod.json"},
     "jak-to-vime.html": {"d-zadosti": "zadosti-106.json",
                          "d-chronologie": "chronologie.json",
@@ -177,7 +190,10 @@ TEMATA = [
   "pol": ["5331"], "par": ["3113", "3111"],
   "popis": "Provozní příspěvek, který obec posílá základní a mateřské škole. Roste každý rok. "
            "Podpora školy patří k tomu, co obec dělat má — pokud jsou peníze vynaložené "
-           "hospodárně, je rostoucí příspěvek spíš dobrá zpráva než problém.",
+           "hospodárně, je rostoucí příspěvek spíš dobrá zpráva než problém. "
+           "Od 1. 1. 2026 přešlo financování nepedagogické práce a části dalších výdajů "
+           "na zřizovatele. Příspěvek školy proto s předchozími roky nesrovnávám bez "
+           "rozpisu; rozpočet Prštic tento dopad zatím nerozlišuje.",
   "odhad": False,
   "nevime": "Rozpočet neukazuje, co konkrétně růst příspěvku pokrývá (energie, mzdy, provoz)."},
  {"id": "voda", "nadpis": "Voda a odpadní vody", "barva": "#0f9fbd",
@@ -190,24 +206,23 @@ TEMATA = [
 ]
 
 
-def data_2026h1():
-    """Skutečnost za leden–červen 2026 z MONITORu (rozklikávací rozpočet).
-    Vrací (položky, paragrafy). Když soubory chybí, vrátí prázdno a 2026 se nezobrazí."""
-    def strom(cesta):
-        if not os.path.exists(cesta):
-            return {}
-        d = json.load(open(cesta, encoding="utf-8"))
-        out = {}
-        def w(n):
-            c = str(n.get("code") or "").strip()
-            if len(c) == 4 and c.isdigit():
-                out[c] = (n.get("budget") or {}).get("reality", 0)
-            for ch in n.get("children") or []:
-                w(ch)
-        w(d)
-        return out
-    return (strom(os.path.join(M2026, "souhrnny-2606.json")),
-            strom(os.path.join(M2026, "odvetvovy-2606.json")))
+def nacti_web_souhrny():
+    """Načte malé veřejné souhrny a odmítne neúplné či nečekané schéma."""
+    cesta = os.path.join(DATA, "web-souhrny.json")
+    if not os.path.exists(cesta):
+        sys.exit("CHYBA: chybí povinný veřejný zdroj data/web-souhrny.json")
+    d = json.load(open(cesta, encoding="utf-8"))
+    povinne = {"meta", "rozpocet", "penize", "prubezne_2026H1"}
+    if set(d) != povinne:
+        sys.exit(f"CHYBA: data/web-souhrny.json má klíče {sorted(d)}, čekáno {sorted(povinne)}")
+    for k, rady in (("rozpocet", ("roky", "prijmy", "vydaje")),
+                    ("penize", ("roky", "ucty", "uvery"))):
+        if set(d[k]) != set(rady) or len({len(d[k][x]) for x in rady}) != 1:
+            sys.exit(f"CHYBA: neplatné schéma nebo délky řad web-souhrny/{k}")
+    p = d["prubezne_2026H1"]
+    if set(p) != {"obdobi", "jednotka", "baze", "zdroj", "temata"} or p["baze"] != "cash_budget":
+        sys.exit("CHYBA: neplatné schéma průběžných dat 2026 v data/web-souhrny.json")
+    return d
 
 
 def blok_temata():
@@ -232,15 +247,7 @@ def blok_temata():
         return kc(sum(x["kc"] for sk in pr["roky"][rok]["skupiny"]
                       for x in sk["polozky"] if x["kod"] in pol))
 
-    pol26, par26 = data_2026h1()
-
-    def h1(pol=None, par=None):
-        """Hodnota za 1. pololetí 2026 (None = data nejsou)."""
-        if not pol26 and not par26:
-            return None
-        if par:
-            return kc(sum(par26.get(x, 0) for x in par))
-        return kc(sum(pol26.get(x, 0) for x in pol))
+    h1_data = nacti_web_souhrny()["prubezne_2026H1"]["temata"]
 
     out = []
     for t in TEMATA:
@@ -250,7 +257,7 @@ def blok_temata():
         if t.get("vazba"):
             z["vazba"] = t["vazba"]
         # u témat vázaných na paragraf bereme paragrafy, jinak položky
-        v26 = h1(par=t["par"]) if t.get("par") and not t.get("pol") else h1(pol=t.get("pol"))
+        v26 = h1_data.get(t["id"], {}).get("hodnota")
         if v26:
             z["h1"] = v26
             z["odhad"] = t.get("odhad", True)   # smí se dopočítat na celý rok?
@@ -266,13 +273,13 @@ def blok_temata():
                  "který za něj platí občané. Rozdíl doplácí obec z ostatních příjmů.",
         "nevime": "Smlouvu se svozovou firmou, ceník, množství odpadu v tunách ani míru "
                   "vytřídění rozpočet neukazuje.",
-        "komentar": "Nízký poplatek je pro občany dnes výhodný. Zákonný poplatek za skládkování využitelného odpadu ale poroste každý rok — až na 1 850 Kč za tunu v roce 2029; sníženou sazbu 500 Kč za tunu platí jen obce, které splní zákonné cíle třídění. Čím víc se vytřídí a čím dřív se vyřeší bioodpad, tím méně se rostoucí výdaje promítnou do poplatku pro občany.",
+        "komentar": "Nízký poplatek je pro občany dnes výhodný. Zákonný poplatek za skládkování využitelného odpadu ale poroste každý rok — až na 1 850 Kč za tunu v roce 2029. Sníženou sazbu 500 Kč za tunu lze uplatnit na množství odpadu do zákonného limitu podle počtu obyvatel. Procentní cíle třídění jsou samostatnou povinností. Z dostupných dat zatím nevím, v jakém rozsahu Prštice sníženou sazbu využily.",
         "kpozn": "Sazby: zákon č. 541/2020 Sb., příloha č. 9. Jde o komentář autora — "
                  "interpretaci, ne doložený závěr.",
         "rada": vyd, "rada2": popl, "l1": "Výdaje obce na odpad", "l2": "Poplatky od občanů",
         "kryti": [round(p / x * 100) if x else 0 for p, x in zip(popl, vyd)],
-        **({"h1": h1(par=odp_par), "h1b": h1(pol={"1340", "1345"}), "odhad": True,
-            "odhad2": False} if h1(par=odp_par) else {})})
+        **({"h1": h1_data["odpady"]["hodnota"], "h1b": h1_data["odpady"]["poplatky"],
+            "odhad": True, "odhad2": False} if h1_data.get("odpady") else {})})
 
     return {"roky": roky, "temata": out}
 
@@ -289,7 +296,7 @@ def blok_vybrane():
         d26 = json.load(open(cesta, encoding="utf-8"))
         pol = d26["polozky"] if isinstance(d26, dict) and "polozky" in d26 else d26
         for x in pol:
-            k = x.get("kategorie", "")
+            k = x.get("kategorie_web") or x.get("kategorie", "")
             h1[k] = h1.get(k, 0) + x["castka_haleru"] / 100
 
     return {
@@ -391,13 +398,82 @@ def vloz(html, blok_id, data):
     vzor = re.compile(r'(<script type="application/json" id="%s">)(.*?)(</script>)' % re.escape(blok_id), re.S)
     if not vzor.search(html):
         sys.exit(f"CHYBA: v index.html chybí blok id=\"{blok_id}\"")
-    return vzor.sub(lambda m: m.group(1) + json.dumps(data, ensure_ascii=False, separators=(",", ":")) + m.group(3), html)
+    obsah = json.dumps(data, ensure_ascii=False, separators=(",", ":"))
+    # JSON uvnitř HTML nesmí vytvořit značku ani předčasně ukončit <script>.
+    obsah = obsah.replace("&", "\\u0026").replace("<", "\\u003c").replace(">", "\\u003e")
+    return vzor.sub(lambda m: m.group(1) + obsah + m.group(3), html)
+
+
+def renderuj_pravni_graf(d):
+    """Žebříček všech obcí skupiny jako HTML sloupečky (třída .barh, kterou web
+    už používá u spolků). Proti SVG má tu výhodu, že písmo je skutečné písmo
+    stránky — nezmenšuje se s šířkou okna a je stejné jako v okolním textu."""
+    NB = "\u00a0"
+    m = d["meta"]; med = m["median_skupiny_bez_prstic_celkem"]
+    sk = sorted([o for o in d["obce"] if o.get("skupina_700_1500")], key=lambda o: -o["celkem_2022_2025"])
+    mx = sk[0]["celkem_2022_2025"] or 1
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", NB)
+    radky = []
+    for i, o in enumerate(sk, 1):
+        my = o["kod"] == "583707"
+        # nula musí zůstat nula — proužek „skoro nic" by tvrdil, že obec něco vydala
+        w = 0.0 if o["celkem_2022_2025"] == 0 else max(o["celkem_2022_2025"] / mx * 100, 0.4)
+        radky.append(
+            f'<div class="radek{" my" if my else ""}">'
+            f'<span class="jm">{i}.{NB}{esc_html(o["obec"])}'
+            f'<small>{kcs(o["obyvatel"])}</small></span>'
+            f'<span class="zl"><i style="width:{w:.2f}%"></i></span>'
+            f'<span class="hod">{kcs(o["celkem_2022_2025"] / 1000)}</span></div>')
+    return (f'<div class="barh zebricek" style="--med:{med / mx * 100:.2f}%">'
+            f'<p class="legenda">Svislá čárka je <b>medián ostatních obcí</b> '
+            f'({kcs(med / 1000)}{NB}tis.{NB}Kč). Šedě za názvem je počet obyvatel, '
+            f'vpravo výdaje za roky 2022–2025 v tisících Kč.</p>'
+            + "".join(radky) + '</div>')
+
+
+def renderuj_pravni_okres(d):
+    """Statické HTML pro srovnání položky 5166 (konzultační, poradenské a právní
+    služby) s obcemi okresu Brno-venkov o 700–1 500 obyvatelích. Bez JavaScriptu:
+    věta se souhrnem, tabulka prvních dvanácti a rozbalovací zbytek skupiny."""
+    m = d["meta"]; p = m["prstice"]
+    roky = ["2022", "2023", "2024", "2025"]
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", "\u00a0")
+    sk = [o for o in d["obce"] if o.get("skupina_700_1500")]
+    sk.sort(key=lambda o: -o["celkem_2022_2025"])
+    assert sk and sk[0]["kod"] == "583707", "pravni-okres: Prštice nejsou první ve skupině — text sekce by nesouhlasil"
+    assert len(sk) == m["skupina_pocet"], "pravni-okres: počet obcí ve skupině nesedí s meta"
+    ostatni = m["skupina_pocet"] - 1
+    veta = (f'<p class="souhrn"><b>Prštice: {kcs(p["celkem_2022_2025"] / 1000)}\u00a0tis.\u00a0Kč za roky 2022–2025 — '
+            f'{p["poradi_skupina_celkem"]}. místo z {m["skupina_pocet"]} obcí</b> okresu Brno-venkov se 700–1\u00a0500 obyvateli. '
+            f'Medián ostatních {ostatni} obcí je <b>{kcs(m["median_skupiny_bez_prstic_celkem"] / 1000)}\u00a0tis.\u00a0Kč</b>; '
+            f'druhé v pořadí, {esc_html(sk[1]["obec"])} ({kcs(sk[1]["obyvatel"])} obyvatel), vydaly {kcs(sk[1]["celkem_2022_2025"] / 1000)}\u00a0tis.\u00a0Kč. '
+            f'V celém okrese ({m["obci_v_okrese"]} obcí) jsou Prštice v částce {p["poradi_okres_celkem"]}., na obyvatele {p["poradi_okres_na_obyv"]}. '
+            f'a v podílu na celkových výdajích obce {p["poradi_okres_podil"]}.</p>')
+    mx = sk[0]["celkem_2022_2025"] or 1
+    hlav = ('<tr><th class="ob">obec</th>' + "".join(f'<th class="rok">{r}</th>' for r in roky[:-1])
+            + '<th class="r25">rok 2025</th><th class="suma">2022–2025 celkem</th><th class="naob">na obyvatele</th></tr>')
+    def radek(i, o):
+        my = o["kod"] == "583707"
+        drobne = "".join(f'<td class="rok">{kcs(o["roky"][r] / 1000)}</td>' for r in roky[:-1])
+        return (f'<tr{" class=\"my\"" if my else ""}><th class="ob">{i}. {esc_html(o["obec"])}'
+                f'<small>{kcs(o["obyvatel"])}\u00a0obyv.</small></th>{drobne}'
+                f'<td class="r25">{kcs(o["roky"]["2025"] / 1000)}</td>'
+                f'<td class="suma" style="--p:{o["celkem_2022_2025"] / mx * 100:.1f}%"><span>{kcs(o["celkem_2022_2025"] / 1000)}\u00a0tis.\u00a0Kč</span></td>'
+                f'<td class="naob">{kcs(o["na_obyv"])}\u00a0Kč</td></tr>')
+    telo = "".join(radek(i, o) for i, o in enumerate(sk, 1))
+    tab = ('<div class="tblscroll"><table class="spolkytab"><thead>' + hlav
+           + '</thead><tbody>' + telo + '</tbody></table></div>')
+    return veta, tab
 
 
 def main():
+    souhrny = nacti_web_souhrny()
     v, p = blok_vydaje(), blok_prijmy()
     rady, temata, vybrane = blok_rady(), blok_temata(), blok_vybrane()
-    hotove = {"d-vydaje": v, "d-prijmy": p, "d-rady": rady,
+    hotove = {"d-rozpocet": souhrny["rozpocet"], "d-penize": souhrny["penize"],
+              "d-vydaje": v, "d-prijmy": p, "d-rady": rady,
               "d-temata": temata, "d-vybrane": vybrane, "d-518": blok_518()}
 
     for soubor, bloky in STRANKY.items():
@@ -427,6 +503,17 @@ def main():
                 html = re.sub(r"<!--spolky-tab-start-->.*?<!--spolky-tab-konec-->",
                               "<!--spolky-tab-start-->" + tab + "<!--spolky-tab-konec-->", html, flags=re.S)
                 vlozeno.append("spolky (statické HTML)")
+            # právní a poradenské služby v okrese: věta a tabulka staticky
+            if blok_id == "d-pravni-okres":
+                veta, tab = renderuj_pravni_okres(data)
+                html = re.sub(r"<!--pravni-veta-start-->.*?<!--pravni-veta-konec-->",
+                              "<!--pravni-veta-start-->" + veta + "<!--pravni-veta-konec-->", html, flags=re.S)
+                html = re.sub(r"<!--pravni-tab-start-->.*?<!--pravni-tab-konec-->",
+                              "<!--pravni-tab-start-->" + tab + "<!--pravni-tab-konec-->", html, flags=re.S)
+                html = re.sub(r"<!--pravni-graf-start-->.*?<!--pravni-graf-konec-->",
+                              "<!--pravni-graf-start-->" + renderuj_pravni_graf(data) + "<!--pravni-graf-konec-->",
+                              html, flags=re.S)
+                vlozeno.append("právní služby v okrese (statické HTML)")
             # návod: kroky vykreslit i staticky, ať existují bez JavaScriptu
             if blok_id == "d-navod":
                 html = re.sub(r"<!--kroky-start-->.*?<!--kroky-konec-->",

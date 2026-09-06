@@ -1,0 +1,32 @@
+{
+ "meta": {
+  "popis": "Malé veřejné souhrny, které web přímo zobrazuje; jsou jediným zdrojem vložených bloků d-rozpocet, d-penize a průběžných hodnot 2026.",
+  "obdobi": "2019–2025; průběžná data 1. 1.–30. 6. 2026",
+  "jednotka": "Kč",
+  "zdroj": "MONITOR MF ČR — FIN 2-12 M, rozvaha a rozklikávací rozpočet",
+  "baze": "rozpočet = cash_budget; rozvaha = balance_sheet; účet 518 = accrual_cost"
+ },
+ "rozpocet": {
+  "roky": [2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "prijmy": [18320968, 20034753, 19443033, 26198634, 29338020, 25755119, 28380971],
+  "vydaje": [16689541, 20380643, 16849859, 24054654, 34439399, 19861345, 22484603]
+ },
+ "penize": {
+  "roky": [2019, 2020, 2021, 2022, 2023, 2024, 2025],
+  "ucty": [4308000, 3194000, 5019000, 9357000, 11326000, 15937000, 20439000],
+  "uvery": [3259000, 2491000, 1723000, 3917000, 10987000, 9540000, 8056000]
+ },
+ "prubezne_2026H1": {
+  "obdobi": "1. 1.–30. 6. 2026",
+  "jednotka": "Kč",
+  "baze": "cash_budget",
+  "zdroj": "MONITOR MF ČR — rozklikávací rozpočet, skutečnost za červen 2026",
+  "temata": {
+   "pravni": {"hodnota": 425134},
+   "odpady": {"hodnota": 895402, "poplatky": 673915},
+   "uroky": {"hodnota": 193711},
+   "skola": {"hodnota": 1662000},
+   "voda": {"hodnota": 3328574}
+  }
+ }
+}

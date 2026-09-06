@@ -10,8 +10,8 @@ a podepsaný. Projekt není účetním, právním ani úředním auditem.
 
 ## Stav
 
-Dokumentace je synchronizovaná ve verzi **1.4 (21. 8. 2026)**. Realizace webu
-začíná datovou a anonymizační pipeline podle `PLAN.md`.
+Dokumentace je synchronizovaná ve verzi **1.6 (6. 9. 2026)**. Web je postavený
+a živý; další úpravy vede `PLAN.md`, fáze 6.
 
 - Zadání projektu: [ZADANI.md](ZADANI.md)
 - Prováděcí plán: [PLAN.md](PLAN.md)

@@ -35,6 +35,12 @@ ZDROJ_SHA256 = "907c98e54737add0169cbf38663b92e4f4b660b21f5fb4d71fda4fb7fe515dff
 
 PLACEHOLDER = "(popis se doplňuje po kontrole)"
 
+# Ověřené převody pro souhrny na webu. Původní kategorie zůstává v poli
+# `kategorie`; `kategorie_web` se zveřejní jen tam, kde se souhrn liší.
+KATEGORIE_WEB = {
+    "fad753e0bf70": "ČOV / odpadní vody",  # storno dokladu k ČOV, 2025
+}
+
 # --- Detekce osobních údajů (zrcadlí anonymizace/pravidla.yml sekci detekce_pii) ---
 RE_ADRESA = re.compile(r'č\.?\s?[pe]\.?\s?\d+[a-z]?', re.I)          # čp./če. + číslo (adresa nemovitosti)
 RE_EMAIL  = re.compile(r'[\w.+-]+@[\w.-]+\.\w{2,}')
@@ -166,11 +172,14 @@ def main():
             # jen strukturované PII (číslo dokladu apod.) → deterministické automatické očištění
             popis_verejny = allowlist.get(p, strojove_ocisteni(p))
 
-        verejne.append({
+        verejny = {
             "id_zdroje": idz, "ucetni_rok": y, "mesic": mesic,
             "castka_haleru": haleru, "kategorie": c,
             "popis_verejny": popis_verejny, "baze": "accrual_cost",
-        })
+        }
+        if idz in KATEGORIE_WEB:
+            verejny["kategorie_web"] = KATEGORIE_WEB[idz]
+        verejne.append(verejny)
 
     # 2) Zápis souborů
     for d in (os.path.join(PRIVATE_ZONE, "extrakty"),
@@ -193,7 +202,8 @@ def main():
                     "kategorie", "popis_verejny", "baze"])
         for v in verejne:
             w.writerow([v["id_zdroje"], v["ucetni_rok"], v["mesic"],
-                        v["castka_haleru"], v["kategorie"], v["popis_verejny"], v["baze"]])
+                        v["castka_haleru"], v.get("kategorie_web", v["kategorie"]),
+                        v["popis_verejny"], v["baze"]])
 
     # 3) Kontrolní součty po letech (v Kč, z haléřů)
     soucty, pocty = {}, {}

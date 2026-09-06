@@ -31,10 +31,10 @@
   header.site{position:sticky;top:0;z-index:10;background:rgba(255,255,255,.78);
     backdrop-filter:saturate(180%) blur(20px);-webkit-backdrop-filter:saturate(180%) blur(20px);
     border-bottom:1px solid var(--line)}
-  .navrow{max-width:1120px;margin-inline:auto;padding:12px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px}
+  .navrow{max-width:1120px;margin-inline:auto;padding:10px 24px;display:flex;flex-wrap:wrap;align-items:center;gap:4px 22px}
   .brand{font-weight:700;font-size:1.18rem;color:var(--text);display:flex;align-items:center;gap:9px;margin-right:auto;letter-spacing:-.01em}
   .brand:hover{text-decoration:none}
-  .brand svg{width:auto;height:52px;flex:none}
+  .brand svg{width:auto;height:42px;flex:none;transition:height .18s}
   @media(max-width:560px){.brand svg{height:42px}}
   nav.site a{color:var(--muted);font-size:.92rem;padding:4px 2px}
   nav.site a:hover{color:var(--text);text-decoration:none}
@@ -80,7 +80,7 @@
   .chips{margin-top:16px;display:flex;flex-wrap:wrap;gap:6px;align-items:center;position:relative;z-index:1}
   .chip{font-size:.72rem;font-weight:600;padding:3px 10px;border-radius:999px;background:rgba(255,255,255,.75);color:var(--muted)}
   .chip.zdroj{color:var(--accent)}
-  .chip.vypocet{color:#b06a00}
+.chip.vypocet{color:#805000}
   .chip.nezjisteno{color:var(--neg)}
   .chip.src{background:transparent;font-weight:500;color:var(--faint);padding-left:2px}
 
@@ -106,6 +106,7 @@
   .btnrow .ghost{font:inherit;font-size:.92rem;font-weight:600;border:0;background:transparent;color:var(--accent);
     border-radius:980px;padding:9px 18px;cursor:pointer;box-shadow:inset 0 0 0 1.5px rgba(0,113,227,.3)}
   .btnrow .ghost:hover{background:rgba(0,113,227,.08)}
+  .nojs{margin:10px auto;padding:10px 16px;max-width:1180px;background:#fff6dd;color:#5f4600;border-radius:10px;font-size:.92rem}
   details.tbl{margin-top:16px}
   details.tbl summary{cursor:pointer;color:var(--accent);font-weight:600;font-size:.95rem}
   table{border-collapse:collapse;width:100%;margin-top:12px;font-size:.95rem}
@@ -299,6 +300,25 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   text-decoration:none;transition:background .18s,color .18s}
 .hlavni a:hover{background:#e6e8eb;color:var(--text);text-decoration:none}
 .hlavni a[aria-current="page"]{background:var(--accent);color:#fff;border:0}
+/* Zmenšená lepicí hlavička po odrolování — na notebooku jinak ujídá čtvrtinu
+   okna a na dlouhý text zbývá málo místa. Nápis u značky zmizí, tím se osm
+   položek nabídky vejde na jeden řádek. Bez JavaScriptu zůstane plná verze. */
+@media(min-width:701px){   /* pod 700 px hlavička nelepí, zmenšovat ji nemá smysl */
+  html.hsmall .brand svg{height:30px}
+  html.hsmall .brandtext{display:none}
+  html.hsmall .navrow{padding:5px 24px}
+  html.hsmall .hlavni{gap:5px}
+  html.hsmall .hlavni a{font-size:.83rem;padding:5px 9px;gap:5px}
+  html.hsmall .podnav{margin-top:4px;padding:4px 0 5px}
+  html.hsmall .podnav a{font-size:.82rem;padding:3px 9px}
+  html.hsmall .sipka{font-size:.76rem}
+}
+/* Užší notebooky: aby se osm položek vešlo na jeden řádek i pod 1200 px. */
+@media(min-width:701px) and (max-width:1200px){
+  html.hsmall .hlavni{gap:4px}
+  html.hsmall .hlavni a{font-size:.8rem;padding:4px 8px;gap:4px}
+}
+
 .hlavni a.zjisteni{background:#fdeeeb;color:#b03a2e}
 .hlavni a.zjisteni:hover{background:#fbdfda;color:#8f2e24}
 .hlavni a.zjisteni::before{content:"";width:8px;height:8px;border-radius:50%;background:#d64c3a;flex:none;
@@ -321,7 +341,9 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   padding:5px 14px;border-radius:999px;margin:0 auto 12px}
 .odznak::before{content:"";width:7px;height:7px;border-radius:50%;background:#d64c3a}
 :target,section[id],h2[id],.polozka[id],.tema[id]{scroll-margin-top:24px}
-@media(min-width:701px){:target,section[id],h2[id],.polozka[id],.tema[id]{scroll-margin-top:196px}}
+/* Odsazení kotev podle ZMENŠENÉ hlavičky — při skoku na kotvu je stránka vždy
+   odrolovaná, takže je hlavička v kompaktním stavu (~76 px). */
+@media(min-width:701px){:target,section[id],h2[id],.polozka[id],.tema[id]{scroll-margin-top:124px}}
 .pozadavky{margin:0 0 12px;padding-left:20px;font-size:.96rem}
 .pozadavky li{margin-bottom:5px}
 .uspech{background:#e9f7ee;border-radius:12px;padding:12px 16px;margin:0 0 10px!important;color:#1a5c34}
@@ -445,7 +467,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .nazor{margin-top:18px;padding:18px 22px;background:#fff8e8;border-radius:14px}
 .nazor .lab{font-size:.76rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;color:#8a6414;margin:0 0 10px}
 .nazor p{font-size:.97rem;line-height:1.6;margin:0 0 10px;color:#4a3d14}
-.nazor p.pozn{font-size:.85rem;color:#6b5518;margin:0}
+.nazor p.pozn{font-size:.85rem;color:#6b5518;margin:0;max-width:none}
 
 /* === Sekce Dotace: srovnání s okolními obcemi === */
 /* Vodorovné sloupce — dotace na obyvatele */
@@ -571,7 +593,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   transition:transform .22s cubic-bezier(.2,.7,.2,1),box-shadow .22s,background .22s}
 .zjmapa a:hover{background:#fff;transform:translateY(-3px);box-shadow:var(--shadow);text-decoration:none}
 .zjmapa .cif{font-weight:800;font-size:1.32rem;letter-spacing:-.02em;line-height:1.1;
-  color:var(--zb,var(--accent));font-variant-numeric:tabular-nums;white-space:nowrap}
+  color:#18324a;font-variant-numeric:tabular-nums;white-space:nowrap}
 .zjmapa small{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
 .zjmapa .tx{font-size:.85rem;line-height:1.45;color:var(--text)}
 .zjmapa .sip{margin-top:auto;padding-top:6px;color:var(--accent);font-weight:700}
@@ -594,7 +616,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
   background:#fbfbfd;box-shadow:var(--shadow);padding:22px 24px}
 .srovmapa .srovk:first-child{--zb:#0071e3}
 .srovmapa .srovk:last-child{--zb:#f08a00}
-.srovmapa .srovk .v{color:var(--zb);font-size:clamp(2rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
+.srovmapa .srovk .v{color:#18324a;font-size:clamp(2rem,4vw,2.6rem);font-weight:800;letter-spacing:-.03em;font-variant-numeric:tabular-nums}
 .srovmapa .srovk .verdikt{display:inline-block;background:rgba(0,0,0,.05);border-radius:980px;padding:3px 12px;font-weight:700;font-size:.85rem;margin:4px 0 8px}
 
 /* Pruh aktualit pod úvodem — výrazný, ale úsporný; rozbalení řeší <details> */
@@ -657,7 +679,7 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
 .predem .tile .c{font-size:.95rem;line-height:1.55}
 .oblast{--acc:var(--accent);border-left:6px solid var(--acc);padding-left:24px}
 .oblast .hlava{display:flex;align-items:center;gap:14px;margin-bottom:12px}
-.oblast .cislo{width:38px;height:38px;border-radius:50%;background:var(--acc);color:#fff;flex:none;
+.oblast .cislo{width:38px;height:38px;border-radius:50%;background:#18324a;color:#fff;flex:none;
   display:grid;place-items:center;font-weight:800;font-size:1.05rem}
 .oblast .hlava h3{margin:0;font-size:1.25rem}
 .oblast .hlava .pod{display:block;font-size:.84rem;color:var(--muted);font-weight:500;margin-top:2px}
@@ -683,6 +705,57 @@ nav.site a[aria-current="page"]{color:var(--text);border-bottom:2px solid var(--
     text-align:justify;hyphens:auto;-webkit-hyphens:auto;text-justify:inter-word}
 }
 /* Spolky: tabulka s drobnými roky a dvěma velkými čísly */
+/* Dlouhý žebříček obcí (63 řádků) — hustší varianta .barh; písmo je skutečné
+   písmo stránky, takže se nezmenšuje se šířkou okna jako u SVG. */
+/* Dodavatel vystupuje z textu: samostatný blok se jménem, IČO a adresou,
+   a u každé částky je vidět, jestli je příjemce doložený, nebo ne. */
+.dodavatel{margin:20px 0 4px;padding:20px 24px;background:#fbfbfd;border-radius:14px;
+  border-left:6px solid var(--accent)}
+.dodavatel .lab{margin:0 0 10px;font-size:.76rem;font-weight:700;letter-spacing:.05em;
+  text-transform:uppercase;color:var(--muted)}
+.dodavatel .jmeno{margin:0;font-size:1.24rem;font-weight:800;letter-spacing:-.01em;color:var(--text)}
+.dodavatel .ident{margin:3px 0 0;font-size:.92rem;color:var(--muted)}
+.dodavatel .zaklad{margin:12px 0 0;font-size:.95rem;line-height:1.55;color:var(--muted)}
+.dodavatel .zaklad q{quotes:"\201E" "\201C";font-style:italic}
+.dodavatel .nevim{margin:12px 0 0;font-size:.92rem;line-height:1.5;color:var(--muted)}
+.dodavatel .castky{margin:14px 0 0;display:grid;gap:0}
+.dodavatel .castky>div{display:grid;grid-template-columns:minmax(128px,auto) 1fr;gap:2px 18px;
+  align-items:baseline;padding:12px 0 0;margin-top:12px;border-top:1px solid var(--line)}
+.dodavatel dt{margin:0;font-size:1.05rem;font-weight:800;font-variant-numeric:tabular-nums;
+  white-space:nowrap;color:var(--text)}
+.dodavatel dd{margin:0;font-size:.95rem;line-height:1.55;color:var(--muted)}
+.dodavatel .soucet{margin:14px 0 0;padding-top:12px;border-top:2px solid var(--line);
+  font-size:1rem;color:var(--text)}
+@media(max-width:560px){
+  .dodavatel{padding:16px 18px}
+  .dodavatel .castky>div{grid-template-columns:1fr;gap:4px}
+}
+
+/* V kartě se srovnáním okresu jdou odstavce přes celou šířku, aby měly stejnou
+   délku řádku jako poznámky pod nimi; jinde na webu zůstává .souhrn užší. */
+#okres-h + .card .souhrn{max-width:none}
+.barh.zebricek{margin:18px 0 4px}
+.barh.zebricek .legenda{font-size:.88rem;color:var(--muted);margin:0 0 12px}
+.barh.zebricek .radek{grid-template-columns:minmax(150px,224px) 1fr minmax(52px,auto);
+  gap:12px;padding:2px 0}
+.barh.zebricek .jm{color:var(--text)}
+.barh.zebricek .jm small{color:var(--faint);font-size:.82rem;font-weight:400;margin-left:6px}
+.barh.zebricek .zl{height:14px;border-radius:4px;overflow:visible;position:relative;background:#f1f2f4}
+.barh.zebricek .zl i{border-radius:4px;background:#9fc7f5}
+.barh.zebricek .zl::after{content:"";position:absolute;top:-2px;bottom:-2px;left:var(--med);
+  border-left:1px dashed #a9adb5}
+.barh.zebricek .my .zl i{background:var(--neg)}
+.barh.zebricek .hod{text-align:right;color:var(--text)}
+@media(max-width:560px){
+  /* Na úzkém displeji se název, částka a sloupeček nevejdou vedle sebe:
+     název vlevo a částka vpravo na první řádek, sloupeček přes celou šířku pod ně.
+     Umístění je zadané výslovně, aby nezáleželo na pořadí prvků v HTML. */
+  .barh.zebricek .radek{grid-template-columns:1fr auto;gap:0 10px;padding:2px 0 5px}
+  .barh.zebricek .jm{grid-area:1/1;text-align:left;line-height:1.3}
+  .barh.zebricek .hod{grid-area:1/2;line-height:1.3}
+  .barh.zebricek .zl{grid-area:2/1/3/3;height:8px;margin-top:3px}
+}
+}
 .spolkytab{min-width:820px;border-collapse:separate;border-spacing:0}
 .spolkytab th,.spolkytab td{padding:8px 10px;vertical-align:middle}
 .spolkytab thead th{font-size:.78rem;color:var(--muted);font-weight:600;text-align:right;border-bottom:1px solid var(--line)}

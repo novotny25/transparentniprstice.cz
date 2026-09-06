@@ -11912,6 +11912,7 @@
   "mesic": 10,
   "castka_haleru": -30936600,
   "kategorie": "Opravy/storna dokladů",
+  "kategorie_web": "ČOV / odpadní vody",
   "popis_verejny": "Oprava dokladu",
   "baze": "accrual_cost"
  },

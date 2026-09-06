@@ -108,14 +108,14 @@
       "datum_kontroly": "2026-09-06",
       "otazka": "Doložila obec faktury a výkazy práce k právním službám, jak jí nařídil krajský úřad (rozhodnutí z 19. 8. 2026)?",
       "co_udelat": "Když doložila — rozebrat podklady a přepsat větu. Když ne — doplnit, že rozhodnutí krajského úřadu nesplnila, a zvážit opatření proti nečinnosti.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "dve-polozky-cekame",
       "stranka": "index.html",
       "citace": "U tří z nich stále čekám na podklady od obce",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-06",
+      "datum_kontroly": "2026-09-10",
       "otazka": "Pořád čekáte na podklady u všech tří ze tří položek „pod lupou“?",
       "co_udelat": "Upravit počet podle skutečnosti — nebo větu odstranit, až budou podklady všechny.",
       "vyrizeno": false
@@ -123,9 +123,9 @@
     {
       "id": "gdpr-ramcova-smlouva",
       "stranka": "index.html",
-      "citace": "obec ho nejmenuje v žádné ze svých odpovědí",
+      "citace": "obec mi příjemce přes opakované žádosti nepotvrdila",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-06",
+      "datum_kontroly": "2026-09-10",
       "otazka": "Doložila obec rámcovou smlouvu a dodavatele pověřence GDPR? (jméno pověřence je veřejné v povinných informacích obce — Mgr. Radovan Vrbka)",
       "co_udelat": "Doplnit sekci „Co zatím nevíme“ o to, co dorazilo, a vyrovnat se s vysvětlením obce.",
       "vyrizeno": false
@@ -138,7 +138,7 @@
       "datum_kontroly": "2026-09-06",
       "otazka": "Doložila obec faktury a výkazy k právním službám dle příkazu KrÚ (15 dnů od doručení, tj. zhruba do 5. 9.)?",
       "co_udelat": "Doplnit do chronologie, jak to dopadlo.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "zmrazeny-sloupec-dni",
@@ -159,7 +159,7 @@
       "datum_kontroly": "2026-09-06",
       "otazka": "Doložila obec faktury, smlouvu a výkazy k právním službám? KrÚ jí to nařídil 19. 8., lhůta 15 dnů běží od doručení (zhruba do 5. 9.).",
       "co_udelat": "Po doložení: přepsat sekci právních služeb (Co víme / Co jsme vypočítali), aktualizovat větu v tématech (vlozit_data.py) a chronologii. Bez reakce: opatření proti nečinnosti.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "pravni-brzy-dolozi",
@@ -204,21 +204,21 @@
     {
       "id": "zjdalsi-511-rozpis",
       "stranka": "index.html",
-      "citace": "zatím nemá veřejný rozpis",
+      "citace": "Rozpis jsem si vyžádal",
       "typ": "cekame_na_odpoved",
       "datum_kontroly": "2026-09-10",
-      "otazka": "Věta „largest účet zatím nemá veřejný rozpis“ — už rozpis máme?",
+      "otazka": "Doručila obec rozpis účtu 511, o který jsem požádal 25. 8. 2026?",
       "co_udelat": "Po doložení nahradit odkazem na novou kapitolu 511.",
       "vyrizeno": false
     },
     {
       "id": "gdpr-ceniky-overeni",
       "stranka": "index.html",
-      "citace": "ověřeno 26. 8. 2026",
+      "citace": "ověřeno 5. 9. 2026",
       "typ": "relativni_cas",
-      "datum_kontroly": "2026-11-26",
-      "otazka": "Ceníky pověřenců GDPR byly ověřeny 26. 8. 2026 — přeověřit (čtvrtletně).",
-      "co_udelat": "Znovu projít veřejné ceníky, aktualizovat rozpětí a datum ověření.",
+      "datum_kontroly": "2026-12-05",
+      "otazka": "Přímý ceník služby Váš pověřenec byl ověřen 5. 9. 2026 — platí dál?",
+      "co_udelat": "Znovu otevřít přímý ceník a aktualizovat cenu i datum ověření.",
       "vyrizeno": false
     },
     {
@@ -239,7 +239,7 @@
       "datum_kontroly": "2026-10-05",
       "otazka": "Po komunálních volbách: přepsat „následující volební období“ na konkrétní situaci?",
       "co_udelat": "Aktualizovat komentář autora u peněz na účtech podle povolebního stavu.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "uzemni-plan-zmena1",
@@ -289,7 +289,7 @@
       "datum_kontroly": "2026-09-06",
       "otazka": "Stránka řízení píše, že podrobnosti k právním službám očekáváme — už je máme?",
       "co_udelat": "Aktualizovat blok Doplnění na rizeni.html.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "uohs-nova-rizeni",
@@ -451,6 +451,26 @@
       "co_udelat": "Doplnit výsledek jednání do data/rizeni.json a do aktualit; pokud bylo odročeno, uvést nový termín.",
       "vyrizeno": false,
       "_poznamka": "Termín je jen v datovém bloku d-rizeni, na stránku ho vypisuje JavaScript — hlídá se proto jen datum."
+    },
+    {
+      "id": "pravni-okres-obdobi",
+      "stranka": "rizeni.html",
+      "citace": "Srovnávám roky 2022–2025",
+      "typ": "pribude_dalsi_rok",
+      "datum_kontroly": "2027-02-15",
+      "otazka": "MONITOR má po uzávěrce data za rok 2026. Přepočítat srovnání položky 5166 na 2023–2026 (nebo přidat rok) pro všech 187 obcí?",
+      "co_udelat": "Spustit sběr (skript v PACT: 2026_09_06 Soudní spory obcí okresu/sber5166.py), přegenerovat data/pravni-okres.json a CSV, pak vlozit_data.py; pořadí a mediány se přepočítají samy, zkontrolovat věty „první z 63“ na index.html.",
+      "vyrizeno": false
+    },
+    {
+      "id": "pravni-okres-prvni-z-63",
+      "stranka": "index.html",
+      "citace": "první z 63 obcí okresu podobné velikosti",
+      "typ": "relativni_cas",
+      "datum_kontroly": "2027-02-15",
+      "otazka": "Platí po aktualizaci dat pořád, že jsou Prštice první z 63 obcí (700–1 500 obyvatel) v položce 5166? Počet obcí ve skupině se může změnit s novým počtem obyvatel ČSÚ.",
+      "co_udelat": "Přepsat číslovku a pořadí ve třech větách na index.html (spolky × 2, právní služby × 1) podle meta v data/pravni-okres.json; validace hlídá shodu s daty.",
+      "vyrizeno": false
     }
   ]
 }

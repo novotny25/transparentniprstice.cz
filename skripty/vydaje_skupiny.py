@@ -75,6 +75,7 @@ OPRAVY_NAZVU = {
     "1340": "Poplatek za provoz systému shromažďování a odstraňování odpadů",
     "1346": "Poplatek za povolení k vjezdu do vybraných míst",
     "1382": "Odvod z loterií a podobných her (doběh)",
+    "2212": "Příjem sankčních plateb přijatých od jiných osob",
     "5345": "Převody vlastním rozpočtovým účtům (vnitřní převod)",
     "4134": "Převody z rozpočtových účtů (vnitřní převod)",
     "4139": "Ostatní převody z vlastních fondů (vnitřní převod)",

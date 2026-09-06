@@ -258,32 +258,20 @@ if not os.path.isdir(os.path.join(WEB_ROOT, "web")) or not any(
     NA("web", "HTML zatím neexistuje — kontrola 'žádná čísla mimo datové zdroje' (fáze 3)")
 
 
-# ==========================================================================
-# VÝSLEDEK
-# ==========================================================================
-print("=" * 68)
-print("VALIDACE A PRIVACY GATE — účet 518")
-print("=" * 68)
-for x in oks:   print(f"  [PASS] {x}")
-for x in nas:   print(f"  [N/A ] {x}")
-for x in warns: print(f"  [WARN] {x}")
-for x in fails: print(f"  [FAIL] {x}")
-print("-" * 68)
-print(f"  PASS: {len(oks)}  |  N/A: {len(nas)}  |  WARN: {len(warns)}  |  FAIL: {len(fails)}")
-if fails:
-    print("\n❌ VALIDACE NEPROŠLA — nestaví se fáze 3, necommitují se veřejná data.")
-    sys.exit(1)
-print("\n✅ VALIDACE PROŠLA — číselná integrita i privacy gate v pořádku.")
-
 # --- MAS Bobrava: tabulka obcí musí být úplná a sedět na řádek Celkem (±1 Kč) ---
 def _kontrola_mas():
-    import json, os
-    p = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "data", "mas-bobrava.json")
+    p = os.path.join(DATA, "mas-bobrava.json")
     d = json.load(open(p, encoding="utf-8"))
     s = sum(o["dotace_kc"] for o in d["obce"]); n = sum(o["projektu"] for o in d["obce"])
-    assert abs(s - d["uzemi"]["dotace_kc"]) <= 1, f"MAS: součet řádků {s} ≠ území {d['uzemi']['dotace_kc']}"
-    assert n == d["uzemi"]["projektu"], f"MAS: projektů {n} ≠ {d['uzemi']['projektu']}"
-    assert len([o for o in d["obce"] if o["obec"] != "Prštice"]) == d["uzemi"]["obci"], "MAS: chybí obce území"
+    kontroly = [
+        (abs(s - d["uzemi"]["dotace_kc"]) <= 1, f"součet řádků {s} vs území {d['uzemi']['dotace_kc']}"),
+        (n == d["uzemi"]["projektu"], f"projektů {n} vs {d['uzemi']['projektu']}"),
+        (len([o for o in d["obce"] if o["obec"] != "Prštice"]) == d["uzemi"]["obci"], "13 obcí území + Prštice"),
+        (all(re.fullmatch(r"\d{6}", o.get("kod", "")) for o in d["obce"]), "všechny obce mají šestimístný kód ČSÚ"),
+        (len({o["kod"] for o in d["obce"]}) == len(d["obce"]), "kódy ČSÚ jsou jedinečné"),
+    ]
+    for plati, zprava in kontroly:
+        (OK if plati else FAIL)("MAS", zprava)
 _kontrola_mas()
 
 # --- poměr dotací mezi obdobími musí sedět na text v banneru ---
@@ -295,7 +283,7 @@ def _kontrola_pomeru_dotaci():
     nyni = sum(x["kc"] for x in d["prstice2025"] if x.get("typ") == "obec")
     ocekavano = f"{round(driv / nyni)}× méně"
     html = open(os.path.join(K, "web", "index.html"), encoding="utf-8").read().replace("\u00a0", " ")
-    assert ocekavano in html, f"pomer dotací: v datech vychází „{ocekavano}“, na stránce není"
+    (OK if ocekavano in html else FAIL)("poměr dotací", f"v datech i textu {ocekavano}")
 _kontrola_pomeru_dotaci()
 
 # --- poměr Prštic k mediánu sousedů musí sedět na text v banneru ---
@@ -308,11 +296,11 @@ def _kontrola_medianu_sousedu():
     median = statistics.median(ostatni)
     html = open(os.path.join(K, "web", "index.html"), encoding="utf-8").read().replace(" ", " ")
     for cislo in (f"{median:,.0f}".replace(",", " "), f"{prstice:,.0f}".replace(",", " ")):
-        assert cislo in html, f"medián sousedů: číslo „{cislo} Kč“ z dat na stránce chybí"
+        (OK if cislo in html else FAIL)("medián dotací", f"číslo {cislo} Kč je v textu")
     pomer = f"{median / prstice:.1f}".replace(".", ",") + "× méně"
-    assert pomer in html, f"medián sousedů: v datech vychází „{pomer}“, na stránce není"
-    assert f"Medián {['nula','jednoho','dvou','tří','čtyř','pěti','šesti','sedmi','osmi','devíti','deseti','jedenácti','dvanácti'][len(ostatni)]} sousedů" in html, \
-        f"medián sousedů: v datech je {len(ostatni)} obcí bez Prštic, text uvádí jiný počet"
+    (OK if pomer in html else FAIL)("medián dotací", f"poměr {pomer} je v textu")
+    pocet = f"jedenácti ostatních srovnávaných obcí"
+    (OK if pocet in html else FAIL)("medián dotací", "text výslovně vylučuje Prštice")
 _kontrola_medianu_sousedu()
 
 # --- členství v MAS: text webu musí odpovídat poznámce v datech ---
@@ -321,11 +309,194 @@ def _kontrola_clenstvi_mas():
     K = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     d = json.load(open(os.path.join(K, "data", "mas-bobrava.json"), encoding="utf-8"))
     prstice = [x for x in d["obce"] if x["obec"] == "Prštice"]
-    assert prstice, "MAS: v datech chybí řádek Prštic"
-    assert prstice[0].get("pozn") == "není členem MAS", \
-        f"MAS: poznámka u Prštic je „{prstice[0].get('pozn')}“, čekáno „není členem MAS“"
+    if not prstice:
+        FAIL("MAS/členství", "v datech chybí řádek Prštic")
+        return
+    (OK if prstice[0].get("pozn") == "není členem MAS" else FAIL)("MAS/členství", "poznámka u Prštic: není členem MAS")
     for soubor in ("index.html", "obrazky/mapa-mas-bobrava.svg", "obrazky/mapa-mas-bobrava-mobil.svg"):
         text = open(os.path.join(K, "web", soubor), encoding="utf-8").read().replace(" ", " ")
-        assert "není členem MAS" in text, f"MAS: v {soubor} chybí formulace „není členem MAS“"
-        assert "mimo území" not in text, f"MAS: v {soubor} zůstala zavádějící formulace „mimo území“"
+        (OK if "není členem MAS" in text else FAIL)("MAS/členství", f"{soubor}: správná formulace")
+        (OK if "mimo území" not in text else FAIL)("MAS/členství", f"{soubor}: bez zavádějící formulace mimo území")
 _kontrola_clenstvi_mas()
+
+# --- nové publikační pojistky: veřejné souhrny, medián, storno a datové bloky ---
+def _kontrola_publikace():
+    import statistics
+    from datetime import date, timedelta
+    souhrny = load(os.path.join(DATA, "web-souhrny.json"))
+    povinne = {"meta", "rozpocet", "penize", "prubezne_2026H1"}
+    (OK if souhrny and set(souhrny) == povinne else FAIL)("publikace/souhrny", "přesné schéma veřejného souhrnu")
+    if souhrny:
+        r = souhrny["rozpocet"]
+        p = souhrny["penize"]
+        (OK if len(r["roky"]) == len(r["prijmy"]) == len(r["vydaje"]) else FAIL)("publikace/souhrny", "rozpočtové řady mají stejnou délku")
+        (OK if len(p["roky"]) == len(p["ucty"]) == len(p["uvery"]) else FAIL)("publikace/souhrny", "stavové řady mají stejnou délku")
+
+    spolky = load(os.path.join(DATA, "spolky-okoli.json"))
+    ostatni = [o["na_obyv_2025"] for o in spolky["obce"] if o["kod"] != "583707"]
+    med = statistics.median(ostatni)
+    meta = spolky["meta"]
+    (OK if med == meta.get("median_ostatnich_na_obyv_2025") and meta.get("median_vylucuje_kod") == "583707" else FAIL)(
+        "spolky/medián", f"medián 11 obcí bez Prštic = {med:g} Kč")
+
+    oprava = next((x for x in pub if x.get("id_zdroje") == "fad753e0bf70"), None)
+    (OK if oprava and oprava.get("kategorie") == "Opravy/storna dokladů" and oprava.get("kategorie_web") == "ČOV / odpadní vody" else FAIL)(
+        "518/storno", "původní kategorie zachována, pro web použita věcná kategorie")
+
+    zadosti = load(os.path.join(DATA, "zadosti-106.json"))["zadosti"]
+    for z in (x for x in zadosti if x.get("typ_podani", "").startswith("žádost o informace") and x.get("lhuta_do")):
+        if not z.get("datum_doruceni") or not z.get("doklad_doruceni"):
+            FAIL("žádosti/lhůta", f"{z['datum_podani']}: chybí doložené datum doručení")
+            continue
+        konec = date.fromisoformat(z["datum_doruceni"]) + timedelta(days=15)
+        while konec.weekday() >= 5:
+            konec += timedelta(days=1)
+        (OK if konec.isoformat() == z["lhuta_do"] and z.get("lhuta_overena") is True else FAIL)(
+            "žádosti/lhůta", f"{z['datum_podani']}: podání, doručení a konec lhůty jsou oddělené a výpočet sedí")
+
+    html = open(os.path.join(WEB_ROOT, "web", "index.html"), encoding="utf-8").read()
+    def blok(bid):
+        m = re.search(rf'<script[^>]+id="{re.escape(bid)}"[^>]*>(.*?)</script>', html, re.S)
+        return json.loads(m.group(1)) if m else None
+    if souhrny:
+        (OK if blok("d-rozpocet") == souhrny["rozpocet"] else FAIL)("publikace/blok", "d-rozpocet přesně odpovídá veřejnému souhrnu")
+        (OK if blok("d-penize") == souhrny["penize"] else FAIL)("publikace/blok", "d-penize přesně odpovídá veřejnému souhrnu")
+    datove = re.findall(r'<script[^>]+type="application/json"[^>]*>(.*?)</script>', html, re.S)
+    (OK if datove and all("</script" not in x.lower() for x in datove) else FAIL)("publikace/JSON", "datové bloky nemohou předčasně ukončit script")
+_kontrola_publikace()
+
+
+# --- právní a poradenské služby v okrese: data ↔ text na rizeni.html a index.html ---
+def _kontrola_pravni_okres():
+    import statistics
+    d = load(os.path.join(DATA, "pravni-okres.json"))
+    if not d:
+        FAIL("právní/okres", "data/pravni-okres.json chybí nebo nejde načíst"); return
+    m = d["meta"]; p = m["prstice"]; roky = ("2022", "2023", "2024", "2025")
+    sk = sorted([o for o in d["obce"] if o.get("skupina_700_1500")], key=lambda o: -o["celkem_2022_2025"])
+    (OK if all(700 <= o["obyvatel"] <= 1500 for o in sk) else FAIL)("právní/okres", "skupina = jen obce 700–1 500 obyvatel")
+    (OK if len(sk) == m["skupina_pocet"] else FAIL)("právní/okres", f"velikost skupiny {len(sk)} = meta {m['skupina_pocet']}")
+    (OK if sk and sk[0]["kod"] == "583707" and p["poradi_skupina_celkem"] == 1 else FAIL)("právní/okres", "Prštice jsou ve skupině první v částce")
+    (OK if all(re.fullmatch(r"\d{6}", o["kod"]) for o in d["obce"]) and len({o["kod"] for o in d["obce"]}) == len(d["obce"]) else FAIL)(
+        "právní/okres", "kódy ČSÚ jsou šestimístné a jedinečné")
+    for o in d["obce"][:20] + [x for x in d["obce"] if x["kod"] == "583707"]:
+        if sum(o["roky"][r] for r in roky) != o["celkem_2022_2025"]:
+            FAIL("právní/okres", f"{o['obec']}: součet let ≠ celkem"); break
+    else:
+        OK("právní/okres", "součty let sedí (namátkou 20 obcí + Prštice)")
+    med = statistics.median(o["celkem_2022_2025"] for o in sk if o["kod"] != "583707")
+    (OK if int(med) == m["median_skupiny_bez_prstic_celkem"] else FAIL)("právní/okres", f"medián skupiny bez Prštic = {int(med)} Kč")
+    # položka 5166 Prštic v datech okresu = řada tématu „pravni“ na hlavní stránce (stejný zdroj MONITOR)
+    html_i = open(os.path.join(WEB_ROOT, "web", "index.html"), encoding="utf-8").read()
+    mt = re.search(r'<script[^>]+id="d-temata"[^>]*>(.*?)</script>', html_i, re.S)
+    if mt:
+        tem = next((t for t in json.loads(mt.group(1))["temata"] if t["id"] == "pravni"), None)
+        rada = dict(zip(json.loads(mt.group(1))["roky"], tem["rada"])) if tem else {}
+        prs = next(o for o in d["obce"] if o["kod"] == "583707")
+        (OK if all(abs(rada.get(r, -1) - prs["roky"][r]) < 1 for r in roky) else FAIL)("právní/okres", "položka 5166 Prštic = řada tématu na hlavní stránce")
+    # podíl právní + GDPR z účtu 518 na položce 5166 — text říká 99 %
+    s518 = {"Právní služby": 0.0, "GDPR / pověřenec": 0.0}
+    for x in pub:
+        k = x.get("kategorie_web") or x.get("kategorie")
+        if k in s518 and str(x.get("ucetni_rok")) in roky:
+            s518[k] += x["castka_haleru"] / 100
+    podil = round(100 * (s518["Právní služby"] + s518["GDPR / pověřenec"]) / p["celkem_2022_2025"])
+    (OK if podil == p["podil_pravni_a_gdpr_na_polozce_pct"] else FAIL)("právní/okres", f"podíl právní + GDPR na položce = {podil} %")
+    html_r = open(os.path.join(WEB_ROOT, "web", "rizeni.html"), encoding="utf-8").read().replace("\u00a0", " ").replace("&nbsp;", " ")
+    (OK if f"z {podil} %" in html_r else FAIL)("právní/okres", f"text na rizeni.html uvádí {podil} %")
+    # blok dodavatele: jméno, IČO a obě částky musí být u sebe a rozlišené podle doloženosti
+    dod = re.search(r'<div class="dodavatel">(.*?)<details', html_r, re.S)
+    if not dod:
+        FAIL("právní/dodavatel", "blok s dodavatelem na stránce chybí")
+    else:
+        b = dod.group(1)
+        for co in ("Mgr. Radovan Vrbka", "IČO 60653091", "Rašínova 103/2"):
+            (OK if co in b else FAIL)("právní/dodavatel", f"blok uvádí {co}")
+        for cislo in (p["ucet_518_pravni_2022_2025"], p["ucet_518_gdpr_2022_2025"]):
+            (OK if f"{cislo:,}".replace(",", " ") in b else FAIL)(
+                "právní/dodavatel", f"blok uvádí částku {cislo:,} Kč".replace(",", " "))
+        (OK if 'chip nezjisteno' in b and "nepotvrdila" in b else FAIL)(
+            "právní/dodavatel", "u pověřence GDPR je vyznačeno, že příjemce není doložený")
+        (OK if "opravím to" in b else FAIL)(
+            "právní/dodavatel", "u neověřené části je nabídnuta oprava, doloží-li obec jinak")
+        (OK if "271/2010/Z26" in b and "11. 3. 2010" in b else FAIL)(
+            "právní/dodavatel", "je uvedeno usnesení zastupitelstva, na jehož základě zakázky jdou")
+        # citace usnesení musí doslova sedět na sdělení obce, ne na parafrázi
+        try:
+            import fitz
+            pdf = " ".join(x.get_text() for x in fitz.open(
+                os.path.join(WEB_ROOT, "web", "dokumenty", "2026-09-04_odpoved-obce-OUPR-1132-2026.pdf")))
+            pdf = re.sub(r"\s+", " ", pdf)
+            citace = re.search(r"<q>(.*?)</q>", b, re.S)
+            cit = re.sub(r"<[^>]+>", "", citace.group(1)) if citace else ""
+            cit = re.sub(r"\s+", " ", cit).strip()
+            (OK if cit and cit in pdf else FAIL)(
+                "právní/dodavatel", "citace usnesení doslova odpovídá sdělení obce v PDF")
+        except ImportError:
+            NA("právní/dodavatel", "citaci usnesení proti PDF nelze ověřit — chybí PyMuPDF")
+        soucet = p["ucet_518_pravni_2022_2025"] + p["ucet_518_gdpr_2022_2025"]
+        (OK if f"{soucet:,}".replace(",", " ") in b else FAIL)(
+            "právní/dodavatel", f"součet {soucet:,} Kč sedí na obě částky".replace(",", " "))
+    for cislo in (p["ucet_518_pravni_2022_2025"], p["ucet_518_gdpr_2022_2025"], p["celkem_2022_2025"]):
+        t = f"{cislo:,}".replace(",", " ")
+        (OK if t in html_r else FAIL)("právní/okres", f"částka {t} Kč je v textu rizeni.html")
+    (OK if "<!--pravni-tab-start--><div" in html_r and "<!--pravni-veta-start--><p" in html_r else FAIL)("právní/okres", "tabulka a věta jsou vložené staticky")
+    # graf: žebříček má všech 63 řádků, Prštice zvýrazněné a čáru mediánu z dat
+    graf = re.search(r"<!--pravni-graf-start-->(.*?)<!--pravni-graf-konec-->", html_r, re.S)
+    if not graf:
+        FAIL("právní/graf", "graf není vložený do stránky")
+    else:
+        g = graf.group(1)
+        (OK if g.count('class="radek') == len(sk) else FAIL)(
+            "právní/graf", f"žebříček kreslí všech {len(sk)} obcí")
+        (OK if g.count('class="radek my"') == 1 else FAIL)("právní/graf", "Prštice jsou zvýrazněné právě jednou")
+        med_pct = f'--med:{med / sk[0]["celkem_2022_2025"] * 100:.2f}%'
+        (OK if med_pct in g else FAIL)("právní/graf", f"čára mediánu odpovídá datům ({med_pct})")
+        (OK if 'width:100.00%' in g else FAIL)("právní/graf", "nejdelší sloupeček patří Pršticím")
+        (OK if "<svg" not in g else FAIL)("právní/graf", "graf je HTML, ne SVG — písmo se nezmenšuje se šířkou okna")
+    # v kartě nesmí zůstat odstavec bez třídy — dědil by velikost z těla stránky (19 px)
+    karta = re.search(r'<h2 id="okres-h".*?</div>\s*</section>', html_r, re.S)
+    bez_tridy = re.findall(r"<p>(?!\s*</p>)", karta.group(0)) if karta else ["?"]
+    (OK if not bez_tridy else FAIL)("právní/graf", "všechny odstavce v kartě mají třídu (sub/souhrn/src)")
+
+_kontrola_pravni_okres()
+
+
+# --- průměrný věk na stránce Obec v kostce musí sedět na data rešerše ---
+def _kontrola_veku():
+    d = load(os.path.join(DATA, "srovnani-obci.json"))
+    if not d or "vek" not in d:
+        FAIL("věk", "data/srovnani-obci.json chybí nebo nemá část o věku"); return
+    v = d["vek"]
+    html = open(os.path.join(WEB_ROOT, "web", "obec.html"), encoding="utf-8").read()
+    html = html.replace("\u00a0", " ").replace("&nbsp;", " ")
+    # pozor: f"{41.65:.1f}" dá 41,6 — plovoucí čárka drží 41,6499…, proto Decimal
+    from decimal import Decimal, ROUND_HALF_UP
+    des = lambda x: str(Decimal(str(x)).quantize(Decimal("0.1"), ROUND_HALF_UP)).replace(".", ",")
+    for t in (des(v["prstice"]),
+              f"{v['poradi_prstic_od_nejstarsiho']}. nejvyšší ze {v['obci_v_okrese']} obcí",
+              f"průměr okresu {des(v['okres'])}"):
+        (OK if t in html else FAIL)("věk", f"obec.html uvádí „{t}“ podle dat")
+    # věk se nesmí vrátit na hlavní stránku pod jiným srovnávacím základem
+    idx = open(os.path.join(WEB_ROOT, "web", "index.html"), encoding="utf-8").read()
+    (OK if "Průměrný věk" not in idx and "d-srovnani" not in idx else FAIL)(
+        "věk", "hlavní stránka věk neuvádí — jeden srovnávací základ místo dvou")
+_kontrola_veku()
+
+
+# ==========================================================================
+# VÝSLEDEK — tiskne se až po všech povinných kontrolách
+# ==========================================================================
+print("=" * 68)
+print("VALIDACE A PRIVACY GATE — účet 518 a publikace webu")
+print("=" * 68)
+for x in oks:   print(f"  [PASS] {x}")
+for x in nas:   print(f"  [SKIP] {x}")
+for x in warns: print(f"  [WARN] {x}")
+for x in fails: print(f"  [FAIL] {x}")
+print("-" * 68)
+print(f"  PASS: {len(oks)}  |  SKIP: {len(nas)}  |  WARN: {len(warns)}  |  FAIL: {len(fails)}")
+if fails:
+    print("\n❌ VALIDACE NEPROŠLA — web se nesmí publikovat.")
+    sys.exit(1)
+print("\n✅ VALIDACE PROŠLA — povinné kontroly doběhly a nemají chybu.")

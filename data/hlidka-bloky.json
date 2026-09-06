@@ -7,7 +7,6 @@
   "null = blok se do HTML píše rovnou a žádný zdrojový soubor nemá."
  ],
  "bloky": {
-  "d-srovnani": "srovnani-obci.json",
   "d-obyvatele": "obyvatele.json",
   "d-rizeni": "rizeni.json",
   "d-navod": "navod.json",
@@ -24,6 +23,7 @@
   "d-dotace": "dotace-web.json",
   "d-penize": null,
   "d-mas": "mas-bobrava.json",
-  "d-spolky": "spolky-okoli.json"
+  "d-spolky": "spolky-okoli.json",
+  "d-pravni-okres": "pravni-okres.json"
  }
 }

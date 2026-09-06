@@ -78,6 +78,10 @@ class Nahled(SimpleHTTPRequestHandler):
     def end_headers(self):
         # Konkrétnější pravidlo přebíjí obecnější — stejnou hlavičku poslat jen jednou.
         cesta = self.path.split("?", 1)[0]
+        # Náhled nesmí servírovat starou verzi z cache prohlížeče — po úpravě
+        # souboru musí být vidět nová stránka, ne ta, na kterou se člověk díval
+        # před minutou. (Netlify posílá totéž: max-age=0, must-revalidate.)
+        self.send_header("Cache-Control", "no-store, max-age=0")
         vysledek = {}
         for vzor, dvojice in HLAVICKY:
             if sedi(vzor, cesta):

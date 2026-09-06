@@ -1,7 +1,10 @@
 # PLÁN REALIZACE: Web Transparentní Prštice
 
-**Verze:** 1.5 (21. 8. 2026) · Vychází ze `ZADANI.md` v1.5 — při rozporu platí
-ZADANI.md. V1.4 doplnila soukromou/veřejnou datovou pipeline a strojovou
+**Verze:** 1.6 (6. 9. 2026) · Vychází ze `ZADANI.md` v1.6 — při rozporu platí
+ZADANI.md. V1.6 přesouvá kontextovou rešerši z úvodu do „Obce v kostce"
+a vypouští srovnání příjmů na obyvatele (P-40); přidává srovnání položky 5166
+s obcemi okresu na stránce „Soudy a řízení" (P-41).
+**Verze 1.5** (21. 8. 2026) — při rozporu platí ZADANI.md. V1.4 doplnila soukromou/veřejnou datovou pipeline a strojovou
 anonymizaci, oddělila soudní a správní řízení a zpřesnila příběh účtu 518.
 V1.5 vrací rozlišení výdajů v doložitelné formě „opakované vs. jednorázové"
 (P-33) místo právního pojmu mandatorní.
@@ -422,6 +425,13 @@ Spouštěcí prompt:
   obyvatel k 1. 1. 2025 (jeden rok by kolísal podle investic). Zdroje: ČSÚ,
   ARES (IČO), MONITOR (rozklikávací rozpočet), Wikidata (souřadnice); odpovědi
   API se cachují v soukromé zóně, běh jde zopakovat i `--offline`.
+  ⚠️ **Změněno 6. 9. 2026 (P-40):** srovnání se z úvodu hlavní stránky odstranilo.
+  Z rešerše zůstal na webu **jen průměrný věk** na stránce „Obec v kostce"
+  (43,3 roku, 30. nejvyšší ze 187 obcí okresu, průměr okresu 41,7) s komentářem
+  autora o podmínkách pro mladé rodiny a územním plánu z roku 1999. Srovnání
+  příjmů na obyvatele se **vypustilo** — říkalo slaběji totéž co sekce o dotacích.
+  `data/srovnani-obci.json` a skript zůstávají; čísla věku na stránce hlídá
+  `validace.py` proti datům.
   Tvrdé kontroly (obyvatelé, věk Prštic, okresní průměr) PASS.
   Výsledek: **24 829 Kč/obyv., 5. nejnižší ze 17** (medián 27 608 Kč);
   věk 43,3 vs. okolí 41,5 a okres 41,65 → **30. nejstarší ze 187 obcí okresu**.
@@ -561,6 +571,33 @@ Spouštěcí prompt:
   na úroveň „zvládne běžný chat" (1–7) a „vyžaduje vibe coding" (8),
   stejný rámeček do úvodu `NAVOD-PRO-AI-obcanska-analyza-obce.md`.
   **Varianta potvrzena Petrem 28. 8.** — kroky 1–7 zůstávají.
+- [x] **6.9 🤖+👤 Přesun kontextové rešerše (P-40)** — HOTOVO 6. 9. 2026,
+  nenasazeno. Z hlavní stránky odstraněna sekce „Jak si Prštice stojí v okolí"
+  (srovnávací karty, tabulka 17 obcí, komentář, odkaz v podnavigaci, datový
+  blok `d-srovnani` i vykreslovací skript); vysvětlivka „Jak číst čísla na tomto
+  webu" ve stejné sekci zůstala. Komentář o mladých rodinách a územním plánu
+  1999 přesunut k dlaždici s věkem na „Obci v kostce". Číslo 43,3 bylo na
+  stránce natvrdo — nově je navázané na `data/srovnani-obci.json` a hlídané
+  validací (včetně kontroly, že se věk nevrátí na hlavní stránku pod jiným
+  srovnávacím základem). Opraveno i zaokrouhlování 41,65 → 41,7 (`Decimal`
+  místo formátování plovoucí čárky) a šířka poznámek v komentářích autora.
+- [x] **6.10 🤖+👤 Srovnání položky 5166 s obcemi okresu (P-41)** — HOTOVO
+  6. 9. 2026, nenasazeno. Průzkum zdrojů ukázal, že **počet soudních sporů obcí
+  z veřejných dat zjistit nelze** (infoSoud hledá jen podle spisové značky,
+  InfoJednání 30 dnů dopředu, databáze rozhodnutí k Pršticím nic, podrozvahu
+  většina obcí nevyplňuje) — podklad
+  `0_Projects/4_PRŠTICE/2026_09_06 Soudní spory obcí okresu - průzkum zdrojů/`
+  v PACT. Náhradní veřejná metrika: položka 5166 za všech 187 obcí okresu
+  2019–2025 (`sber5166.py`, IČO z ARES, obyvatelé ČSÚ). Na webu skupina
+  700–1 500 obyvatel (63 obcí) za 2022–2025: Prštice **1. místo**, medián
+  ostatních 325 tis. Kč; v celém okrese 7. v částce, 5. na obyvatele, 2. v podílu
+  na výdajích. Žebříček je **HTML, ne SVG** (písmo se pak nezmenšuje se šířkou
+  okna), tabulka rozbalovací, CSV všech 187 obcí ke stažení. Blok „Komu částka
+  směřuje" odděluje doloženého příjemce (právní služby 2 094 182 Kč) od
+  nedoloženého (pověřenec GDPR 272 250 Kč) a cituje usnesení zastupitelstva
+  č. 271/2010/Z26; citace se ve validaci porovnává s textovou vrstvou PDF obce.
+  Data `data/pravni-okres.json`, 15 nových kontrol ve `validace.py`, dvě nová
+  tvrzení v hlídce (únor 2027, až přibude rok 2026).
 - [ ] **6.8 🤖+👤 Blok „Odměny vedení obce" (P-39)** — vstupy HOTOVÉ:
   rešerše 28. 8. (`2026_08_28_Reserse_odmeny-zastupitelu.md` v PACT) —
   starosta uvolněný (usn. 4+5/2022/Z1, pevná výše 54 086 → 75 736 Kč/měs

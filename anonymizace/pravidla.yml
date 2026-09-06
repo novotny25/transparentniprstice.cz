@@ -29,6 +29,8 @@ zdrojova_pole_518:
 
 # ---------------------------------------------------------------------------
 # 2. Veřejné schéma účetního zápisu (výstup do data/ucet-518-polozky-public.json)
+# Volitelné `kategorie_web` obsahuje ověřené autorské přeřazení pro souhrn;
+# původní `kategorie` se kvůli dohledatelnosti nikdy nepřepisuje.
 #    JEN tato pole smějí být ve veřejném exportu. Nic jiného z originálu.
 # ---------------------------------------------------------------------------
 verejne_schema_zapisu:

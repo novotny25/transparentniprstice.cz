@@ -73,19 +73,25 @@ jobs:
               return subprocess.run(["gh", *args], capture_output=True,
                                     text=True, check=False, **kw)
 
+          def vyzaduj(vysledek, akce):
+              if vysledek.returncode != 0:
+                  raise RuntimeError(f"{akce} selhala: {vysledek.stderr.strip()}")
+              return vysledek
+
           # najdi otevřený stálý úkol hlídky
           r = gh("issue", "list", "--repo", repo, "--state", "open",
                  "--search", f'"{TITULEK}" in:title', "--json", "number,title,body",
                  "--limit", "20")
+          vyzaduj(r, "Načtení úkolů")
           otevrene = json.loads(r.stdout or "[]")
           ukol = next((u for u in otevrene if u["title"] == TITULEK), None)
 
           # --- vše v pořádku -------------------------------------------------
           if kod == 0:
               if ukol:
-                  gh("issue", "comment", str(ukol["number"]), "--repo", repo,
-                     "--body", f"✅ Hlídka dnes proběhla bez nálezu — zavírám.\n\n[Záznam běhu]({beh})")
-                  gh("issue", "close", str(ukol["number"]), "--repo", repo)
+                  vyzaduj(gh("issue", "comment", str(ukol["number"]), "--repo", repo,
+                     "--body", f"✅ Hlídka dnes proběhla bez nálezu — zavírám.\n\n[Záznam běhu]({beh})"), "Doplnění komentáře")
+                  vyzaduj(gh("issue", "close", str(ukol["number"]), "--repo", repo), "Uzavření úkolu")
                   print("Vše v pořádku, úkol zavřen.")
               else:
                   print("Vše v pořádku.")
@@ -105,18 +111,20 @@ jobs:
               if r.returncode != 0:   # kdyby štítek nešel použít, zkus bez něj
                   r = gh("issue", "create", "--repo", repo, "--title", TITULEK,
                          "--body", telo)
+              vyzaduj(r, "Založení úkolu hlídky")
               print("Založen nový úkol:", r.stdout.strip() or r.stderr.strip())
               sys.exit(0)
 
           # úkol už běží — komentuj jen když se hlášení od minula změnilo
           cislo = str(ukol["number"])
           r = gh("issue", "view", cislo, "--repo", repo, "--json", "comments")
+          vyzaduj(r, "Načtení komentářů")
           komentare = json.loads(r.stdout or '{"comments":[]}').get("comments", [])
           posledni = komentare[-1]["body"] if komentare else (ukol.get("body") or "")
 
           if zprava in posledni:
               print("Stejné hlášení jako minule — nekomentuji, ať to nespamuje.")
           else:
-              gh("issue", "comment", cislo, "--repo", repo, "--body", telo)
+              vyzaduj(gh("issue", "comment", cislo, "--repo", repo, "--body", telo), "Doplnění komentáře")
               print("Doplněn komentář k úkolu", cislo)
           PY

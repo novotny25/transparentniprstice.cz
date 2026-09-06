@@ -1,6 +1,9 @@
 # ZADÁNÍ: Web Transparentní Prštice
 
-**Verze:** 1.5 (21. 8. 2026) — v1.4 zapracovala rozhodnutí Petra po oponentuře:
+**Verze:** 1.6 (6. 9. 2026) — v1.6 mění umístění kontextové rešerše (P-40:
+z úvodu do „Obce v kostce", příjmy na obyvatele vypuštěny) a přidává srovnání
+výdajů na právní a poradenské služby s obcemi okresu (P-41).
+**Verze 1.5** (21. 8. 2026) — v1.4 zapracovala rozhodnutí Petra po oponentuře:
 strojovou anonymizaci všech veřejných výstupů, vývoj účtu 518 za roky
 2015–2025 s účetním detailem od roku 2022, oddělení soudních a správních
 řízení a zjednodušené informační stavy „víme / vypočítali jsme / nevíme /
@@ -274,7 +277,9 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   **reprodukovatelná** (skript + soubor v `data/`) a mají uvedený zdroj (MONITOR
   konsolidovaná skutečnost, ČSÚ průměrný věk a okresní průměr, registr smluv /
   Hlídač státu). Nejde o průběžně aktualizovanou srovnávací tabulku (ta zůstává
-  ve v2, P-21). **Mění §7 bod 2.**
+  ve v2, P-21). **Mění §7 bod 2.** — **Změněno P-40 (6. 9. 2026):** rešerše se
+  přesunula z úvodu do „Obce v kostce" a část (a) o příjmech na obyvatele byla
+  vypuštěna.
 - **P-37 (přidáno 28. 8. 2026, Petr):** Nová stránka **„Obec v kostce"** —
   vyčerpávající, ale střízlivý rozcestník základních informací o obci:
   - **Identifikace:** název, IČO, kód obce, okres, kraj, katastrální území,
@@ -344,6 +349,28 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
   „kam šla moje tisícovka" (rozpočítání daní občana na agendy); AI shrnutí
   zápisů ze zastupitelstva se seznamem přijatých usnesení; upozornění na
   novinky (RSS); veřejný errata log (nalezené a opravené chyby webu).
+- **P-40 (přidáno 6. 9. 2026, Petr — mění P-35 a §7 bod 2):** Kontextová
+  rešerše **není v úvodu hlavní stránky**, ale na stránce **„Obec v kostce"**,
+  a obsahuje **jen průměrný věk** vůči okresu; srovnání **příjmů na obyvatele
+  se vypouští**. Důvod: (a) věk byl na webu dvakrát, pokaždé s jiným
+  srovnávacím základem (20 nejbližších obcí × 187 obcí okresu) — dvojí
+  metodika pro totéž tvrzení web oslabuje; (b) srovnání příjmů říkalo slaběji
+  totéž co samostatná sekce o dotacích a zabíralo místo hned za hlavními
+  zjištěními; (c) věk je údaj nefinanční a patří k ostatním údajům o obci.
+  K číslu věku na „Obci v kostce" patří **komentář autora** o podmínkách pro
+  mladé rodiny a o územním plánu z roku 1999, výslovně označený jako
+  interpretace. Data zůstávají v `data/srovnani-obci.json` a čísla na stránce
+  hlídá `validace.py` proti nim.
+- **P-41 (přidáno 6. 9. 2026, Petr — doplňuje §7 bod 2):** Na stránce **„Soudy
+  a řízení"** je srovnání **rozpočtové položky 5166 „Konzultační, poradenské
+  a právní služby"** s obcemi okresu Brno-venkov, které mají **700–1 500
+  obyvatel** (63 obcí), za roky **2022–2025** — žebříček všech obcí skupiny,
+  rozbalovací tabulka po letech a ke stažení CSV za všech 187 obcí okresu.
+  Doplňuje ho blok **„Komu částka směřuje"**: dodavatel se jménem, IČO
+  a adresou, usnesení zastupitelstva, na jehož základě zakázky jdou, a u každé
+  částky rozlišení, zda je příjemce doložený. Jde o **jednorázovou rešeršní
+  tabulku**, ne o průběžně aktualizované srovnání (to zůstává ve v2, P-21);
+  data v `data/pravni-okres.json`, sběr skriptem, čísla hlídá `validace.py`.
 
 ## 7. Co v první verzi NEBUDE (závazné)
 
@@ -351,11 +378,13 @@ Nikdo není nucen do účetnictví, ale cesta dolů je vždy nabídnutá.
    automatizace až v2, aby chyba pipeline nemohla poškodit důvěryhodnost při startu.
 2. **Žádná průběžně aktualizovaná srovnávací tabulka s okolními obcemi** — plná
    srovnávací funkce (výběr obcí, stažení, průběžná aktualizace) zůstává pro v2
-   (P-21). **Výjimkou je jednorázová kontextová rešerše v úvodu podle P-35**
-   (přidáno 25. 8. 2026, Petr): objem rozpočtu na obyvatele a průměrný věk vůči
-   obcím srovnatelné velikosti a vůči okresu, se zdroji a reprodukovatelným
-   výpočtem. Musí být udělaná pořádně (pevná velikostní skupina, tříletý průměr,
-   konsolidovaná data z MONITORu), ne polovičatě.
+   (P-21). **Výjimkou jsou dvě jednorázové rešeršní srovnání**, obě se zdroji
+   a reprodukovatelným výpočtem, obě z pevné velikostní skupiny obcí:
+   (a) **průměrný věk** vůči okresu na stránce „Obec v kostce" (P-35 ve znění
+   P-40; srovnání příjmů na obyvatele bylo 6. 9. 2026 vypuštěno);
+   (b) **položka 5166 — konzultační, poradenské a právní služby** vůči obcím
+   okresu se 700–1 500 obyvateli na stránce „Soudy a řízení" (P-41).
+   Musí být udělané pořádně, ne polovičatě.
 3. **Žádný redakční systém, přihlašování, komentáře ani diskuse** — statický web;
    reakce občanů jde přes e-mail.
 4. **Žádné hodnocení současného/nového vedení v části tvrdých fakt** — ta hodnotí
