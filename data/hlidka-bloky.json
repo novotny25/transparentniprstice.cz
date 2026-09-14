@@ -24,6 +24,7 @@
   "d-penize": null,
   "d-mas": "mas-bobrava.json",
   "d-spolky": "spolky-okoli.json",
-  "d-pravni-okres": "pravni-okres.json"
+  "d-pravni-okres": "pravni-okres.json",
+  "d-obce-mimo-mas": "obce-mimo-mas.json"
  }
 }

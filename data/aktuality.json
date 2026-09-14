@@ -7,13 +7,38 @@
  "zobrazit": 6,
  "polozky": [
   {
+   "datum": "2026-09-14",
+   "text": "Opravil jsem výši dotace na čistírnu odpadních vod v Radosticích: správně je 19,0 mil. Kč, ne 31,5 mil. Kč, jak dosud uváděly dva texty na webu. Registr dotací vede u této akce dva záznamy – rozhodnutí na 19,0 mil. Kč a zvlášť druhou splátku téže dotace 12,5 mil. Kč pro rok 2020 – a souhrnný přehled, ze kterého jsem vycházel, je sečetl. Správnou výši jsem ověřil v rozpočtech a závěrečných účtech Radostic. Grafy, přepočty na obyvatele a pořadí obcí vycházejí z rozpočtů obcí, kde byla dotace vždy započtená správnou částkou, takže se pořadí ani vyznění srovnání nemění.",
+   "odkaz": "index.html#dotace"
+  },
+  {
+   "datum": "2026-09-14",
+   "text": "Úřad pro ochranu osobních údajů mi na žádost sdělil, že obec Prštice 25. 5. 2018 ohlásila jako společného pověřence pro ochranu osobních údajů pro obec i základní a mateřskou školu Mgr. Radovana Vrbku a jiné oznámení od té doby neučinila. Pověřenec je tedy od roku 2018 tatáž osoba. Kdo je příjemcem měsíčních plateb 27 225 Kč, obec dál nesdělila.",
+   "odkaz": "index.html#p-gdpr"
+  },
+  {
+   "datum": "2026-09-14",
+   "text": "Na upozornění občana, který zná místní souvislosti, jsem upřesnil přehled dotací přes MAS Bobrava. Obec Omice jsem původně vedl s nulou. Omice ale mají přidělenou dotaci 400 000 Kč na naučné tabule a altány z výzvy MAS z roku 2025. Při ověřování jsem do přehledu zahrnul i další projekty, které na mapě podpořených projektů MAS nejsou – většinou jde o dotace už přidělené, ale zatím nevyplacené. Tabulka má nově 132 projektů za 69,7 mil. Kč a celkový obraz je tak přesnější. Prštice jsou jedinou obcí v tabulce bez projektu.",
+   "odkaz": "index.html#mas-cisla"
+  },
+  {
+   "datum": "2026-09-14",
+   "text": "Doplnil jsem srovnání k místním akčním skupinám. V okrese Brno-venkov je mimo MAS šest ze 187 obcí a Prštice jsou mezi nimi jediná obec nad 500 obyvatel. Ostatních pět má 66 až 314 obyvatel. Nově je u MAS Bobrava i přehled všech jedenácti projektů na chodníky, přechody a stezky za 32,5 mil. Kč.",
+   "odkaz": "index.html#mas-cisla"
+  },
+  {
+   "datum": "2026-09-14",
+   "text": "Upřesnil jsem údaje o dotaci ministerstva na opravy místních komunikací. Z výzvy 2019 získaly peníze také Radostice, Ostopovice a Moravany. Doplnil jsem, které obce žádaly neúspěšně a že pro rok 2026 ministerstvo výzvu nevyhlásilo.",
+   "odkaz": "index.html#vozovky"
+  },
+  {
    "datum": "2026-09-06",
    "text": "Doplnil jsem srovnání výdajů na konzultační, poradenské a právní služby (rozpočtová položka 5166) s obcemi okresu Brno-venkov, které mají 700–1 500 obyvatel. Za roky 2022–2025 vydaly Prštice z těchto 63 obcí nejvíc — 2 397 tis. Kč proti mediánu ostatních 325 tis. Kč. U částky je nově uvedeno, komu podle sdělení obce směřuje a na základě jakého usnesení zastupitelstva.",
    "odkaz": "rizeni.html#okres-h"
   },
   {
    "datum": "2026-09-04",
-   "text": "Obec odpověděla na žádost z 1. 7. 2026, kterou jí krajský úřad přikázal vyřídit (č. j. OUPR-1132/2026). Ptal jsem se na smlouvy, faktury a rozsah plnění u tří položek — právní služby, pověřenec GDPR a nájem jeřábu. Žádný z těchto dokladů obec nedoložila. Odpověď opakuje dřívější vysvětlení; doplnila IČO advokáta, dodavatele jeřábu a usnesení k pronájmu. U pověřence GDPR obec dodavatele nejmenuje ani nyní.",
+   "text": "Obec odpověděla na žádost z 1. 7. 2026, kterou jí krajský úřad přikázal vyřídit (č. j. OUPR-1132/2026). Ptal jsem se na smlouvy, dodavatele, výkazy práce a rozsah plnění u tří položek — právní služby, pověřenec GDPR a nájem jeřábu. Žádný z těchto dokladů obec nedoložila. Odpověď opakuje dřívější vysvětlení; doplnila IČO advokáta, dodavatele jeřábu a usnesení k pronájmu. U pověřence GDPR obec dodavatele nejmenuje ani nyní.",
    "odkaz": "dokumenty/2026-09-04_odpoved-obce-OUPR-1132-2026.pdf"
   },
   {
@@ -58,7 +83,7 @@
   },
   {
    "datum": "2026-08-19",
-   "text": "Krajský úřad JMK přikázal obci vyřídit žádost o faktury a výkazy k právním službám. Proti rozhodnutí není odvolání.",
+   "text": "Krajský úřad JMK přikázal obci vyřídit žádost o smlouvy a výkazy práce k právním službám, k pověřenci GDPR a k nájmu jeřábu. Proti rozhodnutí není odvolání.",
    "odkaz": "index.html#p-pravni"
   },
   {

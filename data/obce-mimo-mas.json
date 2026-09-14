@@ -1,0 +1,99 @@
+{
+ "_navod": [
+  "Obce, které nejsou v žádné místní akční skupině (MAS). Zdroj příslušnosti a obyvatel: ČSÚ – Data pro místní akční skupiny, aktualizace 30. 6. 2026, obyvatelé k 31. 12. 2025 (proto se u Prštic liší od stavu k 1. 1. 2025 jinde na webu).",
+  "Zařazení obcí Jihomoravského kraje ověřeno na seznamech obcí okolních MAS z let 2023–2026 (13. 9. 2026). Sousední obce: ČÚZK RÚIAN (dotyk hranic obcí). Podklad: 0_Projects/4_PRŠTICE/2026_09_13 Obce mimo MAS - průzkum."
+ ],
+ "okres": {
+  "nazev": "Brno-venkov",
+  "obci": 187,
+  "mimo_mas": 6,
+  "obci_500_1500": 82,
+  "mimo_mas_500_1500": 1
+ },
+ "kraj": {
+  "nazev": "Jihomoravský",
+  "obci": 673,
+  "mimo_mas": 23,
+  "mimo_mas_mohly": 20,
+  "nesmi": [
+   "Brno",
+   "Znojmo",
+   "vojenský újezd Březina"
+  ],
+  "obci_900_1100": 53,
+  "mimo_mas_900_1100": 1
+ },
+ "obce_okresu": [
+  {
+   "obec": "Prštice",
+   "kod": "583707",
+   "orp": "Šlapanice",
+   "obyvatel": 989,
+   "sousedu_v_mas": 5,
+   "sousedu": 5,
+   "nase": true
+  },
+  {
+   "obec": "Horní Loučky",
+   "kod": "595667",
+   "orp": "Tišnov",
+   "obyvatel": 314,
+   "sousedu_v_mas": 5,
+   "sousedu": 6
+  },
+  {
+   "obec": "Křižínkov",
+   "kod": "595934",
+   "orp": "Tišnov",
+   "obyvatel": 229,
+   "sousedu_v_mas": 3,
+   "sousedu": 3
+  },
+  {
+   "obec": "Pernštejnské Jestřabí",
+   "kod": "596400",
+   "orp": "Tišnov",
+   "obyvatel": 216,
+   "sousedu_v_mas": 5,
+   "sousedu": 6
+  },
+  {
+   "obec": "Rojetín",
+   "kod": "596582",
+   "orp": "Tišnov",
+   "obyvatel": 83,
+   "sousedu_v_mas": 7,
+   "sousedu": 7
+  },
+  {
+   "obec": "Zálesná Zhoř",
+   "kod": "584193",
+   "orp": "Rosice",
+   "obyvatel": 66,
+   "sousedu_v_mas": 7,
+   "sousedu": 7
+  }
+ ],
+ "sousede_prstic": [
+  {
+   "obec": "Radostice",
+   "mas": "MAS Bobrava"
+  },
+  {
+   "obec": "Silůvky",
+   "mas": "MAS Bobrava"
+  },
+  {
+   "obec": "Ořechov",
+   "mas": "MAS Bobrava"
+  },
+  {
+   "obec": "Tetčice",
+   "mas": "MAS Brána Brněnska"
+  },
+  {
+   "obec": "Hlína",
+   "mas": "MAS Brána Brněnska"
+  }
+ ]
+}

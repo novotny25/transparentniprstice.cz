@@ -89,6 +89,7 @@ STRANKY = {                       # soubor -> {id bloku: název datového soubor
                         "d-temata": None, "d-vybrane": None, "d-518": None,
                         "d-dotace": "dotace-web.json",
                         "d-mas": "mas-bobrava.json",
+                        "d-obce-mimo-mas": "obce-mimo-mas.json",
                         "d-spolky": "spolky-okoli.json",
                         "d-obyvatele": "obyvatele.json"},
     "rizeni.html":     {"d-rizeni": "rizeni.json", "d-vybrane": None,
@@ -394,6 +395,63 @@ def renderuj_spolky(sp):
     return barh, tab
 
 
+def renderuj_mas(d):
+    """Statické HTML pro MAS Bobrava: řádky tabulky obcí a rozbalovací seznam
+    projektů doplněných nad rámec mapy MAS. Bez JavaScriptu."""
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", " ")
+    radky = []
+    for o in d["obce"]:
+        pozn = f' <span class="muted">({esc_html(o["pozn"])})</span>' if o.get("pozn") else ""
+        styl = ' style="font-weight:700"' if o.get("nase") else ""
+        radky.append(f'<tr{styl}><td>{esc_html(o["obec"])}{pozn}</td><td>{kcs(o["obyvatel"])}</td>'
+                     f'<td>{o["projektu"]}</td><td>{kcs(o["dotace_kc"])} Kč</td></tr>')
+    u = d["uzemi"]
+    radky.append(f'<tr style="border-top:2px solid var(--line);font-weight:700"><td>Celkem území ({u["obci"]} obcí)</td>'
+                 f'<td>—</td><td>{u["projektu"]}</td><td>{kcs(u["dotace_kc"])} Kč</td></tr>')
+    dopl = d.get("doplnene_projekty", [])
+    polozky = []
+    for p in dopl:
+        sidlo = " (podle sídla žadatele)" if p["obec_podle"] == "sídlo žadatele" else ""
+        polozky.append(f'<tr><td style="text-align:left">{esc_html(p["obec"])}<small>{sidlo}</small></td><td style="text-align:left">{esc_html(p["projekt"])}<br>'
+                       f'<small>{esc_html(p["zadatel"])} · {esc_html(p["vyzva"])}</small></td>'
+                       f'<td style="white-space:nowrap">{kcs(p["dotace_kc"])} Kč</td>'
+                       f'<td><a href="{esc_html(bezpecny_href(p["zdroj"]))}">{esc_html(p["stav"])}</a></td></tr>')
+    soucet = sum(p["dotace_kc"] for p in dopl)
+    seznam = (f'<details class="overit"><summary>Projekty doplněné nad rámec mapy MAS ({len(dopl)} projektů, '
+              f'{kcs(soucet)} Kč)</summary><div class="tblscroll"><table>'
+              '<thead><tr><th style="text-align:left">Obec</th><th style="text-align:left">Projekt a žadatel</th><th>Dotace</th><th>Stav (odkaz na doklad)</th></tr></thead>'
+              '<tbody>' + "".join(polozky) + '</tbody></table></div></details>')
+    return "".join(radky), seznam
+
+
+def renderuj_chodniky(d):
+    """Tabulka všech projektů MAS na bezpečnost chodců (IROP – Doprava). Bez JavaScriptu."""
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", "\u00a0")
+    ch = d.get("chodniky", [])
+    radky = "".join(f'<tr><td style="text-align:left">{esc_html(x["obec"])}</td><td style="text-align:left">{esc_html(x["projekt"])}</td>'
+                    f'<td style="white-space:nowrap">{kcs(x["dotace_kc"])}\u00a0Kč</td></tr>' for x in ch)
+    soucet = sum(x["dotace_kc"] for x in ch)
+    radky += (f'<tr style="border-top:2px solid var(--line);font-weight:700"><td style="text-align:left">Celkem</td>'
+              f'<td style="text-align:left">{len(ch)} projektů</td><td style="white-space:nowrap">{kcs(soucet)}\u00a0Kč</td></tr>')
+    return ('<div class="tblscroll" style="margin-top:12px"><table><thead><tr><th style="text-align:left">Obec</th>'
+            '<th style="text-align:left">Projekt</th><th>Dotace</th></tr></thead><tbody>' + radky + '</tbody></table></div>')
+
+
+def renderuj_obce_mimo_mas(o):
+    """Tabulka obcí okresu, které nejsou v žádné MAS. Bez JavaScriptu."""
+    def kcs(n):
+        return f"{int(round(n)):,}".replace(",", "\u00a0")
+    radky = ""
+    for x in o["obce_okresu"]:
+        styl = ' style="font-weight:700"' if x.get("nase") else ""
+        radky += (f'<tr{styl}><td style="text-align:left">{esc_html(x["obec"])}</td><td>{kcs(x["obyvatel"])}</td>'
+                  f'<td>{x["sousedu_v_mas"]} z {x["sousedu"]}</td></tr>')
+    return ('<div class="tblscroll" style="margin-top:12px"><table><thead><tr><th style="text-align:left">Obec</th>'
+            '<th>Obyvatel (31.\u00a012.\u00a02025)</th><th>Sousedních obcí v MAS</th></tr></thead><tbody>' + radky + '</tbody></table></div>')
+
+
 def vloz(html, blok_id, data):
     vzor = re.compile(r'(<script type="application/json" id="%s">)(.*?)(</script>)' % re.escape(blok_id), re.S)
     if not vzor.search(html):
@@ -503,6 +561,20 @@ def main():
                 html = re.sub(r"<!--spolky-tab-start-->.*?<!--spolky-tab-konec-->",
                               "<!--spolky-tab-start-->" + tab + "<!--spolky-tab-konec-->", html, flags=re.S)
                 vlozeno.append("spolky (statické HTML)")
+            # MAS Bobrava: tabulka obcí a doplněné projekty staticky
+            if blok_id == "d-mas":
+                tab, seznam = renderuj_mas(data)
+                html = re.sub(r"<!--mas-tab-start-->.*?<!--mas-tab-konec-->",
+                              lambda m: "<!--mas-tab-start-->" + tab + "<!--mas-tab-konec-->", html, flags=re.S)
+                html = re.sub(r"<!--mas-doplnene-start-->.*?<!--mas-doplnene-konec-->",
+                              lambda m: "<!--mas-doplnene-start-->" + seznam + "<!--mas-doplnene-konec-->", html, flags=re.S)
+                html = re.sub(r"<!--chodniky-start-->.*?<!--chodniky-konec-->",
+                              lambda m: "<!--chodniky-start-->" + renderuj_chodniky(data) + "<!--chodniky-konec-->", html, flags=re.S)
+                vlozeno.append("MAS Bobrava (statické HTML)")
+            if blok_id == "d-obce-mimo-mas":
+                html = re.sub(r"<!--mimo-mas-start-->.*?<!--mimo-mas-konec-->",
+                              lambda m: "<!--mimo-mas-start-->" + renderuj_obce_mimo_mas(data) + "<!--mimo-mas-konec-->", html, flags=re.S)
+                vlozeno.append("obce mimo MAS (statické HTML)")
             # právní a poradenské služby v okrese: věta a tabulka staticky
             if blok_id == "d-pravni-okres":
                 veta, tab = renderuj_pravni_okres(data)

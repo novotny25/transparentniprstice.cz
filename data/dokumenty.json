@@ -1,12 +1,12 @@
 {
  "meta": {
   "poznamka": "Veřejné anonymizované deriváty. Odstraněny: adresa, ID datové schránky, datum narození, rodné číslo, soukromý e-mail a telefon. Text je z dokumentu skutečně odstraněn, nejen překryt.",
-  "vygenerovano": "2026-09-04 18:24"
+  "vygenerovano": "2026-09-14 19:02"
  },
  "dokumenty": [
   {
    "soubor": "2026-07-01_zadost_detail-smluv-518.pdf",
-   "popis": "Žádost o smlouvy, faktury a výkazy práce k vybraným položkám účtu 518",
+   "popis": "Žádost o smlouvy, dodavatele a výkazy práce k vybraným položkám účtu 518",
    "stran": 5,
    "velikost_kb": 314,
    "sha256": "d73bd2ae33fd74ba"
@@ -101,6 +101,20 @@
    "stran": 2,
    "velikost_kb": 122,
    "sha256": "f6ef6b76ac2fdd2d"
+  },
+  {
+   "soubor": "2026-09-04_zadost-UOOU-poverenec.pdf",
+   "popis": "Žádost Úřadu pro ochranu osobních údajů — kdo byl ohlášen jako pověřenec obce a školy",
+   "stran": 2,
+   "velikost_kb": 47,
+   "sha256": "e16d483cb6a993d8"
+  },
+  {
+   "soubor": "2026-09-14_odpoved-UOOU-poverenec.pdf",
+   "popis": "Sdělení Úřadu pro ochranu osobních údajů — pověřenec obce a školy ohlášený 25. 5. 2018",
+   "stran": 3,
+   "velikost_kb": 223,
+   "sha256": "be8962246aa3a043"
   }
  ]
 }

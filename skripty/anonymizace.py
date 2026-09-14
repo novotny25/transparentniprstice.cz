@@ -52,7 +52,7 @@ VZORY = [
 DOKUMENTY = [
     (f"{PACT}/2026_07_28 Opatření proti nečinnosti KrÚ JMK/Priloha_1_Zadost_o_informace_2026-07-01.pdf",
      "2026-07-01_zadost_detail-smluv-518.pdf",
-     "Žádost o smlouvy, faktury a výkazy práce k vybraným položkám účtu 518"),
+     "Žádost o smlouvy, dodavatele a výkazy práce k vybraným položkám účtu 518"),
     (f"{PACT}/2026_07_17 Stížnost 16a a nová žádost 518/2026_07_17_Stiznost_16a_ucet_518.pdf",
      "2026-07-17_stiznost-16a.pdf",
      "Stížnost na postup obce při vyřizování žádosti (§ 16a InfZ)"),
@@ -92,6 +92,12 @@ DOKUMENTY = [
     (f"{PACT}/2026_09_04 Odpoved obce po rozhodnuti KrU/2026_09_03_Odpoved_obce_OUPR-1132-2026.pdf",
      "2026-09-04_odpoved-obce-OUPR-1132-2026.pdf",
      "Sdělení obce Prštice po rozhodnutí kraje — právní služby, pověřenec GDPR a nájem jeřábu"),
+    (f"{PACT}/2026_09_04 Zadost UOOU poverenec GDPR/2026_09_04_Zadost_106_UOOU_poverenec.pdf",
+     "2026-09-04_zadost-UOOU-poverenec.pdf",
+     "Žádost Úřadu pro ochranu osobních údajů — kdo byl ohlášen jako pověřenec obce a školy"),
+    (f"{PACT}/2026_09_04 Zadost UOOU poverenec GDPR/2026_09_14_Odpoved_UOOU_UOOU-06364-26-3.pdf",
+     "2026-09-14_odpoved-UOOU-poverenec.pdf",
+     "Sdělení Úřadu pro ochranu osobních údajů — pověřenec obce a školy ohlášený 25. 5. 2018"),
 ]
 
 

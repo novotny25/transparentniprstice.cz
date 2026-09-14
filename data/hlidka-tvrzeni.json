@@ -17,7 +17,7 @@
       "datum_kontroly": "2026-09-10",
       "otazka": "Došel už od obce rozpis účtu 511 (žádost z 25. 8. 2026, lhůta do 9. 9. 2026)?",
       "co_udelat": "Když došel — nahradit větu tím, co obec doložila, a doplnit rozbor. Když nedošel — přepsat na „lhůta marně uplynula“, doplnit chronologii a zvážit stížnost podle § 16a.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "ucet-511-cekame",
@@ -27,7 +27,7 @@
       "datum_kontroly": "2026-09-10",
       "otazka": "Platí ještě štítek „Odpověď čekáme do 9. září“ u karty o účtu 511?",
       "co_udelat": "Přepsat štítek podle skutečnosti — buď „doloženo“, nebo „lhůta uplynula“.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "ucet-511-zakonna-lhuta",
@@ -37,7 +37,7 @@
       "datum_kontroly": "2026-09-10",
       "otazka": "Lhůta k účtu 511 uplynula — je text v rozboru pořád v přítomném čase („běží“)?",
       "co_udelat": "Přepsat z „běží do“ na minulý čas a doplnit, co se stalo.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "ucet-511-co-bude-dal",
@@ -47,7 +47,7 @@
       "datum_kontroly": "2026-09-10",
       "otazka": "Sekce „Co bude dál“ u žádosti o účet 511 — je aktuální?",
       "co_udelat": "Doplnit, jak žádost dopadla.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "srovnani-pripravujeme",
@@ -65,8 +65,8 @@
       "stranka": "rizeni.html",
       "citace": "",
       "typ": "probihajici_rizeni",
-      "datum_kontroly": "2026-09-09",
-      "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti z 1. 9. 2026, nebo ji předložila krajskému úřadu?",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti z 1. 9. 2026, nebo ji předložila krajskému úřadu? (14. 9. 2026: obec do uplynutí 7denní lhůty nevyhověla, zda stížnost předložila kraji, není známo; připraveno podání kraji podle § 80 SŘ.)",
       "co_udelat": "Po odeslání: spustit připravený krok „stiznosti-na-web“ (viz složka 2026_09_02 Stížnosti 16a). Pokud se odeslání odložilo, posunout datum v HTML stížností a přegenerovat PDF.",
       "vyrizeno": false
     },
@@ -115,7 +115,7 @@
       "stranka": "index.html",
       "citace": "U tří z nich stále čekám na podklady od obce",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
+      "datum_kontroly": "2026-09-25",
       "otazka": "Pořád čekáte na podklady u všech tří ze tří položek „pod lupou“?",
       "co_udelat": "Upravit počet podle skutečnosti — nebo větu odstranit, až budou podklady všechny.",
       "vyrizeno": false
@@ -125,8 +125,8 @@
       "stranka": "index.html",
       "citace": "obec mi příjemce přes opakované žádosti nepotvrdila",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Doložila obec rámcovou smlouvu a dodavatele pověřence GDPR? (jméno pověřence je veřejné v povinných informacích obce — Mgr. Radovan Vrbka)",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Doložila obec rámcovou smlouvu a příjemce plateb za pověřence GDPR? (ÚOOÚ 14. 9. 2026 potvrdil ohlášeného pověřence Mgr. Radovana Vrbku od 25. 5. 2018; příjemce plateb obec nesdělila)",
       "co_udelat": "Doplnit sekci „Co zatím nevíme“ o to, co dorazilo, a vyrovnat se s vysvětlením obce.",
       "vyrizeno": false
     },
@@ -164,10 +164,10 @@
     {
       "id": "pravni-brzy-dolozi",
       "stranka": "index.html",
-      "citace": "Faktury, smlouvu ani výkazy práce nedoložila",
+      "citace": "Smlouvu ani výkazy práce nedoložila",
       "typ": "cekame_na_odpoved",
       "datum_kontroly": "2026-09-30",
-      "otazka": "Doložila obec faktury, smlouvu a výkazy práce k právním službám? Podal jsem novou stížnost § 16a nebo žalobu?",
+      "otazka": "Doložila obec smlouvu a výkazy práce k právním službám? Jak dopadla nová stížnost § 16a (připravena 14. 9. 2026)?",
       "co_udelat": "Po doložení nahradit doloženým obsahem; při marné lhůtě přepsat podle skutečnosti.",
       "vyrizeno": false
     },
@@ -186,8 +186,8 @@
       "stranka": "index.html",
       "citace": "Podána stížnost § 16a",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti (do 9. 9. 2026), nebo předložila stížnost krajskému úřadu?",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Vyhověla obec do 7 dnů od doručení stížnosti (do 9. 9. 2026), nebo předložila stížnost krajskému úřadu? (14. 9. 2026: obec do uplynutí 7denní lhůty nevyhověla, zda stížnost předložila kraji, není známo; připraveno podání kraji podle § 80 SŘ.)",
       "co_udelat": "Po odpovědi aktualizovat sekci GDPR a štítek; jinak stížnost dle § 16a.",
       "vyrizeno": false
     },
@@ -196,7 +196,7 @@
       "stranka": "index.html",
       "citace": "zveřejním je zde — včetně dodavatelů",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
+      "datum_kontroly": "2026-09-25",
       "otazka": "Došel rozpis účtu 511? Rozbor slibuje, že data zveřejníme včetně dodavatelů.",
       "co_udelat": "Po doložení zpracovat kapitolu 511 a rozcestník přepsat na hotové.",
       "vyrizeno": false
@@ -206,7 +206,7 @@
       "stranka": "index.html",
       "citace": "Rozpis jsem si vyžádal",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-10",
+      "datum_kontroly": "2026-09-25",
       "otazka": "Doručila obec rozpis účtu 511, o který jsem požádal 25. 8. 2026?",
       "co_udelat": "Po doložení nahradit odkazem na novou kapitolu 511.",
       "vyrizeno": false
@@ -309,14 +309,14 @@
       "datum_kontroly": "2026-09-10",
       "otazka": "Milníky 5. 9. a 9. 9. v chronologii nastaly — proměnit „budoucí“ záznamy na skutečnost.",
       "co_udelat": "Přepsat záznamy v chronologie.json podle toho, co obec doložila či nedoložila.",
-      "vyrizeno": false
+      "vyrizeno": true
     },
     {
       "id": "zadosti-stav-ke-dni",
       "stranka": "jak-to-vime.html",
       "citace": "",
       "typ": "relativni_cas",
-      "datum_kontroly": "2026-09-10",
+      "datum_kontroly": "2026-09-25",
       "otazka": "„Stav ke dni“ v přehledu žádostí je z 28. 8. — po zářijových lhůtách aktualizovat.",
       "co_udelat": "Aktualizovat zadosti-106.json (stavy, meta) a spustit vlozit_data.py.",
       "vyrizeno": false
@@ -326,7 +326,7 @@
       "stranka": "jak-to-vime.html",
       "citace": "",
       "typ": "cekame_na_odpoved",
-      "datum_kontroly": "2026-09-11",
+      "datum_kontroly": "2026-09-25",
       "otazka": "Odpověděla obec na žádost o směrnici k zakázkám (z 26. 8., lhůta do 10. 9.)?",
       "co_udelat": "Aktualizovat stav žádosti; případně zpracovat směrnici do webu.",
       "vyrizeno": false
@@ -364,10 +364,10 @@
     {
       "id": "dvo-smernice-106",
       "stranka": "dobre-vedena-obec.html",
-      "citace": "vyžádal jsem si ji 26. 8. 2026 (lhůta 10. 9.)",
+      "citace": "do uplynutí lhůty 10. 9. 2026 obec neodpověděla",
       "typ": "relativni_cas",
-      "datum_kontroly": "2026-09-11",
-      "otazka": "Poskytla obec směrnici pro zakázky malého rozsahu (žádost z 26. 8. 2026)?",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Poskytla obec směrnici pro zakázky malého rozsahu (žádost z 26. 8. 2026, lhůta uplynula 10. 9. bez odpovědi)? Byla podána stížnost § 16a a jak dopadla?",
       "co_udelat": "Poskytnuto → anonymizovat, zveřejnit v dokumentech a přepsat větu; neposkytnuto → stížnost § 16a a přepsat větu.",
       "vyrizeno": false
     },
@@ -406,8 +406,8 @@
       "stranka": "index.html",
       "citace": "lhůta uplynula 31. 8., proto jsem 2. 9. podal stížnost podle § 16a",
       "typ": "relativni_cas",
-      "datum_kontroly": "2026-09-10",
-      "otazka": "Co obec udělala se stížností § 16a z 2. 9. 2026 (GDPR)? Vyhověla, nebo předložila KrÚ JMK?",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Co obec udělala se stížností § 16a z 2. 9. 2026 (GDPR)? Vyhověla, nebo předložila KrÚ JMK? (14. 9. 2026: obec do uplynutí 7denní lhůty nevyhověla, zda stížnost předložila kraji, není známo; připraveno podání kraji podle § 80 SŘ.)",
       "co_udelat": "Doplnit aktualitu i chronologii; upravit stav v zadosti-106.json a štítek u zjištění GDPR.",
       "vyrizeno": false
     },
@@ -470,6 +470,26 @@
       "datum_kontroly": "2027-02-15",
       "otazka": "Platí po aktualizaci dat pořád, že jsou Prštice první z 63 obcí (700–1 500 obyvatel) v položce 5166? Počet obcí ve skupině se může změnit s novým počtem obyvatel ČSÚ.",
       "co_udelat": "Přepsat číslovku a pořadí ve třech větách na index.html (spolky × 2, právní služby × 1) podle meta v data/pravni-okres.json; validace hlídá shodu s daty.",
+      "vyrizeno": false
+    },
+    {
+      "id": "mas-doplnene-nevyplaceno",
+      "stranka": "index.html",
+      "citace": "Většinou jde o dotace přiznané v roce 2025, zatím nevyplacené.",
+      "typ": "relativni_cas",
+      "datum_kontroly": "2026-12-15",
+      "otazka": "Doplnila MAS Bobrava na mapu podpořených projektů 19 projektů SZP výzvy č. 3 (vybráno 16. 5. 2025) a byly už vyplaceny? Který žadatel žádost stáhl? (ověřeno 14. 9. 2026: na mapě chybí, dohody SZIF v registru smluv, MAS k 23. 7. 2026 uvádí 5 proplacených a 1 staženou žádost)",
+      "co_udelat": "Stáhnout znovu mapu MAS (KML) a porovnat s data/mas-bobrava.json → doplnene_projekty; u vyplacených změnit stav, stažený projekt odebrat, přepočítat součty, mapu a text na webu.",
+      "vyrizeno": false
+    },
+    {
+      "id": "ucet-511-po-lhute",
+      "stranka": "index.html",
+      "citace": "zákonná lhůta pro vyřízení uplynula",
+      "typ": "cekame_na_odpoved",
+      "datum_kontroly": "2026-09-25",
+      "otazka": "Poskytla obec rozpis účtu 511 po uplynutí lhůty (9. 9. 2026), případně po stížnosti § 16a?",
+      "co_udelat": "Když došel — zpracovat kapitolu 511; když ne — doplnit stav stížnosti a rozhodnutí kraje.",
       "vyrizeno": false
     }
   ]

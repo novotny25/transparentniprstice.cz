@@ -410,7 +410,7 @@ def _kontrola_pravni_okres():
         FAIL("právní/dodavatel", "blok s dodavatelem na stránce chybí")
     else:
         b = dod.group(1)
-        for co in ("Mgr. Radovan Vrbka", "IČO 60653091", "Rašínova 103/2"):
+        for co in ("Mgr. Radovan Vrbka", "IČO 60353091", "Rašínova 103/2"):
             (OK if co in b else FAIL)("právní/dodavatel", f"blok uvádí {co}")
         for cislo in (p["ucet_518_pravni_2022_2025"], p["ucet_518_gdpr_2022_2025"]):
             (OK if f"{cislo:,}".replace(",", " ") in b else FAIL)(

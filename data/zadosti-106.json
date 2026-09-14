@@ -3,8 +3,8 @@
   "nazev": "Tracker žádostí o informace (zákon 106/1999 Sb.)",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-09-04",
-  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží: obec 4. 9. 2026 vyřídila žádost z 1. 7. 2026 slovním sdělením bez dokladů a čekají se odpovědi na žádosti z 25. a 26. 8. 2026 a vyřízení dvou stížností § 16a.",
+  "stav_ke_dni": "2026-09-14",
+  "upozorneni": "Seznam nemusí být úplný — část procesu stále běží: na žádosti z 25. a 26. 8. 2026 obec ve lhůtě neodpověděla a u dvou stížností § 16a z 1. a 2. 9. 2026 zatím není známo, zda je obec předložila krajskému úřadu.",
   "poznamka_pole": "„datum_podani“ a „datum_doruceni“ jsou oddělené údaje. „lhuta_do“ = zákonná lhůta pro vyřízení žádosti o informace (15 dnů od přijetí, § 14 odst. 5 písm. d zákona 106/1999 Sb.); připadne-li poslední den na sobotu, neděli nebo svátek, končí nejbližší pracovní den. „lhuta_overena“ říká, zda výpočet vychází z doloženého doručení. U stížnosti podle § 16a a u opatření proti nečinnosti běží jiná lhůta, proto se zde neuvádí.",
   "schvaluje": "Petr Novotný (finální seznam)",
   "zdroj": "Vlastní žádosti žadatele a kontrolní dokument lhůt (15. 8. 2026)"
@@ -52,7 +52,7 @@
    "stav": "vyřízeno slovním sdělením — doklady nedoloženy",
    "puvod_informace": "vlastní žádost",
    "zdroj": "složka 2026_07_01 Žádost o detail smluv na účtu 518; kontrola lhůt",
-   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026). Obec 4. 9. 2026 odpověděla sdělením č. j. OUPR-1132/2026: doplnila dodavatele jeřábu (STAVOS Brno) a IČO advokáta, faktury, smlouvu ani výkazy práce však nedoložila.",
+   "poznamka": "Obec 17. 7. doručila jen slovní sdělení č. j. OUPR-867-2026 bez dokumentů → podána stížnost. Krajský úřad JMK 19. 8. 2026 přikázal obci žádost vyřídit do 15 dnů (č. j. JMK 123854/2026). Obec 4. 9. 2026 odpověděla sdělením č. j. OUPR-1132/2026: doplnila dodavatele jeřábu (STAVOS Brno) a IČO advokáta, smlouvy ani výkazy práce však nedoložila.",
    "lhuta_do": "2026-07-16"
   },
   {
@@ -133,7 +133,7 @@
    "adresat": "Obec Prštice",
    "cj": null,
    "typ_podani": "žádost o informace",
-   "stav": "podáno",
+   "stav": "bez odpovědi ve lhůtě (lhůta uplynula 9. 9. 2026)",
    "puvod_informace": "vlastní žádost",
    "zdroj": "složka 2026_08_25 Žádost 106 účet 511 opravy",
    "poznamka": "Účet 511 dosáhl v roce 2022 částky 7,8 mil. Kč a dosud k němu nebyl vyžádán detail.",
@@ -148,7 +148,7 @@
    "adresat": "Obec Prštice",
    "cj": null,
    "typ_podani": "žádost o informace",
-   "stav": "podáno",
+   "stav": "bez odpovědi ve lhůtě (lhůta uplynula 10. 9. 2026)",
    "puvod_informace": "vlastní žádost",
    "zdroj": "složka 2026_08_26 Žádost o směrnici k zakázkám",
    "poznamka": "Navazuje na tři rozhodnutí ÚOHS o neuveřejnění smluv na profilu zadavatele — cílem je zjistit, zda má obec nastavená pravidla, která podobným pochybením předcházejí.",
@@ -158,15 +158,30 @@
    "datum_podani": "2026-09-01",
    "predmet": "Stížnost podle § 16a odst. 1 písm. c) InfZ — částečné vyřízení žádosti z 15. 8. 2026 o přehled soudních řízení (sp. zn. SP/106/2026)",
    "typ_podani": "stížnost § 16a",
-   "stav": "podána — obec má 7 dnů na vyhovění (autoremedura), poté předkládá krajskému úřadu",
+   "stav": "podána — lhůta obce pro vyhovění nebo předložení krajskému úřadu uplynula 8. 9. 2026; výsledek zatím není znám",
    "lhuta_do": "2026-09-08"
   },
   {
    "datum_podani": "2026-09-02",
    "predmet": "Stížnost podle § 16a odst. 1 písm. b) InfZ — nečinnost obce u žádosti ze 16. 8. 2026 o smlouvu s pověřencem GDPR",
    "typ_podani": "stížnost § 16a",
-   "stav": "podána — obec má 7 dnů na vyhovění (autoremedura), poté předkládá krajskému úřadu",
+   "stav": "podána — lhůta obce pro vyhovění nebo předložení krajskému úřadu uplynula 9. 9. 2026; výsledek zatím není znám",
    "lhuta_do": "2026-09-09"
+  },
+  {
+   "datum_podani": "2026-09-04",
+   "datum_doruceni": "2026-09-04",
+   "doklad_doruceni": "datová zpráva",
+   "lhuta_overena": true,
+   "predmet": "Kdo byl Úřadu pro ochranu osobních údajů ohlášen jako pověřenec obce Prštice a základní a mateřské školy od 25. 5. 2018",
+   "adresat": "Úřad pro ochranu osobních údajů",
+   "cj": "UOOU-06364/26-3",
+   "typ_podani": "žádost o informace",
+   "stav": "poskytnuto",
+   "puvod_informace": "vlastní žádost",
+   "zdroj": "složka 2026_09_04 Zadost UOOU poverenec GDPR",
+   "poznamka": "Úřad sdělením ze dne 11. 9. 2026 (doručeno 14. 9.) uvedl, že obec 25. 5. 2018 ohlásila jako společného pověřence pro obec i školu Mgr. Radovana Vrbku a jiné oznámení neučinila.",
+   "lhuta_do": "2026-09-21"
   }
  ]
 }

@@ -1,14 +1,18 @@
 {
  "_navod": [
-  "Zjištění k MAS Bobrava. Zdroj: 2026_09_02 Rešerše MAS Bobrava (145 odkazů, ověřeno 2. 9. 2026).",
+  "Zjištění k MAS Bobrava. Zdroj: 2026_09_02 Rešerše MAS Bobrava (145 odkazů, ověřeno 2. 9. 2026) a doplnění 14. 9. 2026.",
   "Částky jsou v Kč. 'obyvatel' je stav k 1. 1. 2025 podle ČSÚ; obce jsou spojeny kódem ČSÚ.",
-  "Součet řádků obcí = 65 230 788 Kč, součet území na mapě MAS = 65 230 789 Kč; rozdíl 1 Kč je ze zaokrouhlení haléřů. Tabulka musí obsahovat všech 13 obcí území + Prštice, jinak nesedí na řádek Celkem."
+  "Základ = mapa podpořených projektů MAS Bobrava (KML): 112 projektů, 96 429 008 Kč výdajů, 65 230 789 Kč dotací (součet řádků 65 230 788 Kč, rozdíl 1 Kč ze zaokrouhlení haléřů). Hodnoty z mapy jsou u obcí v projektu_mapa a dotace_mapa_kc.",
+  "Doplnění 14. 9. 2026: 20 projektů, které MAS vybrala a které na mapě chybí (seznamy vybraných žádostí všech výzev MAS porovnané s mapou): 19 projektů SZP výzvy č. 3 (výběr 16. 5. 2025) s dohodou SZIF v registru smluv – přiznáno, zatím většinou nevyplaceno, částka = maximální dotace podle dohody; 1 projekt PRV výzvy č. 2 (2018) – vyplaceno (odvozeno). Seznam v doplnene_projekty.",
+  "U 6 doplněných projektů spolků a podnikatelů místo realizace neuvádí dohoda ani MAS – přiřazeny obci podle sídla žadatele (obec_podle). Pořadí obcí se tím nemění.",
+  "Do součtů nejsou započteny projekty vybrané, ale nerealizované (7). Podle MAS jeden žadatel SZP výzvy č. 3 žádost stáhl, neuvedla který – součet může být nadsazený nejvýš o jeden projekt.",
+  "Jména fyzických osob se neuvádějí. uzemi = součet všech 13 obcí po doplnění.",
+  "chodniky = všech 11 projektů IROP – Doprava (bezpečnost chodců) z mapy podpořených projektů MAS Bobrava; dotace = schválená výše podle mapy, vydaje = výdaje celkem podle mapy. Součet dotací 32 502 977 Kč."
  ],
  "uzemi": {
   "obci": 13,
-  "projektu": 112,
-  "vydaje_kc": 96429008,
-  "dotace_kc": 65230789
+  "projektu": 132,
+  "dotace_kc": 69706440
  },
  "prispevek_kc_obyvatel": 25,
  "prispevek_prstice_kc": 24925,
@@ -17,78 +21,100 @@
    "kod": "583910",
    "obec": "Střelice",
    "obyvatel": 3283,
-   "projektu": 22,
-   "dotace_kc": 14907712
+   "projektu": 24,
+   "dotace_kc": 15888902,
+   "projektu_mapa": 22,
+   "dotace_mapa_kc": 14907712
   },
   {
    "kod": "584029",
    "obec": "Troubsko",
    "obyvatel": 2397,
-   "projektu": 18,
-   "dotace_kc": 9174628
+   "projektu": 20,
+   "dotace_kc": 9361835,
+   "projektu_mapa": 18,
+   "dotace_mapa_kc": 9174628
   },
   {
    "kod": "583596",
    "obec": "Ostopovice",
    "obyvatel": 1751,
-   "projektu": 7,
-   "dotace_kc": 8000430
+   "projektu": 9,
+   "dotace_kc": 8495358,
+   "projektu_mapa": 7,
+   "dotace_mapa_kc": 8000430
   },
   {
    "kod": "583413",
    "obec": "Moravany",
    "obyvatel": 3554,
-   "projektu": 9,
-   "dotace_kc": 7305704
+   "projektu": 11,
+   "dotace_kc": 7805804,
+   "projektu_mapa": 9,
+   "dotace_mapa_kc": 7305704
   },
   {
    "kod": "583561",
    "obec": "Ořechov",
    "obyvatel": 2915,
-   "projektu": 14,
-   "dotace_kc": 6967949
+   "projektu": 17,
+   "dotace_kc": 7395938,
+   "projektu_mapa": 14,
+   "dotace_mapa_kc": 6967949
   },
   {
    "kod": "583456",
    "obec": "Nebovidy",
    "obyvatel": 871,
-   "projektu": 13,
-   "dotace_kc": 6846441
+   "projektu": 15,
+   "dotace_kc": 7139369,
+   "projektu_mapa": 13,
+   "dotace_mapa_kc": 6846441
   },
   {
    "kod": "583740",
    "obec": "Radostice",
    "obyvatel": 789,
-   "projektu": 9,
-   "dotace_kc": 5839196
+   "projektu": 11,
+   "dotace_kc": 6085068,
+   "projektu_mapa": 9,
+   "dotace_mapa_kc": 5839196
   },
   {
    "kod": "584266",
    "obec": "Želešice",
    "obyvatel": 1959,
-   "projektu": 10,
-   "dotace_kc": 2081501
+   "projektu": 11,
+   "dotace_kc": 2169001,
+   "projektu_mapa": 10,
+   "dotace_mapa_kc": 2081501
   },
   {
    "kod": "583391",
    "obec": "Modřice",
    "obyvatel": 5755,
    "projektu": 2,
-   "dotace_kc": 1970736
+   "dotace_kc": 1970736,
+   "projektu_mapa": 2,
+   "dotace_mapa_kc": 1970736
   },
   {
    "kod": "583855",
    "obec": "Silůvky",
    "obyvatel": 853,
-   "projektu": 5,
-   "dotace_kc": 1157466
+   "projektu": 7,
+   "dotace_kc": 1615588,
+   "projektu_mapa": 5,
+   "dotace_mapa_kc": 1157466
   },
   {
    "kod": "583669",
    "obec": "Popůvky",
    "obyvatel": 1866,
-   "projektu": 2,
-   "dotace_kc": 579025
+   "projektu": 3,
+   "dotace_kc": 978841,
+   "projektu_mapa": 2,
+   "dotace_mapa_kc": 579025
   },
   {
    "kod": "582999",
@@ -96,15 +122,19 @@
    "obyvatel": 713,
    "projektu": 1,
    "dotace_kc": 400000,
-   "pozn": "v území, není členem spolku"
+   "pozn": "v území, není členem spolku",
+   "projektu_mapa": 1,
+   "dotace_mapa_kc": 400000
   },
   {
    "kod": "583545",
    "obec": "Omice",
    "obyvatel": 829,
-   "projektu": 0,
-   "dotace_kc": 0,
-   "pozn": "členská obec bez jediného projektu"
+   "projektu": 1,
+   "dotace_kc": 400000,
+   "pozn": "přiznáno 2025, nevyplaceno",
+   "projektu_mapa": 0,
+   "dotace_mapa_kc": 0
   },
   {
    "kod": "583707",
@@ -119,20 +149,297 @@
  "chodniky": [
   {
    "obec": "Nebovidy",
-   "projekt": "Stavební úpravy chodníku podél silnice III/15275",
+   "projekt": "chodník podél silnice III/15275",
    "vydaje_kc": 5176917,
    "dotace_kc": 4264379
   },
   {
+   "obec": "Ostopovice",
+   "projekt": "chodníky na ulici Branky",
+   "vydaje_kc": 5990691,
+   "dotace_kc": 4199300
+  },
+  {
+   "obec": "Střelice",
+   "projekt": "chodník od vlakové zastávky Střelice Dolní",
+   "vydaje_kc": 4513223,
+   "dotace_kc": 4140426
+  },
+  {
+   "obec": "Moravany",
+   "projekt": "chodníky u okružní křižovatky",
+   "vydaje_kc": 7965111,
+   "dotace_kc": 3761214
+  },
+  {
+   "obec": "Střelice",
+   "projekt": "chodníky na ulici Antonína Smutného, II. etapa",
+   "vydaje_kc": 6016910,
+   "dotace_kc": 3325000
+  },
+  {
+   "obec": "Troubsko",
+   "projekt": "chodník na ulici U Dráhy",
+   "vydaje_kc": 2999999,
+   "dotace_kc": 2849999
+  },
+  {
+   "obec": "Ostopovice",
+   "projekt": "zvýšení bezpečnosti chodců",
+   "vydaje_kc": 2615538,
+   "dotace_kc": 2484761
+  },
+  {
    "obec": "Radostice",
-   "projekt": "Chodníky na ulici Prostřední",
+   "projekt": "chodníky na ulici Prostřední",
+   "vydaje_kc": 2572013,
    "dotace_kc": 2443412
   },
   {
+   "obec": "Radostice",
+   "projekt": "stezka pro chodce a cyklisty do Ořechova",
+   "vydaje_kc": 2449132,
+   "dotace_kc": 2326675
+  },
+  {
+   "obec": "Střelice",
+   "projekt": "chodník k lávce",
+   "vydaje_kc": 1692432,
+   "dotace_kc": 1607811
+  },
+  {
    "obec": "Ořechov",
-   "projekt": "Přechod pro chodce",
+   "projekt": "přechod pro chodce na ulici Jeřábkova, I. etapa",
+   "vydaje_kc": 1430093,
    "dotace_kc": 1100000
   }
  ],
- "dotace_pct": 95
+ "dotace_pct": 95,
+ "uzemi_mapa": {
+  "projektu": 112,
+  "vydaje_kc": 96429008,
+  "dotace_kc": 65230789
+ },
+ "doplnene_projekty": [
+  {
+   "obec": "Moravany",
+   "kod": "583413",
+   "zadatel": "SK TROOPERS z.s.",
+   "projekt": "Materiální vybavení spolku",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 279600,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35599513"
+  },
+  {
+   "obec": "Moravany",
+   "kod": "583413",
+   "zadatel": "fyzická osoba (podnikatel)",
+   "projekt": "Rozvoz zboží",
+   "vyzva": "PRV výzva č. 2 (2018)",
+   "dotace_kc": 220500,
+   "stav": "vyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://www.hlidacstatu.cz/Dotace/Detail/DeMinimis-34F8E8E51AEBB8179F0C20ABED3689D904ECD58BF234410E5A00D8AA5F916373"
+  },
+  {
+   "obec": "Nebovidy",
+   "kod": "583456",
+   "zadatel": "Obec Nebovidy",
+   "projekt": "Venkovní fitness",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 200000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35050441"
+  },
+  {
+   "obec": "Nebovidy",
+   "kod": "583456",
+   "zadatel": "Spolek Kopec na Slunečné",
+   "projekt": "Vybavení pro pořádání venkovních kulturních a sportovních akcí",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 92928,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35351457"
+  },
+  {
+   "obec": "Omice",
+   "kod": "583545",
+   "zadatel": "Obec Omice",
+   "projekt": "Naučné tabule a altány",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 400000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35604969"
+  },
+  {
+   "obec": "Ostopovice",
+   "kod": "583596",
+   "zadatel": "Obec Ostopovice",
+   "projekt": "Vyhlídková plošina, venkovní mobiliář",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 334928,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/36101149"
+  },
+  {
+   "obec": "Ostopovice",
+   "kod": "583596",
+   "zadatel": "Mateřská škola a Základní škola, Ostopovice, okres Brno - venkov, příspěvková organizace",
+   "projekt": "Obnova dřevěných teras v zahradě MŠ a ZŠ Ostopovice",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 160000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35351433"
+  },
+  {
+   "obec": "Ořechov",
+   "kod": "583561",
+   "zadatel": "fyzická osoba (podnikatel)",
+   "projekt": "Sklad vína",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 218901,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/34840905"
+  },
+  {
+   "obec": "Ořechov",
+   "kod": "583561",
+   "zadatel": "Český svaz včelařů, z.s., základní organizace Ořechov",
+   "projekt": "Schodiště ve Včelařském areálu Ořechov",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 121000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35537281"
+  },
+  {
+   "obec": "Ořechov",
+   "kod": "583561",
+   "zadatel": "SH ČMS - Sbor dobrovolných hasičů Ořechov",
+   "projekt": "Vybavení pro kulturní a společenské akce",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 88088,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35176369"
+  },
+  {
+   "obec": "Popůvky",
+   "kod": "583669",
+   "zadatel": "Obec Popůvky",
+   "projekt": "Rekonstrukce školní zahrady",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 399816,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35726245"
+  },
+  {
+   "obec": "Radostice",
+   "kod": "583740",
+   "zadatel": "Základní škola a Mateřská škola Radostice, okres Brno-venkov, příspěvková organizace",
+   "projekt": "Venkovní učebna ZŠ a MŠ Radostice",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 158752,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35647201"
+  },
+  {
+   "obec": "Radostice",
+   "kod": "583740",
+   "zadatel": "Tělocvičná jednota Sokol Radostice",
+   "projekt": "Nové židle pro kulturní a společenské akce",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 87120,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/36952553"
+  },
+  {
+   "obec": "Silůvky",
+   "kod": "583855",
+   "zadatel": "Základní škola a Mateřská škola Silůvky, okres Brno - venkov, příspěvková organizace",
+   "projekt": "Úprava venkovních prostor",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 360000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/36626541"
+  },
+  {
+   "obec": "Silůvky",
+   "kod": "583855",
+   "zadatel": "YMCA SKAUT",
+   "projekt": "Nákup materiálu pro skautskou činnost v obci Silůvky u Brna",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 98122,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35726257"
+  },
+  {
+   "obec": "Střelice",
+   "kod": "583910",
+   "zadatel": "Obec Střelice",
+   "projekt": "Polní cesta C20, Střelice",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 800000,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/34430673"
+  },
+  {
+   "obec": "Střelice",
+   "kod": "583910",
+   "zadatel": "Základní škola a Mateřská škola Střelice, okres Brno-venkov, příspěvková organizace",
+   "projekt": "Venkovní odpočinková zóna školy",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 181190,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35465961"
+  },
+  {
+   "obec": "Troubsko",
+   "kod": "584029",
+   "zadatel": "Římskokatolická farnost Troubsko",
+   "projekt": "Opravy a pořízení mobiliáře v rámci 1. etapy revitalizace farní zahrady v Troubsku",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 105344,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35415761"
+  },
+  {
+   "obec": "Troubsko",
+   "kod": "584029",
+   "zadatel": "Podskalák, z.s.",
+   "projekt": "Rekonstrukce altánu pro kulturní akce, nákup pivních setů",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 81863,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "místo realizace",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35665669"
+  },
+  {
+   "obec": "Želešice",
+   "kod": "584266",
+   "zadatel": "fyzická osoba (zemědělec)",
+   "projekt": "Pořízení zemědělské plachtové haly ke skladování",
+   "vyzva": "SZP výzva č. 3 (2025)",
+   "dotace_kc": 87500,
+   "stav": "přiznáno, zatím nevyplaceno",
+   "obec_podle": "sídlo žadatele",
+   "zdroj": "https://smlouvy.gov.cz/smlouva/35210145"
+  }
+ ]
 }

@@ -3,8 +3,8 @@
   "nazev": "Chronologie občanské datové analýzy hospodaření obce Prštice",
   "obec": "Prštice",
   "ico": "00282405",
-  "stav_ke_dni": "2026-09-04",
-  "upozorneni": "Osa se průběžně doplňuje. Obec 4. 9. 2026 odpověděla na žádost, kterou jí přikázal vyřídit krajský úřad — slovním sdělením bez dokladů. Čekají se odpovědi na žádosti z 25. a 26. 8. 2026 a vyřízení dvou stížností § 16a.",
+  "stav_ke_dni": "2026-09-14",
+  "upozorneni": "Osa se průběžně doplňuje. Na žádosti z 25. a 26. 8. 2026 obec ve lhůtě neodpověděla; u stížností § 16a z 1. a 2. 9. 2026 zatím není známo, zda je obec předložila krajskému úřadu.",
   "poznamka": "Jde o občanskou datovou analýzu hospodaření, nikoli o audit. Odkazy na sanitizované dokumenty přibudou v kroku strojové anonymizace (PLAN 2.5).",
   "zdroj": "Vlastní žádosti žadatele, kontrolní dokument lhůt (15. 8. 2026), veřejné zdroje (MONITOR, Sbírka rozhodnutí ÚOHS)."
  },
@@ -112,7 +112,7 @@
    "datum": "2026-08-19",
    "typ": "rozhodnutí",
    "titulek": "Krajský úřad přikázal obci žádost vyřídit",
-   "popis": "Krajský úřad Jihomoravského kraje rozhodl o stížnosti ze 17. 7. 2026 tak, že obci Prštice přikázal vyřídit žádost o informace z 1. 7. 2026 ve lhůtě do 15 dnů od doručení rozhodnutí. Šlo o faktury, smlouvy a výkazy práce k právním službám, ke službám pověřence GDPR a k nájmu stavebního jeřábu. Proti rozhodnutí se nelze odvolat.",
+   "popis": "Krajský úřad Jihomoravského kraje rozhodl o stížnosti ze 17. 7. 2026 tak, že obci Prštice přikázal vyřídit žádost o informace z 1. 7. 2026 ve lhůtě do 15 dnů od doručení rozhodnutí. Šlo o smlouvy, dodavatele a výkazy práce k právním službám, ke službám pověřence GDPR a k nájmu stavebního jeřábu. Proti rozhodnutí se nelze odvolat.",
    "cj": "JMK 123854/2026 (sp. zn. S-JMK 113937/2026 OKP)",
    "puvod_informace": "rozhodnutí nadřízeného orgánu",
    "dokument": null
@@ -175,19 +175,46 @@
    "datum": "2026-09-04",
    "typ": "odpověď",
    "titulek": "Obec po příkazu kraje zopakovala červencovou odpověď, doklady nedoložila",
-   "popis": "Sdělení č. j. OUPR-1132/2026 ze dne 3. 9. 2026, doručeno 4. 9. 2026, vydané v souladu s rozhodnutím Krajského úřadu JMK č. j. JMK 123854/2026. Odpověď opakuje dřívější vysvětlení; doplnila IČO advokáta (60653091), dodavatele jeřábu STAVOS Brno, a. s. (IČO 65277911) a usnesení č. 189/2021/Z17 ze dne 24. 6. 2021, kterým zastupitelstvo pronájem jeřábu schválilo. Rámcovou smlouvu, faktury ani výkazy práce obec nedoložila u žádné ze tří položek a rozsah plnění pověřence GDPR nerozvedla s odkazem na to, že jej stanoví evropské nařízení. Obec uvádí, že požadované informace už poskytla a že jejich rozšiřující výklad není v její gesci. V závěru sděluje, že od 4. 6. 2026 eviduje osm žádostí, odkazuje na § 11a InfZ o ochraně před zneužitím práva na informace a vyzývá k zvážení nutnosti dalších žádostí.",
+   "popis": "Sdělení č. j. OUPR-1132/2026 ze dne 3. 9. 2026, doručeno 4. 9. 2026, vydané v souladu s rozhodnutím Krajského úřadu JMK č. j. JMK 123854/2026. Odpověď opakuje dřívější vysvětlení; uvedla IČO advokáta 60653091 (v registru ARES neexistuje, správně 60353091), dodavatele jeřábu STAVOS Brno, a. s. (IČO 65277911) a usnesení č. 189/2021/Z17 ze dne 24. 6. 2021, kterým zastupitelstvo pronájem jeřábu schválilo. Rámcovou smlouvu ani výkazy práce obec nedoložila u žádné ze tří položek a rozsah plnění pověřence GDPR nerozvedla s odkazem na to, že jej stanoví evropské nařízení. Obec uvádí, že požadované informace už poskytla a že jejich rozšiřující výklad není v její gesci. V závěru sděluje, že od 4. 6. 2026 eviduje osm žádostí, odkazuje na § 11a InfZ o ochraně před zneužitím práva na informace a vyzývá k zvážení nutnosti dalších žádostí.",
    "cj": "OUPR-1132/2026 (sp. zn. SP/101/2026)",
    "puvod_informace": "vyřízení obce",
    "dokument": "dokumenty/2026-09-04_odpoved-obce-OUPR-1132-2026.pdf"
   },
   {
+   "datum": "2026-09-04",
+   "typ": "žádost 106",
+   "titulek": "Žádost Úřadu pro ochranu osobních údajů o ohlášeného pověřence",
+   "popis": "Protože obec nesdělila, kdo pověřenectví vykonává a od kdy, požádal jsem Úřad pro ochranu osobních údajů o údaje, které mu obec a škola ohlásily podle čl. 37 odst. 7 GDPR od 25. 5. 2018.",
+   "cj": null,
+   "puvod_informace": "žádost dle zákona 106/1999 Sb.",
+   "dokument": "dokumenty/2026-09-04_zadost-UOOU-poverenec.pdf"
+  },
+  {
    "datum": "2026-09-09",
-   "typ": "milník (budoucí)",
-   "titulek": "Očekávaná odpověď na rozpis účtu 511",
-   "popis": "Uplyne 15denní zákonná lhůta pro vyřízení žádosti z 25. 8. 2026 o rozpis účtu 511 „Opravy a udržování“.",
+   "typ": "milník",
+   "titulek": "Lhůta pro rozpis účtu 511 uplynula bez odpovědi",
+   "popis": "Uplynula 15denní zákonná lhůta pro vyřízení žádosti z 25. 8. 2026 o rozpis účtu 511 „Opravy a udržování“. Obec do jejího uplynutí neodpověděla.",
    "cj": null,
    "puvod_informace": "procesní milník",
    "dokument": null
+  },
+  {
+   "datum": "2026-09-10",
+   "typ": "milník",
+   "titulek": "Lhůta pro směrnici k zakázkám uplynula bez odpovědi",
+   "popis": "Uplynula 15denní zákonná lhůta pro vyřízení žádosti z 26. 8. 2026 o vnitřní pravidla pro zadávání veřejných zakázek a finanční kontrolu. Obec do jejího uplynutí neodpověděla.",
+   "cj": null,
+   "puvod_informace": "procesní milník",
+   "dokument": null
+  },
+  {
+   "datum": "2026-09-14",
+   "typ": "odpověď",
+   "titulek": "Úřad pro ochranu osobních údajů: pověřencem je od roku 2018 tatáž osoba",
+   "popis": "Sdělení č. j. UOOU-06364/26-3 ze dne 11. 9. 2026, doručeno 14. 9. 2026. Obec 25. 5. 2018 ohlásila jako společného pověřence pro obec Prštice i základní a mateřskou školu Mgr. Radovana Vrbku; jiné oznámení obec ani škola neučinily. Kdy výkon funkce začal, ohlášení výslovně neuvádí.",
+   "cj": "UOOU-06364/26-3",
+   "puvod_informace": "vyřízení Úřadu pro ochranu osobních údajů",
+   "dokument": "dokumenty/2026-09-14_odpoved-UOOU-poverenec.pdf"
   }
  ]
 }
